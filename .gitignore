@@ -1,0 +1,14 @@
+\#*#
+.*.rej
+*.rej
+.*~
+*~
+.#*
+.DS_Store
+*.bak
+*.bak[0-9]
+.*.swp
+.swp
+.swo
+
+icons/originals/
