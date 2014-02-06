@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Note: don't include a DOCTYPE in SVG documents:
+http://jwatt.org/svg/authoring/
+-->
+
+<svg width="220" height="220" viewBox="-110 -110 220 220"
+	preserveAspectRatio="xMidYMid meet"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+
+<style type="text/css"><![CDATA[
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+
+.item circle,
+.item text,
+.item .icon {
+	transition-property: fill, fill-opacity, opacity;
+	transition-duration: 250ms;
+}
+.item text,
+.item text tspan {
+	fill: #2e3436;
+	font-family: "Droid Sans", sans-serif;
+	font-size: 10px;
+	text-anchor: middle;
+	dominant-baseline: middle;  /* or central */
+}
+.item circle {
+	fill: #d3d7cf;
+}
+
+.item.without-icon       circle { fill-opacity: 0.125; }
+.item.without-icon:hover circle { fill-opacity: 0.125; }
+.item.without-icon       text { opacity: 1.0; }
+.item.without-icon:hover text { opacity: 1.0; }
+
+.item.with-icon       circle { fill-opacity: 0.125; }
+.item.with-icon:hover circle { fill-opacity: 0.125; }
+.item.with-icon       .icon { opacity: 1.0; }
+.item.with-icon:hover .icon { opacity: 0.125; }
+.item.with-icon       text { opacity: 0.0; }
+.item.with-icon:hover text { opacity: 1.0; }
+
+
+/* Workarounds for Firefox: https://bugzilla.mozilla.org/show_bug.cgi?id=265894#c5 */
+.item.with-icon use.icon circle {
+	fill-opacity: 1.0;  /* Fixes Reddit alien eyes in Firefox. */
+}
+.item.with-icon use.icon #curriculumvitae text {
+	opacity: 1.0;
+	fill: #2e3436;
+	font-size: 25px;
+}
+
+]]></style>
+
+<!-- ============================================================ -->
+
+<defs>
+
+<clipPath id="circleclip" clipPathUnits="objectBoundingBox">
+	<circle cx="0.5" cy="0.5" r="0.5" />
+</clipPath>
+
+<symbol id="curriculumvitae" preserveAspectRatio="xMidYMid meet" viewBox="-16 -16 32 32">
+	<text x="0" y="0" fill="#2e3436" font-family="'Droid Sans', sans-serif" font-size="25" text-anchor="middle" dominant-baseline="middle">CV</text>
+</symbol>
+
+<!-- Based on Twitter_logo_blue.eps -->
+<symbol id="twitter" preserveAspectRatio="xMidYMid meet" viewBox="0 0 273.39 222.18">
+	<path fill="#6babe1" d="m 85.9797,222.178 c -31.675,0 -61.1574,-9.28516 -85.9797,-25.1988 4.38789,0.5179 8.85273,0.7828 13.3801,0.7828 26.2781,0 50.4629,-8.9672 69.659,-24.0102 -24.5442,-0.4527 -45.2579,-16.6687 -52.3953,-38.9527 3.4246,0.6551 6.9382,1.0059 10.5527,1.0059 5.1148,0 10.0703,-0.6852 14.7769,-1.9668 C 30.3145,128.6858 10.9805,106.016 10.9805,78.84 c 0,-0.237 7e-4,-0.471 0.0047,-0.705 7.5628,4.201 16.2113,6.724 25.4054,7.015 -15.05,-10.058 -24.9519,-27.226 -24.9519,-46.685 0,-10.28 2.7652,-19.914 7.5933,-28.198 27.6645,33.934 68.9934,56.264 115.609,58.603 -0.956,-4.105 -1.453,-8.386 -1.453,-12.782 C 133.188,25.113 158.302,0 189.279,0 c 16.132,0 30.709,6.812 40.941,17.713 12.776,-2.516 24.78,-7.184 35.617,-13.612 -4.188,13.098 -13.081,24.09 -24.662,31.032 11.346,-1.356 22.156,-4.371 32.215,-8.832 -7.52,11.248 -17.03,21.127 -27.988,29.035 0.108,2.405 0.162,4.824 0.162,7.256 0,74.1188 -56.416,159.586 -159.5843,159.586" />
+</symbol>
+
+<!-- Based on logoBitBucket.eps -->
+<symbol id="bitbucket" preserveAspectRatio="xMidYMid meet" viewBox="0 0 122.343 141.225">
+	<path fill="#213462" d="M 61.1609,26.567 C 39.525,26.532 21.9914,22.773 21.9988,18.169 22.0063,13.564 39.5524,9.862 61.1883,9.897 c 21.6356,0.034 39.1686,3.793 39.1616,8.398 -0.007,4.605 -17.553,8.307 -39.189,8.272 z m 0.0106,60.96 c -10.7391,0 -19.4453,-8.707 -19.4453,-19.445 0,-10.74 8.7062,-19.445 19.4453,-19.445 10.7394,0 19.4454,8.705 19.4454,19.445 0,10.738 -8.706,19.445 -19.4454,19.445 z M 61.1723,0 l 0,0.002 L 61.1711,0 C 27.4969,0 0,9.054 0,20.294 c 0,2.961 7.3434,45.415 10.2567,62.251 1.3058,7.551 20.8183,18.621 50.8992,18.621 l 0.0312,-0.09 0,0.09 c 30.0808,0 49.5938,-11.07 50.8998,-18.621 2.913,-16.836 10.256,-59.29 10.256,-62.251 C 122.3429,9.054 94.8459,0 61.1723,0" />
+	<path fill="#213462" d="m 105.1379,99.419 c -0.93,0 -1.676,0.658 -1.676,0.658 0,0 -15.064,11.9289 -42.2904,11.9301 -27.2266,-10e-4 -42.2902,-11.9301 -42.2902,-11.9301 0,0 -0.7457,-0.658 -1.6754,-0.658 -1.111,0 -2.1641,0.746 -2.1641,2.392 0,0.174 0.0172,0.348 0.0488,0.518 2.3379,12.514 4.0461,21.3929 4.3461,22.7441 2.041,9.2051 20.0481,16.1508 41.7332,16.1519 l 0.0032,0 0,0 c 21.6858,-0.001 39.6928,-6.9468 41.7338,-16.1519 0.299,-1.3512 2.008,-10.2301 4.346,-22.7441 0.031,-0.17 0.049,-0.344 0.049,-0.518 0,-1.646 -1.054,-2.392 -2.164,-2.392" />
+	<path fill="#213462" d="m 70.8979,68.076 c 0,5.383 -4.3631,9.745 -9.7455,9.745 -5.3821,0 -9.745,-4.362 -9.745,-9.745 0,-5.383 4.3629,-9.745 9.745,-9.745 5.3824,0 9.7455,4.362 9.7455,9.745" />
+</symbol>
+
+<!-- Based on GitHub-Mark.eps -->
+<symbol id="github" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1207.76 1177.927">
+	<path fill="#1b1817" d="M 603.88,0 C 270.41,0 0,270.35 0,603.87 c 0,266.81 173.03,493.17 412.97,573.021 30.18,5.59 41.26,-13.101 41.26,-29.051 0,-14.402 -0.56,-61.968 -0.82,-112.429 -168,36.527 -203.45,-71.25 -203.45,-71.25 -27.47,-69.801 -67.05,-88.363 -67.05,-88.363 -54.79,-37.481 4.13,-36.711 4.13,-36.711 60.64,4.257 92.57,62.238 92.57,62.238 53.86,92.316 141.27,65.625 175.73,50.195 5.42,-39.023 21.07,-65.676 38.34,-80.754 C 359.55,855.505 218.55,803.715 218.55,572.33 c 0,-65.93 23.59,-119.8 62.22,-162.09 -6.27,-15.22 -26.94,-76.63 5.85,-159.81 0,0 50.72,-16.23 166.11,61.91 48.17,-13.39 99.83,-20.1 151.15,-20.33 51.32,0.23 103.02,6.94 151.28,20.33 115.26,-78.14 165.9,-61.91 165.9,-61.91 32.87,83.18 12.19,144.59 5.92,159.81 38.73,42.29 62.15,96.16 62.15,162.09 0,231.944 -141.27,283.007 -275.74,297.96 21.66,18.738 40.96,55.488 40.96,111.832 0,80.797 -0.7,145.828 -0.7,165.718 0,16.071 10.87,34.899 41.48,28.969 C 1034.94,1096.872 1207.76,870.59 1207.76,603.87 1207.76,270.35 937.38,0 603.88,0" />
+	<path fill="#1b1817" d="m 228.72,867.028 c -1.33,3.008 -6.05,3.906 -10.35,1.844 -4.38,-1.973 -6.83,-6.063 -5.42,-9.071 1.3,-3.086 6.03,-3.945 10.4,-1.886 4.39,1.972 6.89,6.105 5.37,9.113 l 0,0" />
+	<path fill="#1b1817" d="m 253.19,894.313 c -2.89,2.664 -8.52,1.426 -12.34,-2.793 -3.95,-4.211 -4.69,-9.844 -1.77,-12.551 2.97,-2.664 8.43,-1.414 12.39,2.793 3.95,4.258 4.72,9.844 1.72,12.551 l 0,0" />
+	<path fill="#1b1817" d="m 276.99,929.087 c -3.7,2.578 -9.75,0.168 -13.49,-5.204 -3.7,-5.371 -3.7,-11.816 0.09,-14.394 3.74,-2.578 9.7,-0.254 13.49,5.066 3.69,5.461 3.69,11.907 -0.09,14.532 l 0,0" />
+	<path fill="#1b1817" d="m 309.61,962.688 c -3.31,3.652 -10.36,2.672 -15.52,-2.308 -5.28,-4.872 -6.74,-11.782 -3.43,-15.43 3.36,-3.66 10.45,-2.629 15.64,2.308 5.24,4.864 6.84,11.821 3.31,15.43 l 0,0" />
+	<path fill="#1b1817" d="m 354.61,982.2 c -1.46,4.73 -8.25,6.879 -15.09,4.871 -6.83,-2.07 -11.3,-7.609 -9.92,-12.391 1.42,-4.761 8.24,-7 15.13,-4.851 6.82,2.062 11.3,7.562 9.88,12.371 l 0,0" />
+	<path fill="#1b1817" d="m 404.04,985.821 c 0.16,4.98 -5.64,9.109 -12.82,9.199 -7.21,0.16 -13.06,-3.871 -13.14,-8.769 0,-5.032 5.67,-9.121 12.89,-9.243 7.18,-0.136 13.07,3.864 13.07,8.813 l 0,0" />
+	<path fill="#1b1817" d="m 450.02,977.989 c 0.86,4.859 -4.13,9.851 -11.26,11.18 -7.01,1.281 -13.49,-1.719 -14.39,-6.539 -0.87,-4.981 4.21,-9.969 11.21,-11.258 7.14,-1.242 13.53,1.679 14.44,6.617 l 0,0" />
+</symbol>
+
+<!-- Based on FB-fLogo-printpackaging.eps -->
+<symbol id="facebook" preserveAspectRatio="xMidYMid meet" viewBox="0 0 2668.9299 2668.9399">
+	<path fill="#3d539e" d="m 2521.63,2668.94 c 81.35,0 147.3,-65.95 147.3,-147.3 l 0,-2374.34 C 2668.93,65.93 2602.98,0 2521.63,0 L 147.31,0 C 65.93,0 0,65.93 0,147.3 l 0,2374.34 c 0,81.35 65.93,147.3 147.31,147.3 l 2374.32,0" />
+	<path fill="#ffffff" d="m 1841.52,2668.94 0,-1033.55 346.92,0 51.94,-402.8 -398.86,0 0,-257.17 c 0,-116.62 32.38,-196.09 199.62,-196.09 l 213.3,-0.1 0,-360.26 c -36.91,-4.9 -163.51,-15.87 -310.81,-15.87 -307.53,0 -518.07,187.71 -518.07,532.44 l 0,297.05 -347.81,0 0,402.8 347.81,0 0,1033.55 415.96,0" />
+</symbol>
+
+<!-- Based on LinkedIn-InBug-2C.eps -->
+<symbol id="linkedin" preserveAspectRatio="xMidYMid meet" viewBox="0 0 2160 2160">
+	<path fill="#0977b6" d="M 2000.01,0 159.441,0 C 71.4453,0 0,69.77 0,155.62 L 0,2004.141 C 0,2090.1602 71.4453,2160 159.441,2160 l 1840.569,0 c 88.09,0 159.99,-69.8398 159.99,-155.859 L 2160,155.62 C 2160,69.77 2088.1,0 2000.01,0" />
+	<path fill="#ffffff" d="m 480.371,297.38 c 102.422,0 185.664,83.24 185.664,185.71 0,102.57 -83.242,185.82 -185.664,185.82 -102.695,0 -185.703,-83.25 -185.703,-185.82 0,-102.47 83.008,-185.71 185.703,-185.71 m -160.273,512.46 320.507,0 0,1030.789 -320.507,0 0,-1030.789" />
+	<path fill="#ffffff" d="m 841.543,809.84 307.347,0 0,140.78 4.37,0 c 42.78,-81.01 147.31,-166.48 303.17,-166.48 324.18,0 384.06,213.44 384.06,491.09 l 0,565.399 -320,0 0,-501.25 c 0,-119.609 -2.35,-273.359 -166.53,-273.359 -166.71,0 -192.14,130.23 -192.14,264.679 l 0,509.93 -320.277,0 0,-1030.789" />
+</symbol>
+
+<!-- Based on gplus-128.png (from Google) and Google_plus.svg (from Wikimedia Commons) -->
+<symbol id="googleplus" preserveAspectRatio="xMidYMid meet" viewBox="0 0 126.25 126.25">
+	<defs>
+		<symbol id="base">
+			<rect width="126.25" height="121.30" rx="7.2531" ry="7.2531" />
+		</symbol>
+		<symbol id="g">
+			<path d="m 66.608067,66.957045 -3.983,-3.093 c -1.213,-1.006 -2.872,-2.334 -2.872,-4.765 0,-2.441 1.659,-3.993 3.099,-5.43 4.64,-3.652 9.276,-7.539 9.276,-15.73 0,-8.423 -5.3,-12.854 -7.84,-14.956 l 6.849,0 7.189,-4.517 -21.779,0 c -5.976,0 -14.978567,1.414 -21.283567,6.619 -4.752,4.1 -6.679433,9.753 -6.679433,14.842 0,8.639 6.633,17.396 18.346,17.396 1.106,0 2.316,-0.109 3.534,-0.222 -0.547,1.331 -1.1,2.439 -1.1,4.32 0,3.431 1.763,5.535 3.317,7.528 -4.977,0.342 -14.268,0.893 -21.117,5.103 -6.523,3.879 -8.508,9.525 -8.508,13.51 0,8.201995 7.731,15.841995 23.762,15.841995 19.01,0 29.074,-10.518995 29.074,-20.931995 10e-4,-7.651 -4.419,-11.417 -9.284,-15.515 z m -14.479,-12.738 c -9.51,0 -13.818,-12.294 -13.818,-19.712 0,-2.888 0.547,-5.87 2.428,-8.199 1.773,-2.218 4.861,-3.657 7.744,-3.657 9.168,0 13.923,12.404 13.923,20.382 0,1.996 -0.22,5.533 -2.762,8.09 -1.778,1.774 -4.753,3.096 -7.515,3.096 z m 0.109,44.542995 c -11.826,0 -19.452,-5.656995 -19.452,-13.522995 0,-7.864 7.071,-10.524 9.504,-11.405 4.64,-1.561 10.611,-1.779 11.607,-1.779 1.105,0 1.658,0 2.538,0.111 8.407,5.983 12.056,8.965 12.056,14.629 0,6.859 -5.639,11.966995 -16.253,11.966995 z" />
+		</symbol>
+		<symbol id="plus">
+			<path d="m 89.761133,56.243806 -10.85123,0 0,5.912122 10.85123,0 0,10.842397 5.943408,0 0,-10.842397 10.820609,0 0,-5.912122 -10.820609,0 0,-10.853856 -5.943408,0 z" />
+		</symbol>
+	</defs>
+	<use xlink:href="#base" x="0" y="4.95" fill="#8d2d1d" />
+	<use xlink:href="#base" x="0" y="0" fill="#dd4b39" />
+	<use xlink:href="#g" x="0" y="0" fill="#c24232" />
+	<use xlink:href="#g" x="0" y="1" fill="#ffffff" />
+	<use xlink:href="#plus" x="0" y="0" fill="#c24232" />
+	<use xlink:href="#plus" x="0" y="1" fill="#ffffff" />
+</symbol>
+
+<!-- Based on YouTube-icon-full_color.eps -->
+<!--
+	Mozilla Firefox bug 353575 - gradients inside svg:symbol aren't rendered 
+	https://bugzilla.mozilla.org/show_bug.cgi?id=353575
+-->
+<linearGradient x1="0" y1="0" x2="1" y2="0"
+	id="YouTubeGradient" gradientUnits="userSpaceOnUse" spreadMethod="pad"
+	gradientTransform="matrix(-3.14e-5,-718.423,-718.423,3.14e-5,510.724,718.423)">
+	<stop stop-color="#e62426" offset="0" />
+	<stop stop-color="#c01e25" offset="1" />
+</linearGradient>
+<symbol id="youtube" preserveAspectRatio="xMidYMid meet" viewBox="0 0 10219.133 7182.5601">
+	<!-- To work around a bug in Firefox, the linearGradient definition was moved outside a symbol. -->
+	<g transform="matrix(1,0,0,-1,1.8879916,7182.5603)">
+		<path fill="#ffffff" d="m 4052.25,2267.19 2760,1430 -2760,1440 0,-2870" />
+		<path fill="#eae0e1" d="m 6472.41,3521.11 -2420.16,1616.08 2760,-1440 -339.84,-176.08" />
+		<path fill="url(#YouTubeGradient)" d="M 5009,0 C 3872.594,19.927311 2719.5788,23.245446 1641,101 1345.2211,137.22113 1051.9008,175.90076 838,294 589.75727,419.75727 405.46752,609.46752 294,872 165.02605,1169.3594 87.929222,1518.5959 64,1921 -12.597341,2659.7924 -5.8753621,3498.2723 4,4310 c 21.049593,496.9504 46.987997,989.012 117,1437 87.23588,406.7641 212.12717,775.8728 486,996 219.4608,195.2059 515.5679,313.7655 907,337 1408.6226,93.3726 2914.3433,113.0671 4412,98 974.942,-15.7247 1949.9017,-31.4316 2864,-108 468.2395,-40.0939 779.6143,-237.0524 1002,-523 169.7104,-252.6229 267.163,-577.504 325,-942 79.966,-693.4402 110.986,-1435.8272 97,-2223.2201 3.846,-671.7726 -33.436,-1302.417 -112,-1891.7799 C 10029.624,1121.0431 9925.8016,783.53178 9718,550 9485.9068,301.09319 9171.5666,134.43335 8715,110 7529.2472,24.254117 6273.0197,6.807616 5009,0 z m -956,2269 c 677.4863,349.1803 1358.6676,703.3325 2037,1055 238.3838,124.2825 486.8371,249.1633 718,374 -816.6952,427.9715 -1636.1619,853.1714 -2453,1281 -101.3628,51.6372 -201.1609,104.8391 -302,157 0,-955.6667 0,-1911.3333 0,-2867 z" />
+	</g>
+</symbol>
+
+<!-- Based on stylish-128.png -->
+<symbol id="stylish" preserveAspectRatio="xMidYMid meet" viewBox="0 0 128 128">
+	<rect fill="#000000" x="0" y="0" width="128" height="128" />
+	<rect fill="#aec562" x="8" y="8" width="64" height="39" />
+	<rect fill="#bd4031" x="79" y="8" width="42" height="76" />
+	<rect fill="#d09b75" x="8" y="54" width="28" height="67" />
+	<rect fill="#fef205" x="43" y="54" width="29" height="67" />
+	<rect fill="#9ec8e0" x="79" y="90" width="42" height="31" />
+	<path fill="#000000" d="M 64.51788,14.98602 C 54.25266,14.6891 43.25081,15.81788 34.87687,22.34174 26.05588,28.79377 23.29059,40.49856 24.29751,50.89246 c 0.38173,8.22153 4.42852,16.43886 11.73856,20.5996 9.91403,6.21793 22.002,6.79453 32.67717,11.00746 2.68548,4.6076 -6.38247,4.42385 -9.19058,4.31732 -8.53833,-0.40335 -16.59897,-3.53197 -24.32144,-6.95108 -4.51391,-2.38108 -10.72464,0.57833 -10.78599,5.93699 -0.43101,6.42467 -0.56364,13.00203 0.65242,19.34863 2.07621,4.75235 8.07015,5.12764 12.38773,6.64714 14.5902,3.6846 30.30095,5.33768 44.94428,1.06211 8.45943,-2.40158 15.80959,-8.73052 18.55259,-17.20998 3.4358,-10.31355 3.46139,-22.529 -2.43716,-31.96748 -5.90681,-8.9504 -17.05273,-11.43801 -26.8344,-13.73345 -5.11653,-1.18057 -10.44794,-1.98053 -15.16281,-4.4012 3.00354,-3.16777 8.36819,-2.29925 12.42066,-2.23358 7.65993,0.5003 14.76574,3.60686 22.10444,5.51372 6.01035,0.82816 7.08813,-6.29253 6.6917,-10.71172 -0.093,-5.22867 -0.13487,-10.47959 -0.50094,-15.69132 -0.74196,-3.6559 -4.80469,-3.85834 -7.75025,-4.49719 C 81.29486,16.0185 72.92908,15.03317 64.51788,14.98602 z" />
+	<path fill="#ffffff" d="m 64.45538,20.86102 c -8.93902,-0.12477 -18.62476,0.44624 -25.98844,6.12645 -6.86306,4.99807 -8.93569,14.04991 -8.40487,22.11166 0.0189,6.42121 2.45791,13.23348 8.12925,16.75674 9.75633,6.43168 21.85689,6.83185 32.49718,11.04857 4.53754,1.85546 6.29787,8.20303 2.88451,11.89231 -4.11754,4.63377 -10.98866,4.17485 -16.61763,3.72052 -8.3,-0.75773 -16.14062,-3.7552 -23.70037,-7.08945 -4.88589,-1.69343 -2.75165,5.86587 -3.23232,8.74813 0.68013,3.35694 -1.49345,9.17272 3.02639,10.15382 15.01324,4.8626 31.50933,7.09978 46.94435,2.8817 6.07066,-1.64322 11.99723,-5.29877 14.45881,-11.34191 C 98.3391,86.96114 98.63839,76.03268 93.87828,67.39352 89.55852,60.32739 80.90372,58.30283 73.41365,56.38538 66.52854,54.52414 59.00604,54.08677 52.86158,50.17352 c -4.1267,-2.63051 -2.21824,-9.00688 1.71273,-10.7849 7.26754,-3.39087 15.6827,-2.15863 23.25657,-0.56766 4.65065,1.03787 9.06425,2.91154 13.68695,4.04001 0.43075,-6.15313 0.0111,-12.33325 0.14062,-18.5 -8.53787,-1.88021 -17.17848,-3.4608 -25.95499,-3.47813 l -0.6253,-0.0125 -0.62283,-0.009 5e-5,5e-5 z" />
+</symbol>
+
+<!-- Copied from https://github.com/greasemonkey/greasemonkey/commits/master/skin/userscript.png -->
+<symbol id="userscripts" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 32">
+	<image x="0" y="0" width="24" height="32"
+		xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAgCAQAAACiV3CzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAABl0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuND6NzHYAAAOZSURBVDjLhZRdUJRlHMWfdxdGBGwoPsxZVApFAywdm2mavHEcb7hqmppyBslhygvzxsmmGmncybxwDM2pJCAE+aqURfCDtS1wAGlZxHWDdTEENmD5XHaRfZeFVthfFy0v8aX/63POc/7PeZ4jxPIjZUQd26Xd/3HqttVCEk8bjergxvLShkGrr8Nec+a9uKdRVJnJpfombAwh45wuOCGpnwSXDu/UNTZynyEe4cVH68gzmhXPeF6duUVX/8dMGwOM42USH22kbhOqOblFZg6lVPxuxIoDNzJeJnFTNxa2WSGoFsCP7tQbWwL3GcCFBy+TuGhyHzmuilKU57dZq85IvmEyzVgVuBc3DaNHv4xOFKEKTCGoP9hx5XZz0IwHLzJu7GRdjN0sVi3dVX3otautpoCNAQU+Rh99mAey9z+7mBCnztha02Ke7QiakZFx8Ted9DJKW8/Zt2PmnauEkI681FBvoZFOJhT1btrpxkEnE3QOH98bN7+FJqLifNPsOb4jh3t4kXHygLvY0NPIjzQzRYf9m7di5iiJL9a2l5NDPgVU4MKFjRb+pIufyEVPOT6msTw4sTeYQWJqbfcvFFJCGZU4sHGbu3Rwk4eYKWeEafz8Q0vXrhShFkKs0xRfb6KMy1RiwEIDLZjR8T1mDBiQmeYxj5mi+vKba4UkxJoPDxideqqpwcAtjFgoR0shVkaYwMc0U0wyid13ap9QC6GOjdeesQVuUUs9Rizkk8dX1DHCOOM8YiKY+jAlRaERQggpbN3WnCqrv5lmjPzMWbKpo48BhhljPJjLIL0U6tRR/z3Z8KTXL9x4OGOhmjy+5jo9OBjGyTgeBW6WP/lIrJ575ZEJr57T9WKjmCocClzGwxgO7LQHjn0b/4IImY88cv32C3q7v5d+BoNmPHhw4sDOPd/J4tgkaUEhSCJyyxtFN/tnhhgJmvHgpJ8ezP5TpQnbRdji/yaJNXvSfrV7cCvwPnpoDXyar0mZc7+AkBl/7Yd+fy9uZEW92XuybH2yFL6kBiRpR6Q+z+Hr5g5WBW6a0hZseFksV2bRIV+80zXbhZladFhx0EOr/3B2TJIIW7ZgosNOf9aFhXoqyeUS/Zi8WfnPbRIrVWXoqvR0W6CRaxRxmkvcmfo8Pzpl6c3MT0hMwsXfTLNXyKUEg5yujUhcwYxyqeFpaecNV0erXMV/HcwK3/gk9bm0oza8svvd3e+n7AnV/K+LFsy/rzDLv7NcEY0AAAAASUVORK5CYII=" />
+</symbol>
+
+<!-- Copied from http://stackapps.com/questions/347/svg-versions-of-the-logos -->
+<symbol id="stackoverflow" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64">
+    <path fill="#919191" d="m 9.3049611,36.847632 4.4013079,0.04316 -0.153442,19.598393 29.291259,0 0,-19.527506 4.637782,0 0,24.287331 -38.2006795,0 0.023777,-24.401371 z" />
+    <rect fill="#919191" width="22.944817" height="4.881876" x="16.481951" y="48.434078" />
+    <rect fill="#a78b68" width="23.066864" height="5.0039229" x="20.749949" y="37.830307" transform="matrix(0.9953749,0.09606666,-0.09606666,0.9953749,0,0)" />
+    <rect fill="#c19653" width="23.066864" height="5.0039229" x="26.472515" y="23.401554" transform="matrix(0.96240291,0.27162592,-0.27162592,0.96240291,0,0)" />
+    <rect fill="#d48c28" width="23.066864" height="5.0039229" x="30.528769" y="3.1535864" transform="matrix(0.85597805,0.51701216,-0.51701216,0.85597805,0,0)" />
+    <rect fill="#fe8908" width="23.066864" height="5.0039229" x="27.191883" y="-24.475019" transform="matrix(0.58242689,0.81288309,-0.81288309,0.58242689,0,0)" />
+    <rect fill="#ff7a15" width="23.066864" height="5.0039229" x="11.174569" y="-50.183693" transform="matrix(0.16480989,0.98632535,-0.98632535,0.16480989,0,0)" />
+</symbol>
+
+<!-- Drawn from scratch -->
+<symbol id="stackoverflowcareers" preserveAspectRatio="xMidYMid meet" viewBox="0 0 29 24">
+    <rect fill="#7a7876" width="4" height="4" x="0" y="20" />
+    <rect fill="#a18466" width="4" height="6" x="5" y="18" />
+    <rect fill="#b88b3d" width="4" height="9" x="10" y="15" />
+    <rect fill="#c8811c" width="4" height="13" x="15" y="11" />
+    <rect fill="#f48300" width="4" height="18" x="20" y="6" />
+    <rect fill="#f66c01" width="4" height="24" x="25" y="0" />
+</symbol>
+
+</defs>
+
+<!-- ============================================================ -->
+
+<g class="centralpicture">
+	<image x="-69.9" y="-69.9" width="139.8" height="139.8"
+		clip-path="url(#circleclip)"
+		xlink:href="MyPhoto2014-512x512.jpg" />
+</g>
+
+<g transform="translate(0 -89.9)" class="item without-icon">
+	<a xlink:href="mailto:denilsonsa@gmail.com">
+		<circle cx="0" cy="0" r="20" />
+		<text x="0" y="0">E-mail</text>
+	</a>
+</g>
+
+<g transform="translate(-39.0 -81.0)" class="item with-icon">
+	<a xlink:href="http://denilson.sa.nom.br/denilsonsa-resume.pdf">
+		<circle cx="0" cy="0" r="20" />
+		<use class="icon" xlink:href="#curriculumvitae" x="-14" y="-14" width="28" height="28" />
+		<text x="0" y="0">Resumé</text>
+	</a>
+</g>
+
+<g transform="translate(-70.3 -56.0)" class="item with-icon">
+	<a xlink:href="http://www.linkedin.com/in/denilsonsa">
+		<circle cx="0" cy="0" r="20" />
+		<use class="icon" xlink:href="#linkedin" x="-14" y="-14" width="28" height="28" />
+		<text x="0" y="0">LinkedIn</text>
+	</a>
+</g>
+
+<g transform="translate(-87.6 -20.0)" class="item with-icon">
+	<a xlink:href="http://careers.stackoverflow.com/denilsonsa">
+		<circle cx="0" cy="0" r="20" />
+		<use class="icon" xlink:href="#stackoverflowcareers" x="-14" y="-14" width="28" height="28" />
+		<text x="0" y="0">
+			<tspan x="0" y="-0.5em">Careers</tspan>
+			<tspan x="0" y="0.5em">2.0</tspan>
+		</text>
+	</a>
+</g>
+
+<g transform="translate(-87.6 20.0)" class="item with-icon">
+	<a xlink:href="http://stackoverflow.com/users/124946/">
+		<circle cx="0" cy="0" r="20" />
+		<use class="icon" xlink:href="#stackoverflow" x="-14" y="-14" width="28" height="28" />
+		<text x="0" y="0">
+			<tspan x="0" y="-0.5em">Stack</tspan>
+			<tspan x="0" y="0.5em">Overflow</tspan>
+		</text>
+	</a>
+</g>
+
+<g transform="translate(-70.3 56.0)" class="item with-icon">
+	<a xlink:href="http://bitbucket.org/denilsonsa">
+		<circle cx="0" cy="0" r="20" />
+		<use class="icon" xlink:href="#bitbucket" x="-14" y="-14" width="28" height="28" />
+		<text x="0" y="0">Bitbucket</text>
+	</a>
+</g>
+
+<g transform="translate(-39.0 81.0)" class="item with-icon">
+	<a xlink:href="http://github.com/denilsonsa">
+		<circle cx="0" cy="0" r="20" />
+		<use class="icon" xlink:href="#github" x="-14" y="-14" width="28" height="28" />
+		<text x="0" y="0">GitHub</text>
+	</a>
+</g>
+
+<g transform="translate(0.0 89.9)" class="item with-icon">
+	<a xlink:href="http://userscripts.org/users/120597/scripts">
+		<circle cx="0" cy="0" r="20" />
+		<use class="icon" xlink:href="#userscripts" x="-14" y="-14" width="28" height="28" />
+		<text x="0" y="0">
+			<tspan x="0" y="-0.5em">User</tspan>
+			<tspan x="0" y="0.5em">scripts</tspan>
+		</text> <!-- AKA Greasemonkey -->
+	</a>
+</g>
+
+<g transform="translate(39.0 81.0)" class="item with-icon">
+	<a xlink:href="http://userstyles.org/users/194017">
+		<circle cx="0" cy="0" r="20" />
+		<use class="icon" xlink:href="#stylish" x="-14" y="-14" width="28" height="28" />
+		<text x="0" y="0">
+			<tspan x="0" y="-0.5em">User</tspan>
+			<tspan x="0" y="0.5em">styles</tspan>
+		</text> <!-- AKA Stylish -->
+	</a>
+</g>
+
+<g transform="translate(70.3 56.0)" class="item with-icon">
+	<a xlink:href="http://www.youtube.com/user/denilsonsa">
+		<circle cx="0" cy="0" r="20" />
+		<use class="icon" xlink:href="#youtube" x="-14" y="-14" width="28" height="28" />
+		<text x="0" y="0">YouTube</text>
+	</a>
+</g>
+
+<g transform="translate(87.6 20.0)" class="item with-icon">
+	<a xlink:href="http://facebook.com/denilsonsa">
+		<circle cx="0" cy="0" r="20" />
+		<use class="icon" xlink:href="#facebook" x="-14" y="-14" width="28" height="28" />
+		<text x="0" y="0">Facebook</text>
+	</a>
+</g>
+
+<g transform="translate(87.6 -20.0)" class="item with-icon">
+	<a xlink:href="http://twitter.com/denilsonsa">
+		<circle cx="0" cy="0" r="20" />
+		<use class="icon" xlink:href="#twitter" x="-14" y="-14" width="28" height="28" />
+		<text x="0" y="0">Twitter</text>
+	</a>
+</g>
+
+<g transform="translate(70.3 -56.0)" class="item with-icon">
+	<a xlink:href="http://plus.google.com/+DenilsonSa/about">
+		<circle cx="0" cy="0" r="20" />
+		<use class="icon" xlink:href="#googleplus" x="-14" y="-14" width="28" height="28" />
+		<text x="0" y="0">Google+</text>
+	</a>
+</g>
+
+<g transform="translate(39.0 -81.0)" class="item without-icon">
+	<a xlink:href="http://my.opera.com/CrazyTerabyte/">
+		<circle cx="0" cy="0" r="20" />
+		<text x="0" y="0">Blog</text>
+	</a>
+</g>
+
+</svg>
