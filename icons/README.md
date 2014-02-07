@@ -44,6 +44,13 @@ Reddit:
 * http://www.reddit.com/wiki/licensing
 * http://www.reddit.com/r/redditlogos
 
+Skype:
+* http://www.skype.com/en/legal/brand-guidelines/
+* http://developer.skype.com/skype-uris/branding
+* http://commons.wikimedia.org/wiki/File:Skype.svg
+* http://de.wikipedia.org/wiki/Datei:Skype-icon.svg
+* http://www.iconfinder.com/search/?q=skype
+
 StackOverflow:
 
 * http://stackapps.com/questions/347/svg-versions-of-the-logos
