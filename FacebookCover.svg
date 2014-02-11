@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+	xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	version="1.1"
+	width="851"
+	height="315"
+>
+<!-- https://www.facebook.com/help/125379114252045 -->
+<defs>
+	<linearGradient id="facebookGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+		<stop style="stop-color: #4e69a2" offset="0" />
+		<stop style="stop-color: #3b5998" offset="1" />
+	</linearGradient>
+</defs>
+<rect width="100%" height="100%" x="0" y="0" fill="url(#facebookGradient)" />
+<g transform="translate(200 30) translate(0 160)">
+	<text x="0" y="0" style="font-size:20px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#ffffff;font-family:Droid Sans, sans-serif;">
+		<tspan x="0" y="0">Não tenho Facebook no celular.</tspan>
+		<tspan x="0" y="25">Não costumo olhar o Facebook.</tspan>
+		<tspan x="0" y="50">Quer entrar em contato? Use e-mail: denilsonsa@gmail.com</tspan>
+	</text>
+</g>
+</svg>
