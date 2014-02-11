@@ -8,6 +8,20 @@
 	height="315"
 >
 <!-- https://www.facebook.com/help/125379114252045 -->
+<style type="text/css"><![CDATA[
+text, tspan {
+	font-family: "Droid Sans", sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 30px;
+	text-align: start;
+	text-anchor: start;
+	fill: #ffffff;
+}
+.email {
+	font-weight: bold;
+}
+]]></style>
 <defs>
 	<linearGradient id="facebookGradient" x1="0%" y1="0%" x2="0%" y2="100%">
 		<stop style="stop-color: #4e69a2" offset="0" />
@@ -16,10 +30,10 @@
 </defs>
 <rect width="100%" height="100%" x="0" y="0" fill="url(#facebookGradient)" />
 <g transform="translate(200 30) translate(0 160)">
-	<text x="0" y="0" style="font-size:20px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;text-anchor:start;fill:#ffffff;font-family:Droid Sans, sans-serif;">
+	<text x="0" y="0">
 		<tspan x="0" y="0">Não tenho Facebook no celular.</tspan>
-		<tspan x="0" y="25">Não costumo olhar o Facebook.</tspan>
-		<tspan x="0" y="50">Quer entrar em contato? Use e-mail: denilsonsa@gmail.com</tspan>
+		<tspan x="0" y="20">Não costumo olhar o Facebook.</tspan>
+		<tspan x="0" y="40">Favor contactar por e-mail: <tspan class="email">denilsonsa@gmail.com</tspan></tspan>
 	</text>
 </g>
 </svg>
