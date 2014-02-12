@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg
-	xmlns:svg="http://www.w3.org/2000/svg"
-	xmlns="http://www.w3.org/2000/svg"
-	xmlns:xlink="http://www.w3.org/1999/xlink"
-	version="1.1"
-	width="237.3125"
-	height="237.3125"
->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 237.3125 237.3125">
 	<defs>
 		<linearGradient id="SkypeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
 			<stop style="stop-color: #00aff0" offset="0" />
