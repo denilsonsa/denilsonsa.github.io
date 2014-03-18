@@ -215,7 +215,7 @@ http://jwatt.org/svg/authoring/
 </g>
 
 <g transform="translate(0.0 -96.2)" class="item without-icon">
-	<a target="_top" xlink:href="http://my.opera.com/CrazyTerabyte/">
+	<a target="_top" xlink:href="http://web.archive.org/web/*/my.opera.com/CrazyTerabyte/">
 		<circle cx="0" cy="0" r="20" />
 		<text x="0" y="0">Blog</text>
 	</a>
