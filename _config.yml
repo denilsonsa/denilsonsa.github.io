@@ -1,0 +1,33 @@
+# vi:et
+# Remember: do not use tabs in configuration files.
+# See also: http://jekyllrb.com/docs/configuration/
+
+encoding: utf-8
+timezone: America/Sao_Paulo
+
+# Site name:
+name: Denilson Sá
+#markdown: redcarpet
+pygments: true
+highlighter: pygments
+
+# Starting in Jekyll 2.0, absolute permalinks are the default.
+relative_permalinks: false
+
+# Inspired by: https://github.com/SLaks/SLaks.Blog/blob/gh-pages/_config.yml
+permalink: /:year-:month-:day/:title
+ 
+# Produce an index for related posts.
+#lsi: true
+
+#paginate: 10
+
+# Files to be excluded from the generated _site:
+#exclude:
+
+#include:
+
+# This will only be useful if the site is being served from a non-root
+# directory. Also, post URLs alread contain the leading slash, which means
+# baseurl should NOT contain a trailing slash.
+#baseurl:
