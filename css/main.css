@@ -60,8 +60,8 @@ a:visited { color: #a0a; }
 .site {
   font-size: 115%;
   text-align: justify;
-  width: 42em;
-  margin: 3em auto 2em;
+  max-width: 42em;
+  margin: 1em auto 1em;
   line-height: 1.5em;
 }
 
@@ -72,7 +72,6 @@ a:visited { color: #a0a; }
 
 .title {
   display: inline-block;
-  margin-bottom: 2em;
 }
 
 .title a {
@@ -90,10 +89,6 @@ a:visited { color: #a0a; }
 
 .header a.extra:hover {
   color: #000;
-}
-
-.meta {
-  color: #aaa;
 }
 
 .footer {
@@ -164,6 +159,7 @@ a:visited { color: #a0a; }
 
 /* TODO: check the margins. If a <pre> is followed by <h2>, it currently has no margins, which looks bad. See 2005-12-13-the-failed-gentoo-linux-nvidia-guide */
 
+/* Also try using display: inline-flex; or using percentages as height. */
 .date-as-calendar {
 	position: relative;
 	font-variant: normal;
@@ -174,6 +170,9 @@ a:visited { color: #a0a; }
 	display: inline-block;
 	width: 64px;
 	height: 64px;
+
+	float: right;
+	margin: 0 0 1ex 1ex;
 
 	color: black;
 	background: white;
