@@ -2,7 +2,7 @@
 layout: post
 title: Gentoo Install - part 3 - The nVidia strikes back
 lang: en
-tag:
+tags:
 - Linux
 - Gentoo
 - Nvidia

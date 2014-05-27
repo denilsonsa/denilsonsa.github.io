@@ -2,6 +2,7 @@
 layout: post
 title: Why Gentoo?
 excerpt: 'Today I found some pages about Gentoo and about the arguments people use to explain why to use Gentoo, so I stopped for a while and asked to myself: Why do I use Gentoo?'
+lang: en
 tags:
 - Linux
 - Gentoo
