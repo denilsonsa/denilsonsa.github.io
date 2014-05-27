@@ -1,4 +1,4 @@
-# vi:et
+# vi:et:sw=2:ts=2
 # Remember: do not use tabs in configuration files.
 # See also: http://jekyllrb.com/docs/configuration/
 
@@ -8,7 +8,8 @@ timezone: America/Sao_Paulo
 # Site name:
 name: Denilson Sá
 #markdown: redcarpet
-pygments: true
+
+#pygments: true  # Renamed to 'highlighter' option.
 highlighter: pygments
 
 # Starting in Jekyll 2.0, absolute permalinks are the default.
@@ -23,7 +24,8 @@ permalink: /:year-:month-:day/:title
 #paginate: 10
 
 # Files to be excluded from the generated _site:
-#exclude:
+exclude:
+  - /icons/originals/
 
 #include:
 
