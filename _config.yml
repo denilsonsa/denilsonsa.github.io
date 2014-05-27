@@ -33,3 +33,7 @@ exclude:
 # directory. Also, post URLs alread contain the leading slash, which means
 # baseurl should NOT contain a trailing slash.
 #baseurl:
+
+# Auto-regeneration can no longer be set from your configuration file(s). Use
+# the --watch/-w command-line option instead.
+#watch: true

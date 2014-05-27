@@ -8,6 +8,8 @@ https://developers.google.com/+/web/snippet/
 -->
 <h2>{{ page.title }}</h2>
 <p class="meta">{{ page.date | date_to_string }}</p>
+<p>Tags: {{ page.tags | sort | join: ', ' }}</p>
+<p><a href="{{ page.previous.url }}">previous post</a> - <a href="{{ page.next.url }}">next post</a></p>
 
 <div class="post">
 {{ content }}
