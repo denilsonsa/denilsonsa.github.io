@@ -7,7 +7,18 @@ http://www.ihid.co.uk/blog/markup-your-blog-using-schema-org
 https://developers.google.com/+/web/snippet/
 -->
 <h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+
+<div class="date-as-calendar">
+{% comment %}
+See: http://docs.shopify.com/themes/liquid-basics/output#date
+{% endcomment %}
+<span class="weekday">{{ page.date | date: '%A' }}</span>
+<span class="day">{{ page.date | date: '%-d' }}</span>
+<span class="month">{{ page.date | date: '%B' }}</span>
+<span class="year">{{ page.date | date: '%Y' }}</span>
+</div>
+
+<p class="meta">{{ page.date | date: '%F' }}</p>
 <p>Tags: {{ page.tags | sort | join: ', ' }}</p>
 <p><a href="{{ page.previous.url }}">previous post</a> - <a href="{{ page.next.url }}">next post</a></p>
 

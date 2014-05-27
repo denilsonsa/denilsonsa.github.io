@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro|Oswald);
+
 /*****************************************************************************/
 /*
 /* Common
@@ -161,3 +163,57 @@ a:visited { color: #a0a; }
 }
 
 /* TODO: check the margins. If a <pre> is followed by <h2>, it currently has no margins, which looks bad. See 2005-12-13-the-failed-gentoo-linux-nvidia-guide */
+
+/* TODO: Improve the looking of the calendar. */
+.date-as-calendar {
+	position: relative;
+	font-variant: normal;
+	font-style: normal;
+	font-weight: normal;
+	font-family: "Helvetica", "Arial", sans-serif;
+
+	display: inline-block;
+	width: 64px;
+	height: 64px;
+
+	color: black;
+	background: white;
+	background : linear-gradient(to bottom right, #FFF 0%, #EEE 100%);
+
+	border: 1px solid #888;
+	border-radius: 3px;
+}
+.date-as-calendar .weekday,
+.date-as-calendar .day,
+.date-as-calendar .month,
+.date-as-calendar .year {
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 1em;
+	text-align: center;
+	line-height: 1.0;
+}
+.date-as-calendar .month {
+	font-family: "Oswald", sans-serif;
+	text-transform: uppercase;
+	top: 0px;
+	font-size: 12px;
+	padding: 2px 0;
+	background: #B11;
+	background : linear-gradient(to bottom right, #D66 0%, #A00 100%);
+	color: white;
+}
+.date-as-calendar .weekday {
+	top: 16px;
+	font-size: 10px;
+}
+.date-as-calendar .day {
+	top: 26px;
+	font-size: 24px;
+}
+.date-as-calendar .year {
+	top: 50px;
+	font-size: 14px;
+}
