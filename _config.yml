@@ -18,6 +18,11 @@ relative_permalinks: false
 # Inspired by: https://github.com/SLaks/SLaks.Blog/blob/gh-pages/_config.yml
 permalink: /:year-:month-:day/:title
  
+# A single blank line (AKA a paragraph break, the default behavior).
+excerpt_separator: "\n\n"
+# Two blank lines.
+#excerpt_separator: "\n\n\n"
+
 # Produce an index for related posts.
 #lsi: true
 
