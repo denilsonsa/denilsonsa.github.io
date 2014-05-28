@@ -5,11 +5,13 @@ layout: default
 TODO: Use microdata as described in:
 http://www.ihid.co.uk/blog/markup-your-blog-using-schema-org
 https://developers.google.com/+/web/snippet/
+See also the code examples from:
+http://www.w3.org/TR/html5/text-level-semantics.html#the-time-element
 -->
 
 <p><a href="{{ page.previous.url }}">previous post</a> - <a href="{{ page.next.url }}">next post</a></p>
 
-<div class="date-as-calendar">
+<time datetime="{{ page.date | date: '%F' }}" class="date-as-calendar">
 {% comment %}
 See: http://docs.shopify.com/themes/liquid-basics/output#date
 {% endcomment %}
@@ -17,7 +19,7 @@ See: http://docs.shopify.com/themes/liquid-basics/output#date
 <span class="day">{{ page.date | date: '%-d' }}</span>
 <span class="month">{{ page.date | date: '%B' }}</span>
 <span class="year">{{ page.date | date: '%Y' }}</span>
-</div>
+</time>
 
 <h2>{{ page.title }}</h2>
 
