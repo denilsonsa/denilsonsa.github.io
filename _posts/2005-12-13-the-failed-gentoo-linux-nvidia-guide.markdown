@@ -114,6 +114,7 @@ They all will build a package containing `nvidia-glx`, but the driver inside pac
 
 P.S. 1: In fact, I installed the different driver versions in a different order than listed in this post. It was: 8174, 7676, 6629.
 
-P.S. 2: [#gentoo](irc://irc.freenode.org/gentoo) channel has the following advice at topic: ">=2.6.13 & xorg not loading nvidia? [http://tinyurl.com/78nyz](http://tinyurl.com/78nyz)". This problem/bug, however, did not happen here. After each install, I checked if there was /dev/nvidia* devices, and they were there.
+P.S. 2: [#gentoo](irc://irc.freenode.org/gentoo) channel has the following advice at topic: ">=2.6.13 & xorg not loading nvidia? [http://tinyurl.com/78nyz](http://bugs.gentoo.org/show_bug.cgi?id=104369
+#c18)". This problem/bug, however, did not happen here. After each install, I checked if there was /dev/nvidia* devices, and they were there.
 
 Edit: Added bug report number.
