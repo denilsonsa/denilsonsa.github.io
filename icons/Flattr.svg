@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 201.0975 201.39375">
+<defs>
+   <linearGradient id="FlattrGradientOrange" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0,134.75,134.75,0,150.75,247.73)">
+		<stop stop-color="#ea5f29" offset="0" />
+		<stop stop-color="#fabd1f" offset="1" />
+	</linearGradient>
+	<linearGradient id="FlattrGradientGreen" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0,-134.75,-134.75,0,160.87,372.12)">
+		<stop stop-color="#abd33c" offset="0" />
+		<stop stop-color="#6cb02f" offset="1" />
+	</linearGradient>
+</defs>
+<g transform="matrix(1.25,0,0,-1.25,-98.500602,497.30516)">
+	<g transform="translate(3.4274813,7.3601302)">
+		<path fill="url(#FlattrGradientOrange)" d="m 135.377,382.484 c -34.431,0 -52.004,-19.863 -52.004,-56.949 l 0,0 0,-25.906 0,-51.899 33.728,33.817 0,39.523 c 0,15.364 4.065,25.141 17.702,27.336 l 0,0 c 4.764,0.933 14.679,0.606 20.983,0.606 l 0,0 0,-23.467 c 0,-0.214 0.029,-0.596 0.084,-0.792 l 0,0 c 0.264,-0.95 1.122,-1.646 2.138,-1.648 l 0,0 c 0.575,-0.001 1.113,0.298 1.668,0.846 l 0,0 58.45,58.524 -39.234,0.009 L 135.377,382.484 Z" />
+		<path fill="url(#FlattrGradientGreen)" d="m 194.523,338.305 0,-39.522 c 0,-15.364 -4.066,-25.142 -17.702,-27.337 l 0,0 c -4.764,-0.932 -14.679,-0.605 -20.983,-0.605 l 0,0 0,23.466 c 0,0.213 -0.029,0.596 -0.084,0.792 l 0,0 c -0.264,0.951 -1.121,1.646 -2.138,1.648 l 0,0 c -0.575,0.002 -1.113,-0.298 -1.668,-0.845 l 0,0 -58.45,-58.524 39.234,-0.009 43.515,0 c 34.431,0 52.004,19.863 52.004,56.948 l 0,0 0,25.907 0,51.898 L 194.523,338.305 Z" />
+	</g>
+</g>
+</svg>
