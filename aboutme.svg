@@ -235,7 +235,7 @@ http://jwatt.org/svg/authoring/
 </g>
 
 <g transform="translate(72.5 -72.5)" class="item with-icon">
-	<a target="_top" xlink:href="http://www.linkedin.com/in/denilsonsa">
+	<a target="_top" xlink:href="https://www.linkedin.com/in/denilsonsa">
 		<circle cx="0" cy="0" r="20" />
 		<use class="icon" xlink:href="#linkedin" x="-14" y="-14" width="28" height="28" />
 		<text x="0" y="0">LinkedIn</text>
@@ -243,7 +243,7 @@ http://jwatt.org/svg/authoring/
 </g>
 
 <g transform="translate(94.7 -39.2)" class="item with-icon">
-	<a target="_top" xlink:href="http://careers.stackoverflow.com/denilsonsa">
+	<a target="_top" xlink:href="https://careers.stackoverflow.com/denilsonsa">
 		<circle cx="0" cy="0" r="20" />
 		<use class="icon" xlink:href="#stackoverflowcareers" x="-14" y="-14" width="28" height="28" />
 		<text x="0" y="0">
@@ -254,7 +254,7 @@ http://jwatt.org/svg/authoring/
 </g>
 
 <g transform="translate(102.5 0.0)" class="item with-icon">
-	<a target="_top" xlink:href="http://stackoverflow.com/users/124946/">
+	<a target="_top" xlink:href="https://stackoverflow.com/users/124946/">
 		<circle cx="0" cy="0" r="20" />
 		<use class="icon" xlink:href="#stackoverflow" x="-14" y="-14" width="28" height="28" />
 		<text x="0" y="0">
@@ -265,7 +265,7 @@ http://jwatt.org/svg/authoring/
 </g>
 
 <g transform="translate(94.7 39.2)" class="item with-icon">
-	<a target="_top" xlink:href="http://bitbucket.org/denilsonsa">
+	<a target="_top" xlink:href="https://bitbucket.org/denilsonsa">
 		<circle cx="0" cy="0" r="20" />
 		<use class="icon" xlink:href="#bitbucket" x="-14" y="-14" width="28" height="28" />
 		<text x="0" y="0">Bitbucket</text>
@@ -273,7 +273,7 @@ http://jwatt.org/svg/authoring/
 </g>
 
 <g transform="translate(72.5 72.5)" class="item with-icon">
-	<a target="_top" xlink:href="http://github.com/denilsonsa">
+	<a target="_top" xlink:href="https://github.com/denilsonsa">
 		<circle cx="0" cy="0" r="20" />
 		<use class="icon" xlink:href="#github" x="-14" y="-14" width="28" height="28" />
 		<text x="0" y="0">GitHub</text>
@@ -289,7 +289,9 @@ http://jwatt.org/svg/authoring/
 </g>
 
 <g transform="translate(0.0 102.5)" class="item with-icon">
-	<a target="_top" xlink:href="http://userscripts.org/users/120597/scripts">
+	<!-- http://userscripts.org/users/120597/scripts -->
+	<!-- http://userscripts.org:8080/users/120597/scripts -->
+	<a target="_top" xlink:href="http://web.archive.org/web/20131108061608/http://userscripts.org/users/120597/scripts">
 		<circle cx="0" cy="0" r="20" />
 		<use class="icon" xlink:href="#userscripts" x="-14" y="-14" width="28" height="28" />
 		<text x="0" y="0">
@@ -300,7 +302,7 @@ http://jwatt.org/svg/authoring/
 </g>
 
 <g transform="translate(-39.2 94.7)" class="item with-icon">
-	<a target="_top" xlink:href="http://userstyles.org/users/194017">
+	<a target="_top" xlink:href="https://userstyles.org/users/194017">
 		<circle cx="0" cy="0" r="20" />
 		<use class="icon" xlink:href="#stylish" x="-14" y="-14" width="28" height="28" />
 		<text x="0" y="0">
@@ -311,7 +313,7 @@ http://jwatt.org/svg/authoring/
 </g>
 
 <g transform="translate(-72.5 72.5)" class="item with-icon">
-	<a target="_top" xlink:href="http://www.youtube.com/user/denilsonsa">
+	<a target="_top" xlink:href="https://www.youtube.com/user/denilsonsa">
 		<circle cx="0" cy="0" r="20" />
 		<use class="icon" xlink:href="#youtube" x="-14" y="-14" width="28" height="28" />
 		<text x="0" y="0">YouTube</text>
@@ -319,7 +321,7 @@ http://jwatt.org/svg/authoring/
 </g>
 
 <g transform="translate(-94.7 39.2)" class="item with-icon">
-	<a target="_top" xlink:href="http://facebook.com/denilsonsa">
+	<a target="_top" xlink:href="https://facebook.com/denilsonsa">
 		<circle cx="0" cy="0" r="20" />
 		<use class="icon" xlink:href="#facebook" x="-14" y="-14" width="28" height="28" />
 		<text x="0" y="0">Facebook</text>
@@ -327,7 +329,7 @@ http://jwatt.org/svg/authoring/
 </g>
 
 <g transform="translate(-102.5 0.0)" class="item with-icon">
-	<a target="_top" xlink:href="http://twitter.com/denilsonsa">
+	<a target="_top" xlink:href="https://twitter.com/denilsonsa">
 		<circle cx="0" cy="0" r="20" />
 		<use class="icon" xlink:href="#twitter" x="-14" y="-14" width="28" height="28" />
 		<text x="0" y="0">Twitter</text>
@@ -335,7 +337,7 @@ http://jwatt.org/svg/authoring/
 </g>
 
 <g transform="translate(-94.7 -39.2)" class="item with-icon">
-	<a target="_top" xlink:href="http://plus.google.com/+DenilsonSa/about">
+	<a target="_top" xlink:href="https://plus.google.com/+DenilsonSa/about">
 		<circle cx="0" cy="0" r="20" />
 		<use class="icon" xlink:href="#googleplus" x="-14" y="-14" width="28" height="28" />
 		<text x="0" y="0">Google+</text>
