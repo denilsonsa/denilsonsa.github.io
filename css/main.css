@@ -159,6 +159,21 @@ a:visited { color: #a0a; }
 
 /* TODO: check the margins. If a <pre> is followed by <h2>, it currently has no margins, which looks bad. See 2005-12-13-the-failed-gentoo-linux-nvidia-guide */
 
+kbd {
+	/* Inspired by https://meta.superuser.com/questions/4788/css-for-the-new-kbd-style */
+	border: 1px outset #CCC;
+	background: #EEE;
+	color: #333;
+	border-radius: 3px;
+	box-shadow:0 1px 0 rgba(0,0,0,0.2);
+	display: inline-block;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size: 0.9em;
+    margin: 0 .05em;
+    padding: .05em .5em;
+    text-shadow: 0 1px 0 #fff;
+}
+
 a[href^="http://web.archive.org/web/"],
 a[href^="https://web.archive.org/web/"] {
 	/* font-size: 0.75em; */
