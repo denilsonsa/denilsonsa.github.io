@@ -1,6 +1,7 @@
 ---
 layout: post
 title: What is for you the most important feature in an opensource/free software game?
+excerpt: "The Linux Game Tome is holding the following poll: “What is for you the most important feature in an opensource/free software game?” Unfortunately, it is not possible to select more than one answer."
 lang: en
 tags:
 - Linux

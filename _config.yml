@@ -42,9 +42,9 @@ relative_permalinks: false
 permalink: /blog/:year-:month-:day/:title
  
 # A single blank line (AKA a paragraph break, the default behavior).
-excerpt_separator: "\n\n"
+#excerpt_separator: "\n\n"
 # Two blank lines.
-#excerpt_separator: "\n\n\n"
+excerpt_separator: "\n\n\n"
 
 # Produce an index for related posts.
 #lsi: true
