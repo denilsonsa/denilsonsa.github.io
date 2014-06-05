@@ -5,7 +5,7 @@ Note: don't include a DOCTYPE in SVG documents:
 http://jwatt.org/svg/authoring/
 -->
 
-<svg viewBox="-117 -117 234 234"
+<svg viewBox="-122.5 -122.5 245.0 245.0"
 	preserveAspectRatio="xMidYMid meet"
 	version="1.1"
 	xmlns="http://www.w3.org/2000/svg"
@@ -214,19 +214,19 @@ http://jwatt.org/svg/authoring/
 <!-- ============================================================ -->
 
 <g class="centralpicture">
-	<image x="-76.2" y="-76.2" width="152.4" height="152.4"
+	<image x="-82.5" y="-82.5" width="165.0" height="165.0"
 		clip-path="url(#circleclip)"
 		xlink:href="MyPhoto2014-512x512.jpg" />
 </g>
 
-<g transform="translate(0.0 -96.2)" class="item without-icon">
+<g transform="translate(-0.0 -102.5)" class="item without-icon">
 	<a target="_top" xlink:href="http://web.archive.org/web/*/my.opera.com/CrazyTerabyte/">
 		<circle cx="0" cy="0" r="20" />
 		<text x="0" y="0">Blog</text>
 	</a>
 </g>
 
-<g transform="translate(39.1 -87.9)" class="item with-icon">
+<g transform="translate(39.2 -94.7)" class="item with-icon">
 	<a target="_top" xlink:href="http://denilson.sa.nom.br/denilsonsa-resume.pdf">
 		<circle cx="0" cy="0" r="20" />
 		<use class="icon" xlink:href="#curriculumvitae" x="-14" y="-14" width="28" height="28" />
@@ -234,7 +234,7 @@ http://jwatt.org/svg/authoring/
 	</a>
 </g>
 
-<g transform="translate(71.5 -64.4)" class="item with-icon">
+<g transform="translate(72.5 -72.5)" class="item with-icon">
 	<a target="_top" xlink:href="http://www.linkedin.com/in/denilsonsa">
 		<circle cx="0" cy="0" r="20" />
 		<use class="icon" xlink:href="#linkedin" x="-14" y="-14" width="28" height="28" />
@@ -242,7 +242,7 @@ http://jwatt.org/svg/authoring/
 	</a>
 </g>
 
-<g transform="translate(91.5 -29.7)" class="item with-icon">
+<g transform="translate(94.7 -39.2)" class="item with-icon">
 	<a target="_top" xlink:href="http://careers.stackoverflow.com/denilsonsa">
 		<circle cx="0" cy="0" r="20" />
 		<use class="icon" xlink:href="#stackoverflowcareers" x="-14" y="-14" width="28" height="28" />
@@ -253,7 +253,7 @@ http://jwatt.org/svg/authoring/
 	</a>
 </g>
 
-<g transform="translate(95.7 10.1)" class="item with-icon">
+<g transform="translate(102.5 0.0)" class="item with-icon">
 	<a target="_top" xlink:href="http://stackoverflow.com/users/124946/">
 		<circle cx="0" cy="0" r="20" />
 		<use class="icon" xlink:href="#stackoverflow" x="-14" y="-14" width="28" height="28" />
@@ -264,7 +264,7 @@ http://jwatt.org/svg/authoring/
 	</a>
 </g>
 
-<g transform="translate(83.3 48.1)" class="item with-icon">
+<g transform="translate(94.7 39.2)" class="item with-icon">
 	<a target="_top" xlink:href="http://bitbucket.org/denilsonsa">
 		<circle cx="0" cy="0" r="20" />
 		<use class="icon" xlink:href="#bitbucket" x="-14" y="-14" width="28" height="28" />
@@ -272,7 +272,7 @@ http://jwatt.org/svg/authoring/
 	</a>
 </g>
 
-<g transform="translate(56.5 77.8)" class="item with-icon">
+<g transform="translate(72.5 72.5)" class="item with-icon">
 	<a target="_top" xlink:href="http://github.com/denilsonsa">
 		<circle cx="0" cy="0" r="20" />
 		<use class="icon" xlink:href="#github" x="-14" y="-14" width="28" height="28" />
@@ -280,7 +280,7 @@ http://jwatt.org/svg/authoring/
 	</a>
 </g>
 
-<g transform="translate(56.5 77.8)" class="item with-icon">
+<g transform="translate(39.2 94.7)" class="item with-icon">
 	<a target="_top" xlink:href="http://codepen.io/denilsonsa/">
 		<circle cx="0" cy="0" r="20" />
 		<use class="icon" xlink:href="#codepen" x="-14" y="-14" width="28" height="28" />
@@ -288,7 +288,7 @@ http://jwatt.org/svg/authoring/
 	</a>
 </g>
 
-<g transform="translate(20.0 94.1)" class="item with-icon">
+<g transform="translate(0.0 102.5)" class="item with-icon">
 	<a target="_top" xlink:href="http://userscripts.org/users/120597/scripts">
 		<circle cx="0" cy="0" r="20" />
 		<use class="icon" xlink:href="#userscripts" x="-14" y="-14" width="28" height="28" />
@@ -299,7 +299,7 @@ http://jwatt.org/svg/authoring/
 	</a>
 </g>
 
-<g transform="translate(-20.0 94.1)" class="item with-icon">
+<g transform="translate(-39.2 94.7)" class="item with-icon">
 	<a target="_top" xlink:href="http://userstyles.org/users/194017">
 		<circle cx="0" cy="0" r="20" />
 		<use class="icon" xlink:href="#stylish" x="-14" y="-14" width="28" height="28" />
@@ -310,7 +310,7 @@ http://jwatt.org/svg/authoring/
 	</a>
 </g>
 
-<g transform="translate(-56.5 77.8)" class="item with-icon">
+<g transform="translate(-72.5 72.5)" class="item with-icon">
 	<a target="_top" xlink:href="http://www.youtube.com/user/denilsonsa">
 		<circle cx="0" cy="0" r="20" />
 		<use class="icon" xlink:href="#youtube" x="-14" y="-14" width="28" height="28" />
@@ -318,7 +318,7 @@ http://jwatt.org/svg/authoring/
 	</a>
 </g>
 
-<g transform="translate(-83.3 48.1)" class="item with-icon">
+<g transform="translate(-94.7 39.2)" class="item with-icon">
 	<a target="_top" xlink:href="http://facebook.com/denilsonsa">
 		<circle cx="0" cy="0" r="20" />
 		<use class="icon" xlink:href="#facebook" x="-14" y="-14" width="28" height="28" />
@@ -326,7 +326,7 @@ http://jwatt.org/svg/authoring/
 	</a>
 </g>
 
-<g transform="translate(-95.7 10.1)" class="item with-icon">
+<g transform="translate(-102.5 0.0)" class="item with-icon">
 	<a target="_top" xlink:href="http://twitter.com/denilsonsa">
 		<circle cx="0" cy="0" r="20" />
 		<use class="icon" xlink:href="#twitter" x="-14" y="-14" width="28" height="28" />
@@ -334,7 +334,7 @@ http://jwatt.org/svg/authoring/
 	</a>
 </g>
 
-<g transform="translate(-91.5 -29.7)" class="item with-icon">
+<g transform="translate(-94.7 -39.2)" class="item with-icon">
 	<a target="_top" xlink:href="http://plus.google.com/+DenilsonSa/about">
 		<circle cx="0" cy="0" r="20" />
 		<use class="icon" xlink:href="#googleplus" x="-14" y="-14" width="28" height="28" />
@@ -342,7 +342,7 @@ http://jwatt.org/svg/authoring/
 	</a>
 </g>
 
-<g transform="translate(-71.5 -64.4)" class="item with-icon">
+<g transform="translate(-72.5 -72.5)" class="item with-icon">
 	<a target="_top" xlink:href="skype:crazyterabyte?chat">
 		<circle cx="0" cy="0" r="20" />
 		<use class="icon" xlink:href="#skype" x="-14" y="-14" width="28" height="28" />
@@ -350,7 +350,7 @@ http://jwatt.org/svg/authoring/
 	</a>
 </g>
 
-<g transform="translate(-39.1 -87.9)" class="item without-icon">
+<g transform="translate(-39.2 -94.7)" class="item without-icon">
 	<a target="_top" xlink:href="mailto:denilsonsa@gmail.com">
 		<circle cx="0" cy="0" r="20" />
 		<text x="0" y="0">E-mail</text>
