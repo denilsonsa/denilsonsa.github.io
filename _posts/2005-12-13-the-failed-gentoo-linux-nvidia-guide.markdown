@@ -5,6 +5,7 @@ lang: en
 tags:
 - Linux
 - Nvidia
+- driver
 - X.org
 - Gentoo
 ---

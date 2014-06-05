@@ -5,8 +5,6 @@ lang: en
 tags:
 - Gentoo
 - Linux
-- USB
-- Nvidia
 ---
 
 I've updated my kernel to latest (2.6.14.2) and also disabled in-kernel alsa drivers to install external alsa drivers (from `alsa-driver` package). This solved my problem with deadlock. (just in case someone wanna look at bug report: [115333](http://bugs.gentoo.org/show_bug.cgi?id=115333))

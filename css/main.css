@@ -165,8 +165,11 @@ a:visited { color: #a0a; }
 
 /* TODO: check the margins. If a <pre> is followed by <h2>, it currently has no margins, which looks bad. See 2005-12-13-the-failed-gentoo-linux-nvidia-guide */
 
+figure {
+	text-align: center;
+}
 figure.singleimage img {
-	width: 100%;
+	max-width: 100%;
 }
 
 kbd {

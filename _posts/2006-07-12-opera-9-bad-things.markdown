@@ -4,6 +4,7 @@ title: Opera 9 - bad things…
 lang: en
 tag:
 - Opera
+- User Interface
 ---
 
 Every new major Opera version is the same thing: Opera breaks some expected or well-accepted behavior, and require us to either get used to it (until next major version, of course) or fiddle with different files to get back the old behavior.

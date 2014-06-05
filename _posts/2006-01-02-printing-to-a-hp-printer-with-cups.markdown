@@ -5,6 +5,7 @@ lang: en
 tags:
 - Gentoo
 - Linux
+- driver
 ---
 
 This is a quick post just to document how I configured my HP 930C printer to print correctly (or almost correctly).
