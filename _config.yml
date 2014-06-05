@@ -7,7 +7,30 @@ timezone: America/Sao_Paulo
 
 # Site name:
 name: Denilson Sá
-#markdown: redcarpet
+
+markdown: redcarpet
+#markdown: kramdown
+
+# http://jekyllrb.com/docs/configuration/#markdown-options
+# https://stackoverflow.com/questions/13464590/github-flavored-markdown-and-pygments-highlighting-in-jekyll
+# https://stackoverflow.com/questions/373002/better-ruby-markdown-interpreter
+
+# https://github.com/vmg/redcarpet
+redcarpet:
+  extensions:
+    - no_intra_emphasis
+    - fenced_code_blocks
+    - autolink
+    - strikethrough
+    - tables
+    - smart
+    - with_toc_data
+#    - superscript
+
+# https://github.com/gettalong/kramdown
+# http://kramdown.gettalong.org/syntax.html
+kramdown:
+  input: GFM
 
 #pygments: true  # Renamed to 'highlighter' option.
 highlighter: pygments
