@@ -174,6 +174,43 @@ kbd {
     text-shadow: 0 1px 0 #fff;
 }
 
+blockquote {
+	padding: 1em 2em;
+	background: #EEE;
+	position: relative;
+	quotes: "“" "”" "‘" "’";
+	border-radius: 1em 0;
+}
+blockquote > :first-child {
+	margin-top: 0;
+}
+blockquote > :last-child {
+	margin-bottom: 0;
+}
+blockquote:before,
+blockquote:after {
+	display: block;
+	position: absolute;
+	font-family: "Droid Serif", "Times New Roman", serif;
+	font-size: 4em;
+	color: #AAA;
+}
+/* Better solution: use multiple background-images. */
+blockquote:before {
+	content: "“";
+	content: open-quote;
+	top: 0;
+	left: 0;
+	line-height: 1.0;
+}
+blockquote:after {
+	content: "”";
+	content: close-quote;
+	bottom: 0;
+	right: 0;
+	line-height: 0.25;
+}
+
 a[href^="http://web.archive.org/web/"],
 a[href^="https://web.archive.org/web/"] {
 	/* font-size: 0.75em; */
