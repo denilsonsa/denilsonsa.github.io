@@ -9,10 +9,6 @@ tag:
 - Rio de Janeiro
 ---
 
-{% comment %}
-_This is a Portuguese post, more interesting (maybe only interesting) to people living in Brazil, specially in Rio de Janeiro._
-{% endcomment %}
-
 Se você mora no Rio, pode pular este parágrafo. Se você não mora, gastarei algumas linhas explicando o contexto. Aqui, há centenas ou milhares de [Kombis](https://pt.wikipedia.org/wiki/Volkswagen_Kombi) e vans fazendo transporte "alternativo". Muitas delas fazem linhas parecidas (ou iguais) às linhas de ônibus. Outras, no entanto, fazem itinerários que nenhum outro ônibus faz. Na maior parte das vezes, a tarifa de kombis e vans é mais barata e o tempo de viagem é menor (por diversos motivos, entre eles cortar caminho para evitar congestionamentos). Apesar de quatro pessoas num banco de Kombi ser um pouco apertado, ainda é mais confortável do que ônibus lotado, ou ônibus com bancos tão próximos que não cabem sua perna (caso você seja alto).
 
 Meu objetivo neste "post" não é defender ou atacar as Kombis, nem apontar seus defeitos ou vantagens. Meu objetivo é abordar as diversas características que tenho observado que me fazem concluir que as Kombis são open-source.

@@ -58,8 +58,6 @@ This is completely wrong, in my opinion. Following the way `nvidia` behaves, the
 
 Read the following two excerpts from [Appendix Y](http://download.nvidia.com/XFree86/Linux-x86/1.0-8178/README/appendix-y.html):
 
-{% comment %} https://stackoverflow.com/questions/3358056/multiple-blockquotes-in-a-row-using-markdown-syntax {% endcomment%}
-
 > If the display device provides an EDID, and the EDID contains information about the physical size of the display device, that is used to compute the DPI. _[…]_
 
 > Note that the physical size of the X screen, as reported through `xdpyinfo` is computed based on the DPI and the size of the X screen in pixels.

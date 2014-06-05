@@ -10,8 +10,6 @@ tag:
 A Metrorio e a Supervia, empresas responsáveis pelo transporte metroviário e ferroviário do Rio de Janeiro, anunciaram o lançamento de seus produtos que rodam sobre a plataforma Rails.
 
 
-{% comment %} _This is a Portuguese post, more interesting to people living in Brazil. Maybe one day I translate this to English. Maybe not..._ {% endcomment %}
-
 Ambos os produtos possuem objetivos similares, mas se comportam de formas um pouco diferentes. A Supervia afirma que seu produto é capaz de atender uma faixa maior de usuários: "Nosso sistema está pronto para operar mesmo com grandes tempos de latência provocados por grandes distâncias. Isto significa que podemos atender a usuários que normalmente são excluídos pelas demais empresas."
 
 A Metrorio não nega as afirmações da Supervia, mas ressalta as vantagens de seu produto: "Nosso objetivo é fornecer um serviço mais rápido e seguro para nosso clientes, que normalmente precisam de tempos de resposta menores para curtas distâncias. Nosso conhecimento mais profundo permite aplicar a plataforma Rails em camadas mais baixas, diminuindo a latência e aumentando o desempenho geral do sistema."
