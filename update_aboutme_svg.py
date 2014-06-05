@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#
+# Reads from stdin, writes to stdout.
 
 import math
 import re
