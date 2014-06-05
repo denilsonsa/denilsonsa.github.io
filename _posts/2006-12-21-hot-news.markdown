@@ -6,28 +6,26 @@ tags:
 - Rio de Janeiro
 ---
 
-<!-- more -->
-
 <figure class="floatright">
-<img src="{{ site.url }}/blog/images/thermometer_2006-12-20_20-27.jpg" alt="Thermometer showing 33°C">
+<img src="{{ site.url }}/blog/images/thermometer_2006-12-20_20-27.jpg" alt="Thermometer showing 33 ℃">
 </figure>
 
 This post talks about some really <span style="color: red;">hot</span> news.
 
 As you might already know, I live in Rio de Janeiro, a tropical city globally known for its beaches, its tourist spots, and its hotness.
 
-Last days were really hot. On December 19th, at 22:21, it was 32° C inside my bedroom! On December 20th, at 20:27, it was even hotter: 33° C. Outside, during the day, some street thermometers showed more than 40° C.
+Last days were really hot. On December 19th, at 22:21, it was 32 ℃ inside my bedroom! On December 20th, at 20:27, it was even hotter: 33 ℃. Outside, during the day, some street thermometers showed more than 40 ℃.
 
 
 Ok, all this is hot, but we all here are used to these temperatures. However, these days I was concerned about how hot were the hard drives in my computer. Since one of these drives is about one month and half old, and my computer never shuts down, I want to keep them cool.
 
 On December 19th, at 22:08, just after I opened the computer case, my X.org froze. Very strange. It looked a lot similar to those crashes I've described a lot of times in this blog. But this was the first time in months this happened. I guess the reason was not software issue, but hardware issue. I guess the computer was too hot, and the video card threw some exception.
 
-I could kill X and get back a terminal using SAK (Alt+SysRq+K). Read _/usr/src/linux/Documentation/SAK.txt_ and _/usr/src/linux/Documentation/sysrq.txt_ for more info. At _/var/log/messages_, I found this:
+I could kill X and get back a terminal using SAK (<kbd>Alt+SysRq+K</kbd>). Read `/usr/src/linux/Documentation/SAK.txt` and `/usr/src/linux/Documentation/sysrq.txt` for more info. At `/var/log/messages`, I found this:
 
     Dec 19 22:08:43 NOVO NVRM: Xid (0001:00): 8, Channel 00000000
 
-Getting back to hard drive temperatures... I always hated the way my two hard drives were attached into my computer case. Let's get a look at how it looks now:
+Getting back to hard drive temperatures… I always hated the way my two hard drives were attached into my computer case. Let's get a look at how it looks now:
 
 <figure class="singleimage">
 <img src="{{ site.url }}/blog/images/pc_case_bays.jpg" alt="">
@@ -35,11 +33,11 @@ Getting back to hard drive temperatures... I always hated the way my two hard dr
 
 My computer case has three 5.25" bays and three 3.5" bays. In photo above you can see the three 3.25" bays and one 5.25" bay. As you can notice, although it has three 3.25" bays, it can only hold two hard disks (in bays A and B), and they must be into adjacent bays, with little space between them. Until last week, my two hard disks were into bays A and B.
 
-I was monitoring the temperature of one of those hard disks for some time. The other one (the newer one) I only started to monitor this week. It was around 43° C and 44° C. However, in last two days, it was rising to at most 48° C. All of this with computer case closed. And now I know this was the temperature from the **cooler** hard drive.
+I was monitoring the temperature of one of those hard disks for some time. The other one (the newer one) I only started to monitor this week. It was around 43 ℃ and 44 ℃. However, in last two days, it was rising to at most 48 ℃. All of this with computer case closed. And now I know this was the temperature from the **cooler** hard drive.
 
-Then I shut down the computer (breaking an uptime of 33 days an 17 minutes) and installed a hard drive cooler I've just bought. It fits to a 5.25" bay, and comes with adapter to put the hard drive there. The photo above shows how my computer is after this. One hard drive (the newer one) is at bay D, with a front cooler. The older hard drive is at bay B, and bays A and C are empty. Where is my floppy drive? I removed it! I use it so rarely that I won't miss it.
+Then I shut down the computer (breaking an uptime of 33 days an 17 minutes) and installed a hard drive cooler I had just bought. It fits to a 5.25" bay and comes with an adapter to put the hard drive there. The photo above shows how my computer is after this. One hard drive (the newer one) is at bay D, with a front cooler. The older hard drive is at bay B, and bays A and C are empty. Where is my floppy drive? I removed it! I use it so rarely that I won't miss it.
 
-Unfortunately, no screw could fit into the adapter that came with that cooler. The smaller screw was so loose that I could remove it without even rotating it. The bigger screw was so tight that could not enter in that hole. Fortunately, I also had bought another adapter separately, and the screws fitted nicely on it.
+Unfortunately, no screw could fit into the adapter that came with that cooler. The smaller screw was so loose that I could remove it without even rotating it. The bigger screw was so tight that could not enter in that hole. Fortunately, I also had bought another adapter separately, and the screws fitted nicely on that one.
 
 <figure class="singleimage">
 <img src="{{ site.url }}/blog/images/hard_drive_adapter_screws.jpg" alt="">
@@ -51,15 +49,15 @@ Since I've shut down the system and opened the case, I've also installed a PCI U
 <img src="{{ site.url }}/blog/images/frontal_usb.jpg" alt="">
 </figure>
 
-Now I think I don't need to worry too much. With my both hard drives very separated (with enough space to dissipate the heat) and with this new frontal hard drive cooler, they are much less hot now. The one I was monitoring for some time is now around 38° C to 40° C, and the "new" one is around 41° C. Unfortunately, this new cooler is not very silent.
+Now I think I don't need to worry too much. With my both hard drives very separated (with enough space to dissipate the heat) and with this new frontal hard drive cooler, they are much less hot now. The one I was monitoring for some time is now around 38 ℃ to 40 ℃, and the "new" one is around 41 ℃. Unfortunately, this new cooler is not very silent.
 
 I connected a USB cable extension into one of internal USB ports, and now I have one frontal USB 2.0 port! (plus 4 USB 1.0 and 4 USB 2.0 at back)
 
 ## Links
 
-  * <http://www.seagate.com/support/kb/disc/faq/temperature.html> - Seagate says the hard drives should operate between 5° C and 50° C (for newer drives the upper limit has increased to 60° C).
-  * <http://www.akasa.com.tw/akasa_english/spec_page/system_coolers/spec_ak_hdf_w.htm> - The Akasa cooler I bought.
-  * <http://www.lmcomputers.com.br/produtos_descricao.asp?codigo_produto=107> - The hard drive adapter I bought.
-  * <http://www.guzu.net/linux/hddtemp.php> - Daemon to read temperature information from drive.
-  * <http://hules.free.fr/wmhdplop/> - Little and nice program to show hard drive activity and hard drive temperature.
-  * <http://tavmjong.free.fr/INKSCAPE/MANUAL/html/XML-Examples.html> - How to change color of arrow, in [inkscape](http://www.inkscape.org/).
+* [What is the normal operating temperature for Seagate disc drives?](http://www.seagate.com/support/kb/disc/faq/temperature.html) ([Wayback Machine](http://web.archive.org/web/20061116154645/http://www.seagate.com/support/kb/disc/faq/temperature.html)) - Seagate says the hard drives should operate between 5 ℃ and 50 ℃ (for newer drives the upper limit has increased to 60 ℃).
+* [AK-HDF-W Hard Drive Cooler](http://www.akasa.com.tw/akasa_english/spec_page/system_coolers/spec_ak_hdf_w.htm) ([Wayback Machine](http://web.archive.org/web/20061207012727/http://www.akasa.com.tw/akasa_english/spec_page/system_coolers/spec_ak_hdf_w.htm)) - The Akasa cooler I bought.
+* [Adaptador de 5 1/4" para HDD](http://www.lmcomputers.com.br/produtos_descricao.asp?codigo_produto=107) - The hard drive adapter I bought.
+* [hddtemp](http://www.guzu.net/linux/hddtemp.php) - Daemon to read temperature information from drive.
+* [wmhdplop](http://hules.free.fr/wmhdplop/) - Little and nice program to show hard drive activity and hard drive temperature.
+* [Adding color to a marker arrow](http://tavmjong.free.fr/INKSCAPE/MANUAL/html/XML-Examples.html) ([Wayback Machine](http://web.archive.org/web/20070104023955/http://tavmjong.free.fr/INKSCAPE/MANUAL/html/XML-Examples.html)) - How to change color of arrow, in [inkscape](http://www.inkscape.org/).

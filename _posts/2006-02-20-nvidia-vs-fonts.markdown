@@ -60,6 +60,8 @@ Read the following two excerpts from [Appendix Y](http://download.nvidia.com/XFr
 
 > If the display device provides an EDID, and the EDID contains information about the physical size of the display device, that is used to compute the DPI. _[…]_
 
+<!-- Inserting a comment here to force blockquote break. -->
+
 > Note that the physical size of the X screen, as reported through `xdpyinfo` is computed based on the DPI and the size of the X screen in pixels.
 
 As I can understand, `nvidia` driver gets the physical size from monitor, uses it to calculate DPI, then use DPI and screen resolution to calculate the physical size. I can't understand why nVidia chose to do it. Makes no sense for me.
