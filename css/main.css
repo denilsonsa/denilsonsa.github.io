@@ -159,7 +159,21 @@ a:visited { color: #a0a; }
 
 /* TODO: check the margins. If a <pre> is followed by <h2>, it currently has no margins, which looks bad. See 2005-12-13-the-failed-gentoo-linux-nvidia-guide */
 
+a[href^="http://web.archive.org/web/"],
+a[href^="https://web.archive.org/web/"] {
+	/* font-size: 0.75em; */
+	text-decoration: none;
+	width: 0;
+	padding-left: 1em;
+	height: 1em;
+	overflow: hidden;
+	display: inline-block;
+	background: center center no-repeat url(/icons/InternetArchive.svg);
+	background-size: contain;
+}
+
 /* Also try using display: inline-flex; or using percentages as height. */
+/* Alternative implementations: http://codepen.io/denilsonsa/pen/Etrba?editors=110 */
 .date-as-calendar {
 	position: relative;
 	font-variant: normal;

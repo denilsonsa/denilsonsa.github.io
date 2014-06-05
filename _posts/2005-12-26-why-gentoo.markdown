@@ -10,8 +10,8 @@ tags:
 
 Today I found some pages about Gentoo, and about the arguments people use to explain why to use Gentoo:
 
-* [GENTOO is Rice](http://www.funroll-loops.org/)
-* [Mandrake Expatriate Syndrome](http://greenfly.org/mes.html)
+* [GENTOO is Rice](http://www.funroll-loops.org/) ([Wayback Machine](http://web.archive.org/web/20051226113905/http://funroll-loops.org/))
+* [Mandrake Expatriate Syndrome](http://greenfly.org/mes.html) ([Wayback Machine](http://web.archive.org/web/20051225044345/http://greenfly.org/mes.html))
 * [Gentoo forum thread about www.funroll-loops.org](http://forums.gentoo.org/viewtopic-t-181330.html)
 
 So, I stopped for a while and asked to myself: Why do I use Gentoo?
