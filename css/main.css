@@ -167,9 +167,24 @@ a:visited { color: #a0a; }
 
 figure {
 	text-align: center;
+	margin: 1em 0;
 }
+figure.floatright img,
 figure.singleimage img {
 	max-width: 100%;
+}
+figure.floatright {
+	float: right;
+	clear: right;
+	margin: 0 0 1ex 1em;
+}
+
+@media (max-width: 500px) {
+	figure.floatright {
+		float: none;
+		clear: none;
+		margin: 1em 0;
+	}
 }
 
 kbd {
