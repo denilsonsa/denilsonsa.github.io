@@ -68,6 +68,7 @@ exclude:
 
 gems:
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 # Further configuration:
 # https://help.github.com/articles/redirects-on-github-pages
