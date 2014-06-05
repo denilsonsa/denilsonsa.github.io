@@ -1,6 +1,7 @@
 ---
 layout: post
 title: nVidia versus fonts!
+lang: en
 tag:
 - Gentoo
 - Linux

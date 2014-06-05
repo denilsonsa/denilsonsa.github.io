@@ -1,6 +1,7 @@
 ---
 layout: post
 title: nVidia, one more try
+lang: en
 tag:
 - Gentoo
 - Linux
