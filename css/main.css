@@ -21,11 +21,16 @@ body {
   text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
+h1 { font-size: 2.0em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.0em; }
+h4 { font-size: 1.0em; }
+h5 { font-size: 1.0em; }
+h6 { font-size: 1.0em; }
 
-h1 { margin-bottom: 1em; }
-p { margin: 1em 0; }
+h1, h2, h3, h4, h5, h6, p, blockquote { margin: 1em 0; }
+h1, h2, h3, h4, h5, h6 { line-height: normal; }
+h1 { margin-top: 0; margin-bottom: 0; }
 
 a         { color: #00a; }
 a:hover   { color: #000; }
@@ -62,7 +67,7 @@ a:visited { color: #a0a; }
   text-align: justify;
   max-width: 42em;
   margin: 1em auto 1em;
-  line-height: 1.5em;
+  line-height: 1.5;
 }
 
 .header a {
@@ -72,6 +77,7 @@ a:visited { color: #a0a; }
 
 .title {
   display: inline-block;
+  margin: 0;
 }
 
 .title a {
@@ -158,6 +164,10 @@ a:visited { color: #a0a; }
 }
 
 /* TODO: check the margins. If a <pre> is followed by <h2>, it currently has no margins, which looks bad. See 2005-12-13-the-failed-gentoo-linux-nvidia-guide */
+
+figure.singleimage img {
+	width: 100%;
+}
 
 kbd {
 	/* Inspired by https://meta.superuser.com/questions/4788/css-for-the-new-kbd-style */
