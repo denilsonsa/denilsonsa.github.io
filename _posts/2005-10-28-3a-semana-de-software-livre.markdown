@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 3ª Semana de Software Livre
-lang: pt-br
+lang: pt-BR
 tags:
 - fun
 - Java

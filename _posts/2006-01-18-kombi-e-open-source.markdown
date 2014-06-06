@@ -2,7 +2,7 @@
 layout: post
 title: Kombi é open-source
 excerpt: "Meu objetivo neste post não é defender ou atacar as Kombis, nem apontar seus defeitos ou vantagens. Meu objetivo é abordar as diversas características que tenho observado que me fazem concluir que as Kombis são open-source."
-lang: pt-br
+lang: pt-BR
 tag:
 - fun
 - Open Source
