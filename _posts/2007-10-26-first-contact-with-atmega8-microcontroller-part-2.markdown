@@ -16,9 +16,11 @@ In this second part, I'm going to build an AVR programmer to be connected to the
 
 <!-- more -->Go to: [part 1](http://my.opera.com/CrazyTerabyte/blog/2007/10/25/first-contact-with-atmega8-microcontroller-part-1), **part 2**, [part 2.1](http://my.opera.com/CrazyTerabyte/blog/2011/08/10/first-contact-with-atmega8-microcontroller-part-2-1) ([video](http://www.youtube.com/watch?v=sr0B-5Bhxdg)), [part 3](http://my.opera.com/CrazyTerabyte/blog/2007/11/02/first-contact-with-atmega8-microcontroller-part-3), [part 4](http://my.opera.com/CrazyTerabyte/blog/2008/02/02/first-contact-with-atmega8-microcontroller-part-4) ([video](http://www.youtube.com/watch?v=V7ESjm2bG-A)).
 
+{% include first-contact-with-atmega8-navigation.html %}
+
 **What is an AVR ISP Programmer?**
 
-The [ATmega8](http://www.atmel.com/dyn/products/product_card.asp?part_id=2004) (as well as many other microcontrollers) has a feature called [ISP (In-System Programming)](http://en.wikipedia.org/wiki/In-System_Programming), which means they can be programmed while still connected to the final circuit. You do this by sending electric signals to the microcontroller, there is no need for UV light, like many chips from the last century. In other words, all this just means it is very easy to program the microcontroller.
+The [ATmega8][] (as well as many other microcontrollers) has a feature called [ISP (In-System Programming)](http://en.wikipedia.org/wiki/In-System_Programming), which means they can be programmed while still connected to the final circuit. You do this by sending electric signals to the microcontroller, there is no need for UV light, like many chips from the last century. In other words, all this just means it is very easy to program the microcontroller.
 
 By _programming the microncontroller_ I mean writing a new [firmware](http://en.wikipedia.org/wiki/Firmware) on it. And the firmware is the software you are going to write to be run inside the microcontroller.
 
@@ -158,3 +160,5 @@ I've read at [a page with instructions about USBasp](http://www.scienceprog.com/
 
 
 Go to: [part 1](http://my.opera.com/CrazyTerabyte/blog/2007/10/25/first-contact-with-atmega8-microcontroller-part-1), **part 2**, [part 2.1](http://my.opera.com/CrazyTerabyte/blog/2011/08/10/first-contact-with-atmega8-microcontroller-part-2-1) ([video](http://www.youtube.com/watch?v=sr0B-5Bhxdg)), [part 3](http://my.opera.com/CrazyTerabyte/blog/2007/11/02/first-contact-with-atmega8-microcontroller-part-3), [part 4](http://my.opera.com/CrazyTerabyte/blog/2008/02/02/first-contact-with-atmega8-microcontroller-part-4) ([video](http://www.youtube.com/watch?v=V7ESjm2bG-A)).
+
+[ATmega8]: http://www.atmel.com/dyn/products/product_card.asp?part_id=2004

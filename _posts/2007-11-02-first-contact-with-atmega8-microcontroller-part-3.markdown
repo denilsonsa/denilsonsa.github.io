@@ -18,7 +18,7 @@ Now, I'm going to leave the hardware parts alone and start working with the soft
 
 <!-- more -->Go to: [part 1](http://my.opera.com/CrazyTerabyte/blog/2007/10/25/first-contact-with-atmega8-microcontroller-part-1), [part 2](http://my.opera.com/CrazyTerabyte/blog/2007/10/26/first-contact-with-atmega8-microcontroller-part-2), [part 2.1](http://my.opera.com/CrazyTerabyte/blog/2011/08/10/first-contact-with-atmega8-microcontroller-part-2-1) ([video](http://www.youtube.com/watch?v=sr0B-5Bhxdg)), **part 3**, [part 4](http://my.opera.com/CrazyTerabyte/blog/2008/02/02/first-contact-with-atmega8-microcontroller-part-4) ([video](http://www.youtube.com/watch?v=V7ESjm2bG-A)).
 
-For this part I'm going to write a "[Hello, world](http://en.wikipedia.org/wiki/Hello_world_program)" software for the [ATmega8](http://www.atmel.com/dyn/products/product_card.asp?part_id=2004) [microcontroller](http://en.wikipedia.org/wiki/Microcontroller), which will make 4 [LEDs](http://en.wikipedia.org/wiki/Light-emitting_diode) blink.
+For this part I'm going to write a "[Hello, world](http://en.wikipedia.org/wiki/Hello_world_program)" software for the [ATmega8][] [microcontroller][], which will make 4 [LEDs](http://en.wikipedia.org/wiki/Light-emitting_diode) blink.
 
 I'm going to write it in three different ways. I've choosen to do so in order to learn more and because I might need one or more of these in future. _**Update 2008-02-05:** I found a fourth way and I'm going to describe it too._
 
@@ -455,7 +455,10 @@ This archive contains:
   * [Electrons - AVR-GCC Programming Guide](http://electrons.psychogenic.com/modules/arms/art/3/AVRGCCProgrammingGuide.php)
   * [Atmel's AVR Assembler User Guide](http://www.atmel.com/atmel/acrobat/doc1022.pdf) - Describes the Atmel's assembler. Very useful to know what assembler directives you may use with [tavrasm](http://www.tavrasm.org/).
   * [Atmel 8-bit AVR Instruction Set](http://www.atmel.com/atmel/acrobat/doc0856.pdf) - The complete and detailed list of all assembly instructions for AVR microcontrollers.
-  * [Atmel's ATmega8 datasheet](http://www.atmel.com/atmel/acrobat/doc2486.pdf) - Full description of [ATmega8](http://www.atmel.com/dyn/products/product_card.asp?part_id=2004).
+  * [Atmel's ATmega8 datasheet](http://www.atmel.com/atmel/acrobat/doc2486.pdf) - Full description of [ATmega8][].
 
 
 Go to: [part 1](http://my.opera.com/CrazyTerabyte/blog/2007/10/25/first-contact-with-atmega8-microcontroller-part-1), [part 2](http://my.opera.com/CrazyTerabyte/blog/2007/10/26/first-contact-with-atmega8-microcontroller-part-2), [part 2.1](http://my.opera.com/CrazyTerabyte/blog/2011/08/10/first-contact-with-atmega8-microcontroller-part-2-1) ([video](http://www.youtube.com/watch?v=sr0B-5Bhxdg)), **part 3**, [part 4](http://my.opera.com/CrazyTerabyte/blog/2008/02/02/first-contact-with-atmega8-microcontroller-part-4) ([video](http://www.youtube.com/watch?v=V7ESjm2bG-A)).
+
+[ATmega8]: http://www.atmel.com/dyn/products/product_card.asp?part_id=2004
+[microcontroller]: http://en.wikipedia.org/wiki/Microcontroller

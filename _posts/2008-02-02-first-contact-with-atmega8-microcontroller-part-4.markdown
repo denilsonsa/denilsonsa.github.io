@@ -13,7 +13,7 @@ tag:
 - microcontroller
 ---
 
-In this fourth part, I'm going to finally mount a circuit using the [ATmega8](http://www.atmel.com/dyn/products/product_card.asp?part_id=2004) [microcontroller](http://en.wikipedia.org/wiki/Microcontroller) and program it with the [firmware](http://en.wikipedia.org/wiki/Firmware) we wrote. ...
+In this fourth part, I'm going to finally mount a circuit using the [ATmega8][] [microcontroller][] and program it with the [firmware](http://en.wikipedia.org/wiki/Firmware) we wrote. ...
 
 <!-- more -->Go to: [part 1](http://my.opera.com/CrazyTerabyte/blog/2007/10/25/first-contact-with-atmega8-microcontroller-part-1), [part 2](http://my.opera.com/CrazyTerabyte/blog/2007/10/26/first-contact-with-atmega8-microcontroller-part-2), [part 2.1](http://my.opera.com/CrazyTerabyte/blog/2011/08/10/first-contact-with-atmega8-microcontroller-part-2-1) ([video](http://www.youtube.com/watch?v=sr0B-5Bhxdg)), [part 3](http://my.opera.com/CrazyTerabyte/blog/2007/11/02/first-contact-with-atmega8-microcontroller-part-3), **part 4** ([video](http://www.youtube.com/watch?v=V7ESjm2bG-A)).
 
@@ -29,7 +29,7 @@ ATmega8 has three multi-bit multipurpose I/O ports: PORTB with 8 bits, PORTC wit
 
 While we can choose to use any one of the available functions of each pin, there is one special pin that I think should not be messed with: the RESET pin. While we can use it as PC6 (bit 6 of PORTC), doing so will require disabling the reset line, which means that we won't be able to use serial programming anymore, which means that [ISP (In-System Programming)](http://en.wikipedia.org/wiki/In-System_Programming) won't be possible, which means that our simple and cheap AVR ISP programmer we built on [part 2](http://my.opera.com/CrazyTerabyte/blog/2007/10/26/first-contact-with-atmega8-microcontroller-part-2) won't work, which means that parallel programming must be used instead, which requires much more wires and components, which adds a lot of complexity... Well, all of this just because we wanted to have 1 more I/O bit. Is it worthy? I don't think so.
 
-Of course, you can read all the gory details about [ATmega8](http://www.atmel.com/dyn/products/product_card.asp?part_id=2004) at its [datasheet](http://www.atmel.com/dyn/resources/prod_documents/doc2486.pdf).
+Of course, you can read all the gory details about [ATmega8][] at its [datasheet](http://www.atmel.com/dyn/resources/prod_documents/doc2486.pdf).
 
 **Our circuit**
 
@@ -103,7 +103,7 @@ The [AVR microcontrollers](http://en.wikipedia.org/wiki/Atmel_AVR) have [three t
   * A relatively small, but fast and volatile **[SRAM](http://en.wikipedia.org/wiki/Static_random_access_memory)** (1KiB, in ATmega8). Since this is volatile, it is not possible to access it or write to it using **avrdude** (and it doesn't make sense, anyway).
   * A relatively small and non-volatile **[EEPROM](http://en.wikipedia.org/wiki/EEPROM)** (512 bytes, in ATmega8). Single bytes can be read or written, making it perfect for storing small portions of data that must be preserved even when power is off.
 
-In addition to them, there are some special programmable bytes (this information might be inaccurate for devices other than [ATmega8](http://www.atmel.com/dyn/products/product_card.asp?part_id=2004), please check the datasheet for your device):
+In addition to them, there are some special programmable bytes (this information might be inaccurate for devices other than [ATmega8][], please check the datasheet for your device):
 
 
 
@@ -142,7 +142,7 @@ When programming the microcontroller, make sure the fuse bits select the desired
 
 However, if the fuse bits select an external clock source, you must add this clock source to your circuit (e.g. add a [crystal](http://en.wikipedia.org/wiki/Crystal_oscillator) and two capacitors) before being able to even program the microcontroller (like shown at page 237 from [ATmega8 datasheet](http://www.atmel.com/dyn/resources/prod_documents/doc2486.pdf)).
 
-Calculating the fuse bits can be a bit boring, so fortunately someone else has made an [AVR Fuse Calculator](http://palmavr.sourceforge.net/cgi-bin/fc.cgi?P_PREV=&P=ATmega8). You might find it handy. Note, however, that the default fuse bit values for [ATmega8](http://www.atmel.com/dyn/products/product_card.asp?part_id=2004) in that page are incorrect. As described at pages 223 and 224 of [ATmega8 datasheet](http://www.atmel.com/dyn/resources/prod_documents/doc2486.pdf), the default values are actually **0xD9** for the fuse high byte and **0xE1** for the fuse low byte.
+Calculating the fuse bits can be a bit boring, so fortunately someone else has made an [AVR Fuse Calculator](http://palmavr.sourceforge.net/cgi-bin/fc.cgi?P_PREV=&P=ATmega8). You might find it handy. Note, however, that the default fuse bit values for [ATmega8][] in that page are incorrect. As described at pages 223 and 224 of [ATmega8 datasheet](http://www.atmel.com/dyn/resources/prod_documents/doc2486.pdf), the default values are actually **0xD9** for the fuse high byte and **0xE1** for the fuse low byte.
 
 **Programming the microcontroller**
 
@@ -211,10 +211,13 @@ I've uploaded a simple **[video of this experiment at YouTube](http://www.youtub
 
 This is the last part of this series. I think I've successfully documented everything I learnt from this experiment. I hope these posts will be useful for other people, like they will be useful for me in future, whenever I forget one detail or another.
 
-I plan to make at least a few more projects using [ATmega8](http://www.atmel.com/dyn/products/product_card.asp?part_id=2004), and maybe some others using other microcontrollers. I'm going to post them here if I feel they are worthy enough.
+I plan to make at least a few more projects using [ATmega8][], and maybe some others using other microcontrollers. I'm going to post them here if I feel they are worthy enough.
 
 Thanks for reading, see you next time!
 
 **Update at 2011-08-10:** I've added [part 2.1](http://my.opera.com/CrazyTerabyte/blog/2011/08/10/first-contact-with-atmega8-microcontroller-part-2-1) (and a [video](http://www.youtube.com/watch?v=sr0B-5Bhxdg)) that uses a USB programmer, instead of the parallel port programmer that I've originally used. I haven't updated the instructions above on how to use _avrdude_, but I guess you can figure it out. :)
 
 Go to: [part 1](http://my.opera.com/CrazyTerabyte/blog/2007/10/25/first-contact-with-atmega8-microcontroller-part-1), [part 2](http://my.opera.com/CrazyTerabyte/blog/2007/10/26/first-contact-with-atmega8-microcontroller-part-2), [part 2.1](http://my.opera.com/CrazyTerabyte/blog/2011/08/10/first-contact-with-atmega8-microcontroller-part-2-1) ([video](http://www.youtube.com/watch?v=sr0B-5Bhxdg)), [part 3](http://my.opera.com/CrazyTerabyte/blog/2007/11/02/first-contact-with-atmega8-microcontroller-part-3), **part 4** ([video](http://www.youtube.com/watch?v=V7ESjm2bG-A)).
+
+[ATmega8]: http://www.atmel.com/dyn/products/product_card.asp?part_id=2004
+[microcontroller]: http://en.wikipedia.org/wiki/Microcontroller
