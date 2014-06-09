@@ -71,7 +71,7 @@ ___
 
 ## kramdown
 
-* Support `{#id}` syntax.
+* Supports `{#id}` syntax.
 * Adds IDs to the headers.
 * Keeps two single quotes separate.
 * Converts quotes into angled quotes.
