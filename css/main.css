@@ -276,7 +276,7 @@ a[href^="https://web.archive.org/web/"] {
 	font-weight: normal;
 	font-family: "Helvetica", "Arial", sans-serif;
 
-	display: inline-block;
+	display: block;
 	width: 64px;
 	height: 64px;
 
@@ -327,4 +327,11 @@ a[href^="https://web.archive.org/web/"] {
 .date-as-calendar .year {
 	top: 50px;
 	font-size: 14px;
+}
+@media (max-width: 192px) {
+	.date-as-calendar {
+		float: none;
+		clear: none;
+		margin: 1ex auto;
+	}
 }
