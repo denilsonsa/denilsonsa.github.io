@@ -173,9 +173,11 @@ figure.floatright {
 	float: right;
 	clear: right;
 	margin: 0 0 1ex 1em;
+	max-width: 50%;
 }
 
-@media (max-width: 500px) {
+/* 21em is half of 42em .site max-width */
+@media (max-width: 21em) {
 	figure.floatright {
 		float: none;
 		clear: none;
