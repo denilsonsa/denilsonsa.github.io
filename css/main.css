@@ -191,6 +191,9 @@ pre {
 code {
 	font-size: 0.9em;
 }
+pre, code {
+	font-family: "Source Code Pro", "Inconsolata", monospace;
+}
 
 kbd {
 	/* Inspired by https://meta.superuser.com/questions/4788/css-for-the-new-kbd-style */
