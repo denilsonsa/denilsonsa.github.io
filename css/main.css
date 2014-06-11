@@ -222,21 +222,31 @@ blockquote:after {
 	font-family: "Droid Serif", "Times New Roman", serif;
 	font-size: 4em;
 	color: #AAA;
+	width: auto;
+	margin: 0;
+	padding: 0;
 }
-/* Better solution: use multiple background-images. */
 blockquote:before {
 	content: "“";
 	content: open-quote;
 	top: 0;
-	left: 0;
 	line-height: 1.0;
+	right: 100%;
+	/* 2em of blockquote padding, converted to 4em font-size, equals to 0.5em */
+	margin-right: -0.5em;
+	padding-right: 1px;
+	text-align: right;
 }
 blockquote:after {
 	content: "”";
 	content: close-quote;
 	bottom: 0;
-	right: 0;
 	line-height: 0.25;
+	left: 100%;
+	/* 2em of blockquote padding, converted to 4em font-size, equals to 0.5em */
+	margin-left: -0.5em;
+	padding-left: 1px;
+	text-align: left;
 }
 
 a[href^="http://web.archive.org/web/"],
