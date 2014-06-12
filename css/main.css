@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif|Source+Code+Pro|Oswald);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic|Droid+Serif:400,700,400italic,700italic|Source+Code+Pro:400,700|Oswald);
 
 /*****************************************************************************/
 /*
@@ -15,7 +15,7 @@
 html, body {
   background-color: #FFF;
   color: black;
-  font: 14px "Droid Sans", Helvetica, Arial, sans-serif;
+  font: 14px "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
 h1 { font-size: 2.0em; }
