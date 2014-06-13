@@ -94,7 +94,7 @@ For the final version of any project, consider either making a [PCB][] or using 
 ### Software
 
 * A compiler: [avr-gcc][avr-libc] or [tavrasm][] ([Wayback Machine](http://web.archive.org/web/20070929162857/http://www.tavrasm.org/))
-* A programmer: [avrdude][] or [uisp](http://www.nongnu.org/uisp/) ([Wayback Machine](http://web.archive.org/web/20071021021038/http://www.nongnu.org/uisp/)) (or maybe [PonyProg](http://www.lancos.com/prog.html) ([Wayback Machine](http://web.archive.org/web/20071026014723/http://www.lancos.com/prog.html)), but I haven't tried it)
+* A programmer: [avrdude][] or [uisp](http://www.nongnu.org/uisp/) ([Wayback Machine](http://web.archive.org/web/20071021021038/http://www.nongnu.org/uisp/)) (or maybe [PonyProg][] ([Wayback Machine](http://web.archive.org/web/20071026014723/http://www.lancos.com/prog.html)), but I haven't tried it)
 * `ppdev` Linux kernel module (_Device Drivers → Character devices → Support for user-space parallel port device drivers_) (_**Update at 2011-08-10:** This is not needed if you don't use a parallel port programmer._)
 * [giveio](http://web.mit.edu/6.115/www/pic.shtml) ([Wayback Machine](http://web.archive.org/web/20071031044855/http://web.mit.edu/6.115/www/pic.shtml)) ([direct download](http://web.mit.edu/6.115/www/miscfiles/giveio.zip)) (only for Windows, I don't know how this works nor how to install it)
 
@@ -115,8 +115,8 @@ _**Update at 2011-08-10:** This shopping list was meant for building a parallel 
 * R$ 1.00 - 1 × 28-pin socket
 * R$ 4.00 - 1 × USB-B connector
 * R$ 4.50 - 1 × DB-25 male connector (plus case)
-* R$ 0.20 - 1 × 220 ohms resistor
-* R$ 0.60 - 3 × 330 ohms resistors
+* R$ 0.20 - 1 × 220 Ω resistor
+* R$ 0.60 - 3 × 330 Ω resistors
 * R$ 2.00 - about 1 meter of cable (with 5-wires or more)
 * R$ 1.50 - a pair of male/female connectors with 5 pins or more
 * **R$ 23.70 - Subtotal (US$ 13.30)**
@@ -135,7 +135,7 @@ The [ATmega16][] was priced at R$ 24.90, which is a bit more than the total cost
 
 ## Overall plan of this project
 
-Since I wanted to learn how to use the ATmega8, I wanted to make a simple [“Hello, world”](http://en.wikipedia.org/wiki/Hello_world_program) program and put it on the microcontroller. Well, my microcontroller does not have a terminal, a screen or an LCD to print something, so the “Hello, world” is going to be just some blinking LEDs. Also I need something to write the program into the microcontroller, so I need to build such tool.
+Since I wanted to learn how to use ATmega8, I wanted to make a simple “[Hello, world](http://en.wikipedia.org/wiki/Hello_world_program)” program and put it on the microcontroller. Well, my microcontroller does not have a terminal, a screen or an LCD to print something, so the “Hello, world” is going to be just some blinking LEDs. Also I need something to write the program into the microcontroller, so I need to build such tool.
 
 So, these are the steps in this project:
 
@@ -158,14 +158,15 @@ See you at the [next part][part 2]!
 {% include first-contact-with-atmega8-navigation.html %}
 
 [Atmel]: http://www.atmel.com/
-[ATmega8]: http://www.atmel.com/dyn/products/product_card.asp?part_id=2004
-[ATmega16]: http://www.atmel.com/dyn/products/product_card.asp?part_id=2010
+[ATmega8]: http://www.atmel.com/devices/ATMEGA8.aspx
+[ATmega16]: http://www.atmel.com/devices/ATMEGA16.aspx
 [Arduino]: http://www.arduino.cc/
 [Cerne-Tec]: http://www.cerne-tec.com.br/
-[avrdude]: http://www.nongnu.org/avrdude/
 [avr-libc]: http://www.nongnu.org/avr-libc/
 [tavrasm]: http://www.tavrasm.org/
+[avrdude]: http://www.nongnu.org/avrdude/
 [uisp]: http://www.nongnu.org/uisp/
+[PonyProg]: http://www.lancos.com/prog.html
 [Atmel AVR]: http://en.wikipedia.org/wiki/Atmel_AVR
 [microcontroller]: http://en.wikipedia.org/wiki/Microcontroller
 [CPU]: http://en.wikipedia.org/wiki/CPU

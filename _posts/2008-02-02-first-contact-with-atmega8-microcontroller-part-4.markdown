@@ -55,7 +55,7 @@ The RESET, SCK, MISO and MOSI lines come from the ISP connector. Although my pro
 
 Well, I think I didn't really need to guide you step-by-step on how to mount this circuit on the [breadboard](http://en.wikipedia.org/wiki/Breadboard) (AKA protoboard), but I have some pictures I wanted to show. :) (this time, the photos were taken on a Sony DSC-S80 digital camera, with additional light by SonyEricsson K750i flashlight, and then I've applied _Layer -> Colors -> Auto -> White Balance_ on [Gimp](http://www.gimp.org/))
 
-The first step is to insert the 28-pin socket on the breadboard and then insert the ATmega8 on the socket. Also insert the ISP connector.
+The first step is to insert the 28-pin socket on the breadboard and then insert ATmega8 on the socket. Also insert the ISP connector.
 
 In the next picture, I've also connected the GND and VCC lines. As you can see from the above circuit diagram, three microcontroller pins are connected to VCC and two are connected to GND.
 
@@ -77,7 +77,7 @@ Finally, I've connected my ISP programmer to the connector on the breadboard. I'
 
 [![](http://files.myopera.com/CrazyTerabyte/atmega8/on_the_breadboard_4-lo.jpg)](http://files.myopera.com/CrazyTerabyte/atmega8/on_the_breadboard_4-hi.jpg)
 
-If you remember the [part 1](http://my.opera.com/CrazyTerabyte/blog/2007/10/25/first-contact-with-atmega8-microcontroller-part-1) you will notice I've listed an USB-B connector at the parts list. However, later I noticed this connector can't be used on a breadboard. Since I still want to get power from USB (and, later on, make the ATmega8 act as an USB device, but not in this post series), I bought the cheapest USB cable I could find (R$ 2.79, or US$ 1.57), ripped one of the ends and used the wires on the breadboard.
+If you remember the [part 1](http://my.opera.com/CrazyTerabyte/blog/2007/10/25/first-contact-with-atmega8-microcontroller-part-1) you will notice I've listed an USB-B connector at the parts list. However, later I noticed this connector can't be used on a breadboard. Since I still want to get power from USB (and, later on, make ATmega8 act as an USB device, but not in this post series), I bought the cheapest USB cable I could find (R$ 2.79, or US$ 1.57), ripped one of the ends and used the wires on the breadboard.
 
 [![](http://files.myopera.com/CrazyTerabyte/atmega8/usb-b-lo.jpg)](http://files.myopera.com/CrazyTerabyte/atmega8/usb-b-hi.jpg)
 
@@ -219,5 +219,5 @@ Thanks for reading, see you next time!
 
 Go to: [part 1](http://my.opera.com/CrazyTerabyte/blog/2007/10/25/first-contact-with-atmega8-microcontroller-part-1), [part 2](http://my.opera.com/CrazyTerabyte/blog/2007/10/26/first-contact-with-atmega8-microcontroller-part-2), [part 2.1](http://my.opera.com/CrazyTerabyte/blog/2011/08/10/first-contact-with-atmega8-microcontroller-part-2-1) ([video](http://www.youtube.com/watch?v=sr0B-5Bhxdg)), [part 3](http://my.opera.com/CrazyTerabyte/blog/2007/11/02/first-contact-with-atmega8-microcontroller-part-3), **part 4** ([video](http://www.youtube.com/watch?v=V7ESjm2bG-A)).
 
-[ATmega8]: http://www.atmel.com/dyn/products/product_card.asp?part_id=2004
+[ATmega8]: http://www.atmel.com/devices/ATMEGA8.aspx
 [microcontroller]: http://en.wikipedia.org/wiki/Microcontroller
