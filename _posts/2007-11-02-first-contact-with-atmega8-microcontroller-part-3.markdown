@@ -1,6 +1,7 @@
 ---
 layout: post
 title: First contact with ATmega8 microcontroller - part 3
+lang: en
 tag:
 - AVR
 - ATmega8
