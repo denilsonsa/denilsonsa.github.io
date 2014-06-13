@@ -107,23 +107,23 @@ From all possible dongles above (and below), you just have to choose one to buil
 I've choosen to build the `bsd` one. I got a flat cable with 14 wires, but since I needed only 6 (actually, only 5), I've split the cable. To make sure the wires wouldn't short-circuit inside the DB-25 case and to make everything inside the case less likely to break, I've applied an amount of [hot glue](http://en.wikipedia.org/wiki/Hot_glue) after I finished with the soldering. If you look at the photos, the dongle looks a bit messy and ugly, but since that hot-glued part will be hidden inside the DB-25 case, no problem!
 
 <figure class="singleimage">
-<img src="{{ site.url }}/blog/images/avr/DSC00476.jpg" alt="The inside of my parallel port programmer, showing 4 resistors soldered to the DB-25 connector and some hot glue.">
+<img src="{{ site.url }}/blog/images/avr/parallel-port-programmer-01.jpg" alt="The inside of my parallel port programmer, showing 4 resistors soldered to the DB-25 connector and some hot glue.">
 </figure>
 
 <figure class="singleimage">
-<img src="{{ site.url }}/blog/images/avr/DSC00477.jpg" alt="The inside of my parallel port programmer, showing a bulk of hot glue next to the DB-25 connector.">
+<img src="{{ site.url }}/blog/images/avr/parallel-port-programmer-02.jpg" alt="The inside of my parallel port programmer, showing a bulk of hot glue next to the DB-25 connector.">
 </figure>
 
 <figure class="singleimage">
-<img src="{{ site.url }}/blog/images/avr/DSC00478.jpg" alt="My parallel port programmer, showing the DB-25 connector (to the PC parallel port) and a non-standard 6-pin connector (to the microcontroller circuit).">
+<img src="{{ site.url }}/blog/images/avr/parallel-port-programmer-03.jpg" alt="My parallel port programmer, showing the DB-25 connector (to the PC parallel port) and a non-standard 6-pin connector (to the microcontroller circuit).">
 </figure>
 
 <figure class="singleimage">
-<img src="{{ site.url }}/blog/images/avr/DSC00485.jpg" alt="A picture of my finished parallel port programmer, with a black case around the DB-25 connector, hiding the the resistors and the hot glue blob. The flat cable has a black mark over the wire 1.">
+<img src="{{ site.url }}/blog/images/avr/parallel-port-programmer-04.jpg" alt="A picture of my finished parallel port programmer, with a black case around the DB-25 connector, hiding the the resistors and the hot glue blob. The flat cable has a black mark over the wire 1.">
 </figure>
 
 <figure class="singleimage">
-<img src="{{ site.url }}/blog/images/avr/DSC00486.jpg" alt="Another angle of the previous picture.">
+<img src="{{ site.url }}/blog/images/avr/parallel-port-programmer-05.jpg" alt="Another angle of the previous picture.">
 </figure>
 
 I've not used any standard AVR connector for this project, but I will, if I build another programmer. Things will be easier in future if you use the standard 6-pin plug (or the 10-pin, but I prefer the 6-pin one), just in case you happen to use another programmer with your project, or your programmer with another project.
@@ -141,7 +141,7 @@ I've not used any standard AVR connector for this project, but I will, if I buil
 Even though I have not used the standard connector, I kept the same wire order as the 6-pin one. Then, I tried to use the following pen to mark the wire 1 as black:
 
 <figure class="singleimage">
-<img src="{{ site.url }}/blog/images/avr/DSC00487.jpg" alt="Pen used to paint the wire 1 of the flat cable.">
+<img src="{{ site.url }}/blog/images/avr/marker-pen.jpg" alt="Pen used to paint the wire 1 of the flat cable.">
 </figure>
 
 Unfortunately, it was not a good choice, because the painted portion of that cable now leaves a black stain everywhere it touches.
