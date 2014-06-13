@@ -218,7 +218,8 @@ kbd {
 
 blockquote {
 	padding: 1em 2em;
-	background: #EEE;
+	background: #F7F7F7;
+	border: 1px solid #ddd;  /* Same border as <pre> */
 	position: relative;
 	quotes: "“" "”" "‘" "’";
 	border-radius: 1em 0;
@@ -235,7 +236,7 @@ blockquote:after {
 	position: absolute;
 	font-family: "Droid Serif", "Times New Roman", serif;
 	font-size: 4em;
-	color: #AAA;
+	color: #BBB;
 	width: auto;
 	margin: 0;
 	padding: 0;
