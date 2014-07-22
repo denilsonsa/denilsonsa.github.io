@@ -1,20 +1,22 @@
 ---
 items:
-  - [39.3, -101.5, curriculumvitae]
-  - [73.3, -80.4, linkedin]
-  - [97.4, -48.5, stackoverflowcareers]
-  - [108.4, -10.0, stackoverflow]
-  - [104.7, 29.8, bitbucket]
-  - [86.9, 65.6, github]
-  - [57.3, 92.5, codepen]
-  - [20.0, 107.0, userscripts]
-  - [-20.0, 107.0, stylish]
-  - [-57.3, 92.5, reddit]
-  - [-86.9, 65.6, youtube]
-  - [-104.7, 29.8, facebook]
-  - [-108.4, -10.0, twitter]
-  - [-97.4, -48.5, googleplus]
-  - [-73.3, -80.4, skype]
+  - blog
+  - curriculumvitae
+  - linkedin
+  - stackoverflowcareers
+  - stackoverflow
+  - bitbucket
+  - github
+  - codepen
+  - userscripts
+  - stylish
+  - reddit
+  - youtube
+  - facebook
+  - twitter
+  - googleplus
+  - skype
+  - email
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 
@@ -23,7 +25,21 @@ Note: don't include a DOCTYPE in SVG documents:
 http://jwatt.org/svg/authoring/
 -->
 
-<svg viewBox="-128.8 -128.8 257.7 257.7"
+{% comment %}
+    rad_step = 2 * math.pi / circles
+    r = radius / math.sin(rad_step / 2)
+	translate_radius = r
+	inner_radius = r - 20
+	outer_radius = r + 20
+{% endcomment %}
+
+{% assign inner_radius     = 88.843823 %}
+{% assign translate_radius = inner_radius | plus: 20 %}
+{% assign outer_radius     = inner_radius | plus: 40 %}
+{% assign inner_diameter   = inner_radius | times: 2 %}
+{% assign outer_diameter   = outer_radius | times: 2 %}
+
+<svg viewBox="-{{ outer_radius }} -{{ outer_radius }} {{ outer_diameter }} {{ outer_diameter }}"
 	preserveAspectRatio="xMidYMid meet"
 	version="1.1"
 	xmlns="http://www.w3.org/2000/svg"
@@ -34,10 +50,13 @@ http://jwatt.org/svg/authoring/
 <style type="text/css"><![CDATA[
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 
-.item circle,
+.item circle {
+	transition-property: fill;
+	transition-duration: 250ms;
+}
 .item text,
 .item .icon {
-	transition-property: fill, fill-opacity, opacity;
+	transition-property: opacity;
 	transition-duration: 250ms;
 }
 .item text,
@@ -50,17 +69,13 @@ http://jwatt.org/svg/authoring/
 	/* central is defined as the half of EM box. */
 	dominant-baseline: central;
 }
-.item circle {
-	fill: #d3d7cf;
-}
 
-.item.without-icon       circle { fill-opacity: 0.125; }
-.item.without-icon:hover circle { fill-opacity: 0.125; }
+.item       circle { fill: #F9F9F8; }
+.item:hover circle { fill: #EDEEEB; }
+
 .item.without-icon       text { opacity: 1.0; }
 .item.without-icon:hover text { opacity: 1.0; }
 
-.item.with-icon       circle { fill-opacity: 0.125; }
-.item.with-icon:hover circle { fill-opacity: 0.125; }
 .item.with-icon       .icon { opacity: 1.0; }
 .item.with-icon:hover .icon { opacity: 0.125; }
 .item.with-icon       text { opacity: 0.0; }
@@ -68,8 +83,10 @@ http://jwatt.org/svg/authoring/
 
 
 /* Workarounds for Firefox: https://bugzilla.mozilla.org/show_bug.cgi?id=265894#c5 */
-.item.with-icon use.icon circle {
-	fill-opacity: 1.0;  /* Fixes reddit alien eyes in Firefox. */
+.item use.icon #blog text {
+	opacity: 1.0;
+	fill: #2e3436;
+	font-size: 16px;
 }
 .item.with-icon use.icon #curriculumvitae text {
 	opacity: 1.0;
@@ -90,11 +107,12 @@ http://jwatt.org/svg/authoring/
 <!-- ============================================================ -->
 
 <g class="centralpicture">
-	<image x="-88.8" y="-88.8" width="177.7" height="177.7"
+	<image x="-{{ inner_radius }}" y="-{{ inner_radius }}" width="{{ inner_diameter }}" height="{{ inner_diameter }}"
 		clip-path="url(#circleclip)"
 		xlink:href="MyPhoto2014-512x512.jpg" />
 </g>
 
+{% comment %}
 <g transform="translate(-0.0 -108.8)" class="item without-icon">
 	<a target="_top" xlink:href="{{ site.url }}/blog/">
 		<circle cx="0" cy="0" r="20" />
@@ -108,13 +126,12 @@ http://jwatt.org/svg/authoring/
 		<text x="0" y="0">E-mail</text>
 	</a>
 </g>
+{% endcomment %}
 
-{% for itemdesc in page.items %}
-{% assign itemx = itemdesc[0] %}
-{% assign itemy = itemdesc[1] %}
-{% assign itemname = itemdesc[2] %}
+{% for itemname in page.items %}
 {% assign item = site.data.aboutme[itemname] %}
-<g transform="translate({{ itemx }} {{ itemy }})" class="item with-icon">
+{% assign rotation = 360.0 | times: forloop.index0 | divided_by: forloop.length %}
+<g transform="translate(0 -{{ translate_radius }}) rotate({{ rotation }} 0 {{ translate_radius }}) rotate(-{{ rotation }})" class="item with-icon">
 	<a target="_top" xlink:href="{{ item.href }}">
 		<circle cx="0" cy="0" r="20" />
 		<use class="icon" xlink:href="#{{ item.useid }}" x="-14" y="-14" width="28" height="28" />
