@@ -1,0 +1,100 @@
+curriculumvitae:
+  href: http://denilson.sa.nom.br/denilsonsa-resume.pdf
+  # href: /denilsonsa-resume.pdf
+  # href: {{ site.url }}/denilsonsa-resume.pdf
+  useid: curriculumvitae
+  text1: Resumé
+
+stackoverflowcareers:
+  href: https://careers.stackoverflow.com/denilsonsa
+  useid: stackoverflowcareers
+  text1: Careers
+  text2: 2.0
+
+linkedin:
+  href: https://www.linkedin.com/in/denilsonsa
+  useid: linkedin
+  text1: LinkedIn
+
+github:
+  href: https://github.com/denilsonsa
+  useid: github
+  text1: GitHub
+
+stackoverflow:
+  href: https://stackoverflow.com/users/124946/
+  useid: stackoverflow
+  text1: Stack
+  text2: Overflow
+
+bitbucket:
+  href: https://bitbucket.org/denilsonsa
+  useid: bitbucket
+  text1: Bitbucket
+
+codepen:
+  href: http://codepen.io/denilsonsa/
+  useid: codepen
+  text1: CodePen
+
+stylish:
+  href: https://userstyles.org/users/194017
+  # AKA Stylish
+  useid: stylish
+  text1: User
+  text2: styles
+
+userscripts:
+  href: http://web.archive.org/web/20131108061608/http://userscripts.org/users/120597/scripts
+  # href: http://userscripts.org/users/120597/scripts
+  # href: http://userscripts.org:8080/users/120597/scripts
+  # AKA Greasemonkey
+  useid: userscripts
+  text1: User
+  text2: scripts
+
+flattr:
+  href: https://flattr.com/profile/denilsonsa
+  useid: flattr
+  text1: Flattr
+
+youtube:
+  href: https://www.youtube.com/user/denilsonsa
+  useid: youtube
+  text1: YouTube
+
+reddit:
+  href: http://www.reddit.com/user/denilsonsa/
+  useid: reddit
+  text1: reddit
+
+twitter:
+  href: https://twitter.com/denilsonsa
+  useid: twitter
+  text1: Twitter
+
+googleplus:
+  href: https://plus.google.com/+DenilsonSa/about
+  useid: googleplus
+  text1: Google+
+
+facebook:
+  href: https://facebook.com/denilsonsa
+  useid: facebook
+  text1: Facebook
+
+blog:
+  href: http://denilson.sa.nom.br/blog/
+  # href: {{ site.url }}/blog/
+  useid: rss
+  text1: Blog
+
+email:
+  href: mailto:denilsonsa@gmail.com
+  useid: gmail
+  text1: E-mail
+
+skype:
+  href: skype:crazyterabyte?chat
+  useid: skype
+  text1: Skype

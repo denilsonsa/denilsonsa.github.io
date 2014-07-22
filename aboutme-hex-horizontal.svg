@@ -1,111 +1,28 @@
 ---
 items:
-  - href: http://denilson.sa.nom.br/denilsonsa-resume.pdf
-    # href: /denilsonsa-resume.pdf
-    # href: {{ site.url }}/denilsonsa-resume.pdf
-    useid: curriculumvitae
-    text1: Resumé
-    x: 5.5
-    y: 0
-  - href: https://careers.stackoverflow.com/denilsonsa
-    useid: stackoverflowcareers
-    text1: Careers
-    text2: 2.0
-    x: 5
-    y: -1
-  - href: https://www.linkedin.com/in/denilsonsa
-    useid: linkedin
-    text1: LinkedIn
-    x: 5
-    y: 1
+  - [5.5,  0, curriculumvitae]
+  - [5.0, -1, stackoverflowcareers]
+  - [5.0,  1, linkedin]
 
-  - href: https://github.com/denilsonsa
-    useid: github
-    text1: GitHub
-    x: 4.5
-    y: 0
-  - href: https://stackoverflow.com/users/124946/
-    useid: stackoverflow
-    text1: Stack
-    text2: Overflow
-    x: 4
-    y: -1
-  - href: https://bitbucket.org/denilsonsa
-    useid: bitbucket
-    text1: Bitbucket
-    x: 4
-    y: 1
+  - [4.5,  0, github]
+  - [4.0, -1, stackoverflow]
+  - [4.0,  1, bitbucket]
 
-  - href: http://codepen.io/denilsonsa/
-    useid: codepen
-    text1: CodePen
-    x: 3.5
-    y: 0
-  - href: https://userstyles.org/users/194017
-    # AKA Stylish
-    useid: stylish
-    text1: User
-    text2: styles
-    x: 3
-    y: -1
-  - href: http://web.archive.org/web/20131108061608/http://userscripts.org/users/120597/scripts
-    # href: http://userscripts.org/users/120597/scripts
-    # href: http://userscripts.org:8080/users/120597/scripts
-    # AKA Greasemonkey
-    useid: userscripts
-    text1: User
-    text2: scripts
-    x: 3
-    y: 1
+  - [3.5,  0, codepen]
+  - [3.0, -1, stylish]
+  - [3.0,  1, userscripts]
 
-  - href: https://flattr.com/profile/denilsonsa
-    useid: flattr
-    text1: Flattr
-    x: 2.5
-    y: 0
-  - href: https://www.youtube.com/user/denilsonsa
-    useid: youtube
-    text1: YouTube
-    x: 2
-    y: -1
-  - href: http://www.reddit.com/user/denilsonsa/
-    useid: reddit
-    text1: reddit
-    x: 2
-    y: 1
+  - [2.5,  0, flattr]
+  - [2.0, -1, youtube]
+  - [2.0,  1, reddit]
 
-  - href: https://twitter.com/denilsonsa
-    useid: twitter
-    text1: Twitter
-    x: 1.5
-    y: 0
-  - href: https://plus.google.com/+DenilsonSa/about
-    useid: googleplus
-    text1: Google+
-    x: 1
-    y: -1
-  - href: https://facebook.com/denilsonsa
-    useid: facebook
-    text1: Facebook
-    x: 1
-    y: 1
+  - [1.5,  0, twitter]
+  - [1.0, -1, googleplus]
+  - [1.0,  1, facebook]
 
-  - href: http://denilson.sa.nom.br/blog/
-    # href: {{ site.url }}/blog/
-    useid: rss
-    text1: Blog
-    x: 0.5
-    y: 0
-  - href: mailto:denilsonsa@gmail.com
-    useid: gmail
-    text1: E-mail
-    x: 0
-    y: -1
-  - href: skype:crazyterabyte?chat
-    useid: skype
-    text1: Skype
-    x: 0
-    y: 1
+  - [0.5,  0, blog]
+  - [0.0, -1, email]
+  - [0.0,  1, skype]
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 
@@ -115,9 +32,12 @@ http://jwatt.org/svg/authoring/
 -->
 
 {% comment %}
+  xgrid and ygrid = the offset between each hexagon cell
+
   xgrid = width of a pointy-top hexagon + margin
-  # ygrid != height of a pointy-top hexagon
-  # ygrid = 3/4 height of a pointy-top hexagon + margin
+  ygrid = 3/4 height of a pointy-top hexagon + margin
+
+  xorigin = origin of the hexagon coordinates
 {% endcomment %}
 
 {% assign xwidth  = 17.32 %}
@@ -142,7 +62,6 @@ http://jwatt.org/svg/authoring/
 	preserveAspectRatio="xMidYMid meet"
 	version="1.1"
 	xmlns="http://www.w3.org/2000/svg"
-	xmlns:svg="http://www.w3.org/2000/svg"
 	xmlns:xlink="http://www.w3.org/1999/xlink"
 >
 
@@ -232,8 +151,17 @@ http://jwatt.org/svg/authoring/
 		xlink:href="MyPhoto2014-512x512.jpg" />
 </g>
 
-{% for item in page.items %}
-<g transform="translate({{ item.x | times: xgrid | plus: xorigin }} {{ item.y | times: ygrid | plus: yorigin }})" class="item with-icon">
+{% for itemdesc in page.items %}
+{% assign itemx = itemdesc[0] %}
+{% assign itemy = itemdesc[1] %}
+{% assign itemname = itemdesc[2] %}
+{% assign item = site.data.aboutme[itemname] %}
+{% comment %}
+  The following line does not work:
+  assign item = site.data.aboutme[itemdesc[2]]
+  That's why I'm using itemname as a temporary var.
+{% endcomment %}
+<g transform="translate({{ itemx | times: xgrid | plus: xorigin }} {{ itemy | times: ygrid | plus: yorigin }})" class="item with-icon">
 	<a target="_top" xlink:href="{{ item.href }}">
 		<polygon points="0,10 0,-10 -{{ xhalf }},-5 -{{ xhalf }},5" class="left" />
 		<rect x="0" y="-10" width="{{ xgrid | times: 1 }}" height="20" class="middle" />
