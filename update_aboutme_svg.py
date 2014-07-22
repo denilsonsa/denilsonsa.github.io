@@ -48,6 +48,9 @@ def s(number, decimals=1):
     return str(round(number, decimals))
 
 def main():
+    print("This script is currently broken. It was written to work with the generated .svg, but not with the source svg that is parsed by jekyll.")
+    sys.exit(1)
+
     data = sys.stdin.read()
     num_circles = count_items(data)
 

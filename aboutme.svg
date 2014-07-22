@@ -1,4 +1,20 @@
 ---
+items:
+  - [39.3, -101.5, curriculumvitae]
+  - [73.3, -80.4, linkedin]
+  - [97.4, -48.5, stackoverflowcareers]
+  - [108.4, -10.0, stackoverflow]
+  - [104.7, 29.8, bitbucket]
+  - [86.9, 65.6, github]
+  - [57.3, 92.5, codepen]
+  - [20.0, 107.0, userscripts]
+  - [-20.0, 107.0, stylish]
+  - [-57.3, 92.5, reddit]
+  - [-86.9, 65.6, youtube]
+  - [-104.7, 29.8, facebook]
+  - [-108.4, -10.0, twitter]
+  - [-97.4, -48.5, googleplus]
+  - [-73.3, -80.4, skype]
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 
@@ -86,145 +102,32 @@ http://jwatt.org/svg/authoring/
 	</a>
 </g>
 
-<g transform="translate(39.3 -101.5)" class="item with-icon">
-	<a target="_top" xlink:href="{{ site.url }}/denilsonsa-resume.pdf">
-		<circle cx="0" cy="0" r="20" />
-		<use class="icon" xlink:href="#curriculumvitae" x="-14" y="-14" width="28" height="28" />
-		<text x="0" y="0">Resumé</text>
-	</a>
-</g>
-
-<g transform="translate(73.3 -80.4)" class="item with-icon">
-	<a target="_top" xlink:href="https://www.linkedin.com/in/denilsonsa">
-		<circle cx="0" cy="0" r="20" />
-		<use class="icon" xlink:href="#linkedin" x="-14" y="-14" width="28" height="28" />
-		<text x="0" y="0">LinkedIn</text>
-	</a>
-</g>
-
-<g transform="translate(97.4 -48.5)" class="item with-icon">
-	<a target="_top" xlink:href="https://careers.stackoverflow.com/denilsonsa">
-		<circle cx="0" cy="0" r="20" />
-		<use class="icon" xlink:href="#stackoverflowcareers" x="-14" y="-14" width="28" height="28" />
-		<text x="0" y="0">
-			<tspan x="0" y="-0.5em">Careers</tspan>
-			<tspan x="0" y="0.5em">2.0</tspan>
-		</text>
-	</a>
-</g>
-
-<g transform="translate(108.4 -10.0)" class="item with-icon">
-	<a target="_top" xlink:href="https://stackoverflow.com/users/124946/">
-		<circle cx="0" cy="0" r="20" />
-		<use class="icon" xlink:href="#stackoverflow" x="-14" y="-14" width="28" height="28" />
-		<text x="0" y="0">
-			<tspan x="0" y="-0.5em">Stack</tspan>
-			<tspan x="0" y="0.5em">Overflow</tspan>
-		</text>
-	</a>
-</g>
-
-<g transform="translate(104.7 29.8)" class="item with-icon">
-	<a target="_top" xlink:href="https://bitbucket.org/denilsonsa">
-		<circle cx="0" cy="0" r="20" />
-		<use class="icon" xlink:href="#bitbucket" x="-14" y="-14" width="28" height="28" />
-		<text x="0" y="0">Bitbucket</text>
-	</a>
-</g>
-
-<g transform="translate(86.9 65.6)" class="item with-icon">
-	<a target="_top" xlink:href="https://github.com/denilsonsa">
-		<circle cx="0" cy="0" r="20" />
-		<use class="icon" xlink:href="#github" x="-14" y="-14" width="28" height="28" />
-		<text x="0" y="0">GitHub</text>
-	</a>
-</g>
-
-<g transform="translate(57.3 92.5)" class="item with-icon">
-	<a target="_top" xlink:href="http://codepen.io/denilsonsa/">
-		<circle cx="0" cy="0" r="20" />
-		<use class="icon" xlink:href="#codepen" x="-14" y="-14" width="28" height="28" />
-		<text x="0" y="0">CodePen</text>
-	</a>
-</g>
-
-<g transform="translate(20.0 107.0)" class="item with-icon">
-	<!-- http://userscripts.org/users/120597/scripts -->
-	<!-- http://userscripts.org:8080/users/120597/scripts -->
-	<a target="_top" xlink:href="http://web.archive.org/web/20131108061608/http://userscripts.org/users/120597/scripts">
-		<circle cx="0" cy="0" r="20" />
-		<use class="icon" xlink:href="#userscripts" x="-14" y="-14" width="28" height="28" />
-		<text x="0" y="0">
-			<tspan x="0" y="-0.5em">User</tspan>
-			<tspan x="0" y="0.5em">scripts</tspan>
-		</text> <!-- AKA Greasemonkey -->
-	</a>
-</g>
-
-<g transform="translate(-20.0 107.0)" class="item with-icon">
-	<a target="_top" xlink:href="https://userstyles.org/users/194017">
-		<circle cx="0" cy="0" r="20" />
-		<use class="icon" xlink:href="#stylish" x="-14" y="-14" width="28" height="28" />
-		<text x="0" y="0">
-			<tspan x="0" y="-0.5em">User</tspan>
-			<tspan x="0" y="0.5em">styles</tspan>
-		</text> <!-- AKA Stylish -->
-	</a>
-</g>
-
-<g transform="translate(-57.3 92.5)" class="item with-icon">
-	<a target="_top" xlink:href="http://www.reddit.com/user/denilsonsa/">
-		<circle cx="0" cy="0" r="20" />
-		<use class="icon" xlink:href="#reddit" x="-14" y="-14" width="28" height="28" />
-		<text x="0" y="0">reddit</text>
-	</a>
-</g>
-
-<g transform="translate(-86.9 65.6)" class="item with-icon">
-	<a target="_top" xlink:href="https://www.youtube.com/user/denilsonsa">
-		<circle cx="0" cy="0" r="20" />
-		<use class="icon" xlink:href="#youtube" x="-14" y="-14" width="28" height="28" />
-		<text x="0" y="0">YouTube</text>
-	</a>
-</g>
-
-<g transform="translate(-104.7 29.8)" class="item with-icon">
-	<a target="_top" xlink:href="https://facebook.com/denilsonsa">
-		<circle cx="0" cy="0" r="20" />
-		<use class="icon" xlink:href="#facebook" x="-14" y="-14" width="28" height="28" />
-		<text x="0" y="0">Facebook</text>
-	</a>
-</g>
-
-<g transform="translate(-108.4 -10.0)" class="item with-icon">
-	<a target="_top" xlink:href="https://twitter.com/denilsonsa">
-		<circle cx="0" cy="0" r="20" />
-		<use class="icon" xlink:href="#twitter" x="-14" y="-14" width="28" height="28" />
-		<text x="0" y="0">Twitter</text>
-	</a>
-</g>
-
-<g transform="translate(-97.4 -48.5)" class="item with-icon">
-	<a target="_top" xlink:href="https://plus.google.com/+DenilsonSa/about">
-		<circle cx="0" cy="0" r="20" />
-		<use class="icon" xlink:href="#googleplus" x="-14" y="-14" width="28" height="28" />
-		<text x="0" y="0">Google+</text>
-	</a>
-</g>
-
-<g transform="translate(-73.3 -80.4)" class="item with-icon">
-	<a target="_top" xlink:href="skype:crazyterabyte?chat">
-		<circle cx="0" cy="0" r="20" />
-		<use class="icon" xlink:href="#skype" x="-14" y="-14" width="28" height="28" />
-		<text x="0" y="0">Skype</text>
-	</a>
-</g>
-
 <g transform="translate(-39.3 -101.5)" class="item without-icon">
 	<a target="_top" xlink:href="mailto:denilsonsa@gmail.com">
 		<circle cx="0" cy="0" r="20" />
 		<text x="0" y="0">E-mail</text>
 	</a>
 </g>
+
+{% for itemdesc in page.items %}
+{% assign itemx = itemdesc[0] %}
+{% assign itemy = itemdesc[1] %}
+{% assign itemname = itemdesc[2] %}
+{% assign item = site.data.aboutme[itemname] %}
+<g transform="translate({{ itemx }} {{ itemy }})" class="item with-icon">
+	<a target="_top" xlink:href="{{ item.href }}">
+		<circle cx="0" cy="0" r="20" />
+		<use class="icon" xlink:href="#{{ item.useid }}" x="-14" y="-14" width="28" height="28" />
+		{% if item.text2 %}
+		<text x="0" y="0">
+			<tspan x="0" y="-0.5em">{{ item.text1 }}</tspan>
+			<tspan x="0" y="0.5em">{{ item.text2 }}</tspan>
+		</text>
+		{% else %}
+		<text x="0" y="0">{{ item.text1 }}</text>
+		{% endif %}
+	</a>
+</g>
+{% endfor %}
 
 </svg>

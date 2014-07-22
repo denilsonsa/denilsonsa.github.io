@@ -5,6 +5,18 @@ curriculumvitae:
   useid: curriculumvitae
   text1: Resumé
 
+blog:
+  href: http://denilson.sa.nom.br/blog/
+  # href: {{ site.url }}/blog/
+  useid: rss # TODO: I'm not happy with this.
+  text1: Blog
+
+email:
+  href: mailto:denilsonsa@gmail.com
+  useid: gmail # TODO: I'm not happy with this.
+  text1: E-mail
+
+
 stackoverflowcareers:
   href: https://careers.stackoverflow.com/denilsonsa
   useid: stackoverflowcareers
@@ -82,17 +94,6 @@ facebook:
   href: https://facebook.com/denilsonsa
   useid: facebook
   text1: Facebook
-
-blog:
-  href: http://denilson.sa.nom.br/blog/
-  # href: {{ site.url }}/blog/
-  useid: rss
-  text1: Blog
-
-email:
-  href: mailto:denilsonsa@gmail.com
-  useid: gmail
-  text1: E-mail
 
 skype:
   href: skype:crazyterabyte?chat
