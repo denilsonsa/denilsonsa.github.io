@@ -5,48 +5,48 @@ items:
     # href: {{ site.url }}/denilsonsa-resume.pdf
     useid: curriculumvitae
     text1: Resumé
-    x: 6.5
+    x: 5.5
     y: 0
   - href: https://careers.stackoverflow.com/denilsonsa
     useid: stackoverflowcareers
     text1: Careers
     text2: 2.0
-    x: 6
+    x: 5
     y: -1
   - href: https://www.linkedin.com/in/denilsonsa
     useid: linkedin
     text1: LinkedIn
-    x: 6
+    x: 5
     y: 1
 
   - href: https://github.com/denilsonsa
     useid: github
     text1: GitHub
-    x: 5.5
+    x: 4.5
     y: 0
   - href: https://stackoverflow.com/users/124946/
     useid: stackoverflow
     text1: Stack
     text2: Overflow
-    x: 5
+    x: 4
     y: -1
   - href: https://bitbucket.org/denilsonsa
     useid: bitbucket
     text1: Bitbucket
-    x: 5
+    x: 4
     y: 1
 
   - href: http://codepen.io/denilsonsa/
     useid: codepen
     text1: CodePen
-    x: 4.5
+    x: 3.5
     y: 0
   - href: https://userstyles.org/users/194017
     # AKA Stylish
     useid: stylish
     text1: User
     text2: styles
-    x: 4
+    x: 3
     y: -1
   - href: http://web.archive.org/web/20131108061608/http://userscripts.org/users/120597/scripts
     # href: http://userscripts.org/users/120597/scripts
@@ -55,56 +55,56 @@ items:
     useid: userscripts
     text1: User
     text2: scripts
-    x: 4
+    x: 3
     y: 1
 
   - href: https://flattr.com/profile/denilsonsa
     useid: flattr
     text1: Flattr
-    x: 3.5
+    x: 2.5
     y: 0
   - href: https://www.youtube.com/user/denilsonsa
     useid: youtube
     text1: YouTube
-    x: 3
+    x: 2
     y: -1
   - href: http://www.reddit.com/user/denilsonsa/
     useid: reddit
     text1: reddit
-    x: 3
+    x: 2
     y: 1
 
   - href: https://twitter.com/denilsonsa
     useid: twitter
     text1: Twitter
-    x: 2.5
+    x: 1.5
     y: 0
   - href: https://plus.google.com/+DenilsonSa/about
     useid: googleplus
     text1: Google+
-    x: 2
+    x: 1
     y: -1
   - href: https://facebook.com/denilsonsa
     useid: facebook
     text1: Facebook
-    x: 2
+    x: 1
     y: 1
 
   - href: http://denilson.sa.nom.br/blog/
     # href: {{ site.url }}/blog/
     useid: rss
     text1: Blog
-    x: 1.5
+    x: 0.5
     y: 0
   - href: mailto:denilsonsa@gmail.com
     useid: gmail
     text1: E-mail
-    x: 1
+    x: 0
     y: -1
   - href: skype:crazyterabyte?chat
     useid: skype
     text1: Skype
-    x: 1
+    x: 0
     y: 1
 ---
 <?xml version="1.0" encoding="UTF-8"?>
@@ -130,10 +130,15 @@ http://jwatt.org/svg/authoring/
 {% assign xgrid = xwidth  | plus: xmargin %}
 {% assign ygrid = yheight | times: 0.75 | plus: ymargin %}
 
-{% assign picsize = yheight | plus: ymargin | times: 3 %}
+{% assign picsize = ygrid | times: 2 | plus: yheight | divided_by: 0.866 %}
 {% assign pichalf = picsize | divided_by: 2 %}
+{% assign picshortsize = picsize | times: 0.866 %}
+{% assign picshorthalf = picshortsize | divided_by: 2 %}
 
-<svg viewBox="-{{ pichalf }} -{{ pichalf }} {{ xgrid | times: 8 | plus: pichalf }} {{ picsize }}"
+{% assign xorigin = xhalf | divided_by: -2 | plus: xmargin | plus: pichalf %}
+{% assign yorigin = 0 %}
+
+<svg viewBox="-{{ pichalf }} -{{ picshorthalf }} {{ xgrid | times: 7 | plus: xorigin | plus: pichalf }} {{ picshortsize }}"
 	preserveAspectRatio="xMidYMid meet"
 	version="1.1"
 	xmlns="http://www.w3.org/2000/svg"
@@ -457,17 +462,19 @@ http://jwatt.org/svg/authoring/
 
 <!-- ============================================================ -->
 
-<rect x="-{{ pichalf }}" y="-{{ pichalf }}" width="{{ xgrid | times: 8 | plus: pichalf }}" height="{{ picsize }}" fill="#FEE" />
+{% comment %}
+<rect x="-{{ pichalf }}" y="-{{ picshorthalf }}" width="{{ xgrid | times: 7 | plus: xorigin | plus: pichalf }}" height="{{ picshortsize }}" fill="#FEE" />
+{% endcomment %}
 
 <g class="centralpicture">
 	<image x="-{{ pichalf }}" y="-{{ pichalf }}" width="{{ picsize }}" height="{{ picsize }}"
-		clip-path="url(#hexagonpointytopclip)"
+		clip-path="url(#hexagonflattopclip)"
 		xlink:href="MyPhoto2014-512x512.jpg" />
 </g>
 
 {% for item in page.items %}
-<g transform="translate({{ item.x | times: xgrid }} {{ item.y | times: ygrid }})" class="item with-icon">
-	<a target="_top" xlink:href="{{item.href}}">
+<g transform="translate({{ item.x | times: xgrid | plus: xorigin }} {{ item.y | times: ygrid | plus: yorigin }})" class="item with-icon">
+	<a target="_top" xlink:href="{{ item.href }}">
 		<polygon points="0,10 0,-10 -{{ xhalf }},-5 -{{ xhalf }},5" class="left" />
 		<rect x="0" y="-10" width="{{ xgrid | times: 1 }}" height="20" class="middle" />
 		<polygon points="0,10 {{ xhalf }},5 {{ xhalf }},-5 0,-10" class="right" />
