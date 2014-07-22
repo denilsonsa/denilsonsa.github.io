@@ -15,7 +15,11 @@
 </symbol>
 
 <symbol id="blog" preserveAspectRatio="xMidYMid meet" viewBox="-16 -16 32 32">
-	<text x="0" y="0" fill="#2e3436" font-family="Roboto, Arial, sans-serif" font-size="16" text-anchor="middle" dominant-baseline="central">Blog</text>
+	<text x="0" y="0" fill="#2e3436" font-family="Roboto, Arial, sans-serif" font-size="11" text-anchor="middle" dominant-baseline="central">Blog</text>
+</symbol>
+
+<symbol id="email" preserveAspectRatio="xMidYMid meet" viewBox="-16 -16 32 32">
+	<text x="0" y="0" fill="#2e3436" font-family="Roboto, Arial, sans-serif" font-size="11" text-anchor="middle" dominant-baseline="central">E-mail</text>
 </symbol>
 
 <!-- https://commons.wikimedia.org/wiki/File:Feed-icon.svg -->
