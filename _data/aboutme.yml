@@ -99,3 +99,18 @@ skype:
   href: skype:crazyterabyte?chat
   useid: skype
   text1: Skype
+
+dropbox:
+  href: https://db.tt/VXe1QPLA
+  useid: dropbox
+  text1: Dropbox
+
+steam:
+  href: http://steamcommunity.com/id/crazyterabyte
+  useid: steam
+  text1: Steam
+
+backloggery:
+  href: http://backloggery.com/crazyterabyte
+  useid: backloggery
+  text1: Backloggery
