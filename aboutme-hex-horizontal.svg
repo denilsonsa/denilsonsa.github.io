@@ -118,10 +118,11 @@ http://jwatt.org/svg/authoring/
 .item:hover .icon   { opacity: 0.125; -webkit-transform: translateX({{ xhalf | times: 1 }}px); transform: translateX({{ xhalf | times: 1 }}px); }
 
 /* Workarounds for Firefox: https://bugzilla.mozilla.org/show_bug.cgi?id=265894#c5 */
+.item use.icon #email text,
 .item use.icon #blog text {
 	opacity: 1.0;
 	fill: #2e3436;
-	font-size: 16px;
+	font-size: 11px;
 }
 .item use.icon #curriculumvitae text {
 	opacity: 1.0;

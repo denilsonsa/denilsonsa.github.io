@@ -17,6 +17,61 @@ items:
   - googleplus
   - skype
   - email
+
+# for i in range(1, 50):
+#    step = 2 * math.pi / i
+#    print('  - {0}  # {1}'.format(math.sin(step/2), i))
+sin_per_number_of_items:
+  - 0.0  # 0 (makes no sense)
+  - 0.0  # 1 (makes no sense)
+  - 1.0  # 2 (makes no sense)
+  - 0.866025403784  # 3
+  - 0.707106781187  # 4
+  - 0.587785252292  # 5
+  - 0.500000000000  # 6
+  - 0.433883739118  # 7
+  - 0.382683432365  # 8
+  - 0.342020143326  # 9
+  - 0.309016994375  # 10
+  - 0.281732556841  # 11
+  - 0.258819045103  # 12
+  - 0.239315664288  # 13
+  - 0.222520933956  # 14
+  - 0.207911690818  # 15
+  - 0.195090322016  # 16
+  - 0.183749517817  # 17
+  - 0.173648177667  # 18
+  - 0.164594590281  # 19
+  - 0.156434465040  # 20
+  - 0.149042266176  # 21
+  - 0.142314838273  # 22
+  - 0.136166649096  # 23
+  - 0.130526192220  # 24
+  - 0.125333233564  # 25
+  - 0.120536680255  # 26
+  - 0.116092914125  # 27
+  - 0.111964476103  # 28
+  - 0.108119018424  # 29
+  - 0.104528463268  # 30
+  - 0.101168321987  # 31
+  - 0.0980171403296  # 32
+  - 0.0950560433042  # 33
+  - 0.0922683594633  # 34
+  - 0.0896393089034  # 35
+  - 0.0871557427477  # 36
+  - 0.0848059244755  # 37
+  - 0.0825793454723  # 38
+  - 0.0804665687167  # 39
+  - 0.0784590957278  # 40
+  - 0.0765492528365  # 41
+  - 0.0747300935864  # 42
+  - 0.0729953146609  # 43
+  - 0.0713391831992  # 44
+  - 0.0697564737441  # 45
+  - 0.0682424133647  # 46
+  - 0.0667926337451  # 47
+  - 0.0654031292301  # 48
+  - 0.0640702199807  # 49
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 
@@ -33,9 +88,11 @@ http://jwatt.org/svg/authoring/
 	outer_radius = r + 20
 {% endcomment %}
 
-{% assign inner_radius     = 88.843823 %}
-{% assign translate_radius = inner_radius | plus: 20 %}
-{% assign outer_radius     = inner_radius | plus: 40 %}
+{% assign number_of_items = page.items | size %}
+{% assign calculated_sin = page.sin_per_number_of_items[number_of_items] %}
+{% assign translate_radius = 20 | divided_by: calculated_sin %}
+{% assign inner_radius     = translate_radius | minus: 20 %}
+{% assign outer_radius     = translate_radius | plus: 20 %}
 {% assign inner_diameter   = inner_radius | times: 2 %}
 {% assign outer_diameter   = outer_radius | times: 2 %}
 
@@ -83,10 +140,11 @@ http://jwatt.org/svg/authoring/
 
 
 /* Workarounds for Firefox: https://bugzilla.mozilla.org/show_bug.cgi?id=265894#c5 */
+.item use.icon #email text,
 .item use.icon #blog text {
 	opacity: 1.0;
 	fill: #2e3436;
-	font-size: 16px;
+	font-size: 11px;
 }
 .item.with-icon use.icon #curriculumvitae text {
 	opacity: 1.0;
