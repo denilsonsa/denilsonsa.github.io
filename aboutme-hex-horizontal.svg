@@ -1,4 +1,111 @@
 ---
+items:
+  - href: http://denilson.sa.nom.br/denilsonsa-resume.pdf
+    # href: /denilsonsa-resume.pdf
+    # href: {{ site.url }}/denilsonsa-resume.pdf
+    useid: curriculumvitae
+    text1: Resumé
+    x: 6.5
+    y: 0
+  - href: https://careers.stackoverflow.com/denilsonsa
+    useid: stackoverflowcareers
+    text1: Careers
+    text2: 2.0
+    x: 6
+    y: -1
+  - href: https://www.linkedin.com/in/denilsonsa
+    useid: linkedin
+    text1: LinkedIn
+    x: 6
+    y: 1
+
+  - href: https://github.com/denilsonsa
+    useid: github
+    text1: GitHub
+    x: 5.5
+    y: 0
+  - href: https://stackoverflow.com/users/124946/
+    useid: stackoverflow
+    text1: Stack
+    text2: Overflow
+    x: 5
+    y: -1
+  - href: https://bitbucket.org/denilsonsa
+    useid: bitbucket
+    text1: Bitbucket
+    x: 5
+    y: 1
+
+  - href: http://codepen.io/denilsonsa/
+    useid: codepen
+    text1: CodePen
+    x: 4.5
+    y: 0
+  - href: https://userstyles.org/users/194017
+    # AKA Stylish
+    useid: stylish
+    text1: User
+    text2: styles
+    x: 4
+    y: -1
+  - href: http://web.archive.org/web/20131108061608/http://userscripts.org/users/120597/scripts
+    # href: http://userscripts.org/users/120597/scripts
+    # href: http://userscripts.org:8080/users/120597/scripts
+    # AKA Greasemonkey
+    useid: userscripts
+    text1: User
+    text2: scripts
+    x: 4
+    y: 1
+
+  - href: https://flattr.com/profile/denilsonsa
+    useid: flattr
+    text1: Flattr
+    x: 3.5
+    y: 0
+  - href: https://www.youtube.com/user/denilsonsa
+    useid: youtube
+    text1: YouTube
+    x: 3
+    y: -1
+  - href: http://www.reddit.com/user/denilsonsa/
+    useid: reddit
+    text1: reddit
+    x: 3
+    y: 1
+
+  - href: https://twitter.com/denilsonsa
+    useid: twitter
+    text1: Twitter
+    x: 2.5
+    y: 0
+  - href: https://plus.google.com/+DenilsonSa/about
+    useid: googleplus
+    text1: Google+
+    x: 2
+    y: -1
+  - href: https://facebook.com/denilsonsa
+    useid: facebook
+    text1: Facebook
+    x: 2
+    y: 1
+
+  - href: http://denilson.sa.nom.br/blog/
+    # href: {{ site.url }}/blog/
+    useid: rss
+    text1: Blog
+    x: 1.5
+    y: 0
+  - href: mailto:denilsonsa@gmail.com
+    useid: gmail
+    text1: E-mail
+    x: 1
+    y: -1
+  - href: skype:crazyterabyte?chat
+    useid: skype
+    text1: Skype
+    x: 1
+    y: 1
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 
@@ -7,7 +114,26 @@ Note: don't include a DOCTYPE in SVG documents:
 http://jwatt.org/svg/authoring/
 -->
 
-<svg viewBox="-128.8 -128.8 257.7 257.7"
+{% comment %}
+  xgrid = width of a pointy-top hexagon + margin
+  # ygrid != height of a pointy-top hexagon
+  # ygrid = 3/4 height of a pointy-top hexagon + margin
+{% endcomment %}
+
+{% assign xwidth  = 17.32 %}
+{% assign yheight = 20.00 %}
+{% assign xhalf   = xwidth | divided_by: 2 %}
+
+{% assign xmargin = 1 %}
+{% assign ymargin = xmargin | times: 0.866 %}
+
+{% assign xgrid = xwidth  | plus: xmargin %}
+{% assign ygrid = yheight | times: 0.75 | plus: ymargin %}
+
+{% assign picsize = yheight | plus: ymargin | times: 3 %}
+{% assign pichalf = picsize | divided_by: 2 %}
+
+<svg viewBox="-{{ pichalf }} -{{ pichalf }} {{ xgrid | times: 8 | plus: pichalf }} {{ picsize }}"
 	preserveAspectRatio="xMidYMid meet"
 	version="1.1"
 	xmlns="http://www.w3.org/2000/svg"
@@ -18,44 +144,62 @@ http://jwatt.org/svg/authoring/
 <style type="text/css"><![CDATA[
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 
-.item circle,
-.item text,
+.item .left,
+.item .middle,
+.item .right {
+	transition-property: fill, stroke, transform, -webkit-transform;
+	transition-duration: 250ms;
+	fill: #D3D7CF;
+
+	/* To prevent a seam between the elements. But gets buggy on Firefox. */
+	stroke: #D3D7CF;
+	stroke-width: 0.25px;
+	stroke-linecap: round;
+}
+.item text {
+	transition-property: opacity, transform, -webkit-transform;
+	transition-duration: 250ms;
+	pointer-events: none;
+}
 .item .icon {
-	transition-property: fill, fill-opacity, opacity;
+	transition-property: opacity, transform, -webkit-transform;
 	transition-duration: 250ms;
 }
 .item text,
 .item text tspan {
 	fill: #2e3436;
 	font-family: "Roboto", "Arial", sans-serif;
-	font-size: 9.5px;
+	font-size: 8px;
 	text-anchor: middle;
 	/* middle can be obtained from the font definition. */
 	/* central is defined as the half of EM box. */
 	dominant-baseline: central;
 }
-.item circle {
-	fill: #d3d7cf;
+
+.item:hover .left,
+.item:hover .middle,
+.item:hover .right {
+	fill: #EDEEEB;
+	stroke: #EDEEEB;
 }
-
-.item.without-icon       circle { fill-opacity: 0.125; }
-.item.without-icon:hover circle { fill-opacity: 0.125; }
-.item.without-icon       text { opacity: 1.0; }
-.item.without-icon:hover text { opacity: 1.0; }
-
-.item.with-icon       circle { fill-opacity: 0.125; }
-.item.with-icon:hover circle { fill-opacity: 0.125; }
-.item.with-icon       .icon { opacity: 1.0; }
-.item.with-icon:hover .icon { opacity: 0.125; }
-.item.with-icon       text { opacity: 0.0; }
-.item.with-icon:hover text { opacity: 1.0; }
-
+/* Chrome bug if using scaleX(0): http://crbug.com/395675 */
+.item       .middle { -webkit-transform: scaleX(0.00001); transform: scaleX(0.00001); }
+.item:hover .middle { -webkit-transform: scaleX(1); transform: scaleX(1); }
+.item       .right  { -webkit-transform: translateX( 0px); transform: translateX( 0px); }
+.item:hover .right  { -webkit-transform: translateX({{ xgrid | times: 1 }}px); transform: translateX({{ xgrid | times: 1 }}px); }
+/* Chrome bug about applying transform to text on hover: http://crbug.com/394829 */
+.item       text    { opacity: 0.0; }
+.item:hover text    { opacity: 1.0; }
+.item       .icon   { opacity: 1.000; -webkit-transform: translateX(0); transform: translateX(0); }
+.item:hover .icon   { opacity: 0.125; -webkit-transform: translateX({{ xhalf | times: 1 }}px); transform: translateX({{ xhalf | times: 1 }}px); }
 
 /* Workarounds for Firefox: https://bugzilla.mozilla.org/show_bug.cgi?id=265894#c5 */
-.item.with-icon use.icon circle {
-	fill-opacity: 1.0;  /* Fixes reddit alien eyes in Firefox. */
+.item use.icon #blog text {
+	opacity: 1.0;
+	fill: #2e3436;
+	font-size: 16px;
 }
-.item.with-icon use.icon #curriculumvitae text {
+.item use.icon #curriculumvitae text {
 	opacity: 1.0;
 	fill: #2e3436;
 	font-size: 25px;
@@ -71,8 +215,44 @@ http://jwatt.org/svg/authoring/
 	<circle cx="0.5" cy="0.5" r="0.5" />
 </clipPath>
 
+<clipPath id="hexagonflattopclip" clipPathUnits="objectBoundingBox">
+	<polygon points="1,0.5 0.75,0.933 0.25,0.933 0,0.5 0.25,0.067 0.75,0.067" />
+</clipPath>
+
+<clipPath id="hexagonpointytopclip" clipPathUnits="objectBoundingBox">
+	<polygon points="0.5,1 0.933,0.75 0.933,0.25 0.5,0 0.067,0.25 0.067,0.75" />
+</clipPath>
+
 <symbol id="curriculumvitae" preserveAspectRatio="xMidYMid meet" viewBox="-16 -16 32 32">
-	<text x="0" y="0" fill="#2e3436" font-family="'Droid Sans', sans-serif" font-size="25" text-anchor="middle" dominant-baseline="middle">CV</text>
+	<text x="0" y="0" fill="#2e3436" font-family="Roboto, Arial, sans-serif" font-size="25" text-anchor="middle" dominant-baseline="central">CV</text>
+</symbol>
+
+<symbol id="blog" preserveAspectRatio="xMidYMid meet" viewBox="-16 -16 32 32">
+	<text x="0" y="0" fill="#2e3436" font-family="Roboto, Arial, sans-serif" font-size="16" text-anchor="middle" dominant-baseline="central">Blog</text>
+</symbol>
+
+<!-- https://commons.wikimedia.org/wiki/File:Feed-icon.svg -->
+<!--
+	Mozilla Firefox bug 353575 - gradients inside svg:symbol aren't rendered
+	https://bugzilla.mozilla.org/show_bug.cgi?id=353575
+-->
+<linearGradient id="rssgradient" x1="0.085" y1="0.085" x2="0.915" y2="0.915">
+	<stop  offset="0.0"    stop-color="#E3702D"/>
+	<stop  offset="0.1071" stop-color="#EA7D31"/>
+	<stop  offset="0.3503" stop-color="#F69537"/>
+	<stop  offset="0.5"    stop-color="#FB9E3A"/>
+	<stop  offset="0.7016" stop-color="#EA7C31"/>
+	<stop  offset="0.8866" stop-color="#DE642B"/>
+	<stop  offset="1.0"    stop-color="#D95B29"/>
+</linearGradient>
+<symbol id="rss" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256">
+	<!-- To work around a bug in Firefox, the linearGradient definition was moved outside a symbol. -->
+	<rect width="256" height="256" rx="55" ry="55" x="0"  y="0"  fill="#CC5D15"/>
+	<rect width="246" height="246" rx="50" ry="50" x="5"  y="5"  fill="#F49C52"/>
+	<rect width="236" height="236" rx="47" ry="47" x="10" y="10" fill="url(#rssgradient)"/>
+	<circle cx="68" cy="189" r="24" fill="#FFF"/>
+	<path d="M160 213h-34a82 82 0 0 0 -82 -82v-34a116 116 0 0 1 116 116z" fill="#FFF"/>
+	<path d="M184 213A140 140 0 0 0 44 73 V 38a175 175 0 0 1 175 175z" fill="#FFF"/>
 </symbol>
 
 <!-- Based on Twitter_logo_blue.eps -->
@@ -153,6 +333,16 @@ http://jwatt.org/svg/authoring/
 	</g>
 </symbol>
 
+<!-- https://commons.wikimedia.org/wiki/File:New_Logo_Gmail.svg -->
+<symbol id="gmail" preserveAspectRatio="xMidYMid meet" viewBox="0 0 45555 33097">
+  <path fill="#E75A4D" d="M41608 250c2030,0 3691,1661 3691,3691l0 1070 -5128 3663 -17458 12026 -17458 -12148 0 24295 -1314 0c-2030,0 -3691,-1661 -3691,-3691l0 -25214c0,-2030 1661,-3691 3691,-3691l18772 13918 18894 -13918z"/>
+  <polygon fill="#E7E4D7" points="5255,8552 5255,32847 40172,32847 40172,8674 22713,20700 "/>
+  <polygon fill="#B8B7AE" points="5255,32847 22713,20700 22634,20644 5255,32580 "/>
+  <polygon fill="#B7B6AD" points="40172,8674 40182,32847 22713,20700 "/>
+  <path fill="#B2392F" d="M45299 5011l6 24148c-88,2684 -1251,3642 -5123,3687l-10 -24173 5128 -3663z"/>
+  <polygon fill="#F7F5ED" points="3941,250 22713,14168 41608,250 "/>
+</symbol>
+
 <!-- Based on /usr/share/icons/hicolor/256x256/apps/skype.png -->
 <!--
 	Mozilla Firefox bug 353575 - gradients inside svg:symbol aren't rendered
@@ -188,8 +378,8 @@ http://jwatt.org/svg/authoring/
 
 <!-- Copied from http://blog.codepen.io/documentation/brand-assets/logos/ and http://codepen.io/chriscoyier/pen/GCyhb -->
 <symbol id="codepen" preserveAspectRatio="xMidYMid meet" viewBox="0 0 120 120">
-<path fill="black" d="M60.048 0C26.884 0 0 26.9 0 60.048s26.884 60 60 60.047c33.163 0 60.047-26.883 60.047-60.047 S93.211 0 60 0z M60.048 110.233c-27.673 0-50.186-22.514-50.186-50.186S32.375 9.9 60 9.9 c27.672 0 50.2 22.5 50.2 50.186S87.72 110.2 60 110.233z"/>
-<path fill="black" d="M97.147 48.319c-0.007-0.047-0.019-0.092-0.026-0.139c-0.016-0.09-0.032-0.18-0.056-0.268 c-0.014-0.053-0.033-0.104-0.05-0.154c-0.025-0.078-0.051-0.156-0.082-0.232c-0.021-0.053-0.047-0.105-0.071-0.156 c-0.033-0.072-0.068-0.143-0.108-0.211c-0.029-0.051-0.061-0.1-0.091-0.148c-0.043-0.066-0.087-0.131-0.135-0.193 c-0.035-0.047-0.072-0.094-0.109-0.139c-0.051-0.059-0.104-0.117-0.159-0.172c-0.042-0.043-0.083-0.086-0.127-0.125 c-0.059-0.053-0.119-0.104-0.181-0.152c-0.048-0.037-0.095-0.074-0.145-0.109c-0.019-0.012-0.035-0.027-0.053-0.039L61.817 23.5 c-1.072-0.715-2.468-0.715-3.54 0L24.34 46.081c-0.018 0.012-0.034 0.027-0.053 0.039c-0.05 0.035-0.097 0.072-0.144 0.1 c-0.062 0.049-0.123 0.1-0.181 0.152c-0.045 0.039-0.086 0.082-0.128 0.125c-0.056 0.055-0.108 0.113-0.158 0.2 c-0.038 0.045-0.075 0.092-0.11 0.139c-0.047 0.062-0.092 0.127-0.134 0.193c-0.032 0.049-0.062 0.098-0.092 0.1 c-0.039 0.068-0.074 0.139-0.108 0.211c-0.024 0.051-0.05 0.104-0.071 0.156c-0.031 0.076-0.057 0.154-0.082 0.2 c-0.017 0.051-0.035 0.102-0.05 0.154c-0.023 0.088-0.039 0.178-0.056 0.268c-0.008 0.047-0.02 0.092-0.025 0.1 c-0.019 0.137-0.029 0.275-0.029 0.416V71.36c0 0.1 0 0.3 0 0.418c0.006 0 0 0.1 0 0.1 c0.017 0.1 0 0.2 0.1 0.268c0.015 0.1 0 0.1 0.1 0.154c0.025 0.1 0.1 0.2 0.1 0.2 c0.021 0.1 0 0.1 0.1 0.154c0.034 0.1 0.1 0.1 0.1 0.213c0.029 0 0.1 0.1 0.1 0.1 c0.042 0.1 0.1 0.1 0.1 0.193c0.035 0 0.1 0.1 0.1 0.139c0.05 0.1 0.1 0.1 0.2 0.2 c0.042 0 0.1 0.1 0.1 0.125c0.058 0.1 0.1 0.1 0.2 0.152c0.047 0 0.1 0.1 0.1 0.1 c0.019 0 0 0 0.1 0.039L58.277 96.64c0.536 0.4 1.2 0.5 1.8 0.537c0.616 0 1.233-0.18 1.77-0.537 l33.938-22.625c0.018-0.012 0.034-0.027 0.053-0.039c0.05-0.035 0.097-0.072 0.145-0.109c0.062-0.049 0.122-0.1 0.181-0.152 c0.044-0.039 0.085-0.082 0.127-0.125c0.056-0.055 0.108-0.113 0.159-0.172c0.037-0.045 0.074-0.09 0.109-0.139 c0.048-0.062 0.092-0.127 0.135-0.193c0.03-0.049 0.062-0.098 0.091-0.146c0.04-0.07 0.075-0.141 0.108-0.213 c0.024-0.051 0.05-0.102 0.071-0.154c0.031-0.078 0.057-0.156 0.082-0.234c0.017-0.051 0.036-0.102 0.05-0.154 c0.023-0.088 0.04-0.178 0.056-0.268c0.008-0.045 0.02-0.092 0.026-0.137c0.018-0.139 0.028-0.277 0.028-0.418V48.735 C97.176 48.6 97.2 48.5 97.1 48.319z M63.238 32.073l25.001 16.666L77.072 56.21l-13.834-9.254V32.073z M56.856 32.1 v14.883L43.023 56.21l-11.168-7.471L56.856 32.073z M29.301 54.708l7.983 5.34l-7.983 5.34V54.708z M56.856 88.022L31.855 71.4 l11.168-7.469l13.833 9.252V88.022z M60.048 67.597l-11.286-7.549l11.286-7.549l11.285 7.549L60.048 67.597z M63.238 88.022V73.14 l13.834-9.252l11.167 7.469L63.238 88.022z M90.794 65.388l-7.982-5.34l7.982-5.34V65.388z"/>
+	<path fill="black" d="M60.048 0C26.884 0 0 26.9 0 60.048s26.884 60 60 60.047c33.163 0 60.047-26.883 60.047-60.047 S93.211 0 60 0z M60.048 110.233c-27.673 0-50.186-22.514-50.186-50.186S32.375 9.9 60 9.9 c27.672 0 50.2 22.5 50.2 50.186S87.72 110.2 60 110.233z"/>
+	<path fill="black" d="M97.147 48.319c-0.007-0.047-0.019-0.092-0.026-0.139c-0.016-0.09-0.032-0.18-0.056-0.268 c-0.014-0.053-0.033-0.104-0.05-0.154c-0.025-0.078-0.051-0.156-0.082-0.232c-0.021-0.053-0.047-0.105-0.071-0.156 c-0.033-0.072-0.068-0.143-0.108-0.211c-0.029-0.051-0.061-0.1-0.091-0.148c-0.043-0.066-0.087-0.131-0.135-0.193 c-0.035-0.047-0.072-0.094-0.109-0.139c-0.051-0.059-0.104-0.117-0.159-0.172c-0.042-0.043-0.083-0.086-0.127-0.125 c-0.059-0.053-0.119-0.104-0.181-0.152c-0.048-0.037-0.095-0.074-0.145-0.109c-0.019-0.012-0.035-0.027-0.053-0.039L61.817 23.5 c-1.072-0.715-2.468-0.715-3.54 0L24.34 46.081c-0.018 0.012-0.034 0.027-0.053 0.039c-0.05 0.035-0.097 0.072-0.144 0.1 c-0.062 0.049-0.123 0.1-0.181 0.152c-0.045 0.039-0.086 0.082-0.128 0.125c-0.056 0.055-0.108 0.113-0.158 0.2 c-0.038 0.045-0.075 0.092-0.11 0.139c-0.047 0.062-0.092 0.127-0.134 0.193c-0.032 0.049-0.062 0.098-0.092 0.1 c-0.039 0.068-0.074 0.139-0.108 0.211c-0.024 0.051-0.05 0.104-0.071 0.156c-0.031 0.076-0.057 0.154-0.082 0.2 c-0.017 0.051-0.035 0.102-0.05 0.154c-0.023 0.088-0.039 0.178-0.056 0.268c-0.008 0.047-0.02 0.092-0.025 0.1 c-0.019 0.137-0.029 0.275-0.029 0.416V71.36c0 0.1 0 0.3 0 0.418c0.006 0 0 0.1 0 0.1 c0.017 0.1 0 0.2 0.1 0.268c0.015 0.1 0 0.1 0.1 0.154c0.025 0.1 0.1 0.2 0.1 0.2 c0.021 0.1 0 0.1 0.1 0.154c0.034 0.1 0.1 0.1 0.1 0.213c0.029 0 0.1 0.1 0.1 0.1 c0.042 0.1 0.1 0.1 0.1 0.193c0.035 0 0.1 0.1 0.1 0.139c0.05 0.1 0.1 0.1 0.2 0.2 c0.042 0 0.1 0.1 0.1 0.125c0.058 0.1 0.1 0.1 0.2 0.152c0.047 0 0.1 0.1 0.1 0.1 c0.019 0 0 0 0.1 0.039L58.277 96.64c0.536 0.4 1.2 0.5 1.8 0.537c0.616 0 1.233-0.18 1.77-0.537 l33.938-22.625c0.018-0.012 0.034-0.027 0.053-0.039c0.05-0.035 0.097-0.072 0.145-0.109c0.062-0.049 0.122-0.1 0.181-0.152 c0.044-0.039 0.085-0.082 0.127-0.125c0.056-0.055 0.108-0.113 0.159-0.172c0.037-0.045 0.074-0.09 0.109-0.139 c0.048-0.062 0.092-0.127 0.135-0.193c0.03-0.049 0.062-0.098 0.091-0.146c0.04-0.07 0.075-0.141 0.108-0.213 c0.024-0.051 0.05-0.102 0.071-0.154c0.031-0.078 0.057-0.156 0.082-0.234c0.017-0.051 0.036-0.102 0.05-0.154 c0.023-0.088 0.04-0.178 0.056-0.268c0.008-0.045 0.02-0.092 0.026-0.137c0.018-0.139 0.028-0.277 0.028-0.418V48.735 C97.176 48.6 97.2 48.5 97.1 48.319z M63.238 32.073l25.001 16.666L77.072 56.21l-13.834-9.254V32.073z M56.856 32.1 v14.883L43.023 56.21l-11.168-7.471L56.856 32.073z M29.301 54.708l7.983 5.34l-7.983 5.34V54.708z M56.856 88.022L31.855 71.4 l11.168-7.469l13.833 9.252V88.022z M60.048 67.597l-11.286-7.549l11.286-7.549l11.285 7.549L60.048 67.597z M63.238 88.022V73.14 l13.834-9.252l11.167 7.469L63.238 88.022z M90.794 65.388l-7.982-5.34l7.982-5.34V65.388z"/>
 </symbol>
 
 <!-- Copied from http://stackapps.com/questions/347/svg-versions-of-the-logos -->
@@ -267,158 +457,31 @@ http://jwatt.org/svg/authoring/
 
 <!-- ============================================================ -->
 
+<rect x="-{{ pichalf }}" y="-{{ pichalf }}" width="{{ xgrid | times: 8 | plus: pichalf }}" height="{{ picsize }}" fill="#FEE" />
+
 <g class="centralpicture">
-	<image x="-88.8" y="-88.8" width="177.7" height="177.7"
-		clip-path="url(#circleclip)"
+	<image x="-{{ pichalf }}" y="-{{ pichalf }}" width="{{ picsize }}" height="{{ picsize }}"
+		clip-path="url(#hexagonpointytopclip)"
 		xlink:href="MyPhoto2014-512x512.jpg" />
 </g>
 
-<g transform="translate(-0.0 -108.8)" class="item without-icon">
-	<a target="_top" xlink:href="{{ site.url }}/blog/">
-		<circle cx="0" cy="0" r="20" />
-		<text x="0" y="0">Blog</text>
-	</a>
-</g>
-
-<g transform="translate(39.3 -101.5)" class="item with-icon">
-	<a target="_top" xlink:href="{{ site.url }}/denilsonsa-resume.pdf">
-		<circle cx="0" cy="0" r="20" />
-		<use class="icon" xlink:href="#curriculumvitae" x="-14" y="-14" width="28" height="28" />
-		<text x="0" y="0">Resumé</text>
-	</a>
-</g>
-
-<g transform="translate(73.3 -80.4)" class="item with-icon">
-	<a target="_top" xlink:href="https://www.linkedin.com/in/denilsonsa">
-		<circle cx="0" cy="0" r="20" />
-		<use class="icon" xlink:href="#linkedin" x="-14" y="-14" width="28" height="28" />
-		<text x="0" y="0">LinkedIn</text>
-	</a>
-</g>
-
-<g transform="translate(97.4 -48.5)" class="item with-icon">
-	<a target="_top" xlink:href="https://careers.stackoverflow.com/denilsonsa">
-		<circle cx="0" cy="0" r="20" />
-		<use class="icon" xlink:href="#stackoverflowcareers" x="-14" y="-14" width="28" height="28" />
-		<text x="0" y="0">
-			<tspan x="0" y="-0.5em">Careers</tspan>
-			<tspan x="0" y="0.5em">2.0</tspan>
+{% for item in page.items %}
+<g transform="translate({{ item.x | times: xgrid }} {{ item.y | times: ygrid }})" class="item with-icon">
+	<a target="_top" xlink:href="{{item.href}}">
+		<polygon points="0,10 0,-10 -{{ xhalf }},-5 -{{ xhalf }},5" class="left" />
+		<rect x="0" y="-10" width="{{ xgrid | times: 1 }}" height="20" class="middle" />
+		<polygon points="0,10 {{ xhalf }},5 {{ xhalf }},-5 0,-10" class="right" />
+		<use class="icon" xlink:href="#{{ item.useid }}" x="-6.25" y="-6.25" width="12.5" height="12.5" />
+		{% if item.text2 %}
+		<text x="{{ xgrid | divided_by: 2 }}" y="0">
+			<tspan x="{{ xgrid | divided_by: 2 }}" y="-0.5em">{{ item.text1 }}</tspan>
+			<tspan x="{{ xgrid | divided_by: 2 }}" y="0.5em">{{ item.text2 }}</tspan>
 		</text>
+		{% else %}
+		<text x="{{ xgrid | divided_by: 2 }}" y="0">{{ item.text1 }}</text>
+		{% endif %}
 	</a>
 </g>
-
-<g transform="translate(108.4 -10.0)" class="item with-icon">
-	<a target="_top" xlink:href="https://stackoverflow.com/users/124946/">
-		<circle cx="0" cy="0" r="20" />
-		<use class="icon" xlink:href="#stackoverflow" x="-14" y="-14" width="28" height="28" />
-		<text x="0" y="0">
-			<tspan x="0" y="-0.5em">Stack</tspan>
-			<tspan x="0" y="0.5em">Overflow</tspan>
-		</text>
-	</a>
-</g>
-
-<g transform="translate(104.7 29.8)" class="item with-icon">
-	<a target="_top" xlink:href="https://bitbucket.org/denilsonsa">
-		<circle cx="0" cy="0" r="20" />
-		<use class="icon" xlink:href="#bitbucket" x="-14" y="-14" width="28" height="28" />
-		<text x="0" y="0">Bitbucket</text>
-	</a>
-</g>
-
-<g transform="translate(86.9 65.6)" class="item with-icon">
-	<a target="_top" xlink:href="https://github.com/denilsonsa">
-		<circle cx="0" cy="0" r="20" />
-		<use class="icon" xlink:href="#github" x="-14" y="-14" width="28" height="28" />
-		<text x="0" y="0">GitHub</text>
-	</a>
-</g>
-
-<g transform="translate(57.3 92.5)" class="item with-icon">
-	<a target="_top" xlink:href="http://codepen.io/denilsonsa/">
-		<circle cx="0" cy="0" r="20" />
-		<use class="icon" xlink:href="#codepen" x="-14" y="-14" width="28" height="28" />
-		<text x="0" y="0">CodePen</text>
-	</a>
-</g>
-
-<g transform="translate(20.0 107.0)" class="item with-icon">
-	<!-- http://userscripts.org/users/120597/scripts -->
-	<!-- http://userscripts.org:8080/users/120597/scripts -->
-	<a target="_top" xlink:href="http://web.archive.org/web/20131108061608/http://userscripts.org/users/120597/scripts">
-		<circle cx="0" cy="0" r="20" />
-		<use class="icon" xlink:href="#userscripts" x="-14" y="-14" width="28" height="28" />
-		<text x="0" y="0">
-			<tspan x="0" y="-0.5em">User</tspan>
-			<tspan x="0" y="0.5em">scripts</tspan>
-		</text> <!-- AKA Greasemonkey -->
-	</a>
-</g>
-
-<g transform="translate(-20.0 107.0)" class="item with-icon">
-	<a target="_top" xlink:href="https://userstyles.org/users/194017">
-		<circle cx="0" cy="0" r="20" />
-		<use class="icon" xlink:href="#stylish" x="-14" y="-14" width="28" height="28" />
-		<text x="0" y="0">
-			<tspan x="0" y="-0.5em">User</tspan>
-			<tspan x="0" y="0.5em">styles</tspan>
-		</text> <!-- AKA Stylish -->
-	</a>
-</g>
-
-<g transform="translate(-57.3 92.5)" class="item with-icon">
-	<a target="_top" xlink:href="http://www.reddit.com/user/denilsonsa/">
-		<circle cx="0" cy="0" r="20" />
-		<use class="icon" xlink:href="#reddit" x="-14" y="-14" width="28" height="28" />
-		<text x="0" y="0">reddit</text>
-	</a>
-</g>
-
-<g transform="translate(-86.9 65.6)" class="item with-icon">
-	<a target="_top" xlink:href="https://www.youtube.com/user/denilsonsa">
-		<circle cx="0" cy="0" r="20" />
-		<use class="icon" xlink:href="#youtube" x="-14" y="-14" width="28" height="28" />
-		<text x="0" y="0">YouTube</text>
-	</a>
-</g>
-
-<g transform="translate(-104.7 29.8)" class="item with-icon">
-	<a target="_top" xlink:href="https://facebook.com/denilsonsa">
-		<circle cx="0" cy="0" r="20" />
-		<use class="icon" xlink:href="#facebook" x="-14" y="-14" width="28" height="28" />
-		<text x="0" y="0">Facebook</text>
-	</a>
-</g>
-
-<g transform="translate(-108.4 -10.0)" class="item with-icon">
-	<a target="_top" xlink:href="https://twitter.com/denilsonsa">
-		<circle cx="0" cy="0" r="20" />
-		<use class="icon" xlink:href="#twitter" x="-14" y="-14" width="28" height="28" />
-		<text x="0" y="0">Twitter</text>
-	</a>
-</g>
-
-<g transform="translate(-97.4 -48.5)" class="item with-icon">
-	<a target="_top" xlink:href="https://plus.google.com/+DenilsonSa/about">
-		<circle cx="0" cy="0" r="20" />
-		<use class="icon" xlink:href="#googleplus" x="-14" y="-14" width="28" height="28" />
-		<text x="0" y="0">Google+</text>
-	</a>
-</g>
-
-<g transform="translate(-73.3 -80.4)" class="item with-icon">
-	<a target="_top" xlink:href="skype:crazyterabyte?chat">
-		<circle cx="0" cy="0" r="20" />
-		<use class="icon" xlink:href="#skype" x="-14" y="-14" width="28" height="28" />
-		<text x="0" y="0">Skype</text>
-	</a>
-</g>
-
-<g transform="translate(-39.3 -101.5)" class="item without-icon">
-	<a target="_top" xlink:href="mailto:denilsonsa@gmail.com">
-		<circle cx="0" cy="0" r="20" />
-		<text x="0" y="0">E-mail</text>
-	</a>
-</g>
+{% endfor %}
 
 </svg>
