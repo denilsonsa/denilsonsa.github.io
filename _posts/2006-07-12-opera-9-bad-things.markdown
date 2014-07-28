@@ -2,7 +2,7 @@
 layout: post
 title: Opera 9 - bad things…
 lang: en
-tag:
+tags:
 - Opera
 - User Interface
 ---

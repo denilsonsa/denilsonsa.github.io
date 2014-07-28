@@ -2,7 +2,7 @@
 layout: post
 title: First contact with ATmega8 microcontroller - part 2
 lang: en
-tag:
+tags:
 - AVR
 - ATmega8
 - Microcontroller
@@ -128,7 +128,7 @@ I've choosen to build the `bsd` one. I got a flat cable with 14 wires, but since
 
 I've not used any standard AVR connector for this project, but I will, if I build another programmer. Things will be easier in future if you use the standard 6-pin plug (or the 10-pin, but I prefer the 6-pin one), just in case you happen to use another programmer with your project, or your programmer with another project.
 
-**Update on 2008-12-02:** [Originally, the 6-pin pinout in this blog was wrong.]({{ site.url }}/blog/2008-12-01/first-contact-with-atmega8-microcontroller-correction) It has been fixed, so the pinout below is correct.
+**Update on 2008-12-02:** [Originally, the 6-pin pinout in this blog was wrong.][correction] It has been fixed, so the pinout below is correct.
 
 <figure class="singleimage">
 <img src="{{ site.url }}/blog/images/avr/AVR-ISP-connectors.png" alt="Diagram for AVR ISP 6-pin and 10-pin connectors.">
@@ -154,7 +154,7 @@ The photos above were taken using a [SonyEricsson K750i phone](http://en.wikiped
 
 ### Buffered parallel port
 
-[That personal homepage address found at #avr channel topic](http://eds.dyndns.org:81/~ircjunk/avr/avrstarter/avrstarter.html) ([Wayback Machine](http://web.archive.org/web/20071229042911/http://eds.dyndns.org:81/~ircjunk/avr/avrstarter/avrstarter.html)) has a link to a [PDF schematic diagram](http://eds.dyndns.org:81/~ircjunk/avr/programmer/avrprog.pdf) ([local mirror]({{ site.url }}/blog/images/avr/avrprog.pdf)) (**Update on 2008-12-02:** be careful, [the pinout in this PDF is wrong]({{ site.url }}/blog/2008-12-01/first-contact-with-atmega8-microcontroller-correction)) that describes how to build a buffered parallel port dongle. It uses one 100K [pull-up resistor](http://en.wikipedia.org/wiki/Pull-up_resistor), one 0.1µF [decoupling capacitor](http://en.wikipedia.org/wiki/Decoupling_capacitor), and a 74HC244 buffer chip. A similar diagram can be found [elsewhere on the web](http://wiredworld.tripod.com/tronics/atmel_isp.html) ([Wayback Machine](http://web.archive.org/web/20071024175932/http://wiredworld.tripod.com/tronics/atmel_isp.html)).
+[That personal homepage address found at #avr channel topic](http://eds.dyndns.org:81/~ircjunk/avr/avrstarter/avrstarter.html) ([Wayback Machine](http://web.archive.org/web/20071229042911/http://eds.dyndns.org:81/~ircjunk/avr/avrstarter/avrstarter.html)) has a link to a [PDF schematic diagram](http://eds.dyndns.org:81/~ircjunk/avr/programmer/avrprog.pdf) ([local mirror]({{ site.url }}/blog/images/avr/avrprog.pdf)) (**Update on 2008-12-02:** be careful, [the pinout in this PDF is wrong][correction]) that describes how to build a buffered parallel port dongle. It uses one 100K [pull-up resistor](http://en.wikipedia.org/wiki/Pull-up_resistor), one 0.1µF [decoupling capacitor](http://en.wikipedia.org/wiki/Decoupling_capacitor), and a 74HC244 buffer chip. A similar diagram can be found [elsewhere on the web](http://wiredworld.tripod.com/tronics/atmel_isp.html) ([Wayback Machine](http://web.archive.org/web/20071024175932/http://wiredworld.tripod.com/tronics/atmel_isp.html)).
 
 I'm not sure, but as I understood the schematics, this dongle will get the needed Vcc from the microcontroller connector.
 
@@ -208,4 +208,5 @@ I've read at [a page with instructions about USBasp](http://www.scienceprog.com/
 [clock]: http://en.wikipedia.org/wiki/Clock_signal
 [PCB]: http://en.wikipedia.org/wiki/Printed_circuit_board
 [stripboard]: http://en.wikipedia.org/wiki/Stripboard
-[part 2.1]: {{ site.url }}/blog/2011-08-10/first-contact-with-atmega8-microcontroller-part-2-1
+[part 2.1]: {% post_url 2011-08-10-first-contact-with-atmega8-microcontroller-part-2-1 %}
+[correction]: {% post_url 2008-12-01-first-contact-with-atmega8-microcontroller-correction %}

@@ -2,7 +2,7 @@
 layout: post
 title: nVidia (driver) strikes back (again)
 lang: en
-tag:
+tags:
 - X.org
 - Linux
 - Nvidia

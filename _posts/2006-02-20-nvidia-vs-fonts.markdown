@@ -2,7 +2,7 @@
 layout: post
 title: nVidia versus fonts!
 lang: en
-tag:
+tags:
 - Gentoo
 - Linux
 - driver

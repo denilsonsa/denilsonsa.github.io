@@ -2,7 +2,7 @@
 layout: post
 title: Mundo animal
 lang: pt-BR
-tag:
+tags:
 - fun
 - Rio de Janeiro
 ---

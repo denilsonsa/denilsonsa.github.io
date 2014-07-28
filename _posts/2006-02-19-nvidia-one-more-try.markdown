@@ -2,7 +2,7 @@
 layout: post
 title: nVidia, one more try
 lang: en
-tag:
+tags:
 - Gentoo
 - Linux
 - driver

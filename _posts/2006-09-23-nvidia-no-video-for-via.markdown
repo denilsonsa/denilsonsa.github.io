@@ -2,7 +2,7 @@
 layout: post
 title: NVIDIA = No VIDeo for vIA
 lang: en
-tag:
+tags:
 - Gentoo
 - Linux
 - nvidia
@@ -46,7 +46,7 @@ That `NVRM: Xid …` line was always present everytime X froze (maybe with other
 
 **Solution:** Put `Option "NvAGP" "0"` line at your `xorg.conf`, near `Driver "nvidia"` line. If you run `cat /proc/driver/nvidia/agp/status`, it will print `Status: Disabled`, because AGP support will be disabled. This causes no noticeable slowdowns, and everything else will still be working fine, including 3D OpenGL programs and games. And, at least, X won't be crashing and you will have a stable system again.
 
-Oh, one last advice: I've tested if that (wrong) behavior described at [nVidia versus fonts!]({{ site.url }}/blog/2006-02-20/nvidia-vs-fonts/) has been changed, and I found it is still the same behavior. So, all information on that old post is still valid.
+Oh, one last advice: I've tested if that (wrong) behavior described at [nVidia versus fonts!]({% post_url 2006-02-20-nvidia-vs-fonts %}) has been changed, and I found it is still the same behavior. So, all information on that old post is still valid.
 
 **Footnote about SAK/SysRq:** <kbd>Alt+SysRq+K</kbd> (_SysRq_ is the same key of _Print Screen_) combination is trapped by kernel and does mean _Secure Access Key_ (_SAK_). It will kill all programs on the current virtual console. To enable that, you might want to recompile your kernel with `Magic SysRq key`, or modify your keyboard mapping. Read more at `/usr/src/linux/Documentation/sysrq.txt` and `/usr/src/linux/Documentation/SAK.txt`.
 

@@ -3,7 +3,7 @@ layout: post
 title: First contact with ATmega8 microcontroller - part 1
 excerpt: "Last week I bought an ATmega8 microcontroller. I plan to use it to build an arcade USB Joystick, but first I need to understand how it works and how to use it. This and the following posts are an attempt to document my first contact with this microcontroller and to describe all needed hardware and software so you can start using a microcontroller too."
 lang: en
-tag:
+tags:
 - AVR
 - ATmega8
 - Gentoo
@@ -191,8 +191,8 @@ See you at the [next part][part 2]!
 [protoboard]: http://en.wikipedia.org/wiki/Protoboard
 [stripboard]: http://en.wikipedia.org/wiki/Stripboard
 [PCB]: http://en.wikipedia.org/wiki/Printed_circuit_board
-[part 1]: {{ site.url }}/blog/2007-10-25/first-contact-with-atmega8-microcontroller-part-1
-[part 2]: {{ site.url }}/blog/2007-10-26/first-contact-with-atmega8-microcontroller-part-2
-[part 2.1]: {{ site.url }}/blog/2011-08-10/first-contact-with-atmega8-microcontroller-part-2-1
-[part 3]: {{ site.url }}/blog/2007-11-02/first-contact-with-atmega8-microcontroller-part-3
-[part 4]: {{ site.url }}/blog/2008-02-02/first-contact-with-atmega8-microcontroller-part-4
+[part 1]: {% post_url 2007-10-25-first-contact-with-atmega8-microcontroller-part-1 %}
+[part 2]: {% post_url 2007-10-26-first-contact-with-atmega8-microcontroller-part-2 %}
+[part 2.1]: {% post_url 2011-08-10-first-contact-with-atmega8-microcontroller-part-2-1 %}
+[part 3]: {% post_url 2007-11-02-first-contact-with-atmega8-microcontroller-part-3 %}
+[part 4]: {% post_url 2008-02-02-first-contact-with-atmega8-microcontroller-part-4 %}

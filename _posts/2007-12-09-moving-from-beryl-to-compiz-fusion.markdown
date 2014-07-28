@@ -3,7 +3,7 @@ layout: post
 title: (Not) moving from beryl to compiz-fusion
 excerpt: "Description of my first contact with Compiz Fusion. As a former Beryl user, I can compare them and have an opinion about which one of them is best (or which one I like more). Read this post to discover all bugs and annoyances I found in Compiz Fusion, and if I've really moved to it or if I went back to Beryl."
 lang: en
-tag:
+tags:
 - Compiz
 - Gentoo
 - Linux

@@ -2,7 +2,7 @@
 layout: post
 title: What I don't like on K750i
 lang: en
-tag:
+tags:
 - Mobile
 - Sony Ericsson
 - Nokia

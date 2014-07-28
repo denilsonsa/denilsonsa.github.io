@@ -37,7 +37,7 @@ I've decided to use the 4 [least significant bits](http://en.wikipedia.org/wiki/
 
 The circuit itself is dead simple. I've just connected one [LED](http://en.wikipedia.org/wiki/Light-emitting_diode) and one [resistor](http://en.wikipedia.org/wiki/Resistor) to each output pin used. In addition to that, I've connected my ISP connector to the RESET, SCK, MISO and MOSI ports. Finally, just connect all GND together and connect the VCC to the microcontroller. There are two things that should be noted, though:
 
-First one is that our ISP programmer is unpowered (i.e. it doesn't draw current from the PC's parallel port, but only transmit signals). This means we need to get 5V VCC from somewhere else. In my case, I've used an USB port to do so.
+First one is that our parallel port ISP programmer is unpowered (i.e. it doesn't draw current from the PC's parallel port, but only transmit signals). This means we need to get 5V VCC from somewhere else. In my case, I've used an USB port to do so.
 
 The second thing is that I'm using 4 resistors, one for each LED. It is also possible to use only one resistor for all LEDs, but this means that when multiple LEDs are on, they will appear dimmer than when separately lit.
 

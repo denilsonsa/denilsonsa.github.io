@@ -2,7 +2,7 @@
 layout: post
 title: First contact with ATmega8 microcontroller - part 3
 lang: en
-tag:
+tags:
 - AVR
 - ATmega8
 - Gentoo

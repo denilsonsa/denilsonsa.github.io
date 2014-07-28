@@ -2,7 +2,7 @@
 layout: post
 title: X.org crashes. Yes, it does.
 lang: en
-tag:
+tags:
 - X.org
 - Gentoo
 - Linux

@@ -2,7 +2,7 @@
 layout: post
 title: Poor interface design
 lang: en
-tag:
+tags:
 - Java
 - User Interface
 - Opera

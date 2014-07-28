@@ -2,7 +2,7 @@
 layout: post
 title: Playing Flash videos in Opera under Gentoo Linux
 lang: en
-tag:
+tags:
 - Linux
 - Opera
 - Gentoo

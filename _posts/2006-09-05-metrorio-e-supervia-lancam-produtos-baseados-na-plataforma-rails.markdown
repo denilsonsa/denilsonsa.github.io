@@ -2,7 +2,7 @@
 layout: post
 title: Metrorio e Supervia lançam produtos baseados na plataforma Rails
 lang: pt-BR
-tag:
+tags:
 - fun
 - Rio de Janeiro
 ---

@@ -48,6 +48,7 @@ excerpt_separator: "\n\n\n"
 
 # Produce an index for related posts.
 #lsi: true
+lsi: false
 
 #paginate: 10
 

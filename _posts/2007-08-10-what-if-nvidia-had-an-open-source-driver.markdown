@@ -2,7 +2,7 @@
 layout: post
 title: What if nVidia had an open source driver?
 lang: en
-tag:
+tags:
 - Linux
 - Nvidia
 - driver
