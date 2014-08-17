@@ -341,7 +341,8 @@ http://jwatt.org/svg/authoring/
 <g transform="translate(20.0 107.0)" class="item with-icon">
 	<!-- http://userscripts.org/users/120597/scripts -->
 	<!-- http://userscripts.org:8080/users/120597/scripts -->
-	<a target="_top" xlink:href="http://web.archive.org/web/20131108061608/http://userscripts.org/users/120597/scripts">
+	<a target="_top" xlink:href="http://userscripts-mirror.org/users/120597/scripts">
+	<!--a target="_top" xlink:href="http://web.archive.org/web/20131108061608/http://userscripts.org/users/120597/scripts"-->
 		<circle cx="0" cy="0" r="20" />
 		<use class="icon" xlink:href="#userscripts" x="-14" y="-14" width="28" height="28" />
 		<text x="0" y="0">
