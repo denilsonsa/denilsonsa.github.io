@@ -57,7 +57,8 @@ stylish:
   text2: styles
 
 userscripts:
-  href: http://web.archive.org/web/20131108061608/http://userscripts.org/users/120597/scripts
+  #href: http://web.archive.org/web/20131108061608/http://userscripts.org/users/120597/scripts
+  href: http://userscripts-mirror.org/users/120597/scripts
   # href: http://userscripts.org/users/120597/scripts
   # href: http://userscripts.org:8080/users/120597/scripts
   # AKA Greasemonkey
