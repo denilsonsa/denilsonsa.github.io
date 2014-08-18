@@ -87,7 +87,8 @@ twitter:
   text1: Twitter
 
 googleplus:
-  href: https://plus.google.com/+DenilsonSa/about
+  href: https://plus.google.com/+DenilsonSa
+  #href: https://plus.google.com/+DenilsonSa/about
   useid: googleplus
   text1: Google+
 

@@ -5,8 +5,31 @@
 encoding: utf-8
 timezone: America/Sao_Paulo
 
-# Site name:
+# Site name (not used by Jekyll itself, only used in the template):
 name: Denilson Sá
+# In fact, any property from this _config.yml file can be referenced in a
+# template using {{ site.foobar }}
+
+# http://jekyllrb.com/docs/configuration/#frontmatter-defaults
+defaults:
+#  -
+#    scope:
+#      path: "" # an empty string here means all files in the project
+#      type: "posts"  # Type can be pages, posts, drafts, or any collection.
+#    values:
+#      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      og_type: "article"
+  -
+    scope:
+      path: ""
+      type: "drafts"
+    values:
+      og_type: "article"
 
 markdown: redcarpet
 #markdown: kramdown
@@ -40,7 +63,7 @@ relative_permalinks: false
 
 # Inspired by: https://github.com/SLaks/SLaks.Blog/blob/gh-pages/_config.yml
 permalink: /blog/:year-:month-:day/:title
- 
+
 # A single blank line (AKA a paragraph break, the default behavior).
 #excerpt_separator: "\n\n"
 # Two blank lines.
