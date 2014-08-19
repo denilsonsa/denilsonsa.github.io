@@ -123,15 +123,22 @@ footer {
 
 figure {
 	text-align: center;
-	margin: 1em 0;
 }
 figure figcaption {
 	text-align: center;
 	font-style: italic;
 	font-size: 0.9em;
 }
+/* TODO: What if I use <object> instead of <img>? */
 figure.floatright img,
 figure.singleimage img {
+	max-width: 100%;
+}
+
+figure.singleimage {
+	float: none;
+	clear: both;
+	margin: 1em 0;
 	max-width: 100%;
 }
 figure.floatright {
@@ -145,8 +152,9 @@ figure.floatright {
 @media (max-width: 21em) {
 	figure.floatright {
 		float: none;
-		clear: none;
+		clear: both;
 		margin: 1em 0;
+		max-width: 100%;
 	}
 }
 
