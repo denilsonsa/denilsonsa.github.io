@@ -122,7 +122,14 @@ footer {
 /* TODO: check the margins. If a <pre> is followed by <h2>, it currently has no margins, which looks bad. See 2005-12-13-the-failed-gentoo-linux-nvidia-guide */
 
 figure {
+	display: block;
 	text-align: center;
+
+	/* Polaroid-like border: */
+	/*
+	padding: 1ex;
+	box-shadow: 0px 2px 4px black;
+	*/
 }
 figure figcaption {
 	text-align: center;
@@ -136,9 +143,9 @@ figure.singleimage img {
 }
 
 figure.singleimage {
-	float: none;
+	display: table;  /* Trick to make the width fit the contents. */
 	clear: both;
-	margin: 1em 0;
+	margin: 1em auto;
 	max-width: 100%;
 }
 figure.floatright {
@@ -151,9 +158,10 @@ figure.floatright {
 /* 21em is half of 42em .site max-width */
 @media (max-width: 21em) {
 	figure.floatright {
+		display: table;  /* Trick to make the width fit the contents. */
 		float: none;
 		clear: both;
-		margin: 1em 0;
+		margin: 1em auto;
 		max-width: 100%;
 	}
 }
