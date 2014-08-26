@@ -68,6 +68,13 @@ http://jwatt.org/svg/authoring/
 <style type="text/css"><![CDATA[
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 
+.item .outline {
+	transition-property: opacity, transform, -webkit-transform;
+	transition-duration: 250ms;
+	fill: white;
+	stroke: white;
+	stroke-width: {{ xmargin | times: 2 }}px;
+}
 .item .left,
 .item .middle,
 .item .right {
@@ -107,15 +114,17 @@ http://jwatt.org/svg/authoring/
 	stroke: #EDEEEB;
 }
 /* Chrome bug if using scaleX(0): http://crbug.com/395675 */
-.item       .middle { -webkit-transform: scaleX(0.00001); transform: scaleX(0.00001); }
-.item:hover .middle { -webkit-transform: scaleX(1); transform: scaleX(1); }
-.item       .right  { -webkit-transform: translateX( 0px); transform: translateX( 0px); }
-.item:hover .right  { -webkit-transform: translateX({{ xgrid | times: 1 }}px); transform: translateX({{ xgrid | times: 1 }}px); }
+.item       .outline { -webkit-transform: scaleX(0.00001); transform: scaleX(0.00001); opacity: 0; }
+.item:hover .outline { -webkit-transform: scaleX(1); transform: scaleX(1); opacity: 1; }
+.item       .middle  { -webkit-transform: scaleX(0.00001); transform: scaleX(0.00001); }
+.item:hover .middle  { -webkit-transform: scaleX(1); transform: scaleX(1); }
+.item       .right   { -webkit-transform: translateX( 0px); transform: translateX( 0px); }
+.item:hover .right   { -webkit-transform: translateX({{ xgrid | times: 1 }}px); transform: translateX({{ xgrid | times: 1 }}px); }
 /* Chrome bug about applying transform to text on hover: http://crbug.com/394829 */
-.item       text    { opacity: 0.0; }
-.item:hover text    { opacity: 1.0; }
-.item       .icon   { opacity: 1.000; -webkit-transform: translateX(0); transform: translateX(0); }
-.item:hover .icon   { opacity: 0.125; -webkit-transform: translateX({{ xhalf | times: 1 }}px); transform: translateX({{ xhalf | times: 1 }}px); }
+.item       text     { opacity: 0.0; }
+.item:hover text     { opacity: 1.0; }
+.item       .icon    { opacity: 1.000; -webkit-transform: translateX(0); transform: translateX(0); }
+.item:hover .icon    { opacity: 0.125; -webkit-transform: translateX({{ xhalf | times: 1 }}px); transform: translateX({{ xhalf | times: 1 }}px); }
 
 /* Workarounds for Firefox: https://bugzilla.mozilla.org/show_bug.cgi?id=265894#c5 */
 .item use.icon #email text,
@@ -164,9 +173,30 @@ http://jwatt.org/svg/authoring/
 {% endcomment %}
 <g transform="translate({{ itemx | times: xgrid | plus: xorigin }} {{ itemy | times: ygrid | plus: yorigin }})" class="item with-icon">
 	<a target="_top" xlink:href="{{ item.href }}">
-		<polygon points="0,10 0,-10 -{{ xhalf }},-5 -{{ xhalf }},5" class="left" />
+		<polygon points="
+		0,-10
+		-{{ xhalf }},-5
+		-{{ xhalf }},5
+		0,10
+		{{ xgrid | times: 1 }},10
+		{{ xgrid | times: 1 | plus: xhalf }},5
+		{{ xgrid | times: 1 | plus: xhalf }},-5
+		{{ xgrid | times: 1 }},-10
+		" class="outline" />
+
+		<polygon points="
+		0,-10
+		-{{ xhalf }},-5
+		-{{ xhalf }},5
+		0,10
+		" class="left" />
 		<rect x="0" y="-10" width="{{ xgrid | times: 1 }}" height="20" class="middle" />
-		<polygon points="0,10 {{ xhalf }},5 {{ xhalf }},-5 0,-10" class="right" />
+		<polygon points="
+		0,10
+		{{ xhalf }},5
+		{{ xhalf }},-5
+		0,-10
+		" class="right" />
 		<use class="icon" xlink:href="#{{ item.useid }}" x="-6.25" y="-6.25" width="12.5" height="12.5" />
 		{% if item.text2 %}
 		<text x="{{ xgrid | divided_by: 2 }}" y="0">
