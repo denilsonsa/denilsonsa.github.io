@@ -141,6 +141,10 @@ Steam:
 
 * http://en.wikipedia.org/wiki/File:Steam_logo.svg
 
+StumbleUpon:
+
+* https://commons.wikimedia.org/wiki/File:StumbleUpon_Logo.svg
+
 Stylish / Userstyles:
 
 * http://forum.userstyles.org/discussion/comment/58485

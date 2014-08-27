@@ -1,29 +1,33 @@
 ---
 items:
-  - [8.5,  0, curriculumvitae]
-  - [8.0, -1, stackoverflowcareers]
-  - [8.0,  1, linkedin]
+  - [9.5,  0, curriculumvitae]
+  - [9.0, -1, stackoverflowcareers]
+  - [9.0,  1, linkedin]
 
-  - [7.5,  0, github]
-  - [7.0, -1, stackoverflow]
-  - [7.0,  1, bitbucket]
+  - [8.5,  0, github]
+  - [8.0, -1, stackoverflow]
+  - [8.0,  1, bitbucket]
 
-  - [6.5,  0, codepen]
-  - [6.0, -1, stylish]
-  - [6.0,  1, userscripts]
+  - [7.5,  0, codepen]
+  - [7.0, -1, stylish]
+  - [7.0,  1, userscripts]
 
-  - [5.5,  0, instagram]
-  - [5.0, -1, youtube]
-  - [5.0,  1, reddit]
+  - [6.5,  0, instagram]
+  - [6.0, -1, flickr]
+  - [6.0,  1, reddit]
 
-  - [4.5,  0, openclipart]
-  - [4.0, -1, deviantart]
-  - [4.0,  1, flickr]
+  - [5.5,  0, openclipart]
+  - [5.0, -1, deviantart]
+  - [5.0,  1, youtube]
 
-  - [3.5,  0, steam]
-  - [3.0, -1, backloggery]
-  - [3.0,  1, kongregate]
-#  - [3.0,  1, alvanista]
+  - [4.5,  0, steam]
+  - [4.0, -1, backloggery]
+  - [4.0,  1, kongregate]
+#  - [4.0,  1, alvanista]
+
+  - [3.5,  0, tumblr]
+  - [3.0, -1, stumbleupon]
+  - [3.0,  1, pinterest]
 
   - [2.5,  0, aboutme]
   - [2.0, -1, disqus]
@@ -71,7 +75,7 @@ http://jwatt.org/svg/authoring/
 {% assign xorigin = xhalf | divided_by: -2 | plus: xmargin | plus: pichalf %}
 {% assign yorigin = 0 %}
 
-<svg viewBox="-{{ pichalf }} -{{ picshorthalf }} {{ xgrid | times: 10 | plus: xorigin | plus: pichalf }} {{ picshortsize }}"
+<svg viewBox="-{{ pichalf }} -{{ picshorthalf }} {{ xgrid | times: 11 | plus: xorigin | plus: pichalf }} {{ picshortsize }}"
 	preserveAspectRatio="xMidYMid meet"
 	version="1.1"
 	xmlns="http://www.w3.org/2000/svg"

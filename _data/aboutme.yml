@@ -147,6 +147,13 @@ steam:
   useid: steam
   text1: Steam
 
+stumbleupon:
+  href: http://www.stumbleupon.com/stumbler/denilsonsa
+  useid: stumbleupon
+  text1: Stumble
+  text2: Upon
+  # text1: StumbleUpon
+
 stylish:
   href: https://userstyles.org/users/194017
   # AKA Stylish
