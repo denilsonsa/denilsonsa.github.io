@@ -24,6 +24,7 @@ h6 { font-size: 1.0em; }
 h1, h2, h3, h4, h5, h6, p, blockquote { margin: 1em 0; }
 h1, h2, h3, h4, h5, h6 { line-height: normal; text-align: left; }
 h1 { margin-top: 0; margin-bottom: 0; }
+li > p { margin-top: 0; margin-bottom: 0; }
 
 a         { color: #00a; }
 a:hover   { color: #000; }
