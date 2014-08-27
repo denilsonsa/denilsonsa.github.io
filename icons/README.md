@@ -73,6 +73,10 @@ Grooveshark:
 
 * http://grooveshark.com/logo
 
+ICQ:
+
+* https://en.wikipedia.org/wiki/File:ICQ.svg
+
 Instagram:
 
 * http://instagram.com/press/
@@ -204,6 +208,10 @@ Vimeo:
 
 * https://vimeo.com/about/brand_guidelines
 * https://twitter.com/Vimeo
+
+VK:
+
+* https://vk.com/about
 
 YouTube:
 
