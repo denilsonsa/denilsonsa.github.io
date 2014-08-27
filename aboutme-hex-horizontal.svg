@@ -101,7 +101,7 @@ http://jwatt.org/svg/authoring/
 .item text tspan {
 	fill: #2e3436;
 	font-family: "Roboto", "Arial", sans-serif;
-	font-size: 8px;
+	font-size: 7px;
 	text-anchor: middle;
 	/* middle can be obtained from the font definition. */
 	/* central is defined as the half of EM box. */

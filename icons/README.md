@@ -15,6 +15,10 @@ CodePen:
 * http://blog.codepen.io/documentation/brand-assets/logos/
 * http://codepen.io/chriscoyier/pen/GCyhb
 
+deviantART:
+
+* http://help.deviantart.com/21/
+
 Drawception:
 
 * http://drawception.com/img/logo-d.png
