@@ -76,7 +76,7 @@ http://jwatt.org/svg/authoring/
 {% assign yorigin = 0 %}
 
 <svg viewBox="-{{ pichalf }} -{{ picshorthalf }} {{ xgrid | times: 11 | plus: xorigin | plus: pichalf }} {{ picshortsize }}"
-	preserveAspectRatio="xMidYMid meet"
+	preserveAspectRatio="xMinYMid meet"
 	version="1.1"
 	xmlns="http://www.w3.org/2000/svg"
 	xmlns:xlink="http://www.w3.org/1999/xlink"
