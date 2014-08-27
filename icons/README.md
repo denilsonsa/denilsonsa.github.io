@@ -48,6 +48,12 @@ Google+:
 * https://developers.google.com/+/branding-guidelines
 * http://commons.wikimedia.org/wiki/File:Google_plus.svg
 
+Instagram:
+
+* http://instagram.com/press/
+* https://help.instagram.com/304689166306603
+* http://instagram.com/accounts/badges/
+
 LinkedIn:
 
 * http://developer.linkedin.com/documents/branding-guidelines

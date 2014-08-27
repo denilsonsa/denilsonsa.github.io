@@ -63,6 +63,11 @@ googleplus:
   useid: googleplus
   text1: Google+
 
+instagram:
+  href: http://instagram.com/denilsonsa
+  useid: instagram
+  text1: Instagram
+
 linkedin:
   href: https://www.linkedin.com/in/denilsonsa
   useid: linkedin
