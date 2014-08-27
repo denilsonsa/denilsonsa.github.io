@@ -1,21 +1,24 @@
 ---
 items:
-  - [5.5,  0, curriculumvitae]
-  - [5.0, -1, stackoverflowcareers]
-  - [5.0,  1, linkedin]
+  - [6.5,  0, curriculumvitae]
+  - [6.0, -1, stackoverflowcareers]
+  - [6.0,  1, linkedin]
 
-  - [4.5,  0, github]
-  - [4.0, -1, stackoverflow]
-  - [4.0,  1, bitbucket]
+  - [5.5,  0, github]
+  - [5.0, -1, stackoverflow]
+  - [5.0,  1, bitbucket]
 
-  - [3.5,  0, codepen]
-  - [3.0, -1, stylish]
-  - [3.0,  1, userscripts]
+  - [4.5,  0, codepen]
+  - [4.0, -1, stylish]
+  - [4.0,  1, userscripts]
 
-#  - [2.5,  0, flattr]
-  - [2.5,  0, aboutme]
-  - [2.0, -1, youtube]
-  - [2.0,  1, reddit]
+  - [3.5,  0, aboutme]
+  - [3.0, -1, youtube]
+  - [3.0,  1, reddit]
+
+  - [2.5,  0, steam]
+  - [2.0, -1, backloggery]
+  - [2.0,  1, kongregate]
 
   - [1.5,  0, twitter]
   - [1.0, -1, googleplus]
@@ -59,7 +62,7 @@ http://jwatt.org/svg/authoring/
 {% assign xorigin = xhalf | divided_by: -2 | plus: xmargin | plus: pichalf %}
 {% assign yorigin = 0 %}
 
-<svg viewBox="-{{ pichalf }} -{{ picshorthalf }} {{ xgrid | times: 7 | plus: xorigin | plus: pichalf }} {{ picshortsize }}"
+<svg viewBox="-{{ pichalf }} -{{ picshorthalf }} {{ xgrid | times: 8 | plus: xorigin | plus: pichalf }} {{ picshortsize }}"
 	preserveAspectRatio="xMidYMid meet"
 	version="1.1"
 	xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +104,7 @@ http://jwatt.org/svg/authoring/
 .item text tspan {
 	fill: #2e3436;
 	font-family: "Roboto", "Arial", sans-serif;
-	font-size: 7px;
+	font-size: 6.5px;
 	text-anchor: middle;
 	/* middle can be obtained from the font definition. */
 	/* central is defined as the half of EM box. */

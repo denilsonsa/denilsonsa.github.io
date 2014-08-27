@@ -66,6 +66,10 @@ Instagram:
 * https://help.instagram.com/304689166306603
 * http://instagram.com/accounts/badges/
 
+Kongregate:
+
+* http://www.kongregate.com/logos
+
 LinkedIn:
 
 * http://developer.linkedin.com/documents/branding-guidelines

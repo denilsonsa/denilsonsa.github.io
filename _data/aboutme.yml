@@ -78,6 +78,11 @@ instagram:
   useid: instagram
   text1: Instagram
 
+kongregate:
+  href: http://www.kongregate.com/accounts/CrazyTerabyte
+  useid: kongregate
+  text1: Kongregate
+
 linkedin:
   href: https://www.linkedin.com/in/denilsonsa
   useid: linkedin
