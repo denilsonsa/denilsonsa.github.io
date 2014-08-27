@@ -113,6 +113,8 @@ Newgrounds:
 
 Openclipart:
 
+* https://openclipart.org/about
+* https://openclipart.org/detail/193993/openclipart-scissors-logo-in-green-by-openclipart-193993
 * https://openclipart.org/detail/177066/openclipart-scissors-logo-guide-by-rejon-177066
 * https://openclipart.org/detail/177065/openclipart-scissors-logo-by-rejon-177065
 

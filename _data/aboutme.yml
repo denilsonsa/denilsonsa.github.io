@@ -109,7 +109,8 @@ myspace:
   text1: Myspace
 
 openclipart:
-  href: https://openclipart.org/user-detail/CrazyTerabyte
+  #href: https://openclipart.org/user-detail/CrazyTerabyte
+  href: https://openclipart.org/user-cliparts/CrazyTerabyte
   useid: openclipart
   text1: Open
   text2: clipart
