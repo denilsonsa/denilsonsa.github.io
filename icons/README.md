@@ -1,12 +1,22 @@
 # Official icons and logos
 
+About.me:
+
+* http://about.me/assets
+
 Bitbucket:
 
 * http://www.atlassian.com/company/press/resources/?tab=logos
 * http://www.atlassian.com/dms/wac/images/press/Atlassian-logos/logoBitBucketPNG.png
 * http://www.atlassian.com/dms/wac/images/press/Atlassian-logos/logoBitBucket.eps
 
+CodePen:
+
+* http://blog.codepen.io/documentation/brand-assets/logos/
+* http://codepen.io/chriscoyier/pen/GCyhb
+
 Drawception:
+
 * http://drawception.com/img/logo-d.png
 * http://drawception.com/img/icon16x16.png
 
@@ -21,11 +31,16 @@ Facebook:
 Flatter:
 
 * http://flattr.com/embed
+* https://commons.wikimedia.org/wiki/File:Flattr-Logo.svg
 
 GitHub:
 
 * https://github.com/logos
 * https://github-media-downloads.s3.amazonaws.com/GitHub-Mark.zip
+
+Gmail:
+
+* https://commons.wikimedia.org/wiki/File:New_Logo_Gmail.svg
 
 Google+:
 
@@ -38,13 +53,18 @@ LinkedIn:
 * http://developer.linkedin.com/documents/branding-guidelines
 * http://press.linkedin.com/Media-Resources?SubjectID=644
 
-Reddit:
+reddit:
 
 * http://www.reddit.com/about/alien/
 * http://www.reddit.com/wiki/licensing
 * http://www.reddit.com/r/redditlogos
 
+RSS:
+
+* https://commons.wikimedia.org/wiki/File:Feed-icon.svg
+
 Skype:
+
 * http://www.skype.com/en/legal/brand-guidelines/
 * http://developer.skype.com/skype-uris/branding
 * http://commons.wikimedia.org/wiki/File:Skype.svg
@@ -63,6 +83,17 @@ Steam:
 
 * http://en.wikipedia.org/wiki/File:Steam_logo.svg
 
+Stylish / Userstyles:
+
+* http://forum.userstyles.org/discussion/comment/58485
+* http://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe
+* https://github.com/JasonBarnabe/stylish-chrome/blob/master/128.png
+
+Twitter:
+
+* http://about.twitter.com/press/brand-assets
+* http://about.twitter.com/resources/buttons
+
 Userscripts:
 
 * http://userscripts.org/images/userscripts.org.png
@@ -71,16 +102,6 @@ Userscripts:
 * http://iconvector.blogspot.com.br/#4286124055516450614
 * http://www.userlogos.org/node/10561
 * http://github.com/greasemonkey/greasemonkey/tree/master/skin
-
-Userstyles:
-
-* http://forum.userstyles.org/discussion/comment/58485
-* http://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe
-
-Twitter:
-
-* http://about.twitter.com/press/brand-assets
-* http://about.twitter.com/resources/buttons
 
 YouTube:
 
@@ -93,3 +114,4 @@ YouTube:
 * http://simpleicons.org/
 * http://fortawesome.github.io/Font-Awesome/icons/
 * http://shoestrap.org/downloads/elusive-icons-webfont/
+* http://fontello.com/

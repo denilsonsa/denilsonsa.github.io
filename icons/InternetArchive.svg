@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 599.998 583.111">
+<!-- Based on https://commons.wikimedia.org/wiki/File:Internet_Archive_logo_and_wordmark.svg -->
 <g id="internet">
 	<!-- TODO: reuse the path data for repeated letters: -->
 	<path d="M59.068,583.111h-2.194c0-6.582-1.755-7.46-8.163-7.46H10.971c-6.407,0-8.162,0.878-8.162,7.46H0.614v-24.575h2.194c0,6.583,1.843,7.461,8.162,7.461h37.741c6.319,0,8.163-0.878,8.163-7.461h2.194V583.111z"/>

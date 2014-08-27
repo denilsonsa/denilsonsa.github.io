@@ -12,7 +12,8 @@ items:
   - [3.0, -1, stylish]
   - [3.0,  1, userscripts]
 
-  - [2.5,  0, flattr]
+#  - [2.5,  0, flattr]
+  - [2.5,  0, aboutme]
   - [2.0, -1, youtube]
   - [2.0,  1, reddit]
 
