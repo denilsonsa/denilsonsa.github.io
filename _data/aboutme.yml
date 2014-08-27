@@ -57,6 +57,11 @@ flattr:
   useid: flattr
   text1: Flattr
 
+flickr:
+  href: https://secure.flickr.com/photos/crazyterabyte/
+  useid: flickr
+  text1: Flickr
+
 github:
   href: https://github.com/denilsonsa
   useid: github

@@ -40,6 +40,7 @@ Flatter:
 Flickr:
 
 * https://secure.flickr.com/about/goodies/
+* Colors: `#0063DC` and `#FF0084`
 
 GitHub:
 
