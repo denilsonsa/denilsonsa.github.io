@@ -42,6 +42,11 @@ deviantart:
   useid: deviantart
   text1: deviantART
 
+disqus:
+  href: http://disqus.com/denilsonsa/
+  useid: disqus
+  text1: Disqus
+
 dropbox:
   href: https://db.tt/VXe1QPLA
   useid: dropbox

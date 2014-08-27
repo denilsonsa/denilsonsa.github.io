@@ -19,6 +19,10 @@ deviantART:
 
 * http://help.deviantart.com/21/
 
+Disqus:
+
+* https://disqus.com/brand/
+
 Drawception:
 
 * http://drawception.com/img/logo-d.png
