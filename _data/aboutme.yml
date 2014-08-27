@@ -166,6 +166,11 @@ tumblr:
   useid: tumblr
   text1: Tumblr
 
+twitch:
+  href: http://www.twitch.tv/denilsonsa/profile
+  useid: twitch
+  text1: Twitch.tv
+
 twitter:
   href: https://twitter.com/denilsonsa
   useid: twitter

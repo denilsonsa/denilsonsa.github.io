@@ -1,24 +1,28 @@
 ---
 items:
-  - [9.5,  0, curriculumvitae]
-  - [9.0, -1, stackoverflowcareers]
-  - [9.0,  1, linkedin]
+  - [10.5,  0, curriculumvitae]
+  - [10.0, -1, stackoverflowcareers]
+  - [10.0,  1, linkedin]
 
-  - [8.5,  0, github]
-  - [8.0, -1, stackoverflow]
-  - [8.0,  1, bitbucket]
+  - [9.5,  0, github]
+  - [9.0, -1, stackoverflow]
+  - [9.0,  1, bitbucket]
 
-  - [7.5,  0, codepen]
-  - [7.0, -1, stylish]
-  - [7.0,  1, userscripts]
+  - [8.5,  0, codepen]
+  - [8.0, -1, stylish]
+  - [8.0,  1, userscripts]
 
-  - [6.5,  0, instagram]
-  - [6.0, -1, flickr]
-  - [6.0,  1, reddit]
+  - [7.5,  0, instagram]
+  - [7.0, -1, flickr]
+  - [7.0,  1, reddit]
 
-  - [5.5,  0, openclipart]
-  - [5.0, -1, deviantart]
-  - [5.0,  1, youtube]
+  - [6.5,  0, openclipart]
+  - [6.0, -1, deviantart]
+  - [6.0,  1, flattr]
+
+  - [5.5,  0, youtube]
+  - [5.0, -1, grooveshark]
+  - [5.0,  1, twitch]
 
   - [4.5,  0, steam]
   - [4.0, -1, backloggery]
@@ -75,7 +79,7 @@ http://jwatt.org/svg/authoring/
 {% assign xorigin = xhalf | divided_by: -2 | plus: xmargin | plus: pichalf %}
 {% assign yorigin = 0 %}
 
-<svg viewBox="-{{ pichalf }} -{{ picshorthalf }} {{ xgrid | times: 11 | plus: xorigin | plus: pichalf }} {{ picshortsize }}"
+<svg viewBox="-{{ pichalf }} -{{ picshorthalf }} {{ xgrid | times: 12 | plus: xorigin | plus: pichalf }} {{ picshortsize }}"
 	preserveAspectRatio="xMinYMid meet"
 	version="1.1"
 	xmlns="http://www.w3.org/2000/svg"

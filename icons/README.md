@@ -50,6 +50,10 @@ Flickr:
 * https://secure.flickr.com/about/goodies/
 * Colors: `#0063DC` and `#FF0084`
 
+Foursquare:
+
+* https://foursquare.com/about/logos
+
 GitHub:
 
 * https://github.com/logos
@@ -83,10 +87,21 @@ Kongregate:
 
 * http://www.kongregate.com/logos
 
+Last.fm:
+
+* http://www.last.fm/about/resources
+
 LinkedIn:
 
 * http://developer.linkedin.com/documents/branding-guidelines
 * http://press.linkedin.com/Media-Resources?SubjectID=644
+
+Meetup:
+
+* http://blog.meetup.com/press/
+* http://photos2.meetupstatic.com/photos/event/4/2/6/highres_147421062.jpeg
+* https://twitter.com/meetup
+* https://www.facebook.com/media/set/?set=a.445693534587.239261.8026914587&type=3
 
 Myspace:
 
@@ -129,6 +144,16 @@ Skype:
 * http://de.wikipedia.org/wiki/Datei:Skype-icon.svg
 * http://www.iconfinder.com/search/?q=skype
 
+SlideShare:
+
+* http://www.slideshare.net/about/logos
+
+SoundCloud:
+
+* https://developers.soundcloud.com/docs/api/buttons-logos
+* https://en.wikipedia.org/wiki/File:SoundCloud_logo.svg
+* https://play.google.com/store/apps/details?id=com.soundcloud.android
+
 StackOverflow:
 
 * http://stackapps.com/questions/347/svg-versions-of-the-logos
@@ -155,6 +180,10 @@ Tumblr:
 
 * https://www.tumblr.com/logo
 
+Twitch.tv:
+
+* http://www.twitch.tv/p/brandassets
+
 Twitter:
 
 * http://about.twitter.com/press/brand-assets
@@ -169,6 +198,11 @@ Userscripts:
 * http://www.userlogos.org/node/10561
 * http://github.com/greasemonkey/greasemonkey/tree/master/skin
 
+Vimeo:
+
+* https://vimeo.com/about/brand_guidelines
+* https://twitter.com/Vimeo
+
 YouTube:
 
 * http://www.youtube.com/yt/brand/downloads.html
@@ -182,3 +216,4 @@ YouTube:
 * http://shoestrap.org/downloads/elusive-icons-webfont/
 * http://fontello.com/
 * https://github.com/paulrobertlloyd/socialmediaicons
+* http://raphaeljs.com/icons/
