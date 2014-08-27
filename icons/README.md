@@ -75,6 +75,10 @@ Instagram:
 * https://help.instagram.com/304689166306603
 * http://instagram.com/accounts/badges/
 
+Instructables:
+
+* http://www.instructables.com/community/Official-Instructables-Logos/
+
 Kongregate:
 
 * http://www.kongregate.com/logos
@@ -88,10 +92,18 @@ Myspace:
 
 * https://myspace.com/pressroom/assetslogos
 
+Newgrounds:
+
+* http://www.newgrounds.com/downloads/designassets/
+
 Openclipart:
 
 * https://openclipart.org/detail/177066/openclipart-scissors-logo-guide-by-rejon-177066
 * https://openclipart.org/detail/177065/openclipart-scissors-logo-by-rejon-177065
+
+Pinterest:
+
+* http://business.pinterest.com/en/brand-guidelines
 
 reddit:
 
@@ -134,6 +146,10 @@ Stylish / Userstyles:
 * http://forum.userstyles.org/discussion/comment/58485
 * http://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe
 * https://github.com/JasonBarnabe/stylish-chrome/blob/master/128.png
+
+Tumblr:
+
+* https://www.tumblr.com/logo
 
 Twitter:
 
