@@ -68,6 +68,11 @@ googleplus:
   useid: googleplus
   text1: Google+
 
+grooveshark:
+  href: http://grooveshark.com/#!/denilsonsa
+  useid: grooveshark
+  text1: Grooveshark
+
 instagram:
   href: http://instagram.com/denilsonsa
   useid: instagram

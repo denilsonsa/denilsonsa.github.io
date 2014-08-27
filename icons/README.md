@@ -37,6 +37,10 @@ Flatter:
 * http://flattr.com/embed
 * https://commons.wikimedia.org/wiki/File:Flattr-Logo.svg
 
+Flickr:
+
+* https://secure.flickr.com/about/goodies/
+
 GitHub:
 
 * https://github.com/logos
@@ -51,6 +55,10 @@ Google+:
 * https://developers.google.com/+/web/badge/
 * https://developers.google.com/+/branding-guidelines
 * http://commons.wikimedia.org/wiki/File:Google_plus.svg
+
+Grooveshark:
+
+* http://grooveshark.com/logo
 
 Instagram:
 
