@@ -154,6 +154,11 @@ stylish:
   text1: User
   text2: styles
 
+tumblr:
+  href: http://denilsonsa.tumblr.com/
+  useid: tumblr
+  text1: Tumblr
+
 twitter:
   href: https://twitter.com/denilsonsa
   useid: twitter
