@@ -23,6 +23,7 @@ items:
   - [3.5,  0, steam]
   - [3.0, -1, backloggery]
   - [3.0,  1, kongregate]
+#  - [3.0,  1, alvanista]
 
   - [2.5,  0, aboutme]
   - [2.0, -1, disqus]

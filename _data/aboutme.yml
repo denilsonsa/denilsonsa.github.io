@@ -22,6 +22,11 @@ aboutme:
   useid: aboutme
   text1: about.me
 
+alvanista:
+  href: http://alvanista.com/denilsonsa
+  useid: alvanista
+  text1: Alvanista
+
 backloggery:
   href: http://backloggery.com/crazyterabyte
   useid: backloggery

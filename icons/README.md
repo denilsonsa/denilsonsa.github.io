@@ -4,6 +4,10 @@ About.me:
 
 * http://about.me/assets
 
+Alvanista:
+
+* http://alvanista.com/about/logo
+
 Bitbucket:
 
 * http://www.atlassian.com/company/press/resources/?tab=logos
