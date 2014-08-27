@@ -75,6 +75,10 @@ LinkedIn:
 * http://developer.linkedin.com/documents/branding-guidelines
 * http://press.linkedin.com/Media-Resources?SubjectID=644
 
+Myspace:
+
+* https://myspace.com/pressroom/assetslogos
+
 Openclipart:
 
 * https://openclipart.org/detail/177066/openclipart-scissors-logo-guide-by-rejon-177066
@@ -89,6 +93,12 @@ reddit:
 RSS:
 
 * https://commons.wikimedia.org/wiki/File:Feed-icon.svg
+
+Shadertoy:
+
+* https://www.shadertoy.com/img/favicon.ico
+* https://twitter.com/beauty_pi
+* Or the text "Shadertoy" rendered using "Lobster,Tahoma,Arial" font.
 
 Skype:
 
@@ -142,3 +152,4 @@ YouTube:
 * http://fortawesome.github.io/Font-Awesome/icons/
 * http://shoestrap.org/downloads/elusive-icons-webfont/
 * http://fontello.com/
+* https://github.com/paulrobertlloyd/socialmediaicons

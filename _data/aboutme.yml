@@ -88,6 +88,11 @@ linkedin:
   useid: linkedin
   text1: LinkedIn
 
+myspace:
+  href: https://myspace.com/denilsonsa
+  useid: myspace
+  text1: Myspace
+
 openclipart:
   href: https://openclipart.org/user-detail/CrazyTerabyte
   useid: openclipart
