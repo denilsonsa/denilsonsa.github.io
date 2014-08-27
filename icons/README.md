@@ -75,6 +75,11 @@ LinkedIn:
 * http://developer.linkedin.com/documents/branding-guidelines
 * http://press.linkedin.com/Media-Resources?SubjectID=644
 
+Openclipart:
+
+* https://openclipart.org/detail/177066/openclipart-scissors-logo-guide-by-rejon-177066
+* https://openclipart.org/detail/177065/openclipart-scissors-logo-by-rejon-177065
+
 reddit:
 
 * http://www.reddit.com/about/alien/

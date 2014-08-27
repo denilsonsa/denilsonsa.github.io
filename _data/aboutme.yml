@@ -88,6 +88,13 @@ linkedin:
   useid: linkedin
   text1: LinkedIn
 
+openclipart:
+  href: https://openclipart.org/user-detail/CrazyTerabyte
+  useid: openclipart
+  text1: Open
+  text2: clipart
+  # text1: Openclipart
+
 reddit:
   href: http://www.reddit.com/user/denilsonsa/
   useid: reddit

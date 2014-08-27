@@ -187,7 +187,6 @@ http://jwatt.org/svg/authoring/
 		{{ xgrid | times: 1 | plus: xhalf }},-5
 		{{ xgrid | times: 1 }},-10
 		" class="outline" />
-
 		<polygon points="
 		0,-10
 		-{{ xhalf }},-5
