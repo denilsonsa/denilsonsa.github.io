@@ -84,13 +84,6 @@ header a.extra:hover {
   margin-top: 2em;
 }
 
-article footer {
-  margin: 2em 0;
-}
-article footer #aboutme-horizontal {
-  width: 100%;
-}
-
 /* Posts */
 
 /* Black square at the end of the post */
