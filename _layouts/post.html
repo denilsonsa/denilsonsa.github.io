@@ -11,6 +11,8 @@ http://www.w3.org/TR/html5/text-level-semantics.html#the-time-element
 
 <p><a href="{{ page.previous.url }}">previous post</a> - <a href="{{ page.next.url }}">next post</a></p>
 
+<article>
+
 <!-- http://www.whatwg.org/specs/web-apps/current-work/multipage/semantics.html#the-time-element -->
 <time datetime="{{ page.date | date: '%F' }}" class="date-as-calendar">
 {% comment %}
@@ -29,6 +31,15 @@ See: http://docs.shopify.com/themes/liquid-basics/output#date
 <div class="post">
 {{ content }}
 </div>
+
+<footer>
+	<object id="aboutme-footer" data="{{ site.url }}/aboutme-hex-horizontal.svg" type="image/svg+xml">
+		<!-- TODO: add some fallback here. -->
+		<a href="{{ site.url }}/aboutme-hex-horizontal.svg">This SVG file</a> was supposed to be embedded here.
+	</object>
+</footer>
+
+</article>
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">
