@@ -23,6 +23,7 @@ items:
   - [5.5,  0, youtube]
   - [5.0, -1, grooveshark]
   - [5.0,  1, twitch]
+#  - [5.0,  1, hitbox]
 
   - [4.5,  0, steam]
   - [4.0, -1, backloggery]

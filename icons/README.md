@@ -1,12 +1,18 @@
 # Official icons and logos
 
-About.me:
+about.me:
 
 * http://about.me/assets
 
 Alvanista:
 
 * http://alvanista.com/about/logo
+
+AngelList:
+
+* https://angel.co/images/shared/peace_large.jpg
+* https://github.com/fontello/zocial.font/blob/master/src/svg/angellist.svg
+* https://github.com/hull/hullstrap/blob/master/source/images/icons/angellist.svg
 
 Bitbucket:
 
@@ -40,7 +46,7 @@ Facebook:
 
 * http://www.facebookbrand.com/
 
-Flatter:
+Flattr:
 
 * http://flattr.com/embed
 * https://commons.wikimedia.org/wiki/File:Flattr-Logo.svg
@@ -72,6 +78,11 @@ Google+:
 Grooveshark:
 
 * http://grooveshark.com/logo
+
+hitbox:
+
+* https://drive.google.com/folderview?id=0Bwsi49UsCzV7MTFiSEE1M1ZzZUU
+* https://twitter.com/seriousownsya/status/505328257102008320
 
 ICQ:
 
@@ -160,7 +171,7 @@ SoundCloud:
 * https://en.wikipedia.org/wiki/File:SoundCloud_logo.svg
 * https://play.google.com/store/apps/details?id=com.soundcloud.android
 
-StackOverflow:
+Stack Overflow:
 
 * http://stackapps.com/questions/347/svg-versions-of-the-logos
 * http://stackexchange.com/legal/trademark-guidance
@@ -176,7 +187,7 @@ StumbleUpon:
 
 * https://commons.wikimedia.org/wiki/File:StumbleUpon_Logo.svg
 
-Stylish / Userstyles:
+Stylish / userstyles:
 
 * http://forum.userstyles.org/discussion/comment/58485
 * http://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe
@@ -186,7 +197,7 @@ Tumblr:
 
 * https://www.tumblr.com/logo
 
-Twitch.tv:
+Twitch:
 
 * http://www.twitch.tv/p/brandassets
 

@@ -88,6 +88,12 @@ grooveshark:
   useid: grooveshark
   text1: Grooveshark
 
+hitbox:
+  href: http://www.hitbox.tv/DenilsonSa
+  useid: hitbox
+  text1: hitbox.tv
+  #text1: hitbox
+
 instagram:
   href: http://instagram.com/denilsonsa
   useid: instagram
@@ -136,6 +142,7 @@ stackoverflow:
   useid: stackoverflow
   text1: Stack
   text2: Overflow
+  # text1: Stack Overflow
 
 stackoverflowcareers:
   href: https://careers.stackoverflow.com/denilsonsa
@@ -171,6 +178,7 @@ twitch:
   href: http://www.twitch.tv/denilsonsa/profile
   useid: twitch
   text1: Twitch.tv
+  #text1: Twitch
 
 twitter:
   href: https://twitter.com/denilsonsa
@@ -191,3 +199,5 @@ youtube:
   href: https://www.youtube.com/user/denilsonsa
   useid: youtube
   text1: YouTube
+
+# vi:ts=2:sw=2:et
