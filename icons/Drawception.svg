@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 64 43" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<!-- Drawn from scratch, based on https://twitter.com/Drawception avatar -->
+<defs>
+<linearGradient id="DrawceptionBlueGradient" x1="0.588" y1="0.32" x2="0.35" y2="0.9">
+	<stop stop-color="#54d1fb" offset="0" />
+	<stop stop-color="#00627a" offset="1" />
+</linearGradient>
+<radialGradient id="DrawceptionPencilRubberGradient" cx="0.4" cy="0.2" r="0.175">
+	<stop stop-color="#ffc6c6" offset="0.8" />
+	<stop stop-color="#e2908b" offset="1" />
+</radialGradient>
+<linearGradient id="DrawceptionPencilCapGradient" x1="0.3" y1="0" x2="0.7" y2="1">
+	<stop stop-color="#fff" offset="0" stop-opacity="0.76" />
+	<stop stop-color="#fff" offset="0.8" stop-opacity="0" />
+</linearGradient>
+<linearGradient id="DrawceptionPencilBodyGradient" x1="1" y1="0.1" x2="0" y2="0.9">
+	<stop stop-color="#ffe3b1" offset="0.38" />
+	<stop stop-color="#ffc253" offset="0.4" />
+	<stop stop-color="#ffc253" offset="0.5" />
+	<stop stop-color="#ca8300" offset="0.5" />
+</linearGradient>
+<linearGradient id="DrawceptionPencilTipGradient" x1="1" y1="0" x2="0" y2="1">
+	<stop stop-color="#fff" offset="0.1" stop-opacity="0.6" />
+	<stop stop-color="#fff" offset="0.5" stop-opacity="0" />
+</linearGradient>
+</defs>
+<g stroke-linecap="round" stroke-linejoin="round">
+	<g fill="none" stroke="#000" stroke-width="2" >
+		<path d="m 27.413378,35.013664 -7.546375,6.800735 -3.503182,-3.065284" />
+		<path d="m 44.048563,29.949085 7.924236,6.416541 3.967889,-3.595155" />
+		<path d="m 49.871242,14.204877 7.973327,-2.969998 4.596384,-1.6165271 m -3.045406,-2.5960436 -1.550978,4.2125707 4.393477,1.77028" />
+		<path d="M 24.45413,19.242932 11.538382,19.475285" />
+	</g>
+	<path fill="url(#DrawceptionBlueGradient)" stroke="#191203" stroke-width="3" d="m 41.099084,16.459526 c 0.02239,6.087102 -4.890599,7.233852 -7.681053,8.028381 L 30.985359,12.916502 c 5.889225,-1.57763 10.099273,-0.386861 10.113725,3.543024 z M 21.800306,5.485273 28.048168,37.421645 C 41.924804,35.150022 50.567028,25.946723 49.924435,15.415795 49.455062,7.7236233 43.958054,0.57783637 29.414736,2.8809732 L 18.9145,5.0712065 z" />
+	<path fill="#ddf8ff" d="M 47.979741,19.766073 C 50.001025,2.1550615 34.745343,2.5751374 23.439041,5.8693824 37.044243,3.1054416 46.174366,4.8813931 47.979741,19.766073 z" />
+	<g fill="none" stroke="#000" stroke-width="0.75">
+		<path fill="url(#DrawceptionPencilRubberGradient)" d="M 2.2848133,9.1925091 6.3122807,6.5204394 C 5.2790996,5.1295718 4.1549345,2.9565995 2.2073619,4.2195856 0.25978942,5.4825716 1.7436448,8.5021463 2.2848133,9.1925091 z" />
+		<path fill="#414141" d="M 2.2848133,9.1925091 3.4228961,11.098609 7.4208386,8.2507593 6.3122807,6.5204394 z" />
+		<path fill="url(#DrawceptionPencilCapGradient)" stroke="none" d="M 2.8814346,9.3306159 3.0141,9.5628615 6.0532007,7.6256966 6.5561033,8.3385324 6.8463143,8.1402739 6.1796982,7.1336336 z" />
+		<path fill="url(#DrawceptionPencilBodyGradient)" d="m 3.4228961,11.098609 7.0029079,10.792201 1.105314,-2.642689 3.052959,-0.0054 L 7.4208386,8.2507593 z" />
+		<path d="M 5.3769813,9.7066578 11.531118,19.248121" />
+		<path fill="#989898" d="m 10.425804,21.89081 4.212501,2.422866 0.271752,-0.185455 -0.32598,-4.8855 -3.052959,0.0054 z" />
+		<path fill="url(#DrawceptionPencilTipGradient)" stroke="none" d="m 13.677368,20.196488 0.717064,2.627046 -0.216605,-3.151125 -2.381083,-0.01021 z" />
+		<path fill="#20201f" d="m 14.638305,24.313676 1.623581,3.139128 0.542163,-0.572073 -1.893992,-2.75251 z" />
+	</g>
+	<path fill="none" stroke="#191203" stroke-width="1.75" d="M 9.4575532,21.587923 10.899226,20.475486 M 8.2643105,19.974835 10.208854,18.538525 M 7.4467183,18.030292 9.148194,16.74866 m 4.750873,0.375652 -1.347922,-0.861787" />
+</g>
+</svg>
