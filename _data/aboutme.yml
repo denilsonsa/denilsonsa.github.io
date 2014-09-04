@@ -27,6 +27,11 @@ alvanista:
   useid: alvanista
   text1: Alvanista
 
+angellist:
+  href: https://angel.co/denilsonsa
+  useid: angellist
+  text1: AngelList
+
 backloggery:
   href: http://backloggery.com/crazyterabyte
   useid: backloggery
