@@ -1,34 +1,36 @@
 ---
 items:
-  - [10.5,  0, curriculumvitae]
-  - [10.0, -1, stackoverflowcareers]
-  - [10.0,  1, linkedin]
+  - [11.5,  0, curriculumvitae]
+  - [11.0, -1, stackoverflowcareers]
+  - [11.0,  1, linkedin]
 
-  - [9.5,  0, github]
-  - [9.0, -1, stackoverflow]
-  - [9.0,  1, bitbucket]
+  - [10.5,  0, github]
+  - [10.0, -1, stackoverflow]
+  - [10.0,  1, bitbucket]
 
-  - [8.5,  0, codepen]
-  - [8.0, -1, stylish]
-  - [8.0,  1, userscripts]
+  - [9.5,  0, codepen]
+  - [9.0, -1, stylish]
+  - [9.0,  1, userscripts]
+
+  - [8.5,  0, openclipart]
+  - [8.0, -1, deviantart]
+  - [8.0,  1, reddit]
 
   - [7.5,  0, instagram]
   - [7.0, -1, flickr]
-  - [7.0,  1, reddit]
+  - [7.0,  1, hitbox]
 
-  - [6.5,  0, openclipart]
-  - [6.0, -1, deviantart]
-  - [6.0,  1, flattr]
+  - [6.5,  0, youtube]
+  - [6.0, -1, flattr]
+  - [6.0,  1, twitch]
 
-  - [5.5,  0, youtube]
-  - [5.0, -1, grooveshark]
-  - [5.0,  1, twitch]
-#  - [5.0,  1, hitbox]
+  - [5.5,  0, grooveshark]
+  - [5.0, -1, drawception]
+  - [5.0,  1, backloggery]
 
   - [4.5,  0, steam]
-  - [4.0, -1, backloggery]
-  - [4.0,  1, kongregate]
-#  - [4.0,  1, alvanista]
+  - [4.0, -1, kongregate]
+  - [4.0,  1, alvanista]
 
   - [3.5,  0, tumblr]
   - [3.0, -1, stumbleupon]
@@ -80,7 +82,7 @@ http://jwatt.org/svg/authoring/
 {% assign xorigin = xhalf | divided_by: -2 | plus: xmargin | plus: pichalf %}
 {% assign yorigin = 0 %}
 
-<svg viewBox="-{{ pichalf }} -{{ picshorthalf }} {{ xgrid | times: 12 | plus: xorigin | plus: pichalf }} {{ picshortsize }}"
+<svg viewBox="-{{ pichalf }} -{{ picshorthalf }} {{ xgrid | times: 13 | plus: xorigin | plus: pichalf }} {{ picshortsize }}"
 	preserveAspectRatio="xMinYMid meet"
 	version="1.1"
 	xmlns="http://www.w3.org/2000/svg"

@@ -37,6 +37,7 @@ Drawception:
 
 * http://drawception.com/img/logo-d.png
 * http://drawception.com/img/icon16x16.png
+* https://twitter.com/Drawception (profile picture)
 
 Dropbox:
 
