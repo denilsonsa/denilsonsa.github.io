@@ -202,7 +202,7 @@ http://jwatt.org/svg/authoring/
 {% assign item = site.data.aboutme[itemname] %}
 {% assign rotation = 360.0 | times: forloop.index0 | divided_by: forloop.length %}
 <g transform="translate(0 -{{ translate_radius }}) rotate({{ rotation }} 0 {{ translate_radius }}) rotate(-{{ rotation }})" class="item with-icon">
-	<a target="_top" xlink:href="{{ item.href }}">
+	<a target="_top" xlink:href="{{ item.href | xml_escape }}">
 		<circle cx="0" cy="0" r="20" />
 		<use class="icon" xlink:href="#{{ item.useid }}" x="-14" y="-14" width="28" height="28" />
 		{% if item.text2 %}

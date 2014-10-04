@@ -196,7 +196,7 @@ http://jwatt.org/svg/authoring/
   That's why I'm using itemname as a temporary var.
 {% endcomment %}
 <g transform="translate({{ itemx | times: xgrid | plus: xorigin }} {{ itemy | times: ygrid | plus: yorigin }})" class="item with-icon">
-	<a target="_top" xlink:href="{{ item.href }}">
+	<a target="_top" xlink:href="{{ item.href | xml_escape }}">
 		<polygon points="
 		0,-10
 		-{{ xhalf }},-5
