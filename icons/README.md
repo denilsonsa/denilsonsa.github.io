@@ -134,6 +134,11 @@ Openclipart:
 * https://openclipart.org/detail/177066/openclipart-scissors-logo-guide-by-rejon-177066
 * https://openclipart.org/detail/177065/openclipart-scissors-logo-by-rejon-177065
 
+PayPal:
+
+* https://www.paypal-media.com/multimedia#logos
+* https://www.paypal-media.com/assets/zip/paypal_logo.zip
+
 Pinterest:
 
 * http://business.pinterest.com/en/brand-guidelines
