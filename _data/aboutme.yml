@@ -132,6 +132,11 @@ openclipart:
   text2: clipart
   # text1: Openclipart
 
+paypal:
+  href: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=denilsonsa%40gmail%2ecom&lc=BR&currency_code=BRL
+  useid: paypal
+  text1: PayPal
+
 pinterest:
   href: http://www.pinterest.com/denilsonsa/
   useid: pinterest
@@ -204,6 +209,11 @@ userscripts:
   useid: userscripts
   text1: User
   text2: scripts
+
+vk:
+  href: https://vk.com/denilsonsa
+  useid: vk
+  text1: VK
 
 youtube:
   href: https://www.youtube.com/user/denilsonsa
