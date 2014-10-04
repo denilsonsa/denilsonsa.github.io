@@ -106,23 +106,23 @@ From all possible dongles above (and below), you just have to choose one to buil
 
 I've choosen to build the `bsd` one. I got a flat cable with 14 wires, but since I needed only 6 (actually, only 5), I've split the cable. To make sure the wires wouldn't short-circuit inside the DB-25 case and to make everything inside the case less likely to break, I've applied an amount of [hot glue](http://en.wikipedia.org/wiki/Hot_glue) after I finished with the soldering. If you look at the photos, the dongle looks a bit messy and ugly, but since that hot-glued part will be hidden inside the DB-25 case, no problem!
 
-<figure class="singleimage">
+<figure class="singleimage polaroid">
 <img src="{{ site.url }}/blog/images/avr/parallel-port-programmer-01.jpg" alt="The inside of my parallel port programmer, showing 4 resistors soldered to the DB-25 connector and some hot glue.">
 </figure>
 
-<figure class="singleimage">
+<figure class="singleimage polaroid">
 <img src="{{ site.url }}/blog/images/avr/parallel-port-programmer-02.jpg" alt="The inside of my parallel port programmer, showing a bulk of hot glue next to the DB-25 connector.">
 </figure>
 
-<figure class="singleimage">
+<figure class="singleimage polaroid">
 <img src="{{ site.url }}/blog/images/avr/parallel-port-programmer-03.jpg" alt="My parallel port programmer, showing the DB-25 connector (to the PC parallel port) and a non-standard 6-pin connector (to the microcontroller circuit).">
 </figure>
 
-<figure class="singleimage">
+<figure class="singleimage polaroid">
 <img src="{{ site.url }}/blog/images/avr/parallel-port-programmer-04.jpg" alt="A picture of my finished parallel port programmer, with a black case around the DB-25 connector, hiding the the resistors and the hot glue blob. The flat cable has a black mark over the wire 1.">
 </figure>
 
-<figure class="singleimage">
+<figure class="singleimage polaroid">
 <img src="{{ site.url }}/blog/images/avr/parallel-port-programmer-05.jpg" alt="Another angle of the previous picture.">
 </figure>
 
@@ -140,7 +140,7 @@ I've not used any standard AVR connector for this project, but I will, if I buil
 
 Even though I have not used the standard connector, I kept the same wire order as the 6-pin one. Then, I tried to use the following pen to mark the wire 1 as black:
 
-<figure class="singleimage">
+<figure class="singleimage polaroid">
 <img src="{{ site.url }}/blog/images/avr/marker-pen.jpg" alt="Pen used to paint the wire 1 of the flat cable.">
 </figure>
 
@@ -150,7 +150,7 @@ The photos above were taken using a [SonyEricsson K750i phone](http://en.wikiped
 
 ## Other DIY AVR Programmers
 
-**Update at 2011-08-10:** This section is now somewhat obsolete, as I've just written [part 2.1][], which deals with _USBasp_ programmer. If you prefer, skip the rest of this post and go directly to [part 2.1][].
+**Update on 2011-08-10:** This section is now somewhat obsolete, as I've just written [part 2.1][], which deals with _USBasp_ programmer. If you prefer, skip the rest of this post and go directly to [part 2.1][].
 
 ### Buffered parallel port
 
@@ -180,11 +180,11 @@ Another disadvantage is the buggy libusb on 64-bit architectures, as you can rea
 
 Yet another disadvantage is the difficulty to build this dongle without buying the kit. You must buy two chips and a [PCB][] or a [stripboard][] and solder everything together. The buffer chip should be easy to find (but I don't know if it really is). The ATTINY2313-20PU chip, however, might not be so easy. I found ATmega8 and ATmega16 at [Cerne-Tec](http://www.cerne-tec.com.br/) (which is located in Rio de Janeiro, where I live), but only these two models are sold there, they don't sell ATtiny. Probably I can replace the ATtiny with ATmega, but it will probably make the project a bit more expensive. Finally, whenever you get the microcontroller, you still need to program it with the USBtinyISP firmware, but how? (the “chicken & egg” problem) Well, you can use someone else's programmer, or you can just use a serial or parallel programmer. But, in the latter case, why don't you just use that programmer for everything else?
 
-**Update at 2008-01-03:** I've just found another USB ISP programmer. It's called [USBasp](http://www.fischl.de/usbasp/) ([Wayback Machine](http://web.archive.org/web/20080105030005/http://www.fischl.de/usbasp/)). _“It simply consists of an ATMega48 or an ATMega8 and a couple of passive components. The programmer uses a firmware-only USB driver, no special USB controller is needed.”_ After reading this, I've changed my mind. If I ever need to use an AVR programmer on a PC without parallel port, I will build this one.
+**Update on 2008-01-03:** I've just found another USB ISP programmer. It's called [USBasp](http://www.fischl.de/usbasp/) ([Wayback Machine](http://web.archive.org/web/20080105030005/http://www.fischl.de/usbasp/)). _“It simply consists of an ATMega48 or an ATMega8 and a couple of passive components. The programmer uses a firmware-only USB driver, no special USB controller is needed.”_ After reading this, I've changed my mind. If I ever need to use an AVR programmer on a PC without parallel port, I will build this one.
 
 I've read at [a page with instructions about USBasp](http://www.scienceprog.com/building-and-installing-usbasp-usb-programmer-of-avr-microcontrollers/) ([Wayback Machine](http://web.archive.org/web/20080103013932/http://www.scienceprog.com/building-and-installing-usbasp-usb-programmer-of-avr-microcontrollers/)) that you should connect the programmer to a port on the computer, avoiding [USB hubs](http://en.wikipedia.org/wiki/USB_hub). I'm not sure if this is the case of other USB programmers, but since nowadays computers fortunately have many USB ports, I hope this won't be a problem.
 
-**Update at 2011-08-10:** I've bought a USBasp, and I've also built one on a breadboard. Everything is described in detail at [part 2.1][].
+**Update on 2011-08-10:** I've bought a USBasp, and I've also built one on a breadboard. Everything is described in detail at [part 2.1][].
 
 ## Other links
 

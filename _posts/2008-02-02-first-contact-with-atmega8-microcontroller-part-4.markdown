@@ -1,41 +1,36 @@
 ---
-date: 2008-02-02 08:02:00+00:00
-excerpt: 'In this fourth part, I&#39;m going to finally mount a circuit using the
-  <a href="http://www.atmel.com/dyn/products/product_card.asp?part_id=2004" rel="nofollow"
-  target="_blank">ATmega8</a> <a href="http://en.wikipedia.org/wiki/Microcontroller"
-  rel="nofollow" target="_blank">microcontroller</a> and program it with the <a href="http://en.wikipedia.org/wiki/Firmware"
-  rel="nofollow" target="_blank">firmware</a> we wrote. ... '
 layout: post
 title: First contact with ATmega8 microcontroller - part 4
-tag:
-- avr
-- atmega8
-- microcontroller
+tags:
+- AVR
+- ATmega8
+- Microcontroller
 ---
 
-In this fourth part, I'm going to finally mount a circuit using the [ATmega8][] [microcontroller][] and program it with the [firmware](http://en.wikipedia.org/wiki/Firmware) we wrote. ...
+In this fourth part, I'm going to finally mount a circuit using the [ATmega8][] [microcontroller][] and program it with the [firmware][] we wrote. ...
 
-<!-- more -->Go to: [part 1](http://my.opera.com/CrazyTerabyte/blog/2007/10/25/first-contact-with-atmega8-microcontroller-part-1), [part 2](http://my.opera.com/CrazyTerabyte/blog/2007/10/26/first-contact-with-atmega8-microcontroller-part-2), [part 2.1](http://my.opera.com/CrazyTerabyte/blog/2011/08/10/first-contact-with-atmega8-microcontroller-part-2-1) ([video](http://www.youtube.com/watch?v=sr0B-5Bhxdg)), [part 3](http://my.opera.com/CrazyTerabyte/blog/2007/11/02/first-contact-with-atmega8-microcontroller-part-3), **part 4** ([video](http://www.youtube.com/watch?v=V7ESjm2bG-A)).
 
-Whoa! It has been a long time since my last part... about 3 months! Anyway, let's finally put the [firmware](http://en.wikipedia.org/wiki/Firmware) [we wrote on part 3](http://my.opera.com/CrazyTerabyte/blog/2007/11/02/first-contact-with-atmega8-microcontroller-part-3) into the microcontroller.
+{% include first-contact-with-atmega8-navigation.html %}
 
-**The circuit**
+Whoa! It has been a long time since my last part... about 3 months! Anyway, let's finally put the [firmware][] we wrote on [part 3][] into the microcontroller.
 
-**ATmega8's I/O ports**
+## The circuit
 
-If you've read the C or assembly code from [part 3](http://my.opera.com/CrazyTerabyte/blog/2007/11/02/first-contact-with-atmega8-microcontroller-part-3), you must remember that it just writes some values to ATmega8's PORTC.
+### ATmega8's I/O ports
 
-ATmega8 has three multi-bit multipurpose I/O ports: PORTB with 8 bits, PORTC with 7 bits, and PORTD with 8 bits. Each of these bits are mapped to one pin at microcontroller, but most pins have multiple functions. For example, 4 pins from PORTB are also used for the [Serial Peripheral Interface](http://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus) (3 of them are used to program the microcontroller using serial programming); 6 bits from PORTC are also used for [Analog-to-Digital Converter](http://en.wikipedia.org/wiki/Analog-to-digital_converter) (while 2 of them can also be used for the [Two-wire Serial Interface](http://en.wikipedia.org/wiki/I2C)).
+If you've read the C or assembly code from [part 3][], you must remember that it just writes some values to [ATmega8][]'s `PORTC`.
 
-While we can choose to use any one of the available functions of each pin, there is one special pin that I think should not be messed with: the RESET pin. While we can use it as PC6 (bit 6 of PORTC), doing so will require disabling the reset line, which means that we won't be able to use serial programming anymore, which means that [ISP (In-System Programming)](http://en.wikipedia.org/wiki/In-System_Programming) won't be possible, which means that our simple and cheap AVR ISP programmer we built on [part 2](http://my.opera.com/CrazyTerabyte/blog/2007/10/26/first-contact-with-atmega8-microcontroller-part-2) won't work, which means that parallel programming must be used instead, which requires much more wires and components, which adds a lot of complexity... Well, all of this just because we wanted to have 1 more I/O bit. Is it worthy? I don't think so.
+[ATmega8][] has three multi-bit multipurpose I/O ports: `PORTB` with 8 bits, `PORTC` with 7 bits, and `PORTD` with 8 bits. Each of these bits are mapped to one pin at microcontroller, but most pins have multiple functions. For example, 4 pins from `PORTB` are also used for the [Serial Peripheral Interface](http://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus) (3 of them are used to program the microcontroller using serial programming); 6 bits from `PORTC` are also used for [Analog-to-Digital Converter](http://en.wikipedia.org/wiki/Analog-to-digital_converter) (while 2 of them can also be used for the [Two-wire Serial Interface](http://en.wikipedia.org/wiki/I2C)).
 
-Of course, you can read all the gory details about [ATmega8][] at its [datasheet](http://www.atmel.com/dyn/resources/prod_documents/doc2486.pdf).
+While we can choose to use any one of the available functions of each pin, there is one special pin that I think should not be messed with: the `RESET` pin. While we can use it as `PC6` (bit 6 of `PORTC`), doing so will require disabling the reset line, which means that we won't be able to use serial programming anymore, which means that [ISP (In-System Programming)](http://en.wikipedia.org/wiki/In-System_Programming) won't be possible, which means that our simple and cheap AVR ISP programmer we built on [part 2][] won't work, which means that parallel programming must be used instead, which requires much more wires and components, which adds a lot of complexity… Well, all of this just because we wanted to have 1 more I/O bit. Is it worthy? I don't think so.
 
-**Our circuit**
+Of course, you can read all the gory details about [ATmega8][] at its [datasheet][ATmega8 datasheet].
 
-I've decided to use the 4 [least significant bits](http://en.wikipedia.org/wiki/Least_significant_bit) from PORTC to connect the LEDs, but any set of free pins could have been used instead (of course, with appropriate changes to the firmware source code).
+### Our circuit
 
-The circuit itself is dead simple. I've just connected one [LED](http://en.wikipedia.org/wiki/Light-emitting_diode) and one [resistor](http://en.wikipedia.org/wiki/Resistor) to each output pin used. In addition to that, I've connected my ISP connector to the RESET, SCK, MISO and MOSI ports. Finally, just connect all GND together and connect the VCC to the microcontroller. There are two things that should be noted, though:
+I've decided to use the 4 [least significant bits](http://en.wikipedia.org/wiki/Least_significant_bit) from `PORTC` to connect the LEDs, but any set of free pins could have been used instead (of course, with appropriate changes to the firmware source code).
+
+The circuit itself is dead simple. I've just connected one [LED](http://en.wikipedia.org/wiki/Light-emitting_diode) and one [resistor](http://en.wikipedia.org/wiki/Resistor) to each output pin used. In addition to that, I've connected my ISP connector to the `RESET`, `SCK`, `MISO` and `MOSI` ports. Finally, just connect all `GND` together and connect the `VCC` to the microcontroller. There are two things that should be noted, though:
 
 First one is that our parallel port ISP programmer is unpowered (i.e. it doesn't draw current from the PC's parallel port, but only transmit signals). This means we need to get 5V VCC from somewhere else. In my case, I've used an USB port to do so.
 
@@ -43,17 +38,29 @@ The second thing is that I'm using 4 resistors, one for each LED. It is also pos
 
 Here is the circuit (drawn using [Inkscape](http://www.inkscape.org/)):
 
-[![](http://files.myopera.com/CrazyTerabyte/atmega8/atmega8-blinkingleds.png)](http://files.myopera.com/CrazyTerabyte/atmega8/atmega8-blinkingleds-hi.png)[(SVG version)](http://files.myopera.com/CrazyTerabyte/atmega8/atmega8-blinkingleds.svg)
+<figure class="singleimage">
+<img src="{{ site.url }}/blog/images/avr/atmega8-blinkingleds.png" alt="Schematic diagram for this 'blinking LEDs' circuit.">
+<figcaption>
+(<a href="{{ site.url }}/blog/images/avr/atmega8-blinkingleds-hi.png">PNG version</a>,
+<a href="{{ site.url }}/blog/images/avr/atmega8-blinkingleds.svg">SVG version</a>)
+</figcaption>
+</figure>
 
-The RESET, SCK, MISO and MOSI lines come from the ISP connector. Although my programmer does not use a standard connector, the pin numbers are the same as the standard one. To help you remember such connector, here is the pinout:
+The `RESET`, `SCK`, `MISO` and `MOSI` lines come from the ISP connector. Although my programmer does not use a standard connector, the pin numbers are the same as the standard one. To help you remember such connector, here is the pinout:
 
-**Update on 2008-12-02:** [Originally, the 6-pin pinout was wrong.](http://my.opera.com/CrazyTerabyte/blog/2008/12/01/first-contact-with-atmega8-microcontroller-correction) It has been fixed, so the pinout below is correct.
+**Update on 2008-12-02:** [Originally, the 6-pin pinout was wrong.][correction] It has been fixed, so the pinout below is correct.
 
-[![](http://files.myopera.com/CrazyTerabyte/atmega8/AVR-ISP-connectors.png)](http://files.myopera.com/CrazyTerabyte/atmega8/AVR-ISP-connectors-hi.png)[(SVG version)](http://files.myopera.com/CrazyTerabyte/atmega8/AVR-ISP-connectors.svg)
+<figure class="singleimage">
+<img src="{{ site.url }}/blog/images/avr/AVR-ISP-connectors.png" alt="Diagram for AVR ISP 6-pin and 10-pin connectors.">
+<figcaption>
+(<a href="{{ site.url }}/blog/images/avr/AVR-ISP-connectors-hi.png">PNG version</a>,
+<a href="{{ site.url }}/blog/images/avr/AVR-ISP-connectors.svg">SVG version</a>)
+</figcaption>
+</figure>
 
-**Step-by-step mounting (with pictures!)**
+### Step-by-step mounting (with pictures!)
 
-Well, I think I didn't really need to guide you step-by-step on how to mount this circuit on the [breadboard](http://en.wikipedia.org/wiki/Breadboard) (AKA protoboard), but I have some pictures I wanted to show. :) (this time, the photos were taken on a Sony DSC-S80 digital camera, with additional light by SonyEricsson K750i flashlight, and then I've applied _Layer -> Colors -> Auto -> White Balance_ on [Gimp](http://www.gimp.org/))
+Well, I think I didn't really need to guide you step-by-step on how to mount this circuit on the [breadboard](http://en.wikipedia.org/wiki/Breadboard) (AKA protoboard), but I have some pictures I wanted to show. :) (this time, the photos were taken on a Sony DSC-S80 digital camera, with additional light by SonyEricsson K750i flashlight, and then I applied _Layer → Colors → Auto → White Balance_ on [Gimp](http://www.gimp.org/))
 
 The first step is to insert the 28-pin socket on the breadboard and then insert ATmega8 on the socket. Also insert the ISP connector.
 
@@ -61,23 +68,33 @@ In the next picture, I've also connected the GND and VCC lines. As you can see f
 
 Note that this breadboard is unpowered! Be careful if your breadboard is powered by any external source!
 
-[![](http://files.myopera.com/CrazyTerabyte/atmega8/on_the_breadboard_1-lo.jpg)](http://files.myopera.com/CrazyTerabyte/atmega8/on_the_breadboard_1-hi.jpg)
+<figure class="singleimage polaroid">
+<a href="{{ site.url }}/blog/images/avr/blinkingleds_on_the_breadboard_1-hi.jpg"><img src="{{ site.url }}/blog/images/avr/blinkingleds_on_the_breadboard_1-lo.jpg" alt=""></a>
+</figure>
 
-Then, I've connected the ISP pins to the microcontroller. Since my ISP programmer is unpowered, I left VCC line from it not connected.
+Then, I connected the ISP pins to the microcontroller. Since my ISP programmer is unpowered, I left VCC line from it not connected.
 
-The wire colors here don't mean anything special. I just happen to have pieces of wire with different colors for different lengths. Makes it easier when working with the breadboard.
+The wire colors here don't mean anything special. I just happened to have pieces of wire with different colors for different lengths. Makes it easier when working with the breadboard.
 
-[![](http://files.myopera.com/CrazyTerabyte/atmega8/on_the_breadboard_2-lo.jpg)](http://files.myopera.com/CrazyTerabyte/atmega8/on_the_breadboard_2-hi.jpg)
+<figure class="singleimage polaroid">
+<a href="{{ site.url }}/blog/images/avr/blinkingleds_on_the_breadboard_2-hi.jpg"><img src="{{ site.url }}/blog/images/avr/blinkingleds_on_the_breadboard_2-lo.jpg" alt=""></a>
+</figure>
 
-Now I've added wire connections to the LEDs. I fortunately have a [7-segment display](http://en.wikipedia.org/wiki/Seven-segment_display) already mounted near the breadboard with one 2K2 resistor for each segment. In case you aren't as lucky as I am, you need to insert the resistors and LEDs on the breadboard. I guess any resistor between 1K and 2K should be enough too. Also be careful to not invert the LEDs, or they won't turn on.
+Next, I added wire connections to the LEDs. I fortunately have a [7-segment display](http://en.wikipedia.org/wiki/Seven-segment_display) already mounted near the breadboard with one 2K2 resistor for each segment. In case you aren't as lucky as I am, you need to insert the resistors and LEDs on the breadboard. I guess any resistor between 1K and 2K should be enough. Also be careful to not invert the LEDs, or they won't turn on.
 
-[![](http://files.myopera.com/CrazyTerabyte/atmega8/on_the_breadboard_3-lo.jpg)](http://files.myopera.com/CrazyTerabyte/atmega8/on_the_breadboard_3-hi.jpg)
+<figure class="singleimage polaroid">
+<a href="{{ site.url }}/blog/images/avr/blinkingleds_on_the_breadboard_3-hi.jpg"><img src="{{ site.url }}/blog/images/avr/blinkingleds_on_the_breadboard_3-lo.jpg" alt=""></a>
+</figure>
 
-Finally, I've connected my ISP programmer to the connector on the breadboard. I've also added USB power to the board, by connecting USB +5V and USB GND wires to VCC and GND lines of my circuit.
+Finally, I connected my ISP programmer to the connector on the breadboard. I also added USB power to the board, by connecting USB +5V and USB GND wires to VCC and GND lines of my circuit.
 
-[![](http://files.myopera.com/CrazyTerabyte/atmega8/on_the_breadboard_4-lo.jpg)](http://files.myopera.com/CrazyTerabyte/atmega8/on_the_breadboard_4-hi.jpg)
+<figure class="singleimage polaroid">
+<a href="{{ site.url }}/blog/images/avr/blinkingleds_on_the_breadboard_4-hi.jpg"><img src="{{ site.url }}/blog/images/avr/blinkingleds_on_the_breadboard_4-lo.jpg" alt=""></a>
+</figure>
 
-If you remember the [part 1](http://my.opera.com/CrazyTerabyte/blog/2007/10/25/first-contact-with-atmega8-microcontroller-part-1) you will notice I've listed an USB-B connector at the parts list. However, later I noticed this connector can't be used on a breadboard. Since I still want to get power from USB (and, later on, make ATmega8 act as an USB device, but not in this post series), I bought the cheapest USB cable I could find (R$ 2.79, or US$ 1.57), ripped one of the ends and used the wires on the breadboard.
+<!-- TODO: from here -->
+
+If you remember the [part 1][] you will notice I listed a USB-B connector at the parts list. However, later I noticed this connector can't be used on a breadboard. Since I still want to get power from USB (and, later on, make ATmega8 act as an USB device, but not in this post series), I bought the cheapest USB cable I could find (R$ 2.79, or US$ 1.57), ripped one of the ends and used the wires on the breadboard.
 
 [![](http://files.myopera.com/CrazyTerabyte/atmega8/usb-b-lo.jpg)](http://files.myopera.com/CrazyTerabyte/atmega8/usb-b-hi.jpg)
 
@@ -87,7 +104,7 @@ This USB-B connector will be saved for future projects.
 
 As described in [part 1](http://my.opera.com/CrazyTerabyte/blog/2007/10/25/first-contact-with-atmega8-microcontroller-part-1), you need to download/compile [avrdude](http://www.nongnu.org/avrdude/) [(old homepage)](http://www.bsdhome.com/avrdude/). Probably [uisp](http://www.nongnu.org/uisp/) or [PonyProg](http://www.lancos.com/prog.html) should work too, but I've choosen to use **avrdude** because I feel it is the most complete and versatile program. In addition, its documentation is pretty good.
 
-Supposing you are on Linux, you need to enable **ppdev** kernel module (_Device Drivers -> Character devices -> Support for user-space parallel port device drivers_). After loading this module (**modprobe ppdev**, or add it to **/etc/modules.autoload.d/kernel-2.6** on [Gentoo](http://www.gentoo.org/doc/en/handbook/handbook-x86.xml?part=1&chap=7#doc_chap5)), make sure the parport device has appropriate permissions (**ls -l /dev/parport***). On my system, I can just add my user to the **lp** user group.
+Supposing you are on Linux, you need to enable **ppdev** kernel module (_Device Drivers → Character devices → Support for user-space parallel port device drivers_). After loading this module (**modprobe ppdev**, or add it to **/etc/modules.autoload.d/kernel-2.6** on [Gentoo](http://www.gentoo.org/doc/en/handbook/handbook-x86.xml?part=1&chap=7#doc_chap5)), make sure the parport device has appropriate permissions (**ls -l /dev/parport***). On my system, I can just add my user to the **lp** user group.
 
 If you are on Windows, you may try using [giveio](http://web.mit.edu/6.115/www/pic.shtml) [(direct download)](http://web.mit.edu/6.115/www/miscfiles/giveio.zip). I think it is also provided inside **avrdude** tarball. I don't use Windows, I can't provide any help on that.
 
@@ -200,7 +217,7 @@ If you can't seem to make it work on a breadboard, try soldering the socket onto
 
 Don't you like this idea? Me neither. This is why I think hardware sucks! Hardware is always a source of faults! ;)
 
-**Update at 2008-07-04:** [Anibal points out at comments](http://my.opera.com/CrazyTerabyte/blog/show.dml/1622761#comment5605473) that there is an important [BIOS](http://en.wikipedia.org/wiki/BIOS) setting that plays a role here. If the parallel port is configured as _SPP_, then the communication is unidirectional (data can only be sent, but never be received) and thus avrdude won't be able to talk to the microcontroller. If this happens to you, changing that setting to _EPP+ECP_ should fix the problem. Thanks, Anibal!
+**Update on 2008-07-04:** [Anibal points out at comments](http://my.opera.com/CrazyTerabyte/blog/show.dml/1622761#comment5605473) that there is an important [BIOS](http://en.wikipedia.org/wiki/BIOS) setting that plays a role here. If the parallel port is configured as _SPP_, then the communication is unidirectional (data can only be sent, but never be received) and thus avrdude won't be able to talk to the microcontroller. If this happens to you, changing that setting to _EPP+ECP_ should fix the problem. Thanks, Anibal!
 
 **Be happy and watch the blinking LEDs!**
 
@@ -215,9 +232,17 @@ I plan to make at least a few more projects using [ATmega8][], and maybe some ot
 
 Thanks for reading, see you next time!
 
-**Update at 2011-08-10:** I've added [part 2.1](http://my.opera.com/CrazyTerabyte/blog/2011/08/10/first-contact-with-atmega8-microcontroller-part-2-1) (and a [video](http://www.youtube.com/watch?v=sr0B-5Bhxdg)) that uses a USB programmer, instead of the parallel port programmer that I've originally used. I haven't updated the instructions above on how to use _avrdude_, but I guess you can figure it out. :)
+**Update on 2011-08-10:** I've added [part 2.1](http://my.opera.com/CrazyTerabyte/blog/2011/08/10/first-contact-with-atmega8-microcontroller-part-2-1) (and a [video](http://www.youtube.com/watch?v=sr0B-5Bhxdg)) that uses a USB programmer, instead of the parallel port programmer that I've originally used. I haven't updated the instructions above on how to use _avrdude_, but I guess you can figure it out. :)
 
-Go to: [part 1](http://my.opera.com/CrazyTerabyte/blog/2007/10/25/first-contact-with-atmega8-microcontroller-part-1), [part 2](http://my.opera.com/CrazyTerabyte/blog/2007/10/26/first-contact-with-atmega8-microcontroller-part-2), [part 2.1](http://my.opera.com/CrazyTerabyte/blog/2011/08/10/first-contact-with-atmega8-microcontroller-part-2-1) ([video](http://www.youtube.com/watch?v=sr0B-5Bhxdg)), [part 3](http://my.opera.com/CrazyTerabyte/blog/2007/11/02/first-contact-with-atmega8-microcontroller-part-3), **part 4** ([video](http://www.youtube.com/watch?v=V7ESjm2bG-A)).
+{% include first-contact-with-atmega8-navigation.html %}
 
+[Atmel]: http://www.atmel.com/
 [ATmega8]: http://www.atmel.com/devices/ATMEGA8.aspx
+[ATmega8 datasheet]: http://www.atmel.com/Images/Atmel-2486-8-bit-AVR-microcontroller-ATmega8_L_datasheet.pdf
+[avrdude]: http://www.nongnu.org/avrdude/
+[firmware]: http://en.wikipedia.org/wiki/Firmware
 [microcontroller]: http://en.wikipedia.org/wiki/Microcontroller
+[part 1]: {% post_url 2007-10-25-first-contact-with-atmega8-microcontroller-part-1 %}
+[part 2]: {% post_url 2007-10-26-first-contact-with-atmega8-microcontroller-part-2 %}
+[part 3]: {% post_url 2007-11-02-first-contact-with-atmega8-microcontroller-part-3 %}
+[correction]: {% post_url 2008-12-01-first-contact-with-atmega8-microcontroller-correction %}

@@ -74,7 +74,7 @@ Fortunately, all objectives were met.
 
 ### Hardware
 
-_**Update at 2011-08-10:** This list is obsolete. It has been left here for historical reasons._
+_**Update on 2011-08-10:** This list is obsolete. It has been left here for historical reasons._
 
 * 1 × ATmega8
 * 1 × [28-pin socket](http://en.wikipedia.org/wiki/Dual_in-line_package) (optional)
@@ -95,7 +95,7 @@ For the final version of any project, consider either making a [PCB][] or using 
 
 * A compiler: [avr-gcc][avr-libc] or [tavrasm][] ([Wayback Machine](http://web.archive.org/web/20070929162857/http://www.tavrasm.org/))
 * A programmer: [avrdude][] or [uisp](http://www.nongnu.org/uisp/) ([Wayback Machine](http://web.archive.org/web/20071021021038/http://www.nongnu.org/uisp/)) (or maybe [PonyProg][] ([Wayback Machine](http://web.archive.org/web/20071026014723/http://www.lancos.com/prog.html)), but I haven't tried it)
-* `ppdev` Linux kernel module (_Device Drivers → Character devices → Support for user-space parallel port device drivers_) (_**Update at 2011-08-10:** This is not needed if you don't use a parallel port programmer._)
+* `ppdev` Linux kernel module (_Device Drivers → Character devices → Support for user-space parallel port device drivers_) (_**Update on 2011-08-10:** This is not needed if you don't use a parallel port programmer._)
 * [giveio](http://web.mit.edu/6.115/www/pic.shtml) ([Wayback Machine](http://web.archive.org/web/20071031044855/http://web.mit.edu/6.115/www/pic.shtml)) ([direct download](http://web.mit.edu/6.115/www/miscfiles/giveio.zip)) (only for Windows, I don't know how this works nor how to install it)
 
 Installing them on [Gentoo](http://www.gentoo.org/):
@@ -109,7 +109,7 @@ If you use a parallel port programmer, run `modprobe ppdev` and add your user (y
 
 I already had the [breadboard][], some resistors, some LEDs and some wires. The other components I bought at [Cerne-Tec][] (I went to their physical office in Rio de Janeiro). The prices here are in Brazillian Reais (R$). Today, US$ 1.00 = R$ 1.78.
 
-_**Update at 2011-08-10:** This shopping list was meant for building a parallel port programmer. If you don't build one, then this list has no use for you. It has been left here for historical reasons._
+_**Update on 2011-08-10:** This shopping list was meant for building a parallel port programmer. If you don't build one, then this list has no use for you. It has been left here for historical reasons._
 
 * R$ 9.90 - 1 × ATmega8
 * R$ 1.00 - 1 × 28-pin socket
@@ -127,11 +127,11 @@ The [ATmega16][] was priced at R$ 24.90, which is a bit more than the total cost
 
 **Note:** There is no guarantee the prices will be the same at the time you go buy your components. I'm not affiliated with Cerne-Tec. The prices listed here are just for illustration.
 
-**Update at 2007-10-26:** I found a small stripboard (about the exact size I need, maybe just a bit larger) for sale at R$ 2.50 at an electronics store near my house. I haven't bought it yet, but I'm probably going to.
+**Update on 2007-10-26:** I found a small stripboard (about the exact size I need, maybe just a bit larger) for sale at R$ 2.50 at an electronics store near my house. I haven't bought it yet, but I'm probably going to.
 
-**Update at 2007-12-29:** The USB-B connector turned out to not be needed for these experiments and was substituted by a simple USB cable (priced at R$ 2.79, or US$ 1.57). However, I know I'm going to use it sometime in future, in other project. (_**Update at 2011-08-10:** It turns out I've never used that USB-B connector, and I'm not even sure if I will ever use it._)
+**Update on 2007-12-29:** The USB-B connector turned out to not be needed for these experiments and was substituted by a simple USB cable (priced at R$ 2.79, or US$ 1.57). However, I know I'm going to use it sometime in future, in other project. (_**Update on 2011-08-10:** It turns out I've never used that USB-B connector, and I'm not even sure if I will ever use it._)
 
-**Update at 2014-06-12:** If you live in São Paulo, or if you want to order online, you can try buying [AVR microcontrollers](http://loja.multcomercial.com.br/ecommerce_site/categoria_4741-4769-4809_4689_Componentes-Eletronicos-ATMEGAxx) at [Mult Comercial](http://www.multcomercial.com.br/).
+**Update on 2014-06-12:** If you live in São Paulo, or if you want to order online, you can try buying [AVR microcontrollers](http://loja.multcomercial.com.br/ecommerce_site/categoria_4741-4769-4809_4689_Componentes-Eletronicos-ATMEGAxx) at [Mult Comercial](http://www.multcomercial.com.br/).
 
 ## Overall plan of this project
 
@@ -149,11 +149,11 @@ So, these are the steps in this project:
 
 See you at the [next part][part 2]!
 
-**Update at 2008-02-02:** I've uploaded a [video of this project at YouTube](http://www.youtube.com/watch?v=V7ESjm2bG-A). Everybody loves videos, so check it out!
+**Update on 2008-02-02:** I've uploaded a [video of this project at YouTube](http://www.youtube.com/watch?v=V7ESjm2bG-A). Everybody loves videos, so check it out!
 
-**Update at 2011-08-10:** Parallel ports are from the past, and nobody uses them anymore. Thus I've revisited this series of posts and added [part 2.1][], that shows how I built USBasp. It also has a [video](http://www.youtube.com/watch?v=sr0B-5Bhxdg).
+**Update on 2011-08-10:** Parallel ports are from the past, and nobody uses them anymore. Thus I've revisited this series of posts and added [part 2.1][], that shows how I built USBasp. It also has a [video](http://www.youtube.com/watch?v=sr0B-5Bhxdg).
 
-**Update at 2011-08-11:** The source-code for this "blinking LEDs" firmware (see [part 3][]) is now available at: <https://bitbucket.org/denilsonsa/atmega8-blinking-leds>
+**Update on 2011-08-11:** The source-code for this "blinking LEDs" firmware (see [part 3][]) is now available at: <https://bitbucket.org/denilsonsa/atmega8-blinking-leds>
 
 {% include first-contact-with-atmega8-navigation.html %}
 

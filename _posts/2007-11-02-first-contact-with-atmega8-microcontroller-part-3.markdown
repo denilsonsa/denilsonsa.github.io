@@ -376,7 +376,7 @@ You use it in a way similar to [tavrasm][] ([Wayback Machine](http://web.archive
 
 ## Download all files used in this post
 
-_**Update at 2011-08-11:** All code for this project is now available at: <https://bitbucket.org/denilsonsa/atmega8-blinking-leds> (future source-code updates, if any, will be posted there)_
+_**Update on 2011-08-11:** All code for this project is now available at: <https://bitbucket.org/denilsonsa/atmega8-blinking-leds> (future source-code updates, if any, will be posted there)_
 
 **[Download the code from BitBucket](https://bitbucket.org/denilsonsa/atmega8-blinking-leds/downloads)**
 

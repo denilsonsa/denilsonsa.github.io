@@ -394,6 +394,52 @@ Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
 cubilia Curae; Morbi urna dui, fermentum quis, feugiat imperdiet, imperdiet id.
 
 
+# Polaroid Pictures
+
+Lorem ipsum dolor sit amet. Ipsum. Aenean laoreet posuere orci. Etiam id nisl.
+Suspendisse volutpat elit molestie orci. Suspendisse vel augue at felis
+tincidunt sollicitudin.
+
+<figure class="floatright polaroid">
+<img src="{{ site.url }}/blog/images/k750i_main_menu.jpg" alt="">
+<figcaption>
+Figure caption here.
+</figcaption>
+</figure>
+
+Sit amet ante. Mauris ac nibh eget risus volutpat tempor. Praesent volutpat
+sollicitudin dui. Sed in tellus id urna viverra commodo. Vestibulum enim felis,
+interdum non, sollicitudin in, posuere a, sem. Cras nibh.
+
+<figure class="floatright polaroid">
+<img src="{{ site.url }}/blog/images/hard_drive_adapter_screws.jpg" alt="">
+</figure>
+
+Vestibulum ac lacus. Vivamus porttitor, massa ut hendrerit bibendum, metus
+augue aliquet turpis, vitae pellentesque velit est vitae metus. Duis eros enim,
+fermentum at, sagittis id, lacinia eget, tellus. Nunc consequat pede et nulla.
+Donec nibh. Pellentesque cursus orci vitae urna. Cum sociis natoque penatibus
+et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque risus
+turpis, aliquet ac, accumsan vel, iaculis eget, enim. Pellentesque nibh neque,
+malesuada id, tempor vel, aliquet ut, eros. In hac habitasse platea dictumst.
+Integer neque purus, congue sed, mattis sed, vulputate ac, pede. Donec
+vestibulum purus non tortor. Integer at nunc.
+
+<figure class="singleimage polaroid">
+<img src="{{ site.url }}/blog/images/hard_drive_adapter_screws.jpg" alt="">
+<figcaption>
+Figure caption here. Maecenas sed nibh non lacus tempor faucibus. In hac
+habitasse platea dictumst.
+</figcaption>
+</figure>
+
+Etiam facilisis. Nam suscipit. Ut consectetuer leo vehicula augue. Aliquam
+cursus. Integer pharetra rhoncus massa. Cras et ligula vel quam tristique
+commodo. Sed est lectus, mollis quis, lacinia id, sollicitudin nec, eros.
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+cubilia Curae; Morbi urna dui, fermentum quis, feugiat imperdiet, imperdiet id.
+
+
 <!-- Comments in Markdown: https://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax -->
 
 [example]: http://example.com/ "Example link"

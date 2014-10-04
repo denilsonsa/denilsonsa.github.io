@@ -68,7 +68,7 @@ Note it **cannot** use infrared to control other devices (like a TV set or DVD).
 
 _Pause for breath…_
 
-<figure class="singleimage">
+<figure class="singleimage polaroid">
 <img src="{{ site.url }}/blog/images/k750i-01.jpg" alt="">
 </figure>
 
@@ -138,7 +138,7 @@ If the screen is bigger, then that should mean we can have more items at same ti
 
 The (big) font used for numbers is ugly, confusing, and hard to read (mostly due to its mix of thin and thick lines).
 
-<figure class="singleimage">
+<figure class="singleimage polaroid">
 <img src="{{ site.url }}/blog/images/k750i_number_font.jpg" alt="">
 </figure>
 
@@ -152,7 +152,7 @@ On the other hand, it can show all calls (received, missed and dialed) in only o
 
 I don't like the main menu icons. They are not very intuitive. The Radio icon looks like a [clapperboard](http://en.wikipedia.org/wiki/Clapperboard). The Calls icon looks like "Phone info". The Contacts icon (when not selected), does not look like anything.
 
-<figure class="singleimage">
+<figure class="singleimage polaroid">
 <img src="{{ site.url }}/blog/images/k750i_main_menu.jpg" alt="">
 </figure>
 
