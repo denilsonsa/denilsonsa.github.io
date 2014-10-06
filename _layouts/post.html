@@ -34,26 +34,29 @@ See: http://docs.shopify.com/themes/liquid-basics/output#date
 
 </article>
 
+<div id="comments">
+
 <div id="disqus_thread"></div>
 <script type="text/javascript">
-	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-	// http://help.disqus.com/customer/portal/articles/472098-javascript-configuration-variables
-	var disqus_shortname = 'denilsonsa';
-	var disqus_identifier = '{{ page.id }}';
-	var disqus_title = {{ page.title | jsonify }};
-	//var disqus_url = '';
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+// http://help.disqus.com/customer/portal/articles/472098-javascript-configuration-variables
+var disqus_shortname = 'denilsonsa';
+var disqus_identifier = '{{ page.id }}';
+var disqus_title = {{ page.title | jsonify }};
+//var disqus_url = '';
 
-{% comment %}
-// TODO: remove the Liquid comment tag to enable Disqus.
+if (['', '127.0.0.1', 'localhost'].indexOf(window.location.hostname) == -1) {
 	/* * * DON'T EDIT BELOW THIS LINE * * */
 	(function() {
 		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
 		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
 		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 	})();
-{% endcomment %}
+}
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>  <em>TODO: uncomment disqus code to enable comments (when deploying to production)</em>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div>
 
 {% comment %} vi:ft=liquid: {% endcomment %}
