@@ -92,109 +92,89 @@ Finally, I connected my ISP programmer to the connector on the breadboard. I als
 <a href="{{ site.url }}/blog/images/avr/blinkingleds_on_the_breadboard_4-hi.jpg"><img src="{{ site.url }}/blog/images/avr/blinkingleds_on_the_breadboard_4-lo.jpg" alt=""></a>
 </figure>
 
-<!-- TODO: from here -->
-
 If you remember the [part 1][] you will notice I listed a USB-B connector at the parts list. However, later I noticed this connector can't be used on a breadboard. Since I still want to get power from USB (and, later on, make ATmega8 act as an USB device, but not in this post series), I bought the cheapest USB cable I could find (R$ 2.79, or US$ 1.57), ripped one of the ends and used the wires on the breadboard.
 
-[![](http://files.myopera.com/CrazyTerabyte/atmega8/usb-b-lo.jpg)](http://files.myopera.com/CrazyTerabyte/atmega8/usb-b-hi.jpg)
+<figure class="singleimage polaroid">
+<a href="{{ site.url }}/blog/images/avr/USB-B-hi.jpg"><img src="{{ site.url }}/blog/images/avr/USB-B-lo.jpg" alt=""></a>
+</figure>
 
-This USB-B connector will be saved for future projects.
+~~This USB-B connector will be saved for future projects.~~ (_**Update on 2011-08-10:** It turns out I've never used that USB-B connector, and I don't think I will ever use it._)
 
-**Preparing the operating system**
+## Preparing the operating system
 
-As described in [part 1](http://my.opera.com/CrazyTerabyte/blog/2007/10/25/first-contact-with-atmega8-microcontroller-part-1), you need to download/compile [avrdude](http://www.nongnu.org/avrdude/) [(old homepage)](http://www.bsdhome.com/avrdude/). Probably [uisp](http://www.nongnu.org/uisp/) or [PonyProg](http://www.lancos.com/prog.html) should work too, but I've choosen to use **avrdude** because I feel it is the most complete and versatile program. In addition, its documentation is pretty good.
+As described in [part 1][], you need to download/compile [avrdude][]. Probably [uisp][] or [PonyProg][] should work too, but I've choosen to use avrdude because I feel it is the most complete and versatile program. In addition, its documentation is pretty good.
 
-Supposing you are on Linux, you need to enable **ppdev** kernel module (_Device Drivers → Character devices → Support for user-space parallel port device drivers_). After loading this module (**modprobe ppdev**, or add it to **/etc/modules.autoload.d/kernel-2.6** on [Gentoo](http://www.gentoo.org/doc/en/handbook/handbook-x86.xml?part=1&chap=7#doc_chap5)), make sure the parport device has appropriate permissions (**ls -l /dev/parport***). On my system, I can just add my user to the **lp** user group.
+Supposing you are on Linux, you need to enable `ppdev` kernel module (_Device Drivers → Character devices → Support for user-space parallel port device drivers_). After loading this module (by running `modprobe ppdev`, and optionally adding it to ~~`/etc/modules.autoload.d/kernel-2.6`~~ `/etc/conf.d/modules` on [Gentoo](http://www.gentoo.org/doc/en/handbook/handbook-x86.xml?part=1&chap=7#doc_chap5)), make sure the `parport` device has appropriate permissions (`ls -l /dev/parport*`). On my system, I can just add my user to the `lp` user group.
 
-If you are on Windows, you may try using [giveio](http://web.mit.edu/6.115/www/pic.shtml) [(direct download)](http://web.mit.edu/6.115/www/miscfiles/giveio.zip). I think it is also provided inside **avrdude** tarball. I don't use Windows, I can't provide any help on that.
+If you are on Windows, you may try using [giveio](http://web.mit.edu/6.115/www/pic.shtml) ([Wayback Machine](http://web.archive.org/web/20080205105759/http://web.mit.edu/6.115/www/pic.shtml)). I think it is also [distributed with avrdude](http://svn.savannah.nongnu.org/viewvc/trunk/avrdude/windows/?root=avrdude). I don't use Windows, I can't provide any help on that.
 
-That's all you need, but, before continuing, I recommend you reading the [avrdude documentation](http://www.nongnu.org/avrdude/user-manual/avrdude.html) or its manpage.
+That's all you need, but, before continuing, I recommend reading the [avrdude documentation](http://www.nongnu.org/avrdude/user-manual/avrdude.html) or its manpage.
 
-**Learning more about your microcontroller**
+## Learning more about your microcontroller
 
 The [AVR microcontrollers](http://en.wikipedia.org/wiki/Atmel_AVR) have [three types of memory](http://en.wikipedia.org/wiki/Atmel_AVR#Device_Architecture):
 
+* A relatively large non-volatile **[Flash memory](http://en.wikipedia.org/wiki/Flash_memory)** (8KiB, in ATmega8), where the program code and data (firmware) is stored. Big chunks of constant data should also be stored here. It can only be written or erased in blocks (called pages). The program running on the microcontroller can read single bytes from it.
+* A relatively small, but fast and volatile **[SRAM](http://en.wikipedia.org/wiki/Static_random_access_memory)** (1KiB, in ATmega8). Since this is volatile, it is not possible to access it or write to it using avrdude (and it doesn't make sense, anyway).
+* A relatively small and non-volatile **[EEPROM](http://en.wikipedia.org/wiki/EEPROM)** (512 bytes, in ATmega8). Single bytes can be read or written, making it perfect for storing small portions of data that must be preserved even when power is off.
 
-
-  * A relatively large non-volatile **[Flash memory](http://en.wikipedia.org/wiki/Flash_memory)** (8KiB, in ATmega8), where the program code and data (firmware) is stored. Big chunks of constant data should also be stored here. It can only be written or erased in blocks (called pages). The program running on the microcontroller can read single bytes from it.
-  * A relatively small, but fast and volatile **[SRAM](http://en.wikipedia.org/wiki/Static_random_access_memory)** (1KiB, in ATmega8). Since this is volatile, it is not possible to access it or write to it using **avrdude** (and it doesn't make sense, anyway).
-  * A relatively small and non-volatile **[EEPROM](http://en.wikipedia.org/wiki/EEPROM)** (512 bytes, in ATmega8). Single bytes can be read or written, making it perfect for storing small portions of data that must be preserved even when power is off.
-
-In addition to them, there are some special programmable bytes (this information might be inaccurate for devices other than [ATmega8][], please check the datasheet for your device):
-
-
+In addition to them, there are some special programmable bytes (this information might be inaccurate for devices other than [ATmega8][], please check the datasheet of your device):
 
   * **Lock bits**, stored into one **lock byte**, control the ability to read/write the EEPROM and the Flash memory. These bits can only be erased using the _chip erase_ command, which will also erase the other memories.
   * **Fuse bits**, stored into **fuse high byte** and **fuse low byte**, control several features of how the microcontroller works. The most important are the bits which control the clock source (in other words, if the microcontroller will use an external [crystal](http://en.wikipedia.org/wiki/Crystal_oscillator), an external clock, or the internal oscillator, and the frequency of the internal oscillator).
 
-It may seem weird, but these bits are called **programmed** when set to **0**, and **unprogrammed** when set to **1**.
+It may seem weird, but these bits are called **programmed** when set to `0`, and **unprogrammed** when set to `1`.
 
-avrdude can read and write all of them (except the SRAM, of course). Usually, though, you only need to set the fuse bits once, and (re)program the Flash and EEPROM memories as needed. When the final product is ready, you can set the lock bits if you want.
+avrdude can read and write all of them (except the SRAM, of course). Usually, though, you only need to set the fuse bits once, and (re)program the Flash and EEPROM memories as needed. When the final product is ready, you may set the lock bits if you want.
 
-**Using avrdude to program the microcontroller**
+## Using avrdude to program the microcontroller
 
-**Common parameters**
+### Common parameters
 
-There are some parameters you always want to pass to avrdude:
-
-
+There are some parameters you want to always pass to avrdude:
 
     -p atmega8 -c bsd -P /dev/parport0
 
-
-Ok, I know that **-P** is optional, but it doesn't hurt to use it.
+Ok, I know that `-P` is optional, but it doesn't hurt to use it.
 
 There are some other parameters you might like (please, read the [documentation](http://www.nongnu.org/avrdude/user-manual/avrdude_4.html) or the manpage to find out more about them):
 
+  * `-E noreset` This forces avrdude to leave the RESET line deactivated before exiting, allowing the microcontroller to start the program even with the [ISP](http://en.wikipedia.org/wiki/In-System_Programming) hardware connected. By default, avrdude will leave the parallel port in the same state that it was found.
+  * `-n` Disables writing any data.
+  * `-v` Enable verbose output.
+  * `-i {delay}` This changes the default delay between each bit change. Increase this delay and connect the [ISP](http://en.wikipedia.org/wiki/In-System_Programming) pins to a couple of LEDs instead of the microcontroller to see how avrdude sends commands to the microcontroller. (Basically, you will see some blinking LEDs.)
 
-
-  * **-E noreset** This forces avrdude to leave the RESET line deactivated before exiting, allowing the microcontroller to start the program even with the [ISP](http://en.wikipedia.org/wiki/In-System_Programming) hardware connected. By default, avrdude will leave the parallel port in the same state that it was found.
-  * **-n** Disables writing any data.
-  * **-v** Enable verbose output.
-  * **-i {delay}** This changes the default delay between each bit change. Increase this delay and connect the [ISP](http://en.wikipedia.org/wiki/In-System_Programming) pins to a couple of LEDs instead of the microcontroller to see how avrdude sends commands to the microcontroller. (basically you will just see some blinking LEDs)
-
-**More about the fuse bits**
+### More about the fuse bits
 
 When programming the microcontroller, make sure the fuse bits select the desired clock source. The default value on my microcontroller selects the internal oscillator at 1MHz. Since for this project I didn't care about the clock, that was ok.
 
-However, if the fuse bits select an external clock source, you must add this clock source to your circuit (e.g. add a [crystal](http://en.wikipedia.org/wiki/Crystal_oscillator) and two capacitors) before being able to even program the microcontroller (like shown at page 237 from [ATmega8 datasheet](http://www.atmel.com/dyn/resources/prod_documents/doc2486.pdf)).
+However, if the fuse bits select an external clock source, you must add this clock source to your circuit (e.g. add a [crystal](http://en.wikipedia.org/wiki/Crystal_oscillator) and two capacitors) before being able to even program the microcontroller (like shown at page 237 from [ATmega8 datasheet][]).
 
-Calculating the fuse bits can be a bit boring, so fortunately someone else has made an [AVR Fuse Calculator](http://palmavr.sourceforge.net/cgi-bin/fc.cgi?P_PREV=&P=ATmega8). You might find it handy. Note, however, that the default fuse bit values for [ATmega8][] in that page are incorrect. As described at pages 223 and 224 of [ATmega8 datasheet](http://www.atmel.com/dyn/resources/prod_documents/doc2486.pdf), the default values are actually **0xD9** for the fuse high byte and **0xE1** for the fuse low byte.
+Calculating the fuse bits can be a bit boring, so fortunately someone else has made an [AVR Fuse Calculator](http://www.engbedded.com/fusecalc/). You might find it handy. Note, however, that the default fuse bit values for [ATmega8][] in [that page](http://www.engbedded.com/cgi-bin/fcx.cgi?P_PREV=&P=ATmega8) ~~are incorrect~~. (**Update:** It has been fixed.) As described at pages 223 and 224 of [ATmega8 datasheet][], the default values are actually `0xD9` for the fuse high byte and `0xE1` for the fuse low byte.
 
-**Programming the microcontroller**
+### Programming the microcontroller
 
 Supposing that the external clock source is correctly connected, or that you don't need one because you are using the internal oscillator, then we can run avrdude and it will be able to talk to the microcontroller.
-
-
 
     avrdude -p atmega8 -c bsd -P /dev/parport0  \
       -U signature:r:signature.dump:h
 
-
-This command will just read the signature bytes from the microcontroller and save them to the _signature.dump_ file, using hexadecimal format. In my case, that file was created with these contents:
-
-
+This command will just read the signature bytes from the microcontroller and save them to the `signature.dump` file, using hexadecimal format. In my case, that file was created with these contents:
 
     0x1e,0x93,0x7
 
-
-What do I need these bytes for? Actually, for nothing. :) But this is an easy way to test if avrdude can talk to the microcontroller, without writing anything to it.
+What do I need these bytes for? Actually, for nothing. But this is an easy way to test if avrdude can talk to the microcontroller, without writing anything to it. It also confirms the model of the microcontroller (each model has a different signature).
 
 Use the following command to write the new firmware into the microcontroller:
-
-
 
     avrdude -p atmega8 -c bsd -P /dev/parport0  \
       -U flash:w:hello.hex:i
 
+This will program the `hello.hex` file, stored in [Intel Hex format (ihex)](http://www.scienceprog.com/shelling-the-intel-8-bit-hex-file-format/) ([Wayback Machine](http://web.archive.org/web/20080206102335/http://www.scienceprog.com/shelling-the-intel-8-bit-hex-file-format)), to the Flash memory.
 
-This will program the **hello.hex** file, stored in [Intel Hex format (ihex)](http://www.scienceprog.com/shelling-the-intel-8-bit-hex-file-format/), to the Flash memory.
+avrdude automatically verifies the written data after issuing the write command. The verification is done by reading data from the microcontroller and comparing with the local file. If you want to disable this automatic verification, use `-V` (but there is no real reason to disable that).
 
-avrdude automatically verifies the written data after issuing the write command. The verification is done by reading data from the microcontroller and comparing with the local file. If you want to disable this automatic verification, use **-V** (but there is no real reason to disable that).
-
-Yet again, please check the [documentation](http://www.nongnu.org/avrdude/user-manual/avrdude_4.html) or the manpage to understand how to use the **-U** parameter. It's really simple and easy. You can also pass multiple **-U** parameters at the same command line. For instance, the following command will read basically everything from the microcontroller and save on different files using different formats:
-
-
+Yet again, please check the [documentation](http://www.nongnu.org/avrdude/user-manual/avrdude_4.html) or the manpage to understand how to use the `-U` parameter. It's really simple and easy. You can also pass multiple `-U` parameters at the same command line. For instance, the following command will read basically everything from the microcontroller and save on different files using different formats:
 
     avrdude -p atmega8 -c bsd -P /dev/parport0  \
       -U flash:r:flash.dump:i \
@@ -204,35 +184,37 @@ Yet again, please check the [documentation](http://www.nongnu.org/avrdude/user-m
       -U lock:r:lock.dump:b \
       -U signature:r:signature.dump:h
 
+Obviously, these command lines are too big to type them manually, and you should add them to the `Makefile`. See [part 3][] for some sample Makefiles.
 
-Obviously, these command lines are too big to type them manually, and you should add them to the Makefile. See [part 3](http://my.opera.com/CrazyTerabyte/blog/2007/11/02/first-contact-with-atmega8-microcontroller-part-3) for some sample Makefiles.
-
-**When things don't work...**
+## When things don't work...
 
 Who said all of this would work right away? I didn't! Of course that it won't work!
 
-The most common cause of failure is bad contact between the microcontroller and the [breadboard](http://en.wikipedia.org/wiki/Breadboard). Sometimes not all pins are touching the breadboard contacts. There is no real solution for this, just try pressing or bending the microcontroller or its socket very gently. Be careful to not break the pins.
+The most common cause of failure is bad contact between the microcontroller and the [breadboard](http://en.wikipedia.org/wiki/Breadboard). Sometimes not all pins are touching the breadboard contacts. There is no real solution for this, just try pressing or bending the microcontroller or its socket very gently. Be careful not to break the pins.
 
 If you can't seem to make it work on a breadboard, try soldering the socket onto a [stripboard](http://en.wikipedia.org/wiki/Stripboard) or a [PCB](http://en.wikipedia.org/wiki/Printed_circuit_board).
 
-Don't you like this idea? Me neither. This is why I think hardware sucks! Hardware is always a source of faults! ;)
+Don't you like this idea? Me neither. This is why I think hardware sucks! Hardware is always a source of faults! 😉
 
-**Update on 2008-07-04:** [Anibal points out at comments](http://my.opera.com/CrazyTerabyte/blog/show.dml/1622761#comment5605473) that there is an important [BIOS](http://en.wikipedia.org/wiki/BIOS) setting that plays a role here. If the parallel port is configured as _SPP_, then the communication is unidirectional (data can only be sent, but never be received) and thus avrdude won't be able to talk to the microcontroller. If this happens to you, changing that setting to _EPP+ECP_ should fix the problem. Thanks, Anibal!
+**Update on 2008-07-04:** Anibal points out at the comments ([Wayback Machine](http://web.archive.org/web/20081227080949/http://my.opera.com/CrazyTerabyte/blog/2008/02/02/first-contact-with-atmega8-microcontroller-part-4#comment5605473)) that there is an important [BIOS](http://en.wikipedia.org/wiki/BIOS) setting that plays a role here. If the parallel port is configured as _SPP_, then the communication is unidirectional (data can only be sent, but never be received) and thus avrdude won't be able to talk to the microcontroller. If this happens to you, changing that setting to _EPP+ECP_ should fix the problem. Thanks, Anibal!
 
-**Be happy and watch the blinking LEDs!**
+## Be happy and watch the blinking LEDs!
 
-![](http://files.myopera.com/CrazyTerabyte/atmega8/blinking-leds.gif)Well, if everything went fine, you should have some blinking LEDs right after running avrdude. Maybe you need to unplug the ISP hardware, maybe not (this is why I use **-E noreset**).
+<figure class="floatright">
+<img src="{{ site.url }}/blog/images/avr/blinkingleds.gif" alt="A short video showing the 4 LEDs blinking.">
+</figure>
 
-I've uploaded a simple **[video of this experiment at YouTube](http://www.youtube.com/watch?v=V7ESjm2bG-A)**. You can also download the [original MP4 version](http://files.myopera.com/CrazyTerabyte/atmega8/blinking_leds.mp4). The camera was a Sony DSC-S80, the video has been put together in [blender](http://www.blender.org/) (using its [sequencer](http://en.wikibooks.org/wiki/Blender_3D:_Noob_to_Pro/Sequencer_Intro)).
+Well, if everything went fine, you should have some blinking LEDs right after running avrdude. Maybe you need to unplug the ISP hardware, maybe not (this is why I use `-E noreset`).
 
+I've uploaded a simple **[video of this experiment to YouTube](https://www.youtube.com/watch?v=V7ESjm2bG-A)**. The camera was a Sony DSC-S80, the video has been put together in [blender](http://www.blender.org/) (using its [sequencer](http://en.wikibooks.org/wiki/Blender_3D:_Noob_to_Pro/Sequencer_Intro)).
 
-This is the last part of this series. I think I've successfully documented everything I learnt from this experiment. I hope these posts will be useful for other people, like they will be useful for me in future, whenever I forget one detail or another.
+This is the last part of this series. I think I've successfully documented everything I learnt from this experiment. I hope these posts will be useful for other people, like they will be useful for me in the future, whenever I forget one detail or another.
 
 I plan to make at least a few more projects using [ATmega8][], and maybe some others using other microcontrollers. I'm going to post them here if I feel they are worthy enough.
 
 Thanks for reading, see you next time!
 
-**Update on 2011-08-10:** I've added [part 2.1](http://my.opera.com/CrazyTerabyte/blog/2011/08/10/first-contact-with-atmega8-microcontroller-part-2-1) (and a [video](http://www.youtube.com/watch?v=sr0B-5Bhxdg)) that uses a USB programmer, instead of the parallel port programmer that I've originally used. I haven't updated the instructions above on how to use _avrdude_, but I guess you can figure it out. :)
+**Update on 2011-08-10:** I've added [part 2.1][] (and a [video](https://www.youtube.com/watch?v=sr0B-5Bhxdg)) that uses a USB programmer, instead of the parallel port programmer that I've originally used. I haven't updated the instructions above on how to use avrdude, but I guess you can figure it out.
 
 {% include first-contact-with-atmega8-navigation.html %}
 
@@ -240,9 +222,12 @@ Thanks for reading, see you next time!
 [ATmega8]: http://www.atmel.com/devices/ATMEGA8.aspx
 [ATmega8 datasheet]: http://www.atmel.com/Images/Atmel-2486-8-bit-AVR-microcontroller-ATmega8_L_datasheet.pdf
 [avrdude]: http://www.nongnu.org/avrdude/
+[uisp]: http://www.nongnu.org/uisp/
+[PonyProg]: http://www.lancos.com/prog.html
 [firmware]: http://en.wikipedia.org/wiki/Firmware
 [microcontroller]: http://en.wikipedia.org/wiki/Microcontroller
 [part 1]: {% post_url 2007-10-25-first-contact-with-atmega8-microcontroller-part-1 %}
 [part 2]: {% post_url 2007-10-26-first-contact-with-atmega8-microcontroller-part-2 %}
+[part 2.1]: {% post_url 2011-08-10-first-contact-with-atmega8-microcontroller-part-2-1 %}
 [part 3]: {% post_url 2007-11-02-first-contact-with-atmega8-microcontroller-part-3 %}
 [correction]: {% post_url 2008-12-01-first-contact-with-atmega8-microcontroller-correction %}

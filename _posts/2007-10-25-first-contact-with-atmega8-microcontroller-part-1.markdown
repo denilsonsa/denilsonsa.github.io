@@ -129,7 +129,7 @@ The [ATmega16][] was priced at R$ 24.90, which is a bit more than the total cost
 
 **Update on 2007-10-26:** I found a small stripboard (about the exact size I need, maybe just a bit larger) for sale at R$ 2.50 at an electronics store near my house. I haven't bought it yet, but I'm probably going to.
 
-**Update on 2007-12-29:** The USB-B connector turned out to not be needed for these experiments and was substituted by a simple USB cable (priced at R$ 2.79, or US$ 1.57). However, I know I'm going to use it sometime in future, in other project. (_**Update on 2011-08-10:** It turns out I've never used that USB-B connector, and I'm not even sure if I will ever use it._)
+**Update on 2007-12-29:** The USB-B connector turned out to not be needed for these experiments and was substituted by a simple USB cable (priced at R$ 2.79, or US$ 1.57). However, I know I'm going to use it sometime in future, in other project. (_**Update on 2011-08-10:** It turns out I've never used this USB-B connector, and I don't think I will ever use it._)
 
 **Update on 2014-06-12:** If you live in São Paulo, or if you want to order online, you can try buying [AVR microcontrollers](http://loja.multcomercial.com.br/ecommerce_site/categoria_4741-4769-4809_4689_Componentes-Eletronicos-ATMEGAxx) at [Mult Comercial](http://www.multcomercial.com.br/).
 
