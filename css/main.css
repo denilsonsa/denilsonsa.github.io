@@ -43,11 +43,12 @@ a:visited { color: #a0a; }
 
 .posts li {
   line-height: 1.75;
+  text-indent: -5em;
+  margin-left: 5em;
 }
 
 .posts time {
-  color: #aaa;
-  font-family: "Monaco", "Courier New", monospace;
+  color: #222;
   font-size: 80%;
 }
 
