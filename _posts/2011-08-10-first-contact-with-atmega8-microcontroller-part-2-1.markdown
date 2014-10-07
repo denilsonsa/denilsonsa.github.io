@@ -13,7 +13,7 @@ tag:
 - atmega8
 ---
 
-Almost 4 years later, I started using AVR microcontrollers again. However, today it is difficult to find a computer that has a _parallel port_, and thus I need to revisit this topic of AVR programmers. And I end up building (and buying) the [USBasp](http://www.fischl.de/usbasp/) programmer. ...
+Almost 4 years later, I started using AVR microcontrollers again. However, today it is difficult to find a computer that has a _parallel port_, and thus I need to revisit this topic of AVR programmers. And I end up building (and buying) the [USBasp](http://www.fischl.de/usbasp/) programmer.
 
 <!-- more -->Go to: [part 1](http://my.opera.com/CrazyTerabyte/blog/2007/10/25/first-contact-with-atmega8-microcontroller-part-1), [part 2](http://my.opera.com/CrazyTerabyte/blog/2007/10/26/first-contact-with-atmega8-microcontroller-part-2), **part 2.1** ([video](http://www.youtube.com/watch?v=sr0B-5Bhxdg)), [part 3](http://my.opera.com/CrazyTerabyte/blog/2007/11/02/first-contact-with-atmega8-microcontroller-part-3), [part 4](http://my.opera.com/CrazyTerabyte/blog/2008/02/02/first-contact-with-atmega8-microcontroller-part-4) ([video](http://www.youtube.com/watch?v=V7ESjm2bG-A)).
 

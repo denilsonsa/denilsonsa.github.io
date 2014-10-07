@@ -7,7 +7,7 @@ tags:
 - Microcontroller
 ---
 
-In this fourth part, I'm going to finally mount a circuit using the [ATmega8][] [microcontroller][] and program it with the [firmware][] we wrote. ...
+In this fourth part, I'm going to finally mount a circuit using the [ATmega8][] [microcontroller][] and program it with the [firmware][] we wrote.
 
 
 {% include first-contact-with-atmega8-navigation.html %}
