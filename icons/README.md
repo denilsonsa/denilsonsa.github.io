@@ -237,6 +237,8 @@ YouTube:
 
 # Other icons and logos
 
+* http://www.steverichey.com/dev/vector-logos/
+* https://github.com/johan/kilobyte-svg-challenge
 * http://zurb.com/playground/social-webicons
 * http://simpleicons.org/
 * http://fortawesome.github.io/Font-Awesome/icons/
