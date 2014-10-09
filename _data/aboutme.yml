@@ -82,6 +82,11 @@ flickr:
   useid: flickr
   text1: Flickr
 
+gamejolt:
+  href: http://gamejolt.com/profile/denilsonsa/378910/
+  useid: gamejolt
+  text1: Game Jolt
+
 github:
   href: https://github.com/denilsonsa
   useid: github

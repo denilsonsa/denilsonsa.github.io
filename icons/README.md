@@ -61,6 +61,10 @@ Foursquare:
 
 * https://foursquare.com/about/logos
 
+Game Jolt:
+
+* http://www.steverichey.com/dev/vector-logos/
+
 GitHub:
 
 * https://github.com/logos

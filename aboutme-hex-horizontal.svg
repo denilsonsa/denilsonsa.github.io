@@ -26,6 +26,7 @@ items:
 
   - [6.5,  0, grooveshark]
   - [6.0, -1, kongregate]
+#  - [6.0, -1, gamejolt]
   - [6.0,  1, backloggery]
 
   - [5.5,  0, steam]
