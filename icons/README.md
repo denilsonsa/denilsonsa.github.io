@@ -147,6 +147,10 @@ Pinterest:
 
 * http://business.pinterest.com/en/brand-guidelines
 
+Playfire:
+
+* https://forums.playfire.com/general-discussion/thread/87300#post-2266740
+
 reddit:
 
 * http://www.reddit.com/about/alien/
