@@ -170,7 +170,12 @@ http://jwatt.org/svg/authoring/
 
 <defs>
 
-{% include aboutme-defs.svg %}
+{% assign restrict = 'circleclip' %}
+{% for itemname in page.items %}
+	{% assign item = site.data.aboutme[itemname] %}
+	{% assign restrict = restrict | append: ',' | append: item.useid %}
+{% endfor %}
+{% include aboutme-defs.svg restrict=restrict %}
 
 </defs>
 
