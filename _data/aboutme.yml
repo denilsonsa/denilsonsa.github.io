@@ -129,6 +129,11 @@ myspace:
   useid: myspace
   text1: Myspace
 
+newgrounds:
+  href: http://denilsonsa.newgrounds.com/
+  useid: newgrounds_tank
+  text1: Newgrounds
+
 openclipart:
   #href: https://openclipart.org/user-detail/CrazyTerabyte
   href: https://openclipart.org/user-cliparts/CrazyTerabyte
