@@ -130,6 +130,7 @@ Myspace:
 Newgrounds:
 
 * http://www.newgrounds.com/downloads/designassets/
+* Converted from SWF to SVG using <http://wonderfl.net/c/sPjI> or <http://riaxe.com/online-swf-to-svg-converter/> (found in [here](http://stackoverflow.com/questions/14142779/export-a-vector-shape-created-in-flash-to-svg) and [here](https://stackoverflow.com/questions/7677850/is-there-a-way-to-convert-swf-into-svg-format)).
 
 Openclipart:
 
