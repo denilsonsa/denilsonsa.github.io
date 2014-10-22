@@ -124,7 +124,7 @@ If you observe carefully, the _USBasp_ circuit is completely isolated from the _
 You can watch a [video of this USBasp on a breadboard](https://www.youtube.com/watch?v=sr0B-5Bhxdg), showing that it actually works! :)
 
 <figure class="singleimage youtube">
-<iframe width="480" height="360" src="//www.youtube.com/embed/sr0B-5Bhxdg" frameborder="0" allowfullscreen></iframe>
+{% include youtube.html video="sr0B-5Bhxdg" %}
 </figure>
 
 Also, as I've described at the end of the [part 4][], things might not work on the first try. This also happened here, as I misplaced a few wires in a couple of occasions, so it took me a few minutes before figuring out what was wrong and why it didn't work.
