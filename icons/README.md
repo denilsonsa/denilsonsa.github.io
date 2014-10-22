@@ -148,6 +148,11 @@ Pinterest:
 
 * http://business.pinterest.com/en/brand-guidelines
 
+Pixel Joint:
+
+* http://www.pixeljoint.com/pixels/banners.asp
+* http://steamcommunity.com/groups/pixeljoint
+
 Playfire:
 
 * https://forums.playfire.com/general-discussion/thread/87300#post-2266740

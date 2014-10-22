@@ -357,7 +357,19 @@ tincidunt sollicitudin.
 <figure class="floatright">
 <img src="{{ site.url }}/blog/images/k750i_main_menu.jpg" alt="">
 <figcaption>
-Figure caption here.
+&lt;img&gt; figure caption here.
+</figcaption>
+</figure>
+
+Suspendisse tincidunt mi vel metus. Vivamus non urna in nisi gravida congue.
+Aenean semper orci a eros. Praesent dictum. Maecenas pharetra odio ut dui.
+Pellentesque ut orci. Sed lobortis, velit at laoreet suscipit, quam est
+sagittis nibh, id varius ipsum quam ac metus. Phasellus est nibh, bibendum.
+
+<figure class="floatright">
+<object type="image/svg+xml" data="{{ site.url }}/blog/images/avr/usbasp_on_breadboard_1_annotated.svg"></object>
+<figcaption>
+&lt;object&gt; figure caption here.
 </figcaption>
 </figure>
 
@@ -367,6 +379,22 @@ interdum non, sollicitudin in, posuere a, sem. Cras nibh.
 
 <figure class="floatright">
 <img src="{{ site.url }}/blog/images/hard_drive_adapter_screws.jpg" alt="">
+</figure>
+
+Ac sapien. Donec justo. Sed congue nunc vel mauris. Pellentesque vehicula orci
+id libero. In hac habitasse platea dictumst. Nulla sollicitudin, purus id
+elementum dictum, dolor augue hendrerit ante, vel semper metus enim et dolor.
+Pellentesque molestie nunc id enim. Etiam mollis tempus neque. Duis tincidunt
+commodo elit.
+
+Aenean pellentesque purus eu mi. Proin commodo, massa commodo dapibus
+elementum, libero lacus pulvinar eros, ut tincidunt nisl elit ut velit. Cras
+rutrum porta purus. Vivamus lorem. Sed turpis enim, faucibus quis, pharetra in,
+sagittis sed, magna. Curabitur ultricies felis ut libero. Nullam tincidunt enim
+eu nibh. Nunc eget ipsum in sem facilisis convallis.
+
+<figure class="floatright">
+<object type="image/svg+xml" data="{{ site.url }}/blog/images/avr/usbasp_on_breadboard_1_annotated.svg"></object>
 </figure>
 
 Vestibulum ac lacus. Vivamus porttitor, massa ut hendrerit bibendum, metus
@@ -382,8 +410,22 @@ vestibulum purus non tortor. Integer at nunc.
 <figure class="singleimage">
 <img src="{{ site.url }}/blog/images/hard_drive_adapter_screws.jpg" alt="">
 <figcaption>
-Figure caption here. Maecenas sed nibh non lacus tempor faucibus. In hac
-habitasse platea dictumst.
+&lt;img&gt; figure caption here. Maecenas sed nibh non lacus tempor faucibus.
+In hac habitasse platea dictumst.
+</figcaption>
+</figure>
+
+Sapien. Donec blandit. Donec sed magna. Curabitur a risus. Nullam nibh libero,
+sagittis vel, hendrerit accumsan, pulvinar consequat, tellus. Donec varius
+dictum nisl. Vestibulum suscipit enim ac nulla. Proin tincidunt. Proin
+sagittis. Curabitur auctor metus non mauris. Nunc condimentum nisl non augue.
+Donec leo urna, dignissim vitae, porttitor ut, iaculis sit amet, sem.
+
+<figure class="singleimage">
+<object type="image/svg+xml" data="{{ site.url }}/blog/images/avr/usbasp_on_breadboard_1_annotated.svg"></object>
+<figcaption>
+&lt;object&gt; figure caption here. Maecenas sed nibh non lacus tempor
+faucibus. In hac habitasse platea dictumst.
 </figcaption>
 </figure>
 
@@ -403,7 +445,19 @@ tincidunt sollicitudin.
 <figure class="floatright polaroid">
 <img src="{{ site.url }}/blog/images/k750i_main_menu.jpg" alt="">
 <figcaption>
-Figure caption here.
+&lt;img&gt; figure caption here.
+</figcaption>
+</figure>
+
+Suspendisse tincidunt mi vel metus. Vivamus non urna in nisi gravida congue.
+Aenean semper orci a eros. Praesent dictum. Maecenas pharetra odio ut dui.
+Pellentesque ut orci. Sed lobortis, velit at laoreet suscipit, quam est
+sagittis nibh, id varius ipsum quam ac metus. Phasellus est nibh, bibendum.
+
+<figure class="floatright polaroid">
+<object type="image/svg+xml" data="{{ site.url }}/blog/images/avr/usbasp_on_breadboard_1_annotated.svg"></object>
+<figcaption>
+&lt;object&gt; figure caption here.
 </figcaption>
 </figure>
 
@@ -413,6 +467,22 @@ interdum non, sollicitudin in, posuere a, sem. Cras nibh.
 
 <figure class="floatright polaroid">
 <img src="{{ site.url }}/blog/images/hard_drive_adapter_screws.jpg" alt="">
+</figure>
+
+Ac sapien. Donec justo. Sed congue nunc vel mauris. Pellentesque vehicula orci
+id libero. In hac habitasse platea dictumst. Nulla sollicitudin, purus id
+elementum dictum, dolor augue hendrerit ante, vel semper metus enim et dolor.
+Pellentesque molestie nunc id enim. Etiam mollis tempus neque. Duis tincidunt
+commodo elit.
+
+Aenean pellentesque purus eu mi. Proin commodo, massa commodo dapibus
+elementum, libero lacus pulvinar eros, ut tincidunt nisl elit ut velit. Cras
+rutrum porta purus. Vivamus lorem. Sed turpis enim, faucibus quis, pharetra in,
+sagittis sed, magna. Curabitur ultricies felis ut libero. Nullam tincidunt enim
+eu nibh. Nunc eget ipsum in sem facilisis convallis.
+
+<figure class="floatright polaroid">
+<object type="image/svg+xml" data="{{ site.url }}/blog/images/avr/usbasp_on_breadboard_1_annotated.svg"></object>
 </figure>
 
 Vestibulum ac lacus. Vivamus porttitor, massa ut hendrerit bibendum, metus
@@ -428,8 +498,22 @@ vestibulum purus non tortor. Integer at nunc.
 <figure class="singleimage polaroid">
 <img src="{{ site.url }}/blog/images/hard_drive_adapter_screws.jpg" alt="">
 <figcaption>
-Figure caption here. Maecenas sed nibh non lacus tempor faucibus. In hac
-habitasse platea dictumst.
+&lt;img&gt; figure caption here. Maecenas sed nibh non lacus tempor faucibus.
+In hac habitasse platea dictumst.
+</figcaption>
+</figure>
+
+Sapien. Donec blandit. Donec sed magna. Curabitur a risus. Nullam nibh libero,
+sagittis vel, hendrerit accumsan, pulvinar consequat, tellus. Donec varius
+dictum nisl. Vestibulum suscipit enim ac nulla. Proin tincidunt. Proin
+sagittis. Curabitur auctor metus non mauris. Nunc condimentum nisl non augue.
+Donec leo urna, dignissim vitae, porttitor ut, iaculis sit amet, sem.
+
+<figure class="singleimage polaroid">
+<object type="image/svg+xml" data="{{ site.url }}/blog/images/avr/usbasp_on_breadboard_1_annotated.svg"></object>
+<figcaption>
+&lt;object&gt; figure caption here. Maecenas sed nibh non lacus tempor
+faucibus. In hac habitasse platea dictumst.
 </figcaption>
 </figure>
 

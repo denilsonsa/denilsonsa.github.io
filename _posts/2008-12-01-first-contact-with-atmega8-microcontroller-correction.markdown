@@ -1,10 +1,12 @@
 ---
 layout: post
 title: First contact with ATmega8 microcontroller - correction
+lang: en
 tags:
 - AVR
 - ATmega8
 - Microcontroller
+- Hardware
 ---
 
 At [part 2][] of this series of posts, **I've posted the wrong pinout for 6-pin ISP connector**.
@@ -27,5 +29,7 @@ Here is the fixed version:
 I've already updated the previous posts with the correct pinout.
 
 Sorry for this mistake, and thank you all for making this series of posts so successful.
+
+{% include first-contact-with-atmega8-navigation.html %}
 
 [part 2]: {% post_url 2007-10-26-first-contact-with-atmega8-microcontroller-part-2 %}

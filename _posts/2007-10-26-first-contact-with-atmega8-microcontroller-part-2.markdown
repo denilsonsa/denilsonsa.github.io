@@ -47,7 +47,7 @@ The schematic diagrams below were drawn by me using [Inkscape](http://www.inksca
 The first one is called `bsd`, probably because it was originally available at _AVRPROG_ program for FreeBSD. (Well, I'm not sure if this is true, but it's the best explanation I have to give you.) This program was later renamed to _AVRDUDE_ to avoid confusion with Atmel's _AVRPROG.EXE_. You can find a description of this parallel port programmer at [AVRDUDE old homepage](http://www.bsdhome.com/avrdude/) ([Wayback Machine](http://web.archive.org/web/20071015042041/http://www.bsdhome.com/avrdude/)).
 
 <figure class="singleimage">
-<img src="{{ site.url }}/blog/images/avr/AVR-bsd.png" alt="Diagram for AVR parallel port ISP, model 'bsd'.">
+<img src="{{ site.url }}/blog/images/avr/AVR-bsd.png" alt="Schematic diagram for AVR parallel port ISP, model 'bsd'.">
 <figcaption>
 (<a href="{{ site.url }}/blog/images/avr/AVR-bsd-hi.png">PNG version</a>,
 <a href="{{ site.url }}/blog/images/avr/AVR-bsd.svg">SVG version</a>)
@@ -59,7 +59,7 @@ The first one is called `bsd`, probably because it was originally available at _
 The second one is called `dapa`, which means _Direct AVR Parallel Access cable_. This one is described at `uisp-parport-connect.txt` file from [uisp][] ([Wayback Machine](http://web.archive.org/web/20071021021038/http://www.nongnu.org/uisp/)). It is also found at [Arduino's ParallelProgrammer page](http://www.arduino.cc/en/Hacking/ParallelProgrammer) ([Wayback Machine](http://web.archive.org/web/20071025052338/http://www.arduino.cc/en/Hacking/ParallelProgrammer)) and at [LinuxFocus 352 article](http://www.linuxfocus.org/English/November2004/article352.shtml) ([Wayback Machine](http://web.archive.org/web/20071029080245/http://www.linuxfocus.org/English/November2004/article352.shtml)).
 
 <figure class="singleimage">
-<img src="{{ site.url }}/blog/images/avr/AVR-dapa.png" alt="Diagram for AVR parallel port ISP, model 'dapa'.">
+<img src="{{ site.url }}/blog/images/avr/AVR-dapa.png" alt="Schematic diagram for AVR parallel port ISP, model 'dapa'.">
 <figcaption>
 (<a href="{{ site.url }}/blog/images/avr/AVR-dapa-hi.png">PNG version</a>,
 <a href="{{ site.url }}/blog/images/avr/AVR-dapa.svg">SVG version</a>)
@@ -71,7 +71,7 @@ The second one is called `dapa`, which means _Direct AVR Parallel Access cable_.
 The third one is called `stk200`, because it behaves like the _STK200 AVR Starter Kit_. It is the schematic used by [How To...Build A DIY USB Joystick](http://www.flightsim.com/cgi/kds?$=main/howto/mind.htm) ([Wayback Machine](http://web.archive.org/web/20071026031301/http://www.flightsim.com/cgi/kds?$=main/howto/mind.htm)) project and is also available at [a personal homepage address found at #avr channel topic](http://eds.dyndns.org:81/~ircjunk/avr/avrstarter/) ([Wayback Machine](http://web.archive.org/web/20071229042911/http://eds.dyndns.org:81/~ircjunk/avr/avrstarter/)) on [FreeNode](http://en.wikipedia.org/wiki/Freenode).
 
 <figure class="singleimage">
-<img src="{{ site.url }}/blog/images/avr/AVR-stk200.png" alt="Diagram for AVR parallel port ISP, model 'stk200'.">
+<img src="{{ site.url }}/blog/images/avr/AVR-stk200.png" alt="Schematic diagram for AVR parallel port ISP, model 'stk200'.">
 <figcaption>
 (<a href="{{ site.url }}/blog/images/avr/AVR-stk200-hi.png">PNG version</a>,
 <a href="{{ site.url }}/blog/images/avr/AVR-stk200.svg">SVG version</a>)
@@ -131,7 +131,7 @@ I've not used any standard AVR connector for this project, but I will, if I buil
 **Update on 2008-12-02:** [Originally, the 6-pin pinout in this blog was wrong.][correction] It has been fixed, so the pinout below is correct.
 
 <figure class="singleimage">
-<img src="{{ site.url }}/blog/images/avr/AVR-ISP-connectors.png" alt="Diagram for AVR ISP 6-pin and 10-pin connectors.">
+<img src="{{ site.url }}/blog/images/avr/AVR-ISP-connectors.png" alt="Schematic diagram for AVR ISP 6-pin and 10-pin connectors.">
 <figcaption>
 (<a href="{{ site.url }}/blog/images/avr/AVR-ISP-connectors-hi.png">PNG version</a>,
 <a href="{{ site.url }}/blog/images/avr/AVR-ISP-connectors.svg">SVG version</a>)
@@ -150,7 +150,7 @@ The photos above were taken using a [SonyEricsson K750i phone](http://en.wikiped
 
 ## Other DIY AVR Programmers
 
-**Update on 2011-08-10:** This section is now somewhat obsolete, as I've just written [part 2.1][], which deals with _USBasp_ programmer. If you prefer, skip the rest of this post and go directly to [part 2.1][].
+**Update on 2011-08-10:** This section is now somewhat obsolete, as I've just written [part 2.1][], which deals with [USBasp][] programmer. If you prefer, skip the rest of this post and go directly to [part 2.1][].
 
 ### Buffered parallel port
 
@@ -180,7 +180,7 @@ Another disadvantage is the buggy libusb on 64-bit architectures, as you can rea
 
 Yet another disadvantage is the difficulty to build this dongle without buying the kit. You must buy two chips and a [PCB][] or a [stripboard][] and solder everything together. The buffer chip should be easy to find (but I don't know if it really is). The ATTINY2313-20PU chip, however, might not be so easy. I found ATmega8 and ATmega16 at [Cerne-Tec](http://www.cerne-tec.com.br/) (which is located in Rio de Janeiro, where I live), but only these two models are sold there, they don't sell ATtiny. Probably I can replace the ATtiny with ATmega, but it will probably make the project a bit more expensive. Finally, whenever you get the microcontroller, you still need to program it with the USBtinyISP firmware, but how? (the “chicken & egg” problem) Well, you can use someone else's programmer, or you can just use a serial or parallel programmer. But, in the latter case, why don't you just use that programmer for everything else?
 
-**Update on 2008-01-03:** I've just found another USB ISP programmer. It's called [USBasp](http://www.fischl.de/usbasp/) ([Wayback Machine](http://web.archive.org/web/20080105030005/http://www.fischl.de/usbasp/)). _“It simply consists of an ATMega48 or an ATMega8 and a couple of passive components. The programmer uses a firmware-only USB driver, no special USB controller is needed.”_ After reading this, I've changed my mind. If I ever need to use an AVR programmer on a PC without parallel port, I will build this one.
+**Update on 2008-01-03:** I've just found another USB ISP programmer. It's called [USBasp][] ([Wayback Machine][USBaspwbm]). _“It simply consists of an ATMega48 or an ATMega8 and a couple of passive components. The programmer uses a firmware-only USB driver, no special USB controller is needed.”_ After reading this, I've changed my mind. If I ever need to use an AVR programmer on a PC without parallel port, I will build this one.
 
 I've read at [a page with instructions about USBasp](http://www.scienceprog.com/building-and-installing-usbasp-usb-programmer-of-avr-microcontrollers/) ([Wayback Machine](http://web.archive.org/web/20080103013932/http://www.scienceprog.com/building-and-installing-usbasp-usb-programmer-of-avr-microcontrollers/)) that you should connect the programmer to a port on the computer, avoiding [USB hubs](http://en.wikipedia.org/wiki/USB_hub). I'm not sure if this is the case of other USB programmers, but since nowadays computers fortunately have many USB ports, I hope this won't be a problem.
 
@@ -199,6 +199,8 @@ I've read at [a page with instructions about USBasp](http://www.scienceprog.com/
 [avrdude]: http://www.nongnu.org/avrdude/
 [uisp]: http://www.nongnu.org/uisp/
 [PonyProg]: http://www.lancos.com/prog.html
+[USBasp]: http://www.fischl.de/usbasp/
+[USBaspwbm]: http://web.archive.org/web/20080105030005/http://www.fischl.de/usbasp/
 [ISP]: http://en.wikipedia.org/wiki/In-System_Programming
 [firmware]: http://en.wikipedia.org/wiki/Firmware
 [parallel port]: http://en.wikipedia.org/wiki/Parallel_port

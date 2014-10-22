@@ -159,13 +159,20 @@ figure figcaption {
 	font-size: 0.9em;
 }
 figure > img,
-figure > a > img {
+figure > a > img,
+figure > object,
+figure > iframe {
 	/* Leaving it as baseline (the default) causes a small "margin" below the image. */
 	vertical-align: bottom;
 }
-/* TODO: What if I use <object> instead of <img>? */
-figure.floatright img,
-figure.singleimage img {
+figure.floatright > img,
+figure.singleimage > img,
+figure.floatright > a > img,
+figure.singleimage > a > img,
+figure.floatright > object,
+figure.singleimage > object,
+figure.floatright > iframe,
+figure.singleimage > iframe {
 	max-width: 100%;
 }
 
