@@ -46,13 +46,16 @@ a:visited:hover { color: #f1f; }
 
 /* Header */
 header {
+  border-radius: 16px 0 0 16px;
   font-size: 16px;
-  font-weight: bold;
+  font-family: "Oswald", sans-serif;
   background: #EDEEEB;
   background: linear-gradient(to right, rgba(237,238,235,1.0) 0%, rgba(1,1,1,0.0) 100%);
-  border-radius: 16px 0 0 16px;
+  color: black;
+  text-shadow: white 1px 1px;
 }
 header .favicon {
+  float: left;
 }
 header .favicon img {
   border-radius: 50%;
@@ -65,18 +68,42 @@ header a:visited,
 header a:link:hover,
 header a:visited:hover {
   text-decoration: none;
-  color: black;
+}
+header a:link,
+header a:visited {
+  color: #666;
+}
+header a:link:hover,
+header a:visited:hover {
+  color: #000;
 }
 header nav {
-  display: inline
+  display: block;
+  padding-left: 32px;
+}
+header nav:after {
+  display: block;
+  clear: both;
+  content: " ";
+  height: 0;
 }
 header nav a {
-  display: inline-block;
+  display: block;
+  float: left;
   height: 32px;
   line-height: 32px;
   vertical-align: middle;
   padding-left: 0.5em;
   padding-right: 0.5em;
+}
+header nav a:after {
+  /* content: "⏩ "; */
+  content: "⟩";
+  padding-left: 1em;
+  color: #aaa;
+}
+header nav a:hover:after {
+  color: #000;
 }
 
 /* Footer */
@@ -105,7 +132,30 @@ header nav a {
 
 /* Posts */
 
-/* standard */
+nav.postnextprev {
+  display: block;
+  text-decoration: none;
+  margin: 1.5em 0;
+}
+nav.postnextprev:after {
+  display: block;
+  clear: both;
+  content: " ";
+  height: 0;
+}
+nav.postnextprev .prev {
+  float: left;
+}
+nav.postnextprev .next {
+  float: right;
+}
+
+.tags {
+  margin: 1em 0;
+  font-size: 0.8em;
+}
+
+/* Post styling */
 .post pre {
   border: 1px solid #ddd;
   background-color: #eef;
