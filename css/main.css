@@ -90,14 +90,12 @@ header nav:after {
 header nav a {
   display: block;
   float: left;
-  height: 32px;
   line-height: 32px;
   vertical-align: middle;
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
 header nav a:after {
-  /* content: "⏩ "; */
   content: "⟩";
   padding-left: 1em;
   color: #aaa;
@@ -145,9 +143,11 @@ nav.postnextprev:after {
 }
 nav.postnextprev .prev {
   float: left;
+  margin-right: 0.5ex;
 }
 nav.postnextprev .next {
   float: right;
+  margin-left: 0.5ex;
 }
 
 .tags {
