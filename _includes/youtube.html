@@ -1,2 +1,2 @@
-<!-- rel=0 to disable showing related videos at the end -->
+{% comment %} rel=0 to disable showing related videos at the end {% endcomment %}
 <iframe width="480" height="360" src="//www.youtube.com/embed/{{ include.video }}?autohide=1{% if include.cc == 1 %}&amp;cc_load_policy=1{% endif %}{% if include.annotations == 1 %}&amp;iv_load_policy=1{% endif %}" frameborder="0" allowfullscreen></iframe>

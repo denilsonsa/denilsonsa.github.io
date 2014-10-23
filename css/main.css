@@ -8,7 +8,7 @@
   padding: 0;
 }
 img, a img {
-	border: 0;
+  border: 0;
 }
 
 /* Common */
@@ -26,14 +26,65 @@ h4 { font-size: 1.0em; }
 h5 { font-size: 1.0em; }
 h6 { font-size: 1.0em; }
 
-h1, h2, h3, h4, h5, h6, p, blockquote { margin: 1em 0; }
+h1, h2, h3, h4, h5, h6, p, hr, blockquote { margin: 1em 0; }
 h1, h2, h3, h4, h5, h6 { line-height: normal; text-align: left; }
 h1 { margin-top: 0; margin-bottom: 0; }
 li > p { margin-top: 0; margin-bottom: 0; }
 
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
+a               { color: #00a; }
+a:visited       { color: #a0a; }
+a:hover         { color: #11f; }
+a:visited:hover { color: #f1f; }
+
+/* Site */
+.site {
+  text-align: justify;
+  max-width: 42em;
+  margin: 0 auto 1em;
+  line-height: 1.5;
+}
+
+/* Header */
+header {
+  font-size: 16px;
+  font-weight: bold;
+  background: #EDEEEB;
+  background: linear-gradient(to right, rgba(237,238,235,1.0) 0%, rgba(1,1,1,0.0) 100%);
+  border-radius: 16px 0 0 16px;
+}
+header .favicon {
+}
+header .favicon img {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+}
+header a:link,
+header a:visited,
+header a:link:hover,
+header a:visited:hover {
+  text-decoration: none;
+  color: black;
+}
+header nav {
+  display: inline
+}
+header nav a {
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  vertical-align: middle;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+/* Footer */
+.site > footer {
+  font-size: 80%;
+  color: #666;
+  border-top: 4px solid #eee;
+}
 
 /* Home*/
 .posts {
@@ -52,58 +103,7 @@ a:visited { color: #a0a; }
   font-size: 80%;
 }
 
-/* Site */
-
-.site {
-  text-align: justify;
-  max-width: 42em;
-  margin: 1em auto 1em;
-  line-height: 1.5;
-}
-
-header a {
-  font-weight: bold;
-  text-decoration: none;
-}
-header .title {
-  display: inline-block;
-  margin: 0;
-}
-header .title a {
-  color: #a00;
-}
-header .title a:hover {
-  color: #000;
-}
-header a.extra {
-  color: #aaa;
-  margin-left: 1em;
-}
-header a.extra:hover {
-  color: #000;
-}
-
-.site > footer {
-  font-size: 80%;
-  color: #666;
-  border-top: 4px solid #eee;
-  margin-top: 2em;
-}
-
 /* Posts */
-
-/* Black square at the end of the post */
-article .post {
-	/* Preventing internal margins from leaking */
-	padding-bottom: 1px;
-	position: relative;
-}
-article .post:after {
-	content: "■";
-	position: absolute;
-	bottom: 0;
-	right: 0;
-}
 
 /* standard */
 .post pre {
@@ -142,28 +142,28 @@ article .post:after {
 /* TODO: check the margins. If a <pre> is followed by <h2>, it currently has no margins, which looks bad. See 2005-12-13-the-failed-gentoo-linux-nvidia-guide */
 
 figure {
-	display: block;
-	text-align: center;
-	box-sizing: border-box;
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
 }
 .polaroid {
-	/* Polaroid-like border: */
-	background: white;
-	color: black;
-	padding: 1ex;
-	box-shadow: 0px 2px 8px silver;
+  /* Polaroid-like border: */
+  background: white;
+  color: black;
+  padding: 1ex;
+  box-shadow: 0px 2px 8px silver;
 }
 figure figcaption {
-	text-align: center;
-	font-style: italic;
-	font-size: 0.9em;
+  text-align: center;
+  font-style: italic;
+  font-size: 0.9em;
 }
 figure > img,
 figure > a > img,
 figure > object,
 figure > iframe {
-	/* Leaving it as baseline (the default) causes a small "margin" below the image. */
-	vertical-align: bottom;
+  /* Leaving it as baseline (the default) causes a small "margin" below the image. */
+  vertical-align: bottom;
 }
 figure.floatright > img,
 figure.singleimage > img,
@@ -173,184 +173,186 @@ figure.floatright > object,
 figure.singleimage > object,
 figure.floatright > iframe,
 figure.singleimage > iframe {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 figure.singleimage {
-	display: table;  /* Trick to make the width fit the contents. */
-	clear: both;
-	margin: 1em auto;
-	max-width: 100%;
+  display: table;  /* Trick to make the width fit the contents. */
+  clear: both;
+  margin: 1em auto;
+  max-width: 100%;
 }
 figure.floatright {
-	float: right;
-	clear: right;
-	margin: 0 0 1ex 1em;
-	max-width: 50%;
+  float: right;
+  clear: right;
+  margin: 0 0 1ex 1em;
+  max-width: 50%;
 }
 
 /* 21em is half of 42em .site max-width */
 @media (max-width: 21em) {
-	figure.floatright {
-		display: table;  /* Trick to make the width fit the contents. */
-		float: none;
-		clear: both;
-		margin: 1em auto;
-		max-width: 100%;
-	}
+  figure.floatright {
+    display: table;  /* Trick to make the width fit the contents. */
+    float: none;
+    clear: both;
+    margin: 1em auto;
+    max-width: 100%;
+  }
 }
 
 pre {
-	text-align: left;
+  text-align: left;
 }
 code {
-	font-size: 0.9em;
+  font-size: 0.9em;
 }
 pre, code {
-	font-family: "Source Code Pro", "Inconsolata", monospace;
+  font-family: "Source Code Pro", "Inconsolata", monospace;
 }
 
 kbd {
-	/* Inspired by https://meta.superuser.com/questions/4788/css-for-the-new-kbd-style */
-	border: 1px outset #CCC;
-	background: #EEE;
-	color: #333;
-	border-radius: 3px;
-	box-shadow:0 1px 0 rgba(0,0,0,0.2);
-	display: inline-block;
-	font-family: "Arial", "Helvetica", sans-serif;
-	font-size: 0.9em;
+  /* Inspired by https://meta.superuser.com/questions/4788/css-for-the-new-kbd-style */
+  border: 1px outset #CCC;
+  background: #EEE;
+  color: #333;
+  border-radius: 3px;
+  box-shadow:0 1px 0 rgba(0,0,0,0.2);
+  display: inline-block;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 0.9em;
     margin: 0 .05em;
     padding: .05em .5em;
     text-shadow: 0 1px 0 #fff;
 }
 
 blockquote {
-	padding: 1em 2em;
-	background: #F7F7F7;
-	border: 1px solid #ddd;  /* Same border as <pre> */
-	position: relative;
-	quotes: "“" "”" "‘" "’";
-	border-radius: 1em 0;
+  padding: 1em 2em;
+  background: #F7F7F7;
+  border: 1px solid #ddd;  /* Same border as <pre> */
+  position: relative;
+  quotes: "“" "”" "‘" "’";
+  border-radius: 1em 0;
 }
 blockquote > :first-child {
-	margin-top: 0;
+  margin-top: 0;
 }
 blockquote > :last-child {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 blockquote:before,
 blockquote:after {
-	display: block;
-	position: absolute;
-	font-family: "Droid Serif", "Times New Roman", serif;
-	font-size: 4em;
-	color: #BBB;
-	width: auto;
-	margin: 0;
-	padding: 0;
+  display: block;
+  position: absolute;
+  font-family: "Droid Serif", "Times New Roman", serif;
+  font-size: 4em;
+  color: #BBB;
+  width: auto;
+  margin: 0;
+  padding: 0;
 }
 blockquote:before {
-	content: "“";
-	content: open-quote;
-	top: 0;
-	line-height: 1.0;
-	right: 100%;
-	/* 2em of blockquote padding, converted to 4em font-size, equals to 0.5em */
-	margin-right: -0.5em;
-	padding-right: 1px;
-	text-align: right;
+  content: "“";
+  content: open-quote;
+  top: 0;
+  line-height: 1.0;
+  right: 100%;
+  /* 2em of blockquote padding, converted to 4em font-size, equals to 0.5em */
+  margin-right: -0.5em;
+  padding-right: 1px;
+  text-align: right;
 }
 blockquote:after {
-	content: "”";
-	content: close-quote;
-	bottom: 0;
-	line-height: 0.25;
-	left: 100%;
-	/* 2em of blockquote padding, converted to 4em font-size, equals to 0.5em */
-	margin-left: -0.5em;
-	padding-left: 1px;
-	text-align: left;
+  content: "”";
+  content: close-quote;
+  bottom: 0;
+  line-height: 0.25;
+  left: 100%;
+  /* 2em of blockquote padding, converted to 4em font-size, equals to 0.5em */
+  margin-left: -0.5em;
+  padding-left: 1px;
+  text-align: left;
 }
 
 a[href^="http://web.archive.org/web/"],
 a[href^="https://web.archive.org/web/"] {
-	/* font-size: 0.75em; */
-	text-decoration: none;
-	width: 0;
-	padding-left: 1em;
-	height: 1em;
-	overflow: hidden;
-	display: inline-block;
-	background: center center no-repeat url(/icons/InternetArchive.svg);
-	background-size: contain;
+  /* font-size: 0.75em; */
+  text-decoration: none;
+  width: 0;
+  padding-left: 1em;
+  height: 1em;
+  overflow: hidden;
+  display: inline-block;
+  background: center center no-repeat url(/icons/InternetArchive.svg);
+  background-size: contain;
 }
 
 /* Also try using display: inline-flex; or using percentages as height. */
 /* Alternative implementations: http://codepen.io/denilsonsa/pen/Etrba?editors=110 */
 .date-as-calendar {
-	position: relative;
-	font-variant: normal;
-	font-style: normal;
-	font-weight: normal;
-	font-family: "Helvetica", "Arial", sans-serif;
+  position: relative;
+  font-variant: normal;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Helvetica", "Arial", sans-serif;
 
-	display: block;
-	width: 64px;
-	height: 64px;
+  display: block;
+  width: 64px;
+  height: 64px;
 
-	float: right;
-	margin: 0 0 1ex 1ex;
+  float: right;
+  margin: 0 0 1ex 1ex;
 
-	color: black;
-	background: white;
-	background : linear-gradient(to bottom right, #FFF 0%, #EEE 100%);
+  color: black;
+  background: white;
+  background : linear-gradient(to bottom right, #FFF 0%, #EEE 100%);
 
-	border: 1px solid #888;
-	border-radius: 3px;
-	overflow: hidden;
+  border: 1px solid #888;
+  border-radius: 3px;
+  overflow: hidden;
 
-	box-shadow: 2px 2px 2px -2px black;
+  box-shadow: 2px 2px 2px -2px black;
 }
 .date-as-calendar .weekday,
 .date-as-calendar .day,
 .date-as-calendar .month,
 .date-as-calendar .year {
-	display: block;
-	position: absolute;
-	left: 0;
-	right: 0;
-	width: 100%;
-	height: 1em;
-	text-align: center;
-	line-height: 1.0;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 1em;
+  text-align: center;
+  line-height: 1.0;
 }
 .date-as-calendar .month {
-	font-family: "Oswald", sans-serif;
-	text-transform: uppercase;
-	top: 0px;
-	font-size: 12px;
-	padding: 2px 0;
-	background: #B11;
-	background : linear-gradient(to bottom right, #D66 0%, #A00 100%);
-	color: white;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  top: 0px;
+  font-size: 12px;
+  padding: 2px 0;
+  background: #B11;
+  background : linear-gradient(to bottom right, #D66 0%, #A00 100%);
+  color: white;
 }
 .date-as-calendar .weekday {
-	top: 16px;
-	font-size: 10px;
+  top: 16px;
+  font-size: 10px;
 }
 .date-as-calendar .day {
-	top: 26px;
-	font-size: 24px;
+  top: 26px;
+  font-size: 24px;
 }
 .date-as-calendar .year {
-	top: 50px;
-	font-size: 14px;
+  top: 50px;
+  font-size: 14px;
 }
 @media (max-width: 192px) {
-	.date-as-calendar {
-		float: none;
-		clear: none;
-		margin: 1ex auto;
-	}
+  .date-as-calendar {
+    float: none;
+    clear: none;
+    margin: 1ex auto;
+  }
 }
+
+/* vi:et:sw=2:ts=2 */

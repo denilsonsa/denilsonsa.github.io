@@ -435,6 +435,15 @@ commodo. Sed est lectus, mollis quis, lacinia id, sollicitudin nec, eros.
 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
 cubilia Curae; Morbi urna dui, fermentum quis, feugiat imperdiet, imperdiet id.
 
+<figure class="singleimage">
+{% include youtube.html video="sr0B-5Bhxdg" %}
+</figure>
+
+Phasellus mollis dictum nulla. Integer vitae neque vitae eros fringilla rutrum.
+Vestibulum in pede adipiscing mi dapibus condimentum. Etiam felis risus,
+condimentum in, malesuada eget, pretium ut, sapien. Suspendisse placerat lectus
+venenatis lorem. Sed accumsan aliquam enim.
+
 
 # Polaroid Pictures
 
@@ -522,6 +531,15 @@ cursus. Integer pharetra rhoncus massa. Cras et ligula vel quam tristique
 commodo. Sed est lectus, mollis quis, lacinia id, sollicitudin nec, eros.
 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
 cubilia Curae; Morbi urna dui, fermentum quis, feugiat imperdiet, imperdiet id.
+
+<figure class="singleimage polaroid">
+{% include youtube.html video="sr0B-5Bhxdg" %}
+</figure>
+
+Phasellus mollis dictum nulla. Integer vitae neque vitae eros fringilla rutrum.
+Vestibulum in pede adipiscing mi dapibus condimentum. Etiam felis risus,
+condimentum in, malesuada eget, pretium ut, sapien. Suspendisse placerat lectus
+venenatis lorem. Sed accumsan aliquam enim.
 
 
 <!-- Comments in Markdown: https://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax -->
