@@ -1,0 +1,250 @@
+---
+items:
+  - [13.5,  0, curriculumvitae]
+  - [13.0, -1, stackoverflowcareers]
+  - [13.0,  1, linkedin]
+
+  - [12.5,  0, github]
+  - [12.0, -1, stackoverflow]
+  - [12.0,  1, bitbucket]
+
+  - [11.5,  0, codepen]
+  - [11.0, -1, stylish]
+  - [11.0,  1, userscripts]
+
+  - [10.5,  0, openclipart]
+  - [10.0, -1, instagram]
+  - [10.0,  1, reddit]
+
+  - [9.5,  0, deviantart]
+  - [9.0, -1, flickr]
+  - [9.0,  1, hitbox]
+
+  - [8.5,  0, youtube]
+  - [8.0, -1, grooveshark]
+  - [8.0,  1, twitch]
+
+  - [7.5,  0, drawception]
+  - [7.0, -1, gamejolt]
+  - [7.0,  1, playfire]
+
+  - [6.5,  0, kongregate]
+  - [6.0, -1, newgrounds]
+  - [6.0,  1, backloggery]
+
+  - [5.5,  0, steam]
+  - [5.0, -1, flattr]
+  - [5.0,  1, alvanista]
+
+  - [4.5,  0, paypal]
+  - [4.0, -1, pinterest]
+  - [4.0,  1, myspace]
+
+  - [3.5,  0, angellist]
+  - [3.0, -1, stumbleupon]
+  - [3.0,  1, tumblr]
+
+  - [2.5,  0, aboutme]
+  - [2.0, -1, disqus]
+  - [2.0,  1, vk]
+
+  - [1.5,  0, twitter]
+  - [1.0, -1, googleplus]
+  - [1.0,  1, facebook]
+
+  - [0.5,  0, blog]
+  - [0.0, -1, email]
+  - [0.0,  1, skype]
+---
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Note: don't include a DOCTYPE in SVG documents:
+http://jwatt.org/svg/authoring/
+-->
+
+{% comment %}
+  xgrid and ygrid = the offset between each hexagon cell
+
+  xgrid = width of a pointy-top hexagon + margin
+  ygrid = 3/4 height of a pointy-top hexagon + margin
+
+  xorigin = origin of the hexagon coordinates
+{% endcomment %}
+
+{% assign xwidth  = 17.32 %}
+{% assign yheight = 20.00 %}
+{% assign xhalf   = xwidth | divided_by: 2 %}
+
+{% assign xmargin = 1 %}
+{% assign ymargin = xmargin | times: 0.866 %}
+
+{% assign xgrid = xwidth  | plus: xmargin %}
+{% assign ygrid = yheight | times: 0.75 | plus: ymargin %}
+
+{% assign picsize = ygrid | times: 2 | plus: yheight | divided_by: 0.866 %}
+{% assign pichalf = picsize | divided_by: 2 %}
+{% assign picshortsize = picsize | times: 0.866 %}
+{% assign picshorthalf = picshortsize | divided_by: 2 %}
+
+{% assign xorigin = xhalf | divided_by: -2 | plus: xmargin | plus: pichalf %}
+{% assign yorigin = 0 %}
+
+<svg viewBox="-{{ pichalf }} -{{ picshorthalf }} {{ xgrid | times: 15 | plus: xorigin | plus: pichalf }} {{ picshortsize }}"
+	preserveAspectRatio="xMinYMid meet"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+
+<style type="text/css"><![CDATA[
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+.item .outline {
+	transition-property: opacity, transform, -webkit-transform;
+	transition-duration: 250ms;
+	fill: white;
+	stroke: white;
+	stroke-width: {{ xmargin | times: 2 }}px;
+}
+.item .left,
+.item .middle,
+.item .right {
+	transition-property: fill, stroke, transform, -webkit-transform;
+	transition-duration: 250ms;
+	fill: #D3D7CF;
+
+	/* To prevent a seam between the elements. But gets buggy on Firefox. */
+	stroke: #D3D7CF;
+	stroke-width: 0.25px;
+	stroke-linecap: round;
+}
+.item text {
+	transition-property: opacity, transform, -webkit-transform;
+	transition-duration: 250ms;
+	pointer-events: none;
+}
+.item .icon {
+	transition-property: opacity, transform, -webkit-transform;
+	transition-duration: 250ms;
+}
+.item text,
+.item text tspan {
+	fill: #2e3436;
+	font-family: "Roboto", "Arial", sans-serif;
+	font-size: 6.5px;
+	text-anchor: middle;
+	/* middle can be obtained from the font definition. */
+	/* central is defined as the half of EM box. */
+	dominant-baseline: central;
+}
+
+.item:hover .left,
+.item:hover .middle,
+.item:hover .right {
+	fill: #EDEEEB;
+	stroke: #EDEEEB;
+}
+/* Chrome bug if using scaleX(0): http://crbug.com/395675 */
+.item       .outline { -webkit-transform: scaleX(0.00001); transform: scaleX(0.00001); opacity: 0; }
+.item:hover .outline { -webkit-transform: scaleX(1); transform: scaleX(1); opacity: 1; }
+.item       .middle  { -webkit-transform: scaleX(0.00001); transform: scaleX(0.00001); }
+.item:hover .middle  { -webkit-transform: scaleX(1); transform: scaleX(1); }
+.item       .right   { -webkit-transform: translateX( 0px); transform: translateX( 0px); }
+.item:hover .right   { -webkit-transform: translateX({{ xgrid | times: 1 }}px); transform: translateX({{ xgrid | times: 1 }}px); }
+/* Chrome bug about applying transform to text on hover: http://crbug.com/394829 */
+.item       text     { opacity: 0.0; }
+.item:hover text     { opacity: 1.0; }
+.item       .icon    { opacity: 1.000; -webkit-transform: translateX(0); transform: translateX(0); }
+.item:hover .icon    { opacity: 0.125; -webkit-transform: translateX({{ xhalf | times: 1 }}px); transform: translateX({{ xhalf | times: 1 }}px); }
+
+/* Workarounds for Firefox: https://bugzilla.mozilla.org/show_bug.cgi?id=265894#c5 */
+.item use.icon #email text,
+.item use.icon #blog text {
+	opacity: 1.0;
+	fill: #2e3436;
+	font-size: 11px;
+}
+.item use.icon #curriculumvitae text {
+	opacity: 1.0;
+	fill: #2e3436;
+	font-size: 25px;
+}
+
+]]></style>
+
+<!-- ============================================================ -->
+
+<defs>
+
+{% assign restrict = 'hexagonflattopclip,hexagonpointytopclip' %}
+{% for itemdesc in page.items %}
+	{% assign itemname = itemdesc[2] %}
+	{% assign item = site.data.aboutme[itemname] %}
+	{% assign restrict = restrict | append: ',' | append: item.useid %}
+{% endfor %}
+{% include aboutme-defs.svg restrict=restrict %}
+
+</defs>
+
+<!-- ============================================================ -->
+
+{% comment %}
+<rect x="-{{ pichalf }}" y="-{{ picshorthalf }}" width="{{ xgrid | times: 7 | plus: xorigin | plus: pichalf }}" height="{{ picshortsize }}" fill="#FEE" />
+{% endcomment %}
+
+<g class="centralpicture">
+	<image x="-{{ pichalf }}" y="-{{ pichalf }}" width="{{ picsize }}" height="{{ picsize }}"
+		clip-path="url(#hexagonflattopclip)"
+		xlink:href="MyPhoto2014-512x512.jpg" />
+</g>
+
+{% for itemdesc in page.items %}
+{% assign itemx = itemdesc[0] %}
+{% assign itemy = itemdesc[1] %}
+{% assign itemname = itemdesc[2] %}
+{% assign item = site.data.aboutme[itemname] %}
+{% comment %}
+  The following line does not work:
+  assign item = site.data.aboutme[itemdesc[2]]
+  That's why I'm using itemname as a temporary var.
+{% endcomment %}
+<g transform="translate({{ itemx | times: xgrid | plus: xorigin }} {{ itemy | times: ygrid | plus: yorigin }})" class="item with-icon">
+	<a target="_top" xlink:href="{{ item.href | xml_escape }}">
+		<polygon points="
+		0,-10
+		-{{ xhalf }},-5
+		-{{ xhalf }},5
+		0,10
+		{{ xgrid | times: 1 }},10
+		{{ xgrid | times: 1 | plus: xhalf }},5
+		{{ xgrid | times: 1 | plus: xhalf }},-5
+		{{ xgrid | times: 1 }},-10
+		" class="outline" />
+		<polygon points="
+		0,-10
+		-{{ xhalf }},-5
+		-{{ xhalf }},5
+		0,10
+		" class="left" />
+		<rect x="0" y="-10" width="{{ xgrid | times: 1 }}" height="20" class="middle" />
+		<polygon points="
+		0,10
+		{{ xhalf }},5
+		{{ xhalf }},-5
+		0,-10
+		" class="right" />
+		<use class="icon" xlink:href="#{{ item.useid }}" x="-6.25" y="-6.25" width="12.5" height="12.5" />
+		{% if item.text2 %}
+		<text x="{{ xgrid | divided_by: 2 }}" y="0">
+			<tspan x="{{ xgrid | divided_by: 2 }}" y="-0.5em">{{ item.text1 }}</tspan>
+			<tspan x="{{ xgrid | divided_by: 2 }}" y="0.5em">{{ item.text2 }}</tspan>
+		</text>
+		{% else %}
+		<text x="{{ xgrid | divided_by: 2 }}" y="0">{{ item.text1 }}</text>
+		{% endif %}
+	</a>
+</g>
+{% endfor %}
+
+</svg>

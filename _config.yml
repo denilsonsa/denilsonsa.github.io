@@ -1,0 +1,101 @@
+# vi:et:sw=2:ts=2
+# Remember: do not use tabs in configuration files.
+# See also: http://jekyllrb.com/docs/configuration/
+
+encoding: utf-8
+timezone: America/Sao_Paulo
+
+# Site name (not used by Jekyll itself, only used in the template):
+name: Denilson Sá
+# In fact, any property from this _config.yml file can be referenced in a
+# template using {{ site.foobar }}
+
+# http://jekyllrb.com/docs/configuration/#frontmatter-defaults
+defaults:
+#  -
+#    scope:
+#      path: "" # an empty string here means all files in the project
+#      type: "posts"  # Type can be pages, posts, drafts, or any collection.
+#    values:
+#      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      og_type: "article"
+  -
+    scope:
+      path: ""
+      type: "drafts"
+    values:
+      og_type: "article"
+
+markdown: redcarpet
+#markdown: kramdown
+
+# http://jekyllrb.com/docs/configuration/#markdown-options
+# https://stackoverflow.com/questions/13464590/github-flavored-markdown-and-pygments-highlighting-in-jekyll
+# https://stackoverflow.com/questions/373002/better-ruby-markdown-interpreter
+
+# https://github.com/vmg/redcarpet
+redcarpet:
+  extensions:
+    - no_intra_emphasis
+    - fenced_code_blocks
+    - autolink
+    - strikethrough
+    - tables
+    - smart
+    - with_toc_data
+#    - superscript
+
+# https://github.com/gettalong/kramdown
+# http://kramdown.gettalong.org/syntax.html
+kramdown:
+  input: GFM
+
+#pygments: true  # Renamed to 'highlighter' option.
+highlighter: pygments
+
+# Starting in Jekyll 2.0, absolute permalinks are the default.
+relative_permalinks: false
+
+# Inspired by: https://github.com/SLaks/SLaks.Blog/blob/gh-pages/_config.yml
+permalink: /blog/:year-:month-:day/:title
+
+# A single blank line (AKA a paragraph break, the default behavior).
+#excerpt_separator: "\n\n"
+# Two blank lines.
+excerpt_separator: "\n\n\n"
+
+# Produce an index for related posts.
+#lsi: true
+lsi: false
+
+#paginate: 10
+
+# Files to be excluded from the generated _site:
+exclude:
+  - /icons/originals/
+
+#include:
+
+# This will only be useful if the site is being served from a non-root
+# directory. Also, post URLs alread contain the leading slash, which means
+# baseurl should NOT contain a trailing slash.
+#baseurl:
+
+# Auto-regeneration can no longer be set from your configuration file(s). Use
+# the --watch/-w command-line option instead.
+#watch: true
+
+gems:
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+# Further configuration:
+# https://help.github.com/articles/redirects-on-github-pages
+# https://help.github.com/articles/using-jekyll-with-pages
+# https://help.github.com/articles/repository-metadata-on-github-pages
+# https://help.github.com/articles/custom-404-pages

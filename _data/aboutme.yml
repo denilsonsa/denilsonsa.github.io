@@ -1,0 +1,238 @@
+curriculumvitae:
+  href: http://denilson.sa.nom.br/denilsonsa-resume.pdf
+  # href: /denilsonsa-resume.pdf
+  # href: {{ site.url }}/denilsonsa-resume.pdf
+  useid: curriculumvitae
+  text1: Resumé
+
+blog:
+  href: http://denilson.sa.nom.br/blog/
+  # href: {{ site.url }}/blog/
+  useid: blog
+  text1: Blog
+
+email:
+  href: mailto:denilsonsa@gmail.com
+  useid: email
+  text1: E-mail
+
+
+aboutme:
+  href: http://about.me/denilsonsa
+  useid: aboutme
+  text1: about.me
+
+alvanista:
+  href: http://alvanista.com/denilsonsa
+  useid: alvanista
+  text1: Alvanista
+
+angellist:
+  href: https://angel.co/denilsonsa
+  useid: angellist
+  text1: AngelList
+
+backloggery:
+  href: http://backloggery.com/crazyterabyte
+  useid: backloggery
+  text1: Backloggery
+
+bitbucket:
+  href: https://bitbucket.org/denilsonsa
+  useid: bitbucket
+  text1: Bitbucket
+
+codepen:
+  href: http://codepen.io/denilsonsa/
+  useid: codepen
+  text1: CodePen
+
+deviantart:
+  href: http://crazyterabyte.deviantart.com/
+  useid: deviantart
+  text1: deviantART
+
+disqus:
+  href: http://disqus.com/denilsonsa/
+  useid: disqus
+  text1: Disqus
+
+drawception:
+  href: http://drawception.com/player/178050/denilsonsa/
+  useid: drawception
+  text1: Drawception
+
+dropbox:
+  href: https://db.tt/VXe1QPLA
+  useid: dropbox
+  text1: Dropbox
+
+facebook:
+  href: https://facebook.com/denilsonsa
+  useid: facebook
+  text1: Facebook
+
+flattr:
+  href: https://flattr.com/profile/denilsonsa
+  useid: flattr
+  text1: Flattr
+
+flickr:
+  href: https://secure.flickr.com/photos/crazyterabyte/
+  useid: flickr
+  text1: Flickr
+
+gamejolt:
+  href: http://gamejolt.com/profile/denilsonsa/378910/
+  useid: gamejolt
+  text1: Game Jolt
+
+github:
+  href: https://github.com/denilsonsa
+  useid: github
+  text1: GitHub
+
+googleplus:
+  href: https://plus.google.com/+DenilsonSa
+  #href: https://plus.google.com/+DenilsonSa/about
+  useid: googleplus
+  text1: Google+
+
+grooveshark:
+  href: http://grooveshark.com/#!/denilsonsa
+  useid: grooveshark
+  text1: Grooveshark
+
+hitbox:
+  href: http://www.hitbox.tv/DenilsonSa
+  useid: hitbox
+  text1: hitbox.tv
+  #text1: hitbox
+
+instagram:
+  href: http://instagram.com/denilsonsa
+  useid: instagram
+  text1: Instagram
+
+kongregate:
+  href: http://www.kongregate.com/accounts/CrazyTerabyte
+  useid: kongregate
+  text1: Kongregate
+
+linkedin:
+  href: https://www.linkedin.com/in/denilsonsa
+  useid: linkedin
+  text1: LinkedIn
+
+myspace:
+  href: https://myspace.com/denilsonsa
+  useid: myspace
+  text1: Myspace
+
+newgrounds:
+  href: http://denilsonsa.newgrounds.com/
+  useid: newgrounds_tank
+  text1: Newgrounds
+
+openclipart:
+  #href: https://openclipart.org/user-detail/CrazyTerabyte
+  href: https://openclipart.org/user-cliparts/CrazyTerabyte
+  useid: openclipart
+  text1: Open
+  text2: clipart
+  # text1: Openclipart
+
+paypal:
+  href: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=denilsonsa%40gmail%2ecom&lc=BR&currency_code=BRL
+  useid: paypal
+  text1: PayPal
+
+pinterest:
+  href: http://www.pinterest.com/denilsonsa/
+  useid: pinterest
+  text1: Pinterest
+
+playfire:
+  href: https://www.playfire.com/denilsonsa
+  useid: playfire
+  text1: Playfire
+
+reddit:
+  href: http://www.reddit.com/user/denilsonsa/
+  useid: reddit
+  text1: reddit
+
+skype:
+  href: skype:crazyterabyte?chat
+  useid: skype
+  text1: Skype
+
+stackoverflow:
+  href: https://stackoverflow.com/users/124946/
+  useid: stackoverflow
+  text1: Stack
+  text2: Overflow
+  # text1: Stack Overflow
+
+stackoverflowcareers:
+  href: https://careers.stackoverflow.com/denilsonsa
+  useid: stackoverflowcareers
+  text1: Careers
+  text2: 2.0
+
+steam:
+  href: http://steamcommunity.com/id/crazyterabyte
+  useid: steam
+  text1: Steam
+
+stumbleupon:
+  href: http://www.stumbleupon.com/stumbler/denilsonsa
+  useid: stumbleupon
+  text1: Stumble
+  text2: Upon
+  # text1: StumbleUpon
+
+stylish:
+  href: https://userstyles.org/users/194017
+  # AKA Stylish
+  useid: stylish
+  text1: User
+  text2: styles
+
+tumblr:
+  href: http://denilsonsa.tumblr.com/
+  useid: tumblr
+  text1: Tumblr
+
+twitch:
+  href: http://www.twitch.tv/denilsonsa/profile
+  useid: twitch
+  text1: Twitch.tv
+  #text1: Twitch
+
+twitter:
+  href: https://twitter.com/denilsonsa
+  useid: twitter
+  text1: Twitter
+
+userscripts:
+  #href: http://web.archive.org/web/20131108061608/http://userscripts.org/users/120597/scripts
+  href: http://userscripts-mirror.org/users/120597/scripts
+  # href: http://userscripts.org/users/120597/scripts
+  # href: http://userscripts.org:8080/users/120597/scripts
+  # AKA Greasemonkey
+  useid: userscripts
+  text1: User
+  text2: scripts
+
+vk:
+  href: https://vk.com/denilsonsa
+  useid: vk
+  text1: VK
+
+youtube:
+  href: https://www.youtube.com/user/denilsonsa
+  useid: youtube
+  text1: YouTube
+
+# vi:ts=2:sw=2:et

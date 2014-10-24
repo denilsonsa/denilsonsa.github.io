@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 201.0975 201.39375">
+<!-- Based on https://commons.wikimedia.org/wiki/File:Flattr-Logo.svg -->
 <defs>
    <linearGradient id="FlattrGradientOrange" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0,134.75,134.75,0,150.75,247.73)">
 		<stop stop-color="#ea5f29" offset="0" />

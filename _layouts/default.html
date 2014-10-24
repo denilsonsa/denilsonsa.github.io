@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html {% if page.lang %}lang="{{ page.lang }}"{% endif %}>
+	<head>
+		<meta charset="utf-8">
+		<!-- https://stackoverflow.com/questions/6771258/ -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		{% comment %}
+		https://developer.mozilla.org/en/docs/Mozilla/Mobile/Viewport_meta_tag
+		Should I add initial-scale=1 ?
+		{% endcomment %}
+		<meta name="viewport" content="width=device-width">
+
+		<title>{{ page.title }} — {{ site.name }}</title>
+		<!-- http://ogp.me/ -->
+		<meta property="og:title" content="{{ page.title }}">
+		<meta property="og:site_name" content="{{ site.name }}">
+
+		<meta name="author" content="Denilson Sá">
+
+		{% if page.excerpt %}
+		<meta name="description" content="{{ page.excerpt | strip_html }}">
+		<meta property="og:description" content="{{ page.excerpt | strip_html }}">
+		{% endif %}
+
+		{% if page.og_type %}
+		<meta property="og:type" content="{{ page.og_type }}">
+			{% if page.og_type == "article" %}
+
+			{% for tag in page.tags %}
+			<meta property="article:tag" content="{{ tag }}">
+			{% endfor %}
+
+			<meta property="article:published_time" content="{{ page.date | date: '%F' }}">
+
+			<!-- I'm not sure I'm using this tag correctly: -->
+			<meta property="article:author" content="{{ site.data.aboutme.googleplus.href }}">
+			<meta property="article:author" content="{{ site.data.aboutme.facebook.href }}">
+			<meta property="article:author" content="{{ site.data.aboutme.twitter.href }}">
+
+			{% comment %}
+			<!-- Not supported because I don't have this date stored anywhere: -->
+			<!-- meta property="article:modified_time" content="{{ page.date | date: '%F' }}" -->
+			{% endcomment %}
+
+			{% endif %}
+
+		{% endif %}
+
+		<!-- syntax highlighting CSS -->
+		<link rel="stylesheet" href="{{ site.url }}/css/syntax.css">
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="{{ site.url }}/css/main.css">
+	</head>
+	<body>
+
+		<div class="site">
+			<header>
+				<nav>
+					<a href="{{ site.url }}/" class="favicon"><img src="{{ site.url }}/MyPhoto2014-64x64.jpg" alt=""> {{ site.name }}</a>
+					<a href="{{ site.url }}/blog/">Blog</a>
+				</nav>
+			</header>
+
+			<!-- TODO: Use article element.
+			Using HTML5 structural elements:
+			http://blog.teamtreehouse.com/use-html5-sectioning-elements
+			https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article
+			http://www.whatwg.org/specs/web-apps/current-work/multipage/semantics.html#the-article-element
+			-->
+
+			<main role="main">
+				{{ content }}
+			</main>
+
+			{% comment %}
+			<address> inside <footer> is a great place to put contact information:
+			https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer
+			https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address
+
+			A link to Google+ must include ?rel=author
+			https://support.google.com/webmasters/answer/2539557
+			https://support.google.com/webmasters/answer/1408986
+			https://plus.google.com/authorship
+
+			TODO: Check these tips and see if they are valid:
+			http://www.iacquire.com/blog/18-meta-tags-every-webpage-should-have-in-2013
+			https://developers.google.com/+/web/snippet/
+			https://support.google.com/webmasters/answer/146646
+			https://support.google.com/webmasters/answer/1211158
+
+			Tool:
+			https://www.google.com/webmasters/tools/richsnippets
+
+			TODO: Mark the article using schema.org
+			http://schema.org/Article
+			http://schema.org/BlogPosting
+			{% endcomment %}
+			<footer>
+				<address>
+					<a href="{{ site.data.aboutme.email.href }}">Denilson Sá</a>:
+					<a href="{{ site.data.aboutme.googleplus.href }}?rel=author">{{ site.data.aboutme.googleplus.text1 }}{% if site.data.aboutme.googleplus.text2 %} {{ site.data.aboutme.googleplus.text2 }}{% endif %}</a>
+					{% assign items = "twitter facebook github bitbucket" | split: ' ' %}
+					{% for itemname in items %}
+						{% assign item = site.data.aboutme[itemname] %}
+						<a href="{{ item.href }}">{{ item.text1 }}{% if item.text2 %} {{ item.text2 }}{% endif %}</a>
+					{% endfor %}
+				</address>
+			</footer>
+
+		</div>
+
+	</body>
+</html>
+
+{% comment %} vi:ft=liquid: {% endcomment %}

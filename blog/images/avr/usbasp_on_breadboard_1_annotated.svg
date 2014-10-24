@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   width="600"
+   height="375"
+   viewBox="0 0 600 375">
+  <image xlink:href="usbasp_on_breadboard_1-lo.jpg" y="0" x="0" height="375" width="600" />
+  <rect x="0" y="0" width="600" height="375" style="fill:#ffffff;fill-opacity:0.5;" />
+  <g style="fill-opacity:0.5;stroke:#000000;stroke-width:2;stroke-dasharray:8, 8" >
+    <path style="fill:#ffffff" d="M 600,328.31633 435.84184,239.92347 117.09184,226.53061 114.79592,375 600,375 z" />
+    <path style="fill:#00ff00" d="m 435.84184,239.92347 -75.34509,-56.85733 -1.5832,-122.635643 199.74576,-3.780676 2.55476,196.294649 -89.0904,6.51537" />
+    <path style="fill:#ffff00" d="m 288.27688,233.72326 27.61378,-41.24394 -4.4091,-131.151056 -171.4251,3.244639 -4.11298,162.749797" />
+  </g>
+  <g style="font-size:12px;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;font-family:Bitstream Vera Sans, Arial, sans-serif" >
+    <g style="text-align:center;text-anchor:middle">
+      <text x="242.08542" y="80.35714">
+        <tspan x="242.08542" y="80.35714">ATmega8</tspan>
+        <tspan x="242.08542" y="95.35714">USBasp</tspan>
+        <tspan x="242.08542" y="110.35714">(part 2.1)</tspan>
+      </text>
+      <text x="508.92859" y="75.765312">
+        <tspan x="508.92859" y="75.765312">ATmega8</tspan>
+        <tspan x="508.92859" y="90.765312">Blinking LEDs</tspan>
+        <tspan x="508.92859" y="105.76531">&quot;Hello World&quot;</tspan>
+        <tspan x="508.92859" y="120.76531">(part 4)</tspan>
+      </text>
+    </g>
+    <text x="185.21573" y="292.09827">PIC18F870</text>
+    <text x="215.05101" y="332.90814">Unrelated project still sharing the same breadboard</text>
+  </g>
+</svg>

@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 150 100"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   version="1.0"
+   sodipodi:docbase="/home/denilson/Arte/AVR Programmer"
+   sodipodi:docname="AVR-ISP-connectors.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:export-filename="/home/denilson/Arte/AVR Programmer/AVR-ISP-connectors.png"
+   inkscape:export-xdpi="180"
+   inkscape:export-ydpi="180">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 50 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="150 : 50 : 1"
+       inkscape:persp3d-origin="75 : 33.333333 : 1"
+       id="perspective3428" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.66"
+     inkscape:cx="75"
+     inkscape:cy="50"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     width="150px"
+     height="100px"
+     showgrid="true"
+     inkscape:grid-points="true"
+     inkscape:grid-bbox="false"
+     inkscape:window-width="1024"
+     inkscape:window-height="748"
+     inkscape:window-x="0"
+     inkscape:window-y="20"
+     inkscape:object-paths="false"
+     inkscape:guide-bbox="false"
+     inkscape:guide-points="true">
+    <inkscape:grid
+       id="GridFromPre046Settings"
+       type="xygrid"
+       originx="0px"
+       originy="0px"
+       spacingx="2.5px"
+       spacingy="2.5px"
+       color="#0000ff"
+       empcolor="#0000ff"
+       opacity="0.2"
+       empopacity="0.4"
+       empspacing="2" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://web.resource.org/cc/PublicDomain" />
+        <dc:title>AVR ISP Connectors</dc:title>
+        <dc:date>2007-12-25</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Denilson Figueiredo de Sá</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag />
+        </dc:subject>
+        <dc:description />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://web.resource.org/cc/PublicDomain">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g3699"
+       transform="translate(-10,10)">
+      <g
+         transform="translate(-15,0)"
+         inkscape:tile-cy="27.499999"
+         inkscape:tile-cx="57.499997"
+         inkscape:tile-h="14.976366"
+         inkscape:tile-w="14.976366"
+         inkscape:label="#connectorpin"
+         id="connectorpin">
+        <rect
+           y="20.261816"
+           x="50.261814"
+           height="14.476366"
+           width="14.476366"
+           id="rect2342"
+           style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           inkscape:tile-w="14.976366"
+           inkscape:tile-h="14.976366"
+           inkscape:tile-cx="57.499993"
+           inkscape:tile-cy="27.499999"
+           rx="1.5"
+           ry="1.5" />
+        <rect
+           style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect3469"
+           width="5.136775"
+           height="5.136775"
+           x="54.931614"
+           y="24.931612" />
+      </g>
+      <use
+         id="use3563"
+         xlink:href="#connectorpin"
+         inkscape:tiled-clone-of="#connectorpin"
+         y="0"
+         x="0"
+         width="200"
+         height="250"
+         transform="translate(0,14.976366)" />
+      <use
+         id="use3565"
+         xlink:href="#connectorpin"
+         inkscape:tiled-clone-of="#connectorpin"
+         y="0"
+         x="0"
+         width="200"
+         height="250"
+         transform="translate(0,29.952732)" />
+      <use
+         id="use3567"
+         transform="translate(14.976366,0)"
+         xlink:href="#connectorpin"
+         inkscape:tiled-clone-of="#connectorpin"
+         y="0"
+         x="0"
+         width="200"
+         height="250" />
+      <use
+         id="use3569"
+         transform="translate(14.976366,14.976366)"
+         xlink:href="#connectorpin"
+         inkscape:tiled-clone-of="#connectorpin"
+         y="0"
+         x="0"
+         width="200"
+         height="250" />
+      <use
+         id="use3571"
+         transform="translate(14.976366,29.952732)"
+         xlink:href="#connectorpin"
+         inkscape:tiled-clone-of="#connectorpin"
+         y="0"
+         x="0"
+         width="200"
+         height="250" />
+      <text
+         xml:space="preserve"
+         style="font-size:5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:300%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         x="42.510983"
+         y="29.32251"
+         id="text4452"
+         sodipodi:linespacing="300%"><tspan
+           sodipodi:role="line"
+           id="tspan3761"
+           x="42.510983"
+           y="29.32251">1</tspan><tspan
+           sodipodi:role="line"
+           id="tspan3763"
+           x="42.510983"
+           y="44.32251">3</tspan><tspan
+           sodipodi:role="line"
+           id="tspan3765"
+           x="42.510983"
+           y="59.32251">5</tspan></text>
+      <text
+         sodipodi:linespacing="300%"
+         id="text3775"
+         y="29.32251"
+         x="57.495895"
+         style="font-size:5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:300%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           sodipodi:role="line"
+           id="tspan3783"
+           x="57.495895"
+           y="29.32251">2</tspan><tspan
+           sodipodi:role="line"
+           id="tspan3785"
+           x="57.495895"
+           y="44.32251">4</tspan><tspan
+           sodipodi:role="line"
+           id="tspan3787"
+           x="57.495895"
+           y="59.32251">6</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:300%;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       x="57.460938"
+       y="39.895699"
+       id="text4851"
+       sodipodi:linespacing="300%"><tspan
+         sodipodi:role="line"
+         x="57.460938"
+         y="39.895699"
+         id="tspan3436">VCC</tspan><tspan
+         sodipodi:role="line"
+         x="57.460938"
+         y="54.895699"
+         id="tspan3438">MOSI</tspan><tspan
+         sodipodi:role="line"
+         x="57.460938"
+         y="69.895699"
+         id="tspan3440">GND</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text15554"
+       y="10"
+       x="5"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         sodipodi:role="line"
+         id="tspan3723"
+         x="5"
+         y="10">AVR ISP connectors</tspan></text>
+    <g
+       id="g3664"
+       transform="translate(-25,-5)">
+      <use
+         transform="translate(90,0)"
+         id="use3529"
+         xlink:href="#connectorpin"
+         inkscape:tiled-clone-of="#connectorpin"
+         y="0"
+         x="0"
+         width="200"
+         height="250" />
+      <use
+         id="use3531"
+         transform="translate(90,14.976366)"
+         xlink:href="#connectorpin"
+         inkscape:tiled-clone-of="#connectorpin"
+         y="0"
+         x="0"
+         width="200"
+         height="250" />
+      <use
+         id="use3533"
+         transform="translate(90,29.952732)"
+         xlink:href="#connectorpin"
+         inkscape:tiled-clone-of="#connectorpin"
+         y="0"
+         x="0"
+         width="200"
+         height="250" />
+      <use
+         id="use3535"
+         transform="translate(90,44.929098)"
+         xlink:href="#connectorpin"
+         inkscape:tiled-clone-of="#connectorpin"
+         y="0"
+         x="0"
+         width="200"
+         height="250" />
+      <use
+         id="use3537"
+         transform="translate(90,59.905464)"
+         xlink:href="#connectorpin"
+         inkscape:tiled-clone-of="#connectorpin"
+         y="0"
+         x="0"
+         width="200"
+         height="250" />
+      <use
+         id="use3539"
+         transform="translate(104.97637,0)"
+         xlink:href="#connectorpin"
+         inkscape:tiled-clone-of="#connectorpin"
+         y="0"
+         x="0"
+         width="200"
+         height="250" />
+      <use
+         id="use3541"
+         transform="translate(104.97637,14.976366)"
+         xlink:href="#connectorpin"
+         inkscape:tiled-clone-of="#connectorpin"
+         y="0"
+         x="0"
+         width="200"
+         height="250" />
+      <use
+         id="use3543"
+         transform="translate(104.97637,29.952732)"
+         xlink:href="#connectorpin"
+         inkscape:tiled-clone-of="#connectorpin"
+         y="0"
+         x="0"
+         width="200"
+         height="250" />
+      <use
+         id="use3545"
+         transform="translate(104.97637,44.929098)"
+         xlink:href="#connectorpin"
+         inkscape:tiled-clone-of="#connectorpin"
+         y="0"
+         x="0"
+         width="200"
+         height="250" />
+      <use
+         id="use3547"
+         transform="translate(104.97637,59.905464)"
+         xlink:href="#connectorpin"
+         inkscape:tiled-clone-of="#connectorpin"
+         y="0"
+         x="0"
+         width="200"
+         height="250" />
+      <text
+         sodipodi:linespacing="300%"
+         id="use3652"
+         y="29.32251"
+         x="132.51099"
+         style="font-size:5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:300%;writing-mode:lr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           sodipodi:role="line"
+           id="tspan3789"
+           x="132.51099"
+           y="29.32251">1</tspan><tspan
+           sodipodi:role="line"
+           id="tspan3791"
+           x="132.51099"
+           y="44.32251">3</tspan><tspan
+           sodipodi:role="line"
+           id="tspan3793"
+           x="132.51099"
+           y="59.32251">5</tspan><tspan
+           sodipodi:role="line"
+           id="tspan3795"
+           x="132.51099"
+           y="74.32251">7</tspan><tspan
+           sodipodi:role="line"
+           id="tspan3797"
+           x="132.51099"
+           y="89.32251">9</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:300%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         x="147.51099"
+         y="29.32251"
+         id="text3799"
+         sodipodi:linespacing="300%"><tspan
+           sodipodi:role="line"
+           id="tspan3811"
+           x="147.51099"
+           y="29.32251">2</tspan><tspan
+           sodipodi:role="line"
+           id="tspan3813"
+           x="147.51099"
+           y="44.32251">4</tspan><tspan
+           sodipodi:role="line"
+           id="tspan3815"
+           x="147.51099"
+           y="59.32251">6</tspan><tspan
+           sodipodi:role="line"
+           id="tspan3817"
+           x="147.51099"
+           y="74.32251">8</tspan><tspan
+           sodipodi:role="line"
+           id="tspan3819"
+           x="147.51099"
+           y="89.32251">10</tspan></text>
+    </g>
+    <text
+       sodipodi:linespacing="300%"
+       id="text3683"
+       y="40"
+       x="22.397461"
+       style="font-size:5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:300%;writing-mode:lr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         sodipodi:role="line"
+         y="40"
+         x="22.397461"
+         id="tspan3430">MISO</tspan><tspan
+         sodipodi:role="line"
+         y="55"
+         x="22.397461"
+         id="tspan3432">SCK</tspan><tspan
+         sodipodi:role="line"
+         y="70"
+         x="22.397461"
+         id="tspan3434">RESET</tspan></text>
+    <text
+       sodipodi:linespacing="300%"
+       id="text3725"
+       y="24.895697"
+       x="132.46094"
+       style="font-size:5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:300%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         sodipodi:role="line"
+         id="tspan3751"
+         x="132.46094"
+         y="24.895697">VCC</tspan><tspan
+         sodipodi:role="line"
+         id="tspan3753"
+         x="132.46094"
+         y="39.895697">GND</tspan><tspan
+         sodipodi:role="line"
+         id="tspan3755"
+         x="132.46094"
+         y="54.895697">GND</tspan><tspan
+         sodipodi:role="line"
+         id="tspan3757"
+         x="132.46094"
+         y="69.895697">GND</tspan><tspan
+         sodipodi:role="line"
+         id="tspan3759"
+         x="132.46094"
+         y="84.895697">GND</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:300%;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="97.397461"
+       y="25"
+       id="text3733"
+       sodipodi:linespacing="300%"><tspan
+         sodipodi:role="line"
+         id="tspan3741"
+         x="97.397461"
+         y="25">MOSI</tspan><tspan
+         sodipodi:role="line"
+         id="tspan3743"
+         x="97.397461"
+         y="40">LED</tspan><tspan
+         sodipodi:role="line"
+         id="tspan3745"
+         x="97.397461"
+         y="55">RESET</tspan><tspan
+         sodipodi:role="line"
+         id="tspan3747"
+         x="97.397461"
+         y="70">SCK</tspan><tspan
+         sodipodi:role="line"
+         id="tspan3749"
+         x="97.397461"
+         y="85">MISO</tspan></text>
+  </g>
+</svg>
