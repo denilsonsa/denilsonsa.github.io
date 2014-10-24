@@ -1,0 +1,4 @@
+<nav class="postnextprev">
+{% if page.previous %}<a class="prev" href="{{ page.previous.url }}">⏪ {{ page.previous.title }}</a>{% endif %}
+{% if page.next %}<a class="next" href="{{ page.next.url }}">{{ page.next.title }} ⏩</a>{% endif %}
+</nav>
