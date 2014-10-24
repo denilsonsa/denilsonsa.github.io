@@ -2,6 +2,7 @@
 date: 2011-12-18 16:12:19+00:00
 layout: post
 title: USB HID absolute pointing device using ATmega8 and a magnetometer
+published: false
 tag:
 - python
 - usb
