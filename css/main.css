@@ -46,6 +46,7 @@ a:visited:hover { color: #f1f; }
 
 /* Header */
 header {
+  position: relative;
   border-radius: 16px 0 0 16px;
   font-size: 16px;
   font-family: "Oswald", sans-serif;
@@ -54,11 +55,14 @@ header {
   color: black;
   text-shadow: white 1px 1px;
   margin-bottom: 1.25em;
+  text-align: left;
 }
 header .favicon {
-  float: left;
 }
 header .favicon img {
+  position: absolute;
+  top: 0;
+  left: 0;
   border-radius: 50%;
   width: 32px;
   height: 32px;
@@ -124,10 +128,12 @@ header nav a:hover:after {
   text-indent: -5em;
   margin: 0.5em 0 0.5em 5em;
 }
-
-.posts time {
+.posts li time {
   color: #222;
-  font-size: 80%;
+  font-size: 0.8em;
+}
+.posts li .excerpt {
+  font-size: 0.9em;
 }
 
 /* Posts */
@@ -190,8 +196,6 @@ nav.postnextprev .next {
 .post pre.terminal code {
   background-color: #333;
 }
-
-/* TODO: check the margins. If a <pre> is followed by <h2>, it currently has no margins, which looks bad. See 2005-12-13-the-failed-gentoo-linux-nvidia-guide */
 
 figure {
   display: block;
