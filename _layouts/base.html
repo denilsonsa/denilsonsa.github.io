@@ -69,7 +69,13 @@
 	ga('create', 'UA-47917227-1', 'denilson.sa.nom.br');
 	ga('send', 'pageview');
 	</script>
-</head>
+
+{% comment %}
+Note: the </head> end tag is not added in this template, it must be added in
+the pages/templates that inherit this base template.
+
+It was done this way to make it possible to add stuff to the head element.
+{% endcomment %}
 
 {{ content }}
 
