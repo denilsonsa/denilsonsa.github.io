@@ -6,9 +6,12 @@ encoding: utf-8
 timezone: America/Sao_Paulo
 
 # Site name (not used by Jekyll itself, only used in the template):
-name: Denilson Sá
+name: "Denilson Sá"
 # In fact, any property from this _config.yml file can be referenced in a
 # template using {{ site.foobar }}
+
+# Used in RSS and Atom feeds.
+production_url: "http://denilson.sa.nom.br/"
 
 # http://jekyllrb.com/docs/configuration/#frontmatter-defaults
 defaults:

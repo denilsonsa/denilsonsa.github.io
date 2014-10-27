@@ -1,0 +1,30 @@
+---
+# Based on:
+# https://github.com/plusjade/jekyll-bootstrap/blob/master/rss.xml
+# https://github.com/coyled/coyled.com
+---
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0">
+<channel>
+
+<title>{{ site.name }}</title>
+{% comment %} <description>{{ site.name }} - {{ site.author.name }}</description> {% endcomment %}
+<link>{{ site.production_url }}rss.xml</link>
+<link>{{ site.production_url }}</link>
+<lastBuildDate>{{ site.time | date_to_xmlschema }}</lastBuildDate>
+<pubDate>{{ site.time | date_to_xmlschema }}</pubDate>
+
+{% for post in site.posts %}
+<item>
+	<title>{{ post.title }}</title>
+	<link>{{ site.production_url }}{{ post.url }}</link>
+	<guid>{{ site.production_url }}{{ post.id }}</guid>
+	<pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+	<author>denilsonsa@gmail.com (Denilson Sá)</author>
+	<description>{{ post.content | xml_escape }}</description>
+</item>
+{% endfor %}
+
+</channel>
+</rss>
+
