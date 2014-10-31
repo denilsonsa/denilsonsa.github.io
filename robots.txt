@@ -1,0 +1,7 @@
+# This technically isn't valid, since for some godforsaken reason
+# sitemap paths must be ABSOLUTE and not relative.
+# https://stackoverflow.com/questions/14196801/sitemap-url-in-robots-txt
+# https://support.google.com/webmasters/answer/183668
+
+Sitemap: /sitemap.xml
+Sitemap: http://denilson.sa.nom.br/sitemap.xml
