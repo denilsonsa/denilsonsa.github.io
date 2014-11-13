@@ -167,6 +167,11 @@ skype:
   useid: skype
   text1: Skype
 
+slides:
+  href: https://slides.com/denilsonsa
+  useid: slides
+  text1: Slides
+
 stackoverflow:
   href: https://stackoverflow.com/users/124946/
   useid: stackoverflow
