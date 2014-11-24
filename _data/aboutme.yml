@@ -67,6 +67,11 @@ dropbox:
   useid: dropbox
   text1: Dropbox
 
+ello:
+  href: https://ello.co/denilsonsa
+  useid: ello
+  text1: Ello
+
 facebook:
   href: https://facebook.com/denilsonsa
   useid: facebook

@@ -43,6 +43,10 @@ Dropbox:
 
 * http://www.dropbox.com/branding
 
+Ello:
+
+* https://ello.co/wtf/post/ello-logo
+
 Facebook:
 
 * http://www.facebookbrand.com/
@@ -206,6 +210,10 @@ Stack Overflow:
 Steam:
 
 * http://en.wikipedia.org/wiki/File:Steam_logo.svg
+
+Stellar:
+
+* https://stellartalk.org/topic/3933-stellar-graphics-for-everyone-everyday-use-banner-images/
 
 StumbleUpon:
 
