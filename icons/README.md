@@ -28,6 +28,7 @@ CodePen:
 deviantART:
 
 * http://help.deviantart.com/21/
+* http://spyed.deviantart.com/journal/Boldly-Facing-The-Future-498282387
 
 Disqus:
 
