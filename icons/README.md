@@ -30,6 +30,10 @@ deviantART:
 * http://help.deviantart.com/21/
 * http://spyed.deviantart.com/journal/Boldly-Facing-The-Future-498282387
 
+DigitalOcean:
+
+* https://www.digitalocean.com/company/logos-and-badges/
+
 Disqus:
 
 * https://disqus.com/brand/
@@ -196,9 +200,7 @@ SlideShare:
 
 SoundCloud:
 
-* https://developers.soundcloud.com/docs/api/buttons-logos
-* https://en.wikipedia.org/wiki/File:SoundCloud_logo.svg
-* https://play.google.com/store/apps/details?id=com.soundcloud.android
+* https://soundcloud.com/press
 
 Stack Overflow:
 

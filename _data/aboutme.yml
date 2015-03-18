@@ -177,6 +177,11 @@ slides:
   useid: slides
   text1: Slides
 
+soundcloud:
+  href: https://soundcloud.com/denilsonsa
+  useid: soundcloud
+  text1: SoundCloud
+
 stackoverflow:
   href: https://stackoverflow.com/users/124946/
   useid: stackoverflow
