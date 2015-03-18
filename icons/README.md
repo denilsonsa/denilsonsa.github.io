@@ -89,6 +89,10 @@ Google+:
 * https://developers.google.com/+/branding-guidelines
 * http://commons.wikimedia.org/wiki/File:Google_plus.svg
 
+Gratipay:
+
+* http://inside.gratipay.com/big-picture/brand/
+
 Grooveshark:
 
 * http://grooveshark.com/logo
