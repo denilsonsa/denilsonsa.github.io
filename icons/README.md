@@ -194,6 +194,10 @@ Skype:
 * http://de.wikipedia.org/wiki/Datei:Skype-icon.svg
 * http://www.iconfinder.com/search/?q=skype
 
+Slides:
+
+* https://slides.com/about
+
 SlideShare:
 
 * http://www.slideshare.net/about/logos
