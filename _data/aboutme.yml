@@ -32,6 +32,11 @@ angellist:
   useid: angellist
   text1: AngelList
 
+asciinema:
+  href: https://asciinema.org/~denilsonsa
+  useid: asciinema
+  text1: asciinema
+
 backloggery:
   href: http://backloggery.com/crazyterabyte
   useid: backloggery

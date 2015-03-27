@@ -14,6 +14,10 @@ AngelList:
 * https://github.com/fontello/zocial.font/blob/master/src/svg/angellist.svg
 * https://github.com/hull/hullstrap/blob/master/source/images/icons/angellist.svg
 
+asciinema:
+
+* https://asciinema.org/assets/logo-red-8fc5c5c14ca150641c33ce28601c3520.svg
+
 Bitbucket:
 
 * http://www.atlassian.com/company/press/resources/?tab=logos
