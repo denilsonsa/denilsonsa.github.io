@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Not included yet: IFTTT
+# Not included yet: IFTTT, Kickstarter
 
 # :.,.+2s/ \+/ /g | Tabularize / /l0
 raw = '''

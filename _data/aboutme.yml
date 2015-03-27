@@ -142,6 +142,11 @@ instagram:
   useid: instagram
   text1: Instagram
 
+kickstarter:
+  href: http://www.kickstarter.com/profile/denilsonsa
+  useid: kickstarter
+  text1: Kickstarter
+
 kongregate:
   href: http://www.kongregate.com/accounts/CrazyTerabyte
   useid: kongregate

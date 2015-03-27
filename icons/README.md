@@ -128,6 +128,10 @@ Instructables:
 
 * http://www.instructables.com/community/Official-Instructables-Logos/
 
+Kickstarter:
+
+* https://www.kickstarter.com/help/brand_assets
+
 Kongregate:
 
 * http://www.kongregate.com/logos
