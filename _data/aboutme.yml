@@ -47,10 +47,22 @@ bitbucket:
   useid: bitbucket
   text1: Bitbucket
 
+changetip:
+  href: http://denilsonsa.tip.me/
+  #href: https://www.changetip.com/tipme/denilsonsa
+  #href: https://www.changetip.com/tipsters/denilsonsa
+  useid: changetip
+  text1: ChangeTip
+
 codepen:
   href: http://codepen.io/denilsonsa/
   useid: codepen
   text1: CodePen
+
+coderwall:
+  href: https://coderwall.com/denilsonsa
+  useid: coderwall
+  text1: Coderwall
 
 deviantart:
   href: http://crazyterabyte.deviantart.com/

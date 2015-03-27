@@ -24,10 +24,24 @@ Bitbucket:
 * http://www.atlassian.com/dms/wac/images/press/Atlassian-logos/logoBitBucketPNG.png
 * http://www.atlassian.com/dms/wac/images/press/Atlassian-logos/logoBitBucket.eps
 
+ChangeTip:
+
+* http://www.macobserver.com/imgs/teaser_images/20140811changetiplogo_sq_1024.jpg
+* https://lh4.googleusercontent.com/-OORqX90fxTY/AAAAAAAAAAI/AAAAAAAAA8s/-czfJVwzQkw/photo.jpg
+* https://coinreport.net/wp-content/uploads/2014/08/1024x1024-Icon.png
+* https://cdn.panteracapital.com/wp-content/uploads/1024x1024-Icon.png
+
 CodePen:
 
 * http://blog.codepen.io/documentation/brand-assets/logos/
 * http://codepen.io/chriscoyier/pen/GCyhb
+
+Coderwall:
+
+* https://github.com/twolfson/coderwall-svg
+* https://coderwall.com/p/z5wuia
+* https://twitter.com/coderwall
+* https://assembly.com/coderwall/assets
 
 deviantART:
 
