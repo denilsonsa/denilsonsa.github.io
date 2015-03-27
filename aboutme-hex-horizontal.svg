@@ -1,37 +1,39 @@
 ---
 items:
+  - [16.0, -1, stackoverflowcareers]
+  - [16.0,  1, linkedin]
   - [15.5,  0, curriculumvitae]
-  - [15.0, -1, stackoverflowcareers]
-  - [15.0,  1, linkedin]
+  - [15.0, -1, stackoverflow]
+  - [15.0,  1, bitbucket]
   - [14.5,  0, github]
-  - [14.0, -1, stackoverflow]
-  - [14.0,  1, bitbucket]
+  - [14.0, -1, ifttt]
+  - [14.0,  1, userscripts]
   - [13.5,  0, codepen]
-  - [13.0, -1, stylish]
-  - [13.0,  1, userscripts]
+  - [13.0, -1, instagram]
+  - [13.0,  1, stylish]
   - [12.5,  0, asciinema]
-  - [12.0, -1, instagram]
+  - [12.0, -1, flickr]
   - [12.0,  1, reddit]
   - [11.5,  0, slides]
-  - [11.0, -1, flickr]
+  - [11.0, -1, imgur]
   - [11.0,  1, hitbox]
   - [10.5,  0, openclipart]
-  - [10.0, -1, imgur]
+  - [10.0, -1, soundcloud]
   - [10.0,  1, twitch]
   - [9.5,  0, deviantart]
-  - [9.0, -1, soundcloud]
+  - [9.0, -1, grooveshark]
   - [9.0,  1, youtube]
   - [8.5,  0, drawception]
-  - [8.0, -1, grooveshark]
+  - [8.0, -1, gamejolt]
   - [8.0,  1, playfire]
   - [7.5,  0, kongregate]
-  - [7.0, -1, gamejolt]
+  - [7.0, -1, newgrounds]
   - [7.0,  1, backloggery]
   - [6.5,  0, steam]
-  - [6.0, -1, newgrounds]
+  - [6.0, -1, flattr]
   - [6.0,  1, alvanista]
   - [5.5,  0, gratipay]
-  - [5.0, -1, flattr]
+  - [5.0, -1, kickstarter]
   - [5.0,  1, myspace]
   - [4.5,  0, paypal]
   - [4.0, -1, pinterest]
@@ -83,7 +85,7 @@ http://jwatt.org/svg/authoring/
 {% assign xorigin = xhalf | divided_by: -2 | plus: xmargin | plus: pichalf %}
 {% assign yorigin = 0 %}
 
-<svg viewBox="-{{ pichalf }} -{{ picshorthalf }} {{ xgrid | times: 17 | plus: xorigin | plus: pichalf }} {{ picshortsize }}"
+<svg viewBox="-{{ pichalf }} -{{ picshorthalf }} {{ xgrid | times: 18 | plus: xorigin | plus: pichalf }} {{ picshortsize }}"
 	preserveAspectRatio="xMinYMid meet"
 	version="1.1"
 	xmlns="http://www.w3.org/2000/svg"

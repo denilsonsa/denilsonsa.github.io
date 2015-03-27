@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
 
-# Not included yet: IFTTT, Kickstarter
-
 # :.,.+2s/ \+/ /g | Tabularize / /l0
 raw = '''
 
-email googleplus disqus  stumbleupon pinterest flattr   newgrounds gamejolt    grooveshark soundcloud imgur       flickr instagram stylish     stackoverflow stackoverflowcareers
-blog  twitter    aboutme angellist   paypal    gratipay steam      kongregate  drawception deviantart openclipart slides asciinema codepen     github        curriculumvitae
-skype facebook   vk      tumblr      ello      myspace  alvanista  backloggery playfire    youtube    twitch      hitbox reddit    userscripts bitbucket     linkedin
+email googleplus disqus  stumbleupon pinterest kickstarter flattr    newgrounds  gamejolt    grooveshark soundcloud  imgur  flickr    instagram ifttt       stackoverflow   stackoverflowcareers
+blog  twitter    aboutme angellist   paypal    gratipay    steam     kongregate  drawception deviantart  openclipart slides asciinema codepen   github      curriculumvitae
+skype facebook   vk      tumblr      ello      myspace     alvanista backloggery playfire    youtube     twitch      hitbox reddit    stylish   userscripts bitbucket       linkedin
 
 '''
 
