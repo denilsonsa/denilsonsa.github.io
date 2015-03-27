@@ -24,12 +24,25 @@ Bitbucket:
 * http://www.atlassian.com/dms/wac/images/press/Atlassian-logos/logoBitBucketPNG.png
 * http://www.atlassian.com/dms/wac/images/press/Atlassian-logos/logoBitBucket.eps
 
+Bitcoin:
+
+* https://en.bitcoin.it/wiki/Promotional_graphics
+* http://bitcoinsymbol.org/
+
 ChangeTip:
 
 * http://www.macobserver.com/imgs/teaser_images/20140811changetiplogo_sq_1024.jpg
 * https://lh4.googleusercontent.com/-OORqX90fxTY/AAAAAAAAAAI/AAAAAAAAA8s/-czfJVwzQkw/photo.jpg
 * https://coinreport.net/wp-content/uploads/2014/08/1024x1024-Icon.png
 * https://cdn.panteracapital.com/wp-content/uploads/1024x1024-Icon.png
+
+CheckiO:
+
+* https://angel.co/checkio
+* https://twitter.com/PlayCheckiO
+* https://commons.wikimedia.org/wiki/File:CheckiO_Company_Logo.png
+* https://www.facebook.com/media/set/?set=a.521934344502835.133394.348272331869038
+* https://plus.google.com/photos/110405561375193834203/albums/5809899239250586881
 
 CodePen:
 
@@ -87,6 +100,10 @@ Flickr:
 Foursquare:
 
 * https://foursquare.com/about/logos
+
+Fundacity:
+
+* https://www.facebook.com/fundacity/photos/a.423795084370676.1073741825.423795021037349/765401563543358/
 
 Game Jolt:
 
@@ -254,6 +271,7 @@ Steam:
 
 Stellar:
 
+* https://www.stellar.org/about/media/#Presskit
 * https://stellartalk.org/topic/3933-stellar-graphics-for-everyone-everyday-use-banner-images/
 
 StumbleUpon:
