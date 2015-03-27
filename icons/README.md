@@ -106,6 +106,10 @@ ICQ:
 
 * https://en.wikipedia.org/wiki/File:ICQ.svg
 
+Imgur:
+
+* https://imgur.com/about/assets
+
 Instagram:
 
 * http://instagram.com/press/

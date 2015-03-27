@@ -122,6 +122,11 @@ hitbox:
   text1: hitbox.tv
   #text1: hitbox
 
+imgur:
+  href: http://denilsonsa.imgur.com/
+  useid: imgur
+  text1: Imgur
+
 instagram:
   href: http://instagram.com/denilsonsa
   useid: instagram

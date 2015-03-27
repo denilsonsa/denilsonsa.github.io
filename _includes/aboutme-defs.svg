@@ -339,6 +339,20 @@
 </symbol>
 {% endif %}
 
+{% if include_all or restrictions contains ',imgur,' %}
+<!-- Drawn from scratch, based on dot-icon.png from https://imgur.com/about/assets -->
+<linearGradient id="ImgurGreenGradient" x1="0" y1="0" x2="0" y2="1">
+	<stop stop-color="#8fca57" offset="0"/>
+	<stop stop-color="#6fb826" offset="0.5"/>
+	<stop stop-color="#5aac00" offset="1"/>
+</linearGradient>
+<symbol id="imgur" viewBox="0 0 512 512">
+	<rect x="4.5" y="4.5" width="503" height="503" rx="86" fill="#272727" stroke="#424240" stroke-width="9" />
+	<circle cx="254" cy="256" r="160" fill="#7abd37" stroke="#424240" stroke-width="10" />
+	<circle cx="254" cy="256" r="153" fill="url(#ImgurGreenGradient)" />
+</symbol>
+{% endif %}
+
 {% if include_all or restrictions contains ',instagram,' %}
 <!-- Based on "Instagram Glyph.pdf" from http://instagram.com/press/ -->
 <!-- Note: I'd like to use the colorful Instagram icon, but the PNG file is 418KB, and a extremely low quality JPG was still above 20KB. So, I'm sticking to the plain, single-color vector version. -->
