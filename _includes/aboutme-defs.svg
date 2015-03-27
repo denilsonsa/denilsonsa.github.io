@@ -347,6 +347,15 @@
 </symbol>
 {% endif %}
 
+{% if include_all or restrictions contains ',ifttt,' %}
+<!-- Drawn form scratch -->
+<symbol id="hitbox" viewBox="0 0 2 2">
+	<polygon fill="#33CCFF" points="0,0 1,0 1,1" />
+	<polygon fill="#000000" points="1,0 2,0 2,1 1,1" />
+	<polygon fill="#FF4400" points="1,1 2,1 2,2" />
+</symbol>
+{% endif %}
+
 {% if include_all or restrictions contains ',imgur,' %}
 <!-- Drawn from scratch, based on dot-icon.png from https://imgur.com/about/assets -->
 <linearGradient id="ImgurGreenGradient" x1="0" y1="0" x2="0" y2="1">

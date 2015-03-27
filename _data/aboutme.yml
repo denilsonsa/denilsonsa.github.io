@@ -127,6 +127,11 @@ hitbox:
   text1: hitbox.tv
   #text1: hitbox
 
+ifttt:
+  href: https://ifttt.com/p/denilsonsa
+  useid: ifttt
+  text1: IFTTT
+
 imgur:
   href: http://denilsonsa.imgur.com/
   useid: imgur

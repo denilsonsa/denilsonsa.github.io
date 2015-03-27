@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+# Not included yet: IFTTT
+
 # :.,.+2s/ \+/ /g | Tabularize / /l0
 raw = '''
 

@@ -110,6 +110,10 @@ ICQ:
 
 * https://en.wikipedia.org/wiki/File:ICQ.svg
 
+IFTTT
+
+* https://ifttt.com/press
+
 Imgur:
 
 * https://imgur.com/about/assets
