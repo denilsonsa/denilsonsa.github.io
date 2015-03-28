@@ -217,6 +217,11 @@ slides:
   useid: slides
   text1: Slides
 
+slideshare:
+  href: http://www.slideshare.net/CrazyTerabyte/
+  useid: slideshare
+  text1: SlideShare
+
 soundcloud:
   href: https://soundcloud.com/denilsonsa
   useid: soundcloud

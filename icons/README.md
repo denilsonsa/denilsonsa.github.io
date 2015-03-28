@@ -233,10 +233,6 @@ Shadertoy:
 * https://twitter.com/beauty_pi
 * Or the text "Shadertoy" rendered using "Lobster,Tahoma,Arial" font.
 
-Slides:
-
-* http://slides.com/about
-
 Skype:
 
 * http://www.skype.com/en/legal/brand-guidelines/
