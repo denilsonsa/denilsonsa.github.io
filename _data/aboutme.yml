@@ -18,7 +18,7 @@ email:
 
 
 aboutme:
-  href: http://about.me/denilsonsa
+  href: https://about.me/denilsonsa
   useid: aboutme
   text1: about.me
 
@@ -48,8 +48,8 @@ bitbucket:
   text1: Bitbucket
 
 changetip:
-  href: http://denilsonsa.tip.me/
-  #href: https://www.changetip.com/tipme/denilsonsa
+  #href: http://denilsonsa.tip.me/
+  href: https://www.changetip.com/tipme/denilsonsa
   #href: https://www.changetip.com/tipsters/denilsonsa
   useid: changetip
   text1: ChangeTip
@@ -65,17 +65,17 @@ coderwall:
   text1: Coderwall
 
 deviantart:
-  href: http://crazyterabyte.deviantart.com/
+  href: https://crazyterabyte.deviantart.com/
   useid: deviantart
   text1: DeviantArt
 
 disqus:
-  href: http://disqus.com/denilsonsa/
+  href: https://disqus.com/denilsonsa/
   useid: disqus
   text1: Disqus
 
 drawception:
-  href: http://drawception.com/player/178050/denilsonsa/
+  href: https://drawception.com/player/178050/denilsonsa/
   useid: drawception
   text1: Drawception
 
@@ -106,7 +106,7 @@ flickr:
   text1: Flickr
 
 gamejolt:
-  href: http://gamejolt.com/profile/denilsonsa/378910/
+  href: https://gamejolt.com/profile/denilsonsa/378910/
   useid: gamejolt
   text1: Game Jolt
 
@@ -145,17 +145,17 @@ ifttt:
   text1: IFTTT
 
 imgur:
-  href: http://denilsonsa.imgur.com/
+  href: https://denilsonsa.imgur.com/
   useid: imgur
   text1: Imgur
 
 instagram:
-  href: http://instagram.com/denilsonsa
+  href: https://instagram.com/denilsonsa/
   useid: instagram
   text1: Instagram
 
 kickstarter:
-  href: http://www.kickstarter.com/profile/denilsonsa
+  href: https://www.kickstarter.com/profile/denilsonsa
   useid: kickstarter
   text1: Kickstarter
 
@@ -175,7 +175,7 @@ myspace:
   text1: Myspace
 
 newgrounds:
-  href: http://denilsonsa.newgrounds.com/
+  href: https://denilsonsa.newgrounds.com/
   useid: newgrounds_tank
   text1: Newgrounds
 
@@ -193,7 +193,7 @@ paypal:
   text1: PayPal
 
 pinterest:
-  href: http://www.pinterest.com/denilsonsa/
+  href: https://www.pinterest.com/denilsonsa/
   useid: pinterest
   text1: Pinterest
 
@@ -203,7 +203,7 @@ playfire:
   text1: Playfire
 
 reddit:
-  href: http://www.reddit.com/user/denilsonsa/
+  href: https://www.reddit.com/user/denilsonsa/
   useid: reddit
   text1: reddit
 
@@ -247,7 +247,7 @@ stackoverflowcareers:
   text2: 2.0
 
 steam:
-  href: http://steamcommunity.com/id/crazyterabyte
+  href: https://steamcommunity.com/id/crazyterabyte
   useid: steam
   text1: Steam
 
