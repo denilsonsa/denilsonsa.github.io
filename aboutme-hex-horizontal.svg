@@ -1,15 +1,16 @@
 ---
 items:
+  - [18.0, -1, stackoverflowcareers]
   - [17.5,  0, curriculumvitae]
-  - [17.0, -1, stackoverflowcareers]
+  - [17.0, -1, stackoverflow]
   - [17.0,  1, linkedin]
   - [16.5,  0, github]
-  - [16.0, -1, stackoverflow]
+  - [16.0, -1, coderwall]
   - [16.0,  1, bitbucket]
   - [15.5,  0, codepen]
   - [15.0, -1, ifttt]
   - [15.0,  1, userscripts]
-  - [14.5,  0, coderwall]
+  - [14.5,  0, speakerdeck]
   - [14.0, -1, instagram]
   - [14.0,  1, stylish]
   - [13.5,  0, slideshare]
@@ -89,7 +90,7 @@ http://jwatt.org/svg/authoring/
 {% assign xorigin = xhalf | divided_by: -2 | plus: xmargin | plus: pichalf %}
 {% assign yorigin = 0 %}
 
-<svg viewBox="-{{ pichalf }} -{{ picshorthalf }} {{ xgrid | times: 19 | plus: xorigin | plus: pichalf }} {{ picshortsize }}"
+<svg viewBox="-{{ pichalf }} -{{ picshorthalf }} {{ xgrid | times: 20 | plus: xorigin | plus: pichalf }} {{ picshortsize }}"
 	preserveAspectRatio="xMinYMid meet"
 	version="1.1"
 	xmlns="http://www.w3.org/2000/svg"

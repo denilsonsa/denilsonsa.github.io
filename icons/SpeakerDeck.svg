@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg version="1.1" viewBox="0 0 19 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg version="1.1" viewBox="0.5 0.5 18 15" xmlns="http://www.w3.org/2000/svg">
 <!-- Drawn from scratch, based on several images -->
 <defs>
-	<clipPath id="SpeakerDeckHighlightClip" clipPathUnits="userSpaceOnUse">
+	<clipPath id="SpeakerDeckHighlightClipPath" clipPathUnits="userSpaceOnUse">
 		<path d="
 	M1.2,1.2 v13.6 h16.6 v-13.6 z
 	M1.66666,2.33333
@@ -15,28 +15,15 @@
 	a 0.66666,0.66666 0,0,1 -0.66666,-0.66666
 	z" />
 	</clipPath>
-	<linearGradient id="SpeakerDeckLightGreenGradient" x1="0" y1="0" x2="0" y2="1">
-		<stop stop-color="#9ad9bd" offset="0"/>
-		<stop stop-color="#79a3a4" offset="1"/>
-	</linearGradient>
-	<linearGradient id="SpeakerDeckMainGreenGradient" x1="0" y1="0" x2="0" y2="1">
-		<stop stop-color="#44bc8a" offset="0"/>
-		<stop stop-color="#00615f" offset="1"/>
-	</linearGradient>
 	<linearGradient id="SpeakerDeckGreenGradient" x1="0" y1="0" x2="0" y2="1">
-		<stop stop-color="#289a64" offset="0"/>
-		<stop stop-color="#064c42" offset="1"/>
+		<stop stop-color="#3cb579" offset="0"/>
+		<stop stop-color="#004a4a" offset="1"/>
 	</linearGradient>
 </defs>
 <rect fill="#bfbfbf" x="0.5" y="0.5" width="18" height="15" rx="1.83333" />
 <rect fill="#000000" x="1" y="1" width="17" height="14" rx="1.33333" />
-<!--
-<rect fill="url(#SpeakerDeckLightGreenGradient)" x="1.2" y="1.2" width="16.6" height="13.6" rx="1.13333" />
-<rect fill="url(#SpeakerDeckMainGreenGradient)" x="1.66666" y="1.66666" width="15.66666" height="12.66666" rx="0.66666" />
--->
 <rect fill="url(#SpeakerDeckGreenGradient)" x="1.2" y="1.2" width="16.6" height="13.6" rx="1.13333" />
-<rect fill="#ffffff" fill-opacity="0.5" clip-path="url(#SpeakerDeckHighlightClip)" x="1.2" y="1.2" width="16.6" height="13.6" rx="1.13333" />
-
+<rect fill="#ffffff" fill-opacity="0.5" clip-path="url(#SpeakerDeckHighlightClipPath)" x="1.2" y="1.2" width="16.6" height="13.6" rx="1.13333" />
 <rect fill="#000000" fill-opacity="0.5" x="6" y="6" width="7" height="4" rx="0.5" />
 <polygon fill="#ffffff" points="7,8 9,7 9,9" />
 <polygon fill="#ffffff" points="12,8 10,7 10,9" />

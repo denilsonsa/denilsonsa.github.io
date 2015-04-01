@@ -253,6 +253,12 @@ SoundCloud:
 
 * https://soundcloud.com/press
 
+Speaker Deck:
+
+* https://d2dfho4r6t7asi.cloudfront.net/assets/logo-aa05e9c545eab70784c037956e4d72c4.png (logo from the top-left)
+* https://speakerdeck.com/speakerdeck/introduction-to-speakerdeck (image from the first slide)
+* https://speakerdeck.com/ (button background gradient colors)
+
 Stack Overflow:
 
 * http://stackapps.com/questions/347/svg-versions-of-the-logos

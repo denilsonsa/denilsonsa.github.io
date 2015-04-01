@@ -227,6 +227,12 @@ soundcloud:
   useid: soundcloud
   text1: SoundCloud
 
+speakerdeck:
+  href: https://speakerdeck.com/denilsonsa
+  useid: speakerdeck
+  text1: Speaker
+  text2: Deck
+
 stackoverflow:
   href: https://stackoverflow.com/users/124946/
   useid: stackoverflow

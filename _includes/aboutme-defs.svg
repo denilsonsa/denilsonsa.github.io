@@ -609,6 +609,36 @@
 </symbol>
 {% endif %}
 
+{% if include_all or restrictions contains ',speakerdeck,' %}
+<!-- Drawn from scratch, based on several images -->
+<clipPath id="SpeakerDeckHighlightClipPath" clipPathUnits="userSpaceOnUse">
+	<path d="
+	M1.2,1.2 v13.6 h16.6 v-13.6 z
+	M1.66666,2.33333
+	a 0.66666,0.66666 0,0,1 0.66666,-0.66666
+	h14.33333
+	a 0.66666,0.66666 0,0,1 0.66666,0.66666
+	v11.33333
+	a 0.66666,0.66666 0,0,1 -0.66666,0.66666
+	h-14.33333
+	a 0.66666,0.66666 0,0,1 -0.66666,-0.66666
+	z" />
+</clipPath>
+<linearGradient id="SpeakerDeckGreenGradient" x1="0" y1="0" x2="0" y2="1">
+	<stop stop-color="#3cb579" offset="0"/>
+	<stop stop-color="#004a4a" offset="1"/>
+</linearGradient>
+<symbol id="speakerdeck" viewBox="0.5 0.5 18 15">
+	<rect fill="#bfbfbf" x="0.5" y="0.5" width="18" height="15" rx="1.83333" />
+	<rect fill="#000000" x="1" y="1" width="17" height="14" rx="1.33333" />
+	<rect fill="url(#SpeakerDeckGreenGradient)" x="1.2" y="1.2" width="16.6" height="13.6" rx="1.13333" />
+	<rect fill="#ffffff" fill-opacity="0.5" clip-path="url(#SpeakerDeckHighlightClipPath)" x="1.2" y="1.2" width="16.6" height="13.6" rx="1.13333" />
+	<rect fill="#000000" fill-opacity="0.5" x="6" y="6" width="7" height="4" rx="0.5" />
+	<polygon fill="#ffffff" points="7,8 9,7 9,9" />
+	<polygon fill="#ffffff" points="12,8 10,7 10,9" />
+</symbol>
+{% endif %}
+
 {% if include_all or restrictions contains ',stackoverflow,' %}
 <!-- Copied from http://stackapps.com/questions/347/svg-versions-of-the-logos -->
 <symbol id="stackoverflow" viewBox="0 0 64 64">
