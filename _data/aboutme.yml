@@ -47,6 +47,13 @@ bitbucket:
   useid: bitbucket
   text1: Bitbucket
 
+challengepost:
+  href: http://challengepost.com/denilsonsa
+  useid: challengepost
+  #text1: ChallengePost
+  text1: Challenge
+  text2: Post
+
 changetip:
   #href: http://denilsonsa.tip.me/
   href: https://www.changetip.com/tipme/denilsonsa

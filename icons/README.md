@@ -29,6 +29,10 @@ Bitcoin:
 * https://en.bitcoin.it/wiki/Promotional_graphics
 * http://bitcoinsymbol.org/
 
+ChallengePost:
+
+* http://info.challengepost.com/press
+
 ChangeTip:
 
 * http://www.macobserver.com/imgs/teaser_images/20140811changetiplogo_sq_1024.jpg
@@ -275,6 +279,7 @@ Stellar:
 
 * https://www.stellar.org/about/media/#Presskit
 * https://stellartalk.org/topic/3933-stellar-graphics-for-everyone-everyday-use-banner-images/
+* https://stellartalk.org/topic/4535-few-stellar-buttons/
 
 StumbleUpon:
 
