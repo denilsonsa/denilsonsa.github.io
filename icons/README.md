@@ -203,6 +203,13 @@ Openclipart:
 * https://openclipart.org/detail/177066/openclipart-scissors-logo-guide-by-rejon-177066
 * https://openclipart.org/detail/177065/openclipart-scissors-logo-by-rejon-177065
 
+Patreon:
+
+* https://www.patreon.com/press
+* https://www.dropbox.com/sh/l26v699ltjnw1qe/WvUsHNkpj8
+* https://twitter.com/patreon
+* https://commons.wikimedia.org/wiki/File:Patreon_logo.svg
+
 PayPal:
 
 * https://www.paypal-media.com/multimedia#logos

@@ -194,6 +194,11 @@ openclipart:
   text2: clipart
   # text1: Openclipart
 
+patreon:
+  href: https://www.patreon.com/denilsonsa
+  useid: patreon
+  text1: Patreon
+
 paypal:
   href: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=denilsonsa%40gmail%2ecom&lc=BR&currency_code=BRL
   useid: paypal
