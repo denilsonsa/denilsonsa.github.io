@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+{% assign width    = include.width    %}
+{% assign height   = include.height   %}
+<svg viewBox="0 0 {{ width }} {{ height }}"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+
+{% assign percents = include.percents %}
+{% assign caption  = include.caption %}
+{% assign minsize = width %}
+{% assign maxsize = height %}
+{% if width > height %}
+	{% assign minsize = height %}
+	{% assign maxsize = width %}
+{% endif %}
+
+<!-- https://en.wikipedia.org/wiki/Overscan#Overscan_amounts -->
+
+<style type="text/css"><![CDATA[
+.overscan rect {
+	fill: none;
+	stroke-width: 2px;
+}
+
+.overscan text {
+	font-family: "Arial", sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+
+	/* text-shadow is not supported by Inkscape, but seems to be rendered fine in Chrome and Firefox */
+	text-shadow: 1px 1px 0 black;
+}
+
+.overscan.red     rect { stroke: red;     } .overscan.red     text { fill: red;     }
+.overscan.yellow  rect { stroke: yellow;  } .overscan.yellow  text { fill: yellow;  }
+.overscan.green   rect { stroke: green;   } .overscan.green   text { fill: green;   }
+.overscan.cyan    rect { stroke: cyan;    } .overscan.cyan    text { fill: cyan;    }
+.overscan.blue    rect { stroke: blue;    } .overscan.blue    text { fill: blue;    }
+.overscan.magenta rect { stroke: magenta; } .overscan.magenta text { fill: magenta; }
+
+.aspectratio.white rect,
+.aspectratio.white circle,
+.aspectratio.white line {
+	fill: none;
+	stroke: white;
+	stroke-width: 4px;
+}
+
+.aspectratio.black rect,
+.aspectratio.black circle,
+.aspectratio.black line {
+	fill: none;
+	stroke: black;
+	stroke-width: 2px;
+}
+
+text.caption {
+	font-family: "Arial", sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	fill: black;
+	text-shadow: 1px 1px 0 white;
+	text-anchor: middle;
+	dominant-baseline: central;
+}
+
+]]></style>
+
+<defs>
+
+<symbol id="center_pattern" viewBox="0 0 {{ width }} {{ height }}">
+</symbol>
+
+</defs>
+
+{% for percent in percents %}
+{% assign: x = percent | times: width  | divided_by: 100 %}
+{% assign: y = percent | times: height | divided_by: 100 %}
+{% assign: w = width  | minus: x | minus: x %}
+{% assign: h = height | minus: y | minus: y %}
+
+<g class="overscan {% cycle 'red','yellow','green','cyan','blue','magenta' %}">
+	<rect x="{{ x }}"                     y="{{ y }}" width="{{ w }}" height="{{ h }}" />
+
+	<text x="{{ x                     }}" y="{{ y                 }}" text-anchor="start"  dominant-baseline="text-before-edge">{{ percent }}%</text>
+	<text x="{{ width | divided_by: 2 }}" y="{{ y                 }}" text-anchor="middle" dominant-baseline="text-before-edge">{{ percent }}%</text>
+	<text x="{{ width | minus: x      }}" y="{{ y                 }}" text-anchor="end"    dominant-baseline="text-before-edge">{{ percent }}%</text>
+
+	<text x="{{ x                     }}" y="{{ height | minus: y }}" text-anchor="start"  dominant-baseline="text-after-edge">{{ percent }}%</text>
+	<text x="{{ width | divided_by: 2 }}" y="{{ height | minus: y }}" text-anchor="middle" dominant-baseline="text-after-edge">{{ percent }}%</text>
+	<text x="{{ width | minus: x      }}" y="{{ height | minus: y }}" text-anchor="end"    dominant-baseline="text-after-edge">{{ percent }}%</text>
+</g>
+
+{% endfor %}
+
+<!-- A drawing to check the aspect ratio. -->
+{% for i in (1..2) %}
+<g class="aspectratio {% cycle 'white','black' %}" transform="translate({{ width | divided_by: 2 }} {{ height | divided_by: 2 }})">
+	<rect x="-{{ minsize | divided_by: 4 }}" y="-{{ minsize | divided_by: 4 }}" width="{{ minsize | divided_by: 2 }}" height="{{ minsize | divided_by: 2 }}" />
+	<circle cx="0" cy="0" r="{{ minsize | divided_by: 4 }}" />
+	<line x1="-{{ minsize | divided_by: 4 }}" y1="-{{ minsize | divided_by: 4 }}" x2="{{ minsize | divided_by: 4 }}" y2="{{ minsize | divided_by: 4 }}" />
+	<line x1="-{{ minsize | divided_by: 4 }}" y1="{{ minsize | divided_by: 4 }}" x2="{{ minsize | divided_by: 4 }}" y2="-{{ minsize | divided_by: 4 }}" />
+</g>
+{% endfor %}
+
+<text class="caption" x="{{ width | divided_by: 2 }}" y="{{ height | times: 3 | divided_by: 8 }}">{{ caption }}</text>
+
+</svg>
