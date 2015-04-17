@@ -1,0 +1,60 @@
+---
+width: 1600
+height: 900
+percents:
+  - 0
+  - 3.5
+  - 5
+  - 7.5
+  - 10
+---
+<?xml version="1.0" encoding="UTF-8"?>
+{% assign width  = page.width  %}
+{% assign height = page.height %}
+<svg viewBox="0 0 {{ width }} {{ height }}" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+<!-- https://en.wikipedia.org/wiki/Overscan#Overscan_amounts -->
+
+<style type="text/css"><![CDATA[
+.overscan rect {
+	fill: none;
+	stroke-width: 2px;
+}
+
+.overscan text {
+	font-family: "Arial", sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	text-shadow: 1px 1px 0 black;
+}
+
+.overscan.red     rect { stroke: red;     } .overscan.red     text { fill: red;     }
+.overscan.yellow  rect { stroke: yellow;  } .overscan.yellow  text { fill: yellow;  }
+.overscan.green   rect { stroke: green;   } .overscan.green   text { fill: green;   }
+.overscan.cyan    rect { stroke: cyan;    } .overscan.cyan    text { fill: cyan;    }
+.overscan.blue    rect { stroke: blue;    } .overscan.blue    text { fill: blue;    }
+.overscan.magenta rect { stroke: magenta; } .overscan.magenta text { fill: magenta; }
+
+]]></style>
+
+{% for percent in page.percents %}
+{% assign: x = percent | times: width  | divided_by: 100 %}
+{% assign: y = percent | times: height | divided_by: 100 %}
+{% assign: w = width  | minus: x | minus: x %}
+{% assign: h = height | minus: y | minus: y %}
+
+<g class="overscan {% cycle 'red','yellow','green','cyan','blue','magenta' %}">
+	<rect x="{{ x }}"                     y="{{ y }}" width="{{ w }}" height="{{ h }}" />
+
+	<text x="{{ x                     }}" y="{{ y                 }}" text-anchor="start"  dominant-baseline="text-before-edge">{{ percent }}%</text>
+	<text x="{{ width | divided_by: 2 }}" y="{{ y                 }}" text-anchor="middle" dominant-baseline="text-before-edge">{{ percent }}%</text>
+	<text x="{{ width | minus: x      }}" y="{{ y                 }}" text-anchor="end"    dominant-baseline="text-before-edge">{{ percent }}%</text>
+
+	<text x="{{ x                     }}" y="{{ height | minus: y }}" text-anchor="start"  dominant-baseline="text-after-edge">{{ percent }}%</text>
+	<text x="{{ width | divided_by: 2 }}" y="{{ height | minus: y }}" text-anchor="middle" dominant-baseline="text-after-edge">{{ percent }}%</text>
+	<text x="{{ width | minus: x      }}" y="{{ height | minus: y }}" text-anchor="end"    dominant-baseline="text-after-edge">{{ percent }}%</text>
+</g>
+
+{% endfor %}
+
+</svg>
