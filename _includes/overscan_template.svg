@@ -20,20 +20,24 @@
 <!-- https://en.wikipedia.org/wiki/Overscan#Overscan_amounts -->
 
 <style type="text/css"><![CDATA[
+
+{% assign blacklinewidth = 2 %}
+{% assign whiteoutlinewidth = 1 %}
+
+text {
+	font-family: "Arial", sans-serif;
+	font-weight: bold;
+}
+
 .overscan rect {
 	fill: none;
 	stroke-width: 2px;
 }
-
 .overscan text {
-	font-family: "Arial", sans-serif;
 	font-size: 15px;
-	font-weight: bold;
-
 	/* text-shadow is not supported by Inkscape, but seems to be rendered fine in Chrome and Firefox */
 	text-shadow: 1px 1px 0 black;
 }
-
 .overscan.red     rect { stroke: red;     } .overscan.red     text { fill: red;     }
 .overscan.yellow  rect { stroke: yellow;  } .overscan.yellow  text { fill: yellow;  }
 .overscan.green   rect { stroke: green;   } .overscan.green   text { fill: green;   }
@@ -41,7 +45,7 @@
 .overscan.blue    rect { stroke: blue;    } .overscan.blue    text { fill: blue;    }
 .overscan.magenta rect { stroke: magenta; } .overscan.magenta text { fill: magenta; }
 
-.ruleofthirds.white,
+.ruleofthirds.white .littlecross,
 .circleellipse.white circle,
 .circleellipse.white ellipse,
 .aspectratio.white rect,
@@ -49,10 +53,10 @@
 .aspectratio.white line {
 	fill: none;
 	stroke: white;
-	stroke-width: 4px;
+	stroke-width: {{ whiteoutlinewidth | times: 2 | plus: blacklinewidth }}px;
 }
 
-.ruleofthirds.black,
+.ruleofthirds.black .littlecross,
 .circleellipse.black circle,
 .circleellipse.black ellipse,
 .aspectratio.black rect,
@@ -60,17 +64,27 @@
 .aspectratio.black line {
 	fill: none;
 	stroke: black;
-	stroke-width: 2px;
+	stroke-width: {{ blacklinewidth }}px;
 }
 
-text.caption {
-	font-family: "Arial", sans-serif;
+.ruleofthirds text {
+	font-size: 22px;
+}
+.caption text {
 	font-size: 30px;
-	font-weight: bold;
-	fill: black;
-	text-shadow: 1px 1px 0 white;
 	text-anchor: middle;
 	dominant-baseline: central;
+}
+
+.ruleofthirds.black text,
+.caption.black text {
+	fill: black;
+	stroke: none;
+}
+.ruleofthirds.white text,
+.caption.white text {
+	stroke: white;
+	stroke-width: {{ whiteoutlinewidth | times: 2 }}px;
 }
 
 ]]></style>
@@ -84,27 +98,31 @@ text.caption {
 </g>
 
 {% comment %}
-Ideally, I would create a <symbol> (or use an existing <g>) for the
-square/circle/cross pattern from the center, and another for the outer
-circle/ellipse, and use the symbol twice at the same location but with
-different CSS classes. Then, I could easily style them differently (the bottom
-one with a wider stroke than the inner one).
+I wish I could style the elements "inside" a <use> instance. It is possible
+with CSS and the "deep combinator" (previously `/deep/`, currently `>>>`) or
+`::shadow` pseudo-element.
 
-This is easy with "shadow DOM", using /deep/ selector (or something similar).
-However, the support for that is not as widespread as I would like.
+http://dev.w3.org/csswg/css-scoping/#deep-combinator
 
-An alternative would be to let the symbol use the current fill/stroke colors,
-and set those in the <use>. It may work, but might be buggy and is very
-limited.
+However, support for those selectors is very low, almost non-existent.
 
-For now, the "easy" and most compatible solution is to just replicate the same
-markup twice, with different classes. That's easy with a templating language
-(like Jekyll/Liquid), because I can just use a loop with 2 iterations.
+
+As a workaround, I can set a single fill and a single stroke for the entire
+<use> element.
+
+Alternatively, it is possible to set a second color to the CSS `color:` attribute, and use that color as `currentColor` value.
+
+http://codepen.io/FWeinb/blog/quick-tip-svg-use-style-two-colors
+
+
+For now, I'm sometimes using simple <use> elements, and other times I'm just
+replicating the element twice.
 {% endcomment %}
 
 </defs>
 
-<rect fill="#808080" x="0" y="0" width="{{ width }}" height="{{ height }}" />
+<!-- A background covering the entire image just to make it easier to test the white color. -->
+<!-- rect fill="#808080" x="0" y="0" width="{{ width }}" height="{{ height }}" / -->
 
 <!-- A circle and an ellipse with the maximum size. -->
 {% for i in (1..2) %}
@@ -159,21 +177,28 @@ markup twice, with different classes. That's easy with a templating language
 {% for i in (1..2) %}
 <g class="ruleofthirds {% cycle 'white','black' %}">
 	<g transform="translate({{ width | divided_by: 3 | times: 1 }}, {{ height | divided_by: 3 | times: 1 }})">
-		<use xlink:href="#littlecross" />
-		<line stroke="red" x1="-8" x2="8" y1="-8" y2="8"/>
+		<use class="littlecross" xlink:href="#littlecross" />
+		<text x="0" y="0" text-anchor="end" dominant-baseline="text-after-edge">⅓</text>
 	</g>
 	<g transform="translate({{ width | divided_by: 3 | times: 2 }}, {{ height | divided_by: 3 | times: 1 }})">
-		<use xlink:href="#littlecross" />
+		<use class="littlecross" xlink:href="#littlecross" />
+		<text x="0" y="0" text-anchor="start" dominant-baseline="text-after-edge">⅓</text>
 	</g>
 	<g transform="translate({{ width | divided_by: 3 | times: 1 }}, {{ height | divided_by: 3 | times: 2 }})">
-		<use xlink:href="#littlecross" />
+		<use class="littlecross" xlink:href="#littlecross" />
+		<text x="0" y="0" text-anchor="end" dominant-baseline="text-before-edge">⅓</text>
 	</g>
 	<g transform="translate({{ width | divided_by: 3 | times: 2 }}, {{ height | divided_by: 3 | times: 2 }})">
-		<use xlink:href="#littlecross" />
+		<use class="littlecross" xlink:href="#littlecross" />
+		<text x="0" y="0" text-anchor="start" dominant-baseline="text-before-edge">⅓</text>
 	</g>
 </g>
 {% endfor %}
 
-<text class="caption" x="{{ width | divided_by: 2 }}" y="{{ height | times: 3 | divided_by: 8 }}">{{ caption }}</text>
+{% for i in (1..2) %}
+<g class="caption {% cycle 'white','black' %}">
+	<text x="{{ width | divided_by: 2 }}" y="{{ height | times: 3 | divided_by: 8 }}">{{ caption }}</text>
+</g>
+{% endfor %}
 
 </svg>
