@@ -41,6 +41,9 @@
 .overscan.blue    rect { stroke: blue;    } .overscan.blue    text { fill: blue;    }
 .overscan.magenta rect { stroke: magenta; } .overscan.magenta text { fill: magenta; }
 
+.ruleofthirds.white,
+.circleellipse.white circle,
+.circleellipse.white ellipse,
 .aspectratio.white rect,
 .aspectratio.white circle,
 .aspectratio.white line {
@@ -49,6 +52,9 @@
 	stroke-width: 4px;
 }
 
+.ruleofthirds.black,
+.circleellipse.black circle,
+.circleellipse.black ellipse,
 .aspectratio.black rect,
 .aspectratio.black circle,
 .aspectratio.black line {
@@ -71,11 +77,44 @@ text.caption {
 
 <defs>
 
-<symbol id="center_pattern" viewBox="0 0 {{ width }} {{ height }}">
-</symbol>
+<!-- Using "symbol" will crop the graphic and generate a new coordinate system. Using "g" works better here. -->
+<g id="littlecross">
+	<line x1="-8" x2="8" y1="0" y2="0"/>
+	<line x1="0" x2="0" y1="-8" y2="8"/>
+</g>
+
+{% comment %}
+Ideally, I would create a <symbol> (or use an existing <g>) for the
+square/circle/cross pattern from the center, and another for the outer
+circle/ellipse, and use the symbol twice at the same location but with
+different CSS classes. Then, I could easily style them differently (the bottom
+one with a wider stroke than the inner one).
+
+This is easy with "shadow DOM", using /deep/ selector (or something similar).
+However, the support for that is not as widespread as I would like.
+
+An alternative would be to let the symbol use the current fill/stroke colors,
+and set those in the <use>. It may work, but might be buggy and is very
+limited.
+
+For now, the "easy" and most compatible solution is to just replicate the same
+markup twice, with different classes. That's easy with a templating language
+(like Jekyll/Liquid), because I can just use a loop with 2 iterations.
+{% endcomment %}
 
 </defs>
 
+<rect fill="#808080" x="0" y="0" width="{{ width }}" height="{{ height }}" />
+
+<!-- A circle and an ellipse with the maximum size. -->
+{% for i in (1..2) %}
+<g class="circleellipse {% cycle 'white','black' %}">
+	<circle cx="{{ width | divided_by: 2 }}" cy="{{ height | divided_by: 2 }}" r="{{ minsize | divided_by: 2 }}" />
+	<ellipse cx="{{ width | divided_by: 2 }}" cy="{{ height | divided_by: 2 }}" rx="{{ width | divided_by: 2 }}" ry="{{ height | divided_by: 2 }}" />
+</g>
+{% endfor %}
+
+<!-- Rectangles for each overscan percentage. -->
 {% for percent in percents %}
 {% assign: x = percent | times: width  | divided_by: 100 %}
 {% assign: y = percent | times: height | divided_by: 100 %}
@@ -97,12 +136,41 @@ text.caption {
 {% endfor %}
 
 <!-- A drawing to check the aspect ratio. -->
+<!--
+	This drawing has a square, a circle, and a diagonal cross.
+
+	It has half of the size of the minimum dimension of the graphic (i.e. half
+	of the height in a landscape graphic).
+
+	The diagonal cross can be used for checking distortions in the aspect
+	ratio. If the lines are not perpendicular, then the aspect ratio is
+	different than expected.
+-->
 {% for i in (1..2) %}
 <g class="aspectratio {% cycle 'white','black' %}" transform="translate({{ width | divided_by: 2 }} {{ height | divided_by: 2 }})">
 	<rect x="-{{ minsize | divided_by: 4 }}" y="-{{ minsize | divided_by: 4 }}" width="{{ minsize | divided_by: 2 }}" height="{{ minsize | divided_by: 2 }}" />
 	<circle cx="0" cy="0" r="{{ minsize | divided_by: 4 }}" />
 	<line x1="-{{ minsize | divided_by: 4 }}" y1="-{{ minsize | divided_by: 4 }}" x2="{{ minsize | divided_by: 4 }}" y2="{{ minsize | divided_by: 4 }}" />
 	<line x1="-{{ minsize | divided_by: 4 }}" y1="{{ minsize | divided_by: 4 }}" x2="{{ minsize | divided_by: 4 }}" y2="-{{ minsize | divided_by: 4 }}" />
+</g>
+{% endfor %}
+
+<!-- Rule of thirds. -->
+{% for i in (1..2) %}
+<g class="ruleofthirds {% cycle 'white','black' %}">
+	<g transform="translate({{ width | divided_by: 3 | times: 1 }}, {{ height | divided_by: 3 | times: 1 }})">
+		<use xlink:href="#littlecross" />
+		<line stroke="red" x1="-8" x2="8" y1="-8" y2="8"/>
+	</g>
+	<g transform="translate({{ width | divided_by: 3 | times: 2 }}, {{ height | divided_by: 3 | times: 1 }})">
+		<use xlink:href="#littlecross" />
+	</g>
+	<g transform="translate({{ width | divided_by: 3 | times: 1 }}, {{ height | divided_by: 3 | times: 2 }})">
+		<use xlink:href="#littlecross" />
+	</g>
+	<g transform="translate({{ width | divided_by: 3 | times: 2 }}, {{ height | divided_by: 3 | times: 2 }})">
+		<use xlink:href="#littlecross" />
+	</g>
 </g>
 {% endfor %}
 
