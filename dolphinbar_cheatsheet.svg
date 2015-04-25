@@ -90,7 +90,7 @@
 	<!-- Diffuse lighting. -->
 	<circle cx="16" cy="16.5" r="14" fill="url(#button_diffuse_gradient)" stroke="none"  />
 	<!-- Specular lighting. -->
-	<path d="M 2,20 a 14.25,14.25 0,0,1 22 -16 z" fill="url(#button_shiny_specular_gradient)" stroke="none"  />
+	<path d="M 2,20 a 14.25,14.25 0,0,1 22,-16 z" fill="url(#button_shiny_specular_gradient)" stroke="none"  />
 </symbol>
 
 <linearGradient id="button_matte_specular_gradient" x1="0.333" y1="0.333" x2="0.56" y2="0.56">
@@ -105,7 +105,7 @@
 	<!-- Base. -->
 	<circle cx="15" cy="15" r="15" fill="#d0d4d6" stroke-width="1" stroke="#8a8993" />
 	<!-- Specular lighting. -->
-	<path d="M 2,20 a 14.25,14.25 0,0,1 22 -16 z" fill="url(#button_matte_specular_gradient)" stroke="none"  />
+	<path d="M 2,20 a 14.25,14.25 0,0,1 22,-16 z" fill="url(#button_matte_specular_gradient)" stroke="none"  />
 </symbol>
 
 <linearGradient id="button_inset_shadow" x1="0" y1="0" x2="1" y2="1">
@@ -120,12 +120,23 @@
 	<!-- Base. -->
 	<circle cx="15" cy="15" r="15" fill="#d0d4d6" stroke-width="1" stroke="#8a8993" />
 	<!-- Specular lighting. -->
-	<path d="M 2,20 a 14.25,14.25 0,0,1 22 -16 z" fill="url(#button_matte_specular_gradient)" stroke="none"  />
+	<path d="M 2,20 a 14.25,14.25 0,0,1 22,-16 z" fill="url(#button_matte_specular_gradient)" stroke="none"  />
+</symbol>
+
+<symbol id="button_matte_oval" viewBox="-2 -2 34 34">
+	<rect x="-5" y="-5" width="50" height="50" fill="yellow"/>
+	<!-- Shadow. -->
+	<ellipse cx="15.75" cy="15.75" rx="15" ry="11" opacity="0.887" fill="#000000" stroke-width="1" stroke="#000000"  />
+	<!-- Base. -->
+	<ellipse cx="15" cy="15" rx="15" ry="11" fill="#d0d4d6" stroke-width="1" stroke="#8a8993" />
+	<!-- Specular lighting. -->
+	<path d="M 2,18 a 13.75,9.75 0,0,1 21,-11 z" fill="url(#button_matte_specular_gradient)" stroke="none"  />
 </symbol>
 
 <symbol id="home_outline" viewBox="0 0 16 16">
 	<path fill="#34beed" d="M 8,0 l 8,8 h-2 v8 h-12 v-8 h-2 z M 6,8 v4 h4 v-4 z" />
 </symbol>
+
 <symbol id="power_outline" viewBox="0 0 16 16">
 	<path fill="none" stroke="#cc3333" stroke-width="1.5" stroke-linecap="round" d="M 8,1 v7 M 5.5,3 a 5.5,5.5 0,1,0 5,0" />
 </symbol>
@@ -160,6 +171,10 @@
 	<use xlink:href="#button_inset" x="0" y="0" width="34" height="34" />
 	<use xlink:href="#power_outline" x="8" y="8" width="18" height="18" />
 </symbol>
+<symbol id="button_C" viewBox="0 0 34 34">
+	<use xlink:href="#button_matte_oval" x="0" y="0" width="34" height="34" />
+	<text x="17" y="17" font-size="15px" font-family="Arial, sans-serif" fill="#909090" text-anchor="middle" dominant-baseline="central">C</text>
+</symbol>
 
 <radialGradient id="button_B_gradient1" cx="0.5" cy="0.25" r="0.5" fx="0.5" fy="-0.25">
 	<stop offset="0" stop-color="#000000" stop-opacity="0.5"/>
@@ -169,7 +184,7 @@
 <symbol id="button_B" viewBox="-2 -2 34 34">
 	<rect x="-5" y="-5" width="50" height="50" fill="yellow"/>
 	<!-- Shadow. -->
-	<rect x="4.75" y="0.75" width="22" height="30" rx="2" opacity="0.887" fill="#000000" stroke-width="1" stroke="#000000" />
+	<rect x="4.5" y="0.75" width="22" height="30" rx="2" opacity="0.887" fill="#000000" stroke-width="1" stroke="#000000" />
 	<!-- Base. -->
 	<rect x="4" y="0" width="22" height="30" rx="2" fill="#d0d4d6" stroke-width="1" stroke="#8a8993" />
 	<!-- Specular lighting. -->
@@ -178,10 +193,26 @@
 	<text x="15" y="15" font-size="15px" font-family="Arial, sans-serif" fill="#909090" text-anchor="middle" dominant-baseline="central">B</text>
 </symbol>
 
+<radialGradient id="button_Z_gradient1" cx="0.5" cy="0.25" r="1" fx="0.5" fy="-0.0625" gradientTransform="scale(0.175 1) translate(0.5 0)">
+	<stop offset="0" stop-color="#ffffff" stop-opacity="1"/>
+	<stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+</radialGradient>
+
+<symbol id="button_Z" viewBox="-2 -2 34 34">
+	<rect x="-5" y="-5" width="50" height="50" fill="yellow"/>
+	<!-- Shadow. -->
+	<rect x="0.5" y="1.75" width="30" height="28" rx="2" opacity="0.887" fill="#000000" stroke-width="1" stroke="#000000" />
+	<!-- Base. -->
+	<rect x="0" y="1" width="30" height="28" rx="2" fill="#d0d4d6" stroke-width="1" stroke="#8a8993" />
+	<!-- Specular lighting. -->
+	<rect x="2" y="1.5" width="26" height="27" fill="url(#button_Z_gradient1)" stroke="none" />
+	<text x="15" y="15" font-size="15px" font-family="Arial, sans-serif" fill="#909090" text-anchor="middle" dominant-baseline="central">Z</text>
+</symbol>
+
 </defs>
 
 <use xlink:href="#dpad" x="10" y="10" width="10" height="10" />
-<use xlink:href="#button_B" x="20" y="10" width="20" height="20" />
+<use xlink:href="#button_C" x="20" y="10" width="20" height="20" />
 <use xlink:href="#button_matte" x="40" y="10" width="20" height="20" />
 <use xlink:href="#button_inset" x="60" y="10" width="20" height="20" />
 
@@ -200,5 +231,7 @@
 <use xlink:href="#button_home"  x="50" y="30" width="5" height="5" />
 <use xlink:href="#button_power" x="55" y="30" width="5" height="5" />
 <use xlink:href="#button_B"     x="60" y="30" width="5" height="5" />
+<use xlink:href="#button_Z"     x="65" y="30" width="5" height="5" />
+<use xlink:href="#button_C"     x="70" y="30" width="5" height="5" />
 
 </svg>
