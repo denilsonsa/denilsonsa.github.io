@@ -23,9 +23,13 @@
 	<use xlink:href="#dpad_shape" x="0" y="0" stroke="#ffffff" fill="none" />
 </clipPath>
 
-<symbol id="dpad" viewBox="-0.5 -0.5 37 37">
+<symbol id="dpad" viewBox="-1.5 -1.5 39 39">
 	<rect x="-5" y="-5" width="50" height="50" fill="silver"/>
 
+	<!-- Shadow. -->
+	<use xlink:href="#dpad_shape" x="1" y="1" opacity="0.887" stroke-width="1" stroke="#000000" fill="#000000" />
+
+	<!-- Base. -->
 	<use xlink:href="#dpad_shape" x="0" y="0" stroke-width="1" stroke="none" fill="url(#dpad_gradient)" />
 
 	<!-- Trick for creating highlights and shadows. -->
@@ -52,21 +56,21 @@
 	<rect x="-4.5" y="-16.5" width="9" height="12" fill="url(#dpad_press_gradient)"/>
 </g>
 
-<symbol id="dpad_up" viewBox="0 0 37 37">
-	<use xlink:href="#dpad" x="0" y="0" width="37" height="37" />
-	<use xlink:href="#dpad_press" x="0" y="0" transform="translate(18.5 18.5) rotate(0)"/>
+<symbol id="dpad_up" viewBox="0 0 39 39">
+	<use xlink:href="#dpad" x="0" y="0" width="39" height="39" />
+	<use xlink:href="#dpad_press" x="0" y="0" transform="translate(19.5 19.5) rotate(0)"/>
 </symbol>
-<symbol id="dpad_right" viewBox="0 0 37 37">
-	<use xlink:href="#dpad" x="0" y="0" width="37" height="37" />
-	<use xlink:href="#dpad_press" x="0" y="0" transform="translate(18.5 18.5) rotate(90)"/>
+<symbol id="dpad_right" viewBox="0 0 39 39">
+	<use xlink:href="#dpad" x="0" y="0" width="39" height="39" />
+	<use xlink:href="#dpad_press" x="0" y="0" transform="translate(19.5 19.5) rotate(90)"/>
 </symbol>
-<symbol id="dpad_down" viewBox="0 0 37 37">
-	<use xlink:href="#dpad" x="0" y="0" width="37" height="37" />
-	<use xlink:href="#dpad_press" x="0" y="0" transform="translate(18.5 18.5) rotate(180)"/>
+<symbol id="dpad_down" viewBox="0 0 39 39">
+	<use xlink:href="#dpad" x="0" y="0" width="39" height="39" />
+	<use xlink:href="#dpad_press" x="0" y="0" transform="translate(19.5 19.5) rotate(180)"/>
 </symbol>
-<symbol id="dpad_left" viewBox="0 0 37 37">
-	<use xlink:href="#dpad" x="0" y="0" width="37" height="37" />
-	<use xlink:href="#dpad_press" x="0" y="0" transform="translate(18.5 18.5) rotate(270)"/>
+<symbol id="dpad_left" viewBox="0 0 39 39">
+	<use xlink:href="#dpad" x="0" y="0" width="39" height="39" />
+	<use xlink:href="#dpad_press" x="0" y="0" transform="translate(19.5 19.5) rotate(270)"/>
 </symbol>
 
 
@@ -90,6 +94,7 @@
 	<!-- Diffuse lighting. -->
 	<circle cx="16" cy="16.5" r="14" fill="url(#button_diffuse_gradient)" stroke="none"  />
 	<!-- Specular lighting. -->
+	<!-- On all these buttons, the label is being placed on top of the lighting, which is not accurate, but is good enough and is very easy to implement. -->
 	<path d="M 2,20 a 14.25,14.25 0,0,1 22,-16 z" fill="url(#button_shiny_specular_gradient)" stroke="none"  />
 </symbol>
 
@@ -219,6 +224,7 @@
 	<!-- Specular lighting. -->
 	<path d="M 3.5,0.5 a 12,18 0,0,0 23,0 z" fill="url(#button_B_gradient1)" stroke="none"  />
 	<path d="M 4.5,28.5 a 12,8 0,0,1 21,0 z" fill="url(#button_B_gradient2)" stroke="none"  />
+	<!-- The label is placed incorrectly here. In the actual controller, it is placed at the edge. In this graphic, it is just centered, which makes it easier to read. -->
 	<text x="15" y="15" font-size="15px" font-family="Arial, sans-serif" fill="#909090" text-anchor="middle" dominant-baseline="central">B</text>
 </symbol>
 
@@ -269,19 +275,29 @@
 	<stop offset="0.5" stop-color="#999"/>
 	<stop offset="1" stop-color="#ccc"/>
 </linearGradient>
+<radialGradient id="analog_stick_shadow" cx="0.5" cy="0.5" r="0.5">
+	<stop offset="0.5" stop-color="#000" stop-opacity="1"/>
+	<stop offset="1" stop-color="#000" stop-opacity="0"/>
+</radialGradient>
 
 <!-- Based on http://www.mariowiki.com/File:Def_Stick.svg -->
 <symbol id="analog_stick" viewBox="0 0 32 32">
 	<rect x="-5" y="-5" width="50" height="50" fill="lime"/>
+
+	<!-- Base. -->
 	<ellipse cx="16" cy="21" rx="10" ry="9" stroke-width="0.8" stroke="#000" fill="url(#analog_stick_gradient3)"/>
+
+	<!-- Shadow. -->
+	<ellipse cx="17" cy="17" rx="15" ry="12" opacity="0.887" stroke="none" fill="url(#analog_stick_shadow)"/>
+
+	<!-- Thumb stick. -->
 	<ellipse cx="16" cy="13" rx="15" ry="12" stroke-width="0.8" stroke="#000" fill="url(#analog_stick_gradient2)"/>
 	<ellipse cx="16" cy="10" rx="11" ry="8" stroke-width="0.4" stroke="#777" fill="url(#analog_stick_gradient1)"/>
 </symbol>
 
 </defs>
 
-<use xlink:href="#dpad"              x="10" y="10" width="10" height="10" />
-<use xlink:href="#button_B"          x="20" y="10" width="20" height="20" />
+<use xlink:href="#analog_stick"      x="20" y="10" width="20" height="20" />
 <use xlink:href="#button_classic_L"  x="40" y="10" width="20" height="20" />
 <use xlink:href="#button_classic_ZR" x="60" y="10" width="20" height="20" />
 
@@ -289,10 +305,7 @@
 <use xlink:href="#dpad_right"   x="15" y="20" width="5" height="5" />
 <use xlink:href="#dpad_down"    x="10" y="25" width="5" height="5" />
 <use xlink:href="#dpad_left"    x="15" y="25" width="5" height="5" />
-<use xlink:href="#analog_stick" x="10" y="30" width="5" height="5" />
-<use xlink:href="#button_shiny" x="15" y="30" width="5" height="5" />
-<use xlink:href="#button_matte" x="20" y="30" width="5" height="5" />
-<use xlink:href="#button_inset" x="25" y="30" width="5" height="5" />
+<use xlink:href="#dpad"         x="10" y="30" width="5" height="5" />
 <use xlink:href="#button_A"     x="30" y="30" width="5" height="5" />
 <use xlink:href="#button_minus" x="35" y="30" width="5" height="5" />
 <use xlink:href="#button_plus"  x="40" y="30" width="5" height="5" />
@@ -303,6 +316,11 @@
 <use xlink:href="#button_B"     x="65" y="30" width="5" height="5" />
 <use xlink:href="#button_Z"     x="70" y="30" width="5" height="5" />
 <use xlink:href="#button_C"     x="75" y="30" width="5" height="5" />
+
+<use xlink:href="#analog_stick"      x="10" y="35" width="5" height="5" />
+<use xlink:href="#button_shiny"      x="15" y="35" width="5" height="5" />
+<use xlink:href="#button_matte"      x="20" y="35" width="5" height="5" />
+<use xlink:href="#button_inset"      x="25" y="35" width="5" height="5" />
 <use xlink:href="#button_classic_a"  x="30" y="35" width="5" height="5" />
 <use xlink:href="#button_classic_b"  x="35" y="35" width="5" height="5" />
 <use xlink:href="#button_classic_x"  x="40" y="35" width="5" height="5" />
