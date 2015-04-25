@@ -209,29 +209,51 @@
 	<text x="15" y="15" font-size="15px" font-family="Arial, sans-serif" fill="#909090" text-anchor="middle" dominant-baseline="central">Z</text>
 </symbol>
 
+<radialGradient id="analog_stick_gradient1" cx="0.5" cy="0.5" r="0.5">
+	<stop offset="0" stop-color="#fff"/>
+	<stop offset="1" stop-color="#eee"/>
+</radialGradient>
+<linearGradient id="analog_stick_gradient2" x1="0" y1="0.5" x2="0" y2="1">
+	<stop offset="0" stop-color="#fff"/>
+	<stop offset="1" stop-color="#ccc"/>
+</linearGradient>
+<linearGradient id="analog_stick_gradient3" x1="0" y1="0.5" x2="0" y2="1">
+	<stop offset="0.5" stop-color="#999"/>
+	<stop offset="1" stop-color="#ccc"/>
+</linearGradient>
+
+<!-- Based on http://www.mariowiki.com/File:Def_Stick.svg -->
+<symbol id="analog_stick" viewBox="0 0 32 32">
+	<rect x="-5" y="-5" width="50" height="50" fill="lime"/>
+	<ellipse cx="16" cy="21" rx="10" ry="9" stroke-width="0.8" stroke="#000" fill="url(#analog_stick_gradient3)"/>
+	<ellipse cx="16" cy="13" rx="15" ry="12" stroke-width="0.8" stroke="#000" fill="url(#analog_stick_gradient2)"/>
+	<ellipse cx="16" cy="10" rx="11" ry="8" stroke-width="0.4" stroke="#777" fill="url(#analog_stick_gradient1)"/>
+</symbol>
+
 </defs>
 
 <use xlink:href="#dpad" x="10" y="10" width="10" height="10" />
-<use xlink:href="#button_C" x="20" y="10" width="20" height="20" />
+<use xlink:href="#analog_stick" x="20" y="10" width="20" height="20" />
 <use xlink:href="#button_matte" x="40" y="10" width="20" height="20" />
 <use xlink:href="#button_inset" x="60" y="10" width="20" height="20" />
 
-<use xlink:href="#dpad_up"    x="10" y="20" width="5" height="5" />
-<use xlink:href="#dpad_right" x="15" y="20" width="5" height="5" />
-<use xlink:href="#dpad_down"  x="10" y="25" width="5" height="5" />
-<use xlink:href="#dpad_left"  x="15" y="25" width="5" height="5" />
-<use xlink:href="#button_shiny" x="10" y="30" width="5" height="5" />
-<use xlink:href="#button_matte" x="15" y="30" width="5" height="5" />
-<use xlink:href="#button_inset" x="20" y="30" width="5" height="5" />
-<use xlink:href="#button_A"     x="25" y="30" width="5" height="5" />
-<use xlink:href="#button_minus" x="30" y="30" width="5" height="5" />
-<use xlink:href="#button_plus"  x="35" y="30" width="5" height="5" />
-<use xlink:href="#button_1"     x="40" y="30" width="5" height="5" />
-<use xlink:href="#button_2"     x="45" y="30" width="5" height="5" />
-<use xlink:href="#button_home"  x="50" y="30" width="5" height="5" />
-<use xlink:href="#button_power" x="55" y="30" width="5" height="5" />
-<use xlink:href="#button_B"     x="60" y="30" width="5" height="5" />
-<use xlink:href="#button_Z"     x="65" y="30" width="5" height="5" />
-<use xlink:href="#button_C"     x="70" y="30" width="5" height="5" />
+<use xlink:href="#dpad_up"      x="10" y="20" width="5" height="5" />
+<use xlink:href="#dpad_right"   x="15" y="20" width="5" height="5" />
+<use xlink:href="#dpad_down"    x="10" y="25" width="5" height="5" />
+<use xlink:href="#dpad_left"    x="15" y="25" width="5" height="5" />
+<use xlink:href="#analog_stick" x="10" y="30" width="5" height="5" />
+<use xlink:href="#button_shiny" x="15" y="30" width="5" height="5" />
+<use xlink:href="#button_matte" x="20" y="30" width="5" height="5" />
+<use xlink:href="#button_inset" x="25" y="30" width="5" height="5" />
+<use xlink:href="#button_A"     x="30" y="30" width="5" height="5" />
+<use xlink:href="#button_minus" x="35" y="30" width="5" height="5" />
+<use xlink:href="#button_plus"  x="40" y="30" width="5" height="5" />
+<use xlink:href="#button_1"     x="45" y="30" width="5" height="5" />
+<use xlink:href="#button_2"     x="50" y="30" width="5" height="5" />
+<use xlink:href="#button_home"  x="55" y="30" width="5" height="5" />
+<use xlink:href="#button_power" x="60" y="30" width="5" height="5" />
+<use xlink:href="#button_B"     x="65" y="30" width="5" height="5" />
+<use xlink:href="#button_Z"     x="70" y="30" width="5" height="5" />
+<use xlink:href="#button_C"     x="75" y="30" width="5" height="5" />
 
 </svg>
