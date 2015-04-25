@@ -2,7 +2,7 @@
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 
-<svg viewBox="0 0 80 40"
+<svg viewBox="5 5 80 40"
 	version="1.1"
 	xmlns="http://www.w3.org/2000/svg"
 	xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -176,6 +176,31 @@
 	<text x="17" y="17" font-size="15px" font-family="Arial, sans-serif" fill="#909090" text-anchor="middle" dominant-baseline="central">C</text>
 </symbol>
 
+<symbol id="button_classic_a" viewBox="0 0 34 34">
+	<use xlink:href="#button_shiny" x="0" y="0" width="34" height="34" />
+	<text x="17" y="17" font-size="15px" font-family="Arial, sans-serif" fill="#909090" text-anchor="middle" dominant-baseline="central">a</text>
+</symbol>
+<symbol id="button_classic_b" viewBox="0 0 34 34">
+	<use xlink:href="#button_shiny" x="0" y="0" width="34" height="34" />
+	<text x="17" y="17" font-size="15px" font-family="Arial, sans-serif" fill="#909090" text-anchor="middle" dominant-baseline="central">b</text>
+</symbol>
+<symbol id="button_classic_x" viewBox="0 0 34 34">
+	<use xlink:href="#button_matte" x="0" y="0" width="34" height="34" />
+	<text x="17" y="17" font-size="15px" font-family="Arial, sans-serif" fill="#909090" text-anchor="middle" dominant-baseline="central">x</text>
+</symbol>
+<symbol id="button_classic_y" viewBox="0 0 34 34">
+	<use xlink:href="#button_matte" x="0" y="0" width="34" height="34" />
+	<text x="17" y="17" font-size="15px" font-family="Arial, sans-serif" fill="#909090" text-anchor="middle" dominant-baseline="central">y</text>
+</symbol>
+<symbol id="button_classic_ZL" viewBox="0 0 34 34">
+	<use xlink:href="#button_matte_oval" x="0" y="0" width="34" height="34" />
+	<text x="17" y="17" font-size="15px" font-family="Arial, sans-serif" fill="#909090" text-anchor="middle" dominant-baseline="central">ZL</text>
+</symbol>
+<symbol id="button_classic_ZR" viewBox="0 0 34 34">
+	<use xlink:href="#button_matte_oval" x="0" y="0" width="34" height="34" />
+	<text x="17" y="17" font-size="15px" font-family="Arial, sans-serif" fill="#909090" text-anchor="middle" dominant-baseline="central">ZR</text>
+</symbol>
+
 <radialGradient id="button_B_gradient1" cx="0.5" cy="0.25" r="0.5" fx="0.5" fy="-0.25">
 	<stop offset="0" stop-color="#000000" stop-opacity="0.5"/>
 	<stop offset="1" stop-color="#000000" stop-opacity="0"/>
@@ -209,6 +234,25 @@
 	<text x="15" y="15" font-size="15px" font-family="Arial, sans-serif" fill="#909090" text-anchor="middle" dominant-baseline="central">Z</text>
 </symbol>
 
+<symbol id="button_long_LR" viewBox="-2 -2 34 34">
+	<rect x="-5" y="-5" width="50" height="50" fill="yellow"/>
+	<!-- Shadow. -->
+	<rect x="0.5" y="7.5" width="30" height="16" rx="8" opacity="0.887" fill="#000000" stroke-width="1" stroke="#000000" />
+	<!-- Base. -->
+	<rect x="0" y="7" width="30" height="16" rx="8" fill="#d0d4d6" stroke-width="1" stroke="#8a8993" />
+	<!-- Specular lighting. -->
+	<rect x="1" y="8" width="28" height="14" rx="8" fill="url(#button_Z_gradient1)" stroke="none" />
+</symbol>
+
+<symbol id="button_classic_L" viewBox="0 0 34 34">
+	<use xlink:href="#button_long_LR" x="0" y="0" width="34" height="34" />
+	<text x="17" y="17" font-size="15px" font-family="Arial, sans-serif" fill="#909090" text-anchor="middle" dominant-baseline="central">L</text>
+</symbol>
+<symbol id="button_classic_R" viewBox="0 0 34 34">
+	<use xlink:href="#button_long_LR" x="0" y="0" width="34" height="34" />
+	<text x="17" y="17" font-size="15px" font-family="Arial, sans-serif" fill="#909090" text-anchor="middle" dominant-baseline="central">R</text>
+</symbol>
+
 <radialGradient id="analog_stick_gradient1" cx="0.5" cy="0.5" r="0.5">
 	<stop offset="0" stop-color="#fff"/>
 	<stop offset="1" stop-color="#eee"/>
@@ -232,10 +276,10 @@
 
 </defs>
 
-<use xlink:href="#dpad" x="10" y="10" width="10" height="10" />
+<use xlink:href="#dpad"         x="10" y="10" width="10" height="10" />
 <use xlink:href="#analog_stick" x="20" y="10" width="20" height="20" />
-<use xlink:href="#button_matte" x="40" y="10" width="20" height="20" />
-<use xlink:href="#button_inset" x="60" y="10" width="20" height="20" />
+<use xlink:href="#button_classic_L" x="40" y="10" width="20" height="20" />
+<use xlink:href="#button_classic_ZR" x="60" y="10" width="20" height="20" />
 
 <use xlink:href="#dpad_up"      x="10" y="20" width="5" height="5" />
 <use xlink:href="#dpad_right"   x="15" y="20" width="5" height="5" />
@@ -255,5 +299,13 @@
 <use xlink:href="#button_B"     x="65" y="30" width="5" height="5" />
 <use xlink:href="#button_Z"     x="70" y="30" width="5" height="5" />
 <use xlink:href="#button_C"     x="75" y="30" width="5" height="5" />
+<use xlink:href="#button_classic_a"  x="30" y="35" width="5" height="5" />
+<use xlink:href="#button_classic_b"  x="35" y="35" width="5" height="5" />
+<use xlink:href="#button_classic_x"  x="40" y="35" width="5" height="5" />
+<use xlink:href="#button_classic_y"  x="45" y="35" width="5" height="5" />
+<use xlink:href="#button_classic_ZL" x="50" y="35" width="5" height="5" />
+<use xlink:href="#button_classic_ZR" x="55" y="35" width="5" height="5" />
+<use xlink:href="#button_classic_L"  x="60" y="35" width="5" height="5" />
+<use xlink:href="#button_classic_R"  x="65" y="35" width="5" height="5" />
 
 </svg>
