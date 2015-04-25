@@ -1,0 +1,53 @@
+---
+---
+<?xml version="1.0" encoding="UTF-8"?>
+
+<svg viewBox="0 0 100 50"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+<style type="text/css"><![CDATA[
+]]></style>
+
+<defs>
+
+<radialGradient id="dpadgradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+	<stop offset="0%" stop-color="#fff"/>
+	<stop offset="100%" stop-color="#ccc"/>
+</radialGradient>
+<linearGradient id="2" x1="0%" y1="0%" x2="0%" y2="100%">
+	<stop offset="50%"  stop-color="#0094ff" stop-opacity=".7"/>
+	<stop offset="100%" stop-color="#0094ff" stop-opacity="0"/>
+</linearGradient>
+
+<path id="dpadshape" d="M1,12 h10 q1,0 1,-1 v-10 q0,-1 1,-1 h10 q1,0 1,1 v10 q0,1 1,1 h10 q1,0 1,1 v10 q0,1 -1,1 h-10 q-1,0 -1,1 v10 q0,1 -1,1 h-10 q-1,0 -1,-1 v-10 q0,-1 -1,-1 h-10 q-1,0 -1,-1 v-10 q0,-1 1,-1 z"/>
+<clipPath id="dpadclip" clipPathUnits="userSpaceOnUse">
+	<use xlink:href="#dpadshape" x="0" y="0" stroke="#ffffff" fill="none" />
+</clipPath>
+
+<symbol id="dpad" viewBox="-2 -2 34 34">
+	<path d="M0,10 h10 v-10 h10 v10 h10 v10 h-10 v10 h-10 v-10 h-10 v-10 z" stroke="#000" fill="url(#dpadgradient)"/>
+	<rect x="6" y="1" width="4" height="5" fill="url(#2)"/>
+</symbol>
+<symbol id="dpad2" viewBox="-0.5 -0.5 37 37">
+	<rect x="-5" y="-5" width="50" height="50" fill="silver"/>
+
+	<use xlink:href="#dpadshape" x="0" y="0" stroke-width="1" stroke="none" fill="url(#dpadgradient)" />
+	<g clip-path="url(#dpadclip)">
+		<use xlink:href="#dpadshape" x="0.5" y="0.5" stroke-width="2" stroke="#ffffff" stroke-opacity="0.5" fill="none" />
+	</g>
+	<g clip-path="url(#dpadclip)">
+		<use xlink:href="#dpadshape" x="-0.5" y="-0.5" stroke-width="2" stroke="#000000" stroke-opacity="0.5" fill="none" />
+	</g>
+	<use xlink:href="#dpadshape" x="0" y="0" stroke-width="1" stroke="black" fill="none" />
+
+	<path d="M4,18 h7 M32,18 h-7 M18,4 v7 M18,32 v-7" stroke-width="1" stroke="#909090" fill="none"/>
+</symbol>
+
+</defs>
+
+<use xlink:href="#dpad" x="20" y="10" width="10" height="10" />
+<use xlink:href="#dpad2" x="30" y="10" width="20" height="20" />
+
+</svg>
