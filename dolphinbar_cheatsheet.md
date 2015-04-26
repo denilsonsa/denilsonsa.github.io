@@ -67,3 +67,5 @@ Firmware update mode:
 4. If this is the first time, wait until Windows detects the device and installs its drivers. It may take a couple of minutes.
 
 TODO: Add link here to the product page and to the firmware updater download page.
+
+TODO: Add link to the Dolphin homepage: https://dolphin-emu.org/
