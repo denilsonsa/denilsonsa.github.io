@@ -539,10 +539,67 @@
 	<use xlink:href="#key_right" x="2" y="1" width="1" height="1" />
 </symbol>
 
+<radialGradient id="wii_led_light_gradient" cx="0.5" cy="0.5" r="0.5">
+	<stop offset="0" stop-color="#ffffff" stop-opacity="0.75"/>
+	<stop offset="1" stop-color="#adcefb" stop-opacity="0"/>
+</radialGradient>
+
+<!-- Colors from http://ftpmerou.free.fr/ubuntu/wiimote/wiimote.svg -->
+<g id="wii_led_off">
+	<rect x="-6" y="-6" width="12" height="12" stroke-width="1" stroke="#979a9c" fill="#818588" />
+</g>
+<g id="wii_led_on">
+	<rect x="-6" y="-6" width="12" height="12" stroke-width="1" stroke="#59b2e3" fill="#83cff8" />
+	<circle cx="0" cy="0" r="9" fill="url(#wii_led_light_gradient)" />
+</g>
+
+<symbol id="wii_leds_12" viewBox="0 0 80 20">
+	<use xlink:href="#wii_led_on"  x="10" y="10" />
+	<use xlink:href="#wii_led_on"  x="30" y="10" />
+	<use xlink:href="#wii_led_off" x="50" y="10" />
+	<use xlink:href="#wii_led_off" x="70" y="10" />
+</symbol>
+
+<symbol id="wii_leds_13" viewBox="0 0 80 20">
+	<use xlink:href="#wii_led_on"  x="10" y="10" />
+	<use xlink:href="#wii_led_off" x="30" y="10" />
+	<use xlink:href="#wii_led_on"  x="50" y="10" />
+	<use xlink:href="#wii_led_off" x="70" y="10" />
+</symbol>
+
+<symbol id="wii_leds_14" viewBox="0 0 80 20">
+	<use xlink:href="#wii_led_on"  x="10" y="10" />
+	<use xlink:href="#wii_led_off" x="30" y="10" />
+	<use xlink:href="#wii_led_off" x="50" y="10" />
+	<use xlink:href="#wii_led_on"  x="70" y="10" />
+</symbol>
+
+<symbol id="wii_leds_any" viewBox="0 0 80 80">
+	<use xlink:href="#wii_led_on"  x="10" y="10" />
+	<use xlink:href="#wii_led_off" x="30" y="10" />
+	<use xlink:href="#wii_led_off" x="50" y="10" />
+	<use xlink:href="#wii_led_off" x="70" y="10" />
+
+	<use xlink:href="#wii_led_off" x="10" y="30" />
+	<use xlink:href="#wii_led_on"  x="30" y="30" />
+	<use xlink:href="#wii_led_off" x="50" y="30" />
+	<use xlink:href="#wii_led_off" x="70" y="30" />
+
+	<use xlink:href="#wii_led_off" x="10" y="50" />
+	<use xlink:href="#wii_led_off" x="30" y="50" />
+	<use xlink:href="#wii_led_on"  x="50" y="50" />
+	<use xlink:href="#wii_led_off" x="70" y="50" />
+
+	<use xlink:href="#wii_led_off" x="10" y="70" />
+	<use xlink:href="#wii_led_off" x="30" y="70" />
+	<use xlink:href="#wii_led_off" x="50" y="70" />
+	<use xlink:href="#wii_led_on"  x="70" y="70" />
+</symbol>
+
 </defs>
 
 <use xlink:href="#analog_stick"      x="20" y="10" width="20" height="20" />
-<use xlink:href="#key_volume_up"     x="40" y="10" width="20" height="20" />
+<use xlink:href="#wii_leds_any"      x="40" y="10" width="20" height="20" />
 <use xlink:href="#mouse_left"        x="60" y="10" width="20" height="20" />
 
 <use xlink:href="#mouse_left"   x="10" y="10" width="5" height="5" />
@@ -556,30 +613,29 @@
 
 <use xlink:href="#dpad"         x="10" y="30" width="5" height="5" />
 <use xlink:href="#mouse"        x="15" y="30" width="5" height="5" />
-<use xlink:href="#key"          x="20" y="30" width="5" height="5" />
-<use xlink:href="#button_A"     x="30" y="30" width="5" height="5" />
-<use xlink:href="#button_minus" x="35" y="30" width="5" height="5" />
-<use xlink:href="#button_plus"  x="40" y="30" width="5" height="5" />
-<use xlink:href="#button_1"     x="45" y="30" width="5" height="5" />
-<use xlink:href="#button_2"     x="50" y="30" width="5" height="5" />
-<use xlink:href="#button_home"  x="55" y="30" width="5" height="5" />
-<use xlink:href="#button_power" x="60" y="30" width="5" height="5" />
-<use xlink:href="#button_B"     x="65" y="30" width="5" height="5" />
-<use xlink:href="#button_Z"     x="70" y="30" width="5" height="5" />
-<use xlink:href="#button_C"     x="75" y="30" width="5" height="5" />
+<use xlink:href="#analog_stick" x="20" y="30" width="5" height="5" />
+<use xlink:href="#button_A"     x="25" y="30" width="5" height="5" />
+<use xlink:href="#button_minus" x="30" y="30" width="5" height="5" />
+<use xlink:href="#button_plus"  x="35" y="30" width="5" height="5" />
+<use xlink:href="#button_1"     x="40" y="30" width="5" height="5" />
+<use xlink:href="#button_2"     x="45" y="30" width="5" height="5" />
+<use xlink:href="#button_home"  x="50" y="30" width="5" height="5" />
+<use xlink:href="#button_power" x="55" y="30" width="5" height="5" />
+<use xlink:href="#button_B"     x="60" y="30" width="5" height="5" />
+<use xlink:href="#button_Z"     x="65" y="30" width="5" height="5" />
+<use xlink:href="#button_C"     x="70" y="30" width="5" height="5" />
 
-<use xlink:href="#analog_stick"      x="10" y="35" width="5" height="5" />
-<use xlink:href="#button_shiny"      x="15" y="35" width="5" height="5" />
-<use xlink:href="#button_matte"      x="20" y="35" width="5" height="5" />
-<use xlink:href="#button_inset"      x="25" y="35" width="5" height="5" />
-<use xlink:href="#button_classic_a"  x="30" y="35" width="5" height="5" />
-<use xlink:href="#button_classic_b"  x="35" y="35" width="5" height="5" />
-<use xlink:href="#button_classic_x"  x="40" y="35" width="5" height="5" />
-<use xlink:href="#button_classic_y"  x="45" y="35" width="5" height="5" />
-<use xlink:href="#button_classic_ZL" x="50" y="35" width="5" height="5" />
-<use xlink:href="#button_classic_ZR" x="55" y="35" width="5" height="5" />
-<use xlink:href="#button_classic_L"  x="60" y="35" width="5" height="5" />
-<use xlink:href="#button_classic_R"  x="65" y="35" width="5" height="5" />
+<use xlink:href="#button_shiny"      x="10" y="35" width="5" height="5" />
+<use xlink:href="#button_matte"      x="15" y="35" width="5" height="5" />
+<use xlink:href="#button_inset"      x="20" y="35" width="5" height="5" />
+<use xlink:href="#button_classic_a"  x="25" y="35" width="5" height="5" />
+<use xlink:href="#button_classic_b"  x="30" y="35" width="5" height="5" />
+<use xlink:href="#button_classic_x"  x="35" y="35" width="5" height="5" />
+<use xlink:href="#button_classic_y"  x="40" y="35" width="5" height="5" />
+<use xlink:href="#button_classic_ZL" x="45" y="35" width="5" height="5" />
+<use xlink:href="#button_classic_ZR" x="50" y="35" width="5" height="5" />
+<use xlink:href="#button_classic_L"  x="55" y="35" width="5" height="5" />
+<use xlink:href="#button_classic_R"  x="60" y="35" width="5" height="5" />
 
 <use xlink:href="#key_up"       x="10" y="40" width="5" height="5" />
 <use xlink:href="#key_down"     x="15" y="40" width="5" height="5" />
@@ -592,13 +648,19 @@
 <use xlink:href="#key_win"      x="50" y="40" width="5" height="5" />
 <use xlink:href="#keys_arrows"  x="55" y="40" width="5" height="5" />
 
-<use xlink:href="#key_volume_up"   x="10" y="45" width="5" height="5" />
-<use xlink:href="#key_volume_down" x="15" y="45" width="5" height="5" />
-<use xlink:href="#key_stop"        x="20" y="45" width="5" height="5" />
-<use xlink:href="#key_play_pause"  x="25" y="45" width="5" height="5" />
-<use xlink:href="#key_previous"    x="30" y="45" width="5" height="5" />
-<use xlink:href="#key_next"        x="35" y="45" width="5" height="5" />
-<use xlink:href="#key_rewind"      x="40" y="45" width="5" height="5" />
-<use xlink:href="#key_forward"     x="45" y="45" width="5" height="5" />
+<use xlink:href="#key"             x="10" y="45" width="5" height="5" />
+<use xlink:href="#key_volume_up"   x="15" y="45" width="5" height="5" />
+<use xlink:href="#key_volume_down" x="20" y="45" width="5" height="5" />
+<use xlink:href="#key_stop"        x="25" y="45" width="5" height="5" />
+<use xlink:href="#key_play_pause"  x="30" y="45" width="5" height="5" />
+<use xlink:href="#key_previous"    x="35" y="45" width="5" height="5" />
+<use xlink:href="#key_next"        x="40" y="45" width="5" height="5" />
+<use xlink:href="#key_rewind"      x="45" y="45" width="5" height="5" />
+<use xlink:href="#key_forward"     x="50" y="45" width="5" height="5" />
+
+<use xlink:href="#wii_leds_12"      x="75" y="30" width="5" height="5" />
+<use xlink:href="#wii_leds_13"      x="75" y="35" width="5" height="5" />
+<use xlink:href="#wii_leds_14"      x="75" y="40" width="5" height="5" />
+<use xlink:href="#wii_leds_any"     x="75" y="45" width="5" height="5" />
 
 </svg>
