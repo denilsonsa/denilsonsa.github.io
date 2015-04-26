@@ -2,7 +2,7 @@
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 
-<svg viewBox="5 5 80 40"
+<svg viewBox="9 9 80 45"
 	version="1.1"
 	xmlns="http://www.w3.org/2000/svg"
 	xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -20,7 +20,7 @@
 <path id="dpad_shape" d="M1,12 h10 q1,0 1,-1 v-10 q0,-1 1,-1 h10 q1,0 1,1 v10 q0,1 1,1 h10 q1,0 1,1 v10 q0,1 -1,1 h-10 q-1,0 -1,1 v10 q0,1 -1,1 h-10 q-1,0 -1,-1 v-10 q0,-1 -1,-1 h-10 q-1,0 -1,-1 v-10 q0,-1 1,-1 z"/>
 
 <clipPath id="dpad_clip" clipPathUnits="userSpaceOnUse">
-	<use xlink:href="#dpad_shape" x="0" y="0" stroke="#ffffff" fill="none" />
+	<use xlink:href="#dpad_shape" x="0" y="0" />
 </clipPath>
 
 <symbol id="dpad" viewBox="-1.5 -1.5 39 39">
@@ -30,7 +30,7 @@
 	<use xlink:href="#dpad_shape" x="1" y="1" opacity="0.887" stroke-width="1" stroke="#000000" fill="#000000" />
 
 	<!-- Base. -->
-	<use xlink:href="#dpad_shape" x="0" y="0" stroke-width="1" stroke="none" fill="url(#dpad_gradient)" />
+	<use xlink:href="#dpad_shape" x="0" y="0" stroke="none" fill="url(#dpad_gradient)" />
 
 	<!-- Trick for creating highlights and shadows. -->
 	<g clip-path="url(#dpad_clip)">
@@ -41,7 +41,7 @@
 	</g>
 
 	<!-- The dark outline. -->
-	<use xlink:href="#dpad_shape" x="0" y="0" stroke-width="1" stroke="black" fill="none" />
+	<use xlink:href="#dpad_shape" x="0" y="0" stroke-width="1" stroke="#000000" fill="none" />
 
 	<!-- Directional ticks. -->
 	<path d="M4,18 h7 M32,18 h-7 M18,4 v7 M18,32 v-7" stroke-width="1" stroke="#909090" fill="none"/>
@@ -295,17 +295,268 @@
 	<ellipse cx="16" cy="10" rx="11" ry="8" stroke-width="0.4" stroke="#777" fill="url(#analog_stick_gradient1)"/>
 </symbol>
 
+<radialGradient id="mouse_gradient" cx="0.5" cy="0.5" r="0.5" fx="0.5" fy="0.75">
+	<stop offset="0" stop-color="#fff"/>
+	<stop offset="1" stop-color="#ccc"/>
+</radialGradient>
+
+<radialGradient id="mouse_specular_gradient" cx="0.5" cy="0.25" r="1" fx="0.5" fy="-0.0625" gradientTransform="scale(0.333 1) translate(0.5 0)">
+	<stop offset="0" stop-color="#ffffff" stop-opacity="1"/>
+	<stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+</radialGradient>
+
+<linearGradient id="mouse_wheel_gradient_up" x1="0" y1="0" x2="0" y2="1">
+	<stop offset="0.333" stop-color="#0094ff" stop-opacity="0.75"/>
+	<stop offset="0.666" stop-color="#0094ff" stop-opacity="0"/>
+</linearGradient>
+
+<linearGradient id="mouse_wheel_gradient_down" xlink:href="#mouse_wheel_gradient_up" gradientTransform="translate(0 1) scale(1 -1)" />
+
+<path id="mouse_shape" d="M16,0 q8,0 9,4 q4,16 0,24 q-2,4 -9,4 q-7,0 -9,-4 q-4,-8 0,-24 q1,-4 9,-4 z" />
+<path id="mouse_left_button" d="M16,0 v2 q-2,0 -2,6 q0,6 2,6 v2 q -9,0 -9,-4 v-12 z" clip-path="url(#mouse_clip)" />
+<use id="mouse_right_button" xlink:href="#mouse_left_button" x="0" y="0" transform="translate(16 0) scale(-1 1) translate(-16 0)" />
+<path id="mouse_wheel" d="M16,2 q-2,0 -2,6 q0,6 2,6 q2,0 2,-6 q0,-6 -2,-6 z" />
+
+<clipPath id="mouse_clip" clipPathUnits="userSpaceOnUse">
+	<use xlink:href="#mouse_shape" x="0" y="0" />
+</clipPath>
+
+<!-- Inspired by https://openclipart.org/detail/211818/mouse -->
+<symbol id="mouse" viewBox="-2 -2 36 36">
+	<rect x="-5" y="-5" width="50" height="50" fill="lime"/>
+
+	<!-- Shadow. -->
+	<use xlink:href="#mouse_shape" x="1" y="0.5" opacity="0.887" stroke-width="1" stroke="#000000" fill="#000000" />
+	<!-- Base. -->
+	<use xlink:href="#mouse_shape" x="0" y="0" stroke="none" fill="url(#mouse_gradient)" />
+
+	<!-- Specular lighting. -->
+	<rect x="3" y="0" width="26" height="32" fill="url(#mouse_specular_gradient)" clip-path="url(#mouse_clip)" />
+
+	<!-- Buttons. -->
+	<use xlink:href="#mouse_left_button"  x="0" y="0" stroke-width="0.25" stroke="#8a8993" fill="none" />
+	<use xlink:href="#mouse_right_button" x="0" y="0" stroke-width="0.25" stroke="#8a8993" fill="none" />
+
+	<!-- The dark outline. -->
+	<use xlink:href="#mouse_shape" x="0" y="0" stroke-width="0.5" stroke="#8a8993" fill="none" />
+</symbol>
+
+<symbol id="mouse_left" viewBox="0 0 36 36">
+	<use xlink:href="#mouse" x="0" y="0" width="36" height="36" />
+	<use xlink:href="#mouse_left_button" x="2" y="2" stroke="none" fill="url(#dpad_press_gradient)"/>
+</symbol>
+
+<symbol id="mouse_right" viewBox="0 0 36 36">
+	<use xlink:href="#mouse" x="0" y="0" width="36" height="36" />
+	<use xlink:href="#mouse_right_button" x="2" y="2" stroke="none" fill="url(#dpad_press_gradient)"/>
+</symbol>
+
+<symbol id="mouse_up" viewBox="0 0 36 36">
+	<use xlink:href="#mouse" x="0" y="0" width="36" height="36" />
+	<use xlink:href="#mouse_wheel" x="2" y="2" stroke="none" fill="url(#mouse_wheel_gradient_up)"/>
+</symbol>
+
+<symbol id="mouse_down" viewBox="0 0 36 36">
+	<use xlink:href="#mouse" x="0" y="0" width="36" height="36" />
+	<use xlink:href="#mouse_wheel" x="2" y="2" stroke="none" fill="url(#mouse_wheel_gradient_down)"/>
+</symbol>
+
+<linearGradient id="key_gradient1" x1="0" y1="0" x2="0" y2="1">
+	<stop offset="0" stop-color="#d8d8d8" />
+	<stop offset="1" stop-color="#a3a3a3" />
+</linearGradient>
+
+<linearGradient id="key_gradient2" x1="0" y1="0" x2="1" y2="0">
+	<stop offset="0"     stop-color="#cccccc" />
+	<stop offset="0.666" stop-color="#eeeeee" />
+	<stop offset="1"     stop-color="#cccccc" />
+</linearGradient>
+
+<!-- Inspired by https://openclipart.org/detail/27549/keyboard-keys -->
+<symbol id="key" viewBox="-2 -2 36 36">
+	<rect x="-5" y="-5" width="50" height="50" fill="lime"/>
+
+	<!-- Shadow. -->
+	<rect x="1" y="3" width="32" height="28" rx="4" stroke-width="0.5" stroke="#000000" fill="#000000" />
+
+	<!-- Base. -->
+	<rect x="0" y="2" width="32" height="28" rx="4" stroke-width="0.5" stroke="#8a8993" fill="url(#key_gradient1)" />
+	<rect x="3" y="4" width="26" height="23" rx="3" stroke-width="0.25" stroke="#8a8993" fill="url(#key_gradient2)" />
+
+</symbol>
+
+<path id="arrow_up" d="M 2,0 l 2,5 h-1.5 v8 h-1 v-8 h-1.5 z" />
+<use id="arrow_right" xlink:href="#arrow_up" x="0" y="0" transform="translate(13 0) rotate(90)" />
+<use id="arrow_down" xlink:href="#arrow_up" x="0" y="0" transform="translate(4 13) rotate(180)" />
+<use id="arrow_left" xlink:href="#arrow_up" x="0" y="0" transform="translate(0 4) rotate(270)" />
+<path id="arrow_enter" d="M0,10 l5,-2 v1.5 h7 v-8 h1 v9 h-8 v1.5 z" />
+
+<!-- Based on https://commons.wikimedia.org/wiki/File:Windows_logo_-_2012.svg -->
+<symbol id="win_symbol" viewBox="0 0 39 40">
+	<!-- fill="#00adef" -->
+	<path d="
+		M 0,6  v13 h16 v-15.5 z
+		M 0,34 v-13 h16 v15.5 z
+		M 18,3.25 v15.75 h21 v-19 z
+		M 18,36.75 v-15.75 h21 v19 z" />
+</symbol>
+
+<symbol id="volume_down" viewBox="0 0 13 13">
+	<path d="M0,3 h2 l2,-2.5 q2,4 0,8 l-2,-2.5 h-2 z" />
+	<path d="M7,4 q-0.5,0.5 0,1 h5 q0.5,-0.5 0,-1 z" />
+</symbol>
+
+<symbol id="volume_up" viewBox="0 0 13 13">
+	<use xlink:href="#volume_down" x="0" y="0" width="13" height="13" />
+	<path d="M9,2 q0.5,-0.5 1,0 v5 q-0.5,0.5 -1,0 z" />
+	<!--path d="
+		M0,0 h0.1 v13 h-0.1 z
+		M13,0 h-0.1 v13 h0.1 z
+		M0,0 v0.1 h13 v-0.1 z
+		M0,13 v-0.1 h13 v0.1 z
+		M0,6.5 v-0.1 h13 v0.2 z
+	" /-->
+</symbol>
+
+<path id="play" d="M0,0 l5.2,3 L0,6 z" />
+<path id="pause" d="M0,0 h2 v6 h-2 z M4,0 h2 v6 h-2 z" />
+<path id="stop" d="M0,0 h6 v6 h-6 z" />
+
+<symbol id="play_pause" viewBox="0 0 13 13">
+	<use xlink:href="#play" x="0" y="0" width="13" height="13" />
+	<use xlink:href="#pause" x="7" y="0" width="13" height="13" />
+</symbol>
+
+<symbol id="forward" viewBox="0 0 13 13">
+	<use xlink:href="#play" x="0" y="0" width="13" height="13" />
+	<use xlink:href="#play" x="5" y="0" width="13" height="13" />
+</symbol>
+
+<symbol id="rewind" viewBox="0 0 13 13">
+	<use xlink:href="#forward" x="0" y="0" width="13" height="13" transform="translate(10.2 0) scale(-1 1)" />
+</symbol>
+
+<symbol id="next" viewBox="0 0 13 13">
+	<use xlink:href="#forward" x="0" y="0" width="13" height="13" />
+	<path d="M10,0 h2 v6 h-2 z" />
+</symbol>
+
+<symbol id="previous" viewBox="0 0 13 13">
+	<use xlink:href="#next" x="0" y="0" width="13" height="13" transform="translate(12.2 0) scale(-1 1)" />
+</symbol>
+
+<symbol id="key_up" viewBox="0 0 36 36">
+	<use xlink:href="#key" x="0" y="0" width="36" height="36" />
+	<use xlink:href="#arrow_up" x="8" y="8" fill="#404020" />
+</symbol>
+
+<symbol id="key_right" viewBox="0 0 36 36">
+	<use xlink:href="#key" x="0" y="0" width="36" height="36" />
+	<use xlink:href="#arrow_right" x="8" y="8" fill="#404020" />
+</symbol>
+
+<symbol id="key_down" viewBox="0 0 36 36">
+	<use xlink:href="#key" x="0" y="0" width="36" height="36" />
+	<use xlink:href="#arrow_down" x="8" y="8" fill="#404020" />
+</symbol>
+
+<symbol id="key_left" viewBox="0 0 36 36">
+	<use xlink:href="#key" x="0" y="0" width="36" height="36" />
+	<use xlink:href="#arrow_left" x="8" y="8" fill="#404020" />
+</symbol>
+
+<symbol id="key_enter" viewBox="0 0 36 36">
+	<use xlink:href="#key" x="0" y="0" width="36" height="36" />
+	<use xlink:href="#arrow_enter" x="8" y="8" fill="#404020" />
+</symbol>
+
+<symbol id="key_win" viewBox="0 0 36 36">
+	<use xlink:href="#key" x="0" y="0" width="36" height="36" />
+	<use xlink:href="#win_symbol" x="8" y="8" width="13" height="13" fill="#404020" />
+</symbol>
+
+<symbol id="key_volume_up" viewBox="0 0 36 36">
+	<use xlink:href="#key" x="0" y="0" width="36" height="36" />
+	<use xlink:href="#volume_up" x="8" y="8" width="13" height="13" fill="#404020" />
+</symbol>
+
+<symbol id="key_volume_down" viewBox="0 0 36 36">
+	<use xlink:href="#key" x="0" y="0" width="36" height="36" />
+	<use xlink:href="#volume_down" x="8" y="8" width="13" height="13" fill="#404020" />
+</symbol>
+
+<symbol id="key_play_pause" viewBox="0 0 36 36">
+	<use xlink:href="#key" x="0" y="0" width="36" height="36" />
+	<use xlink:href="#play_pause" x="8" y="8" width="13" height="13" fill="#404020" />
+</symbol>
+
+<symbol id="key_stop" viewBox="0 0 36 36">
+	<use xlink:href="#key" x="0" y="0" width="36" height="36" />
+	<use xlink:href="#stop" x="8" y="8" fill="#404020" />
+</symbol>
+
+<symbol id="key_previous" viewBox="0 0 36 36">
+	<use xlink:href="#key" x="0" y="0" width="36" height="36" />
+	<use xlink:href="#previous" x="8" y="8" width="13" height="13" fill="#404020" />
+</symbol>
+
+<symbol id="key_next" viewBox="0 0 36 36">
+	<use xlink:href="#key" x="0" y="0" width="36" height="36" />
+	<use xlink:href="#next" x="8" y="8" width="13" height="13" fill="#404020" />
+</symbol>
+
+<symbol id="key_rewind" viewBox="0 0 36 36">
+	<use xlink:href="#key" x="0" y="0" width="36" height="36" />
+	<use xlink:href="#rewind" x="8" y="8" width="13" height="13" fill="#404020" />
+</symbol>
+
+<symbol id="key_forward" viewBox="0 0 36 36">
+	<use xlink:href="#key" x="0" y="0" width="36" height="36" />
+	<use xlink:href="#forward" x="8" y="8" width="13" height="13" fill="#404020" />
+</symbol>
+
+<symbol id="key_esc" viewBox="0 0 36 36">
+	<use xlink:href="#key" x="0" y="0" width="36" height="36" />
+	<text x="8" y="8" font-size="8px" font-family="Arial, sans-serif" font-style="italic" fill="#404020" text-anchor="start" dominant-baseline="text-before-edge">Esc</text>
+</symbol>
+
+<symbol id="key_pageup" viewBox="0 0 36 36">
+	<use xlink:href="#key" x="0" y="0" width="36" height="36" />
+	<text x="8" y="8" font-size="8px" font-family="Arial, sans-serif" font-style="italic" fill="#404020" text-anchor="start" dominant-baseline="text-before-edge">Page</text>
+	<text x="8" y="17" font-size="8px" font-family="Arial, sans-serif" font-style="italic" fill="#404020" text-anchor="start" dominant-baseline="text-before-edge">Up</text>
+</symbol>
+
+<symbol id="key_pagedown" viewBox="0 0 36 36">
+	<use xlink:href="#key" x="0" y="0" width="36" height="36" />
+	<text x="8" y="8" font-size="8px" font-family="Arial, sans-serif" font-style="italic" fill="#404020" text-anchor="start" dominant-baseline="text-before-edge">Page</text>
+	<text x="8" y="17" font-size="8px" font-family="Arial, sans-serif" font-style="italic" fill="#404020" text-anchor="start" dominant-baseline="text-before-edge">Down</text>
+</symbol>
+
+<symbol id="keys_arrows" viewBox="0 0 3 2">
+	<use xlink:href="#key_up"    x="1" y="0" width="1" height="1" />
+	<use xlink:href="#key_left"  x="0" y="1" width="1" height="1" />
+	<use xlink:href="#key_down"  x="1" y="1" width="1" height="1" />
+	<use xlink:href="#key_right" x="2" y="1" width="1" height="1" />
+</symbol>
+
 </defs>
 
 <use xlink:href="#analog_stick"      x="20" y="10" width="20" height="20" />
-<use xlink:href="#button_classic_L"  x="40" y="10" width="20" height="20" />
-<use xlink:href="#button_classic_ZR" x="60" y="10" width="20" height="20" />
+<use xlink:href="#key_volume_up"     x="40" y="10" width="20" height="20" />
+<use xlink:href="#mouse_left"        x="60" y="10" width="20" height="20" />
 
+<use xlink:href="#mouse_left"   x="10" y="10" width="5" height="5" />
+<use xlink:href="#mouse_right"  x="15" y="10" width="5" height="5" />
+<use xlink:href="#mouse_up"     x="10" y="15" width="5" height="5" />
+<use xlink:href="#mouse_down"   x="15" y="15" width="5" height="5" />
 <use xlink:href="#dpad_up"      x="10" y="20" width="5" height="5" />
 <use xlink:href="#dpad_right"   x="15" y="20" width="5" height="5" />
 <use xlink:href="#dpad_down"    x="10" y="25" width="5" height="5" />
 <use xlink:href="#dpad_left"    x="15" y="25" width="5" height="5" />
+
 <use xlink:href="#dpad"         x="10" y="30" width="5" height="5" />
+<use xlink:href="#mouse"        x="15" y="30" width="5" height="5" />
+<use xlink:href="#key"          x="20" y="30" width="5" height="5" />
 <use xlink:href="#button_A"     x="30" y="30" width="5" height="5" />
 <use xlink:href="#button_minus" x="35" y="30" width="5" height="5" />
 <use xlink:href="#button_plus"  x="40" y="30" width="5" height="5" />
@@ -329,5 +580,25 @@
 <use xlink:href="#button_classic_ZR" x="55" y="35" width="5" height="5" />
 <use xlink:href="#button_classic_L"  x="60" y="35" width="5" height="5" />
 <use xlink:href="#button_classic_R"  x="65" y="35" width="5" height="5" />
+
+<use xlink:href="#key_up"       x="10" y="40" width="5" height="5" />
+<use xlink:href="#key_down"     x="15" y="40" width="5" height="5" />
+<use xlink:href="#key_left"     x="20" y="40" width="5" height="5" />
+<use xlink:href="#key_right"    x="25" y="40" width="5" height="5" />
+<use xlink:href="#key_enter"    x="30" y="40" width="5" height="5" />
+<use xlink:href="#key_esc"      x="35" y="40" width="5" height="5" />
+<use xlink:href="#key_pageup"   x="40" y="40" width="5" height="5" />
+<use xlink:href="#key_pagedown" x="45" y="40" width="5" height="5" />
+<use xlink:href="#key_win"      x="50" y="40" width="5" height="5" />
+<use xlink:href="#keys_arrows"  x="55" y="40" width="5" height="5" />
+
+<use xlink:href="#key_volume_up"   x="10" y="45" width="5" height="5" />
+<use xlink:href="#key_volume_down" x="15" y="45" width="5" height="5" />
+<use xlink:href="#key_stop"        x="20" y="45" width="5" height="5" />
+<use xlink:href="#key_play_pause"  x="25" y="45" width="5" height="5" />
+<use xlink:href="#key_previous"    x="30" y="45" width="5" height="5" />
+<use xlink:href="#key_next"        x="35" y="45" width="5" height="5" />
+<use xlink:href="#key_rewind"      x="40" y="45" width="5" height="5" />
+<use xlink:href="#key_forward"     x="45" y="45" width="5" height="5" />
 
 </svg>
