@@ -28,6 +28,7 @@ dolphinbar_url: "http://www.mayflash.com/Products/NINTENDOWiiGC/W010.html"
 firmware_url:   "http://www.mayflash.com/Support/Download/"
 manual_url:     "https://imgur.com/a/LBagg"
 dolphinemu_url: "https://dolphin-emu.org/"
+denilsonsa_url: "http://denilson.sa.nom.br/"
 
 cheatsheet:
   row_padding: 1
@@ -396,9 +397,10 @@ cheatsheet:
 		{% assign cheatsheet_height = cheatsheet_height | plus: section_height %}
 	{% endfor %}
 
-	{% assign extra_at_right = cheatsheet.row_padding | times: 2 | plus: 6 | plus: 2 %}
-	{% assign page_width = cheatsheet_width | plus: extra_at_right %}
-	{% assign page_height = cheatsheet_height %}
+	{% assign footnote_line_height = 7 %}
+	{% assign footnote_height = footnote_line_height | times: 15 %}
+	{% assign page_width = cheatsheet_width %}
+	{% assign page_height = cheatsheet_height | plus: footnote_height %}
 
 	viewBox="0 0 {{ page_width }} {{ page_height }}"
 	{% assign page_absolute_width = 1024.0 %}
@@ -449,6 +451,7 @@ cheatsheet:
 	text-anchor: middle;
 	dominant-baseline: central;
 	fill: black;
+	stroke: none;
 }
 
 .cheatsheet .section_data_cell > text {
@@ -457,6 +460,7 @@ cheatsheet:
 	text-anchor: middle;
 	dominant-baseline: central;
 	fill: black;
+	stroke: none;
 }
 .cheatsheet .section_data:first-child .section_data_row:first-child text {
 	font-weight: bold;
@@ -468,14 +472,24 @@ cheatsheet:
 	text-anchor: middle;
 	dominant-baseline: central;
 	fill: black;
+	stroke: none;
 }
 
-.cheatsheet text.aside {
+.cheatsheet text.footnote,
+.cheatsheet text.footnote tspan,
+.cheatsheet text.footnote a {
 	font-family: "Arial", sans-serif;
 	font-size: 6px;
 	text-anchor: start;
-	dominant-baseline: central;
+	dominant-baseline: text-before-edge;
 	fill: black;
+	stroke: none;
+}
+
+.cheatsheet a:hover,
+.cheatsheet text a:hover,
+.cheatsheet text tspan a:hover {
+	fill: blue;
 }
 
 {% endif %}
@@ -1216,15 +1230,25 @@ cheatsheet:
 			<tspan x="0" y="8">DolphinBar</tspan>
 		</text>
 
-		<text x="0" y="0" class="aside" transform="translate({{ extra_at_right | divided_by: 2.0 | plus: cheatsheet_width  }} {{ cheatsheet.row_padding }}) rotate(90)">
-			<tspan>Product page: </tspan>
-			<a xlink:href="{{ page.dolphinbar_url }}"><tspan>{{ page.dolphinbar_url }}</tspan></a>
-			<tspan dx="8">Manual: </tspan>
-			<a xlink:href="{{ page.manual_url }}"><tspan>{{ page.manual_url }}</tspan></a>
-			<tspan dx="8">Firmware update: </tspan>
-			<a xlink:href="{{ page.firmware_url }}"><tspan>{{ page.firmware_url }}</tspan></a>
-			<tspan dx="8">Dolphin emulator: </tspan>
-			<a xlink:href="{{ page.dolphinemu_url }}"><tspan>{{ page.dolphinemu_url }}</tspan></a>
+		{% assign h = footnote_line_height %}
+		<text x="0" y="0" class="footnote" transform="translate({{ cheatsheet.row_padding | plus: cheatsheet.columns[0] }} {{ cheatsheet.row_padding | plus: cheatsheet_height }})">
+			<tspan x="0"  y="{{ h | times: 1 }}">Pressing the sync button inside the Wii Remote battery cover will permanently pair the controller with the device.</tspan>
+			<tspan x="0"  y="{{ h | times: 2 }}">Pressing buttons 1 and 2 at the Wii Remote will temporarily pair the controller with the device.</tspan>
+
+			<tspan x="0"  y="{{ h | times: 4 }}">Firmware update mode:</tspan>
+			<tspan x="10" y="{{ h | times: 5 }}">Plug the USB cable of MAYFLASH DolphinBar while holding the SYNC button.</tspan>
+			<tspan x="10" y="{{ h | times: 6 }}">If it is the first time doing that, wait a couple of minutes while Windows install the drivers.</tspan>
+
+			<tspan x="0"  y="{{ h | times: 8 }}">Product page:</tspan>
+			<tspan x="55" y="{{ h | times: 8 }}"><a xlink:href="{{ page.dolphinbar_url }}">{{ page.dolphinbar_url }}</a></tspan>
+			<tspan x="0"  y="{{ h | times: 9 }}">Manual:</tspan>
+			<tspan x="55" y="{{ h | times: 9 }}"><a xlink:href="{{ page.manual_url }}">{{ page.manual_url }}</a></tspan>
+			<tspan x="0"  y="{{ h | times: 10 }}">Firmware update:</tspan>
+			<tspan x="55" y="{{ h | times: 10 }}"><a xlink:href="{{ page.firmware_url }}">{{ page.firmware_url }}</a></tspan>
+			<tspan x="0"  y="{{ h | times: 11 }}">Dolphin emulator:</tspan>
+			<tspan x="55" y="{{ h | times: 11 }}"><a xlink:href="{{ page.dolphinemu_url }}">{{ page.dolphinemu_url }}</a></tspan>
+			<tspan x="0"  y="{{ h | times: 13 }}">Cheatsheet built by Denilson Sá, who is not affiliated with MAYFLASH nor with Dolphin emulator.</tspan>
+			<tspan x="0"  y="{{ h | times: 14 }}"><a xlink:href="{{ page.denilsonsa_url }}">{{ page.denilsonsa_url }}</a></tspan>
 		</text>
 	</g>
 
