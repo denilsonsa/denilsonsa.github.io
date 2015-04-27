@@ -1,28 +1,486 @@
 ---
+# REMEMBER: No tab characters in the YAML preamble!
+# Easy way to fix tabs in the preamble in Vim:
+# :1,2/^---$/s/\t/    /g
 
 # TODO:
-# * Add a flag here to switch between "demonstration", which shows all available definitions/ids; and "cheatsheet" mode.
-# * Add Dolphin emulator logo.
-# * Implement the cheatsheet.
 # * Upload the demonstration to openclipart.
+
+#mode: "demonstration"
+mode: "cheatsheet"
 
 demonstration_ids:
 # :Tabularize /,/l0
 
- - [ button_power,button_A        ,button_B        ,button_minus    ,button_home     ,button_plus     ,button_1         ,button_2         ,button_C          ,button_Z ]
- - [ wii_leds_12 ,button_classic_a,button_classic_b,button_classic_x,button_classic_y,button_classic_L,button_classic_ZL,button_classic_ZR,button_classic_R ]
- - [ wii_leds_13 ,dpad_up         ,dpad_right      ,dpad_down       ,dpad_left       ,mouse_left      ,mouse_right      ,mouse_up         ,mouse_down ]
- - [ wii_leds_14 ,key_up          ,key_down        ,key_left        ,key_right       ,key_enter       ,key_esc          ,key_pageup       ,key_pagedown      ,key_win ]
- - [ wii_leds_any,key_volume_up   ,key_volume_down ,key_stop        ,key_play_pause  ,key_previous    ,key_next         ,key_rewind       ,key_forward ]
- - [ ''          ,dpad            ,analog_stick    ,button_shiny    ,button_matte    ,button_inset    ,mouse            ,key              ,keys_arrows ]
+  - [ button_power,button_A        ,button_B          ,button_minus    ,button_home     ,button_plus     ,button_1         ,button_2         ,button_C          ,button_Z ]
+  - [ wii_leds_12 ,button_classic_a,button_classic_b  ,button_classic_x,button_classic_y,button_classic_L,button_classic_ZL,button_classic_ZR,button_classic_R ]
+  - [ wii_leds_13 ,dpad_up         ,dpad_right        ,dpad_down       ,dpad_left       ,mouse_left      ,mouse_right      ,mouse_up         ,mouse_down ]
+  - [ wii_leds_14 ,key_up          ,key_down          ,key_left        ,key_right       ,key_enter       ,key_esc          ,key_pageup       ,key_pagedown      ,key_win ]
+  - [ wii_leds_any,key_volume_up   ,key_volume_down   ,key_stop        ,key_play_pause  ,key_previous    ,key_next         ,key_rewind       ,key_forward ]
+  - [ dpad        ,analog_stick    ,twin_analog_sticks,button_shiny    ,button_matte    ,button_inset    ,mouse            ,key              ,keys_arrows ]
+
+# Data is denoted as a two-value array, where the first element is the type:
+# t = text single-line
+# T = text multi-line
+# # = SVG <use> id
+
+dolphinbar_url: "http://www.mayflash.com/Products/NINTENDOWiiGC/W010.html"
+firmware_url:   "http://www.mayflash.com/Support/Download/"
+manual_url:     "https://imgur.com/a/LBagg"
+dolphinemu_url: "https://dolphin-emu.org/"
+
+cheatsheet:
+  row_padding: 1
+  columns: [12, 45, 65, 65, 65, 65, 65]
+  sections:
+    -
+      label: ""
+      row_height: 20
+      data:
+        -
+          height: 10
+          cells:
+            - [" ", ""]
+            - [" ", ""]
+            - ["t", "Mode 1A"]
+            - ["t", "Mode 1B"]
+            - ["t", "Mode 2"]
+            - ["t", "Mode 3"]
+            - ["t", "Mode 4"]
+        -
+          height: 18
+          cells:
+            - [" ", ""]
+            - [" ", ""]
+            - ["T", "Keyboard and Mouse\nNormal"]
+            - ["T", "Keyboard and Mouse\nMultimedia"]
+            - ["T", "Keyboard and Mouse\nGame"]
+            - ["t", "Game Controller"]
+            - ["T", "Wii Remote Emulation\nfor Dolphin emulator"]
+        -
+          cells:
+            - [" ", ""]
+            - [" ", ""]
+            - ["#", "wii_leds_12_square"]
+            - ["#", "wii_leds_13_square"]
+            - ["#", "wii_leds_14_square"]
+            - ["#", "wii_leds_any"]
+            - ["#", "wii_leds_any"]
+        -
+          cells:
+            - [" ", ""]
+            - [" ", ""]
+            - ["#", "home_and_down"]
+            - ["#", "home_and_down"]
+            - ["#", "home_and_left"]
+            - ["#", "home_and_up"]
+            - ["#", "home_and_right"]
+    -
+      label: "Wii Remote"
+      row_height: 20
+      data:
+        -
+          cells:
+            - [" ", ""]
+            - ["t", "IR Camera"]
+            - ["#", "mouse"]
+            - ["#", "mouse"]
+            - ["#", "mouse"]
+            - [" ", ""]
+            - ["#", "dolphin"]
+        -
+          cells:
+            - [" ", ""]
+            - ["t", "Accelerometer"]
+            - ["t", "-"]
+            - ["t", "-"]
+            - ["t", "-"]
+            - [" ", ""]
+            - ["#", "dolphin"]
+        -
+          cells:
+            - [" ", ""]
+            - ["#", "dpad_up"]
+            - ["#", "key_up"]
+            - ["#", "key_stop"]
+            - ["#", "key_up"]
+            - ["t", "Left stick or POV"]
+            - ["#", "dolphin"]
+        -
+          cells:
+            - [" ", ""]
+            - ["#", "dpad_down"]
+            - ["#", "key_down"]
+            - ["#", "key_play_pause"]
+            - ["#", "key_down"]
+            - ["t", "Left stick or POV"]
+            - ["#", "dolphin"]
+        -
+          cells:
+            - [" ", ""]
+            - ["#", "dpad_left"]
+            - ["#", "key_left"]
+            - ["#", "key_previous"]
+            - ["#", "key_left"]
+            - ["t", "Left stick or POV"]
+            - ["#", "dolphin"]
+        -
+          cells:
+            - [" ", ""]
+            - ["#", "dpad_right"]
+            - ["#", "key_right"]
+            - ["#", "key_next"]
+            - ["#", "key_right"]
+            - ["t", "Left stick or POV"]
+            - ["#", "dolphin"]
+        -
+          cells:
+            - [" ", ""]
+            - ["#", "button_1"]
+            - ["#", "key_pageup"]
+            - ["#", "key_forward"]
+            - ["t", "?"]
+            - ["t", "Button 1"]
+            - ["#", "dolphin"]
+        -
+          cells:
+            - [" ", ""]
+            - ["#", "button_2"]
+            - ["#", "key_pagedown"]
+            - ["#", "key_rewind"]
+            - ["t", "?"]
+            - ["t", "Button 2"]
+            - ["#", "dolphin"]
+        -
+          cells:
+            - [" ", ""]
+            - ["#", "button_A"]
+            - ["#", "mouse_left"]
+            - ["#", "mouse_left"]
+            - ["#", "mouse_left"]
+            - ["t", "Button 3"]
+            - ["#", "dolphin"]
+        -
+          cells:
+            - [" ", ""]
+            - ["#", "button_B"]
+            - ["#", "mouse_right"]
+            - ["#", "mouse_right"]
+            - ["#", "mouse_right"]
+            - ["t", "Button 4"]
+            - ["#", "dolphin"]
+        -
+          cells:
+            - [" ", ""]
+            - ["#", "button_minus"]
+            - ["#", "mouse_up"]
+            - ["#", "key_volume_down"]
+            - ["#", "key_esc"]
+            - ["t", "Button 5"]
+            - ["#", "dolphin"]
+        -
+          cells:
+            - [" ", ""]
+            - ["#", "button_plus"]
+            - ["#", "mouse_down"]
+            - ["#", "key_volume_up"]
+            - ["#", "key_enter"]
+            - ["t", "Button 6"]
+            - ["#", "dolphin"]
+        -
+          cells:
+            - [" ", ""]
+            - ["#", "button_home"]
+            - ["#", "key_win"]
+            - ["#", "key_win"]
+            - ["#", "key_win"]
+            - ["t", "Button 12"]
+            - ["#", "dolphin"]
+        -
+          cells:
+            - [" ", ""]
+            - ["#", "button_power"]
+            - ["T", "Shut off the\nconnection"]
+            - ["T", "Shut off the\nconnection"]
+            - ["T", "Shut off the\nconnection"]
+            - ["t", "?"]
+            - ["#", "dolphin"]
+    -
+      label: "Nunchuk"
+      row_height: 20
+      data:
+        -
+          cells:
+            - [" ", ""]
+            - ["t", "Accelerometer"]
+            - ["t", "-"]
+            - ["t", "-"]
+            - ["t", "-"]
+            - ["t", "?"]
+            - ["#", "dolphin"]
+        -
+          cells:
+            - [" ", ""]
+            - ["#", "analog_stick"]
+            - ["t", "-"]
+            - ["t", "-"]
+            - ["#", "keys_arrows"]
+            - ["t", "Analog X/Y"]
+            - ["#", "dolphin"]
+        -
+          cells:
+            - [" ", ""]
+            - ["#", "button_Z"]
+            - ["t", "-"]
+            - ["t", "-"]
+            - ["#", "mouse_left"]
+            - ["t", "Button 7"]
+            - ["#", "dolphin"]
+        -
+          cells:
+            - [" ", ""]
+            - ["#", "button_C"]
+            - ["t", "-"]
+            - ["t", "-"]
+            - ["#", "mouse_right"]
+            - ["t", "Button 8"]
+            - ["#", "dolphin"]
+    -
+      label: "Classic Controller"
+      row_height: 20
+      data:
+        -
+          cells:
+            - [" ", ""]
+            - ["#", "button_classic_y"]
+            - ["t", "-"]
+            - ["t", "-"]
+            - ["t", "-"]
+            - ["t", "Button 1"]
+            - ["#", "dolphin"]
+        -
+          cells:
+            - [" ", ""]
+            - ["#", "button_classic_x"]
+            - ["t", "-"]
+            - ["t", "-"]
+            - ["t", "-"]
+            - ["t", "Button 2"]
+            - ["#", "dolphin"]
+        -
+          cells:
+            - [" ", ""]
+            - ["#", "button_classic_b"]
+            - ["t", "-"]
+            - ["t", "-"]
+            - ["t", "-"]
+            - ["t", "Button 3"]
+            - ["#", "dolphin"]
+        -
+          cells:
+            - [" ", ""]
+            - ["#", "button_classic_a"]
+            - ["t", "-"]
+            - ["t", "-"]
+            - ["t", "-"]
+            - ["t", "Button 4"]
+            - ["#", "dolphin"]
+        -
+          cells:
+            - [" ", ""]
+            - ["#", "button_classic_L"]
+            - ["t", "-"]
+            - ["t", "-"]
+            - ["t", "-"]
+            - ["t", "Button 5"]
+            - ["#", "dolphin"]
+        -
+          cells:
+            - [" ", ""]
+            - ["#", "button_classic_R"]
+            - ["t", "-"]
+            - ["t", "-"]
+            - ["t", "-"]
+            - ["t", "Button 6"]
+            - ["#", "dolphin"]
+        -
+          cells:
+            - [" ", ""]
+            - ["#", "button_classic_ZL"]
+            - ["t", "-"]
+            - ["t", "-"]
+            - ["t", "-"]
+            - ["t", "Button 7"]
+            - ["#", "dolphin"]
+        -
+          cells:
+            - [" ", ""]
+            - ["#", "button_classic_ZR"]
+            - ["t", "-"]
+            - ["t", "-"]
+            - ["t", "-"]
+            - ["t", "Button 8"]
+            - ["#", "dolphin"]
+        -
+          cells:
+            - [" ", ""]
+            - ["#", "button_minus"]
+            - ["t", "-"]
+            - ["t", "-"]
+            - ["t", "-"]
+            - ["t", "Button 9"]
+            - ["#", "dolphin"]
+        -
+          cells:
+            - [" ", ""]
+            - ["#", "button_plus"]
+            - ["t", "-"]
+            - ["t", "-"]
+            - ["t", "-"]
+            - ["t", "Button 10"]
+            - ["#", "dolphin"]
+        -
+          cells:
+            - [" ", ""]
+            - ["#", "button_home"]
+            - ["t", "-"]
+            - ["t", "-"]
+            - ["t", "-"]
+            - ["t", "Button 12"]
+            - ["#", "dolphin"]
+        -
+          cells:
+            - [" ", ""]
+            - ["#", "dpad"]
+            - ["t", "-"]
+            - ["t", "-"]
+            - ["t", "-"]
+            - ["t", "POV"]
+            - ["#", "dolphin"]
+        -
+          cells:
+            - [" ", ""]
+            - ["#", "twin_analog_sticks"]
+            - ["t", "-"]
+            - ["t", "-"]
+            - ["t", "-"]
+            - ["t", "Analog sticks"]
+            - ["#", "dolphin"]
 
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="0 0 50 30"
+<svg
+
+{% if page.mode == "demonstration" %}
+	viewBox="0 0 50 30"
+{% elsif page.mode == "cheatsheet" %}
+	{% assign cheatsheet = page.cheatsheet %}
+
+	{% assign cheatsheet_width = 0 %}
+	{% for column in cheatsheet.columns %}
+		{% assign cheatsheet_width = cheatsheet_width | plus: column %}
+	{% endfor %}
+
+	{% assign cheatsheet_height = 0 %}
+	{% for section in cheatsheet.sections %}
+
+		{% assign section_height = 0 %}
+		{% for row in section.data %}
+			{% assign height = section.row_height %}
+			{% if row.height %}
+				{% assign height = row.height %}
+			{% endif %}
+			{% assign section_height = section_height | plus: height %}
+		{% endfor %}
+
+		{% assign cheatsheet_height = cheatsheet_height | plus: section_height %}
+	{% endfor %}
+
+	{% assign extra_at_right = cheatsheet.row_padding | times: 2 | plus: 6 | plus: 2 %}
+	{% assign page_width = cheatsheet_width | plus: extra_at_right %}
+	{% assign page_height = cheatsheet_height %}
+
+	viewBox="0 0 {{ page_width }} {{ page_height }}"
+	{% assign page_absolute_width = 1024.0 %}
+	{% assign page_absolute_height = page_absolute_width | times: page_height | divided_by: page_width %}
+	width="{{ page_absolute_width }}px"
+	height="{{ page_absolute_height }}px"
+{% endif %}
+
 	version="1.1"
 	xmlns="http://www.w3.org/2000/svg"
 	xmlns:xlink="http://www.w3.org/1999/xlink"
 >
+
+<style type="text/css"><![CDATA[
+{% if page.mode == "cheatsheet" %}
+
+.cheatsheet rect.section:nth-child(odd) {
+	fill: #bef9eb;
+}
+.cheatsheet rect.section:nth-child(even) {
+	fill: #c0ebf9;
+}
+
+.cheatsheet rect.column {
+	fill: #ffffff;
+}
+.cheatsheet rect.column:nth-child(odd) {
+	opacity: 0.25;
+}
+.cheatsheet rect.column:first-child,
+.cheatsheet rect.column:nth-child(even) {
+	opacity: 0;
+}
+
+.cheatsheet rect.row {
+	fill: #ffffff;
+}
+.cheatsheet rect.row:nth-child(odd) {
+	opacity: 0;
+}
+.cheatsheet rect.row:nth-child(even) {
+	opacity: 0.25;
+}
+
+.cheatsheet .section_labels text.section_label {
+	font-family: "Arial", sans-serif;
+	font-size: 8px;
+	text-anchor: middle;
+	dominant-baseline: central;
+	fill: black;
+}
+
+.cheatsheet .section_data_cell > text {
+	font-family: "Arial", sans-serif;
+	font-size: 6px;
+	text-anchor: middle;
+	dominant-baseline: central;
+	fill: black;
+}
+.cheatsheet .section_data:first-child .section_data_row:first-child text {
+	font-weight: bold;
+}
+
+.cheatsheet text.title {
+	font-family: "Arial", sans-serif;
+	font-size: 8px;
+	text-anchor: middle;
+	dominant-baseline: central;
+	fill: black;
+}
+
+.cheatsheet text.aside {
+	font-family: "Arial", sans-serif;
+	font-size: 6px;
+	text-anchor: start;
+	dominant-baseline: central;
+	fill: black;
+}
+
+{% endif %}
+]]></style>
+
 <defs>
 
 <!-- ** Wii Remote and Classic Controller D-Pad. ** -->
@@ -338,6 +796,11 @@ demonstration_ids:
 	<ellipse cx="16" cy="10" rx="11" ry="8" stroke-width="0.4" stroke="#777" fill="url(#analog_stick_gradient1)"/>
 </symbol>
 
+<symbol id="twin_analog_sticks" viewBox="0 0 2 1">
+	<use xlink:href="#analog_stick" x="0" y="0" width="1" height="1" />
+	<use xlink:href="#analog_stick" x="1" y="0" width="1" height="1" />
+</symbol>
+
 <!-- ** A computer mouse. ** -->
 
 <radialGradient id="mouse_gradient" cx="0.5" cy="0.5" r="0.5" fx="0.5" fy="0.75">
@@ -366,8 +829,10 @@ demonstration_ids:
 	<use xlink:href="#mouse_shape" x="0" y="0" />
 </clipPath>
 
+{% assign mouse_width = 28 %}
+{% assign mouse_height = 36 %}
 <!-- Inspired by https://openclipart.org/detail/211818/mouse -->
-<symbol id="mouse" viewBox="-2 -2 36 36">
+<symbol id="mouse" viewBox="2 -2 {{ mouse_width }} {{ mouse_height }}">
 	<!-- DEBUG: rect x="-5" y="-5" width="50" height="50" fill="lime"/ -->
 
 	<!-- Shadow. -->
@@ -387,24 +852,24 @@ demonstration_ids:
 	<use xlink:href="#mouse_shape" x="0" y="0" stroke-width="0.5" stroke="#8a8993" fill="none" />
 </symbol>
 
-<symbol id="mouse_left" viewBox="0 0 36 36">
-	<use xlink:href="#mouse" x="0" y="0" width="36" height="36" />
-	<use xlink:href="#mouse_left_button" x="2" y="2" stroke="none" fill="url(#dpad_press_gradient)"/>
+<symbol id="mouse_left" viewBox="0 0 {{ mouse_width }} {{ mouse_height }}">
+	<use xlink:href="#mouse" x="0" y="0" width="{{ mouse_width }}" height="{{ mouse_height }}" />
+	<use xlink:href="#mouse_left_button" x="-2" y="2" stroke="none" fill="url(#dpad_press_gradient)"/>
 </symbol>
 
-<symbol id="mouse_right" viewBox="0 0 36 36">
-	<use xlink:href="#mouse" x="0" y="0" width="36" height="36" />
-	<use xlink:href="#mouse_right_button" x="2" y="2" stroke="none" fill="url(#dpad_press_gradient)"/>
+<symbol id="mouse_right" viewBox="0 0 {{ mouse_width }} {{ mouse_height }}">
+	<use xlink:href="#mouse" x="0" y="0" width="{{ mouse_width }}" height="{{ mouse_height }}" />
+	<use xlink:href="#mouse_right_button" x="-2" y="2" stroke="none" fill="url(#dpad_press_gradient)"/>
 </symbol>
 
-<symbol id="mouse_up" viewBox="0 0 36 36">
-	<use xlink:href="#mouse" x="0" y="0" width="36" height="36" />
-	<use xlink:href="#mouse_wheel" x="2" y="2" stroke="none" fill="url(#mouse_wheel_gradient_up)"/>
+<symbol id="mouse_up" viewBox="0 0 {{ mouse_width }} {{ mouse_height }}">
+	<use xlink:href="#mouse" x="0" y="0" width="{{ mouse_width }}" height="{{ mouse_height }}" />
+	<use xlink:href="#mouse_wheel" x="-2" y="2" stroke="none" fill="url(#mouse_wheel_gradient_up)"/>
 </symbol>
 
-<symbol id="mouse_down" viewBox="0 0 36 36">
-	<use xlink:href="#mouse" x="0" y="0" width="36" height="36" />
-	<use xlink:href="#mouse_wheel" x="2" y="2" stroke="none" fill="url(#mouse_wheel_gradient_down)"/>
+<symbol id="mouse_down" viewBox="0 0 {{ mouse_width }} {{ mouse_height }}">
+	<use xlink:href="#mouse" x="0" y="0" width="{{ mouse_width }}" height="{{ mouse_height }}" />
+	<use xlink:href="#mouse_wheel" x="-2" y="2" stroke="none" fill="url(#mouse_wheel_gradient_down)"/>
 </symbol>
 
 <!-- ** A key from a keyboard. ** -->
@@ -420,20 +885,22 @@ demonstration_ids:
 	<stop offset="1"     stop-color="#cccccc" />
 </linearGradient>
 
+{% assign key_width = 36 %}
+{% assign key_height = 32 %}
 <!-- Inspired by https://openclipart.org/detail/27549/keyboard-keys -->
-<symbol id="key" viewBox="-2 -2 36 36">
+<symbol id="key" viewBox="-2 -2 {{ key_width }} {{ key_height }}">
 	<!-- DEBUG: rect x="-5" y="-5" width="50" height="50" fill="lime"/ -->
 
 	<!-- Shadow. -->
-	<rect x="1" y="3" width="32" height="28" rx="4" stroke-width="0.5" stroke="#000000" fill="#000000" />
+	<rect x="1" y="1" width="32" height="28" rx="4" stroke-width="0.5" stroke="#000000" fill="#000000" />
 
 	<!-- Base. -->
-	<rect x="0" y="2" width="32" height="28" rx="4" stroke-width="0.5" stroke="#8a8993" fill="url(#key_gradient1)" />
-	<rect x="3" y="4" width="26" height="23" rx="3" stroke-width="0.25" stroke="#8a8993" fill="url(#key_gradient2)" />
+	<rect x="0" y="0" width="32" height="28" rx="4" stroke-width="0.5" stroke="#8a8993" fill="url(#key_gradient1)" />
+	<rect x="3" y="2" width="26" height="23" rx="3" stroke-width="0.25" stroke="#8a8993" fill="url(#key_gradient2)" />
 
 </symbol>
 
-<!-- ** Symbols for keyboard keys. ** -->
+<!-- ** Symbols for keyboard keys. For an arbitrary reason, they are restricted to 13x13. ** -->
 
 <path id="arrow_up" d="M 2,0 l 2,5 h-1.5 v8 h-1 v-8 h-1.5 z" />
 <use id="arrow_right" xlink:href="#arrow_up" x="0" y="0" transform="translate(13 0) rotate(90)" />
@@ -459,7 +926,7 @@ demonstration_ids:
 <symbol id="volume_up" viewBox="0 0 13 13">
 	<use xlink:href="#volume_down" x="0" y="0" width="13" height="13" />
 	<path d="M9,2 q0.5,-0.5 1,0 v5 q-0.5,0.5 -1,0 z" />
-	<!--path d="
+	<!-- DEBUG: path d="
 		M0,0 h0.1 v13 h-0.1 z
 		M13,0 h-0.1 v13 h0.1 z
 		M0,0 v0.1 h13 v-0.1 z
@@ -497,42 +964,42 @@ demonstration_ids:
 
 {% assign names = 'up right down left enter' | split: ' ' %}
 {% for name in names %}
-<symbol id="key_{{ name }}" viewBox="0 0 36 36">
-	<use xlink:href="#key" x="0" y="0" width="36" height="36" />
+<symbol id="key_{{ name }}" viewBox="0 0 {{ key_width }} {{ key_height }}">
+	<use xlink:href="#key" x="0" y="0" width="{{ key_width }}" height="{{ key_height }}" />
 	<use xlink:href="#arrow_{{ name }}" x="8" y="8" fill="#404020" />
 </symbol>
 {% endfor %}
 
 {% assign names = 'win volume_up volume_down play_pause stop previous next rewind forward' | split: ' ' %}
 {% for name in names %}
-<symbol id="key_{{ name }}" viewBox="0 0 36 36">
-	<use xlink:href="#key" x="0" y="0" width="36" height="36" />
+<symbol id="key_{{ name }}" viewBox="0 0 {{ key_width }} {{ key_height }}">
+	<use xlink:href="#key" x="0" y="0" width="{{ key_width }}" height="{{ key_height }}" />
 	<use xlink:href="#{{ name }}" x="8" y="8" width="13" height="13" fill="#404020" />
 </symbol>
 {% endfor %}
 
-<symbol id="key_esc" viewBox="0 0 36 36">
-	<use xlink:href="#key" x="0" y="0" width="36" height="36" />
+<symbol id="key_esc" viewBox="0 0 {{ key_width }} {{ key_height }}">
+	<use xlink:href="#key" x="0" y="0" width="{{ key_width }}" height="{{ key_height }}" />
 	<text x="8" y="8" font-size="8px" font-family="Arial, sans-serif" font-style="italic" fill="#404020" text-anchor="start" dominant-baseline="text-before-edge">Esc</text>
 </symbol>
 
-<symbol id="key_pageup" viewBox="0 0 36 36">
-	<use xlink:href="#key" x="0" y="0" width="36" height="36" />
+<symbol id="key_pageup" viewBox="0 0 {{ key_width }} {{ key_height }}">
+	<use xlink:href="#key" x="0" y="0" width="{{ key_width }}" height="{{ key_height }}" />
 	<text x="8" y="8" font-size="8px" font-family="Arial, sans-serif" font-style="italic" fill="#404020" text-anchor="start" dominant-baseline="text-before-edge">Page</text>
 	<text x="8" y="17" font-size="8px" font-family="Arial, sans-serif" font-style="italic" fill="#404020" text-anchor="start" dominant-baseline="text-before-edge">Up</text>
 </symbol>
 
-<symbol id="key_pagedown" viewBox="0 0 36 36">
-	<use xlink:href="#key" x="0" y="0" width="36" height="36" />
+<symbol id="key_pagedown" viewBox="0 0 {{ key_width }} {{ key_height }}">
+	<use xlink:href="#key" x="0" y="0" width="{{ key_width }}" height="{{ key_height }}" />
 	<text x="8" y="8" font-size="8px" font-family="Arial, sans-serif" font-style="italic" fill="#404020" text-anchor="start" dominant-baseline="text-before-edge">Page</text>
 	<text x="8" y="17" font-size="8px" font-family="Arial, sans-serif" font-style="italic" fill="#404020" text-anchor="start" dominant-baseline="text-before-edge">Down</text>
 </symbol>
 
-<symbol id="keys_arrows" viewBox="0 0 3 2">
-	<use xlink:href="#key_up"    x="1" y="0" width="1" height="1" />
-	<use xlink:href="#key_left"  x="0" y="1" width="1" height="1" />
-	<use xlink:href="#key_down"  x="1" y="1" width="1" height="1" />
-	<use xlink:href="#key_right" x="2" y="1" width="1" height="1" />
+<symbol id="keys_arrows" viewBox="0 0 {{ key_width | times: 3 }} {{ key_height | times: 2 }}">
+	<use xlink:href="#key_up"    x="{{ key_width | times: 1 }}" y="{{ key_height | times: 0 }}" width="{{ key_width }}" height="{{ key_height }}" />
+	<use xlink:href="#key_left"  x="{{ key_width | times: 0 }}" y="{{ key_height | times: 1 }}" width="{{ key_width }}" height="{{ key_height }}" />
+	<use xlink:href="#key_down"  x="{{ key_width | times: 1 }}" y="{{ key_height | times: 1 }}" width="{{ key_width }}" height="{{ key_height }}" />
+	<use xlink:href="#key_right" x="{{ key_width | times: 2 }}" y="{{ key_height | times: 1 }}" width="{{ key_width }}" height="{{ key_height }}" />
 </symbol>
 
 <!-- ** Wii Remote LED indicators. ** -->
@@ -594,18 +1061,173 @@ demonstration_ids:
 	<use xlink:href="#wii_led_on"  x="70" y="70" />
 </symbol>
 
+{% assign names = 'wii_leds_12 wii_leds_13 wii_leds_14' | split: ' ' %}
+{% for name in names %}
+<symbol id="{{ name }}_square" viewBox="0 0 1 1">
+	<use xlink:href="#{{ name }}"  x="0" y="0" width="1" height="1" />
+</symbol>
+{% endfor %}
+
+{% assign names = 'down left up right' | split: ' ' %}
+{% for name in names %}
+<symbol id="home_and_{{ name }}" viewBox="0 0 2 1">
+	<use xlink:href="#button_home"  x="0" y="0" width="1" height="1" />
+	<use xlink:href="#dpad_{{ name }}"  x="1" y="0" width="1" height="1" />
+</symbol>
+{% endfor %}
+
 <!-- ** End of definitions. ** -->
+
+{% if page.mode == "cheatsheet" %}
+<linearGradient id="dolphin_gradient" x1="0" y1="0" x2="0" y2="1">
+	<stop offset="0" stop-color="#46D4FF" />
+	<stop offset="1" stop-color="#1792FF" />
+</linearGradient>
+
+<!-- Based on https://commons.wikimedia.org/wiki/File:Dolphin-logo.svg -->
+<symbol id="dolphin" viewBox="0 0 2048.0371 1128.51">
+	<path fill="#0057ab" d="m 2046.8003,1078.6481 c -6.813,-22.834 -49.283,-160.53702 -120.831,-292.56702 -94.261,-173.943 -175.33,-298.279 -310.402,-424.563 -43.445,-40.618 -84.6,-76.916 -127.448,-109.498 l 0.047,0 c 0,0 -0.329,-0.232 -0.926,-0.673 -0.801,-0.607 -1.602,-1.214 -2.403,-1.818 -15.987,-12.352 -83.345,-69.109 -59.382,-131.767 8.031,-21 27.421,-38.45 50.479,-52.569 l 124.091,-1.011 0,-46 -0.03,0.001 c 10e-4,0 0.016,-0.003 0.016,-0.003 0,0 -72.661,-24.686 -199.807,-16.53 -119.328,7.655 -226.545,77.432 -246.588,87.241 -64.265,-18.396 -137.59,-34.619 -223.34403,-49.168 -296.609,-50.323 -547.639,29.896 -673.604,117.325 -165.101,114.592 -160.533,221.368 -174.144,274.776 -8.431,33.085 -83.408,94.263 -82.51,137.183 l 0,45.18 15.489,15.96 366.732,-136.734 212.575,-14.886 363.523,287.636 113.66803,16.846 0,-45.969 -0.087,-0.035 c 0.022,0 0.035,0 0.035,0 0,0 -95.43403,-39.648 -154.14603,-98.356 -39.956,-39.953 -49.518,-100.64 -51.552,-135.342 l 0.359,0.033 c 237.41163,48.3327 403.74023,95.9459 569.20303,230.408 l 108.183,89.527 0,-45.969 -0.358,-0.332 c -1.596,-1.983 -124.799,-154.603 -331.827,-256.712 -171.102,-84.392 -311.58503,-126.087 -506.22903,-135.527 -212.756,-10.319 -369.522,16.999 -369.522,16.999 0,0 4.385,-94.537 165.003,-169.88 139.666,-65.516 359.388,-76.481 611.55803,-12.15 356.261,90.886 477.766,245.646 631.012,405.573 128.3132,136.7139 206.0481,267.9525 262.651,414.13702 l 41.753,89.096 0,-46.264 -1.237,-3.603 z" />
+	<path fill="url(#dolphin_gradient)" d="m 1925.9693,832.08008 c -94.261,-173.943 -175.33,-298.279 -310.402,-424.563 -43.446,-40.619 -84.601,-76.917 -127.45,-109.499 l 0.049,0.01 c 0,0 -0.34,-0.24 -0.962,-0.699 -0.773,-0.586 -1.547,-1.172 -2.321,-1.757 -15.904,-12.279 -83.413,-69.084 -59.428,-131.801 26.32,-68.822 174.556,-99.582 174.556,-99.582 0,0 -72.661,-24.686 -199.807,-16.53 -119.328,7.655 -226.545,77.432 -246.588,87.241 -64.265,-18.396 -137.59,-34.619 -223.34403,-49.168 -296.609,-50.323 -547.639,29.896 -673.604,117.325 -165.101,114.592 -160.533,221.368 -174.144,274.776 -9.794,38.432 -109.389,114.772 -75.534,156.367 21.122,25.95 91.411,-9.289 148.113,-32.611 59.615,-24.521 64.209,-37.859 227.133,-62.168 74.956,-11.184 153.843,-14.393 212.575,-14.886 22.855,48.26 79.68,147.46 178.133,195.042 132.934,64.246 299.00503,63.438 299.00503,63.438 0,0 -95.43403,-39.648 -154.14603,-98.356 -39.956,-39.953 -49.518,-100.64 -51.552,-135.342 l 0.359,0.033 c 96.193,18.278 180.21503,31.468 381.15603,108.425 175.815,67.334 295.91,165.256 295.91,165.256 0,0 -123.479,-153.98 -331.865,-256.76 -171.102,-84.391 -311.58503,-126.086 -506.22903,-135.526 -212.756,-10.319 -369.522,16.999 -369.522,16.999 0,0 4.385,-94.537 165.003,-169.88 139.666,-65.516 359.388,-76.481 611.55803,-12.15 356.261,90.886 477.766,245.646 631.012,405.573 163.107,170.22 304.146,456.68502 304.146,456.68502 0,0 -43.489,-151.35702 -121.81,-295.88702 z" />
+</symbol>
+{% endif %}
 
 </defs>
 
-{% for row in page.demonstration_ids %}
-	{% assign y = forloop.index0 | times: 5 %}
-	{% for name in row %}
-		{% assign x = forloop.index0 | times: 5 %}
-		{% if name %}
-			<use xlink:href="#{{name}}" x="{{ x }}" y="{{ y }}" width="5" height="5" />
-		{% endif %}
+{% if page.mode == "demonstration" %}
+
+	{% for row in page.demonstration_ids %}
+		{% assign y = forloop.index0 | times: 5 %}
+		{% for name in row %}
+			{% assign x = forloop.index0 | times: 5 %}
+			{% if name %}
+				<use xlink:href="#{{name}}" x="{{ x }}" y="{{ y }}" width="5" height="5" />
+			{% endif %}
+		{% endfor %}
 	{% endfor %}
-{% endfor %}
+
+{% elsif page.mode == "cheatsheet" %}
+
+	<g class="cheatsheet">
+
+		<g class="sections">
+		{% assign y = 0 %}
+		{% for section in cheatsheet.sections %}
+
+			{% assign section_height = 0 %}
+			{% for row in section.data %}
+				{% assign height = section.row_height %}
+				{% if row.height %}
+					{% assign height = row.height %}
+				{% endif %}
+				{% assign section_height = section_height | plus: height %}
+			{% endfor %}
+
+			<rect x="0" y="{{ y }}" width="{{ cheatsheet_width }}" height="{{ section_height }}" class="section" />
+			{% assign y = y | plus: section_height %}
+		{% endfor %}
+		</g>
+
+		<g class="section_labels">
+		{% assign y = 0 %}
+		{% for section in cheatsheet.sections %}
+
+			{% assign section_height = 0 %}
+			{% for row in section.data %}
+				{% assign height = section.row_height %}
+				{% if row.height %}
+					{% assign height = row.height %}
+				{% endif %}
+				{% assign section_height = section_height | plus: height %}
+			{% endfor %}
+
+			{% if section.label %}
+				<text x="0" y="0" transform="translate({{ cheatsheet.columns[0] | divided_by: 2.0 }} {{ section_height | divided_by: 2.0 | plus: y }}) rotate(-90)" class="section_label">{{ section.label }}</text>
+			{% endif %}
+			{% assign y = y | plus: section_height %}
+		{% endfor %}
+		</g>
+
+		<g class="columns">
+		{% assign x = 0 %}
+		{% for column in cheatsheet.columns %}
+			<rect x="{{ x }}" y="0" width="{{ column }}" height="{{ cheatsheet_height }}" class="column" />
+			{% assign x = x | plus: column %}
+		{% endfor %}
+		</g>
+
+		<g class="rows">
+		{% assign y = 0 %}
+		{% for section in cheatsheet.sections %}
+			<g class="section_rows">
+			{% for row in section.data %}
+				{% assign height = section.row_height %}
+				{% if row.height %}
+					{% assign height = row.height %}
+				{% endif %}
+				<rect x="{{ 0 | plus: cheatsheet.columns[0] }}" y="{{ y }}" width="{{ cheatsheet_width | minus: cheatsheet.columns[0] }}" height="{{ height }}" class="row" />
+				{% assign y = y | plus: height %}
+			{% endfor %}
+			</g>
+		{% endfor %}
+		</g>
+
+		<g class="data">
+		{% assign y = 0 %}
+		{% for section in cheatsheet.sections %}
+			<g class="section_data">
+			{% for row in section.data %}
+				<g class="section_data_row">
+				{% assign height = section.row_height %}
+				{% if row.height %}
+					{% assign height = row.height %}
+				{% endif %}
+				{% assign x = 0 %}
+				{% for cell in row.cells %}
+					<g class="section_data_cell">
+						{% assign width = cheatsheet.columns[forloop.index0] %}
+						{% assign type = cell[0] %}
+						{% assign value = cell[1] %}
+						<!-- x={{ x }} y={{ y }} width={{ width }} height={{ height }} type={{ type }} value={{ value }} -->
+						{% if type == "t" %}
+							<text x="{{ width | divided_by: 2.0 | plus: x }}" y="{{ height | divided_by: 2.0 | plus: y }}">{{ value }}</text>
+						{% elsif type == "T" %}
+							{% comment %} https://stackoverflow.com/questions/27694610/how-can-i-split-a-string-by-newline-in-shopify {% endcomment %}
+							{% assign textlines = value | newline_to_br | strip_newlines | split: "<br />" %}
+							{% assign divisions = textlines.size | plus: 1.0 %}
+							{% for textline in textlines %}
+								<text x="{{ width | divided_by: 2.0 | plus: x }}" y="{{ height | divided_by: divisions | times: forloop.index | plus: y }}">{{ textline }}</text>
+							{% endfor %}
+						{% elsif type == "#" %}
+							<use xlink:href="#{{ value }}" x="{{ x | plus: cheatsheet.row_padding }}" y="{{ y | plus: cheatsheet.row_padding }}" width="{{ cheatsheet.row_padding | times: -2 | plus: width }}" height="{{ cheatsheet.row_padding | times: -2 | plus: height }}" />
+						{% endif %}
+					</g>
+					{% assign x = x | plus: width %}
+				{% endfor %}
+				</g>
+				{% assign y = y | plus: height %}
+			{% endfor %}
+			</g>
+		{% endfor %}
+		</g>
+
+		<text x="0" y="0" class="title" transform="translate({{ cheatsheet.columns[0] | plus: cheatsheet.columns[1] | divided_by: 2.0 }} {{ 68 | divided_by: 2.0 }}) rotate(-45)">
+			<tspan x="0" y="-8">MAYFLASH</tspan>
+			<tspan x="0" y="0">Wireless Sensor</tspan>
+			<tspan x="0" y="8">DolphinBar</tspan>
+		</text>
+
+		<text x="0" y="0" class="aside" transform="translate({{ extra_at_right | divided_by: 2.0 | plus: cheatsheet_width  }} {{ cheatsheet.row_padding }}) rotate(90)">
+			<tspan>Product page: </tspan>
+			<a xlink:href="{{ page.dolphinbar_url }}"><tspan>{{ page.dolphinbar_url }}</tspan></a>
+			<tspan dx="8">Manual: </tspan>
+			<a xlink:href="{{ page.manual_url }}"><tspan>{{ page.manual_url }}</tspan></a>
+			<tspan dx="8">Firmware update: </tspan>
+			<a xlink:href="{{ page.firmware_url }}"><tspan>{{ page.firmware_url }}</tspan></a>
+			<tspan dx="8">Dolphin emulator: </tspan>
+			<a xlink:href="{{ page.dolphinemu_url }}"><tspan>{{ page.dolphinemu_url }}</tspan></a>
+		</text>
+	</g>
+
+{% endif %}
 
 </svg>

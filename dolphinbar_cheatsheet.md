@@ -3,19 +3,18 @@ layout: default
 ---
 
 <style type="text/css">
-table {
+main table {
 	border: 2px solid gray;
 	border-collapse: collapse;
 }
-td, th {
+main table td,
+main table th {
 	border: 1px solid gray;
 	padding: 2px;
 }
 </style>
 
 Tip: Pressing the sync button inside the battery cover of the Wii Remote will permanently sync it with the device (either a DolphinBar or a Wii). Pressing `1`+`2` will sync it temporarily.
-
-TODO: Must test all of this to make sure this table is accurate.
 
 |                          | Mode 1A                        | Mode 1B                            | Mode 2                       | Mode 3               | Mode 4                              |
 |--------------------------|--------------------------------|------------------------------------|------------------------------|----------------------|-------------------------------------|
@@ -66,6 +65,9 @@ Firmware update mode:
 3. Connect it to the USB, while holding `SYNC`.
 4. If this is the first time, wait until Windows detects the device and installs its drivers. It may take a couple of minutes.
 
-TODO: Add link here to the product page and to the firmware updater download page.
+Links:
 
-TODO: Add link to the Dolphin homepage: https://dolphin-emu.org/
+* Product page: http://www.mayflash.com/Products/NINTENDOWiiGC/W010.html
+* Firmware download: http://www.mayflash.com/Support/Download/
+* Manual: https://imgur.com/a/LBagg
+* Dolphin emulator: https://dolphin-emu.org/
