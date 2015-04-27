@@ -3,9 +3,6 @@
 # Easy way to fix tabs in the preamble in Vim:
 # :1,2/^---$/s/\t/    /g
 
-# TODO:
-# * Upload the demonstration to openclipart.
-
 #mode: "demonstration"
 mode: "cheatsheet"
 
@@ -32,7 +29,7 @@ denilsonsa_url: "http://denilson.sa.nom.br/"
 
 cheatsheet:
   row_padding: 1
-  columns: [12, 45, 65, 65, 65, 65, 65]
+  columns: [12, 35, 65, 65, 65, 65, 65]
   sections:
     -
       label: ""
@@ -87,16 +84,7 @@ cheatsheet:
             - ["#", "mouse"]
             - ["#", "mouse"]
             - ["#", "mouse"]
-            - [" ", ""]
-            - ["#", "dolphin"]
-        -
-          cells:
-            - [" ", ""]
-            - ["t", "Accelerometer"]
-            - ["t", "-"]
-            - ["t", "-"]
-            - ["t", "-"]
-            - [" ", ""]
+            - ["T", "Alone: nothing\n+Nunchuk: extra axes"]
             - ["#", "dolphin"]
         -
           cells:
@@ -105,7 +93,7 @@ cheatsheet:
             - ["#", "key_up"]
             - ["#", "key_stop"]
             - ["#", "key_up"]
-            - ["t", "Left stick or POV"]
+            - ["T", "Alone: rotated X/Y\n+Nunchuk: POV"]
             - ["#", "dolphin"]
         -
           cells:
@@ -114,7 +102,7 @@ cheatsheet:
             - ["#", "key_down"]
             - ["#", "key_play_pause"]
             - ["#", "key_down"]
-            - ["t", "Left stick or POV"]
+            - ["T", "Alone: rotated X/Y\n+Nunchuk: POV"]
             - ["#", "dolphin"]
         -
           cells:
@@ -123,7 +111,7 @@ cheatsheet:
             - ["#", "key_left"]
             - ["#", "key_previous"]
             - ["#", "key_left"]
-            - ["t", "Left stick or POV"]
+            - ["T", "Alone: rotated X/Y\n+Nunchuk: POV"]
             - ["#", "dolphin"]
         -
           cells:
@@ -132,7 +120,7 @@ cheatsheet:
             - ["#", "key_right"]
             - ["#", "key_next"]
             - ["#", "key_right"]
-            - ["t", "Left stick or POV"]
+            - ["T", "Alone: rotated X/Y\n+Nunchuk: POV"]
             - ["#", "dolphin"]
         -
           cells:
@@ -140,7 +128,7 @@ cheatsheet:
             - ["#", "button_1"]
             - ["#", "key_pageup"]
             - ["#", "key_forward"]
-            - ["t", "?"]
+            - ["#", "key_volume_up"]
             - ["t", "Button 1"]
             - ["#", "dolphin"]
         -
@@ -149,15 +137,15 @@ cheatsheet:
             - ["#", "button_2"]
             - ["#", "key_pagedown"]
             - ["#", "key_rewind"]
-            - ["t", "?"]
+            - ["#", "key_volume_down"]
             - ["t", "Button 2"]
             - ["#", "dolphin"]
         -
           cells:
             - [" ", ""]
             - ["#", "button_A"]
-            - ["#", "mouse_left"]
-            - ["#", "mouse_left"]
+            - ["#", "mouse_right"]
+            - ["#", "mouse_right"]
             - ["#", "mouse_left"]
             - ["t", "Button 3"]
             - ["#", "dolphin"]
@@ -165,8 +153,8 @@ cheatsheet:
           cells:
             - [" ", ""]
             - ["#", "button_B"]
-            - ["#", "mouse_right"]
-            - ["#", "mouse_right"]
+            - ["#", "mouse_left"]
+            - ["#", "mouse_left"]
             - ["#", "mouse_right"]
             - ["t", "Button 4"]
             - ["#", "dolphin"]
@@ -197,28 +185,10 @@ cheatsheet:
             - ["#", "key_win"]
             - ["t", "Button 12"]
             - ["#", "dolphin"]
-        -
-          cells:
-            - [" ", ""]
-            - ["#", "button_power"]
-            - ["T", "Shut off the\nconnection"]
-            - ["T", "Shut off the\nconnection"]
-            - ["T", "Shut off the\nconnection"]
-            - ["t", "?"]
-            - ["#", "dolphin"]
     -
       label: "Nunchuk"
       row_height: 20
       data:
-        -
-          cells:
-            - [" ", ""]
-            - ["t", "Accelerometer"]
-            - ["t", "-"]
-            - ["t", "-"]
-            - ["t", "-"]
-            - ["t", "?"]
-            - ["#", "dolphin"]
         -
           cells:
             - [" ", ""]
@@ -466,7 +436,8 @@ cheatsheet:
 	font-weight: bold;
 }
 
-.cheatsheet text.title {
+.cheatsheet text.title,
+.cheatsheet text.title tspan {
 	font-family: "Arial", sans-serif;
 	font-size: 8px;
 	text-anchor: middle;
@@ -1224,7 +1195,7 @@ cheatsheet:
 		{% endfor %}
 		</g>
 
-		<text x="0" y="0" class="title" transform="translate({{ cheatsheet.columns[0] | plus: cheatsheet.columns[1] | divided_by: 2.0 }} {{ 68 | divided_by: 2.0 }}) rotate(-45)">
+		<text x="0" y="0" class="title" transform="translate({{ cheatsheet.columns[0] | plus: cheatsheet.columns[1] | divided_by: 2.0 }} {{ 68 | divided_by: 2.0 }}) rotate(-60)">
 			<tspan x="0" y="-8">MAYFLASH</tspan>
 			<tspan x="0" y="0">Wireless Sensor</tspan>
 			<tspan x="0" y="8">DolphinBar</tspan>

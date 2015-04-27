@@ -23,22 +23,19 @@ Tip: Pressing the sync button inside the battery cover of the Wii Remote will pe
 | LEDs                     | 1 + 2                          | 1 + 3                              | 1 + 4                        | 1,2,3,4              | 1,2,3,4                             |
 | Combination              | Home + Down                    | Home + Down                        | Home + Left                  | Home + Up            | Home + Right                        |
 | Wii Remote               |                                |                                    |                              |                      |                                     |
-| IR Camera                | Mouse movement                 | Mouse movement                     | Mouse movement               | ???                  | Dolphin                             |
-| Accelerometer            | None                           | None                               | None                         | ???                  | Dolphin                             |
-| Up                       | ↑                              | Stop                               | ↑                            | Left joystick or POV | Dolphin                             |
-| Right                    | →                              | Previous                           | →                            | Left joystick or POV | Dolphin                             |
-| Down                     | ↓                              | Play/Pause                         | ↓                            | Left joystick or POV | Dolphin                             |
-| Left                     | ←                              | Next                               | ←                            | Left joystick or POV | Dolphin                             |
-| 1                        | Page up                        | Forward                            | ???                          | Button 1             | Dolphin                             |
-| 2                        | Page down                      | Rewind                             | ???                          | Button 2             | Dolphin                             |
-| A                        | Mouse left button              | Mouse left button                  | Mouse left button            | Button 3             | Dolphin                             |
-| B                        | Mouse right button             | Mouse right button                 | Mouse right button           | Button 4             | Dolphin                             |
+| IR Camera                | Mouse movement                 | Mouse movement                     | Mouse movement               | Extra analog axes    | Dolphin                             |
+| Up                       | ↑                              | Stop                               | ↑                            | X/Y or POV           | Dolphin                             |
+| Down                     | ↓                              | Play/Pause                         | ↓                            | X/Y or POV           | Dolphin                             |
+| Left                     | ←                              | Previous                           | ←                            | X/Y or POV           | Dolphin                             |
+| Right                    | →                              | Next                               | →                            | X/Y or POV           | Dolphin                             |
+| 1                        | Page up                        | Forward                            | Volume up                    | Button 1             | Dolphin                             |
+| 2                        | Page down                      | Rewind                             | Volume down                  | Button 2             | Dolphin                             |
+| A                        | Mouse right button             | Mouse right button                 | Mouse left button            | Button 3             | Dolphin                             |
+| B                        | Mouse left button              | Mouse left button                  | Mouse right button           | Button 4             | Dolphin                             |
 | Minus                    | Mouse scroll up                | Volume down                        | Esc                          | Button 5             | Dolphin                             |
 | Plus                     | Mouse scroll down              | Volume up                          | Enter                        | Button 6             | Dolphin                             |
 | Home                     | Win key                        | Win key                            | Win key                      | Button 12            | Dolphin                             |
-| Power                    | Shut off the connection        | Shut off the connection            | Shut off the connection      | ???                  | ???                                 |
 | Nunchuk                  |                                |                                    |                              |                      |                                     |
-| Accelerometer            | None                           | None                               | None                         | ???                  | Dolphin                             |
 | Analog stick             | None                           | None                               | Arrow keys                   | Analog X/Y           | Dolphin                             |
 | Z                        | None                           | None                               | Mouse left button            | Button 7             | Dolphin                             |
 | C                        | None                           | None                               | Mouse right button           | Button 8             | Dolphin                             |
@@ -71,3 +68,5 @@ Links:
 * Firmware download: http://www.mayflash.com/Support/Download/
 * Manual: https://imgur.com/a/LBagg
 * Dolphin emulator: https://dolphin-emu.org/
+
+Cheatsheet built by Denilson Sá, who is not affiliated with MAYFLASH nor with Dolphin emulator.
