@@ -99,7 +99,7 @@ As all other tries, nothing happened.
 
 Only one directory I have not checked yet: `/usr/share/upstart/sessions/`
 
-## Putting all pieces together
+## Putting all the pieces together
 
 What is the process that is listening to that socket?
 
@@ -135,7 +135,7 @@ And I found that `upstart --user` is the parent of `gnome-keyring`. In fact, the
     │  │  │  ├─ gnome-keyring-daemon --start --components pkcs11,secrets
     │  │  │  └─ dbus-daemon --fork --session --address=unix:abstract=/tmp/dbus-RaSShjXvPa
 
-So the login UI `lightdm` calls `upstart --user`, which in turn runs both `gnome-keyring` and `lxsession`. But it doesn't get run on *TWM*, *Fluxbox* and *Openbox* sessions? The answer lies in `/etc/upstart-xsessions`:
+So the login UI `lightdm` calls `upstart --user`, which in turn runs both `gnome-keyring` and `lxsession`. But why it doesn't run on *TWM*, *Fluxbox* and *Openbox* sessions? The answer lies in `/etc/upstart-xsessions`:
 
 ```
 # xsessions listed below are run inside an Upstart user session.
@@ -176,11 +176,20 @@ So I can create some `*.override` files with the [`manual` directive][manual] ([
 And that's what I did:
 
     $ mkdir -p ~/.config/upstart
-    $ echo manual > ~/.config/upstart/gnome-keyring.override
+    $ echo manual > ~/.config/upstart/gnome-keyring.override  # See note below.
     $ echo manual > ~/.config/upstart/gnome-keyring-ssh.override
     $ echo manual > ~/.config/upstart/gnome-keyring-gpg.override
 
 After logging out and logging back in… Success! Woohoo! No more *gnome-keyring* and no root access was required! And also now I have a better understanding of my system and of upstart!
+
+However, it was not without side-effects. Completely disabling *gnome-keyring* breaks `nm-applet` from *Network Manager*. The solution is to disable both *ssh* and *gpg* components of *gnome-keyring*, but leave the main deamon enabled and running.
+
+Here is the final solution:
+
+    $ mkdir -p ~/.config/upstart
+    $ rm ~/.config/upstart/gnome-keyring.override
+    $ echo manual > ~/.config/upstart/gnome-keyring-ssh.override
+    $ echo manual > ~/.config/upstart/gnome-keyring-gpg.override
 
 
 [lubuntu]: http://lubuntu.net/
