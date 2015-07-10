@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 29 24">
 <!-- Drawn from scratch, posted to http://stackapps.com/questions/347/svg-versions-of-the-logos -->
-<rect fill="#7a7876" width="4" height="4" x="0" y="20" />
-<rect fill="#a18466" width="4" height="6" x="5" y="18" />
-<rect fill="#b88b3d" width="4" height="9" x="10" y="15" />
-<rect fill="#c8811c" width="4" height="13" x="15" y="11" />
-<rect fill="#f48300" width="4" height="18" x="20" y="6" />
-<rect fill="#f66c01" width="4" height="24" x="25" y="0" />
+<rect fill="#7a7876" width="4" height="4" x="0" y="20"/>
+<rect fill="#a18466" width="4" height="6" x="5" y="18"/>
+<rect fill="#b88b3d" width="4" height="9" x="10" y="15"/>
+<rect fill="#c8811c" width="4" height="13" x="15" y="11"/>
+<rect fill="#f48300" width="4" height="18" x="20" y="6"/>
+<rect fill="#f66c01" width="4" height="24" x="25" y="0"/>
 </svg>

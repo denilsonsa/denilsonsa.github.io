@@ -3,26 +3,26 @@
 <!-- Drawn from scratch, based on https://twitter.com/Drawception avatar -->
 <defs>
 <linearGradient id="DrawceptionBlueGradient" x1="0.588" y1="0.32" x2="0.35" y2="0.9">
-	<stop stop-color="#54d1fb" offset="0" />
-	<stop stop-color="#00627a" offset="1" />
+	<stop stop-color="#54d1fb" offset="0"/>
+	<stop stop-color="#00627a" offset="1"/>
 </linearGradient>
 <radialGradient id="DrawceptionPencilRubberGradient" cx="0.4" cy="0.2" r="0.175">
-	<stop stop-color="#ffc6c6" offset="0.8" />
-	<stop stop-color="#e2908b" offset="1" />
+	<stop stop-color="#ffc6c6" offset="0.8"/>
+	<stop stop-color="#e2908b" offset="1"/>
 </radialGradient>
 <linearGradient id="DrawceptionPencilCapGradient" x1="0.3" y1="0" x2="0.7" y2="1">
-	<stop stop-color="#fff" offset="0" stop-opacity="0.76" />
-	<stop stop-color="#fff" offset="0.8" stop-opacity="0" />
+	<stop stop-color="#fff" offset="0" stop-opacity="0.76"/>
+	<stop stop-color="#fff" offset="0.8" stop-opacity="0"/>
 </linearGradient>
 <linearGradient id="DrawceptionPencilBodyGradient" x1="1" y1="0.1" x2="0" y2="0.9">
-	<stop stop-color="#ffe3b1" offset="0.38" />
-	<stop stop-color="#ffc253" offset="0.4" />
-	<stop stop-color="#ffc253" offset="0.5" />
-	<stop stop-color="#ca8300" offset="0.5" />
+	<stop stop-color="#ffe3b1" offset="0.38"/>
+	<stop stop-color="#ffc253" offset="0.4"/>
+	<stop stop-color="#ffc253" offset="0.5"/>
+	<stop stop-color="#ca8300" offset="0.5"/>
 </linearGradient>
 <linearGradient id="DrawceptionPencilTipGradient" x1="1" y1="0" x2="0" y2="1">
-	<stop stop-color="#fff" offset="0.1" stop-opacity="0.6" />
-	<stop stop-color="#fff" offset="0.5" stop-opacity="0" />
+	<stop stop-color="#fff" offset="0.1" stop-opacity="0.6"/>
+	<stop stop-color="#fff" offset="0.5" stop-opacity="0"/>
 </linearGradient>
 </defs>
 <g stroke-linecap="round" stroke-linejoin="round">
@@ -32,18 +32,18 @@
 		<path d="m49.871 14.205 7.9733-2.97 4.5964-1.6165m-3.0454-2.596-1.551 4.2126 4.3935 1.7703"/>
 		<path d="m24.454 19.243-12.916 0.232"/>
 	</g>
-	<path fill="url(#DrawceptionBlueGradient)" stroke="#191203" stroke-width="3" d="m41.099 16.46c0.02239 6.0871-4.8906 7.2339-7.6811 8.0284l-2.433-11.571c5.8892-1.5776 10.099-0.38686 10.114 3.543zm-19.299-10.975 6.248 31.937c13.877-2.272 22.519-11.475 21.876-22.006-0.469-7.6924-5.966-14.838-20.509-12.535l-10.501 2.1902z" />
-	<path fill="#ddf8ff" d="m47.98 19.766c2.021-17.611-13.235-17.191-24.541-13.897 13.605-2.7636 22.735-0.9876 24.541 13.897z" />
+	<path fill="url(#DrawceptionBlueGradient)" stroke="#191203" stroke-width="3" d="m41.099 16.46c0.02239 6.0871-4.8906 7.2339-7.6811 8.0284l-2.433-11.571c5.8892-1.5776 10.099-0.38686 10.114 3.543zm-19.299-10.975 6.248 31.937c13.877-2.272 22.519-11.475 21.876-22.006-0.469-7.6924-5.966-14.838-20.509-12.535l-10.501 2.1902z"/>
+	<path fill="#ddf8ff" d="m47.98 19.766c2.021-17.611-13.235-17.191-24.541-13.897 13.605-2.7636 22.735-0.9876 24.541 13.897z"/>
 	<g fill="none" stroke="#000" stroke-width="0.75">
-		<path fill="url(#DrawceptionPencilRubberGradient)" d="m2.2848 9.1925 4.0275-2.6721c-1.0332-1.3908-2.1574-3.5638-4.1049-2.3008-1.9476 1.263-0.4638 4.2825 0.0774 4.9729z" />
-		<path fill="#414141" d="m2.2848 9.1925 1.1381 1.9065 3.9979-2.8482-1.1085-1.7304z" />
-		<path fill="url(#DrawceptionPencilCapGradient)" stroke="none" d="m2.8814 9.3306 0.1327 0.2323 3.0391-1.9372 0.5029 0.7128 0.2902-0.1982-0.6666-1.0067z" />
-		<path fill="url(#DrawceptionPencilBodyGradient)" d="m3.4229 11.099 7.0029 10.792 1.1053-2.6427 3.053-0.0054l-7.1632-10.992z" />
+		<path fill="url(#DrawceptionPencilRubberGradient)" d="m2.2848 9.1925 4.0275-2.6721c-1.0332-1.3908-2.1574-3.5638-4.1049-2.3008-1.9476 1.263-0.4638 4.2825 0.0774 4.9729z"/>
+		<path fill="#414141" d="m2.2848 9.1925 1.1381 1.9065 3.9979-2.8482-1.1085-1.7304z"/>
+		<path fill="url(#DrawceptionPencilCapGradient)" stroke="none" d="m2.8814 9.3306 0.1327 0.2323 3.0391-1.9372 0.5029 0.7128 0.2902-0.1982-0.6666-1.0067z"/>
+		<path fill="url(#DrawceptionPencilBodyGradient)" d="m3.4229 11.099 7.0029 10.792 1.1053-2.6427 3.053-0.0054l-7.1632-10.992z"/>
 		<path d="m5.377 9.7067 6.154 9.5413"/>
-		<path fill="#989898" d="m10.426 21.891 4.2125 2.4229 0.27175-0.18546-0.32598-4.8855-3.053 0.0054z" />
-		<path fill="url(#DrawceptionPencilTipGradient)" stroke="none" d="m13.677 20.196 0.71706 2.627-0.2166-3.1511-2.3811-0.01021z" />
-		<path fill="#20201f" d="m14.638 24.314 1.6236 3.1391 0.54216-0.57207-1.894-2.7525z" />
+		<path fill="#989898" d="m10.426 21.891 4.2125 2.4229 0.27175-0.18546-0.32598-4.8855-3.053 0.0054z"/>
+		<path fill="url(#DrawceptionPencilTipGradient)" stroke="none" d="m13.677 20.196 0.71706 2.627-0.2166-3.1511-2.3811-0.01021z"/>
+		<path fill="#20201f" d="m14.638 24.314 1.6236 3.1391 0.54216-0.57207-1.894-2.7525z"/>
 	</g>
-	<path fill="none" stroke="#191203" stroke-width="1.75" d="m9.4576 21.588 1.4414-1.113m-2.6347-0.5 1.9447-1.436m-2.7623-0.509 1.7015-1.281m4.7509 0.37565-1.3479-0.86179" />
+	<path fill="none" stroke="#191203" stroke-width="1.75" d="m9.4576 21.588 1.4414-1.113m-2.6347-0.5 1.9447-1.436m-2.7623-0.509 1.7015-1.281m4.7509 0.37565-1.3479-0.86179"/>
 </g>
 </svg>

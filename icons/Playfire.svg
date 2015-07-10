@@ -3,8 +3,8 @@
 <svg version="1.1" viewBox="0 0 772.65625 772.65625" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 	<linearGradient id="PlayfireGradient" x1="1" y1="0" x2="0" y2="1">
-		<stop stop-color="#fda21a" offset="0" />
-		<stop stop-color="#fee635" offset="0.85355002" />
+		<stop stop-color="#fda21a" offset="0"/>
+		<stop stop-color="#fee635" offset="0.85355002"/>
 	</linearGradient>
 </defs>
 <path fill="url(#PlayfireGradient)" d="m386.34 0c-213.36 0-386.34 172.98-386.34 386.34s172.98 386.31 386.34 386.31 386.31-172.95 386.31-386.31l0.01-386.34h-386.32z"/>

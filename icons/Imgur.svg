@@ -8,7 +8,7 @@
 		<stop stop-color="#5aac00" offset="1"/>
 	</linearGradient>
 </defs>
-<rect x="4.5" y="4.5" width="503" height="503" rx="86" fill="#272727" stroke="#424240" stroke-width="9" />
-<circle cx="254" cy="256" r="160" fill="#7abd37" stroke="#424240" stroke-width="10" />
-<circle cx="254" cy="256" r="153" fill="url(#ImgurGreenGradient)" />
+<rect x="4.5" y="4.5" width="503" height="503" rx="86" fill="#272727" stroke="#424240" stroke-width="9"/>
+<circle cx="254" cy="256" r="160" fill="#7abd37" stroke="#424240" stroke-width="10"/>
+<circle cx="254" cy="256" r="153" fill="url(#ImgurGreenGradient)"/>
 </svg>

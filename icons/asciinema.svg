@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="58 0 750 866.0254037844387">
 <!-- Based on https://asciinema.org/assets/logo-red-8fc5c5c14ca150641c33ce28601c3520.svg -->
-<path fill="#d40000" d="M 58 0 L 58 866.03125 L 808 433 L 58 0 z M 208 259.8125 L 508 433 L 208 606.21875 L 208 259.8125 z " />
-<polyline stroke="#d40000" stroke-width="90" points="481.2177826491071 333.0127018922194, 134.80762113533166 533.0127018922194" />
+<path fill="#d40000" d="M 58 0 L 58 866.03125 L 808 433 L 58 0 z M 208 259.8125 L 508 433 L 208 606.21875 L 208 259.8125 z "/>
+<polyline stroke="#d40000" stroke-width="90" points="481.2177826491071 333.0127018922194, 134.80762113533166 533.0127018922194"/>
 </svg>
