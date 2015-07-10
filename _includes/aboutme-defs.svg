@@ -162,13 +162,15 @@
 
 {% if include_all or restrictions contains ',coderwall,' %}
 <!-- Drawn from scratch, based on coderwall.png from https://assembly.com/coderwall/assets -->
-<symbol id="coderwall" viewBox="0 0 300 300">
-	<circle cx="30" cy="30" r="30" fill="#3e8dcc"/>
-	<circle cx="150" cy="30" r="30" fill="#3e8dcc"/>
-	<circle cx="270" cy="30" r="30" fill="#3e8dcc"/>
-	<circle cx="150" cy="150" r="30" fill="#3e8dcc"/>
-	<circle cx="270" cy="150" r="30" fill="#3e8dcc"/>
-	<circle cx="270" cy="270" r="30" fill="#3e8dcc"/>
+<symbol id="coderwall" viewBox="0 0 10 10">
+	<g fill="#3e8dcc">
+		<circle cx="1" cy="1" r="1"/>
+		<circle cx="5" cy="1" r="1"/>
+		<circle cx="9" cy="1" r="1"/>
+		<circle cx="5" cy="5" r="1"/>
+		<circle cx="9" cy="5" r="1"/>
+		<circle cx="9" cy="9" r="1"/>
+	</g>
 </symbol>
 {% endif %}
 
