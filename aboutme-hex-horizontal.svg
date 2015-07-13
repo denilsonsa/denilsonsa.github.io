@@ -101,16 +101,18 @@ http://jwatt.org/svg/authoring/
 <style type="text/css"><![CDATA[
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 
-.item .outline {
+/* Relevant Firefox bug/behavior: https://bugzilla.mozilla.org/show_bug.cgi?id=265894#c5 */
+
+.item > a > .outline {
 	transition-property: opacity, transform, -webkit-transform;
 	transition-duration: 250ms;
 	fill: white;
 	stroke: white;
 	stroke-width: {{ xmargin | times: 2 }}px;
 }
-.item .left,
-.item .middle,
-.item .right {
+.item > a > .left,
+.item > a > .middle,
+.item > a > .right {
 	transition-property: fill, stroke, transform, -webkit-transform;
 	transition-duration: 250ms;
 	fill: #D3D7CF;
@@ -120,17 +122,17 @@ http://jwatt.org/svg/authoring/
 	stroke-width: 0.25px;
 	stroke-linecap: round;
 }
-.item text {
+.item > a > text {
 	transition-property: opacity, transform, -webkit-transform;
 	transition-duration: 250ms;
 	pointer-events: none;
 }
-.item .icon {
+.item > a > .icon {
 	transition-property: opacity, transform, -webkit-transform;
 	transition-duration: 250ms;
 }
-.item text,
-.item text tspan {
+.item > a > text,
+.item > a > text tspan {
 	fill: #2e3436;
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 6.5px;
@@ -140,37 +142,24 @@ http://jwatt.org/svg/authoring/
 	dominant-baseline: central;
 }
 
-.item:hover .left,
-.item:hover .middle,
-.item:hover .right {
+.item:hover > a > .left,
+.item:hover > a > .middle,
+.item:hover > a > .right {
 	fill: #EDEEEB;
 	stroke: #EDEEEB;
 }
 /* Chrome bug if using scaleX(0): http://crbug.com/395675 */
-.item       .outline { -webkit-transform: scaleX(0.00001); transform: scaleX(0.00001); opacity: 0; }
-.item:hover .outline { -webkit-transform: scaleX(1); transform: scaleX(1); opacity: 1; }
-.item       .middle  { -webkit-transform: scaleX(0.00001); transform: scaleX(0.00001); }
-.item:hover .middle  { -webkit-transform: scaleX(1); transform: scaleX(1); }
-.item       .right   { -webkit-transform: translateX( 0px); transform: translateX( 0px); }
-.item:hover .right   { -webkit-transform: translateX({{ xgrid | times: 1 }}px); transform: translateX({{ xgrid | times: 1 }}px); }
+.item       > a > .outline { -webkit-transform: scaleX(0.00001); transform: scaleX(0.00001); opacity: 0; }
+.item:hover > a > .outline { -webkit-transform: scaleX(1); transform: scaleX(1); opacity: 1; }
+.item       > a > .middle  { -webkit-transform: scaleX(0.00001); transform: scaleX(0.00001); }
+.item:hover > a > .middle  { -webkit-transform: scaleX(1); transform: scaleX(1); }
+.item       > a > .right   { -webkit-transform: translateX( 0px); transform: translateX( 0px); }
+.item:hover > a > .right   { -webkit-transform: translateX({{ xgrid | times: 1 }}px); transform: translateX({{ xgrid | times: 1 }}px); }
 /* Chrome bug about applying transform to text on hover: http://crbug.com/394829 */
-.item       text     { opacity: 0.0; }
-.item:hover text     { opacity: 1.0; }
-.item       .icon    { opacity: 1.000; -webkit-transform: translateX(0); transform: translateX(0); }
-.item:hover .icon    { opacity: 0.125; -webkit-transform: translateX({{ xhalf | times: 1 }}px); transform: translateX({{ xhalf | times: 1 }}px); }
-
-/* Workarounds for Firefox: https://bugzilla.mozilla.org/show_bug.cgi?id=265894#c5 */
-.item use.icon #email text,
-.item use.icon #blog text {
-	opacity: 1.0;
-	fill: #2e3436;
-	font-size: 11px;
-}
-.item use.icon #curriculumvitae text {
-	opacity: 1.0;
-	fill: #2e3436;
-	font-size: 25px;
-}
+.item       > a > text     { opacity: 0.0; }
+.item:hover > a > text     { opacity: 1.0; }
+.item       > a > .icon    { opacity: 1.000; -webkit-transform: translateX(0); transform: translateX(0); }
+.item:hover > a > .icon    { opacity: 0.125; -webkit-transform: translateX({{ xhalf | times: 1 }}px); transform: translateX({{ xhalf | times: 1 }}px); }
 
 ]]></style>
 

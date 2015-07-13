@@ -112,17 +112,19 @@ http://jwatt.org/svg/authoring/
 <style type="text/css"><![CDATA[
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 
-.item circle {
+/* Relevant Firefox bug/behavior: https://bugzilla.mozilla.org/show_bug.cgi?id=265894#c5 */
+
+.item > a > circle {
 	transition-property: fill;
 	transition-duration: 250ms;
 }
-.item text,
-.item .icon {
+.item > a > text,
+.item > a > .icon {
 	transition-property: opacity;
 	transition-duration: 250ms;
 }
-.item text,
-.item text tspan {
+.item > a > text,
+.item > a > text tspan {
 	fill: #2e3436;
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 8px;
@@ -132,30 +134,16 @@ http://jwatt.org/svg/authoring/
 	dominant-baseline: central;
 }
 
-.item       circle { fill: #F9F9F8; }
-.item:hover circle { fill: #EDEEEB; }
+.item       > a > circle { fill: #F9F9F8; }
+.item:hover > a > circle { fill: #EDEEEB; }
 
-.item.without-icon       text { opacity: 1.0; }
-.item.without-icon:hover text { opacity: 1.0; }
+.item.without-icon       > a > text { opacity: 1.0; }
+.item.without-icon:hover > a > text { opacity: 1.0; }
 
-.item.with-icon       .icon { opacity: 1.0; }
-.item.with-icon:hover .icon { opacity: 0.125; }
-.item.with-icon       text { opacity: 0.0; }
-.item.with-icon:hover text { opacity: 1.0; }
-
-
-/* Workarounds for Firefox: https://bugzilla.mozilla.org/show_bug.cgi?id=265894#c5 */
-.item use.icon #email text,
-.item use.icon #blog text {
-	opacity: 1.0;
-	fill: #2e3436;
-	font-size: 11px;
-}
-.item.with-icon use.icon #curriculumvitae text {
-	opacity: 1.0;
-	fill: #2e3436;
-	font-size: 25px;
-}
+.item.with-icon       > a > .icon { opacity: 1.0; }
+.item.with-icon:hover > a > .icon { opacity: 0.125; }
+.item.with-icon       > a > text { opacity: 0.0; }
+.item.with-icon:hover > a > text { opacity: 1.0; }
 
 ]]></style>
 
