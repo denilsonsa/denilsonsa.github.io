@@ -352,12 +352,18 @@ YouTube:
 
 # Other icons and logos
 
+## Colorful
+
+* http://svgporn.com/ and https://github.com/gilbarbara/logos
 * http://www.steverichey.com/dev/vector-logos/
-* https://github.com/johan/kilobyte-svg-challenge
+* http://johan.github.com/kilobyte-svg-challenge/ and https://github.com/johan/kilobyte-svg-challenge
 * http://zurb.com/playground/social-webicons
-* http://simpleicons.org/
-* http://fortawesome.github.io/Font-Awesome/icons/
-* http://shoestrap.org/downloads/elusive-icons-webfont/
-* http://fontello.com/
-* https://github.com/paulrobertlloyd/socialmediaicons
+* https://github.com/paulrobertlloyd/socialmediaicons (vector is only available in Fireworks format)
+
+## Monochrome
+
+* http://simpleicons.org/ and https://github.com/danleech/simple-icons
+* http://fortawesome.github.io/Font-Awesome/icons/ and https://github.com/FortAwesome/Font-Awesome
+* http://shoestrap.org/downloads/elusive-icons-webfont/ and https://github.com/reduxframework/elusive-iconfont
+* http://fontello.com/ and https://github.com/fontello/fontello
 * http://raphaeljs.com/icons/
