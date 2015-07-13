@@ -7,8 +7,8 @@
 		gradientUnits="userSpaceOnUse"
 		gradientTransform="matrix(-3.14e-5,-718.423,-718.423,3.14e-5,510.724,718.423)"
 		spreadMethod="pad">
-		<stop style="stop-color: #e62426" offset="0"/>
-		<stop style="stop-color: #c01e25" offset="1"/>
+		<stop stop-color="#e62426" offset="0"/>
+		<stop stop-color="#c01e25" offset="1"/>
 	</linearGradient>
 </defs>
 <g transform="matrix(1,0,0,-1,1.8879916,7182.5603)">
