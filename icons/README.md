@@ -27,6 +27,8 @@ beBee:
 
 Behance:
 
+* Embedded SVG code into HTML of https://www.behance.net/
+* https://www.facebook.com/media/set/?set=a.486466830751.290578.7939760751
 * https://play.google.com/store/apps/details?id=com.behance.behance
 
 Bitbucket:

@@ -42,6 +42,11 @@ backloggery:
   useid: backloggery
   text1: Backloggery
 
+behance:
+  href: https://www.behance.net/denilsonsa
+  useid: behance
+  text1: Behance
+
 bitbucket:
   href: https://bitbucket.org/denilsonsa
   useid: bitbucket
