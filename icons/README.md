@@ -18,6 +18,17 @@ asciinema:
 
 * https://asciinema.org/assets/logo-red-8fc5c5c14ca150641c33ce28601c3520.svg
 
+beBee:
+
+* https://www.bebee.com/img/bebee/logo-error.png
+* https://www.bebee.com/img/bebee/logo-blanco-simple.png
+* https://play.google.com/store/apps/details?id=com.bebee.android.hive
+* https://twitter.com/bebee_en
+
+Behance:
+
+* https://play.google.com/store/apps/details?id=com.behance.behance
+
 Bitbucket:
 
 * http://www.atlassian.com/company/press/resources/?tab=logos
@@ -135,6 +146,11 @@ Gratipay:
 Grooveshark:
 
 * http://grooveshark.com/logo
+
+HackHands:
+
+* https://twitter.com/hackhands/status/608012553306791936
+* https://www.facebook.com/hackhands/photos/pb.454381268015164.-2207520000.1436558951./770084413111513/
 
 hitbox:
 
