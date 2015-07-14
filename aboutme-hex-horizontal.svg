@@ -156,6 +156,8 @@ http://jwatt.org/svg/authoring/
 .item:hover > a > .middle  { -webkit-transform: scaleX(1); transform: scaleX(1); }
 .item       > a > .right   { -webkit-transform: translateX( 0px); transform: translateX( 0px); }
 .item:hover > a > .right   { -webkit-transform: translateX({{ xgrid | times: 1 }}px); transform: translateX({{ xgrid | times: 1 }}px); }
+/* Firefox bug with transform and stroke: https://bugzilla.mozilla.org/show_bug.cgi?id=1183449 */
+.item       > a > .left    { transform: translateX(0px); }
 /* Chrome bug about applying transform to text on hover: http://crbug.com/394829 */
 .item       > a > text     { opacity: 0.0; }
 .item:hover > a > text     { opacity: 1.0; }
