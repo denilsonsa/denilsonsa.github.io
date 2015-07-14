@@ -140,6 +140,12 @@ gratipay:
   useid: gratipay
   text1: Gratipay
 
+hackhands:
+  # Not found, but I can't use: https://hackhands.com/denilsonsa/
+  href: https://hackhands.com/denilson-sa/
+  useid: hackhands
+  text1: HackHands
+
 hitbox:
   href: http://www.hitbox.tv/DenilsonSa
   useid: hitbox
