@@ -97,6 +97,7 @@ text {
 	<line x1="0" x2="0" y1="-8" y2="8"/>
 </g>
 
+<!--
 {% comment %}
 I wish I could style the elements "inside" a <use> instance. It is possible
 with CSS and the "deep combinator" (previously `/deep/`, currently `>>>`) or
@@ -118,6 +119,7 @@ http://codepen.io/FWeinb/blog/quick-tip-svg-use-style-two-colors
 For now, I'm sometimes using simple <use> elements, and other times I'm just
 replicating the element twice.
 {% endcomment %}
+-->
 
 </defs>
 
@@ -127,8 +129,8 @@ replicating the element twice.
 <!-- A circle and an ellipse with the maximum size. -->
 {% for i in (1..2) %}
 <g class="circleellipse {% cycle 'white','black' %}">
-	<circle cx="{{ width | divided_by: 2 }}" cy="{{ height | divided_by: 2 }}" r="{{ minsize | divided_by: 2 }}" />
-	<ellipse cx="{{ width | divided_by: 2 }}" cy="{{ height | divided_by: 2 }}" rx="{{ width | divided_by: 2 }}" ry="{{ height | divided_by: 2 }}" />
+	<circle cx="{{ width | divided_by: 2 }}" cy="{{ height | divided_by: 2 }}" r="{{ minsize | divided_by: 2 }}"/>
+	<ellipse cx="{{ width | divided_by: 2 }}" cy="{{ height | divided_by: 2 }}" rx="{{ width | divided_by: 2 }}" ry="{{ height | divided_by: 2 }}"/>
 </g>
 {% endfor %}
 
@@ -140,7 +142,7 @@ replicating the element twice.
 {% assign: h = height | minus: y | minus: y %}
 
 <g class="overscan {% cycle 'red','yellow','green','cyan','blue','magenta' %}">
-	<rect x="{{ x }}"                     y="{{ y }}" width="{{ w }}" height="{{ h }}" />
+	<rect x="{{ x }}"                     y="{{ y }}" width="{{ w }}" height="{{ h }}"/>
 
 	<text x="{{ x                     }}" y="{{ y                 }}" text-anchor="start"  dominant-baseline="text-before-edge">{{ percent }}%</text>
 	<text x="{{ width | divided_by: 2 }}" y="{{ y                 }}" text-anchor="middle" dominant-baseline="text-before-edge">{{ percent }}%</text>
@@ -166,10 +168,10 @@ replicating the element twice.
 -->
 {% for i in (1..2) %}
 <g class="aspectratio {% cycle 'white','black' %}" transform="translate({{ width | divided_by: 2 }} {{ height | divided_by: 2 }})">
-	<rect x="-{{ minsize | divided_by: 4 }}" y="-{{ minsize | divided_by: 4 }}" width="{{ minsize | divided_by: 2 }}" height="{{ minsize | divided_by: 2 }}" />
-	<circle cx="0" cy="0" r="{{ minsize | divided_by: 4 }}" />
-	<line x1="-{{ minsize | divided_by: 4 }}" y1="-{{ minsize | divided_by: 4 }}" x2="{{ minsize | divided_by: 4 }}" y2="{{ minsize | divided_by: 4 }}" />
-	<line x1="-{{ minsize | divided_by: 4 }}" y1="{{ minsize | divided_by: 4 }}" x2="{{ minsize | divided_by: 4 }}" y2="-{{ minsize | divided_by: 4 }}" />
+	<rect x="-{{ minsize | divided_by: 4 }}" y="-{{ minsize | divided_by: 4 }}" width="{{ minsize | divided_by: 2 }}" height="{{ minsize | divided_by: 2 }}"/>
+	<circle cx="0" cy="0" r="{{ minsize | divided_by: 4 }}"/>
+	<line x1="-{{ minsize | divided_by: 4 }}" y1="-{{ minsize | divided_by: 4 }}" x2="{{ minsize | divided_by: 4 }}" y2="{{ minsize | divided_by: 4 }}"/>
+	<line x1="-{{ minsize | divided_by: 4 }}" y1="{{ minsize | divided_by: 4 }}" x2="{{ minsize | divided_by: 4 }}" y2="-{{ minsize | divided_by: 4 }}"/>
 </g>
 {% endfor %}
 
@@ -177,24 +179,25 @@ replicating the element twice.
 {% for i in (1..2) %}
 <g class="ruleofthirds {% cycle 'white','black' %}">
 	<g transform="translate({{ width | divided_by: 3 | times: 1 }}, {{ height | divided_by: 3 | times: 1 }})">
-		<use class="littlecross" xlink:href="#littlecross" />
+		<use class="littlecross" xlink:href="#littlecross"/>
 		<text x="0" y="0" text-anchor="end" dominant-baseline="text-after-edge">⅓</text>
 	</g>
 	<g transform="translate({{ width | divided_by: 3 | times: 2 }}, {{ height | divided_by: 3 | times: 1 }})">
-		<use class="littlecross" xlink:href="#littlecross" />
+		<use class="littlecross" xlink:href="#littlecross"/>
 		<text x="0" y="0" text-anchor="start" dominant-baseline="text-after-edge">⅓</text>
 	</g>
 	<g transform="translate({{ width | divided_by: 3 | times: 1 }}, {{ height | divided_by: 3 | times: 2 }})">
-		<use class="littlecross" xlink:href="#littlecross" />
+		<use class="littlecross" xlink:href="#littlecross"/>
 		<text x="0" y="0" text-anchor="end" dominant-baseline="text-before-edge">⅓</text>
 	</g>
 	<g transform="translate({{ width | divided_by: 3 | times: 2 }}, {{ height | divided_by: 3 | times: 2 }})">
-		<use class="littlecross" xlink:href="#littlecross" />
+		<use class="littlecross" xlink:href="#littlecross"/>
 		<text x="0" y="0" text-anchor="start" dominant-baseline="text-before-edge">⅓</text>
 	</g>
 </g>
 {% endfor %}
 
+<!-- Caption/title text. -->
 {% for i in (1..2) %}
 <g class="caption {% cycle 'white','black' %}">
 	<text x="{{ width | divided_by: 2 }}" y="{{ height | times: 3 | divided_by: 8 }}">{{ caption }}</text>
