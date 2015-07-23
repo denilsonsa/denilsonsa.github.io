@@ -124,7 +124,38 @@ replicating the element twice.
 </defs>
 
 <!-- A background covering the entire image just to make it easier to test the white color. -->
-<!-- rect fill="#808080" x="0" y="0" width="{{ width }}" height="{{ height }}" / -->
+<!-- rect fill="#808080" x="0" y="0" width="{{ width }}" height="{{ height }}"/ -->
+
+<!-- Color testing. -->
+<!--
+	Some video encodings (with historical origins on TVs) use a narrow range of
+	colors from 16 to 235 (0x10 to 0xEB). The squares below help testing how
+	your colors are being represented in the final video.
+
+	http://referencehometheater.com/2014/commentary/rgb-full-vs-limited/
+	http://www.calibratedsoftware.com/supportlibrary_view.php?FAQs_ID=38
+	https://en.wikipedia.org/wiki/YUV
+	https://en.wikipedia.org/wiki/Rec._709#Digital_representation
+-->
+{% assign: colorsize = minsize | divided_by: 32 %}
+<g transform="translate({{ width | divided_by: 2 }}, {{ height | divided_by: 6 | times: 1 }})">
+	<!-- Black and near-black. -->
+	<rect fill="#000000" x="{{ colorsize | times: -5.5 }}" y="0" width="{{ colorsize }}" height="{{ colorsize }}"/> <!-- Black. -->
+	<rect fill="#0F0F0F" x="{{ colorsize | times: -4.5 }}" y="0" width="{{ colorsize }}" height="{{ colorsize }}"/> <!-- Black if in narrow range, gray in full range. -->
+	<rect fill="#101010" x="{{ colorsize | times: -3.5 }}" y="0" width="{{ colorsize }}" height="{{ colorsize }}"/> <!-- First non-black in narrow range. -->
+
+	<!-- Nothing special in these squares. -->
+	<rect fill="#202020" x="{{ colorsize | times: -2.5 }}" y="0" width="{{ colorsize }}" height="{{ colorsize }}"/>
+	<rect fill="#404040" x="{{ colorsize | times: -1.5 }}" y="0" width="{{ colorsize }}" height="{{ colorsize }}"/>
+	<rect fill="#808080" x="{{ colorsize | times: -0.5 }}" y="0" width="{{ colorsize }}" height="{{ colorsize }}"/>
+	<rect fill="#C0C0C0" x="{{ colorsize | times:  0.5 }}" y="0" width="{{ colorsize }}" height="{{ colorsize }}"/>
+	<rect fill="#E0E0E0" x="{{ colorsize | times:  1.5 }}" y="0" width="{{ colorsize }}" height="{{ colorsize }}"/>
+
+	<!-- White and near-white. -->
+	<rect fill="#EBEBEB" x="{{ colorsize | times:  2.5 }}" y="0" width="{{ colorsize }}" height="{{ colorsize }}"/> <!-- First non-white in narrow range. -->
+	<rect fill="#ECECEC" x="{{ colorsize | times:  3.5 }}" y="0" width="{{ colorsize }}" height="{{ colorsize }}"/> <!-- White if in narrow range, gray in full range. -->
+	<rect fill="#FFFFFF" x="{{ colorsize | times:  4.5 }}" y="0" width="{{ colorsize }}" height="{{ colorsize }}"/> <!-- White. -->
+</g>
 
 <!-- A circle and an ellipse with the maximum size. -->
 {% for i in (1..2) %}
