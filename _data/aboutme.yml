@@ -141,8 +141,7 @@ gratipay:
   text1: Gratipay
 
 hackhands:
-  # Not found, but I can't use: https://hackhands.com/denilsonsa/
-  href: https://hackhands.com/denilson-sa/
+  href: https://hackhands.com/denilsonsa/
   useid: hackhands
   text1: HackHands
 
