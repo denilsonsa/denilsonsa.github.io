@@ -197,6 +197,15 @@
 </symbol>
 {% endif %}
 
+{% if include_all or restrictions contains ',devpost,' %}
+<!-- Based on devpost-icon-rgb.svg from http://cphome.s3.amazonaws.com/press/devpost-press-kit.zip -->
+<symbol id="devpost" viewBox="0 0 280.3 242.7">
+	<polygon fill="#003E54" points="70.1,242.7 0,121.4 70.1,0 210.2,0 280.3,121.4 210.2,242.7"/>
+	<path fill="#FFFFFF" d="M132.7,195h-44V47.7h46.1c42.1,0,73.3,19.8,73.3,73.7C208.1,173.2,170.6,195,132.7,195z
+		M133.7,76.3h-15.6v90.1h14.5c30.9,0,45.1-18.1,45.1-45.1C177.8,91.3,164.9,76.3,133.7,76.3z"/>
+</symbol>
+{% endif %}
+
 {% if include_all or restrictions contains ',disqus,' %}
 <!-- Based on disqus-social-icon-blue-white.svg from https://disqus.com/brand/ -->
 <symbol id="disqus" viewBox="30 32 140 136">

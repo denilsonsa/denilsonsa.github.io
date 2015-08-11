@@ -42,7 +42,7 @@ Bitcoin:
 * https://en.bitcoin.it/wiki/Promotional_graphics
 * http://bitcoinsymbol.org/
 
-ChallengePost:
+ChallengePost (now renamed to Devpost):
 
 * http://info.challengepost.com/press
 
@@ -77,6 +77,10 @@ deviantART:
 
 * http://help.deviantart.com/21/
 * http://spyed.deviantart.com/journal/Boldly-Facing-The-Future-498282387
+
+Devpost:
+
+* http://info.devpost.com/press
 
 DigitalOcean:
 

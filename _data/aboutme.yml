@@ -52,13 +52,6 @@ bitbucket:
   useid: bitbucket
   text1: Bitbucket
 
-challengepost:
-  href: http://challengepost.com/denilsonsa
-  useid: challengepost
-  #text1: ChallengePost
-  text1: Challenge
-  text2: Post
-
 changetip:
   #href: http://denilsonsa.tip.me/
   href: https://www.changetip.com/tipme/denilsonsa
@@ -80,6 +73,11 @@ deviantart:
   href: https://crazyterabyte.deviantart.com/
   useid: deviantart
   text1: DeviantArt
+
+devpost:
+  href: http://devpost.com/denilsonsa
+  useid: devpost
+  text1: Devpost
 
 disqus:
   href: https://disqus.com/denilsonsa/
