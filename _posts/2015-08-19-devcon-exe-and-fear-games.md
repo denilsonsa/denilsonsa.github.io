@@ -33,9 +33,9 @@ Igor Duarte Cardoso posted [a `.bat` script to automatically disable and re-enab
 @echo off
 
 :: Disable all Logitech HID devices.
-devcon disable HID\VID_046D*
+devcon.exe disable HID\VID_046D*
 :: The previous command disables too much and the mouse may stop working, but this line fixes it.
-devcon enable HID_DEVICE_SYSTEM_MOUSE
+devcon.exe enable HID_DEVICE_SYSTEM_MOUSE
 
 :: Uncomment one of the following lines:
 ::pause
@@ -46,7 +46,7 @@ devcon enable HID_DEVICE_SYSTEM_MOUSE
 ::start steam://rungameid/21120
 
 :: Enable everything back.
-devcon enable HID\VID_046D*
+devcon.exe enable HID\VID_046D*
 ```
 
 ### Links regarding the issue with F.E.A.R. games
