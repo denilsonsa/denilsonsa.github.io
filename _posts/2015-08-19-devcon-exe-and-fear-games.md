@@ -49,6 +49,27 @@ devcon.exe enable HID_DEVICE_SYSTEM_MOUSE
 devcon.exe enable HID\VID_046D*
 ```
 
+### Does it work?
+
+Unfortunately, it does not work for me. Running the script gives me:
+
+```
+D:\>devcon_amd64.exe disable HID\VID_046D*
+HID\VID_046D&PID_C062\8&A7583A8&0&0000                      : Disabled
+1 device(s) disabled.
+
+D:\>devcon_amd64.exe enable HID_DEVICE_SYSTEM_MOUSE
+HID\VID_045E&PID_0745&MI_01&COL01\9&283EC78A&0&0000         : Enabled
+HID\WACOMVIRTUALHID&COL03\1&4784345&0&0002                  : Enabled
+HID\VID_046D&PID_C062\8&A7583A8&0&0000                      : Enabled
+HID\VID_056A&PID_0016&COL01\8&15A54371&0&0000               : Enabled
+4 device(s) are enabled.
+```
+
+We can clearly see the [Logitech LS1 mouse](http://support.logitech.com/product/ls1-laser-mouse) being disabled on the first command, and then re-enabled on the second command.
+
+My advice? Don't buy *F.E.A.R.* games.
+
 ### Links regarding the issue with F.E.A.R. games
 
 * <https://gist.github.com/anonymous/43ac3eed100d46b04aee>
