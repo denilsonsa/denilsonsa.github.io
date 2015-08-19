@@ -37,7 +37,7 @@ devcon.exe disable HID\VID_046D*
 :: The previous command disables too much and the mouse may stop working, but this line fixes it.
 devcon.exe enable HID_DEVICE_SYSTEM_MOUSE
 
-:: Uncomment one of the following lines:
+:: Uncomment one of the following lines (by removing the double-colon):
 ::pause
 ::FEAR.EXE
 ::FEARMP.EXE
