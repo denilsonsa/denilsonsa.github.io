@@ -39,7 +39,7 @@ a:visited:hover { color: #f1f; }
 /* Site */
 .site {
   text-align: justify;
-  max-width: 42em;
+  max-width: 45em;
   margin: 0 auto 1em;
   line-height: 1.5;
 }
