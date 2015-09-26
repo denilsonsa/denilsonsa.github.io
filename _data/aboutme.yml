@@ -248,6 +248,12 @@ speakerdeck:
   text1: Speaker
   text2: Deck
 
+stackexchange:
+  href: https://stackexchange.com/users/42834/
+  useid: stackexchange
+  text1: Stack
+  text2: Exchange
+
 stackoverflow:
   href: https://stackoverflow.com/users/124946/
   useid: stackoverflow
@@ -257,9 +263,10 @@ stackoverflow:
 
 stackoverflowcareers:
   href: https://careers.stackoverflow.com/denilsonsa
-  useid: stackoverflowcareers
-  text1: Careers
-  text2: 2.0
+  useid: stackoverflow
+  text1: Stack
+  text2: Overflow
+  # "Stack Overflow Careers" is the complete name, but it is too long.
 
 steam:
   href: https://steamcommunity.com/id/crazyterabyte

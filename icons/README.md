@@ -293,13 +293,12 @@ Speaker Deck:
 * https://speakerdeck.com/speakerdeck/introduction-to-speakerdeck (image from the first slide)
 * https://speakerdeck.com/ (button background gradient colors)
 
-Stack Overflow:
+Stack Exchange and Stack Overflow:
 
-* http://stackapps.com/questions/347/svg-versions-of-the-logos
-* http://stackexchange.com/legal/trademark-guidance
-* http://stackexchange.com/about/logos
+* https://stackexchange.com/about/logos
+* https://stackapps.com/questions/347/svg-versions-of-the-logos
+* https://stackexchange.com/legal/trademark-guidance
 * http://stackexchange.com/users/42834/denilson-sa?tab=flair
-* http://cdn-careers.sstatic.net/careers/Img/logos/careers-logo.png
 
 Steam:
 

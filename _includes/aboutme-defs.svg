@@ -692,28 +692,24 @@
 </symbol>
 {% endif %}
 
-{% if include_all or restrictions contains ',stackoverflow,' %}
-<!-- Copied from http://stackapps.com/questions/347/svg-versions-of-the-logos -->
-<symbol id="stackoverflow" viewBox="0 0 64 64">
-	<path fill="#919191" d="m 9.3049611,36.847632 4.4013079,0.04316 -0.153442,19.598393 29.291259,0 0,-19.527506 4.637782,0 0,24.287331 -38.2006795,0 0.023777,-24.401371 z"/>
-	<rect fill="#919191" width="22.944817" height="4.881876" x="16.481951" y="48.434078"/>
-	<rect fill="#a78b68" width="23.066864" height="5.0039229" x="20.749949" y="37.830307" transform="matrix(0.9953749,0.09606666,-0.09606666,0.9953749,0,0)"/>
-	<rect fill="#c19653" width="23.066864" height="5.0039229" x="26.472515" y="23.401554" transform="matrix(0.96240291,0.27162592,-0.27162592,0.96240291,0,0)"/>
-	<rect fill="#d48c28" width="23.066864" height="5.0039229" x="30.528769" y="3.1535864" transform="matrix(0.85597805,0.51701216,-0.51701216,0.85597805,0,0)"/>
-	<rect fill="#fe8908" width="23.066864" height="5.0039229" x="27.191883" y="-24.475019" transform="matrix(0.58242689,0.81288309,-0.81288309,0.58242689,0,0)"/>
-	<rect fill="#ff7a15" width="23.066864" height="5.0039229" x="11.174569" y="-50.183693" transform="matrix(0.16480989,0.98632535,-0.98632535,0.16480989,0,0)"/>
+{% if include_all or restrictions contains ',stackexchange,' %}
+<!-- Based on se-logo.eps from https://stackexchange.com/about/logos -->
+<symbol id="stackexchange" viewBox="0 0 43.21 53.596">
+	<path fill="#185297" d="m0 34.802v2.3078c0 3.9191 3.066 7.1004 6.85 7.1004h18.454v9.3855l9.057-9.3855h1.992c3.787 0 6.857-3.1813 6.857-7.1004v-2.3078"/>
+	<path fill="#326eb6" d="m0 32.298h43.21v-8.8871h-43.21"/>
+	<path fill="#46a2d9" d="m0 20.852h43.21v-8.8891h-43.21"/>
+	<path fill="#8fd8f6" d="m6.85 0c-3.784 0-6.85 3.1808-6.85 7.1v2.3082h43.21v-2.3082c0-3.9192-3.07-7.1-6.857-7.1"/>
+	<path fill="#3a6ca6" d="m8.106 44.21h-1.256c-3.784 0-6.85-3.181-6.85-7.1v-2.3078h17.184"/>
+	<path fill="#5184c1" d="m19.6 32.298h-19.6v-8.8871h28.176"/>
+	<path fill="#62b0df" d="m30.644 20.852h-30.644v-8.8891h39.22"/>
 </symbol>
 {% endif %}
 
-{% if include_all or restrictions contains ',stackoverflowcareers,' %}
-<!-- Drawn from scratch, posted to http://stackapps.com/questions/347/svg-versions-of-the-logos -->
-<symbol id="stackoverflowcareers" viewBox="0 0 29 24">
-	<rect fill="#7a7876" width="4" height="4" x="0" y="20"/>
-	<rect fill="#a18466" width="4" height="6" x="5" y="18"/>
-	<rect fill="#b88b3d" width="4" height="9" x="10" y="15"/>
-	<rect fill="#c8811c" width="4" height="13" x="15" y="11"/>
-	<rect fill="#f48300" width="4" height="18" x="20" y="6"/>
-	<rect fill="#f66c01" width="4" height="24" x="25" y="0"/>
+{% if include_all or restrictions contains ',stackoverflow,' %}
+<!-- Based on so-logo.eps from https://stackexchange.com/about/logos -->
+<symbol id="stackoverflow" viewBox="0 0 99.553 117.869">
+	<path fill="#bcbbbb" d="m84.072 107.351v-31.551h10.516v42.069h-94.588v-42.069h10.516v31.551"/>
+	<path fill="#f48024" d="M21.044 86.317v10.516h52.582v-10.516M24.252 62.606l-2.163 10.292 51.458 10.815 2.163-10.292M33.337 38.726 l-4.44 9.533 47.667 22.199 4.44-9.533M48.818 16.793 l -6.73 8.081 40.405 33.65 6.73-8.081M68.171 0l-8.438 6.276 31.381 42.191 8.439-6.276"/>
 </symbol>
 {% endif %}
 
