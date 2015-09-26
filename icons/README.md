@@ -321,6 +321,14 @@ Stylish / userstyles:
 * http://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe
 * https://github.com/JasonBarnabe/stylish-chrome/blob/master/128.png
 
+Telegram:
+
+* https://commons.wikimedia.org/wiki/File:Telegram_logo.svg
+* https://github.com/zhukov/webogram/blob/9d9732bb4756165746a49a6376be8ca52fce4a37/app/img/icons/icon128.png
+* https://commons.wikimedia.org/wiki/File:Telegram_alternative_logo.svg
+* https://github.com/zhukov/webogram/blob/7bc6e36ec6e955930cd0d1a7f2ebfe86b69b44c8/app/img/Telegram72_2x.png
+* https://github.com/telegramdesktop/tdesktop/blob/e145a0ccd0f472de540e7187e73d46ec730ea81b/Telegram/Telegram/Images.xcassets/Icon.iconset/icon_512x512%402x.png
+
 Tumblr:
 
 * https://www.tumblr.com/logo

@@ -280,6 +280,11 @@ stylish:
   text1: User
   text2: styles
 
+telegram:
+  href: https://telegram.me/denilsonsa
+  useid: telegram
+  text1: Telegram
+
 tumblr:
   href: http://denilsonsa.tumblr.com/
   useid: tumblr
