@@ -1,63 +1,65 @@
 ---
 items:
   - [19.0, -1, stackoverflowcareers]
+  - [19.0,  1, linkedin]
   - [18.5,  0, curriculumvitae]
-  - [18.0, -1, stackoverflow]
-  - [18.0,  1, linkedin]
+  - [18.0, -1, stackexchange]
+  - [18.0,  1, bitbucket]
   - [17.5,  0, github]
   - [17.0, -1, hackhands]
-  - [17.0,  1, bitbucket]
+  - [17.0,  1, userscripts]
   - [16.5,  0, codepen]
   - [16.0, -1, devpost]
-  - [16.0,  1, userscripts]
+  - [16.0,  1, stylish]
   - [15.5,  0, speakerdeck]
   - [15.0, -1, coderwall]
-  - [15.0,  1, stylish]
+  - [15.0,  1, ifttt]
   - [14.5,  0, slideshare]
   - [14.0, -1, instagram]
-  - [14.0,  1, ifttt]
+  - [14.0,  1, asciinema]
   - [13.5,  0, slides]
   - [13.0, -1, flickr]
-  - [13.0,  1, asciinema]
+  - [13.0,  1, youtube]
   - [12.5,  0, behance]
   - [12.0, -1, imgur]
-  - [12.0,  1, youtube]
+  - [12.0,  1, vimeo]
   - [11.5,  0, openclipart]
   - [11.0, -1, soundcloud]
-  - [11.0,  1, vimeo]
+  - [11.0,  1, twitch]
   - [10.5,  0, deviantart]
   - [10.0, -1, steam]
-  - [10.0,  1, twitch]
+  - [10.0,  1, hitbox]
   - [9.5,  0, drawception]
   - [9.0, -1, kongregate]
-  - [9.0,  1, hitbox]
+  - [9.0,  1, playfire]
   - [8.5,  0, patreon]
   - [8.0, -1, gamejolt]
-  - [8.0,  1, playfire]
+  - [8.0,  1, backloggery]
   - [7.5,  0, changetip]
   - [7.0, -1, newgrounds]
-  - [7.0,  1, backloggery]
+  - [7.0,  1, alvanista]
   - [6.5,  0, gratipay]
   - [6.0, -1, kickstarter]
-  - [6.0,  1, alvanista]
+  - [6.0,  1, myspace]
   - [5.5,  0, flattr]
   - [5.0, -1, pinterest]
-  - [5.0,  1, myspace]
+  - [5.0,  1, ello]
   - [4.5,  0, paypal]
   - [4.0, -1, stumbleupon]
-  - [4.0,  1, ello]
+  - [4.0,  1, tumblr]
   - [3.5,  0, angellist]
   - [3.0, -1, disqus]
-  - [3.0,  1, tumblr]
+  - [3.0,  1, vk]
   - [2.5,  0, aboutme]
   - [2.0, -1, reddit]
-  - [2.0,  1, vk]
+  - [2.0,  1, facebook]
   - [1.5,  0, twitter]
   - [1.0, -1, googleplus]
-  - [1.0,  1, facebook]
+  - [1.0,  1, telegram]
   - [0.5,  0, blog]
   - [0.0, -1, email]
   - [0.0,  1, skype]
+
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 
@@ -229,14 +231,18 @@ http://jwatt.org/svg/authoring/
 		0,-10
 		" class="right" />
 		<use class="icon" xlink:href="#{{ item.useid }}" x="-6.25" y="-6.25" width="12.5" height="12.5" />
-		{% if item.text2 %}
 		<text x="{{ xgrid | divided_by: 2 }}" y="0">
+		{% if item.text3 %}
+			<tspan x="{{ xgrid | divided_by: 2 }}" y="-0.9em">{{ item.text1 }}</tspan>
+			<tspan x="{{ xgrid | divided_by: 2 }}" y="0em">{{ item.text2 }}</tspan>
+			<tspan x="{{ xgrid | divided_by: 2 }}" y="0.9em">{{ item.text3 }}</tspan>
+		{% elsif item.text2 %}
 			<tspan x="{{ xgrid | divided_by: 2 }}" y="-0.5em">{{ item.text1 }}</tspan>
 			<tspan x="{{ xgrid | divided_by: 2 }}" y="0.5em">{{ item.text2 }}</tspan>
-		</text>
 		{% else %}
-		<text x="{{ xgrid | divided_by: 2 }}" y="0">{{ item.text1 }}</text>
+			{{ item.text1 }}
 		{% endif %}
+		</text>
 	</a>
 </g>
 {% endfor %}

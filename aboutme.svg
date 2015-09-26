@@ -191,14 +191,18 @@ http://jwatt.org/svg/authoring/
 	<a target="_top" xlink:href="{{ item.href | xml_escape }}">
 		<circle cx="0" cy="0" r="20" />
 		<use class="icon" xlink:href="#{{ item.useid }}" x="-14" y="-14" width="28" height="28" />
-		{% if item.text2 %}
 		<text x="0" y="0">
+		{% if item.text3 %}
+			<tspan x="0" y="-1em">{{ item.text1 }}</tspan>
+			<tspan x="0" y="0">{{ item.text2 }}</tspan>
+			<tspan x="0" y="1em">{{ item.text3 }}</tspan>
+		{% elsif item.text2 %}
 			<tspan x="0" y="-0.5em">{{ item.text1 }}</tspan>
 			<tspan x="0" y="0.5em">{{ item.text2 }}</tspan>
-		</text>
 		{% else %}
-		<text x="0" y="0">{{ item.text1 }}</text>
+			{{ item.text1 }}
 		{% endif %}
+		</text>
 	</a>
 </g>
 {% endfor %}

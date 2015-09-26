@@ -266,7 +266,7 @@ stackoverflowcareers:
   useid: stackoverflow
   text1: Stack
   text2: Overflow
-  # "Stack Overflow Careers" is the complete name, but it is too long.
+  text3: Careers
 
 steam:
   href: https://steamcommunity.com/id/crazyterabyte
