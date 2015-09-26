@@ -368,7 +368,7 @@ YouTube:
 
 ## Colorful
 
-* http://svgporn.com/ and https://github.com/gilbarbara/logos
+* http://svgporn.com/ and http://svgmania.com/ and https://github.com/gilbarbara/logos
 * http://www.steverichey.com/dev/vector-logos/
 * http://johan.github.com/kilobyte-svg-challenge/ and https://github.com/johan/kilobyte-svg-challenge
 * http://zurb.com/playground/social-webicons
