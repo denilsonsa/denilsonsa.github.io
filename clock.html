@@ -1,0 +1,127 @@
+---
+layout: base
+title: Simple clock
+---
+<!--
+
+This code was originally posted at: http://codepen.io/denilsonsa/pen/gPggbj
+
+Note that this code runs slow on Chrome 47 on Linux on Intel video card on my laptop.
+It seems that painting the text is too slow in this system.
+
+However, it works fine and fast on Chrome 47 on Windows on Nvidia video card on my desktop.
+
+-->
+
+<style type="text/css">
+html {
+	background: black;
+	color: lime;
+	font-family: "Inconsolata", "Consolas", monospace;
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+#clock {
+	display: inline-block;
+	flex: 0 0 auto;
+	white-space: nowrap;
+	white-space: pre;
+	line-height: 1.0;
+	padding: 0.0em 0.1em;
+}
+</style>
+
+<script>
+// Assumes a non-negative number.
+function pad2(number) {
+	if (number < 10) return '0' + number;
+	else              return '' + number;
+}
+
+// Assumes a non-negative number.
+function pad3(number) {
+	if      (number < 10) return '00' + number;
+	else if (number < 100) return '0' + number;
+	else                    return '' + number;
+}
+
+function draw(timestamp) {
+	var now = new Date();
+	// No need for getElementById() because ids are already available on the window object.
+	window.hours.textContent   = pad2(now.getHours());
+	window.minutes.textContent = pad2(now.getMinutes());
+	window.seconds.textContent = pad2(now.getSeconds());
+	window.milliseconds.textContent = pad3(now.getMilliseconds());
+
+	window.requestAnimationFrame(draw);
+}
+
+//////////////////////////////////////////////////////////////////////
+
+// Throttling the resize event, to prevent it from running too many times in sequence.
+// https://developer.mozilla.org/en-US/docs/Web/Events/resize
+(function() {
+	var throttle = function(type, name, obj) {
+		obj = obj || window;
+		var running = false;
+		var func = function(ev) {
+			if (running) { return; }
+			running = true;
+			requestAnimationFrame(function() {
+				obj.dispatchEvent(new CustomEvent(name, {detail: ev}));
+				running = false;
+			});
+		};
+		obj.addEventListener(type, func);
+	};
+
+	throttle('resize', 'optimizedResize');
+})();
+
+function adjustSize(ev) {
+	var style = window.getComputedStyle(window.clock);
+	var fontSize = style.fontSize;
+
+	if (!fontSize.endsWith('px')) console.warn('Expected fontSize ending in "px", found: ' + fontSize);
+	fontSize = parseInt(fontSize, 10);
+
+	if (window.clock.offsetWidth / window.clock.offsetHeight > window.innerWidth / window.innerHeight) {
+		var newSize = fontSize * window.innerWidth / window.clock.offsetWidth;
+	} else {
+		var newSize = fontSize * window.innerHeight / window.clock.offsetHeight;
+	}
+
+	window.clock.style.fontSize = newSize + 'px';
+	// This should work on almost all cases (because the Math is correct),
+	// but a nice improvement would be to check if the new dimensions are correct
+	// and adjust the font-size as/if needed.
+}
+
+//////////////////////////////////////////////////////////////////////
+
+function init() {
+	adjustSize(null);
+	window.requestAnimationFrame(draw);
+	window.addEventListener('optimizedResize', adjustSize);
+}
+</script>
+
+</head>
+<body>
+
+<div id="clock"><span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>.<span id="milliseconds">000</span></div>
+
+</body>
+</html>
