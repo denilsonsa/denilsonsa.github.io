@@ -217,6 +217,12 @@ playfire:
   useid: playfire
   text1: Playfire
 
+pluralsight:
+  # href: https://app.pluralsight.com/id/profile/denilsonsa
+  href: https://pluralsight.com/profile/denilsonsa
+  useid: pluralsight
+  text1: Pluralsight
+
 reddit:
   href: https://www.reddit.com/user/denilsonsa/
   useid: reddit

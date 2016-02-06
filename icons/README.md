@@ -252,6 +252,12 @@ Playfire:
 
 * https://forums.playfire.com/general-discussion/thread/87300#post-2266740
 
+Pluralsight:
+
+* https://www.facebook.com/pluralsight/photos/a.440000206178.239568.121095851178/10153205700756179/
+* http://blog.pluralsight.com/pluralsight-new-brand
+* https://www.pluralsight.com/about
+
 reddit:
 
 * http://www.reddit.com/about/alien/

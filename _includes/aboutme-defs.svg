@@ -516,6 +516,18 @@
 </symbol>
 {% endif %}
 
+{% if include_all or restrictions contains ',pluralsight,' %}
+<!-- Drawn from scratch -->
+<linearGradient id="PluralsightGradient" x1="0" y1="0" x2="0" y2="1">
+	<stop stop-color="#f05a28" offset="0"/>
+	<stop stop-color="#eb0189" offset="1"/>
+</linearGradient>
+<symbol id="pluralsight" viewBox="0 0 346 346">
+	<circle r="173" cy="173" cx="173" fill="url(#PluralsightGradient)"/>
+	<path fill="none" stroke="#fff" stroke-width="15" d="M100,116v114l99-57zM136,97v152l133-76z"/>
+</symbol>
+{% endif %}
+
 {% if include_all or restrictions contains ',reddit,' %}
 <!-- Based on reddit-alien.svg from http://www.reddit.com/about/alien -->
 <symbol id="reddit" viewBox="0 0 28.606005 39.73">

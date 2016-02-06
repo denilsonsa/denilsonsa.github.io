@@ -1,14 +1,15 @@
 ---
 items:
+  - [19.5,  0, curriculumvitae]
   - [19.0, -1, stackoverflowcareers]
   - [19.0,  1, linkedin]
-  - [18.5,  0, curriculumvitae]
+  - [18.5,  0, github]
   - [18.0, -1, stackexchange]
   - [18.0,  1, bitbucket]
-  - [17.5,  0, github]
+  - [17.5,  0, codepen]
   - [17.0, -1, hackhands]
   - [17.0,  1, userscripts]
-  - [16.5,  0, codepen]
+  - [16.5,  0, pluralsight]
   - [16.0, -1, devpost]
   - [16.0,  1, stylish]
   - [15.5,  0, speakerdeck]
