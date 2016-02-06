@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 346 346" xmlns="http://www.w3.org/2000/svg">
+<!-- Drawn from scratch -->
+<defs>
+	<linearGradient id="PluralsightGradient" x1="0" y1="0" x2="0" y2="1">
+		<stop stop-color="#f05a28" offset="0"/>
+		<stop stop-color="#eb0189" offset="1"/>
+	</linearGradient>
+</defs>
+<circle r="173" cy="173" cx="173" fill="url(#PluralsightGradient)"/>
+<path fill="none" stroke="#fff" stroke-width="15" d="M100,116v114l99-57zM136,97v152l133-76z"/>
+</svg>

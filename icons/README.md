@@ -140,6 +140,10 @@ Gmail:
 
 * https://commons.wikimedia.org/wiki/File:New_Logo_Gmail.svg
 
+Goodreads:
+
+* https://www.goodreads.com/about/press
+
 Google+:
 
 * https://developers.google.com/+/branding-guidelines
@@ -187,6 +191,10 @@ Instructables:
 
 * http://www.instructables.com/community/Official-Instructables-Logos/
 
+itch.io:
+
+* https://github.com/itchio/itch.io/tree/master/logos
+
 Kickstarter:
 
 * https://www.kickstarter.com/help/brand_assets
@@ -203,6 +211,11 @@ LinkedIn:
 
 * http://developer.linkedin.com/documents/branding-guidelines
 * http://press.linkedin.com/Media-Resources?SubjectID=644
+
+Medium:
+
+* https://medium.com/policy/logos-and-brand-guidelines-f1a01a733592
+* https://github.com/Medium/medium-logos/
 
 Meetup:
 
