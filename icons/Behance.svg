@@ -2,7 +2,7 @@
 <svg version="1.1" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 <!-- Based on embedded SVG paths from https://www.behance.net/ and gradient colors from Facebook profile picture -->
 <defs>
-	<linearGradient id="BehanceGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+	<linearGradient id="BehanceGradient" x1="0" y1="0" x2="0" y2="1">
 		<stop stop-color="#0b80ff" offset="0"/>
 		<stop stop-color="#0b62ff" offset="1"/>
 	</linearGradient>

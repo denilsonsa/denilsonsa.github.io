@@ -93,7 +93,7 @@
 
 {% if include_all or restrictions contains ',behance,' %}
 <!-- Based on embedded SVG paths from https://www.behance.net/ and gradient colors from Facebook profile picture -->
-<linearGradient id="BehanceGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+<linearGradient id="BehanceGradient" x1="0" y1="0" x2="0" y2="1">
 	<stop stop-color="#0b80ff" offset="0"/>
 	<stop stop-color="#0b62ff" offset="1"/>
 </linearGradient>
@@ -576,7 +576,7 @@
 
 {% if include_all or restrictions contains ',skype,' %}
 <!-- Based on /usr/share/icons/hicolor/256x256/apps/skype.png -->
-<linearGradient id="SkypeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+<linearGradient id="SkypeGradient" x1="0" y1="0" x2="0" y2="1">
 	<stop stop-color="#00aff0" offset="0"/>
 	<stop stop-color="#019dd6" offset="1"/>
 </linearGradient>
