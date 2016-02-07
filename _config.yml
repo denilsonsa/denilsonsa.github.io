@@ -34,8 +34,8 @@ defaults:
     values:
       og_type: "article"
 
-#markdown: redcarpet
-markdown: kramdown
+markdown: redcarpet
+#markdown: kramdown
 
 # http://jekyllrb.com/docs/configuration/#markdown-options
 # https://stackoverflow.com/questions/13464590/github-flavored-markdown-and-pygments-highlighting-in-jekyll
