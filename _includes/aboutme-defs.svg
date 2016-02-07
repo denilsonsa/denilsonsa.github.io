@@ -352,6 +352,13 @@
 </symbol>
 {% endif %}
 
+{% if include_all or restrictions contains ',gravatar,' %}
+<!-- Copied from http://svgporn.com/ or https://github.com/gilbarbara/logos/blob/master/logos/gravatar.svg -->
+<symbol id="gravatar" viewBox="0 0 256 256">
+	<path fill="#1E8CBE" d="m128 0c-14.14 0-25.6 11.456-25.6 25.6v89.6c0 14.13 11.46 25.6 25.6 25.6s25.6-11.47 25.6-25.6v-59.616c29.82 10.56 51.2 38.976 51.2 72.416 0 42.4-34.4 76.8-76.8 76.8s-76.8-34.4-76.8-76.8c0-21.22 8.592-40.416 22.496-54.304 10-10 10-26.208 0-36.208s-26.208-10-36.208 0c-23.152 23.152-37.488 55.152-37.488 90.512 0 70.69 57.312 128 128 128 70.69 0 128-57.31 128-128 0-70.688-57.31-128-128-128z"/>
+</symbol>
+{% endif %}
+
 {% if include_all or restrictions contains ',hackhands,' %}
 <!-- Written from scratch, based on https://www.facebook.com/hackhands/photos/pb.454381268015164.-2207520000.1436558951./770084413111513/ -->
 <symbol id="hackhands" viewBox="0 0 774 854">

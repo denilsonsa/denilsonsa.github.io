@@ -138,6 +138,11 @@ gratipay:
   useid: gratipay
   text1: Gratipay
 
+gravatar:
+  href: https://en.gravatar.com/crazyterabyte
+  useid: gravatar
+  text1: Gravatar
+
 hackhands:
   href: https://hackhands.com/denilsonsa/
   useid: hackhands
