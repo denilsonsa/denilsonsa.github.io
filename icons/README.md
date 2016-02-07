@@ -155,6 +155,10 @@ Gratipay:
 
 * http://inside.gratipay.com/big-picture/brand/
 
+Gravatar:
+
+* https://github.com/gilbarbara/logos/blob/master/logos/gravatar.svg
+
 Grooveshark:
 
 * http://grooveshark.com/logo
