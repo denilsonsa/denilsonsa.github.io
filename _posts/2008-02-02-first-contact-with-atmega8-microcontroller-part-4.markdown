@@ -5,6 +5,7 @@ lang: en
 tags:
 - AVR
 - ATmega8
+- Hardware
 - Microcontroller
 ---
 
