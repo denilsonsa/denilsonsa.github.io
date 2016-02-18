@@ -1,0 +1,268 @@
+---
+layout: base
+title: Numerology Calendar
+---
+<style type="text/css">
+h1 {
+	text-align: center;
+}
+form {
+	margin: 1em 0;
+	text-align: center;
+}
+form label.label_year,
+form label.label_year > input {
+	font-weight: bold;
+}
+input#year {
+	width: 4em;
+	text-align: center;
+
+	/* Roughly based on http://purecss.io/, but heavily modified. */
+	padding: 0.25em 0.25em;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    vertical-align: middle;
+    box-sizing: content-box;
+}
+
+
+#calendar {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+#calendar > .month {
+	margin: 0.5em 1.25em;
+}
+#calendar > .month > table {
+	table-layout: fixed;
+	border-spacing: 0.25em;
+	border-collapse: separate;
+	width: calc(2.5em * 7 + 0.25em * 6);
+	margin: 0;
+}
+#calendar > .month > table col,
+#calendar > .month > table th,
+#calendar > .month > table td {
+	width: 2.5em;
+}
+#calendar > .month > table th.month_name {
+	width: auto;
+}
+
+#calendar > .month > table th {
+	font-weight: bold;
+	text-align: center;
+	vertical-align: top;
+	height: 2em;
+}
+#calendar > .month > table td.day {
+	position: relative;
+	height: 2.5em;
+	border-radius: 0.25em;
+	box-shadow: gray 1px 1px 2px;
+}
+#calendar > .month > table td.day .date,
+#calendar > .month > table td.day .magic_number {
+	position: absolute;
+	padding: 0.25em;
+}
+#calendar > .month > table td.day .date {
+	top: 0;
+	left: 0;
+	text-align: left;
+	color: #222;
+}
+#calendar > .month > table td.day .magic_number {
+	bottom: 0;
+	right: 0;
+	text-align: right;
+}
+
+/* Colors from: http://colorbrewer2.org/ */
+#calendar > .month > table td.day.number_1 { background-color: #fbb4ae; }
+#calendar > .month > table td.day.number_2 { background-color: #b3cde3; }
+#calendar > .month > table td.day.number_3 { background-color: #ccebc5; }
+#calendar > .month > table td.day.number_4 { background-color: #decbe4; }
+#calendar > .month > table td.day.number_5 { background-color: #fed9a6; }
+#calendar > .month > table td.day.number_6 { background-color: #ffffcc; }
+#calendar > .month > table td.day.number_7 { background-color: #e5d8bd; }
+#calendar > .month > table td.day.number_8 { background-color: #fddaec; }
+#calendar > .month > table td.day.number_9 { background-color: #f2f2f2; }
+
+#calendar > .month > table td.day.number_1 .magic_number { color: #e41a1c; }
+#calendar > .month > table td.day.number_2 .magic_number { color: #377eb8; }
+#calendar > .month > table td.day.number_3 .magic_number { color: #4daf4a; }
+#calendar > .month > table td.day.number_4 .magic_number { color: #984ea3; }
+#calendar > .month > table td.day.number_5 .magic_number { color: #ff7f00; }
+#calendar > .month > table td.day.number_6 .magic_number { color: #d1d12a; }  /* #ffff33 */
+#calendar > .month > table td.day.number_7 .magic_number { color: #a65628; }
+#calendar > .month > table td.day.number_8 .magic_number { color: #f781bf; }
+#calendar > .month > table td.day.number_9 .magic_number { color: #999999; }
+
+/* 22em is the width of a single calendar. (width * 7 + border-spacing * 8 + horizontal margins) */
+/* Note, however, that em in media queries are based on the initial font-size, and never on declarations. https://www.w3.org/TR/css3-mediaqueries/#units */
+/* @media (max-width: calc((2.5em * 7 + 0.25em * 8 + 1.25em * 2) * 2)) { */
+/* @media (max-width: 44em) { */
+@media (max-width: 22em) {
+	#calendar > .month {
+		font-size: calc(100vw / 22);
+	}
+}
+
+</style>
+</head>
+<body>
+
+<header>
+	<h1>{{ page.title }}</h1>
+</header>
+
+<form action="">
+	<div><label class="label_year">Year: <input type="number" id="year" value="" size="6" maxlength=4 min="1970" step="1" required></label></div>
+</form>
+
+<section id="calendar">
+</section>
+
+<section id="description" class="site">
+<p>This calendar shows the <a href="https://en.wikipedia.org/wiki/Digital_root">digital root</a> for each date, which is calculating by summing all digits of the full date (year, month and day), and then summing all digits of the result, and again and again, until only a single digit is left.</p>
+<p>People who believe in <a href="https://en.wikipedia.org/wiki/Numerology">numerology</a> claim the result of such calculation has some meaning.</p>
+</section>
+
+<script>
+var months = [
+	'January',
+	'February',
+	'March',
+	'April',
+	'May',
+	'June',
+	'July',
+	'August',
+	'September',
+	'October',
+	'November',
+	'December',
+];
+var weekdays = [
+	'Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'
+];
+
+function calc(year, month, day) {
+	var v = year * 10000 + month * 10 + day;
+
+	// Simple iterative algorithm:
+	/*
+	while (v > 9) {
+		var sum = 0;
+		while (v > 0) {
+			sum += v % 10;
+			v = Math.floor(v / 10);
+		}
+		v = sum;
+	}*/
+
+	// Smaller and quicker algorithm:
+	v = v % 9;
+	if (v == 0) {
+		v = 9;
+	}
+
+	return v;
+}
+
+function update_calendar() {
+	var input_year = document.getElementById('year');
+	var year = parseInt(input_year.value, 10);
+	if (!(year >= 1970)) {
+		// Error.
+		return;
+	}
+
+	// year, january 1st, 12:00:00
+	var d = new Date(year, 0, 1, 12, 0, 0);
+	var weekday = d.getDay();
+
+	var html = '';
+	while (true) {
+		if (d.getDate() == 1) {
+			if (d.getMonth() > 0) {
+				// End of the previous month.
+				if (d.getDay() != 0) {
+					for (var i = d.getDay(); i < 7; i++) {
+						html += '<td class="spacer"></td>';
+					}
+				}
+				html += '</tr></table></div>';
+			}
+
+			// End of the calendar.
+			if (d.getFullYear() != year) {
+				break;
+			}
+
+			// New month.
+			html += (
+				'<div class="month"><table><thead>' +
+				'<col><col><col><col><col><col><col>' +
+				'<tr class="month_name"><th colspan="7">' + months[d.getMonth()] + '</th></tr>' +
+				'<tr class="weekdays">'
+			);
+			for (var i = 0; i < 7; i++) {
+				html += '<th>' + weekdays[i] + '</th>';
+			}
+			html += (
+				'</tr>' +
+				'<tr class="days">'
+			);
+			for (var i = 0; i < d.getDay(); i++) {
+				html += '<td class="spacer"></td>';
+			}
+		}
+
+		// New week.
+		if (d.getDay() == 0 && d.getDate() > 1) {
+			html += (
+				'</tr>' +
+				'<tr class="days">'
+			);
+		}
+
+		// New day.
+		var magic_number = calc(year, d.getMonth() + 1, d.getDate());
+		html += (
+			'<td class="day number_' + magic_number + '">' +
+			'<span class="date">' + d.getDate() + '</span> ' +
+			'<span class="magic_number">' + magic_number + '</span> ' +
+			'</td>'
+		);
+
+		d.setDate(d.getDate() + 1);
+	}
+
+	document.getElementById('calendar').innerHTML = html;
+}
+
+function init() {
+	var input_year = document.getElementById('year');
+	var year = parseInt(input_year.value, 10);
+	// If the year is invalid or empty.
+	if (!(year >= 1970)) {
+		input_year.value = (new Date()).getFullYear();
+	}
+
+	input_year.addEventListener('input', update_calendar);
+	update_calendar();
+}
+window.addEventListener('load', init);
+</script>
+
+</body>
+</html>
