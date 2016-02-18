@@ -41,32 +41,12 @@ a:visited:hover { color: #f1f; }
   text-align: justify;
   max-width: 45em;
   margin: 0 auto 1em;
+  padding: 0 1em;
   line-height: 1.5;
 }
 
 /* Header */
 header {
-  position: relative;
-  border-radius: 16px 0 0 16px;
-  font-size: 16px;
-  font-family: "Oswald", sans-serif;
-  background: #EDEEEB;
-  background: linear-gradient(to right, rgba(237,238,235,1.0) 0%, rgba(1,1,1,0.0) 100%);
-  color: black;
-  text-shadow: white 1px 1px;
-  margin-bottom: 1.25em;
-  text-align: left;
-}
-header .favicon {
-}
-header .favicon img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  vertical-align: middle;
 }
 header a:link,
 header a:visited,
@@ -85,12 +65,33 @@ header a:visited:hover {
 header nav {
   display: block;
   padding-left: 32px;
+  position: relative;
+  border-radius: 16px 0 0 16px;
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+  background: #EDEEEB;
+  background: linear-gradient(to right, rgba(237,238,235,1.0) 0%, rgba(1,1,1,0.0) 100%);
+  color: black;
+  text-shadow: white 1px 1px;
+  margin-bottom: 1.25em;
+  text-align: left;
 }
 header nav:after {
   display: block;
   clear: both;
   content: " ";
   height: 0;
+}
+header nav .favicon {
+}
+header nav .favicon img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
 }
 header nav a {
   display: block;
@@ -246,6 +247,7 @@ figure.floatright {
 }
 
 /* 21em is half of 42em .site max-width */
+/* Note, however, that em in media queries are based on the initial font-size, and never on declarations. https://www.w3.org/TR/css3-mediaqueries/#units */
 @media (max-width: 21em) {
   figure.floatright {
     display: table;  /* Trick to make the width fit the contents. */
