@@ -1,0 +1,482 @@
+---
+layout: base
+title: Pixel Filter - pattern testing
+---
+<style type="text/css">
+html, body {
+	margin: 0;
+	padding: 0;
+}
+#tiny-canvas {
+	display: none;
+}
+
+/* Tab bar implementation inspired by http://codepen.io/wallaceerick/pen/ojtal */
+
+body {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+body > .tab {
+	height: 1.75em;
+	flex: 1 1;
+}
+.tab > input.tab-radio {
+	display: none;
+}
+.tab > label {
+	display: block;
+	height: 1.75em;
+	line-height: 1.75em;
+	text-align: center;
+	border-radius: 0.75em 0.75em 0 0;
+	border: 1px solid gray;
+	background: #DDD;
+}
+.tab > label:hover {
+	background: #EEE;
+	cursor: pointer;
+}
+.tab > input.tab-radio:checked + label {
+	background: #FFF;
+	border-bottom-color: #FFF;
+}
+.tab > .tab-content {
+	display: none;
+	position: absolute;
+	top: calc(1.75em + 2px);
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: auto;
+	border: 1px solid gray;
+	border-top: 0 none transparent;
+	background: #FFF;
+
+	padding: 1em;
+}
+.tab > input.tab-radio:checked ~ .tab-content {
+	display: block;
+}
+
+form {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+form#form-config {
+	text-align: center;
+}
+form#form-config select,
+form#form-config input[type="button"],
+form#form-config label {
+	display: inline-block;
+	font-size: 1em;
+	line-height: 1em;
+	padding: 0.5em 1em;
+	height: 2.25em;
+	box-sizing: border-box;
+	vertical-align: baseline;
+}
+#view-area {
+	background-repeat: repeat;
+}
+#view-area.maximized {
+	top: 0;
+	border: 0;
+}
+</style>
+</head>
+<body>
+
+<canvas id="tiny-canvas" width="8" height="8"></canvas>
+
+<section class="tab">
+	<input type="radio" name="maintabs" id="tab-about" class="tab-radio" checked>
+	<label for="tab-about">About</label>
+	<div class="tab-content">
+		<h1>{{ page.title }}</h1>
+
+		<p>This page has some black/white test patterns. It can be used to test your display.</p>
+
+		<p>This page was written when trying to reproduce <a href="https://github.com/pelya/screen-dimmer-pixel-filter/issues/5">issue #5 of Pixel Filter</a> (Android app available at <a href="https://play.google.com/store/apps/details?id=screen.dimmer.pixelfilter">Google Play Store</a>).</p>
+
+		<p>The <em>Run background thread</em> option starts a single do-nothing background thread that serves no purpose other than wasting CPU time. All other options are pretty self-explanatory.</p>
+	</div>
+</section>
+
+<section class="tab">
+	<input type="radio" name="maintabs" id="tab-config" class="tab-radio">
+	<label for="tab-config">Config.</label>
+	<div class="tab-content">
+		<form id="form-config">
+			<div>
+				<label><input type="checkbox" id="checkbox-fullscreen"> Fullscreen</label>
+			</div>
+			<div>
+				<label><input type="checkbox" id="checkbox-bgthread"> Run background thread</label>
+			</div>
+			<div>
+				<input type="button" id="button-prev" value="←">
+				<select id="select-pattern"></select>
+				<input type="button" id="button-next" value="→">
+			</div>
+			<div>
+				<canvas id="zoomed-canvas" width="256" height="256"></canvas>
+			</div>
+		</form>
+	</div>
+</section>
+
+<section class="tab">
+	<input type="radio" name="maintabs" id="tab-view" class="tab-radio">
+	<label for="tab-view">View</label>
+	<div class="tab-content" id="view-area">
+	</div>
+</section>
+
+
+<script>
+
+////////////////////////////////////////////////////////////
+// Global vars and constants.
+
+// Patterns from:
+// https://github.com/pelya/screen-dimmer-pixel-filter/blob/master/app/src/main/java/screen/dimmer/pixelfilter/Grids.java
+var PATTERNS = [
+	{
+		name: '12%',
+		pixels: [
+			1, 0, 0, 0, 0, 0, 0, 0,
+			0, 0, 0, 1, 0, 0, 0, 0,
+			0, 0, 0, 0, 0, 0, 1, 0,
+			0, 1, 0, 0, 0, 0, 0, 0,
+			0, 0, 0, 0, 0, 1, 0, 0,
+			0, 0, 1, 0, 0, 0, 0, 0,
+			0, 0, 0, 0, 0, 0, 0, 1,
+			0, 0, 0, 0, 1, 0, 0, 0,
+		]
+	},
+	{
+		name: '25%',
+		pixels: [
+			1, 0, 0, 0, 1, 0, 0, 0,
+			0, 0, 1, 0, 0, 0, 1, 0,
+			0, 1, 0, 0, 0, 1, 0, 0,
+			0, 0, 0, 1, 0, 0, 0, 1,
+			1, 0, 0, 0, 1, 0, 0, 0,
+			0, 0, 1, 0, 0, 0, 1, 0,
+			0, 1, 0, 0, 0, 1, 0, 0,
+			0, 0, 0, 1, 0, 0, 0, 1,
+		]
+	},
+	{
+		name: '38%',
+		pixels: [
+			1, 0, 0, 0, 1, 0, 0, 0,
+			0, 1, 0, 1, 0, 1, 0, 1,
+			0, 0, 1, 0, 0, 0, 1, 0,
+			0, 1, 0, 1, 0, 1, 0, 1,
+			1, 0, 0, 0, 1, 0, 0, 0,
+			0, 1, 0, 1, 0, 1, 0, 1,
+			0, 0, 1, 0, 0, 0, 1, 0,
+			0, 1, 0, 1, 0, 1, 0, 1,
+		]
+	},
+	{
+		name: '50%',
+		pixels: [
+			1, 0, 1, 0, 1, 0, 1, 0,
+			0, 1, 0, 1, 0, 1, 0, 1,
+			1, 0, 1, 0, 1, 0, 1, 0,
+			0, 1, 0, 1, 0, 1, 0, 1,
+			1, 0, 1, 0, 1, 0, 1, 0,
+			0, 1, 0, 1, 0, 1, 0, 1,
+			1, 0, 1, 0, 1, 0, 1, 0,
+			0, 1, 0, 1, 0, 1, 0, 1,
+		]
+	},
+	{
+		name: '62%',
+		pixels: [
+			0, 1, 1, 1, 0, 1, 1, 1,
+			1, 0, 1, 0, 1, 0, 1, 0,
+			1, 1, 0, 1, 1, 1, 0, 1,
+			1, 0, 1, 0, 1, 0, 1, 0,
+			0, 1, 1, 1, 0, 1, 1, 1,
+			1, 0, 1, 0, 1, 0, 1, 0,
+			1, 1, 0, 1, 1, 1, 0, 1,
+			1, 0, 1, 0, 1, 0, 1, 0,
+		]
+	},
+	{
+		name: '75%',
+		pixels: [
+			0, 1, 1, 1, 0, 1, 1, 1,
+			1, 1, 0, 1, 1, 1, 0, 1,
+			1, 0, 1, 1, 1, 0, 1, 1,
+			1, 1, 1, 0, 1, 1, 1, 0,
+			0, 1, 1, 1, 0, 1, 1, 1,
+			1, 1, 0, 1, 1, 1, 0, 1,
+			1, 0, 1, 1, 1, 0, 1, 1,
+			1, 1, 1, 0, 1, 1, 1, 0,
+		]
+	},
+	{
+		name: '88%',
+		pixels: [
+			0, 1, 1, 1, 1, 1, 1, 1,
+			1, 1, 1, 0, 1, 1, 1, 1,
+			1, 1, 1, 1, 1, 1, 0, 1,
+			1, 0, 1, 1, 1, 1, 1, 1,
+			1, 1, 1, 1, 1, 0, 1, 1,
+			1, 1, 0, 1, 1, 1, 1, 1,
+			1, 1, 1, 1, 1, 1, 1, 0,
+			1, 1, 1, 1, 0, 1, 1, 1,
+		]
+	},
+];
+
+var TRANSPARENT = [  0,   0,   0,   0];
+var BLACK       = [  0,   0,   0, 255];
+var WHITE       = [255, 255, 255, 255];
+
+var g_worker = null;
+
+// http://www.html5rocks.com/en/tutorials/workers/basics/#toc-inlineworkers
+var BG_SCRIPT = 'while(1);';
+var BG_SCRIPT_BLOB = new Blob([BG_SCRIPT], {type: 'text/javascript'});
+var BG_SCRIPT_URL = URL.createObjectURL(BG_SCRIPT_BLOB);
+
+////////////////////////////////////////////////////////////
+// Misc. useful functions.
+
+// Same behavior as Python's randrange().
+function randrange(begin, end) {
+	if (end === undefined) {
+		end = begin;
+		begin = 0;
+	}
+	return Math.floor(Math.random() * (end - begin) + begin);
+}
+
+// A cleaner and more complete alternative would be to use:
+// https://github.com/neovov/Fullscreen-API-Polyfill
+function quick_and_dirty_fullscreen_polyfill() {
+	if (document.fullscreenEnabled === undefined) {
+		document.fullscreenEnabled = (
+			document.webkitFullscreenEnabled ||
+			document.webkitFullScreenEnabled ||
+			document.mozFullscreenEnabled ||
+			document.mozFullScreenEnabled ||
+			document.msFullscreenEnabled ||
+			document.msFullScreenEnabled
+		);
+	}
+	if (Element.prototype.requestFullscreen === undefined) {
+		Element.prototype.requestFullscreen = (
+			Element.prototype.webkitRequestFullscreen ||
+			Element.prototype.webkitRequestFullScreen ||
+			Element.prototype.mozRequestFullscreen ||
+			Element.prototype.mozRequestFullScreen ||
+			Element.prototype.msRequestFullscreen ||
+			Element.prototype.msRequestFullScreen
+		);
+	}
+	if (document.exitFullscreen === undefined) {
+		document.exitFullscreen = (
+			document.webkitExitFullscreen ||
+			document.webkitExitFullScreen ||
+			document.mozCancelFullscreen ||
+			document.mozCancelFullScreen ||
+			document.msExitFullscreen ||
+			document.msExitFullScreen
+		);
+	}
+
+	var change_handler = function(ev) {
+		document.fullscreenElement = (
+			document.webkitCurrentFullScreenElement ||
+			document.webkitCurrentFullscreenElement ||
+			document.mozFullscreenElement ||
+			document.mozFullScreenElement ||
+			document.msFullscreenElement ||
+			document.msFullScreenElement
+		);
+
+		var new_event = document.createEvent('Event');
+		new_event.initEvent('fullscreenchange', true, false);
+		ev.target.dispatchEvent(new_event);
+	};
+
+	document.addEventListener('webkitfullscreenchange', change_handler);
+	document.addEventListener('mozfullscreenchange', change_handler);
+	document.addEventListener('msfullscreenchange', change_handler);
+}
+
+////////////////////////////////////////////////////////////
+// Canvas-drawing functions.
+
+function draw_8x8_on_canvas(pixels, colors) {
+	var canvas = document.getElementById('tiny-canvas');
+	var ctx = canvas.getContext('2d');
+	var img = ctx.createImageData(8, 8);
+
+	for (var i = 0; i < 8 * 8; i++) {
+		for (var j = 0; j < 4; j++) {
+			img.data[i * 4 + j] = colors[pixels[i]][j];
+		}
+	}
+
+	ctx.putImageData(img, 0, 0);
+}
+
+function update_zoomed_canvas() {
+	var tiny = document.getElementById('tiny-canvas');
+	var zoomed = document.getElementById('zoomed-canvas');
+	var ctx = zoomed.getContext('2d');
+	ctx.imageSmoothingEnabled = false;
+	ctx.drawImage(tiny, 0, 0, 8, 8, 0, 0, zoomed.width, zoomed.height);
+}
+
+function update_view_area() {
+	var tiny = document.getElementById('tiny-canvas');
+	var area = document.getElementById('view-area');
+	area.style.backgroundImage = 'url(' + tiny.toDataURL('image/png') + ')';
+}
+
+////////////////////////////////////////////////////////////
+// UI, events and DOM manipulation functions.
+
+function select_pattern_by_number(num) {
+	draw_8x8_on_canvas(PATTERNS[num].pixels, [WHITE, BLACK]);
+	update_zoomed_canvas();
+	update_view_area();
+}
+
+function pattern_has_changed(ev) {
+	var select = document.getElementById('select-pattern');
+	select_pattern_by_number(parseInt(select.value, 10));
+
+	if (ev) {
+		ev.preventDefault();
+		ev.stopPropagation();
+	}
+}
+
+function prev_pattern(ev) {
+	var select = document.getElementById('select-pattern');
+	select.value = Math.max(0, parseInt(select.value, 10) - 1);
+	pattern_has_changed();
+
+	if (ev) {
+		ev.preventDefault();
+		ev.stopPropagation();
+	}
+}
+
+function next_pattern(ev) {
+	var select = document.getElementById('select-pattern');
+	select.value = Math.min(PATTERNS.length - 1, parseInt(select.value, 10) + 1);
+	pattern_has_changed();
+
+	if (ev) {
+		ev.preventDefault();
+		ev.stopPropagation();
+	}
+}
+
+function toggle_fullscreen(ev) {
+	var fullscreen = document.getElementById('checkbox-fullscreen');
+	if (fullscreen.checked) {
+		document.body.requestFullscreen();
+	} else {
+		document.exitFullscreen();
+	}
+}
+
+function fullscreen_change(ev) {
+	var fullscreen = document.getElementById('checkbox-fullscreen');
+	fullscreen.checked = !!document.fullscreenElement;
+}
+
+function start_background_thread() {
+	stop_background_thread();
+	g_worker = new Worker(BG_SCRIPT_URL);
+}
+
+function stop_background_thread() {
+	if (g_worker) {
+		g_worker.terminate();
+		g_worker = null;
+	}
+}
+
+function bgthread_changed(ev) {
+	var bgthread = document.getElementById('checkbox-bgthread');
+	if (bgthread.checked) {
+		start_background_thread();
+	} else {
+		stop_background_thread();
+	}
+}
+
+function toggle_maximize(ev) {
+	var area = document.getElementById('view-area');
+	area.classList.toggle('maximized');
+}
+
+function init() {
+	quick_and_dirty_fullscreen_polyfill();
+
+	// Creating the form values.
+	var select = document.getElementById('select-pattern');
+	for (var i = 0; i < PATTERNS.length; i++) {
+		var option = document.createElement('option');
+		option.textContent = PATTERNS[i].name;
+		option.value = i;
+		select.appendChild(option);
+	}
+	select.value = 3;
+
+	// Adding event listeners.
+	select.addEventListener('input', pattern_has_changed);
+	select.addEventListener('change', pattern_has_changed);
+
+	var prev = document.getElementById('button-prev');
+	prev.addEventListener('click', prev_pattern);
+	var next = document.getElementById('button-next');
+	next.addEventListener('click', next_pattern);
+
+	var fullscreen = document.getElementById('checkbox-fullscreen');
+	if (document.fullscreenEnabled) {
+		fullscreen.addEventListener('change', toggle_fullscreen);
+		document.addEventListener('fullscreenchange', fullscreen_change);
+	} else {
+		fullscreen.disabled = true;
+	}
+
+	var bgthread = document.getElementById('checkbox-bgthread');
+	bgthread.addEventListener('change', bgthread_changed);
+
+	var area = document.getElementById('view-area');
+	area.addEventListener('click', toggle_maximize);
+
+	// Executing the listeners for the first time.
+	pattern_has_changed();
+}
+
+window.addEventListener('load', init);
+
+
+</script>
+
+</body>
+</html>
