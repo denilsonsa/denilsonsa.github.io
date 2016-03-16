@@ -124,6 +124,9 @@ form#form-config label {
 				<label><input type="checkbox" id="checkbox-bgthread"> Run background thread</label>
 			</div>
 			<div>
+				<label><input type="checkbox" id="checkbox-devicepixel" checked> Adjust CSS pixels to device pixels</label>
+			</div>
+			<div>
 				<input type="button" id="button-prev" value="←">
 				<select id="select-pattern"></select>
 				<input type="button" id="button-next" value="→">
@@ -350,6 +353,14 @@ function update_view_area() {
 	var tiny = document.getElementById('tiny-canvas');
 	var area = document.getElementById('view-area');
 	area.style.backgroundImage = 'url(' + tiny.toDataURL('image/png') + ')';
+
+	var devicepixel = document.getElementById('checkbox-devicepixel');
+	if (devicepixel.checked) {
+		var size = 8 / window.devicePixelRatio;
+		area.style.backgroundSize = size + 'px ' + size + 'px';
+	} else {
+		area.style.backgroundSize = 'auto auto';
+	}
 }
 
 ////////////////////////////////////////////////////////////
@@ -465,6 +476,9 @@ function init() {
 
 	var bgthread = document.getElementById('checkbox-bgthread');
 	bgthread.addEventListener('change', bgthread_changed);
+
+	var devicepixel = document.getElementById('checkbox-devicepixel');
+	devicepixel.addEventListener('change', update_view_area);
 
 	var area = document.getElementById('view-area');
 	area.addEventListener('click', toggle_maximize);
