@@ -64,9 +64,9 @@ Firmware update mode:
 
 Links:
 
-* Product page: http://www.mayflash.com/Products/NINTENDOWiiGC/W010.html
-* Firmware download: http://www.mayflash.com/Support/Download/
-* Manual: https://imgur.com/a/LBagg
-* Dolphin emulator: https://dolphin-emu.org/
+* Product page: <http://www.mayflash.com/Products/NINTENDOWiiGC/W010.html>
+* Firmware download: <http://www.mayflash.com/Support/Download/>
+* Manual: <https://imgur.com/a/LBagg>
+* Dolphin emulator: <https://dolphin-emu.org/>
 
 Cheatsheet built by Denilson Sá, who is not affiliated with MAYFLASH nor with Dolphin emulator.

@@ -8,6 +8,8 @@ tags:
 - driver
 - Nvidia
 - X.org
+
+# Note: Using "\'" to prevent kramdown from converting "'" to "‘".
 ---
 
 Last night, I came upon _Shirakawasuna2_ at [#gentoo](irc://irc.freenode.net/gentoo) channel. He was asking for help with X.org lock-ups with via+nvidia+agp. I told him I had the same problem, and I was using `nv` driver. He told me he could "stabilize" using the `nvidia` driver. Then I asked how, and start writing one more chapter of my nvidia series…
@@ -25,7 +27,7 @@ Taking the long story (and conversation) short, he could "stabilize" his system 
 
 So, I emerged latest drivers: `nvidia-glx-1.0.8178` and `nvidia-kernel-1.0.8178-r3`. At first, I tried with default `NvAGP = 3`. Looking at `/proc/driver/nvidia/agp/status`, I saw it was using AGPGART. It froze after some minutes, and I could bring the computer up again, without rebooting, by pressing <kbd>Alt+SysRq+K</kbd>, then <kbd>Ctrl+Alt+F1</kbd> and <kbd>Alt+SysRq+K</kbd> again (on my previous crashes, months ago, this could not always bring a working console).
 
-_Shirakawasuna2_ tried value 3 on his system. At first, the NVAGP was used, because `via_agp` module was not loaded on his computer. It froze very fast. Then, he `modprobe`'d that module, and nvidia used AGPGART. X.org froze too, did not take too long. Fortunately for him, he could ssh into the box and kill X.
+_Shirakawasuna2_ tried value 3 on his system. At first, the NVAGP was used, because `via_agp` module was not loaded on his computer. It froze very fast. Then, he `modprobe`\'d that module, and nvidia used AGPGART. X.org froze too, did not take too long. Fortunately for him, he could ssh into the box and kill X.
 
 I did not even try NVAGP, since it will certainly crash. [nVidia README](http://download.nvidia.com/XFree86/Linux-x86/1.0-8178/README/appendix-f.html) does not list my chipset as supported for NVAGP.
 

@@ -107,7 +107,7 @@ However, there is [chicken-or-egg](http://en.wikipedia.org/wiki/Chicken_or_the_e
 If you pay enough attention, you can identify two major parts on that breadboard: the _USBasp_ circuit and the _blinking LEDs_ circuit (from [part 4][]). The crystal on that _blinking LEDs_ circuit was not necessary (I just left it in there because I was going to need it for another firmware). You can also see a portion of another project that was still mounted on that breadboard (it's completely unrelated to these posts, just ignore it).
 
 <figure class="singleimage polaroid">
-<!-- SVG <image> elements are only loaded when embedded as <object>, they are not loaded when embedded as <img> \-->
+<!-- SVG <image> elements are only loaded when embedded as <object>, they are not loaded when embedded as <img> -->
 <object type="image/svg+xml" data="{{ site.url }}/blog/images/avr/usbasp_on_breadboard_1_annotated.svg">
 <img src="{{ site.url }}/blog/images/avr/usbasp_on_breadboard_1_annotated.jpg" alt="USBasp and blinking LEDS on a breadboard, with all major circuit portions highlighted.">
 </object>

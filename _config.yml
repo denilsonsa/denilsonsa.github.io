@@ -34,8 +34,8 @@ defaults:
     values:
       og_type: "article"
 
-markdown: redcarpet
-#markdown: kramdown
+#markdown: redcarpet
+markdown: kramdown
 
 # http://jekyllrb.com/docs/configuration/#markdown-options
 # https://stackoverflow.com/questions/13464590/github-flavored-markdown-and-pygments-highlighting-in-jekyll
@@ -58,11 +58,28 @@ redcarpet:
 # http://kramdown.gettalong.org/options.html
 # http://kramdown.gettalong.org/parser/gfm.html
 kramdown:
-  # Still missing: autolink and strikethrough
+  # Still missing: autolink
   input: GFM
-  syntax_highlighter: rouge
   # If true, inserts <br> for newlines in paragraphs.
   hard_wrap: false
+
+  # "as_input", "numeric", "symbolic", "as_char"
+  entity_output: "as_input"
+
+  # "coderay" is the default, but it outputs different classes than rouge/pygments.
+  # "rouge" seems a better choice.
+  syntax_highlighter: "rouge"
+
+  # syntax_highlighter_opts:
+    # https://github.com/jneen/rouge#full-options
+    # This is already the default:
+    # line_numbers: false
+
+  # Either "class" or "style".
+  coderay_css: "class"
+  # "table", "inline" or nil
+  coderay_line_numbers: "table"
+
   # Requires "stringex" gem.
   # transliterated_header_ids: true
 
@@ -101,6 +118,7 @@ exclude:
 gems:
   - jekyll-sitemap
   - jekyll-redirect-from
+  # I may use: https://github.com/jekyll/jekyll-feed
 
 # Further configuration:
 # https://help.github.com/articles/redirects-on-github-pages

@@ -50,13 +50,13 @@ Finally, but most important of all, the old Opera 8 interface did scroll with me
 
 I've submitted this last issue as _bug-219999: New Opera 9 mail header toolbar wastes too much screen space_.
 
-[shoust](http://my.opera.com/shoust) ([Wayback Machine](http://web.archive.org/web/20060621121634/http://my.opera.com/shoust/blog/)) told me about [opera:config#UserPrefs|ShowMailHeaderToolbar](opera:config#UserPrefs|ShowMailHeaderToolbar). This way, we can disable that toolbar, but it will not re-enable automatically the old interface. To do that, we must mess with `mime.css` file (which supposedly has some comments about how to restore the old interface, but I did not find any).
+[shoust](http://my.opera.com/shoust) ([Wayback Machine](http://web.archive.org/web/20060621121634/http://my.opera.com/shoust/blog/)) told me about `opera:config#UserPrefs|ShowMailHeaderToolbar`. This way, we can disable that toolbar, but it will not re-enable automatically the old interface. To do that, we must mess with `mime.css` file (which supposedly has some comments about how to restore the old interface, but I did not find any).
 
 ## Annoying system tray icon
 
 Now Opera has a system tray icon. Nice. It also does have a little mail icon on top of Opera's icon, probably indicating new messages (like that little exclamation point at mail panel icon). For our deception, it does not (**inconsistent interface!**). It appears to display the existence of unread message. Hey, I have tons of unread messages I won't read, so then I can't get rid of that mail notification at my system tray!
 
-Since I can't get rid of mail icon, I want to get rid of the entire opera icon at system tray. Let's try it! Let's look for an option to disable it at preferences dialog. Found it? No. Let's try to find an option at some menu. Found it? No. Let's try again, looking more carefully. Found it? No. Finally, let's try [opera:config](opera:config). It must have an option to disable it. Found it? NO!!!
+Since I can't get rid of mail icon, I want to get rid of the entire opera icon at system tray. Let's try it! Let's look for an option to disable it at preferences dialog. Found it? No. Let's try to find an option at some menu. Found it? No. Let's try again, looking more carefully. Found it? No. Finally, let's try `opera:config`. It must have an option to disable it. Found it? NO!!!
 
 People at [#Opera](irc://irc.opera.com/Opera) told me to use `-notrayicon` parameter when launching Opera. Though this works, this is not a good solution, because this means I need to change all my Opera shortcuts, which includes one at [wmappl](http://wmappl.sourceforge.net/), plus two at [fluxbox](http://fluxbox.org/) menu, plus all other shortcuts at other window managers. But what happens when Opera is launched by another application? Of course, it will not have that parameter, and it will display the f… the fine icon.
 

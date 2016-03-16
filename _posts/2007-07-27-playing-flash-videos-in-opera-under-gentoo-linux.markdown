@@ -70,7 +70,7 @@ Am I saying any Flash is bad? No. Flash videos are the latest "revolution" in we
 
 ## Updates/trackbacks _(section added on 2007-12-30)_
 
-<s>Supposedly, this blog should automatically detect and list [trackbacks](http://en.wikipedia.org/wiki/Trackback), [linkbacks](http://en.wikipedia.org/wiki/Linkback) and things like that. Well, in case it does not work well, I will post here or in comments whatever I find.</s> The 2014 reincarnation of this blog as static pages does not support trackbacks.
+~~Supposedly, this blog should automatically detect and list [trackbacks](http://en.wikipedia.org/wiki/Trackback), [linkbacks](http://en.wikipedia.org/wiki/Linkback) and things like that. Well, in case it does not work well, I will post here or in comments whatever I find.~~ The 2014 reincarnation of this blog as static pages does not support trackbacks.
 
 _2007-12-30:_ It was a happy surprise to find a YouTube video showing the user applying this solution and linking back to this post. I'm glad to find it is being useful for other people. [YouTube works in Opera (Linux). Honest.](http://youtube.com/watch?v=EeYMugP22K0) (looks like the video was published on 2007-09-16, but I found it only today, 2007-12-30)
 

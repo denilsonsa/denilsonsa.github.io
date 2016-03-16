@@ -14,11 +14,11 @@ layout: default
 
 ###### Header 6 {#header6}
 
-Text with *asterisk* **two asterisks** 'quotes' ''two quotes'' "double-quotes" ""two double-quotes"" _underline_ __two underlines__ `backtick` ``two backticks`` ~tilde~ ~~two tildes~~ middle_under_line two -- three --- dots ... http://example.com/ [example] <http://example.com> denilsonsa@gmail.com <denilsonsa@gmail.com>
+Text with *asterisk* **two asterisks** 'quotes' ''two quotes'' "double-quotes" ""two double-quotes"" _underline_ __two underlines__ `backtick` ``two backticks`` ~tilde~ ~~two tildes~~ middle_under_line two -- three --- dots ... 1/2 1/4 3/4 http://example.com/ [example] <http://example.com> denilsonsa@gmail.com <denilsonsa@gmail.com>
 
-> Blockquote text with *asterisk* **two asterisks** 'quotes' ''two quotes'' "double-quotes" ""two double-quotes"" _underline_ __two underlines__ `backtick` ``two backticks`` ~tilde~ ~~two tildes~~ middle_under_line two -- three --- dots ... http://example.com/ [example] <http://example.com> denilsonsa@gmail.com <denilsonsa@gmail.com>
+> Blockquote text with *asterisk* **two asterisks** 'quotes' ''two quotes'' "double-quotes" ""two double-quotes"" _underline_ __two underlines__ `backtick` ``two backticks`` ~tilde~ ~~two tildes~~ middle_under_line two -- three --- dots ... 1/2 1/4 3/4 http://example.com/ [example] <http://example.com> denilsonsa@gmail.com <denilsonsa@gmail.com>
 
-    Preformatted text with *asterisk* **two asterisks** 'quotes' ''two quotes'' "double-quotes" ""two double-quotes"" _underline_ __two underlines__ `backtick` ``two backticks`` ~tilde~ ~~two tildes~~ middle_under_line two -- three --- dots ... http://example.com/ [example] <http://example.com> denilsonsa@gmail.com <denilsonsa@gmail.com>
+    Preformatted text with *asterisk* **two asterisks** 'quotes' ''two quotes'' "double-quotes" ""two double-quotes"" _underline_ __two underlines__ `backtick` ``two backticks`` ~tilde~ ~~two tildes~~ middle_under_line two -- three --- dots ... 1/2 1/4 3/4 http://example.com/ [example] <http://example.com> denilsonsa@gmail.com <denilsonsa@gmail.com>
 
 * List
     * List
@@ -84,5 +84,6 @@ ___
     * But it embeds line numbers, making it impossible to correctly copy-paste the code.
     * But it hard-codes the colors.
 * Supports TOC.
+* [Always obfuscates e-mail links using HTML entities](https://github.com/gettalong/kramdown/blob/REL_1_10_0/lib/kramdown/converter/html.rb#L243).
 
 [example]: http://example.com/ "Example link"
