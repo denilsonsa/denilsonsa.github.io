@@ -125,6 +125,12 @@ github:
   useid: github
   text1: GitHub
 
+githubgist:
+  href: https://gist.github.com/denilsonsa
+  useid: github
+  text1: GitHub
+  text2: Gist
+
 googleplus:
   href: https://plus.google.com/+DenilsonSa
   #href: https://plus.google.com/+DenilsonSa/about

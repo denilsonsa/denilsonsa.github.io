@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Not listed: pluralsight
+# Not listed: pluralsight, githubgist
 
 # :.,.+2s/ \+/ /g | Tabularize / /l0
 raw = '''
