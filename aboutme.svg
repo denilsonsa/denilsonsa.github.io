@@ -134,6 +134,13 @@ http://jwatt.org/svg/authoring/
 	/* central is defined as the half of EM box. */
 	dominant-baseline: central;
 }
+.item > a > text {
+	pointer-events: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
 
 .item       > a > circle { fill: #F9F9F8; }
 .item:hover > a > circle { fill: #EDEEEB; }

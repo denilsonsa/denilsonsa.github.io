@@ -131,6 +131,10 @@ http://jwatt.org/svg/authoring/
 	transition-property: opacity, transform, -webkit-transform;
 	transition-duration: 250ms;
 	pointer-events: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
 }
 .item > a > .icon {
 	transition-property: opacity, transform, -webkit-transform;
