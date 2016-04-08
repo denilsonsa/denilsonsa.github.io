@@ -149,6 +149,12 @@ gravatar:
   useid: gravatar
   text1: Gravatar
 
+greasyfork:
+  href: https://greasyfork.org/en/users/37594
+  useid: greasyfork
+  text1: Greasy
+  text2: Fork
+
 hackhands:
   href: https://hackhands.com/denilsonsa/
   useid: hackhands

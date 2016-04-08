@@ -1,14 +1,17 @@
 ---
 items:
-  - [19.5,  0, curriculumvitae]
-  - [19.0, -1, stackoverflowcareers]
-  - [19.0,  1, linkedin]
-  - [18.5,  0, github]
-  - [18.0, -1, stackexchange]
-  - [18.0,  1, bitbucket]
+  - [20.5,  0, curriculumvitae]
+  - [20.0, -1, stackoverflowcareers]
+  - [20.0,  1, linkedin]
+  - [19.5,  0, github]
+  - [19.0, -1, stackexchange]
+  - [19.0,  1, bitbucket]
+  - [18.5,  0, githubgist]
+  - [18.0, -1, hackhands]
+  - [18.0,  1, userscripts]
   - [17.5,  0, codepen]
-  - [17.0, -1, hackhands]
-  - [17.0,  1, userscripts]
+  - [17.0, -1, pluralsight]
+  - [17.0,  1, greasyfork]
   - [16.5,  0, speakerdeck]
   - [16.0, -1, devpost]
   - [16.0,  1, stylish]
@@ -76,27 +79,32 @@ http://jwatt.org/svg/authoring/
   ygrid = 3/4 height of a pointy-top hexagon + margin
 
   xorigin = origin of the hexagon coordinates
+
+  divided_by will round down to the nearest integer if the input is an integer.
 {% endcomment %}
 
 {% assign xwidth  = 17.32 %}
 {% assign yheight = 20.00 %}
 {% assign xhalf   = xwidth | divided_by: 2 %}
 
-{% assign xmargin = 1 %}
+{% assign xmargin = 1.0 %}
 {% assign ymargin = xmargin | times: 0.866 %}
 
 {% assign xgrid = xwidth  | plus: xmargin %}
 {% assign ygrid = yheight | times: 0.75 | plus: ymargin %}
 
-{% assign picsize = ygrid | times: 2 | plus: yheight | divided_by: 0.866 %}
-{% assign pichalf = picsize | divided_by: 2 %}
+{% assign picsize = ygrid | times: 2.0 | plus: yheight | divided_by: 0.866 %}
+{% assign pichalf = picsize | divided_by: 2.0 %}
 {% assign picshortsize = picsize | times: 0.866 %}
-{% assign picshorthalf = picshortsize | divided_by: 2 %}
+{% assign picshorthalf = picshortsize | divided_by: 2.0 %}
 
-{% assign xorigin = xhalf | divided_by: -2 | plus: xmargin | plus: pichalf %}
+{% assign xorigin = xhalf | divided_by: -2.0 | plus: xmargin | plus: pichalf %}
 {% assign yorigin = 0 %}
 
-<svg viewBox="-{{ pichalf }} -{{ picshorthalf }} {{ xgrid | times: 21 | plus: xorigin | plus: pichalf }} {{ picshortsize }}"
+{% assign number_of_items = page.items | size %}
+{% assign horizontal_items = number_of_items | divided_by: 3.0 | ceil | plus: 1 %}
+
+<svg viewBox="-{{ pichalf }} -{{ picshorthalf }} {{ xgrid | times: horizontal_items | plus: xorigin | plus: pichalf }} {{ picshortsize }}"
 	preserveAspectRatio="xMinYMid meet"
 	version="1.1"
 	xmlns="http://www.w3.org/2000/svg"

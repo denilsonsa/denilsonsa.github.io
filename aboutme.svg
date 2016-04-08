@@ -11,6 +11,7 @@ items:
   - githubgist
   - devpost
   - codepen
+  - greasyfork
   - userscripts
   - stylish
   - reddit
@@ -96,11 +97,11 @@ http://jwatt.org/svg/authoring/
 
 {% assign number_of_items = page.items | size %}
 {% assign calculated_sin = page.sin_per_number_of_items[number_of_items] %}
-{% assign translate_radius = 20 | divided_by: calculated_sin %}
-{% assign inner_radius     = translate_radius | minus: 20 %}
-{% assign outer_radius     = translate_radius | plus: 20 %}
-{% assign inner_diameter   = inner_radius | times: 2 %}
-{% assign outer_diameter   = outer_radius | times: 2 %}
+{% assign translate_radius = 20.0 | divided_by: calculated_sin %}
+{% assign inner_radius     = translate_radius | minus: 20.0 %}
+{% assign outer_radius     = translate_radius | plus: 20.0 %}
+{% assign inner_diameter   = inner_radius | times: 2.0 %}
+{% assign outer_diameter   = outer_radius | times: 2.0 %}
 
 <svg viewBox="-{{ outer_radius }} -{{ outer_radius }} {{ outer_diameter }} {{ outer_diameter }}"
 	preserveAspectRatio="xMidYMid meet"
