@@ -159,6 +159,10 @@ Gravatar:
 
 * https://github.com/gilbarbara/logos/blob/master/logos/gravatar.svg
 
+Greasy Fork:
+
+* https://github.com/JasonBarnabe/greasyfork/tree/master/misc/logos
+
 Grooveshark:
 
 * http://grooveshark.com/logo

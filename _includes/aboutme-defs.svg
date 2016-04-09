@@ -366,12 +366,12 @@
 	<clipPath id="GreasyForkCircleClip" clipPathUnits="userSpaceOnUse">
 		<circle fill="#000" r="47" cy="48" cx="48"/>
 	</clipPath>
-	<text fill="#fff" clip-path="url(#GreasyForkCircleClip)" text-anchor="middle" font-size="18.5" font-family="Arial, 'Liberation Sans', 'Open Sans', sans-serif" pointer-events="none" style="-moz-user-select: none; -ms-user-select: none; -webkit-user-select: none; user-select: none;">
-		<tspan x="53" y="13" textLength="54">= null,</tspan>
+	<text fill="#fff" clip-path="url(#GreasyForkCircleClip)" text-anchor="middle" font-size="18" font-family="'DejaVu Sans', Arial, 'Liberation Sans', 'Open Sans', sans-serif" pointer-events="none" style="-moz-user-select: none; -ms-user-select: none; -webkit-user-select: none; user-select: none;">
+		<tspan x="51" y="13" textLength="57">= null;</tspan>
 		<tspan x="56" y="35" textLength="98">function init</tspan>
-		<tspan x="48" y="57" textLength="115">for (var i = 0;</tspan>
-		<tspan x="50" y="79" textLength="107">XmlHttpReq</tspan>
-		<tspan x="49" y="101" textLength="80">appendCh</tspan>
+		<tspan x="49" y="57" textLength="113">for (var i = 0;</tspan>
+		<tspan x="50" y="79" textLength="105">XmlHttpReq</tspan>
+		<tspan x="48" y="101" textLength="80">appendCh</tspan>
 	</text>
 	<path fill="#000" stroke="#000" stroke-width="4"
 		d="M 44,29
