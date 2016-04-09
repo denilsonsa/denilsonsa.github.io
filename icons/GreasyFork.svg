@@ -5,7 +5,7 @@
 <clipPath id="GreasyForkCircleClip" clipPathUnits="userSpaceOnUse">
 	<circle fill="#000" r="47" cy="48" cx="48"/>
 </clipPath>
-<text fill="#fff" clip-path="url(#GreasyForkCircleClip)" text-anchor="middle" font-size="18" font-family="'DejaVu Sans', Arial, 'Liberation Sans', 'Open Sans', sans-serif" pointer-events="none" style="-moz-user-select: none; -ms-user-select: none; -webkit-user-select: none; user-select: none;">
+<text fill="#fff" clip-path="url(#GreasyForkCircleClip)" text-anchor="middle" font-size="18" font-family="'DejaVu Sans', Verdana, Arial, 'Liberation Sans', sans-serif" letter-spacing="-0.75" pointer-events="none" style="-moz-user-select: none; -ms-user-select: none; -webkit-user-select: none; user-select: none;">
 	<tspan x="51" y="13" textLength="57">= null;</tspan>
 	<tspan x="56" y="35" textLength="98">function init</tspan>
 	<tspan x="49" y="57" textLength="113">for (var i = 0;</tspan>
