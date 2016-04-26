@@ -224,6 +224,14 @@ openclipart:
   text2: clipart
   # text1: Openclipart
 
+opengameart:
+  href: http://opengameart.org/users/denilsonsa
+  useid: opengameart
+  text1: Open
+  text2: Game
+  text3: Art
+  #text1: OpenGameArt.org
+
 patreon:
   href: https://www.patreon.com/denilsonsa
   useid: patreon

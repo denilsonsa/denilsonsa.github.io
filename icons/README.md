@@ -260,6 +260,11 @@ Openclipart:
 * https://openclipart.org/detail/177066/openclipart-scissors-logo-guide-by-rejon-177066
 * https://openclipart.org/detail/177065/openclipart-scissors-logo-by-rejon-177065
 
+OpenGameArt.org:
+
+* https://twitter.com/opengameart
+* http://opengameart.org/sites/default/files/archive/sara-logo.png
+
 Patreon:
 
 * https://www.patreon.com/press
