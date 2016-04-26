@@ -191,6 +191,11 @@ instagram:
   useid: instagram
   text1: Instagram
 
+itchio:
+  href: http://denilsonsa.itch.io/
+  useid: itchio
+  text1: itch.io
+
 kickstarter:
   href: https://www.kickstarter.com/profile/denilsonsa
   useid: kickstarter
