@@ -155,6 +155,11 @@ greasyfork:
   text1: Greasy
   text2: Fork
 
+hackerrank:
+  href: https://www.hackerrank.com/denilsonsa
+  useid: hackerrank
+  text1: HackerRank
+
 hackhands:
   href: https://hackhands.com/denilsonsa/
   useid: hackhands
