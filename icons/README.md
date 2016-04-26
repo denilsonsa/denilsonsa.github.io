@@ -19,6 +19,10 @@ asciinema:
 
 * https://asciinema.org/assets/logo-red-8fc5c5c14ca150641c33ce28601c3520.svg
 
+Bandcamp:
+
+* https://bandcamp.com/buttons
+
 beBee:
 
 * https://www.bebee.com/img/bebee/logo-error.png
