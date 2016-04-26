@@ -42,6 +42,11 @@ backloggery:
   useid: backloggery
   text1: Backloggery
 
+bandcamp:
+  href: https://bandcamp.com/denilsonsa
+  useid: bandcamp
+  text1: Bandcamp
+
 behance:
   href: https://www.behance.net/denilsonsa
   useid: behance
@@ -250,6 +255,11 @@ reddit:
   useid: reddit
   text1: reddit
 
+shadertoy:
+  href: https://www.shadertoy.com/user/denilsonsa
+  useid: shadertoy
+  text1: Shadertoy
+
 skype:
   href: skype:crazyterabyte?chat
   useid: skype
@@ -329,6 +339,11 @@ tumblr:
   href: http://denilsonsa.tumblr.com/
   useid: tumblr
   text1: Tumblr
+
+tunein:
+  href: http://tunein.com/user/denilsonsa/
+  useid: tunein
+  text1: TuneIn
 
 twitch:
   href: http://www.twitch.tv/denilsonsa/profile

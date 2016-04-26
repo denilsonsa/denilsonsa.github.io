@@ -305,6 +305,7 @@ Shadertoy:
 
 * https://www.shadertoy.com/img/favicon.ico
 * https://twitter.com/beauty_pi
+* https://github.com/beautypi/shadertoy-iOS-v2/tree/master/shadertoy/Images.xcassets/AppIcon.appiconset
 * Or the text "Shadertoy" rendered using "Lobster,Tahoma,Arial" font.
 
 Skype:
@@ -376,6 +377,10 @@ TopCoder:
 Tumblr:
 
 * https://www.tumblr.com/logo
+
+TuneIn:
+
+* http://tunein.com/press/
 
 Twitch:
 
