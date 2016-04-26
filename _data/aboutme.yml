@@ -289,12 +289,12 @@ stackoverflow:
   text2: Overflow
   # text1: Stack Overflow
 
-stackoverflowcareers:
-  href: https://careers.stackoverflow.com/denilsonsa
+stackoverflowcv:
+  href: https://stackoverflow.com/cv/denilsonsa
   useid: stackoverflow
   text1: Stack
   text2: Overflow
-  text3: Careers
+  text3: CV
 
 steam:
   href: https://steamcommunity.com/id/crazyterabyte

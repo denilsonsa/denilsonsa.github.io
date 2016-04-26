@@ -1,7 +1,7 @@
 ---
 items:
   - [21.5,  0, curriculumvitae]
-  - [21.0, -1, stackoverflowcareers]
+  - [21.0, -1, stackoverflowcv]
   - [20.5,  0, github]
   - [20.0, -1, stackexchange]
   - [20.0,  1, linkedin]
