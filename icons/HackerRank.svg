@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 42.104 46" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<!-- Extracted from wordmark_sm.svg -->
+<defs>
+	<linearGradient id="HackerRankGradient1" gradientUnits="userSpaceOnUse" x1="297.1206" y1="-207.687" x2="297.1206" y2="-187.5" gradientTransform="matrix(1 0 0 -1 -270 -187)">
+		<stop offset="0" stop-color="#25A559"/>
+		<stop offset="1" stop-color="#30CE68"/>
+	</linearGradient>
+	<linearGradient id="HackerRankGradient2" gradientUnits="userSpaceOnUse" x1="293.1655" y1="-216.9829" x2="293.1655" y2="-191.1812" gradientTransform="matrix(1 0 0 -1 -270 -187)">
+		<stop offset="0" stop-color="#25A559"/>
+		<stop offset="1" stop-color="#30CE68"/>
+	</linearGradient>
+	<linearGradient id="HackerRankGradient3" gradientUnits="userSpaceOnUse" x1="291.0503" y1="-224.0376" x2="291.0503" y2="-196.0171" gradientTransform="matrix(1 0 0 -1 -270 -187)">
+		<stop offset="0" stop-color="#25A559"/>
+		<stop offset="1" stop-color="#30CE68"/>
+	</linearGradient>
+	<linearGradient id="HackerRankGradient4" gradientUnits="userSpaceOnUse" x1="288.9009" y1="-228.9546" x2="288.9009" y2="-203.1055" gradientTransform="matrix(1 0 0 -1 -270 -187)">
+		<stop offset="0" stop-color="#25A559"/>
+		<stop offset="1" stop-color="#30CE68"/>
+	</linearGradient>
+	<linearGradient id="HackerRankGradient5" gradientUnits="userSpaceOnUse" x1="284.8589" y1="-232.4995" x2="284.8589" y2="-212.6001" gradientTransform="matrix(1 0 0 -1 -270 -187)">
+		<stop offset="0" stop-color="#25A559"/>
+		<stop offset="1" stop-color="#30CE68"/>
+	</linearGradient>
+</defs>
+<path fill="url(#HackerRankGradient1)" d="M21.052,0.5c-1.081,0-4.527,1.634-8.228,3.681l28.593,16.506c-0.082-4.222-0.392-8.009-0.931-8.937c-0.455-0.784-2.745-2.445-5.613-4.256L27.227,3.08C24.363,1.578,21.929,0.5,21.052,0.5z"/>
+<path fill="url(#HackerRankGradient2)" d="M4.89,9.017l36.321,20.966c0.2-2.648,0.269-6.096,0.206-9.296L12.824,4.181C10.02,5.732,7.071,7.518,4.89,9.017z"/>
+<path fill="url(#HackerRankGradient3)" d="M4.89,9.017c-1.713,1.176-2.953,2.172-3.273,2.733c-0.328,0.574-0.57,2.218-0.729,4.371l36.235,20.917c1.758-1.201,3.037-2.221,3.364-2.788c0.324-0.562,0.565-2.163,0.724-4.267L4.89,9.017z"/>
+<path fill="url(#HackerRankGradient4)" d="M37.136,37.029L0.889,16.105c-0.201,2.718-0.267,6.25-0.196,9.495l28.331,16.354C31.871,40.389,34.895,38.562,37.136,37.029z"/>
+<path fill="url(#HackerRankGradient5)" d="M0.693,25.601c0.09,4.1,0.397,7.733,0.923,8.649C2.889,36.466,18.51,45.5,21.052,45.5c1.056,0,4.369-1.562,7.973-3.545L0.693,25.601z"/>
+<!-- Removed the almost-invisible shadow that was a PNG image. -->
+<path fill="#FFFFFF" d="M24.872,24.761v7.788h-1.314c-0.267,0-0.483,0.217-0.483,0.483c0,0.175,0.093,0.327,0.231,0.412l2.955,2.832c0.088,0.115,0.264,0.203,0.42,0.203c0.16,0,0.301-0.083,0.389-0.203l3.147-2.832c0.138-0.085,0.23-0.238,0.23-0.412c0-0.267-0.217-0.483-0.483-0.483h-1.319L28.634,13.73c0-0.267-0.212-0.483-0.479-0.483h-2.798c-0.267,0-0.486,0.217-0.486,0.483v7.265l-7.639-0.001v-7.543h1.314c0.267,0,0.483-0.217,0.483-0.483c0-0.175-0.093-0.328-0.231-0.413l-2.955-2.832c-0.088-0.115-0.264-0.203-0.42-0.203c-0.16,0-0.301,0.083-0.389,0.203l-3.148,2.833c-0.138,0.085-0.23,0.237-0.23,0.412c0,0.267,0.216,0.483,0.483,0.483h1.319l0.012,18.818c0,0.267,0.211,0.483,0.478,0.483h2.798c0.267,0,0.486-0.217,0.486-0.483v-7.509H24.872z"/>
+</svg>

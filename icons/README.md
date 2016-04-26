@@ -167,6 +167,14 @@ Grooveshark:
 
 * http://grooveshark.com/logo
 
+HackerRank:
+
+* https://d3keuzeb2crhkn.cloudfront.net/hackerrank/assets/brand/wordmark_sm.svg
+* https://hrcdn.net/hackerrank/assets/styleguide/logo_wordmark-vertical-4b862ef874af13bb7733ddf578fa9323.svg
+* https://brandfolder.com/hackerrank
+* http://hacktech.io/img/logo/hackerrank.svg
+* https://github.com/TheHacktech/TheHacktech.github.io/blob/master/img/logo/hackerrank.svg
+
 HackHands:
 
 * https://twitter.com/hackhands/status/608012553306791936
