@@ -364,6 +364,11 @@ Telegram:
 * https://github.com/zhukov/webogram/blob/7bc6e36ec6e955930cd0d1a7f2ebfe86b69b44c8/app/img/Telegram72_2x.png
 * https://github.com/telegramdesktop/tdesktop/blob/e145a0ccd0f472de540e7187e73d46ec730ea81b/Telegram/Telegram/Images.xcassets/Icon.iconset/icon_512x512%402x.png
 
+TopCoder:
+
+* https://www.topcoder.com/mf/i/logo_topcoder.svg
+* https://www.topcoder.com/blog/help-choose-the-new-topcoder-logo/
+
 Tumblr:
 
 * https://www.tumblr.com/logo
