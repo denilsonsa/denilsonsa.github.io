@@ -320,6 +320,11 @@ telegram:
   useid: telegram
   text1: Telegram
 
+topcoder:
+  href: https://www.topcoder.com/members/denilsonsa/
+  useid: topcoder
+  text1: TopCoder
+
 tumblr:
   href: http://denilsonsa.tumblr.com/
   useid: tumblr
