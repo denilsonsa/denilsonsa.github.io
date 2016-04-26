@@ -263,6 +263,12 @@ reddit:
   useid: reddit
   text1: reddit
 
+regexcrossword:
+  href: http://regexcrossword.com/profile/53
+  useid: regexcrossword
+  text1: Regex
+  text2: Crossword
+
 shadertoy:
   href: https://www.shadertoy.com/user/denilsonsa
   useid: shadertoy

@@ -302,6 +302,10 @@ reddit:
 * http://www.reddit.com/wiki/licensing
 * http://www.reddit.com/r/redditlogos
 
+Regex Crossword:
+
+* https://regexcrossword.com/img/logo.svg
+
 RSS:
 
 * https://commons.wikimedia.org/wiki/File:Feed-icon.svg
