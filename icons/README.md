@@ -203,6 +203,8 @@ Imgur:
 
 Instagram:
 
+* http://blog.instagram.com/post/144198429587/160511-a-new-look
+* https://www.instagram-brand.com/
 * http://instagram.com/press/
 * https://help.instagram.com/304689166306603
 * http://instagram.com/accounts/badges/
