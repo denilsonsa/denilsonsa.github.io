@@ -193,7 +193,7 @@
 
 * https://en.wikipedia.org/wiki/File:ICQ.svg
 
-IFTTT
+## IFTTT
 
 * https://ifttt.com/press
 
@@ -334,6 +334,13 @@ IFTTT
 ## SlideShare
 
 * http://www.slideshare.net/about/logos
+
+## Snapchat
+
+* https://accounts.snapchat.com/accounts/snapcodes
+* https://www.snapchat.com/add/your_username_here
+* https://feelinsonice-hrd.appspot.com/web/deeplink/snapcode?username=your_username_here&type=PNG
+* https://feelinsonice-hrd.appspot.com/web/deeplink/snapcode?username=your_username_here&type=SVG
 
 ## SoundCloud
 

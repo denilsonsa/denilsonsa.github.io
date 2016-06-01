@@ -294,6 +294,11 @@ slideshare:
   useid: slideshare
   text1: SlideShare
 
+snapchat:
+  href: https://www.snapchat.com/add/CrazyTerabyte
+  useid: snapchat_crazyterabyte
+  text1: Snapchat
+
 soundcloud:
   href: https://soundcloud.com/denilsonsa
   useid: soundcloud
