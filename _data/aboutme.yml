@@ -263,6 +263,11 @@ pluralsight:
   useid: pluralsight
   text1: Pluralsight
 
+pocket:
+  href: https://getpocket.com/@denilsonsa
+  useid: pocket
+  text1: Pocket
+
 reddit:
   href: https://www.reddit.com/user/denilsonsa/
   useid: reddit
