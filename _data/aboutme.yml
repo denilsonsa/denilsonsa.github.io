@@ -211,6 +211,11 @@ linkedin:
   useid: linkedin
   text1: LinkedIn
 
+livejournal:
+  href: http://denilsonsa.livejournal.com/
+  useid: livejournal
+  text1: LiveJournal
+
 myspace:
   href: https://myspace.com/denilsonsa
   useid: myspace
