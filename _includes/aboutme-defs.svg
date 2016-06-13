@@ -302,6 +302,14 @@
 </symbol>
 {% endif %}
 
+{% if include_all or restrictions contains ',foodspotting,' %}
+<!-- Based on http://www.foodspotting.com/images/redesign/about/downloads/foodspotting-eye-vector.eps -->
+<symbol id="foodspotting" viewBox="0 0 100 100">
+	<circle fill="#fff" cx="50" cy="50" r="50"/>
+	<path fill="#28140a" d="m78.283 42.926c-2.9268 2.9293-6.7669 4.3942-10.603 4.3942-3.8427 0-7.68-1.4649-10.609-4.3942-2.9286-2.9295-4.3944-6.7669-4.3944-10.607 0-3.8373 1.4658-7.6789 4.3944-10.606 0.24205-0.23958 0.48657-0.46658 0.74097-0.68685-10.021-2.6926-21.163-0.10688-29.025 7.758-11.715 11.716-11.715 30.71 0 42.425 11.715 11.719 30.709 11.716 42.428 0 7.8621-7.8604 10.448-19.004 7.7577-29.025-0.21915 0.2544-0.44818 0.49982-0.68933 0.7412"/>
+</symbol>
+{% endif %}
+
 {% if include_all or restrictions contains ',gamejolt,' %}
 <!-- Copied from http://www.steverichey.com/dev/vector-logos/ -->
 <symbol id="gamejolt" viewBox="0 0 18 18">

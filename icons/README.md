@@ -123,6 +123,11 @@
 * https://secure.flickr.com/about/goodies/
 * Colors: `#0063DC` and `#FF0084`
 
+## Foodspotting
+
+* http://www.foodspotting.com/about/assets
+* http://www.foodspotting.com/images/redesign/about/downloads/foodspotting-eye-vector.eps
+
 ## Foursquare
 
 * https://foursquare.com/about/logos

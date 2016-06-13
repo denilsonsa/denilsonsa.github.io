@@ -120,6 +120,11 @@ flickr:
   useid: flickr
   text1: Flickr
 
+foodspotting:
+  href: http://www.foodspotting.com/denilsonsa
+  useid: foodspotting
+  text1: Foodspotting
+
 gamejolt:
   href: https://gamejolt.com/profile/denilsonsa/378910/
   useid: gamejolt
