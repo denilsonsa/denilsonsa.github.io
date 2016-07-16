@@ -90,6 +90,8 @@
 ## DigitalOcean
 
 * https://www.digitalocean.com/company/logos-and-badges/
+* https://dribbble.com/shots/2837557-DigitalOcean-Logo
+* https://github.com/danleech/simple-icons/commit/11f7fd9b9c4a3c40973366759710e57cd7e92a66
 
 ## Disqus
 

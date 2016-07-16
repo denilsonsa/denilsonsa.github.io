@@ -84,6 +84,11 @@ devpost:
   useid: devpost
   text1: Devpost
 
+digitalocean:
+  href: https://www.digitalocean.com/?refcode=db6fca9fb79d
+  useid: digitalocean
+  text1: DigitalOcean
+
 disqus:
   href: https://disqus.com/denilsonsa/
   useid: disqus
