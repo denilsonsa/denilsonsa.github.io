@@ -201,6 +201,13 @@ instagram:
   useid: instagram
   text1: Instagram
 
+italki:
+  href: https://www.italki.com/user/3270760
+  # Referral:
+  # href: https://www.italki.com/?ref=3270760
+  useid: italkiii
+  text1: italki
+
 itchio:
   href: http://denilsonsa.itch.io/
   useid: itchio
@@ -404,6 +411,12 @@ twitter:
   href: https://twitter.com/denilsonsa
   useid: twitter
   text1: Twitter
+
+uber:
+  # Referral:
+  href: https://www.uber.com/invite/uberdenilsonsa
+  useid: uber
+  text1: Uber
 
 userscripts:
   #href: http://web.archive.org/web/20131108061608/http://userscripts.org/users/120597/scripts

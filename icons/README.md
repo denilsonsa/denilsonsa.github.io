@@ -93,6 +93,10 @@
 * https://dribbble.com/shots/2837557-DigitalOcean-Logo
 * https://github.com/danleech/simple-icons/commit/11f7fd9b9c4a3c40973366759710e57cd7e92a66
 
+## Discord
+
+* https://discordapp.com/branding
+
 ## Disqus
 
 * https://disqus.com/brand/
@@ -219,6 +223,11 @@
 ## Instructables
 
 * http://www.instructables.com/community/Official-Instructables-Logos/
+
+## italki
+
+* http://support.italki.com/hc/en-us/articles/217082918-Where-can-I-get-the-official-italki-logo-
+* https://app.frontify.com/d/3eaQ6KjTb8LH/italki-style-guide
 
 ## itch.io
 
@@ -419,6 +428,10 @@
 
 * http://about.twitter.com/press/brand-assets
 * http://about.twitter.com/resources/buttons
+
+## Uber
+
+* https://www.uber.com/media/
 
 ## Userscripts
 
