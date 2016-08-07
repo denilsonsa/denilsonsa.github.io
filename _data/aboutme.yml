@@ -226,6 +226,11 @@ livejournal:
   useid: livejournal
   text1: LiveJournal
 
+medium:
+  href: https://medium.com/@denilsonsa
+  useid: medium
+  text1: Medium
+
 myspace:
   href: https://myspace.com/denilsonsa
   useid: myspace
