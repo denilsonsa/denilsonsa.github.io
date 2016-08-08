@@ -78,6 +78,10 @@
 * https://twitter.com/coderwall
 * https://assembly.com/coderwall/assets
 
+## Crunchyroll
+
+* http://www.crunchyroll.com/en/about
+
 ## deviantART
 
 * http://help.deviantart.com/21/

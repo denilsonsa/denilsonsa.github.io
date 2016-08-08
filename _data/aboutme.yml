@@ -74,6 +74,11 @@ coderwall:
   useid: coderwall
   text1: Coderwall
 
+crunchyroll:
+  href: http://www.crunchyroll.com/user/denilsonsa
+  useid: crunchyroll
+  text1: Crunchyroll
+
 deviantart:
   href: https://crazyterabyte.deviantart.com/
   useid: deviantart
