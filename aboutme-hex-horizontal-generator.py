@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Not listed:
+# Not listed: italki, crunchyroll
 
 # :.,.+2s/ \+/ /g | Tabularize / /l0
 raw = '''

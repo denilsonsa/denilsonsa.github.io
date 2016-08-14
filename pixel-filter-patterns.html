@@ -347,6 +347,9 @@ function update_zoomed_canvas() {
 	var tiny = document.getElementById('tiny-canvas');
 	var zoomed = document.getElementById('zoomed-canvas');
 	var ctx = zoomed.getContext('2d');
+	ctx.webkitImageSmoothingEnabled = false;
+	ctx.mozImageSmoothingEnabled = false;
+	ctx.msImageSmoothingEnabled = false;
 	ctx.imageSmoothingEnabled = false;
 	ctx.drawImage(tiny, 0, 0, 8, 8, 0, 0, zoomed.width, zoomed.height);
 }
