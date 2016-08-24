@@ -24,6 +24,7 @@ items:
   - twitter
   - googleplus
   - skype
+  - telegram
   - email
 
 # for i in range(1, 50):
