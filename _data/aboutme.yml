@@ -396,6 +396,11 @@ topcoder:
   useid: topcoder
   text1: TopCoder
 
+transferwise:
+  href: https://transferwise.com/u/27e81f0
+  useid: transferwise
+  text1: TransferWise
+
 tumblr:
   href: http://denilsonsa.tumblr.com/
   useid: tumblr
