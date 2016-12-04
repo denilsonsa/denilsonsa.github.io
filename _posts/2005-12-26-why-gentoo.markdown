@@ -49,7 +49,7 @@ I thought: "My system is old, I must upgrade soon. But what to do? Try to upgrad
 
 3. **"try another distro"** - Yes, I probably will install another distro. But which one?
 
-    1. **[Mandrake/Mandriva](http://www.mandriva.com/)** - No way. Mandrake is not good. Too much problems, too much "dumb user". Just as Conectiva. It will give me more problems than solutions.
+    1. **[Mandrake/Mandriva](https://en.wikipedia.org/wiki/Mandriva_Linux)** - No way. Mandrake is not good. Too much problems, too much "dumb user". Just as Conectiva. It will give me more problems than solutions.
 
     2. **[Fedora](http://fedora.redhat.com/), or some other RPM-based distro** - Fedora is derived from Red Hat, and I don't like Red Hat. Not sure why, but I feel that RPM-based distros give too much problems. Another doubt I have is about how to upgrade from one version to another. Ok, there is package management, but how to upgrade from a major distro version to another? I know it is possible using those install CDs, but I never really investigated how to do it, and if it really works well. Since I don't like Fedora/RedHat/RPM-based distros, I never researched about this.
 
