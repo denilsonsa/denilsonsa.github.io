@@ -57,13 +57,6 @@ bitbucket:
   useid: bitbucket
   text1: Bitbucket
 
-changetip:
-  #href: http://denilsonsa.tip.me/
-  href: https://www.changetip.com/tipme/denilsonsa
-  #href: https://www.changetip.com/tipsters/denilsonsa
-  useid: changetip
-  text1: ChangeTip
-
 codepen:
   href: http://codepen.io/denilsonsa/
   useid: codepen
