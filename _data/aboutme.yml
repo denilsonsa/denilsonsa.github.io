@@ -57,6 +57,12 @@ bitbucket:
   useid: bitbucket
   text1: Bitbucket
 
+camscanner:
+  # Referral:
+  href: https://www.camscanner.com/r1?45156517
+  useid: camscanner
+  text1: CamScanner
+
 codepen:
   href: http://codepen.io/denilsonsa/
   useid: codepen
@@ -83,7 +89,9 @@ devpost:
   text1: Devpost
 
 digitalocean:
+  # Referral:
   href: https://www.digitalocean.com/?refcode=db6fca9fb79d
+  #href: https://m.do.co/c/db6fca9fb79d
   useid: digitalocean
   text1: DigitalOcean
 
@@ -98,6 +106,7 @@ drawception:
   text1: Drawception
 
 dropbox:
+  # Referral:
   href: https://db.tt/VXe1QPLA
   useid: dropbox
   text1: Dropbox
@@ -390,6 +399,7 @@ topcoder:
   text1: TopCoder
 
 transferwise:
+  # Referral:
   href: https://transferwise.com/u/27e81f0
   useid: transferwise
   text1: TransferWise
