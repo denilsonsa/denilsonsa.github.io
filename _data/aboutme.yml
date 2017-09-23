@@ -187,12 +187,6 @@ hackhands:
   useid: hackhands
   text1: HackHands
 
-hitbox:
-  href: http://www.hitbox.tv/DenilsonSa
-  useid: hitbox
-  text1: hitbox.tv
-  #text1: hitbox
-
 ifttt:
   href: https://ifttt.com/p/denilsonsa
   useid: ifttt
@@ -286,11 +280,6 @@ pinterest:
   useid: pinterest
   text1: Pinterest
 
-playfire:
-  href: https://www.playfire.com/denilsonsa
-  useid: playfire
-  text1: Playfire
-
 pluralsight:
   # href: https://app.pluralsight.com/id/profile/denilsonsa
   href: https://pluralsight.com/profile/denilsonsa
@@ -313,6 +302,12 @@ regexcrossword:
   text1: Regex
   text2: Crossword
 
+retroachievements:
+  href: http://retroachievements.org/User/denilsonsa
+  useid: retroachievements
+  text1: retro
+  text2: achievements
+
 shadertoy:
   href: https://www.shadertoy.com/user/denilsonsa
   useid: shadertoy
@@ -332,6 +327,11 @@ slideshare:
   href: http://www.slideshare.net/CrazyTerabyte/
   useid: slideshare
   text1: SlideShare
+
+smashcast:
+  href: https://www.smashcast.tv/DenilsonSa
+  useid: smashcast
+  text1: Smashcast
 
 snapchat:
   href: https://www.snapchat.com/add/CrazyTerabyte

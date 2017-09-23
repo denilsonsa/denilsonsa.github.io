@@ -199,11 +199,6 @@
 * https://twitter.com/hackhands/status/608012553306791936
 * https://www.facebook.com/hackhands/photos/pb.454381268015164.-2207520000.1436558951./770084413111513/
 
-## hitbox
-
-* https://drive.google.com/folderview?id=0Bwsi49UsCzV7MTFiSEE1M1ZzZUU
-* https://twitter.com/seriousownsya/status/505328257102008320
-
 ## ICQ
 
 * https://en.wikipedia.org/wiki/File:ICQ.svg
@@ -308,10 +303,6 @@
 * http://www.pixeljoint.com/pixels/banners.asp
 * http://steamcommunity.com/groups/pixeljoint
 
-## Playfire
-
-* https://forums.playfire.com/general-discussion/thread/87300#post-2266740
-
 ## Pluralsight
 
 * https://www.facebook.com/pluralsight/photos/a.440000206178.239568.121095851178/10153205700756179/
@@ -331,6 +322,11 @@
 ## Regex Crossword
 
 * https://regexcrossword.com/img/logo.svg
+
+## Retroachievements
+
+* http://retroachievements.org/favicon.png
+* http://i.retroachievements.org/Images/RA_Logo10.png
 
 ## RSS
 
@@ -358,6 +354,10 @@
 ## SlideShare
 
 * http://www.slideshare.net/about/logos
+
+## Smashcast
+
+* https://drive.google.com/drive/folders/0B9Ekxwvoc30RUjJxNDRqX0N6WHM
 
 ## Snapchat
 
