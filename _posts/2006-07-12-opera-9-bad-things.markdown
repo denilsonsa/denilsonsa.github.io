@@ -35,7 +35,7 @@ Now, addresses in mail header are really contact buttons. You can add them to co
 If the subject is too large, then the date will be displayed below the subject, but with NOTHING at left of it, wasting a whole line of available space. A whole line that could have another fields displayed.
 
 <figure class="singleimage">
-<img src="{{ site.url }}/blog/images/mailheadertoolbar-1.png" alt="">
+<img src="{{ site.baseurl }}/blog/images/mailheadertoolbar-1.png" alt="">
 </figure>
 
 The same thing happens on IRC header toolbar, when room's topic is too large. This is an issue with how toolbar widgets are handled.
@@ -43,7 +43,7 @@ The same thing happens on IRC header toolbar, when room's topic is too large. Th
 And what will happen I receive a message with a very big "To" or "Cc" field (with dozens of addresses there)? Very common when someone else tries to send a message to everyone in his list. Then, fortunately Opera will display a scrollbar for that field. Unfortunately, Opera becomes very slow. Unfortunately too, that interface is not easy to use. To find an address in that list, it is better to switch back to Opera 8 mail headers or right-click and select "View all headers and message.
 
 <figure class="singleimage">
-<img src="{{ site.url }}/blog/images/mailheadertoolbar-2.png" alt="">
+<img src="{{ site.baseurl }}/blog/images/mailheadertoolbar-2.png" alt="">
 </figure>
 
 Finally, but most important of all, the old Opera 8 interface did scroll with message body, while this new Opera 9 does not. This means we now have a very small useful area to read the message. This remembers OutLook Express 5 (or 4), it had this behavior (headers are fixed on screen, do not scroll). Oh, how I hate this behavior…

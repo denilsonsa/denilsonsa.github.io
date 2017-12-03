@@ -79,17 +79,17 @@ The cheapest and most popular USB programmer is [USBasp][] ([Wayback Machine][US
 You can easily buy [USBasp on eBay](http://shop.ebay.com/i.html?_nkw=USBasp) at a very low price. I bought mine for around 6 dollars (including shipping costs). You can even find a [10pin to 6pin ISP Adapter](http://shop.ebay.com/i.html?_nkw=10pin+to+6pin+ISP+adapter), just in case you need to use USBasp with a 6-pin header instead of 10-pin.
 
 <figure class="singleimage polaroid">
-<a href="{{ site.url }}/blog/images/avr/usbasp_top-hi.jpg"><img src="{{ site.url }}/blog/images/avr/usbasp_top-lo.jpg" alt="USBasp that I bought on eBay, top view."></a>
+<a href="{{ site.baseurl }}/blog/images/avr/usbasp_top-hi.jpg"><img src="{{ site.baseurl }}/blog/images/avr/usbasp_top-lo.jpg" alt="USBasp that I bought on eBay, top view."></a>
 </figure>
 
 <figure class="singleimage polaroid">
-<a href="{{ site.url }}/blog/images/avr/usbasp_bottom-hi.jpg"><img src="{{ site.url }}/blog/images/avr/usbasp_bottom-lo.jpg" alt="USBasp that I bought on eBay, top view."></a>
+<a href="{{ site.baseurl }}/blog/images/avr/usbasp_bottom-hi.jpg"><img src="{{ site.baseurl }}/blog/images/avr/usbasp_bottom-lo.jpg" alt="USBasp that I bought on eBay, top view."></a>
 </figure>
 
 The programmer itself is very compact, and it comes with a 10-pin header cable. I've already described the 10-pin connector at [part 2][]. If you remember, I said I couldn't find such cable/connector when I was building my parallel port adapter, and thus I was forced to use another connector. Let's compare my old parallel port adapter with the new _USBasp_ that I bought on eBay:
 
 <figure class="singleimage polaroid">
-<img src="{{ site.url }}/blog/images/avr/parallel_port_and_usbasp.jpg" alt="Picture showing both my old parallel port ISP and my new USBasp.">
+<img src="{{ site.baseurl }}/blog/images/avr/parallel_port_and_usbasp.jpg" alt="Picture showing both my old parallel port ISP and my new USBasp.">
 </figure>
 
 ## Mounting USBasp on a breadboard
@@ -101,22 +101,22 @@ The _USBasp_ circuit is so simple that it can be built directly onto a [breadboa
 However, there is [chicken-or-egg](http://en.wikipedia.org/wiki/Chicken_or_the_egg) problem here: _USBasp_ uses an _ATmega8_ microcontroller programmed with an specific firmware. But… How can I write the _USBasp_ firmware in the first place? I solved this by using my old parallel port programmer (from [part 2][]) with an old computer. It was the last time I used that old computer and that old parallel port programmer.
 
 <figure class="singleimage polaroid">
-<a href="{{ site.url }}/blog/images/avr/usbasp_on_breadboard_1-hi.jpg"><img src="{{ site.url }}/blog/images/avr/usbasp_on_breadboard_1-lo.jpg" alt="USBasp on a breadboard, together with the bliking LEDs circuit."></a>
+<a href="{{ site.baseurl }}/blog/images/avr/usbasp_on_breadboard_1-hi.jpg"><img src="{{ site.baseurl }}/blog/images/avr/usbasp_on_breadboard_1-lo.jpg" alt="USBasp on a breadboard, together with the bliking LEDs circuit."></a>
 </figure>
 
 If you pay enough attention, you can identify two major parts on that breadboard: the _USBasp_ circuit and the _blinking LEDs_ circuit (from [part 4][]). The crystal on that _blinking LEDs_ circuit was not necessary (I just left it in there because I was going to need it for another firmware). You can also see a portion of another project that was still mounted on that breadboard (it's completely unrelated to these posts, just ignore it).
 
 <figure class="singleimage polaroid">
 <!-- SVG <image> elements are only loaded when embedded as <object>, they are not loaded when embedded as <img> -->
-<object type="image/svg+xml" data="{{ site.url }}/blog/images/avr/usbasp_on_breadboard_1_annotated.svg">
-<img src="{{ site.url }}/blog/images/avr/usbasp_on_breadboard_1_annotated.jpg" alt="USBasp and blinking LEDS on a breadboard, with all major circuit portions highlighted.">
+<object type="image/svg+xml" data="{{ site.baseurl }}/blog/images/avr/usbasp_on_breadboard_1_annotated.svg">
+<img src="{{ site.baseurl }}/blog/images/avr/usbasp_on_breadboard_1_annotated.jpg" alt="USBasp and blinking LEDS on a breadboard, with all major circuit portions highlighted.">
 </object>
 </figure>
 
 If you observe carefully, the _USBasp_ circuit is completely isolated from the _blinking LEDs_ circuit, except for those 4 wires that connect to the programming lines of the _ATmega8_ (`MOSI`, `MISO`, `SCK` and `RESET` — remember that `VCC` and `GND` are available on those red and blue tracks from the breadboard).
 
 <figure class="singleimage polaroid">
-<a href="{{ site.url }}/blog/images/avr/usbasp_on_breadboard_2-hi.jpg"><img src="{{ site.url }}/blog/images/avr/usbasp_on_breadboard_2-lo.jpg" alt=""></a>
+<a href="{{ site.baseurl }}/blog/images/avr/usbasp_on_breadboard_2-hi.jpg"><img src="{{ site.baseurl }}/blog/images/avr/usbasp_on_breadboard_2-lo.jpg" alt=""></a>
 </figure>
 
 ## Video proof
@@ -148,10 +148,10 @@ The following line shows up in `lsusb`:
 [USBasp website](http://www.fischl.de/usbasp/) ([Wayback Machine][USBaspwbm]) already contains the [circuit schematic](http://www.fischl.de/usbasp/bilder/usbasp_circuit.png) ([Wayback Machine]()), however, the layout is a bit confusing because the pin positions don't match the actual positions from any _ATmega8_ chip. Thus, in order to build my own _USBasp_ on a breadboard, first I remade the entire schematic from scratch, using the actual pin positions from the [DIP](http://en.wikipedia.org/wiki/Dual_in-line_package) version of _ATmega8_.
 
 <figure class="singleimage">
-<img src="{{ site.url }}/blog/images/avr/AVR-USBasp.png" alt="Schematic diagram for USBasp.">
+<img src="{{ site.baseurl }}/blog/images/avr/AVR-USBasp.png" alt="Schematic diagram for USBasp.">
 <figcaption>
-(<a href="{{ site.url }}/blog/images/avr/AVR-USBasp-hi.png">PNG version</a>,
-<a href="{{ site.url }}/blog/images/avr/AVR-USBasp.svg">SVG version</a>)
+(<a href="{{ site.baseurl }}/blog/images/avr/AVR-USBasp-hi.png">PNG version</a>,
+<a href="{{ site.baseurl }}/blog/images/avr/AVR-USBasp.svg">SVG version</a>)
 </figcaption>
 </figure>
 

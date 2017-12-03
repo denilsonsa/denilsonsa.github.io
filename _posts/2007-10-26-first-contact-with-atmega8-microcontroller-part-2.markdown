@@ -47,10 +47,10 @@ The schematic diagrams below were drawn by me using [Inkscape](http://www.inksca
 The first one is called `bsd`, probably because it was originally available at _AVRPROG_ program for FreeBSD. (Well, I'm not sure if this is true, but it's the best explanation I have to give you.) This program was later renamed to _AVRDUDE_ to avoid confusion with Atmel's _AVRPROG.EXE_. You can find a description of this parallel port programmer at [AVRDUDE old homepage](http://www.bsdhome.com/avrdude/) ([Wayback Machine](http://web.archive.org/web/20071015042041/http://www.bsdhome.com/avrdude/)).
 
 <figure class="singleimage">
-<img src="{{ site.url }}/blog/images/avr/AVR-bsd.png" alt="Schematic diagram for AVR parallel port ISP, model 'bsd'.">
+<img src="{{ site.baseurl }}/blog/images/avr/AVR-bsd.png" alt="Schematic diagram for AVR parallel port ISP, model 'bsd'.">
 <figcaption>
-(<a href="{{ site.url }}/blog/images/avr/AVR-bsd-hi.png">PNG version</a>,
-<a href="{{ site.url }}/blog/images/avr/AVR-bsd.svg">SVG version</a>)
+(<a href="{{ site.baseurl }}/blog/images/avr/AVR-bsd-hi.png">PNG version</a>,
+<a href="{{ site.baseurl }}/blog/images/avr/AVR-bsd.svg">SVG version</a>)
 </figcaption>
 </figure>
 
@@ -59,10 +59,10 @@ The first one is called `bsd`, probably because it was originally available at _
 The second one is called `dapa`, which means _Direct AVR Parallel Access cable_. This one is described at `uisp-parport-connect.txt` file from [uisp][] ([Wayback Machine](http://web.archive.org/web/20071021021038/http://www.nongnu.org/uisp/)). It is also found at [Arduino's ParallelProgrammer page](http://www.arduino.cc/en/Hacking/ParallelProgrammer) ([Wayback Machine](http://web.archive.org/web/20071025052338/http://www.arduino.cc/en/Hacking/ParallelProgrammer)) and at [LinuxFocus 352 article](http://www.linuxfocus.org/English/November2004/article352.shtml) ([Wayback Machine](http://web.archive.org/web/20071029080245/http://www.linuxfocus.org/English/November2004/article352.shtml)).
 
 <figure class="singleimage">
-<img src="{{ site.url }}/blog/images/avr/AVR-dapa.png" alt="Schematic diagram for AVR parallel port ISP, model 'dapa'.">
+<img src="{{ site.baseurl }}/blog/images/avr/AVR-dapa.png" alt="Schematic diagram for AVR parallel port ISP, model 'dapa'.">
 <figcaption>
-(<a href="{{ site.url }}/blog/images/avr/AVR-dapa-hi.png">PNG version</a>,
-<a href="{{ site.url }}/blog/images/avr/AVR-dapa.svg">SVG version</a>)
+(<a href="{{ site.baseurl }}/blog/images/avr/AVR-dapa-hi.png">PNG version</a>,
+<a href="{{ site.baseurl }}/blog/images/avr/AVR-dapa.svg">SVG version</a>)
 </figcaption>
 </figure>
 
@@ -71,10 +71,10 @@ The second one is called `dapa`, which means _Direct AVR Parallel Access cable_.
 The third one is called `stk200`, because it behaves like the _STK200 AVR Starter Kit_. It is the schematic used by [How To...Build A DIY USB Joystick](http://www.flightsim.com/cgi/kds?$=main/howto/mind.htm) ([Wayback Machine](http://web.archive.org/web/20071026031301/http://www.flightsim.com/cgi/kds?$=main/howto/mind.htm)) project and is also available at [a personal homepage address found at #avr channel topic](http://eds.dyndns.org:81/~ircjunk/avr/avrstarter/) ([Wayback Machine](http://web.archive.org/web/20071229042911/http://eds.dyndns.org:81/~ircjunk/avr/avrstarter/)) on [FreeNode](http://en.wikipedia.org/wiki/Freenode).
 
 <figure class="singleimage">
-<img src="{{ site.url }}/blog/images/avr/AVR-stk200.png" alt="Schematic diagram for AVR parallel port ISP, model 'stk200'.">
+<img src="{{ site.baseurl }}/blog/images/avr/AVR-stk200.png" alt="Schematic diagram for AVR parallel port ISP, model 'stk200'.">
 <figcaption>
-(<a href="{{ site.url }}/blog/images/avr/AVR-stk200-hi.png">PNG version</a>,
-<a href="{{ site.url }}/blog/images/avr/AVR-stk200.svg">SVG version</a>)
+(<a href="{{ site.baseurl }}/blog/images/avr/AVR-stk200-hi.png">PNG version</a>,
+<a href="{{ site.baseurl }}/blog/images/avr/AVR-stk200.svg">SVG version</a>)
 </figcaption>
 </figure>
 
@@ -107,23 +107,23 @@ From all possible dongles above (and below), you just have to choose one to buil
 I've choosen to build the `bsd` one. I got a flat cable with 14 wires, but since I needed only 6 (actually, only 5), I've split the cable. To make sure the wires wouldn't short-circuit inside the DB-25 case and to make everything inside the case less likely to break, I've applied an amount of [hot glue](http://en.wikipedia.org/wiki/Hot_glue) after I finished with the soldering. If you look at the photos, the dongle looks a bit messy and ugly, but since that hot-glued part will be hidden inside the DB-25 case, no problem!
 
 <figure class="singleimage polaroid">
-<img src="{{ site.url }}/blog/images/avr/parallel-port-programmer-01.jpg" alt="The inside of my parallel port programmer, showing 4 resistors soldered to the DB-25 connector and some hot glue.">
+<img src="{{ site.baseurl }}/blog/images/avr/parallel-port-programmer-01.jpg" alt="The inside of my parallel port programmer, showing 4 resistors soldered to the DB-25 connector and some hot glue.">
 </figure>
 
 <figure class="singleimage polaroid">
-<img src="{{ site.url }}/blog/images/avr/parallel-port-programmer-02.jpg" alt="The inside of my parallel port programmer, showing a bulk of hot glue next to the DB-25 connector.">
+<img src="{{ site.baseurl }}/blog/images/avr/parallel-port-programmer-02.jpg" alt="The inside of my parallel port programmer, showing a bulk of hot glue next to the DB-25 connector.">
 </figure>
 
 <figure class="singleimage polaroid">
-<img src="{{ site.url }}/blog/images/avr/parallel-port-programmer-03.jpg" alt="My parallel port programmer, showing the DB-25 connector (to the PC parallel port) and a non-standard 6-pin connector (to the microcontroller circuit).">
+<img src="{{ site.baseurl }}/blog/images/avr/parallel-port-programmer-03.jpg" alt="My parallel port programmer, showing the DB-25 connector (to the PC parallel port) and a non-standard 6-pin connector (to the microcontroller circuit).">
 </figure>
 
 <figure class="singleimage polaroid">
-<img src="{{ site.url }}/blog/images/avr/parallel-port-programmer-04.jpg" alt="A picture of my finished parallel port programmer, with a black case around the DB-25 connector, hiding the the resistors and the hot glue blob. The flat cable has a black mark over the wire 1.">
+<img src="{{ site.baseurl }}/blog/images/avr/parallel-port-programmer-04.jpg" alt="A picture of my finished parallel port programmer, with a black case around the DB-25 connector, hiding the the resistors and the hot glue blob. The flat cable has a black mark over the wire 1.">
 </figure>
 
 <figure class="singleimage polaroid">
-<img src="{{ site.url }}/blog/images/avr/parallel-port-programmer-05.jpg" alt="Another angle of the previous picture.">
+<img src="{{ site.baseurl }}/blog/images/avr/parallel-port-programmer-05.jpg" alt="Another angle of the previous picture.">
 </figure>
 
 I've not used any standard AVR connector for this project, but I will, if I build another programmer. Things will be easier in future if you use the standard 6-pin plug (or the 10-pin, but I prefer the 6-pin one), just in case you happen to use another programmer with your project, or your programmer with another project.
@@ -131,17 +131,17 @@ I've not used any standard AVR connector for this project, but I will, if I buil
 **Update on 2008-12-02:** [Originally, the 6-pin pinout in this blog was wrong.][correction] It has been fixed, so the pinout below is correct.
 
 <figure class="singleimage">
-<img src="{{ site.url }}/blog/images/avr/AVR-ISP-connectors.png" alt="Schematic diagram for AVR ISP 6-pin and 10-pin connectors.">
+<img src="{{ site.baseurl }}/blog/images/avr/AVR-ISP-connectors.png" alt="Schematic diagram for AVR ISP 6-pin and 10-pin connectors.">
 <figcaption>
-(<a href="{{ site.url }}/blog/images/avr/AVR-ISP-connectors-hi.png">PNG version</a>,
-<a href="{{ site.url }}/blog/images/avr/AVR-ISP-connectors.svg">SVG version</a>)
+(<a href="{{ site.baseurl }}/blog/images/avr/AVR-ISP-connectors-hi.png">PNG version</a>,
+<a href="{{ site.baseurl }}/blog/images/avr/AVR-ISP-connectors.svg">SVG version</a>)
 </figcaption>
 </figure>
 
 Even though I have not used the standard connector, I kept the same wire order as the 6-pin one. Then, I tried to use the following pen to mark the wire 1 as black:
 
 <figure class="singleimage polaroid">
-<img src="{{ site.url }}/blog/images/avr/marker-pen.jpg" alt="Pen used to paint the wire 1 of the flat cable.">
+<img src="{{ site.baseurl }}/blog/images/avr/marker-pen.jpg" alt="Pen used to paint the wire 1 of the flat cable.">
 </figure>
 
 Unfortunately, it was not a good choice, because the painted portion of that cable now leaves a black stain everywhere it touches.
@@ -154,7 +154,7 @@ The photos above were taken using a [SonyEricsson K750i phone](http://en.wikiped
 
 ### Buffered parallel port
 
-[That personal homepage address found at #avr channel topic](http://eds.dyndns.org:81/~ircjunk/avr/avrstarter/avrstarter.html) ([Wayback Machine](http://web.archive.org/web/20071229042911/http://eds.dyndns.org:81/~ircjunk/avr/avrstarter/avrstarter.html)) has a link to a [PDF schematic diagram](http://eds.dyndns.org:81/~ircjunk/avr/programmer/avrprog.pdf) ([local mirror]({{ site.url }}/blog/images/avr/avrprog.pdf)) (**Update on 2008-12-02:** be careful, [the pinout in this PDF is wrong][correction]) that describes how to build a buffered parallel port dongle. It uses one 100K [pull-up resistor](http://en.wikipedia.org/wiki/Pull-up_resistor), one 0.1µF [decoupling capacitor](http://en.wikipedia.org/wiki/Decoupling_capacitor), and a 74HC244 buffer chip. A similar diagram can be found [elsewhere on the web](http://wiredworld.tripod.com/tronics/atmel_isp.html) ([Wayback Machine](http://web.archive.org/web/20071024175932/http://wiredworld.tripod.com/tronics/atmel_isp.html)).
+[That personal homepage address found at #avr channel topic](http://eds.dyndns.org:81/~ircjunk/avr/avrstarter/avrstarter.html) ([Wayback Machine](http://web.archive.org/web/20071229042911/http://eds.dyndns.org:81/~ircjunk/avr/avrstarter/avrstarter.html)) has a link to a [PDF schematic diagram](http://eds.dyndns.org:81/~ircjunk/avr/programmer/avrprog.pdf) ([local mirror]({{ site.baseurl }}/blog/images/avr/avrprog.pdf)) (**Update on 2008-12-02:** be careful, [the pinout in this PDF is wrong][correction]) that describes how to build a buffered parallel port dongle. It uses one 100K [pull-up resistor](http://en.wikipedia.org/wiki/Pull-up_resistor), one 0.1µF [decoupling capacitor](http://en.wikipedia.org/wiki/Decoupling_capacitor), and a 74HC244 buffer chip. A similar diagram can be found [elsewhere on the web](http://wiredworld.tripod.com/tronics/atmel_isp.html) ([Wayback Machine](http://web.archive.org/web/20071024175932/http://wiredworld.tripod.com/tronics/atmel_isp.html)).
 
 I'm not sure, but as I understood the schematics, this dongle will get the needed Vcc from the microcontroller connector.
 

@@ -7,7 +7,7 @@ tags:
 ---
 
 <figure class="floatright">
-<img src="{{ site.url }}/blog/images/thermometer_2006-12-20_20-27.jpg" alt="Thermometer showing 33 ℃">
+<img src="{{ site.baseurl }}/blog/images/thermometer_2006-12-20_20-27.jpg" alt="Thermometer showing 33 ℃">
 </figure>
 
 This post talks about some really <span style="color: red;">hot</span> news.
@@ -28,7 +28,7 @@ I could kill X and get back a terminal using SAK (<kbd>Alt+SysRq+K</kbd>). Read 
 Getting back to hard drive temperatures… I always hated the way my two hard drives were attached into my computer case. Let's get a look at how it looks now:
 
 <figure class="singleimage">
-<img src="{{ site.url }}/blog/images/pc_case_bays.jpg" alt="">
+<img src="{{ site.baseurl }}/blog/images/pc_case_bays.jpg" alt="">
 </figure>
 
 My computer case has three 5.25" bays and three 3.5" bays. In photo above you can see the three 3.25" bays and one 5.25" bay. As you can notice, although it has three 3.25" bays, it can only hold two hard disks (in bays A and B), and they must be into adjacent bays, with little space between them. Until last week, my two hard disks were into bays A and B.
@@ -40,13 +40,13 @@ Then I shut down the computer (breaking an uptime of 33 days an 17 minutes) and 
 Unfortunately, no screw could fit into the adapter that came with that cooler. The smaller screw was so loose that I could remove it without even rotating it. The bigger screw was so tight that could not enter in that hole. Fortunately, I also had bought another adapter separately, and the screws fitted nicely on that one.
 
 <figure class="singleimage">
-<img src="{{ site.url }}/blog/images/hard_drive_adapter_screws.jpg" alt="">
+<img src="{{ site.baseurl }}/blog/images/hard_drive_adapter_screws.jpg" alt="">
 </figure>
 
 Since I've shut down the system and opened the case, I've also installed a PCI USB card, with four external and two internal USB 2.0 (or 2.1?) ports. My motherboard is an old Asus CUV4X (for Pentium III) and only has USB 1.0 (or 1.1?) ports.
 
 <figure class="floatright">
-<img src="{{ site.url }}/blog/images/frontal_usb.jpg" alt="">
+<img src="{{ site.baseurl }}/blog/images/frontal_usb.jpg" alt="">
 </figure>
 
 Now I think I don't need to worry too much. With my both hard drives very separated (with enough space to dissipate the heat) and with this new frontal hard drive cooler, they are much less hot now. The one I was monitoring for some time is now around 38 ℃ to 40 ℃, and the "new" one is around 41 ℃. Unfortunately, this new cooler is not very silent.

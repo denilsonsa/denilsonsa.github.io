@@ -13,6 +13,10 @@ name: "Denilson Sá"
 # Used in RSS and Atom feeds.
 production_url: "http://denilson.sa.nom.br/"
 
+# site.url is filled in by GitHub Pages, but always point to HTTP.
+# Let's avoid using it and instead use site.baseurl.
+baseurl: ''
+
 # http://jekyllrb.com/docs/configuration/#frontmatter-defaults
 defaults:
 #  -

@@ -355,7 +355,7 @@ Suspendisse volutpat elit molestie orci. Suspendisse vel augue at felis
 tincidunt sollicitudin.
 
 <figure class="floatright">
-<img src="{{ site.url }}/blog/images/k750i_main_menu.jpg" alt="">
+<img src="{{ site.baseurl }}/blog/images/k750i_main_menu.jpg" alt="">
 <figcaption>
 &lt;img&gt; figure caption here.
 </figcaption>
@@ -367,7 +367,7 @@ Pellentesque ut orci. Sed lobortis, velit at laoreet suscipit, quam est
 sagittis nibh, id varius ipsum quam ac metus. Phasellus est nibh, bibendum.
 
 <figure class="floatright">
-<object type="image/svg+xml" data="{{ site.url }}/blog/images/avr/usbasp_on_breadboard_1_annotated.svg"></object>
+<object type="image/svg+xml" data="{{ site.baseurl }}/blog/images/avr/usbasp_on_breadboard_1_annotated.svg"></object>
 <figcaption>
 &lt;object&gt; figure caption here.
 </figcaption>
@@ -378,7 +378,7 @@ sollicitudin dui. Sed in tellus id urna viverra commodo. Vestibulum enim felis,
 interdum non, sollicitudin in, posuere a, sem. Cras nibh.
 
 <figure class="floatright">
-<img src="{{ site.url }}/blog/images/hard_drive_adapter_screws.jpg" alt="">
+<img src="{{ site.baseurl }}/blog/images/hard_drive_adapter_screws.jpg" alt="">
 </figure>
 
 Ac sapien. Donec justo. Sed congue nunc vel mauris. Pellentesque vehicula orci
@@ -394,7 +394,7 @@ sagittis sed, magna. Curabitur ultricies felis ut libero. Nullam tincidunt enim
 eu nibh. Nunc eget ipsum in sem facilisis convallis.
 
 <figure class="floatright">
-<object type="image/svg+xml" data="{{ site.url }}/blog/images/avr/usbasp_on_breadboard_1_annotated.svg"></object>
+<object type="image/svg+xml" data="{{ site.baseurl }}/blog/images/avr/usbasp_on_breadboard_1_annotated.svg"></object>
 </figure>
 
 Vestibulum ac lacus. Vivamus porttitor, massa ut hendrerit bibendum, metus
@@ -408,7 +408,7 @@ Integer neque purus, congue sed, mattis sed, vulputate ac, pede. Donec
 vestibulum purus non tortor. Integer at nunc.
 
 <figure class="singleimage">
-<img src="{{ site.url }}/blog/images/hard_drive_adapter_screws.jpg" alt="">
+<img src="{{ site.baseurl }}/blog/images/hard_drive_adapter_screws.jpg" alt="">
 <figcaption>
 &lt;img&gt; figure caption here. Maecenas sed nibh non lacus tempor faucibus.
 In hac habitasse platea dictumst.
@@ -422,7 +422,7 @@ sagittis. Curabitur auctor metus non mauris. Nunc condimentum nisl non augue.
 Donec leo urna, dignissim vitae, porttitor ut, iaculis sit amet, sem.
 
 <figure class="singleimage">
-<object type="image/svg+xml" data="{{ site.url }}/blog/images/avr/usbasp_on_breadboard_1_annotated.svg"></object>
+<object type="image/svg+xml" data="{{ site.baseurl }}/blog/images/avr/usbasp_on_breadboard_1_annotated.svg"></object>
 <figcaption>
 &lt;object&gt; figure caption here. Maecenas sed nibh non lacus tempor
 faucibus. In hac habitasse platea dictumst.
@@ -452,7 +452,7 @@ Suspendisse volutpat elit molestie orci. Suspendisse vel augue at felis
 tincidunt sollicitudin.
 
 <figure class="floatright polaroid">
-<img src="{{ site.url }}/blog/images/k750i_main_menu.jpg" alt="">
+<img src="{{ site.baseurl }}/blog/images/k750i_main_menu.jpg" alt="">
 <figcaption>
 &lt;img&gt; figure caption here.
 </figcaption>
@@ -464,7 +464,7 @@ Pellentesque ut orci. Sed lobortis, velit at laoreet suscipit, quam est
 sagittis nibh, id varius ipsum quam ac metus. Phasellus est nibh, bibendum.
 
 <figure class="floatright polaroid">
-<object type="image/svg+xml" data="{{ site.url }}/blog/images/avr/usbasp_on_breadboard_1_annotated.svg"></object>
+<object type="image/svg+xml" data="{{ site.baseurl }}/blog/images/avr/usbasp_on_breadboard_1_annotated.svg"></object>
 <figcaption>
 &lt;object&gt; figure caption here.
 </figcaption>
@@ -475,7 +475,7 @@ sollicitudin dui. Sed in tellus id urna viverra commodo. Vestibulum enim felis,
 interdum non, sollicitudin in, posuere a, sem. Cras nibh.
 
 <figure class="floatright polaroid">
-<img src="{{ site.url }}/blog/images/hard_drive_adapter_screws.jpg" alt="">
+<img src="{{ site.baseurl }}/blog/images/hard_drive_adapter_screws.jpg" alt="">
 </figure>
 
 Ac sapien. Donec justo. Sed congue nunc vel mauris. Pellentesque vehicula orci
@@ -491,7 +491,7 @@ sagittis sed, magna. Curabitur ultricies felis ut libero. Nullam tincidunt enim
 eu nibh. Nunc eget ipsum in sem facilisis convallis.
 
 <figure class="floatright polaroid">
-<object type="image/svg+xml" data="{{ site.url }}/blog/images/avr/usbasp_on_breadboard_1_annotated.svg"></object>
+<object type="image/svg+xml" data="{{ site.baseurl }}/blog/images/avr/usbasp_on_breadboard_1_annotated.svg"></object>
 </figure>
 
 Vestibulum ac lacus. Vivamus porttitor, massa ut hendrerit bibendum, metus
@@ -505,7 +505,7 @@ Integer neque purus, congue sed, mattis sed, vulputate ac, pede. Donec
 vestibulum purus non tortor. Integer at nunc.
 
 <figure class="singleimage polaroid">
-<img src="{{ site.url }}/blog/images/hard_drive_adapter_screws.jpg" alt="">
+<img src="{{ site.baseurl }}/blog/images/hard_drive_adapter_screws.jpg" alt="">
 <figcaption>
 &lt;img&gt; figure caption here. Maecenas sed nibh non lacus tempor faucibus.
 In hac habitasse platea dictumst.
@@ -519,7 +519,7 @@ sagittis. Curabitur auctor metus non mauris. Nunc condimentum nisl non augue.
 Donec leo urna, dignissim vitae, porttitor ut, iaculis sit amet, sem.
 
 <figure class="singleimage polaroid">
-<object type="image/svg+xml" data="{{ site.url }}/blog/images/avr/usbasp_on_breadboard_1_annotated.svg"></object>
+<object type="image/svg+xml" data="{{ site.baseurl }}/blog/images/avr/usbasp_on_breadboard_1_annotated.svg"></object>
 <figcaption>
 &lt;object&gt; figure caption here. Maecenas sed nibh non lacus tempor
 faucibus. In hac habitasse platea dictumst.

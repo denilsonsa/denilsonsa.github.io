@@ -27,7 +27,7 @@ But today I accidentally found two shortcuts that do exactly what <kbd>Ctrl+N</k
 Before showing how it is, let's see how Opera Software designed that dialog in Opera browser for desktop.
 
 <figure class="singleimage">
-<img src="{{ site.url }}/blog/images/Keymap_Opera2.jpg" alt="">
+<img src="{{ site.baseurl }}/blog/images/Keymap_Opera2.jpg" alt="">
 </figure>
 
 Oh, how neatly arranged and organized. It has two columns, one for the keyboard shortcut and another for the action. It also has a quick-find field, an invaluable feature when the program has more than just a few actions and shortcuts. And this dialog is also used for editing mouse gestures. Very neat, well-thought, well-designed and easy-to-use.
@@ -35,13 +35,13 @@ Oh, how neatly arranged and organized. It has two columns, one for the keyboard 
 Now beware! The NetBeans keymap window is coming! Don't say I haven't warned you!
 
 <figure class="singleimage">
-<img src="{{ site.url }}/blog/images/Keymap_NetBeans2.jpg" alt="">
+<img src="{{ site.baseurl }}/blog/images/Keymap_NetBeans2.jpg" alt="">
 </figure>
 
 All actions are available at this dialog, and they are divided into 16 categories:
 
 <figure class="singleimage">
-<img src="{{ site.url }}/blog/images/Keymap_NetBeans1.jpg" alt="">
+<img src="{{ site.baseurl }}/blog/images/Keymap_NetBeans1.jpg" alt="">
 </figure>
 
 The keyboard shortcut is just a string between square brackets concatenated to action name. There are no columns. There is no font change, no color change, no bold, no spacing… Nothing that you can easily spot.

@@ -41,10 +41,10 @@ The second thing is that I'm using 4 resistors, one for each LED. It is also pos
 Here is the circuit (drawn using [Inkscape](http://www.inkscape.org/)):
 
 <figure class="singleimage">
-<img src="{{ site.url }}/blog/images/avr/atmega8-blinkingleds.png" alt="Schematic diagram for this 'blinking LEDs' circuit.">
+<img src="{{ site.baseurl }}/blog/images/avr/atmega8-blinkingleds.png" alt="Schematic diagram for this 'blinking LEDs' circuit.">
 <figcaption>
-(<a href="{{ site.url }}/blog/images/avr/atmega8-blinkingleds-hi.png">PNG version</a>,
-<a href="{{ site.url }}/blog/images/avr/atmega8-blinkingleds.svg">SVG version</a>)
+(<a href="{{ site.baseurl }}/blog/images/avr/atmega8-blinkingleds-hi.png">PNG version</a>,
+<a href="{{ site.baseurl }}/blog/images/avr/atmega8-blinkingleds.svg">SVG version</a>)
 </figcaption>
 </figure>
 
@@ -53,10 +53,10 @@ The `RESET`, `SCK`, `MISO` and `MOSI` lines come from the ISP connector. Althoug
 **Update on 2008-12-02:** [Originally, the 6-pin pinout was wrong.][correction] It has been fixed, so the pinout below is correct.
 
 <figure class="singleimage">
-<img src="{{ site.url }}/blog/images/avr/AVR-ISP-connectors.png" alt="Diagram for AVR ISP 6-pin and 10-pin connectors.">
+<img src="{{ site.baseurl }}/blog/images/avr/AVR-ISP-connectors.png" alt="Diagram for AVR ISP 6-pin and 10-pin connectors.">
 <figcaption>
-(<a href="{{ site.url }}/blog/images/avr/AVR-ISP-connectors-hi.png">PNG version</a>,
-<a href="{{ site.url }}/blog/images/avr/AVR-ISP-connectors.svg">SVG version</a>)
+(<a href="{{ site.baseurl }}/blog/images/avr/AVR-ISP-connectors-hi.png">PNG version</a>,
+<a href="{{ site.baseurl }}/blog/images/avr/AVR-ISP-connectors.svg">SVG version</a>)
 </figcaption>
 </figure>
 
@@ -71,7 +71,7 @@ In the next picture, I've also connected the GND and VCC lines. As you can see f
 Note that this breadboard is unpowered! Be careful if your breadboard is powered by any external source!
 
 <figure class="singleimage polaroid">
-<a href="{{ site.url }}/blog/images/avr/blinkingleds_on_the_breadboard_1-hi.jpg"><img src="{{ site.url }}/blog/images/avr/blinkingleds_on_the_breadboard_1-lo.jpg" alt=""></a>
+<a href="{{ site.baseurl }}/blog/images/avr/blinkingleds_on_the_breadboard_1-hi.jpg"><img src="{{ site.baseurl }}/blog/images/avr/blinkingleds_on_the_breadboard_1-lo.jpg" alt=""></a>
 </figure>
 
 Then, I connected the ISP pins to the microcontroller. Since my ISP programmer is unpowered, I left VCC line from it not connected.
@@ -79,25 +79,25 @@ Then, I connected the ISP pins to the microcontroller. Since my ISP programmer i
 The wire colors here don't mean anything special. I just happened to have pieces of wire with different colors for different lengths. Makes it easier when working with the breadboard.
 
 <figure class="singleimage polaroid">
-<a href="{{ site.url }}/blog/images/avr/blinkingleds_on_the_breadboard_2-hi.jpg"><img src="{{ site.url }}/blog/images/avr/blinkingleds_on_the_breadboard_2-lo.jpg" alt=""></a>
+<a href="{{ site.baseurl }}/blog/images/avr/blinkingleds_on_the_breadboard_2-hi.jpg"><img src="{{ site.baseurl }}/blog/images/avr/blinkingleds_on_the_breadboard_2-lo.jpg" alt=""></a>
 </figure>
 
 Next, I added wire connections to the LEDs. I fortunately have a [7-segment display](http://en.wikipedia.org/wiki/Seven-segment_display) already mounted near the breadboard with one 2K2 resistor for each segment. In case you aren't as lucky as I am, you need to insert the resistors and LEDs on the breadboard. I guess any resistor between 1K and 2K should be enough. Also be careful to not invert the LEDs, or they won't turn on.
 
 <figure class="singleimage polaroid">
-<a href="{{ site.url }}/blog/images/avr/blinkingleds_on_the_breadboard_3-hi.jpg"><img src="{{ site.url }}/blog/images/avr/blinkingleds_on_the_breadboard_3-lo.jpg" alt=""></a>
+<a href="{{ site.baseurl }}/blog/images/avr/blinkingleds_on_the_breadboard_3-hi.jpg"><img src="{{ site.baseurl }}/blog/images/avr/blinkingleds_on_the_breadboard_3-lo.jpg" alt=""></a>
 </figure>
 
 Finally, I connected my ISP programmer to the connector on the breadboard. I also added USB power to the board, by connecting USB +5V and USB GND wires to VCC and GND lines of my circuit.
 
 <figure class="singleimage polaroid">
-<a href="{{ site.url }}/blog/images/avr/blinkingleds_on_the_breadboard_4-hi.jpg"><img src="{{ site.url }}/blog/images/avr/blinkingleds_on_the_breadboard_4-lo.jpg" alt=""></a>
+<a href="{{ site.baseurl }}/blog/images/avr/blinkingleds_on_the_breadboard_4-hi.jpg"><img src="{{ site.baseurl }}/blog/images/avr/blinkingleds_on_the_breadboard_4-lo.jpg" alt=""></a>
 </figure>
 
 If you remember the [part 1][] you will notice I listed a USB-B connector at the parts list. However, later I noticed this connector can't be used on a breadboard. Since I still want to get power from USB (and, later on, make ATmega8 act as an USB device, but not in this post series), I bought the cheapest USB cable I could find (R$ 2.79, or US$ 1.57), ripped one of the ends and used the wires on the breadboard.
 
 <figure class="singleimage polaroid">
-<a href="{{ site.url }}/blog/images/avr/USB-B-hi.jpg"><img src="{{ site.url }}/blog/images/avr/USB-B-lo.jpg" alt=""></a>
+<a href="{{ site.baseurl }}/blog/images/avr/USB-B-hi.jpg"><img src="{{ site.baseurl }}/blog/images/avr/USB-B-lo.jpg" alt=""></a>
 </figure>
 
 ~~This USB-B connector will be saved for future projects.~~ (_**Update on 2011-08-10:** It turns out I've never used that USB-B connector, and I don't think I will ever use it._)
@@ -203,7 +203,7 @@ Don't you like this idea? Me neither. This is why I think hardware sucks! Hardwa
 ## Be happy and watch the blinking LEDs!
 
 <figure class="floatright">
-<img src="{{ site.url }}/blog/images/avr/blinkingleds.gif" alt="A short video showing the 4 LEDs blinking.">
+<img src="{{ site.baseurl }}/blog/images/avr/blinkingleds.gif" alt="A short video showing the 4 LEDs blinking.">
 </figure>
 
 Well, if everything went fine, you should have some blinking LEDs right after running avrdude. Maybe you need to unplug the ISP hardware, maybe not (this is why I use `-E noreset`).

@@ -36,20 +36,20 @@ Parts list:
 This is the schematic diagram for [RetroAdapter V2][RetroAdapter] ([Wayback Machine][RetroAdapterWBM]) (based on [the original schematic](http://denki.world3.net/img/retro/schematic_w.png) ([Wayback Machine](https://web.archive.org/web/20150927151939/http://denki.world3.net/img/retro/schematic_w.png))):
 
 <figure class="singleimage">
-<img src="{{ site.url }}/blog/images/avr/retroadapter_atmega8.png" alt="Schematic diagram for RetroAdapter V2 circuit.">
+<img src="{{ site.baseurl }}/blog/images/avr/retroadapter_atmega8.png" alt="Schematic diagram for RetroAdapter V2 circuit.">
 <figcaption>
-(<a href="{{ site.url }}/blog/images/avr/retroadapter_atmega8-hi.png">PNG version</a>,
-<a href="{{ site.url }}/blog/images/avr/retroadapter_atmega8.svg">SVG version</a>)
+(<a href="{{ site.baseurl }}/blog/images/avr/retroadapter_atmega8-hi.png">PNG version</a>,
+<a href="{{ site.baseurl }}/blog/images/avr/retroadapter_atmega8.svg">SVG version</a>)
 </figcaption>
 </figure>
 
 Since I'm only interested in SEGA Mega Drive gamepads, I can simplify the circuit
 
 <figure class="singleimage">
-<img src="{{ site.url }}/blog/images/avr/retroadapter_atmega8_dual_megadrive.png" alt="Schematic diagram for RetroAdapter V2 circuit restricted to SEGA Mega Drive gamepads.">
+<img src="{{ site.baseurl }}/blog/images/avr/retroadapter_atmega8_dual_megadrive.png" alt="Schematic diagram for RetroAdapter V2 circuit restricted to SEGA Mega Drive gamepads.">
 <figcaption>
-(<a href="{{ site.url }}/blog/images/avr/retroadapter_atmega8_dual_megadrive-hi.png">PNG version</a>,
-<a href="{{ site.url }}/blog/images/avr/retroadapter_atmega8_dual_megadrive.svg">SVG version</a>)
+(<a href="{{ site.baseurl }}/blog/images/avr/retroadapter_atmega8_dual_megadrive-hi.png">PNG version</a>,
+<a href="{{ site.baseurl }}/blog/images/avr/retroadapter_atmega8_dual_megadrive.svg">SVG version</a>)
 </figcaption>
 </figure>
 
@@ -60,7 +60,7 @@ Note: The colors for Player 1 and Player 2 connections in the diagram were chose
 Here is a picture of the finished circuit board (sorry, I didn't take any picture of the solder side):
 
 <figure class="singleimage polaroid">
-<img src="{{ site.url }}/blog/images/avr/retroadapter_circuit_1.jpg" alt="Picture of the finished circuit board with all components and wires soldered.">
+<img src="{{ site.baseurl }}/blog/images/avr/retroadapter_circuit_1.jpg" alt="Picture of the finished circuit board with all components and wires soldered.">
 </figure>
 
 There are a few things I want to highlight at the previous picture:
@@ -96,19 +96,19 @@ After everything was working correctly, I bought a plastic box to hold the circu
 This adapter works on both Linux, Windows and Android. Yes, I can connect it to a Android smartphone and use a SEGA Mega Drive joystick to control the Android device. How awesome is that? And it should also work on Mac, but I couldn't test it because I don't have one.
 
 <figure class="singleimage polaroid">
-<a href="{{ site.url }}/blog/images/avr/retroadapter_box_1-hi.jpg"><img src="{{ site.url }}/blog/images/avr/retroadapter_box_1-lo.jpg" alt="Picture of the plastic box with the circuit board screwed inside, the two DE9 connectors, and the USB cable."></a>
+<a href="{{ site.baseurl }}/blog/images/avr/retroadapter_box_1-hi.jpg"><img src="{{ site.baseurl }}/blog/images/avr/retroadapter_box_1-lo.jpg" alt="Picture of the plastic box with the circuit board screwed inside, the two DE9 connectors, and the USB cable."></a>
 </figure>
 
 <figure class="singleimage polaroid">
-<a href="{{ site.url }}/blog/images/avr/retroadapter_box_2-hi.jpg"><img src="{{ site.url }}/blog/images/avr/retroadapter_box_2-lo.jpg" alt="Another picture of the plastic box with all the components."></a>
+<a href="{{ site.baseurl }}/blog/images/avr/retroadapter_box_2-hi.jpg"><img src="{{ site.baseurl }}/blog/images/avr/retroadapter_box_2-lo.jpg" alt="Another picture of the plastic box with all the components."></a>
 </figure>
 
 <figure class="singleimage polaroid">
-<a href="{{ site.url }}/blog/images/avr/retroadapter_box_3-hi.jpg"><img src="{{ site.url }}/blog/images/avr/retroadapter_box_3-lo.jpg" alt="Picture of the finished box, already closed. We can see the USB cable and one of the DE9 connectors."></a>
+<a href="{{ site.baseurl }}/blog/images/avr/retroadapter_box_3-hi.jpg"><img src="{{ site.baseurl }}/blog/images/avr/retroadapter_box_3-lo.jpg" alt="Picture of the finished box, already closed. We can see the USB cable and one of the DE9 connectors."></a>
 </figure>
 
 <figure class="singleimage polaroid">
-<a href="{{ site.url }}/blog/images/avr/retroadapter_box_4-hi.jpg"><img src="{{ site.url }}/blog/images/avr/retroadapter_box_4-lo.jpg" alt="Picture of the finished box with two SEGA Mega Drive controllers connected to it."></a>
+<a href="{{ site.baseurl }}/blog/images/avr/retroadapter_box_4-hi.jpg"><img src="{{ site.baseurl }}/blog/images/avr/retroadapter_box_4-lo.jpg" alt="Picture of the finished box with two SEGA Mega Drive controllers connected to it."></a>
 </figure>
 
 ## See also

@@ -181,7 +181,7 @@ http://jwatt.org/svg/authoring/
 
 {% comment %}
 <g transform="translate(-0.0 -108.8)" class="item without-icon">
-	<a target="_top" xlink:href="{{ site.url }}/blog/">
+	<a target="_top" xlink:href="{{ site.baseurl }}/blog/">
 		<circle cx="0" cy="0" r="20" />
 		<text x="0" y="0">Blog</text>
 	</a>
