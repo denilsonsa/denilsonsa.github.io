@@ -160,12 +160,6 @@ googleplus:
   useid: googleplus
   text1: Google+
 
-gratipay:
-  href: https://gratipay.com/denilsonsa/
-  #href: https://www.gittip.com/denilsonsa/
-  useid: gratipay
-  text1: Gratipay
-
 gravatar:
   href: https://en.gravatar.com/crazyterabyte
   useid: gravatar

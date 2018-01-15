@@ -170,10 +170,6 @@
 * http://commons.wikimedia.org/wiki/File:Google_plus.svg
 * http://www.seeklogo.net/new-google-plus-icon-vector-73768.html
 
-## Gratipay
-
-* http://inside.gratipay.com/big-picture/brand/
-
 ## Gravatar
 
 * https://github.com/gilbarbara/logos/blob/master/logos/gravatar.svg

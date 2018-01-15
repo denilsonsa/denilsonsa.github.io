@@ -5,9 +5,9 @@
 # :.,.+2s/ \+/ /g | Tabularize / /l0
 raw = '''
 
-email googleplus reddit   disqus   pocket       stumbleupon pinterest kickstarter newgrounds  gamejolt kongregate steam       bandcamp          tunein      soundcloud  imgur   flickr  instagram  coderwall   regexcrossword devpost    pluralsight hackhands stackexchange stackoverflowcv
-blog  twitter    aboutme  gravatar foodspotting angellist   paypal    flattr      gratipay    patreon  itchio     drawception deviantart        opengameart openclipart behance slides  slideshare speakerdeck shadertoy      topcoder   hackerrank  codepen   linkedin      curriculumvitae
-skype telegram   facebook tumblr   ello         snapchat    vk        myspace     livejournal medium   alvanista  backloggery retroachievements smashcast   twitch      vimeo   youtube asciinema  ifttt       stylish        greasyfork userscripts bitbucket githubgist    github
+email googleplus reddit   disqus   pocket       stumbleupon pinterest kickstarter newgrounds  gamejolt kongregate  steam       bandcamp          tunein      soundcloud imgur  flickr     instagram   coderwall regexcrossword devpost    pluralsight hackhands stackexchange   stackoverflowcv
+blog  twitter    aboutme  gravatar foodspotting angellist   paypal    flattr      patreon     itchio   drawception deviantart  opengameart       openclipart behance    slides slideshare speakerdeck shadertoy topcoder       hackerrank codepen     linkedin  curriculumvitae
+skype telegram   facebook tumblr   ello         snapchat    vk        myspace     livejournal medium   alvanista   backloggery retroachievements smashcast   twitch     vimeo  youtube    asciinema   ifttt     stylish        greasyfork userscripts bitbucket githubgist      github
 
 '''
 
