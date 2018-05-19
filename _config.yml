@@ -14,6 +14,7 @@ name: "Denilson Sá"
 production_url: "http://denilson.sa.nom.br/"
 
 # site.url is filled in by GitHub Pages, but always point to HTTP.
+# https://github.com/jekyll/github-metadata/issues/116
 # Let's avoid using it and instead use site.baseurl.
 baseurl: ''
 
