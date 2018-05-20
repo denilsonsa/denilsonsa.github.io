@@ -117,6 +117,10 @@ http://jwatt.org/svg/authoring/
 
 /* Relevant Firefox bug/behavior: https://bugzilla.mozilla.org/show_bug.cgi?id=265894#c5 */
 
+.item > a {
+	cursor: pointer;
+}
+
 .item > a > circle {
 	transition-property: fill;
 	transition-duration: 250ms;
