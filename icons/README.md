@@ -38,9 +38,8 @@
 
 ## Bitbucket
 
-* http://www.atlassian.com/company/press/resources/?tab=logos
-* http://www.atlassian.com/dms/wac/images/press/Atlassian-logos/logoBitBucketPNG.png
-* http://www.atlassian.com/dms/wac/images/press/Atlassian-logos/logoBitBucket.eps
+* https://www.atlassian.com/company/news/press-kit
+* https://www.atlassian.com/blog/announcements/our-bold-new-brand
 
 ## Bitcoin
 
