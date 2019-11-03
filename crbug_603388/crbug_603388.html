@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+	<title>crbug 603388 testcase</title>
+	<style>
+		html {
+			font-family: sans-serif;
+			background-color: #222;
+			color: white;
+			min-height: 100vh;
+		}
+		html, body, form {
+			margin: 0;
+			padding: 0;
+		}
+		form {
+			padding: 1ex;
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			/*
+			flex-direction: column;
+			align-items: flex-start;
+			width: fit-content;
+			height: 100vh;
+			box-sizing: border-box;
+			*/
+		}
+		fieldset, legend {
+			background: rgba(255, 255, 255, 0.75);
+			color: black;
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<form id="theform">
+		<fieldset>
+			<legend>background-image</legend>
+			<div>
+				<label><input type="radio" name="ext" value=".jpg" checked> .jpg</label>
+				&nbsp;
+				<label><input type="radio" name="ext" value="-p4.png"> .png</label>
+			</div>
+
+			<div><label><input type="radio" name="image" value="crbug_603388_1024" checked> 1024x1024</label></div>
+			<div><label><input type="radio" name="image" value="crbug_603388_2048"> 2048x2048</label></div>
+			<div><label><input type="radio" name="image" value="crbug_603388_4096"> 4096x4096</label></div>
+			<div><label><input type="radio" name="image" value="crbug_603388_8192"> 8192x8192</label></div>
+			<div><label><input type="radio" name="image" value="crbug_603388_5432"> 5432x5432</label></div>
+			<div><label><input type="radio" name="image" value="crbug_603388_5432x4321"> 5432x4321</label></div>
+			<!--
+			<hr>
+			<div><label><input type="radio" name="image" value="http://denilsonsa.github.io/simone-giertz-fish-slap/simone_fishslap_small.jpg"> simone_fishslap_small.jpg (3840x1920)</label></div>
+			<div><label><input type="radio" name="image" value="http://denilsonsa.github.io/simone-giertz-fish-slap/simone_fishslap.jpg"> simone_fishslap.jpg (7680x3840)</label></div>
+			-->
+		</fieldset>
+		<fieldset>
+			<legend>background-size</legend>
+			<div><label><input type="radio" name="size" value="auto" checked> auto</label></div>
+			<div><label><input type="radio" name="size" value="cover"> cover</label></div>
+			<div><label><input type="radio" name="size" value="contain"> contain</label></div>
+			<div><label><input type="radio" name="size" value="100vw 100vw"> 100vw 100vw</label></div>
+			<div><label><input type="radio" name="size" value="100vh 100vh"> 100vh 100vh</label></div>
+			<div><label><input type="radio" name="size" value="100vw 100vh"> 100vw 100vh</label></div>
+			<div><label><input type="radio" name="size" value="100% 100%"> 100% 100%</label></div>
+		</fieldset>
+		<fieldset>
+			<legend>background-position</legend>
+			<div><label><input type="radio" name="position" value="top left" checked> top left</label></div>
+			<div><label><input type="radio" name="position" value="25% 25%"> 25% 25%</label></div>
+			<div><label><input type="radio" name="position" value="center center"> center center</label></div>
+			<div><label><input type="radio" name="position" value="75% 75%"> 75% 75%</label></div>
+			<div><label><input type="radio" name="position" value="bottom right"> bottom right</label></div>
+			<div><label><input type="radio" name="position" value="custom"> <output name="position-percentage" style="display: inline-block; width: 3ch; text-align: right;"></output>% <input type="range" name="position-custom" value="66" min="0" max="100" step="1"></label></div>
+		</fieldset>
+		<fieldset>
+			<legend>background-repeat</legend>
+			<div><label><input type="radio" name="repeat" value="no-repeat" checked> no-repeat</label></div>
+			<div><label><input type="radio" name="repeat" value="repeat"> repeat</label></div>
+		</fieldset>
+		<fieldset>
+			<legend>More info</legend>
+			<div><a href="https://bugs.chromium.org/p/chromium/issues/detail?id=603388">Chromium bug 603388</a></div>
+		</fieldset>
+	</form>
+
+	<script>
+	'use strict';
+
+	/*
+
+	Note about the images used in this testcase...
+	They were first created as SVG in Inkscape.
+	Then exported to PNG.
+	Then the following commands were used to generate smaller lower-quality images:
+
+	mogrify -format jpg -quality 1 *.png
+	pngquant --nofs --posterize 4 --ext -p4.png *.png
+	zopflipng_in_place *-p4.png
+
+	*/
+
+	function form_handler(ev) {
+		const form = document.getElementById('theform');
+		const html = document.documentElement;
+
+		let img = form.elements['image'].value;
+		// Don't overwrite explicit file extension.
+		if (!/\.[a-z]{3}$/.test(img)) {
+			img += form.elements['ext'].value;
+		}
+		html.style.backgroundImage = 'url(' + img + ')';
+
+		const position_custom = parseInt(form.elements['position-custom'].value, 10);
+		form.elements['position-percentage'].value = position_custom;
+		let position = form.elements['position'].value;
+		if (position === 'custom') {
+			position = position_custom + '% ' + position_custom + '%';
+		}
+		html.style.backgroundPosition = position;
+
+		html.style.backgroundSize = form.elements['size'].value;
+		html.style.backgroundRepeat = form.elements['repeat'].value;
+	}
+
+	function prevDef(fn) {
+		return function(ev) {
+			ev.preventDefault();
+			return fn(ev);
+		};
+	}
+
+	function init() {
+		const form = document.getElementById('theform');
+		form.addEventListener('change', form_handler);
+		form.addEventListener('input', form_handler);
+		form.addEventListener('submit', prevDef(form_handler));
+		form_handler(null);
+	}
+	init();
+	</script>
+</body>
+</html>
