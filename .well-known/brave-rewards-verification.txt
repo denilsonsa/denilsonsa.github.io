@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: denilson.sa.nom.br
+Token: 8bb6f2e197e40ee7e9323ed6fd045380f993999bf39115d9ee164be38d1beec3
