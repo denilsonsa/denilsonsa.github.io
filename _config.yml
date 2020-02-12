@@ -109,7 +109,8 @@ lsi: false
 exclude:
   - /icons/originals/
 
-#include:
+include:
+  - .well-known
 
 # This will only be useful if the site is being served from a non-root
 # directory. Also, post URLs alread contain the leading slash, which means
