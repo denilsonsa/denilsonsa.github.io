@@ -245,7 +245,10 @@ newgrounds:
 
 openclipart:
   #href: https://openclipart.org/user-detail/CrazyTerabyte
-  href: https://openclipart.org/user-cliparts/CrazyTerabyte
+  #href: https://openclipart.org/user-cliparts/CrazyTerabyte
+  #href: http://web.archive.org/web/20151003162438/openclipart.org/user-cliparts/CrazyTerabyte
+  href: http://web.archive.org/web/20180212150941/openclipart.org/user-detail/CrazyTerabyte
+  #href: https://openclipart.org/artist/CrazyTerabyte
   useid: openclipart
   text1: Open
   text2: clipart
