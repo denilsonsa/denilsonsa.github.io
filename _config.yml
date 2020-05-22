@@ -11,7 +11,7 @@ name: "Denilson Sá"
 # template using {{ site.foobar }}
 
 # Used in RSS and Atom feeds.
-production_url: "http://denilson.sa.nom.br/"
+production_url: "https://denilson.sa.nom.br/"
 
 # site.url is filled in by GitHub Pages, but always point to HTTP.
 # https://github.com/jekyll/github-metadata/issues/116

@@ -4,4 +4,4 @@
 # https://support.google.com/webmasters/answer/183668
 
 Sitemap: /sitemap.xml
-Sitemap: http://denilson.sa.nom.br/sitemap.xml
+Sitemap: https://denilson.sa.nom.br/sitemap.xml
