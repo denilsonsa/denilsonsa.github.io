@@ -38,7 +38,7 @@ asciinema:
   text1: asciinema
 
 backloggery:
-  href: http://backloggery.com/crazyterabyte
+  href: https://backloggery.com/crazyterabyte
   useid: backloggery
   text1: Backloggery
 
@@ -57,6 +57,12 @@ bitbucket:
   useid: bitbucket
   text1: Bitbucket
 
+buymeacoffee:
+  href: https://buymeacoff.ee/denilsonsa
+  useid: buymeacoffee
+  text1: Buy Me
+  text2: A Coffee
+
 camscanner:
   # Referral:
   href: https://www.camscanner.com/r1?45156517
@@ -64,7 +70,7 @@ camscanner:
   text1: CamScanner
 
 codepen:
-  href: http://codepen.io/denilsonsa/
+  href: https://codepen.io/denilsonsa/
   useid: codepen
   text1: CodePen
 
@@ -74,7 +80,7 @@ coderwall:
   text1: Coderwall
 
 crunchyroll:
-  href: http://www.crunchyroll.com/user/denilsonsa
+  href: https://www.crunchyroll.com/user/denilsonsa
   useid: crunchyroll
   text1: Crunchyroll
 
@@ -84,7 +90,7 @@ deviantart:
   text1: DeviantArt
 
 devpost:
-  href: http://devpost.com/denilsonsa
+  href: https://devpost.com/denilsonsa
   useid: devpost
   text1: Devpost
 
@@ -131,11 +137,6 @@ flickr:
   href: https://flickr.com/photos/crazyterabyte/
   useid: flickr
   text1: Flickr
-
-foodspotting:
-  href: http://www.foodspotting.com/denilsonsa
-  useid: foodspotting
-  text1: Foodspotting
 
 gamejolt:
   href: https://gamejolt.com/profile/denilsonsa/378910/
@@ -191,6 +192,11 @@ imgur:
   useid: imgur
   text1: Imgur
 
+indiegogo:
+  href: https://www.indiegogo.com/individuals/10455469
+  useid: indiegogo
+  text1: Indiegogo
+
 instagram:
   href: https://instagram.com/denilsonsa/
   useid: instagram
@@ -204,7 +210,7 @@ italki:
   text1: italki
 
 itchio:
-  href: http://denilsonsa.itch.io/
+  href: https://denilsonsa.itch.io/
   useid: itchio
   text1: itch.io
 
@@ -213,8 +219,13 @@ kickstarter:
   useid: kickstarter
   text1: Kickstarter
 
+kofi:
+  href: https://ko-fi.com/denilsonsa
+  useid: kofi
+  text1: Ko-fi
+
 kongregate:
-  href: http://www.kongregate.com/accounts/CrazyTerabyte
+  href: https://www.kongregate.com/accounts/CrazyTerabyte
   useid: kongregate
   text1: Kongregate
 
@@ -224,7 +235,7 @@ linkedin:
   text1: LinkedIn
 
 livejournal:
-  href: http://denilsonsa.livejournal.com/
+  href: https://denilsonsa.livejournal.com/
   useid: livejournal
   text1: LiveJournal
 
@@ -246,8 +257,8 @@ newgrounds:
 openclipart:
   #href: https://openclipart.org/user-detail/CrazyTerabyte
   #href: https://openclipart.org/user-cliparts/CrazyTerabyte
-  #href: http://web.archive.org/web/20151003162438/openclipart.org/user-cliparts/CrazyTerabyte
-  href: http://web.archive.org/web/20180212150941/openclipart.org/user-detail/CrazyTerabyte
+  #href: https://web.archive.org/web/20151003162438/openclipart.org/user-cliparts/CrazyTerabyte
+  href: https://web.archive.org/web/20180212150941/openclipart.org/user-detail/CrazyTerabyte
   #href: https://openclipart.org/artist/CrazyTerabyte
   useid: openclipart
   text1: Open
@@ -255,7 +266,7 @@ openclipart:
   # text1: Openclipart
 
 opengameart:
-  href: http://opengameart.org/users/denilsonsa
+  href: https://opengameart.org/users/denilsonsa
   useid: opengameart
   text1: Open
   text2: Game
@@ -268,7 +279,8 @@ patreon:
   text1: Patreon
 
 paypal:
-  href: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=denilsonsa%40gmail%2ecom&lc=BR&currency_code=BRL
+  #href: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=denilsonsa%40gmail%2ecom&lc=BR&currency_code=BRL
+  href: https://paypal.me/denilsonsa
   useid: paypal
   text1: PayPal
 
@@ -294,16 +306,16 @@ reddit:
   text1: reddit
 
 regexcrossword:
-  href: http://regexcrossword.com/profile/53
+  href: https://regexcrossword.com/profile/53
   useid: regexcrossword
   text1: Regex
   text2: Crossword
 
 retroachievements:
-  href: http://retroachievements.org/User/denilsonsa
+  href: https://retroachievements.org/User/denilsonsa
   useid: retroachievements
-  text1: retro
-  text2: achievements
+  text1: Retro
+  text2: Achievements
 
 shadertoy:
   href: https://www.shadertoy.com/user/denilsonsa
@@ -321,7 +333,7 @@ slides:
   text1: Slides
 
 slideshare:
-  href: http://www.slideshare.net/CrazyTerabyte/
+  href: https://www.slideshare.net/CrazyTerabyte/
   useid: slideshare
   text1: SlideShare
 
@@ -371,13 +383,6 @@ steam:
   useid: steam
   text1: Steam
 
-stumbleupon:
-  href: http://www.stumbleupon.com/stumbler/denilsonsa
-  useid: stumbleupon
-  text1: Stumble
-  text2: Upon
-  # text1: StumbleUpon
-
 stylish:
   href: https://userstyles.org/users/194017
   # AKA Stylish
@@ -402,17 +407,17 @@ transferwise:
   text1: TransferWise
 
 tumblr:
-  href: http://denilsonsa.tumblr.com/
+  href: https://denilsonsa.tumblr.com/
   useid: tumblr
   text1: Tumblr
 
 tunein:
-  href: http://tunein.com/user/denilsonsa/
+  href: https://tunein.com/user/denilsonsa/
   useid: tunein
   text1: TuneIn
 
 twitch:
-  href: http://www.twitch.tv/denilsonsa/profile
+  href: https://www.twitch.tv/denilsonsa
   useid: twitch
   text1: Twitch.tv
   #text1: Twitch
@@ -430,7 +435,7 @@ uber:
 
 userscripts:
   #href: http://web.archive.org/web/20131108061608/http://userscripts.org/users/120597/scripts
-  href: http://userscripts-mirror.org/users/120597/scripts
+  href: https://userscripts-mirror.org/users/120597/scripts
   # href: http://userscripts.org/users/120597/scripts
   # href: http://userscripts.org:8080/users/120597/scripts
   # AKA Greasemonkey

@@ -132,11 +132,6 @@
 * https://secure.flickr.com/about/goodies/
 * Colors: `#0063DC` and `#FF0084`
 
-## Foodspotting
-
-* http://www.foodspotting.com/about/assets
-* http://www.foodspotting.com/images/redesign/about/downloads/foodspotting-eye-vector.eps
-
 ## Foursquare
 
 * https://foursquare.com/about/logos
@@ -231,6 +226,10 @@
 
 * https://www.kickstarter.com/help/brand_assets
 
+## Ko-fi
+
+* https://more.ko-fi.com/brand-assets
+
 ## Kongregate
 
 * http://www.kongregate.com/logos
@@ -320,8 +319,8 @@
 
 ## Retroachievements
 
-* http://retroachievements.org/favicon.png
-* http://i.retroachievements.org/Images/RA_Logo10.png
+* https://github.com/RetroAchievements/RetroAchievements.github.io/blob/master/assets/images/retroachievements.svg
+* https://github.com/RetroAchievements/RetroAchievements.github.io/blob/master/icon.png -->
 
 ## RSS
 
@@ -387,10 +386,6 @@
 * https://www.stellar.org/about/media/#Presskit
 * https://stellartalk.org/topic/3933-stellar-graphics-for-everyone-everyday-use-banner-images/
 * https://stellartalk.org/topic/4535-few-stellar-buttons/
-
-## StumbleUpon
-
-* https://commons.wikimedia.org/wiki/File:StumbleUpon_Logo.svg
 
 ## Stylish / userstyles
 
