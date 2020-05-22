@@ -184,11 +184,6 @@
 * http://hacktech.io/img/logo/hackerrank.svg
 * https://github.com/TheHacktech/TheHacktech.github.io/blob/master/img/logo/hackerrank.svg
 
-## HackHands
-
-* https://twitter.com/hackhands/status/608012553306791936
-* https://www.facebook.com/hackhands/photos/pb.454381268015164.-2207520000.1436558951./770084413111513/
-
 ## ICQ
 
 * https://en.wikipedia.org/wiki/File:ICQ.svg
