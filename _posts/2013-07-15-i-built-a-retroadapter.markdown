@@ -79,15 +79,15 @@ After the board was ready, I went to my Gentoo Linux machine to prepare the firm
 
 I had to adapt the `Makefile`, remove the code that used `PCICR` register (it is only available on newer AVR microncontrollers, it is not available on ATmega8), update the [V-USB](http://www.obdev.at/products/vusb/) ([Wayback Machine](https://web.archive.org/web/20130709064854/http://www.obdev.at/products/vusb/index.html)) driver to a newer version (to fix an error related to `SIG_INTERRUPT0` being renamed to `INT0_vect` in newer compiler versions), and remove support for Amiga mouse and analogue BBC controllers (some compiler errors that I didn't bother to fix, as I won't ever use those controllers). After these changes, the firmware size was around 7KB. Yes, it fits into ATmega8's 8KB ROM, but it won't fit into the 6KB limit if I decide to also use a bootloader. So I continued disabling other modules that I won't ever use (PC-Engine, PC-FX, 3DO, Atari driving, SNES mouse…). Great! The firmware is now under 6KB.
 
-Then, I had to hard-code support for SEGA Mega Drive controllers on the DB15 port. In the original RetroAdapter design, the DB15-to-DB9 adapter would pull pins `PC3` and `PC4` to `VCC`, and pull pin `PC5` to `GND`. This combination is read by the firmware through a sequence of `if` statements and is used to detect that the controller on the DB15 port is a second Mega Drive controller. Since I'm not using a DB15 port, and also I didn't want to hard-wire those pins to specific logic values in the circuit (instead, I left those pins unconnected), I had to override this detection logic via software. Basically, I [hard-coded those `if` statements](https://bitbucket.org/denilsonsa/retroadapter/commits/8d4558500f1d29c281a4cd2d8de18fcb4b5e5b9a) to always run the Mega Drive controller branch.
+Then, I had to hard-code support for SEGA Mega Drive controllers on the DB15 port. In the original RetroAdapter design, the DB15-to-DB9 adapter would pull pins `PC3` and `PC4` to `VCC`, and pull pin `PC5` to `GND`. This combination is read by the firmware through a sequence of `if` statements and is used to detect that the controller on the DB15 port is a second Mega Drive controller. Since I'm not using a DB15 port, and also I didn't want to hard-wire those pins to specific logic values in the circuit (instead, I left those pins unconnected), I had to override this detection logic via software. Basically, I [hard-coded those `if` statements](https://github.com/denilsonsa/retroadapter/commit/d27dc42fafd54a70843f3e7d246f3481f1622f3b) to always run the Mega Drive controller branch.
 
 After all these changes, it was time to write the firmware into the microntroller and test the device… And it works! On the first try! Amazing! Congratulations to Paul Qureshi for creating this project!
 
-But it still had two small but annoying bugs: the <kbd>Start</kbd> and <kbd>Mode</kbd> buttons were mapped to the same button on the second Mega Drive controller, and the <kbd>Start</kbd>/<kbd>Mode</kbd> button mapping was different between the first and the second virtual USB joysticks. Both were [trivial to fix](https://bitbucket.org/denilsonsa/retroadapter/commits/822507e3a888d9c52ab78bb1aadf8c19bc4f1f8d).
+But it still had two small but annoying bugs: the <kbd>Start</kbd> and <kbd>Mode</kbd> buttons were mapped to the same button on the second Mega Drive controller, and the <kbd>Start</kbd>/<kbd>Mode</kbd> button mapping was different between the first and the second virtual USB joysticks. Both were [trivial to fix](https://github.com/denilsonsa/retroadapter/commit/7746c8d5b50b8a193d4b4d07e377f80e890d9836).
 
 Finally, the icing on the cake, I wanted to add the bootloader to my device, so would be able to update the firmware without requiring any extra device. It turned out to be harder than I thought, but in the end I've managed to use an [updated version of USBaspLoader](https://github.com/baerwolf/USBaspLoader/commit/2ee56517b777f82220a08b1ec5b2b00e2694433f) as the bootloader. Now, if I connect my RetroAdapter to a computer while holding the B button from any Mega Drive controller, it will boot into USBaspLoader mode, allowing firmware updates.
 
-The final firmware with all my modifications is available as a [hg repository at BitBucket](https://bitbucket.org/denilsonsa/retroadapter/).
+The final firmware with all my modifications is available as a [git repository at GitHub](https://github.com/denilsonsa/retroadapter).
 
 ## The finished product
 
@@ -115,7 +115,7 @@ This adapter works on both Linux, Windows and Android. Yes, I can connect it to 
 
 * [Retro Adapter homepage][RetroAdapter] ([Wayback Machine][RetroAdapterWBM])
 * [Retro Adapter connections pinout](https://docs.google.com/spreadsheet/ccc?key=0Aho3omeSKZ7AdFJPWEFVOEpNX3lOTjdYcVFoX3pfS1E)
-* [My modified version of the firmware](https://bitbucket.org/denilsonsa/retroadapter/)
+* [My modified version of the firmware](https://github.com/denilsonsa/retroadapter)
 * [First contact with ATmega8 microcontroller]({% post_url 2007-10-25-first-contact-with-atmega8-microcontroller-part-1 %}), a multi-part series of posts where I explain how to work with AVR microcontrollers
 
 [RetroAdapter]: http://denki.world3.net/retro_v2.html

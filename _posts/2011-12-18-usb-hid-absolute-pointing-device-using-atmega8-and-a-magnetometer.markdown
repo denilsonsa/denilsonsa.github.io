@@ -25,7 +25,6 @@ Since the microcontroller implements the [USB HID](http://en.wikipedia.org/wiki/
 
 Links:
 
-* **[Full source-code at BitBucket](https://bitbucket.org/denilsonsa/atmega8-magnetometer-usb-mouse)**
 * **[Full source-code at GitHub](https://github.com/denilsonsa/atmega8-magnetometer-usb-mouse)**
 * [Photos at Picasa](https://picasaweb.google.com/denilsonsa/Atmega8MagnetometerUsbMouse)
 * [Videos at YouTube](https://www.youtube.com/playlist?list=PLA37C87EEDE5EC88C)

@@ -28,11 +28,6 @@ layout: base
 		https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer
 		https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address
 
-		A link to Google+ must include ?rel=author
-		https://support.google.com/webmasters/answer/2539557
-		https://support.google.com/webmasters/answer/1408986
-		https://plus.google.com/authorship
-
 		TODO: Check these tips and see if they are valid:
 		http://www.iacquire.com/blog/18-meta-tags-every-webpage-should-have-in-2013
 		https://developers.google.com/+/web/snippet/
@@ -49,8 +44,7 @@ layout: base
 		<footer>
 			<address>
 				<a href="{{ site.data.aboutme.email.href }}">Denilson Sá</a>:
-				<a href="{{ site.data.aboutme.googleplus.href }}?rel=author">{{ site.data.aboutme.googleplus.text1 }}{% if site.data.aboutme.googleplus.text2 %} {{ site.data.aboutme.googleplus.text2 }}{% endif %}</a>
-				{% assign items = "twitter facebook github bitbucket" | split: ' ' %}
+				{% assign items = "twitter github facebook" | split: ' ' %}
 				{% for itemname in items %}
 					{% assign item = site.data.aboutme[itemname] %}
 					<a href="{{ item.href }}">{{ item.text1 }}{% if item.text2 %} {{ item.text2 }}{% endif %}</a>

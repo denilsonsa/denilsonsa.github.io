@@ -153,7 +153,7 @@ See you at the [next part][part 2]!
 
 **Update on 2011-08-10:** Parallel ports are from the past, and nobody uses them anymore. Thus I've revisited this series of posts and added [part 2.1][], that shows how I built USBasp. It also has a [video](http://www.youtube.com/watch?v=sr0B-5Bhxdg).
 
-**Update on 2011-08-11:** The source-code for this "blinking LEDs" firmware (see [part 3][]) is now available at: <https://bitbucket.org/denilsonsa/atmega8-blinking-leds>
+**Update on 2011-08-11:** The source-code for this "blinking LEDs" firmware (see [part 3][]) is now available at: <https://github.com/denilsonsa/atmega8-blinking-leds>
 
 {% include first-contact-with-atmega8-navigation.html %}
 
