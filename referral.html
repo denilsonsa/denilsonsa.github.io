@@ -1,0 +1,30 @@
+---
+layout: default
+title: Referral links
+excerpt_separator: <!--more-->
+---
+
+<h1>Referral links</h1>
+<p>This page has a collection of referral links from me. You can sign up for those services using my referral code, and that should give both you and me a little bonus.</p>
+<!--more-->
+<ul>
+{%- for keyvalue in site.data.aboutme -%}
+	{%- comment -%}
+		site.data.aboutme is a hash/dict/map
+		keyvalue[0] is the key (string)
+		keyvalue[1] is the value (object)
+	{%- endcomment -%}
+	{%- assign item = keyvalue[1] -%}
+	{%- if item.referral -%}
+		{%- assign title = item.text1 -%}
+		{%- if item.text2 -%} {%- assign title = title | append: ' ' | append: item.text2 -%} {%- endif -%}
+		{%- if item.text3 -%} {%- assign title = title | append: ' ' | append: item.text3 -%} {%- endif %}
+		<li>
+			<a href="{{ item.referral }}">{{ title }}</a>
+			{%- if item.referraltext %} &mdash; {{ item.referraltext }} {% endif %}
+		</li>
+	{% endif -%}
+{%- endfor -%}
+</ul>
+
+{%- comment -%} vi:ft=liquid: {%- endcomment -%}

@@ -64,8 +64,8 @@ buymeacoffee:
   text2: A Coffee
 
 camscanner:
-  # Referral:
-  href: https://www.camscanner.com/r1?45156517
+  referral: https://www.camscanner.com/r1?45156517
+  referraltext: "I don't use it anymore, so I can't endorse it."
   useid: camscanner
   text1: CamScanner
 
@@ -95,8 +95,8 @@ devpost:
   text1: Devpost
 
 digitalocean:
-  # Referral:
-  href: https://www.digitalocean.com/?refcode=db6fca9fb79d
+  referral: https://www.digitalocean.com/?refcode=db6fca9fb79d
+  referraltext: "Simple cloud services for personal use or for small projects (and probably larger projects as well)."
   #href: https://m.do.co/c/db6fca9fb79d
   useid: digitalocean
   text1: DigitalOcean
@@ -112,10 +112,16 @@ drawception:
   text1: Drawception
 
 dropbox:
-  # Referral:
-  href: https://db.tt/VXe1QPLA
+  referral: https://db.tt/VXe1QPLA
+  referraltext: "Good cloud-based file syncing tool across multiple computers."
   useid: dropbox
   text1: Dropbox
+
+dynalist:
+  referral: https://dynalist.io/invite/OnNPqg
+  referraltext: "Infinitely deep nested lists. For use as note-taking, organization aid, to-do lists, etc."
+  useid: dynalist
+  text1: Dynalist
 
 ello:
   href: https://ello.co/denilsonsa
@@ -199,8 +205,8 @@ instagram:
 
 italki:
   href: https://www.italki.com/user/3270760
-  # Referral:
-  # href: https://www.italki.com/?ref=3270760
+  referral: https://www.italki.com/?ref=3270760
+  referraltext: "I've never used it."
   useid: italkiii
   text1: italki
 
@@ -396,8 +402,8 @@ topcoder:
   text1: TopCoder
 
 transferwise:
-  # Referral:
-  href: https://transferwise.com/u/27e81f0
+  referral: https://transferwise.com/u/27e81f0
+  referraltext: "Easy, quick and painless money transfer between countries."
   useid: transferwise
   text1: TransferWise
 
@@ -423,8 +429,7 @@ twitter:
   text1: Twitter
 
 uber:
-  # Referral:
-  href: https://www.uber.com/invite/uberdenilsonsa
+  referral: https://www.uber.com/invite/uberdenilsonsa
   useid: uber
   text1: Uber
 
@@ -447,6 +452,12 @@ vk:
   href: https://vk.com/denilsonsa
   useid: vk
   text1: VK
+
+workflowy:
+  referral: https://workflowy.com/invite/2c58d9ce.lnx
+  referraltext: "Infinitely deep nested lists. For use as note-taking, organization aid, to-do lists, etc."
+  useid: workflowy
+  text1: WorkFlowy
 
 youtube:
   href: https://www.youtube.com/user/denilsonsa
