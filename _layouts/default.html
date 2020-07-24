@@ -43,12 +43,13 @@ layout: base
 		{% endcomment %}
 		<footer>
 			<address>
-				<a href="{{ site.data.aboutme.email.href }}">Denilson Sá</a>:
+				<a href="{{ site.data.aboutme.email.href }}">Denilson Sá</a> &mdash;
 				{% assign items = "twitter github facebook" | split: ' ' %}
 				{% for itemname in items %}
 					{% assign item = site.data.aboutme[itemname] %}
 					<a href="{{ item.href }}">{{ item.text1 }}{% if item.text2 %} {{ item.text2 }}{% endif %}</a>
 				{% endfor %}
+				&mdash; <a href="{{ site.baseurl }}/donate.html">Donations</a>
 			</address>
 		</footer>
 
