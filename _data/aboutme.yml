@@ -241,6 +241,11 @@ linkedin:
   useid: linkedin
   text1: LinkedIn
 
+linktree:
+  href: https://linktr.ee/denilsonsa
+  useid: linktree
+  text1: Linktree
+
 livejournal:
   href: https://denilsonsa.livejournal.com/
   useid: livejournal
