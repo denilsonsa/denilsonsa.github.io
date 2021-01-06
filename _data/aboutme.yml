@@ -57,12 +57,6 @@ bitbucket:
   useid: bitbucket
   text1: Bitbucket
 
-brave:
-  referral: https://brave.com/den032
-  referraltext: "I've never used the Brave web browser, but it claims to reward content creators and provides an in-browser donation button."
-  useid: brave
-  text1: Brave
-
 buymeacoffee:
   href: https://buymeacoff.ee/denilsonsa
   useid: buymeacoffee
