@@ -396,6 +396,13 @@ stylish:
   text1: User
   text2: styles
 
+tapas:
+  href: https://tapas.io/denilsonsa
+  referral: https://tapas.io/app
+  referraltext: 'Platform for reading comics and novels. With the code "DENI454M", you get 200 ink and I get 500 ink.'
+  useid: tapas
+  text1: Tapas
+
 telegram:
   href: https://telegram.me/denilsonsa
   useid: telegram
