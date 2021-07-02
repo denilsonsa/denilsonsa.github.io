@@ -36,6 +36,8 @@ These are the official ways you can give me something:
 [flattr]: {{ site.data.aboutme.flattr.href }}
 [brave]: {{ site.data.aboutme.brave.referral }}
 
+Please, if possible, leave a small message with your donation. That way I would know why I received a little bit of money.
+
 ## Conditions
 
 Each donation is final, no refunds. (It's a donation after all!)
