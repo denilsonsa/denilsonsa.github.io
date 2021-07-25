@@ -22,6 +22,12 @@ aboutme:
   useid: aboutme
   text1: about.me
 
+achievementstats:
+  href: https://achievementstats.com/index.php?action=profile&playerId=76561197998985381
+  useid: achievementstats
+  text1: Achievement
+  text2: Stats
+
 alvanista:
   href: http://alvanista.com/denilsonsa
   useid: alvanista
@@ -36,6 +42,11 @@ asciinema:
   href: https://asciinema.org/~denilsonsa
   useid: asciinema
   text1: asciinema
+
+astats:
+  href: https://astats.astats.nl/astats/User_Info.php?ProfileID=275150
+  useid: astats
+  text1: AStats
 
 backloggery:
   href: https://backloggery.com/crazyterabyte
@@ -78,6 +89,11 @@ coderwall:
   href: https://coderwall.com/denilsonsa
   useid: coderwall
   text1: Coderwall
+
+completionistme:
+  href: https://completionist.me/user/ed4b8d86-8233-45be-b15c-5dd46982a269
+  useid: completionistme
+  text1: completionist.me
 
 crunchyroll:
   href: https://www.crunchyroll.com/user/denilsonsa
@@ -128,6 +144,11 @@ ello:
   useid: ello
   text1: Ello
 
+exophase:
+  href: https://www.exophase.com/user/denilsonsa/
+  useid: exophase
+  text1: Exophase
+
 facebook:
   href: https://facebook.com/denilsonsa
   #href: https://www.facebook.com/768342737
@@ -148,6 +169,11 @@ gamejolt:
   href: https://gamejolt.com/profile/denilsonsa/378910/
   useid: gamejolt
   text1: Game Jolt
+
+geoguessr:
+  href: https://www.geoguessr.com/user/60fd48352f082d000131e124
+  useid: geoguessr
+  text1: GeoGuessr
 
 github:
   href: https://github.com/denilsonsa
@@ -249,6 +275,13 @@ medium:
   href: https://medium.com/@denilsonsa
   useid: medium
   text1: Medium
+
+metagamerscore:
+  href: https://metagamerscore.com/profile/21630
+  useid: metagamerscore
+  text1: Meta
+  text2: Gamer
+  text3: Score
 
 myspace:
   href: https://myspace.com/denilsonsa
