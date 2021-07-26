@@ -536,6 +536,13 @@ workflowy:
   useid: workflowy
   text1: WorkFlowy
 
+xsketch:
+  href: http://xsketch.com/profile/45198990
+  useid: xsketch
+  referral: http://xsketch.com/r?id=45198990
+  referraltext: "Simple and nice multiplayer drawing game. Seems abandoned since 2014~2015."
+  text1: XSketch
+
 youtube:
   href: https://www.youtube.com/user/denilsonsa
   useid: youtube
