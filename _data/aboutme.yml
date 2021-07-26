@@ -68,6 +68,13 @@ bitbucket:
   useid: bitbucket
   text1: Bitbucket
 
+boardgamearena:
+  href: https://boardgamearena.com/player?id=43315183
+  useid: boardgamearena
+  text1: Board
+  text2: Game
+  text3: Arena
+
 buymeacoffee:
   href: https://buymeacoff.ee/denilsonsa
   useid: buymeacoffee
@@ -116,6 +123,11 @@ digitalocean:
   #href: https://m.do.co/c/db6fca9fb79d
   useid: digitalocean
   text1: DigitalOcean
+
+discord:
+  href: https://discordapp.com/users/145704648643182592
+  useid: discord
+  text1: Discord
 
 disqus:
   href: https://disqus.com/denilsonsa/
@@ -186,6 +198,11 @@ githubgist:
   text1: GitHub
   text2: Gist
 
+glitch:
+  href: https://glitch.com/@denilsonsa
+  useid: glitch
+  text1: Glitch
+
 googleplus:
   href: https://plus.google.com/+DenilsonSa
   #href: https://plus.google.com/+DenilsonSa/about
@@ -213,6 +230,11 @@ ifttt:
   href: https://ifttt.com/p/denilsonsa
   useid: ifttt
   text1: IFTTT
+
+igdb:
+  href: https://www.igdb.com/users/denilsonsa
+  useid: igdb
+  text1: IGDB
 
 imgur:
   href: https://denilsonsa.imgur.com/
@@ -255,6 +277,11 @@ kongregate:
   href: https://www.kongregate.com/accounts/CrazyTerabyte
   useid: kongregate
   text1: Kongregate
+
+kuula:
+  href: https://kuula.co/profile/denilsonsa
+  useid: kuula
+  text1: Kuula
 
 linkedin:
   href: https://www.linkedin.com/in/denilsonsa
@@ -365,6 +392,11 @@ skype:
   href: skype:crazyterabyte?chat
   useid: skype
   text1: Skype
+
+slant:
+  href: https://www.slant.co/users/denilsonsa
+  useid: slant
+  text1: Slant
 
 slides:
   href: https://slides.com/denilsonsa
