@@ -478,12 +478,6 @@ topcoder:
   useid: topcoder
   text1: TopCoder
 
-transferwise:
-  referral: https://transferwise.com/u/27e81f0
-  referraltext: "Easy, quick and painless money transfer between countries."
-  useid: transferwise
-  text1: TransferWise
-
 tumblr:
   href: https://denilsonsa.tumblr.com/
   useid: tumblr
@@ -529,6 +523,12 @@ vk:
   href: https://vk.com/denilsonsa
   useid: vk
   text1: VK
+
+wise:
+  referral: https://wise.com/invite/u/denilsonf1
+  referraltext: "Easy, quick and painless money transfer between countries."
+  useid: wise
+  text1: Wise
 
 workflowy:
   referral: https://workflowy.com/invite/2c58d9ce.lnx
