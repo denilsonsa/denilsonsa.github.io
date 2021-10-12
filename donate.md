@@ -34,7 +34,7 @@ These are the official ways you can give me something:
 [kofi]: {{ site.data.aboutme.kofi.href }}
 [buymeacoffee]: {{ site.data.aboutme.buymeacoffee.href }}
 [flattr]: {{ site.data.aboutme.flattr.href }}
-[brave]: {{ site.data.aboutme.brave.referral }}
+[brave]: https://brave.com/
 
 Please, if possible, leave a small message with your donation. That way I would know why I received a little bit of money.
 
