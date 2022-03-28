@@ -442,13 +442,6 @@ stackoverflow:
   text2: Overflow
   # text1: Stack Overflow
 
-stackoverflowcv:
-  href: https://stackoverflow.com/cv/denilsonsa
-  useid: stackoverflow
-  text1: Stack
-  text2: Overflow
-  text3: CV
-
 steam:
   href: https://steamcommunity.com/id/crazyterabyte
   useid: steam
