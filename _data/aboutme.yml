@@ -28,6 +28,11 @@ achievementstats:
   text1: Achievement
   text2: Stats
 
+allmylinks:
+  href: https://allmylinks.com/denilsonsa
+  useid: allmylinks
+  text1: AllMyLinks
+
 alvanista:
   href: http://alvanista.com/denilsonsa
   useid: alvanista
