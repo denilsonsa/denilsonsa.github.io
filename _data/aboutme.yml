@@ -30,6 +30,8 @@ achievementstats:
 
 allmylinks:
   href: https://allmylinks.com/denilsonsa
+  # Alternative URL:
+  # href: https://my.bio/denilsonsa
   useid: allmylinks
   text1: AllMyLinks
 
