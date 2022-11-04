@@ -539,7 +539,9 @@ xsketch:
   text1: XSketch
 
 youtube:
-  href: https://www.youtube.com/user/denilsonsa
+  href: https://youtube.com/@DenilsonSa
+  #href: https://youtube.com/c/DenilsonSa
+  #href: https://youtube.com/user/denilsonsa
   useid: youtube
   text1: YouTube
 
