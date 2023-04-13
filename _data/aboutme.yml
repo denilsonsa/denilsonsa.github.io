@@ -451,12 +451,12 @@ steam:
 
 stylish:
   # Old website, we should avoid it:
-  href: https://userstyles.org/users/194017
+  #href: https://userstyles.org/users/194017
   # Old archives:
   #href: https://uso-archive.surge.sh/?author=denilsonsa
   #href: https://uso.kkx.one/browse/styles?search=%40194017
   # Newer website:
-  #href: https://userstyles.world/user/denilsonsa
+  href: https://userstyles.world/user/denilsonsa
   # AKA Stylish (bad extension) or Stylus (good)
   # TODO: I need a new icon.
   useid: stylish
