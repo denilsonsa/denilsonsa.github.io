@@ -41,6 +41,7 @@ alvanista:
   text1: Alvanista
 
 angellist:
+  # Became Wellfound: https://wellfound.com/u/denilsonsa
   href: https://angel.co/denilsonsa
   useid: angellist
   text1: AngelList
@@ -56,7 +57,7 @@ astats:
   text1: AStats
 
 backloggery:
-  href: https://backloggery.com/crazyterabyte
+  href: https://backloggery.com/CrazyTerabyte
   useid: backloggery
   text1: Backloggery
 
@@ -93,6 +94,11 @@ camscanner:
   referraltext: "I don't use it anymore, so I can't endorse it."
   useid: camscanner
   text1: CamScanner
+
+codecademy:
+  href: https://www.codecademy.com/profiles/denilsonsa
+  useid: codecademy
+  text1: Codecademy
 
 codepen:
   href: https://codepen.io/denilsonsa/
@@ -138,6 +144,7 @@ discord:
 
 disqus:
   href: https://disqus.com/denilsonsa/
+  #href: https://disqus.com/by/denilsonsa/
   useid: disqus
   text1: Disqus
 
@@ -175,11 +182,13 @@ facebook:
   text1: Facebook
 
 flattr:
-  href: https://flattr.com/profile/denilsonsa
+  #href: https://flattr.com/profile/denilsonsa
+  href: https://flattr.com/@denilsonsa
   useid: flattr
   text1: Flattr
 
 flickr:
+  #href: https://www.flickr.com/people/crazyterabyte/
   href: https://flickr.com/photos/crazyterabyte/
   useid: flickr
   text1: Flickr
@@ -209,6 +218,11 @@ glitch:
   href: https://glitch.com/@denilsonsa
   useid: glitch
   text1: Glitch
+
+goodreads:
+  href: https://www.goodreads.com/denilsonsa
+  useid: goodreads
+  text1: Goodreads
 
 googleplus:
   href: https://plus.google.com/+DenilsonSa
@@ -257,6 +271,11 @@ instagram:
   href: https://instagram.com/denilsonsa/
   useid: instagram
   text1: Instagram
+
+instructables:
+  href: https://www.instructables.com/member/denilsonsa/
+  useid: instructables
+  text1: Instructables
 
 italki:
   href: https://www.italki.com/user/3270760
@@ -346,6 +365,12 @@ opengameart:
   text3: Art
   #text1: OpenGameArt.org
 
+openhub:
+  href: https://www.openhub.net/accounts/denilsonsa
+  useid: openhub
+  text1: Black Duck
+  text2: Open Hub
+
 patreon:
   href: https://www.patreon.com/denilsonsa
   useid: patreon
@@ -425,6 +450,11 @@ soundcloud:
   useid: soundcloud
   text1: SoundCloud
 
+sourceforge:
+  href: https://sourceforge.net/u/crazyterabyte
+  useid: sourceforge
+  text1: SourceForge
+
 speakerdeck:
   href: https://speakerdeck.com/denilsonsa
   useid: speakerdeck
@@ -445,9 +475,15 @@ stackoverflow:
   # text1: Stack Overflow
 
 steam:
-  href: https://steamcommunity.com/id/crazyterabyte
+  href: https://steamcommunity.com/id/CrazyTerabyte/
   useid: steam
   text1: Steam
+
+steamhunters:
+  href: https://steamhunters.com/id/CrazyTerabyte
+  useid: steamhunters
+  text1: Steam
+  text2: Hunters
 
 stylish:
   # Old website, we should avoid it:
@@ -476,7 +512,7 @@ telegram:
   text1: Telegram
 
 topcoder:
-  href: https://www.topcoder.com/members/denilsonsa/
+  href: https://www.topcoder.com/members/denilsonsa
   useid: topcoder
   text1: TopCoder
 
