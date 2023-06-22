@@ -11,7 +11,7 @@ I don't collect your data.
 
 I want to provide good and clean tools.
 
-I might include some statistics-gathering tool (like Google Analytics) to measure how popular my creations are.
+I might include some statistics-gathering tool (like Google Analytics or [GoatCounter](https://www.goatcounter.com/)) to measure how popular my creations are.
 
 I will not add bloatware/adware. I will keep my tools clean.
 
