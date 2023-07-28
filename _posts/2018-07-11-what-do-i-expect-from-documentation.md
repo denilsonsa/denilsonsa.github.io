@@ -62,6 +62,6 @@ I just want to be able to answer those questions after finding a project.
 
 Some technical details can be understood by just reading the code... But that is only possible if the developer knows *what code* to read, and *where* it is.
 
-But maybe my expectations are too high?
+But maybe my expectations are too high? Do you have a different opinion than me? I can compromise and settle to being able to answer the majority of those questions.
 
-Do you have a different opinion than me?
+I think I should review the documentation of [my side projects](https://github.com/denilsonsa?tab=repositories), I'm pretty sure many of them are lacking enough answers. However, smaller projects are easier to understand; the bigger the project is, the more it needs good documentation.
