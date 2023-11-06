@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hot News
+excerpt: "Last days were really hot. On December 19th, at 22:21, it was 32 ℃ inside my bedroom! On December 20th, at 20:27, it was even hotter: 33 ℃. Outside, during the day, some street thermometers showed more than 40 ℃."
 lang: en
 tags:
 - Rio de Janeiro

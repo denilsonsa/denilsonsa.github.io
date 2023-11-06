@@ -5,8 +5,7 @@ lang: en
 tags: [Linux]
 ---
 
-Modern Linux distros are switching from [PulseAudio][] to [PipeWire][], and I
-have to say: PipeWire is great!
+Modern Linux distros are switching from [PulseAudio][] to [PipeWire][], and I have to say: PipeWire is great!
 
 
 But what is PipeWire? It is a [sound server][] that tries to combine most of

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Finding out how gnome-keyring gets started on Lubuntu 15.04
+excerpt: "This week I noticed something strange, that I had never seen before: a *gnome-keyring* dialog showing up whenever I was asked to provide the passphrase for my ssh key."
 lang: en
 tags:
 - Linux

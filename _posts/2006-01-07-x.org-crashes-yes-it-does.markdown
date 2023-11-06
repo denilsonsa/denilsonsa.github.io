@@ -10,8 +10,8 @@ tags:
 
 Some hours ago, I was using k3b, xterm and firefox. The X.org is configured to use `nv` driver, since `nvidia` crashes too often. Then, for the first time since I started using `nv` driver (and I've been using it for some months), the X froze.
 
-The behavior was equal to `nvidia` driver crashing: the display is frozen, but mouse still moves.
 
+The behavior was equal to `nvidia` driver crashing: the display is frozen, but mouse still moves.
 
 A feel like using Windows: it is unstable, you don't know if it will still be working on next minute, and you feel you need to save your work every minute, to avoid losing it.
 

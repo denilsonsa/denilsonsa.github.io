@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Is Java portable?
+excerpt: "What about Java 1.4 for PPC? This platform independent thing? Well.."
 lang: en
 tags:
 - Java

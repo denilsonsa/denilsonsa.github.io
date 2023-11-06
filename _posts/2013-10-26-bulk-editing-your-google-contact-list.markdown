@@ -12,10 +12,10 @@ tag:
 
 Let's say you are a programmer/hacker/geek like me. Let's say you want to edit multiple contacts from your Google contact list (the same one shared by Gmail and Android).
 
+
 One possible solution (or workaround) is to export all your contacts from [Google Contacts](https://www.google.com/contacts/) into a [CSV file](https://en.wikipedia.org/wiki/Comma-separated_values); import this file into Excel, OpenOffice, Google Spreadsheet, Python, Gvim…; modify the file in that tool; export an updated CSV file from the tool; and finally import it back into Google Contacts. That's way too troublesome, it has too many steps, and I have a feeling that the export-modify-import cycle will lead to trouble (duplicate or messy contacts, maybe). Since I want to avoid trouble, I stayed away from that “solution”.
 
 Wouldn't it be nice if you could write a program to bulk-edit all your contacts? Well, it is possible!
-
 
 ## Google Apps Scripts
 

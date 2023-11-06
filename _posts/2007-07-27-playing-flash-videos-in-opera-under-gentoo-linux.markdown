@@ -10,8 +10,8 @@ tags:
 
 This post is actually an adaptation of a bug report I submitted to Opera Software, based on my own experience and on what I learnt from [Gentoo Bug 127200 (netscape-flash misbehaves in Opera)](http://bugs.gentoo.org/show_bug.cgi?id=127200). I think this information is too valuable to be hidden at internal Opera Software bug tracker and at [Gentoo bugzilla](http://bugs.gentoo.org/).
 
-## The issue: Flash videos are not played.
 
+## The issue: Flash videos are not played.
 
 I can try [YouTube](http://www.youtube.com/), [Google Videos](http://video.google.com/) or any other site. It does not work.
 

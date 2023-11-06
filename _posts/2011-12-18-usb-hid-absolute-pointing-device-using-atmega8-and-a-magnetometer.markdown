@@ -12,9 +12,7 @@ tag:
 - USB
 ---
 
-In last November, I finally finished my college! I've got a Bachelor's Degree in Computer Science by UFRJ (_Universidade Federal do Rio de Janeiro_).
-
-And for my senior project (or final graduating project, or _TCC - Trabalho de Conclusão de Curso_, or _PFC - Projeto Final de Curso_) I chose to build a USB device that could control the mouse pointer, using an AVR ATmega8 microcontroller and a magnetometer.
+In the last November, I finally finished my college! I've got a Bachelor's Degree in Computer Science by UFRJ (_Universidade Federal do Rio de Janeiro_). And for my senior project (or final graduating project, or _TCC - Trabalho de Conclusão de Curso_, or _PFC - Projeto Final de Curso_) I chose to build a USB device that could control the mouse pointer, using an AVR ATmega8 microcontroller and a magnetometer.
 
 
 A magnetometer is a digital compass, something that can measure the magnetic field (in three dimensions). The idea is that the user holds the magnetometer and moves it around (actually, only the rotation is considered). When the magnetometer orientation changes, the measured 3D vector of the magnetic field also changes. Based on this vector, the microcontroller applies some math and moves the mouse pointer to some position at the screen.
