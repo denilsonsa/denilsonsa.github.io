@@ -418,6 +418,16 @@ hours of trial-and-error.
 
 Now, stop just playing audio and go have fun playing with audio!
 
+## Further reading
+
+* [Official PipeWire homepage](https://pipewire.org/), and the [pipewire source-code](https://gitlab.freedesktop.org/pipewire/pipewire)
+* [Official PipeWire documentation](https://docs.pipewire.org/), and the [official PipeWire wiki](https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/home)
+* Théo Lebrun's 3-part series of articles:
+    * [An introduction to PipeWire](https://bootlin.com/blog/an-introduction-to-pipewire/), including a definition of [PipeWire object types](https://docs.pipewire.org/page_objects_design.html): *core*, *client*, *module*, *node*, *port*, *link*, *device*, *factory*, *session*, *endpoint*.
+    * [Hands-on installation of PipeWire](https://bootlin.com/blog/hands-on-installation-of-pipewire/)
+    * [A custom PipeWire node](https://bootlin.com/blog/a-custom-pipewire-node/), including a brief overview of command-line tools such as `pw-dump`, `pw-cli`, `pw-top`, `pw-profiler`, `wpctl`.
+* [PipeWire at Arch Linux wiki](https://wiki.archlinux.org/title/PipeWire)
+
 
 [ALSA]: https://en.wikipedia.org/wiki/Advanced_Linux_Sound_Architecture
 [amsynth]: https://amsynth.github.io/
