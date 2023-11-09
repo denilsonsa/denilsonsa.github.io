@@ -378,7 +378,7 @@ equalizer](https://x42-plugins.com/x42/x42-eq) before being mixed onto the
 headphones.
 
 <figure class="singleimage">
-<a href="{{ site.baseurl }}/blog/images/pipewire-a-lot-of-stuff.png"><img src="{{ site.baseurl }}/blog/images/pipewire-a-lot-of-stuff.png" alt=""></a>
+<a href="{{ site.baseurl }}/blog/images/pipewire-a-lot-of-stuff.png"><img src="{{ site.baseurl }}/blog/images/pipewire-a-lot-of-stuff.png" alt="qpwgraph showing many nodes connected. There are MIDI ports and Audio ports connected. Some sources are connected to multiple sinks, some sinks are connected to multiple sources."></a>
 </figure>
 
 PipeWire isn't perfect. For sure there are bugs. For sure the latency can be
@@ -428,6 +428,7 @@ Now, stop just playing audio and go have fun playing with audio!
     * [Hands-on installation of PipeWire](https://bootlin.com/blog/hands-on-installation-of-pipewire/)
     * [A custom PipeWire node](https://bootlin.com/blog/a-custom-pipewire-node/), including a brief overview of command-line tools such as `pw-dump`, `pw-cli`, `pw-top`, `pw-profiler`, `wpctl`.
 * [PipeWire at Arch Linux wiki](https://wiki.archlinux.org/title/PipeWire)
+* [Professional audio at Arch Linux wiki](https://wiki.archlinux.org/title/Professional_audio)
 
 
 [ALSA]: https://en.wikipedia.org/wiki/Advanced_Linux_Sound_Architecture
