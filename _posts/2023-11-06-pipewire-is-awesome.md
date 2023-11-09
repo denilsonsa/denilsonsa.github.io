@@ -355,10 +355,11 @@ one, you can use another application as the keyboard, such as [VMPK][].
 <a href="{{ site.baseurl }}/blog/images/pipewire-midi-amsynth.png"><img src="{{ site.baseurl }}/blog/images/pipewire-midi-amsynth.png" alt="qpwgraph with amsynth playing synthesized audio to the headphones. It's using JACK to receive MIDI events from VMPK."></a>
 </figure>
 
-PipeWire supports MIDI routing for JACK clients (shown as red color), and also
-MIDI routing for any application trying to use ALSA (shwon as purple color).
-Either way can be freely re-routed (among ports of the same type), and they
-both work fine.
+PipeWire supports MIDI routing for JACK clients (shown as red color). And
+[qpwgraph additionally supports routing for ALSA MIDI
+clients](https://gitlab.freedesktop.org/rncbc/qpwgraph/-/issues/78#note_2159605)
+(shown as purple color). Either way can be freely re-routed (among ports of the
+same type), and they both work fine.
 
 <figure class="singleimage">
 <a href="{{ site.baseurl }}/blog/images/pipewire-alsa-midi-amsynth.png"><img src="{{ site.baseurl }}/blog/images/pipewire-alsa-midi-amsynth.png" alt="qpwgraph with amsynth playing synthesized audio to the headphones. It's using ALSA to receive MIDI events from VMPK."></a>
