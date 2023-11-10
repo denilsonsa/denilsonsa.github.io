@@ -581,7 +581,7 @@ Which shows this output for me:
               name: subdevice #0
 ```
 
-Alternatively, you can use `aplay -l`, which displays mostly the same information (in a different format), but only lists output devices (i.e. sinks).
+Alternatively, you can use `aplay -l` and `arecord -l`, as they display mostly the same information, but in a different format.
 
 I can observe:
 
@@ -605,7 +605,9 @@ We have modified a system-wide configuration file. But since PipeWire runs as a 
 
 So, indeed it is replicating the PulseAudio behavior, which explains why all of those configuration files are still mentioning PulseAudio. However, [most of the code relating profiles is in pipewire itself](https://gitlab.freedesktop.org/pipewire/pipewire/-/tree/master/spa/plugins/alsa/acp). There are [very](https://gitlab.freedesktop.org/pipewire/wireplumber/-/blob/master/src/config/main.lua.d/50-alsa-config.lua) [few](https://gitlab.freedesktop.org/pipewire/wireplumber/-/blob/master/src/scripts/monitors/alsa.lua) occurrences of ACP (Alsa Card Profile) in WirePlumber.
 
-Digging deeper, I found that [PipeWire has some logic for resolving paths](https://gitlab.freedesktop.org/pipewire/pipewire/-/blob/master/spa/plugins/alsa/acp/compat.c). It seems to look at `ACP_PATHS_DIR` and `ACP_PROFILES_DIR` environment variables, as well as `~/.config/alsa-card-profile/` and `/etc/alsa-card-profile/`, before falling back to `/usr/share/alsa-card-profile/mixer/` (or whatever the `prefix` or `datadir` was configured during compilation time). Unfortunately, after a few tries, I still couldn't make it read the files from my `$HOME` directory. If you have better luck, please document it somewhere (and contact me, so I can link to your solution).
+Digging deeper, I found that [PipeWire has some logic for resolving paths](https://gitlab.freedesktop.org/pipewire/pipewire/-/blob/master/spa/plugins/alsa/acp/compat.c). It seems to look at `ACP_PATHS_DIR` and `ACP_PROFILES_DIR` environment variables, as well as `~/.config/alsa-card-profile/` and `/etc/alsa-card-profile/`, before falling back to `/usr/share/alsa-card-profile/mixer/` (or whatever the `prefix` or `datadir` was configured during compilation time). This is a [new behavior introduced a couple of days ago](https://gitlab.freedesktop.org/pipewire/pipewire/-/commit/636a9c611d3144f27f93bb785f28f41678a5f7a4), and not yet available on the PipeWire version of my system.
+
+It seems [other people also want to override the configuration per-user](https://gitlab.freedesktop.org/pipewire/pipewire/-/issues/3631). Well, hopefully that will be possible in a future version. (Maybe already possible by the time you read this.)
 
 ### Custom profile per device
 
@@ -653,9 +655,9 @@ Not just that, but it is also possible to simultaneously play audio on all of th
 
 There are a few improvements I'd like to see:
 
-When selecting the *Pro Audio* profile, it would be more helpful to use the device names (e.g. `HDMI 1`) instead of generic names (e.g. `Built-in Audio Pro 7`).
+When selecting the *Pro Audio* profile, it would be more helpful to use the device names (e.g. `HDMI 1`) instead of generic names (e.g. `Built-in Audio Pro 7`). I've reported it as [issue 3638](https://gitlab.freedesktop.org/pipewire/pipewire/-/issues/3638).
 
-It would be great to have an automatically-generated profile that enables all available input and output ports. We already have an option [auto-profiles = yes](https://gitlab.freedesktop.org/pipewire/pipewire/-/blob/master/spa/plugins/alsa/mixer/profile-sets/default.conf) that generates profiles “by combining every input mapping with every output mapping”. This logic is a relic from the PulseAudio days and it creates *n × m* profiles. With PipeWire, it would be great to have one complete auto-generated profile, similar to the custom profile created in this article.
+It would be great to have an automatically-generated profile that enables all available input and output ports. We already have an option [auto-profiles = yes](https://gitlab.freedesktop.org/pipewire/pipewire/-/blob/master/spa/plugins/alsa/mixer/profile-sets/default.conf) that generates profiles “by combining every input mapping with every output mapping”. This logic is a relic from the PulseAudio days and it creates *n × m* profiles. With PipeWire, it would be great to have one complete auto-generated profile, similar to the custom profile created in this article. I've reported it as [issue 3637](https://gitlab.freedesktop.org/pipewire/pipewire/-/issues/3637).
 
 ## Further reading
 
