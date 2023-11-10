@@ -413,4 +413,85 @@ a[href^="https://web.archive.org/web/"] {
   }
 }
 
+
+/* One-off interactive screenshot for the pipewire article. */
+.audiodemo {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  --width: 549px;
+  --height: 486px;
+  width: var(--width);
+  user-select: none;
+}
+.audiodemo input {
+  display: none;
+}
+.audiodemo .slide {
+  position: relative;
+  display: block;
+  width: var(--width);
+  height: var(--height);
+}
+.audiodemo .slide img {
+  display: block;
+  width: var(--width);
+  height: var(--height);
+}
+.audiodemo .overlays,
+.audiodemo .slide.menu,
+.audiodemo .slide img.menuoverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.audiodemo .slide.menu {
+  display: none;
+  z-index: 5;
+}
+.audiodemo label {
+  position: absolute;
+  z-index: 3;
+  display: block;
+  /* outline: 1px dotted yellow; */
+}
+
+/* Graceful degradation. Only hide the slides if we have the radio box checked. Otherwise, just display them all at once. */
+.audiodemo input[type="radio"]:checked ~ .slide {
+  display: none;
+}
+
+.audiodemo input[type="checkbox"][value="btmenu"]:checked ~ .slide.btmenu { display: block; }
+.audiodemo input[type="checkbox"][value="othermenu"]:checked ~ .slide.othermenu { display: block; }
+.audiodemo input[type="checkbox"][value="hdmimenu"]:checked ~ .slide.hdmimenu { display: block; }
+.audiodemo input[type="radio"][value="s0"]:checked ~ .slide.s0 { display: block; }
+.audiodemo input[type="radio"][value="s1"]:checked ~ .slide.s1 { display: block; }
+.audiodemo input[type="radio"][value="s2"]:checked ~ .slide.s2 { display: block; }
+.audiodemo input[type="radio"][value="s3"]:checked ~ .slide.s3 { display: block; }
+.audiodemo input[type="radio"][value="s4"]:checked ~ .slide.s4 { display: block; }
+.audiodemo input[type="radio"][value="s5"]:checked ~ .slide.s5 { display: block; }
+.audiodemo input[type="radio"][value="s6"]:checked ~ .slide.s6 { display: block; }
+.audiodemo input[type="radio"][value="s7"]:checked ~ .slide.s7 { display: block; }
+.audiodemo input[type="radio"][value="s8"]:checked ~ .slide.s8 { display: block; }
+.audiodemo input[type="radio"][value="s9"]:checked ~ .slide.s9 { display: block; }
+.audiodemo input[type="radio"][value="s10"]:checked ~ .slide.s10 { display: block; }
+.audiodemo input[type="radio"][value="s11"]:checked ~ .slide.s11 { display: block; }
+.audiodemo input[type="radio"][value="s12"]:checked ~ .slide.s12 { display: block; }
+.audiodemo input[type="radio"][value="s13"]:checked ~ .slide.s13 { display: block; }
+.audiodemo input[type="radio"][value="s14"]:checked ~ .slide.s14 { display: block; }
+.audiodemo input[type="radio"][value="s15"]:checked ~ .slide.s15 { display: block; }
+.audiodemo input[type="radio"][value="s16"]:checked ~ .slide.s16 { display: block; }
+.audiodemo input[type="radio"][value="s17"]:checked ~ .slide.s17 { display: block; }
+.audiodemo input[type="radio"][value="s18"]:checked ~ .slide.s18 { display: block; }
+.audiodemo input[type="radio"][value="s19"]:checked ~ .slide.s19 { display: block; }
+
+.audiodemo .overlays img {
+  display: block;
+  position: absolute;
+}
+.audiodemo .overlays input[type="checkbox"] + img { display: none; }
+.audiodemo .overlays input[type="checkbox"]:checked + img { display: block; }
+
 /* vi:et:sw=2:ts=2 */

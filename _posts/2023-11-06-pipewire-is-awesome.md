@@ -381,8 +381,9 @@ headphones.
 <a href="{{ site.baseurl }}/blog/images/pipewire-a-lot-of-stuff.png"><img src="{{ site.baseurl }}/blog/images/pipewire-a-lot-of-stuff.png" alt="qpwgraph showing many nodes connected. There are MIDI ports and Audio ports connected. Some sources are connected to multiple sinks, some sinks are connected to multiple sources."></a>
 </figure>
 
-PipeWire isn't perfect. For sure there are bugs. For sure the latency can be
-reduced with enough tinkering and fine-tuning (and even changing some Linux
+PipeWire isn't perfect. For sure there are
+[bugs](https://bugs.kde.org/show_bug.cgi?id=441799). For sure the latency can
+be reduced with enough tinkering and fine-tuning (and even changing some Linux
 kernel configuration). Although video routing is one of the project objectives,
 I personally couldn't make it work. (Truth to be told, video is a whole
 different beast when compared to audio.)
