@@ -400,7 +400,7 @@ To make matters worse, the profiles have similar-looking names. The two topmost 
 
 There is also the semantic overhead. The user wants to change the audio *output*, so it is natural to choose *Analog Stereo Output*. Unfortunately, that is a mistake, because that will disable the microphone. Instead, you have to select the *Duplex* option. Once the user learns that, the user may expect to find duplex options when selecting the HDMI output, but that's not the case. For HDMI, the correct options have the format *HDMI + Analog Input*, which clearly communicates the dual nature of the profile. But… Why can't the analog profile be named *Analog Stereo Output + Analog Stereo Input*, to make it consistent with the other profiles?
 
-## Trying out Pro Audio profile
+## Trying out the Pro Audio profile
 
 When selecting the *Pro Audio* profile, many audio sinks are made available simultaneously. They are unfortunately named just numerically, making it impossible to know what they are without trial-and-error. Some sinks may even expose more than two channels. It is intimidating, and not user-friendly.
 
@@ -653,9 +653,9 @@ Not just that, but it is also possible to simultaneously play audio on all of th
 
 There are a few improvements I'd like to see:
 
-* When selecting the *Pro Audio* profile, it would be more helpful to use the device names (e.g. `HDMI 1`) instead of generic names (e.g. `Built-in Audio Pro 7`).
+When selecting the *Pro Audio* profile, it would be more helpful to use the device names (e.g. `HDMI 1`) instead of generic names (e.g. `Built-in Audio Pro 7`).
 
-* It would be great to have an automatically-generated profile that enables all available input and output ports. We already have an option [auto-profiles = yes](https://gitlab.freedesktop.org/pipewire/pipewire/-/blob/master/spa/plugins/alsa/mixer/profile-sets/default.conf) that generates profiles “by combining every input mapping with every output mapping”. This logic is a relic from the PulseAudio days. With PipeWire, it would be great to have a more complete auto-generated profile, similar to the custom profile created in this article.
+It would be great to have an automatically-generated profile that enables all available input and output ports. We already have an option [auto-profiles = yes](https://gitlab.freedesktop.org/pipewire/pipewire/-/blob/master/spa/plugins/alsa/mixer/profile-sets/default.conf) that generates profiles “by combining every input mapping with every output mapping”. This logic is a relic from the PulseAudio days and it creates *n × m* profiles. With PipeWire, it would be great to have one complete auto-generated profile, similar to the custom profile created in this article.
 
 ## Further reading
 
