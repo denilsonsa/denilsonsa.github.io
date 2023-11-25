@@ -593,7 +593,7 @@ I can also notice that these numbers are mapping exactly to the Pro Audio device
 
 ### User-writable configuration
 
-We have modified a system-wide configuration file. But since PipeWire runs as a normal user, it should be possible to set your own configuration somewhere inside `~/.config/…`, right? Well, it sounds reasonable, but I don't know if it is possible.
+We have modified a system-wide configuration file, which, depending on your distro, [will be overwritten on the next package upgrade](https://bugs.archlinux.org/task/80257). But since PipeWire runs as a normal user, it should be possible to set your own configuration somewhere inside `~/.config/…`, right? Well, it sounds reasonable, but I don't know if it is possible.
 
 [PipeWire wiki](https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/Config-PipeWire) says:
 
