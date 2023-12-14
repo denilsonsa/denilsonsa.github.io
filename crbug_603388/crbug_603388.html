@@ -49,6 +49,8 @@
 			<div><label><input type="radio" name="image" value="crbug_603388_2048"> 2048x2048</label></div>
 			<div><label><input type="radio" name="image" value="crbug_603388_4096"> 4096x4096</label></div>
 			<div><label><input type="radio" name="image" value="crbug_603388_8192"> 8192x8192</label></div>
+			<div><label><input type="radio" name="image" value="crbug_603388_12288"> 12288x12288</label></div>
+			<div><label><input type="radio" name="image" value="crbug_603388_16384"> 16384x16384</label></div>
 			<div><label><input type="radio" name="image" value="crbug_603388_5432"> 5432x5432</label></div>
 			<div><label><input type="radio" name="image" value="crbug_603388_5432x4321"> 5432x4321</label></div>
 			<!--
@@ -100,6 +102,9 @@
 	mogrify -format jpg -quality 1 *.png
 	pngquant --nofs --posterize 4 --ext -p4.png *.png
 	zopflipng_in_place *-p4.png
+
+	For really large images, pngquant wasn't reducing the colors enough.
+	So I went to Gimp and reduced them to a 4-color palette PNG.
 
 	*/
 
