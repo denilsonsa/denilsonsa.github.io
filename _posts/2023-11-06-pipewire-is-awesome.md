@@ -2,7 +2,7 @@
 layout: post
 title: PipeWire is awesome!
 lang: en
-tags: [Linux]
+tags: [Linux, PipeWire]
 ---
 
 Modern Linux distros are switching from [PulseAudio][] to [PipeWire][], and I have to say: PipeWire is great!

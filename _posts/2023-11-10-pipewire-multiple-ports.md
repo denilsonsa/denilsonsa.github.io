@@ -2,7 +2,7 @@
 layout: post
 title: Multiple ports simultaneously in PipeWire
 lang: en
-tags: [Linux]
+tags: [Linux, PipeWire]
 ---
 
 If you have Bluetooth or USB headsets connected to your computer, they will show up as a separate sound devices next to your built-in audio chip. They even have their own volume sliders, and it's trivial to change which should be the default device. However, the same cannot be said about the built-in headphone jack and the connected HDMI/DisplayPort monitors. Toggling between those is hidden away in a confusing drop-down menu. Why can't they behave just like the headsets I have just mentioned?
