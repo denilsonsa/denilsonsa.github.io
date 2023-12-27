@@ -90,7 +90,7 @@ context.modules = [
                         # object.path = "alsa:pcm:0:hdmi:0:playback"
 
                         media.class = "Audio/Sink"
-                        device.profile.name = "hdmi-stereo"
+                        object.path = "alsa:pcm:0:hdmi:0:playback"
                     }
                 ]
                 actions = {
@@ -111,7 +111,7 @@ context.modules = [
                         # object.path = "alsa:pcm:0:hdmi:0,1:playback"
 
                         media.class = "Audio/Sink"
-                        device.profile.name = "hdmi-stereo-extra1"
+                        object.path = "alsa:pcm:0:hdmi:0,1:playback"
                     }
                 ]
                 actions = {
@@ -255,29 +255,33 @@ This is the `~/.config/pipewire/pipewire.conf.d/10-null-devices.conf`:
 ```conf
 context.objects = [
 {
-	factory = adapter
-	args = {
-		factory.name     = support.null-audio-sink
-		node.name        = "null-stereo-output"
-		node.description = "Null Stereo Output"
-		media.class      = Audio/Sink
-		object.linger    = true
-		audio.position   = [ FL FR ]
-	}
+    factory = adapter
+    args = {
+        factory.name     = support.null-audio-sink
+        node.name        = "null-stereo-output"
+        node.description = "Null Stereo Output"
+        media.class      = Audio/Sink
+        object.linger    = true
+        audio.position   = [ FL FR ]
+        monitor.channel-volumes = true
+    }
 }
 {
-	factory = adapter
-	args = {
-		factory.name     = support.null-audio-sink
-		node.name        = "null-mono-input"
-		node.description = "Null Mono Input"
-		media.class      = Audio/Source/Virtual
-		object.linger    = true
-		audio.position   = [ MONO ]
-	}
+    factory = adapter
+    args = {
+        factory.name     = support.null-audio-sink
+        node.name        = "null-mono-input"
+        node.description = "Null Mono Input"
+        media.class      = Audio/Source/Virtual
+        object.linger    = true
+        audio.position   = [ MONO ]
+        monitor.channel-volumes = true
+    }
 }
 ]
 ```
+
+Note: the `monitor.channel-volumes` parameter is [required to make the volume control work](https://gitlab.freedesktop.org/pipewire/pipewire/-/issues/3743).
 
 It creates one virtual stereo audio sink (output) device, and one virtual mono audio source (input) device.
 
@@ -290,6 +294,7 @@ pw-cli create-node adapter '{
     media.class=Audio/Sink
     object.linger=true
     audio.position=[FL FR]
+    monitor.channel-volumes=true
 }'
 pw-cli create-node adapter '{
     factory.name=support.null-audio-sink
@@ -297,6 +302,7 @@ pw-cli create-node adapter '{
     media.class=Audio/Source/Virtual
     object.linger=true
     audio.position=[MONO]
+    monitor.channel-volumes=true
 }'
 ```
 
