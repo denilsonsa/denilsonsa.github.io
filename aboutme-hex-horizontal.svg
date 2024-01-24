@@ -217,7 +217,7 @@ http://jwatt.org/svg/authoring/
 <g class="centralpicture">
 	<image x="-{{ pichalf }}" y="-{{ pichalf }}" width="{{ picsize }}" height="{{ picsize }}"
 		clip-path="url(#hexagonflattopclip)"
-		xlink:href="MyPhoto2014-512x512.jpg" />
+		xlink:href="ProfilePhoto-small.jpg" />
 </g>
 
 {% for itemdesc in page.items %}

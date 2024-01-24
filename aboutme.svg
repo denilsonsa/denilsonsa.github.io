@@ -170,7 +170,7 @@ http://jwatt.org/svg/authoring/
 <g class="centralpicture">
 	<image x="-{{ inner_radius }}" y="-{{ inner_radius }}" width="{{ inner_diameter }}" height="{{ inner_diameter }}"
 		clip-path="url(#circleclip)"
-		xlink:href="MyPhoto2014-512x512.jpg" />
+		xlink:href="ProfilePhoto-large.jpg" />
 </g>
 
 {% comment %}
