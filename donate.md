@@ -27,13 +27,11 @@ These are the official ways you can give me something:
 * [PayPal][paypal]
 * [Ko-Fi][kofi]
 * [Buy Me A Coffee][buymeacoffee] (or a pizza)
-* [Flattr][flattr]
 * [Brave web browser][brave] (through [Brave Rewards](https://brave.com/brave-rewards/) program)
 
 [paypal]: {{ site.data.aboutme.paypal.href }}
 [kofi]: {{ site.data.aboutme.kofi.href }}
 [buymeacoffee]: {{ site.data.aboutme.buymeacoffee.href }}
-[flattr]: {{ site.data.aboutme.flattr.href }}
 [brave]: https://brave.com/
 
 Please, if possible, leave a small message with your donation. That way I would know why I received a little bit of money.

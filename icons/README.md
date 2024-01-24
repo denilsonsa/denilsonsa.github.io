@@ -122,11 +122,6 @@
 
 * http://www.facebookbrand.com/
 
-## Flattr
-
-* http://flattr.com/embed
-* https://commons.wikimedia.org/wiki/File:Flattr-Logo.svg
-
 ## Flickr
 
 * https://secure.flickr.com/about/goodies/

@@ -181,12 +181,6 @@ facebook:
   useid: facebook
   text1: Facebook
 
-flattr:
-  #href: https://flattr.com/profile/denilsonsa
-  href: https://flattr.com/@denilsonsa
-  useid: flattr
-  text1: Flattr
-
 flickr:
   #href: https://www.flickr.com/people/crazyterabyte/
   href: https://flickr.com/photos/crazyterabyte/
