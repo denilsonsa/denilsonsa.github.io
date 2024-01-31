@@ -16,7 +16,7 @@ items:
   - [18.0,  1, greasyfork]
   - [17.5,  0, speakerdeck]
   - [17.0, -1, coderwall]
-  - [17.0,  1, stylish]
+  - [17.0,  1, usercss]
   - [16.5,  0, slideshare]
   - [16.0, -1, instagram]
   - [16.0,  1, ifttt]

@@ -479,20 +479,6 @@ steamhunters:
   text1: Steam
   text2: Hunters
 
-stylish:
-  # Old website, we should avoid it:
-  #href: https://userstyles.org/users/194017
-  # Old archives:
-  #href: https://uso-archive.surge.sh/?author=denilsonsa
-  #href: https://uso.kkx.one/browse/styles?search=%40194017
-  # Newer website:
-  href: https://userstyles.world/user/denilsonsa
-  # AKA Stylish (bad extension) or Stylus (good)
-  # TODO: I need a new icon.
-  useid: stylish
-  text1: User
-  text2: styles
-
 tapas:
   href: https://tapas.io/denilsonsa
   referral: https://tapas.io/app
@@ -535,6 +521,20 @@ uber:
   referral: https://www.uber.com/invite/uberdenilsonsa
   useid: uber
   text1: Uber
+
+usercss:
+  # AKA Stylish (is now a bad extension) or Stylus (is a good clean extension)
+  # Old website, we should avoid it:
+  #href: https://userstyles.org/users/194017
+  # Old archives:
+  #href: https://uso-archive.surge.sh/?author=denilsonsa
+  #href: https://uso.kkx.one/browse/styles?search=%40194017
+  # Newer website:
+  # https://github.com/userstyles-world/userstyles.world/blob/main/web/static/mascot.svg
+  href: https://userstyles.world/user/denilsonsa
+  useid: stylus
+  text1: User
+  text2: styles
 
 userscripts:
   #href: http://web.archive.org/web/20131108061608/http://userscripts.org/users/120597/scripts

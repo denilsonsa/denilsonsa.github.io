@@ -387,6 +387,13 @@
 * http://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe
 * https://github.com/JasonBarnabe/stylish-chrome/blob/master/128.png
 
+## Stylus / userstyles
+
+* https://github.com/openstyles/stylus/
+* https://gist.github.com/pabli24/85c406ebfdb840cb0450e029b28948b8
+* https://github.com/userstyles-world/userstyles.world/blob/main/web/static/mascot_small.svg
+* https://github.com/userstyles-world/userstyles.world/blob/main/web/static/mascot.svg
+
 ## Telegram
 
 * https://commons.wikimedia.org/wiki/File:Telegram_logo.svg
