@@ -8,7 +8,7 @@ tags: []
 This is a very concise introduction to how browsers work, aimed to let people understand what is a web browser, what are the main technologies involved in the browser, and how it all fits together.
 
 
-It was originally written by me (Denilson Sá Maia) in February 2018, with some help from [Alex Badarin](https://github.com/lyzzard). It was supposed to be turned into a talk/training for new (full-stack) developers at Booking.com, but we never went forward with the training. That also explains why this text is written in a format full of bullet points with very succinct descriptions: it was supposed to be converted into slides accompanied by a instructor explaining all the details and doing live demos.
+It was originally written by me (Denilson Sá Maia) in February 2018, with some help from [Alex Badarin](https://github.com/lyzzard). It was supposed to be turned into a talk/training for new (full-stack) developers at Booking.com, but we never went forward with the training. That also explains why this text is written in a format full of bullet points with very succinct descriptions: it was supposed to be converted into slides accompanied by an instructor explaining all the details and doing live demos.
 
 Still, I believe this overview can be useful for people just starting on web development, or people who are just curious to how things work behind the scenes.
 
