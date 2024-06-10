@@ -35,6 +35,11 @@ allmylinks:
   useid: allmylinks
   text1: AllMyLinks
 
+alternativeto:
+  href: https://alternativeto.net/user/denilsonsa/
+  useid: alternativeto
+  text1: AlternativeTo
+
 alvanista:
   href: http://alvanista.com/denilsonsa
   useid: alvanista
