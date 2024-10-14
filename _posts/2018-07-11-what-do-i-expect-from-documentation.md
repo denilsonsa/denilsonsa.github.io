@@ -5,7 +5,7 @@ lang: en
 tags: []
 ---
 
-Based on my experience looking/installing/running/modifying open-source projects at my own computer, and my experience working on code inside my employer, I came up with the following expectations for a README file for any project:
+Based on my experience looking/installing/running/modifying open-source projects at my own computer, and my experience working on code at my employer, I came up with the following expectations for a README file for any project:
 
 
 * **Project name**, obviously.
@@ -52,7 +52,7 @@ Based on my experience looking/installing/running/modifying open-source projects
 
 Imagine someone who never heard about your project finds either your project or some piece of code. Either by accident, or because they need to fix/maintain something. Or maybe the project changed ownership.
 
-How would such person get to know what to do?
+How would such person get to know what to do? What if that person is you?
 
 ## Too high expectations?
 
