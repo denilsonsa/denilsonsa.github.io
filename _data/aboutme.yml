@@ -318,6 +318,11 @@ linkedin:
   useid: linkedin
   text1: LinkedIn
 
+linkstacc:
+  href: https://linksta.cc/@denilsonsa
+  useid: linkstacc
+  text1: LinkStack
+
 linktree:
   href: https://linktr.ee/denilsonsa
   useid: linktree
@@ -327,6 +332,11 @@ livejournal:
   href: https://denilsonsa.livejournal.com/
   useid: livejournal
   text1: LiveJournal
+
+manylink:
+  href: https://many.link/denilsonsa
+  useid: manylink
+  text1: many.link
 
 medium:
   href: https://medium.com/@denilsonsa
