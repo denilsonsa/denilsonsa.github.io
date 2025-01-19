@@ -629,6 +629,15 @@ workflowy:
   useid: workflowy
   text1: WorkFlowy
 
+worldoftrucks:
+  href: https://www.worldoftrucks.com/en/profile/66223
+  useid: worldoftrucks
+  text1: World
+  text2: of
+  text3: Trucks
+  categories:
+    - gaming
+
 xsketch:
   href: http://xsketch.com/profile/45198990
   useid: xsketch
