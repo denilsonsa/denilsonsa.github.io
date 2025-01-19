@@ -5,6 +5,13 @@ curriculumvitae:
   useid: curriculumvitae
   text1: Resumé
 
+homepage:
+  href: https://denilson.sa.nom.br/
+  # href: {{ site.baseurl }}/
+  useid: homepage
+  text1: Home
+  text2: Page
+
 blog:
   href: https://denilson.sa.nom.br/blog/
   # href: {{ site.baseurl }}/blog/
@@ -21,12 +28,16 @@ aboutme:
   href: https://about.me/denilsonsa
   useid: aboutme
   text1: about.me
+  categories:
+    - links
 
 achievementstats:
   href: https://achievementstats.com/index.php?action=profile&playerId=76561197998985381
   useid: achievementstats
   text1: Achievement
   text2: Stats
+  categories:
+    - gaming
 
 allmylinks:
   href: https://allmylinks.com/denilsonsa
@@ -34,6 +45,8 @@ allmylinks:
   # href: https://my.bio/denilsonsa
   useid: allmylinks
   text1: AllMyLinks
+  categories:
+    - links
 
 alternativeto:
   href: https://alternativeto.net/user/denilsonsa/
@@ -62,16 +75,22 @@ astats:
   href: https://astats.astats.nl/astats/User_Info.php?ProfileID=275150
   useid: astats
   text1: AStats
+  categories:
+    - gaming
 
 backloggd:
   href: https://www.backloggd.com/u/denilsonsa/
   useid: backloggd
   text1: Backloggd
+  categories:
+    - gaming
 
 backloggery:
   href: https://backloggery.com/CrazyTerabyte
   useid: backloggery
   text1: Backloggery
+  categories:
+    - gaming
 
 bandcamp:
   href: https://bandcamp.com/denilsonsa
@@ -94,6 +113,8 @@ boardgamearena:
   text1: Board
   text2: Game
   text3: Arena
+  categories:
+    - gaming
 
 buymeacoffee:
   href: https://buymeacoff.ee/denilsonsa
@@ -126,6 +147,8 @@ completionistme:
   href: https://completionist.me/user/ed4b8d86-8233-45be-b15c-5dd46982a269
   useid: completionistme
   text1: completionist.me
+  categories:
+    - gaming
 
 crunchyroll:
   href: https://www.crunchyroll.com/user/denilsonsa
@@ -181,6 +204,8 @@ exophase:
   href: https://www.exophase.com/user/denilsonsa/
   useid: exophase
   text1: Exophase
+  categories:
+    - gaming
 
 facebook:
   href: https://facebook.com/denilsonsa
@@ -198,11 +223,15 @@ gamejolt:
   href: https://gamejolt.com/profile/denilsonsa/378910/
   useid: gamejolt
   text1: Game Jolt
+  categories:
+    - gaming
 
 geoguessr:
   href: https://www.geoguessr.com/user/60fd48352f082d000131e124
   useid: geoguessr
   text1: GeoGuessr
+  categories:
+    - gaming
 
 github:
   href: https://github.com/denilsonsa
@@ -282,6 +311,8 @@ itchio:
   href: https://denilsonsa.itch.io/
   useid: itchio
   text1: itch.io
+  categories:
+    - gaming
 
 kickstarter:
   href: https://www.kickstarter.com/profile/denilsonsa
@@ -297,6 +328,8 @@ kongregate:
   href: https://www.kongregate.com/accounts/CrazyTerabyte
   useid: kongregate
   text1: Kongregate
+  categories:
+    - gaming
 
 kuula:
   href: https://kuula.co/profile/denilsonsa
@@ -312,11 +345,15 @@ linkstacc:
   href: https://linksta.cc/@denilsonsa
   useid: linkstacc
   text1: LinkStack
+  categories:
+    - links
 
 linktree:
   href: https://linktr.ee/denilsonsa
   useid: linktree
   text1: Linktree
+  categories:
+    - links
 
 livejournal:
   href: https://denilsonsa.livejournal.com/
@@ -327,6 +364,8 @@ manylink:
   href: https://many.link/denilsonsa
   useid: manylink
   text1: many.link
+  categories:
+    - links
 
 medium:
   href: https://medium.com/@denilsonsa
@@ -339,6 +378,8 @@ metagamerscore:
   text1: Meta
   text2: Gamer
   text3: Score
+  categories:
+    - gaming
 
 myspace:
   href: https://myspace.com/denilsonsa
@@ -349,6 +390,8 @@ newgrounds:
   href: https://denilsonsa.newgrounds.com/
   useid: newgrounds_tank
   text1: Newgrounds
+  categories:
+    - gaming
 
 openclipart:
   #href: https://openclipart.org/user-detail/CrazyTerabyte
@@ -412,12 +455,16 @@ regexcrossword:
   useid: regexcrossword
   text1: Regex
   text2: Crossword
+  categories:
+    - gaming
 
 retroachievements:
   href: https://retroachievements.org/User/denilsonsa
   useid: retroachievements
   text1: Retro
   text2: Achievements
+  categories:
+    - gaming
 
 shadertoy:
   href: https://www.shadertoy.com/user/denilsonsa
@@ -482,12 +529,16 @@ steam:
   href: https://steamcommunity.com/id/CrazyTerabyte/
   useid: steam
   text1: Steam
+  categories:
+    - gaming
 
 steamhunters:
   href: https://steamhunters.com/id/CrazyTerabyte
   useid: steamhunters
   text1: Steam
   text2: Hunters
+  categories:
+    - gaming
 
 tapas:
   href: https://tapas.io/denilsonsa
@@ -584,6 +635,8 @@ xsketch:
   referral: http://xsketch.com/r?id=45198990
   referraltext: "Simple and nice multiplayer drawing game. Seems abandoned since 2014~2015."
   text1: XSketch
+  categories:
+    - gaming
 
 youtube:
   href: https://youtube.com/@DenilsonSa
