@@ -41,11 +41,13 @@ alternativeto:
   text1: AlternativeTo
 
 alvanista:
+  # Dead, or almost dead, since 2024.
   href: http://alvanista.com/denilsonsa
   useid: alvanista
   text1: Alvanista
 
 angellist:
+  # TODO: Replace icon from AngelList to Wellfound.
   # Became Wellfound: https://wellfound.com/u/denilsonsa
   href: https://angel.co/denilsonsa
   useid: angellist
@@ -175,11 +177,6 @@ dynalist:
   useid: dynalist
   text1: Dynalist
 
-ello:
-  href: https://ello.co/denilsonsa
-  useid: ello
-  text1: Ello
-
 exophase:
   href: https://www.exophase.com/user/denilsonsa/
   useid: exophase
@@ -227,13 +224,6 @@ goodreads:
   href: https://www.goodreads.com/denilsonsa
   useid: goodreads
   text1: Goodreads
-
-googleplus:
-  href: https://plus.google.com/+DenilsonSa
-  #href: https://plus.google.com/+DenilsonSa/about
-  #href: https://plus.google.com/100969391970251060148
-  useid: googleplus
-  text1: Google+
 
 gravatar:
   href: https://en.gravatar.com/crazyterabyte
