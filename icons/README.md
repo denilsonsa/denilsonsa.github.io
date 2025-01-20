@@ -81,6 +81,11 @@
 * https://twitter.com/coderwall
 * https://assembly.com/coderwall/assets
 
+## completionist.me
+
+* https://completionist.me/assets/images/completionist-logo.png
+* https://completionist.me/assets/images/completionist-logo-120.png
+
 ## Crunchyroll
 
 * http://www.crunchyroll.com/en/about
