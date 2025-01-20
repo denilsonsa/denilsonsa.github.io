@@ -223,7 +223,8 @@ flickr:
 gamejolt:
   href: https://gamejolt.com/profile/denilsonsa/378910/
   useid: gamejolt
-  text1: Game Jolt
+  text1: Game
+  text2: Jolt
   categories:
     - gaming
 
@@ -249,6 +250,14 @@ glitch:
   href: https://glitch.com/@denilsonsa
   useid: glitch
   text1: Glitch
+
+gog:
+  href: https://www.gog.com/u/denilsonsa
+  useid: gog
+  text1: GOG
+  text2: .com
+  categories:
+    - gaming
 
 goodreads:
   href: https://www.goodreads.com/denilsonsa

@@ -187,6 +187,11 @@ I found a higher quality transparent image by doing a reverse image search.
 
 * https://commons.wikimedia.org/wiki/File:New_Logo_Gmail.svg
 
+## GOG
+
+* https://www.cdprojekt.com/en/media/logotypes/
+* https://commons.wikimedia.org/wiki/File:GOG.com_logo.svg
+
 ## Goodreads
 
 * https://www.goodreads.com/about/press
