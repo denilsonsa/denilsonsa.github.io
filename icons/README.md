@@ -156,6 +156,10 @@ I found a higher quality transparent image by doing a reverse image search.
 
 * http://www.steverichey.com/dev/vector-logos/
 
+## GeoGuessr
+
+* https://design.geoguessr.com/the-brand/logotype
+
 ## GitHub
 
 * https://github.com/logos
