@@ -998,6 +998,14 @@
 </symbol>
 {% endif %}
 
+{% if include_all or restrictions contains ',steamcompletionist,' %}
+<!-- https://www.steamcompletionist.net/favicon.png -->
+<symbol id="steamcompletionist" viewBox="0 0 32 32">
+	<image x="0" y="0" width="32" height="32"
+		xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAAAAABWESUoAAAAAnRSTlMA/1uRIrUAAAFwSURBVHgBlNIZAEUhEIXh32WcrlNO1ymnnHIap5zG6TmNU0455TRv3/fTQl97xJe8A8O0jQ9AIUF9Cxrq7kp9A6ZUBYoyjqD7uAOOA+C0Pehpr+cNME5AdAfmIlaFcgPyCXQs2PME0K9bgGyAFZk7oCfOUk/GgOzuGYsdaGyAq9GFU8RiD4akzDXCKad9E2ECpFuzANTrW0xrY9flK1nBXjzW1Si8ec15IMmQNyCGbFrrQn0HwshZWOdbEKOuxb7+qP/AtpBxEdglBALoUUghhRQ+hRRWYRVGIYUUUkghhRTO/WcF7ryf58SDGlC37gavvvBkDJxAy33pNG+hF+akNc6giTsq3Qtjgy/VTgSrsShH1EIk4C746h8xgFbZivk8fegOyoFtJRwRjVDRCdcfry9twf0e9OHXYGHSTWziFyX7q0Hr/B3hR/evycWGXRO9qafWQx6lnAUwkgTtugvbDkxGpOiO2KrZZDe/eon/kX9lM4so9ZYOeQAAAABJRU5ErkJggg=="/>
+</symbol>
+{% endif %}
+
 {% if include_all or restrictions contains ',steamhunters,' %}
 <!-- Based on https://steamhunters.com/content/img/steam_hunters.svg -->
 <symbol id="steamhunters" viewBox="0 0 16 16">

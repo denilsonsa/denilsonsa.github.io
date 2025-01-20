@@ -541,6 +541,18 @@ steam:
   text1: Steam
   categories:
     - gaming
+  # Other Team Fortress 2 related URLs:
+  # https://backpack.tf/profiles/76561197998985381
+  # https://backpack.tf/u/76561197998985381
+  # https://tf2b.com/tf2/76561197998985381
+
+steamcompletionist:
+  href: https://www.steamcompletionist.net/76561197998985381/
+  useid: steamcompletionist
+  text1: Steam
+  text2: Completionist
+  categories:
+    - gaming
 
 steamhunters:
   href: https://steamhunters.com/id/CrazyTerabyte

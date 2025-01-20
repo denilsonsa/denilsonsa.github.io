@@ -412,6 +412,10 @@ I found a higher quality transparent image by doing a reverse image search.
 
 * http://en.wikipedia.org/wiki/File:Steam_logo.svg
 
+## Steam Completionist
+
+* https://www.steamcompletionist.net/favicon.png
+
 ## Steam Hunters
 
 * https://steamhunters.com/content/img/steam_hunters.svg
