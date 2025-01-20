@@ -53,6 +53,10 @@ I found a higher quality transparent image by doing a reverse image search.
 * https://en.bitcoin.it/wiki/Promotional_graphics
 * http://bitcoinsymbol.org/
 
+## Board Game Arena
+
+* https://boardgamearena.com/doc/Logos
+
 ## Buy Me a Coffee
 
 * https://www.buymeacoffee.com/app/button-and-graphics
