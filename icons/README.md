@@ -26,6 +26,11 @@ I found a higher quality transparent image by doing a reverse image search.
 
 * https://asciinema.org/assets/logo-red-8fc5c5c14ca150641c33ce28601c3520.svg
 
+## Backloggd
+
+* https://www.backloggd.com/favicon.ico
+* https://bsky.app/profile/backloggd.com
+
 ## Bandcamp
 
 * https://bandcamp.com/buttons
