@@ -5,6 +5,13 @@
 * http://about.me/assets
 * https://p5.zdassets.com/hc/settings_assets/764075/200125058/InarzwJx92zLPGLdgsQi9w-logo-me_seafoam.png
 
+## Achievement Stats
+
+I found a higher quality transparent image by doing a reverse image search.
+
+* https://achievementstats.com/templates/classic/images/logoChart.png
+* https://achievementstats.com/favicon.ico
+
 ## Alvanista
 
 * http://alvanista.com/about/logo
