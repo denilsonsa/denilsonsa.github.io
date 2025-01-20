@@ -469,6 +469,11 @@ I found a higher quality transparent image by doing a reverse image search.
 * https://www.worldoftrucks.com/en/manifest.json
 * https://www.worldoftrucks.com/img/icons/icon-512x512.png
 
+## XSketch
+
+* https://img.iogc.org/XSketch/logo4.png
+* https://img.iogc.org/XSketch/square.png
+
 ## YouTube
 
 * http://www.youtube.com/yt/brand/downloads.html

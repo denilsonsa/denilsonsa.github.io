@@ -1098,6 +1098,14 @@
 </symbol>
 {% endif %}
 
+{% if include_all or restrictions contains ',xsketch,' %}
+<!-- square.png -->
+<symbol id="xsketch" viewBox="0 0 32 34">
+	<image x="0" y="0" width="32" height="34"
+		xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAiCAMAAAAJbCvNAAABBVBMVEX///8AAAC/owC/owC/owC/owC/owC/owC/owC/owC/owC/owC/owC/owC/owC/owC/owC/owAqSzEMOTsYQDcAMj88VSukkwlZZyIkRzNUYyOZjA0wTi+bjgxrchxSYiRgayBgayBXZSJAWCpgayAAMj97exczUC4gRTUAMj8AMj+EgBODgBSMhRETPTkdQzUAMj9AWCqkkwmcjgsAMj+mlAg0US4ZQTcAMj+GgRMAMj9YZiINOjsAMj+nlQhvdBosTDCxmwWfkAsmSTKqlgcjRzQAMj9gayCVig4AMj9MXyZmbh0AMj+PhxAAMj9IXCcYQDcAMj8AMj+nlQhAWCoQOzoAMj8a4oybAAAAV3RSTlMAACC/MK9AYBCAn//v31CPz3CP/////3Dv///v////cL/fr7//cN/vYO8gz//vn8+v79+vMO+v79+fEM/vYIC/z9+/74+vv0CPUO/vgEBA/4DPj/9gv5/aKEz5AAAB3klEQVR4AW3ShYLrKhAG4A4SgYndQNfd3d3dXd7/US5lUt3z77ZFvgSt1WrQCOMCmAxC8BEBsAig5kIgiqWCWCNqj5VWcaKSqA3CNAty7YIAUCDmviLagOX/laa0ddMHABnvHzDGDA6xNpA4bH1GBADXVBntALGuwBi0wTi0Add1AhMhgNaDvjzZAQo5RWBaAtOVnukAoGYJzAkIdEJDzHeCOFjwjQMYSkx8cWGxE0RYTWKJKVymInSDFXrFaq75mi+ttwHt/oZvLjeLrdKXtrsByB1q31V71mV/HXpAFB14YQYHPDjsBSDkkW3meP0E/gDITqvdKo1dhb8gy/DMdbr/0pbpP4Di6bk1pjGN44WLoBdEqoiXB3y3iz1SPUCoDFeMcQMM02ovRRcQSaJH6le2HXPdBRRqrNOjN3skpooOUGCCdElu7/BygcR9B+AK769c+4J9YDF/JPDEOoDMRs2AG+IZIFFbCyReWiBT+U7ZWIF9BYjy/I3Aewtwna/4LfjwFxz7Caw3QcST6j59+jPDEQILTZBqrWmJrw3A8ctSDiuQ6fyeHjl0IMp1biz5JgjDEQLgwiTHCmy3lhl+N7r9HAGUzn4IPLQAHJ7Y21+3Cz4MZvZv9xc+F/wb/gdPeTxc+mZYSwAAAABJRU5ErkJggg=="/>
+</symbol>
+{% endif %}
+
 {% if include_all or restrictions contains ',youtube,' %}
 <!-- Based on YouTube-icon-full_color.eps from https://www.youtube.com/yt/brand/downloads.html -->
 <linearGradient x1="0" y1="0" x2="1" y2="0"
