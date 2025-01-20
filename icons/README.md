@@ -266,6 +266,10 @@ I found a higher quality transparent image by doing a reverse image search.
 * https://medium.com/policy/logos-and-brand-guidelines-f1a01a733592
 * https://github.com/Medium/medium-logos/
 
+## MetaGamerScore
+
+* https://metagamerscore.com/
+
 ## Meetup
 
 * http://blog.meetup.com/press/

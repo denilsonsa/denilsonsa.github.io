@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" viewBox="0 0 312 92" xmlns="http://www.w3.org/2000/svg">
+<!-- Based on mgs_logo.svg because I couldn't find an SVG version of the square icon -->
+<g stroke="#FFFFFF">
+	<g fill="#FDE8C8">
+		<rect width="20" height="90" x="1" y="1"/>
+		<rect width="20" height="90" x="67" y="1"/>
+		<rect width="20" height="40" x="31" y="1"/>
+	</g>
+	<g fill="#B6D6DC">
+		<rect width="86" height="20" x="111" y="1"/>
+		<rect width="86" height="20" x="111" y="71"/>
+		<rect width="36" height="18" x="161" y="37"/>
+	</g>
+	<g fill="#ECECEC">
+		<rect width="90" height="20" x="221" y="1"/>
+		<rect width="90" height="20" x="221" y="71"/>
+		<rect width="34" height="18" x="249" y="37"/>
+	</g>
+</g>
+</svg>
