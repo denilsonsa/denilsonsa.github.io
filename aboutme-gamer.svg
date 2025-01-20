@@ -135,6 +135,11 @@ http://jwatt.org/svg/authoring/
 	/* central is defined as the half of EM box. */
 	dominant-baseline: central;
 }
+.item.long-text > a > text,
+.item.long-text > a > text tspan {
+	font-size: 7px;
+	letter-spacing: -0.0625ch;
+}
 .item > a > text {
 	pointer-events: none;
 	-moz-user-select: none;
@@ -196,7 +201,10 @@ http://jwatt.org/svg/authoring/
 {% for itemname in page.items %}
 {% assign item = site.data.aboutme[itemname] %}
 {% assign rotation = 360.0 | times: forloop.index0 | divided_by: forloop.length %}
-<g transform="translate(0 -{{ translate_radius }}) rotate({{ rotation }} 0 {{ translate_radius }}) rotate(-{{ rotation }})" class="item with-icon">
+<g
+	transform="translate(0 -{{ translate_radius }}) rotate({{ rotation }} 0 {{ translate_radius }}) rotate(-{{ rotation }})"
+	class="item with-icon {% if item.text1.size >= 10 or item.text2.size >= 10 or  item.text3.size >= 10 %} long-text {% endif %}"
+>
 	<a target="_top" xlink:href="{{ item.href | xml_escape }}">
 		<circle cx="0" cy="0" r="20" />
 		<use class="icon" xlink:href="#{{ item.useid }}" x="-14" y="-14" width="28" height="28" />
