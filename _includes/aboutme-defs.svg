@@ -943,6 +943,15 @@
 </symbol>
 {% endif %}
 
+{% if include_all or restrictions contains ',steamhunters,' %}
+<!-- Based on https://steamhunters.com/content/img/steam_hunters.svg -->
+<symbol id="steamhunters" viewBox="0 0 16 16">
+	<rect fill="#1b2838" width="16" height="16" rx="2" ry="2"/>
+	<path fill="#7bb6ff" d="M0 7h12V3.5l4 4-4 4V8H0V7z"/>
+	<path fill="#ffffff" d="M8 9h2v5H8zm0-7h2v4H8zm4 11v1h2v-3.02L13 12l-1 1zm2-8.98V2h-2l1 1 1 1.02zM3 5a1.24 1.24 0 0 1 1-1 1.33 1.33 0 0 1 1 1h2a3.23 3.23 0 0 0-3-3 3.18 3.18 0 0 0-3 3 2.42 2.42 0 0 0 .18 1h2.57C3.31 5.66 3 5.34 3 5zm2 5.09a2.36 2.36 0 0 1-.58 1.63A.73.73 0 0 1 4 12c-.31 0-1-.6-1-1H1a2.9 2.9 0 0 0 .93 2A3.09 3.09 0 0 0 4 14a2.61 2.61 0 0 0 1.89-.93A4.35 4.35 0 0 0 7 9.91 3.22 3.22 0 0 0 6.77 9H4.38A1.74 1.74 0 0 1 5 10.09z"/>
+</symbol>
+{% endif %}
+
 {% if include_all or restrictions contains ',stellar,' %}
 <!-- Based on stellar-rocket@1x.pdf from https://www.stellar.org/about/media/#Presskit -->
 <symbol id="stellar" viewBox="0 0 317.78391 398.85739">

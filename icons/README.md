@@ -389,6 +389,10 @@ I found a higher quality transparent image by doing a reverse image search.
 
 * http://en.wikipedia.org/wiki/File:Steam_logo.svg
 
+## Steam Hunters
+
+* https://steamhunters.com/content/img/steam_hunters.svg
+
 ## Stellar
 
 * https://www.stellar.org/about/media/#Presskit
