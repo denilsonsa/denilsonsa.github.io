@@ -302,6 +302,17 @@
 </symbol>
 {% endif %}
 
+{% if include_all or restrictions contains ',exophase,' %}
+<!-- Drawn from scratch -->
+<symbol id="exophase" viewBox="0 0 64 64">
+	<rect fill="#2884AF" width="64" height="64" x="0" y="0"/>
+	<rect fill="#DAEAF1" width="20" height="20" x="9" y="9"/>
+	<rect fill="#4695BA" width="20" height="20" x="9" y="35"/>
+	<rect fill="#88BBD3" width="20" height="20" x="35" y="9"/>
+	<rect fill="#88BBD3" width="20" height="20" x="35" y="35"/>
+</symbol>
+{% endif %}
+
 {% if include_all or restrictions contains ',facebook,' %}
 <!-- Based on FB-fLogo-printpackaging.eps from https://www.facebookbrand.com/ -->
 <symbol id="facebook" viewBox="0 0 2668.9299 2668.9399">

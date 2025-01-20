@@ -118,9 +118,10 @@
 
 * http://www.dropbox.com/branding
 
-## Ello
+## Exophase
 
-* https://ello.co/wtf/post/ello-logo
+* https://www.exophase.com/favicon.ico
+* https://www.exophase.com/apple-touch-icon.png
 
 ## Facebook
 
@@ -155,13 +156,6 @@
 ## Goodreads
 
 * https://www.goodreads.com/about/press
-
-## Google+
-
-* https://developers.google.com/+/branding-guidelines
-* https://developers.google.com/+/web/badge/
-* http://commons.wikimedia.org/wiki/File:Google_plus.svg
-* http://www.seeklogo.net/new-google-plus-icon-vector-73768.html
 
 ## Gravatar
 
