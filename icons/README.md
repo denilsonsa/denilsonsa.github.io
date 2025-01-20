@@ -31,6 +31,11 @@ I found a higher quality transparent image by doing a reverse image search.
 * https://www.backloggd.com/favicon.ico
 * https://bsky.app/profile/backloggd.com
 
+## Backloggery
+
+* https://backloggery.com/!/about
+* https://hachyderm.io/@backloggery
+
 ## Bandcamp
 
 * https://bandcamp.com/buttons
