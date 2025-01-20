@@ -415,10 +415,15 @@ I found a higher quality transparent image by doing a reverse image search.
 ## Steam Completionist
 
 * https://www.steamcompletionist.net/favicon.png
+* https://github.com/Bio2hazard/SteamCompletionist/blob/master/httpdocs/favicon.png
 
 ## Steam Hunters
 
 * https://steamhunters.com/content/img/steam_hunters.svg
+
+## Steam Library Filters
+
+* https://www.lorenzostanco.com/lab/steam/favicon-196x196.png
 
 ## Stellar
 

@@ -562,6 +562,15 @@ steamhunters:
   categories:
     - gaming
 
+steamlibraryfilters:
+  href: https://www.lorenzostanco.com/lab/steam/u/76561197998985381
+  useid: steamlibraryfilters
+  text1: Steam
+  text2: Library
+  text3: Filters
+  categories:
+    - gaming
+
 tapas:
   href: https://tapas.io/denilsonsa
   referral: https://tapas.io/app
