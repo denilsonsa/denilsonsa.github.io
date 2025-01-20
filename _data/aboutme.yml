@@ -146,7 +146,8 @@ coderwall:
 completionistme:
   href: https://completionist.me/user/ed4b8d86-8233-45be-b15c-5dd46982a269
   useid: completionistme
-  text1: completionist.me
+  text1: completionist
+  text2: .me
   categories:
     - gaming
 
