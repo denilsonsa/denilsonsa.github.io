@@ -460,6 +460,11 @@ I found a higher quality transparent image by doing a reverse image search.
 
 * https://vk.com/about
 
+## World of Trucks
+
+* https://www.worldoftrucks.com/en/manifest.json
+* https://www.worldoftrucks.com/img/icons/icon-512x512.png
+
 ## YouTube
 
 * http://www.youtube.com/yt/brand/downloads.html
