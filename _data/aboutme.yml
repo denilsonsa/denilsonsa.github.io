@@ -351,6 +351,13 @@ linkedin:
   useid: linkedin
   text1: LinkedIn
 
+linkme:
+  href: https://link.me/denilsonsa
+  useid: linkme
+  text1: LinkMe
+  categories:
+    - links
+
 linkstacc:
   href: https://linksta.cc/@denilsonsa
   useid: linkstacc
