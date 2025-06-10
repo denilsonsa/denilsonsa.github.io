@@ -334,10 +334,6 @@ I found a higher quality transparent image by doing a reverse image search.
 * http://blog.pluralsight.com/pluralsight-new-brand
 * https://www.pluralsight.com/about
 
-## Pocket
-
-* https://getpocket.com/blog/press/
-
 ## reddit
 
 * http://www.reddit.com/about/alien/

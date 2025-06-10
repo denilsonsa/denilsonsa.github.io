@@ -457,11 +457,6 @@ pluralsight:
   useid: pluralsight
   text1: Pluralsight
 
-pocket:
-  href: https://getpocket.com/@denilsonsa
-  useid: pocket
-  text1: Pocket
-
 reddit:
   href: https://www.reddit.com/user/denilsonsa/
   useid: reddit
@@ -487,11 +482,6 @@ shadertoy:
   href: https://www.shadertoy.com/user/denilsonsa
   useid: shadertoy
   text1: Shadertoy
-
-skype:
-  href: skype:crazyterabyte?chat
-  useid: skype
-  text1: Skype
 
 slant:
   href: https://www.slant.co/users/denilsonsa
