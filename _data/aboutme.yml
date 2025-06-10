@@ -116,11 +116,22 @@ boardgamearena:
   categories:
     - gaming
 
+boardgamegeek:
+  href: https://boardgamegeek.com/user/denilsonsa
+  useid: boardgamegeek
+  text1: Board
+  text2: Game
+  text3: Geek
+  categories:
+    - gaming
+
 buymeacoffee:
   href: https://buymeacoff.ee/denilsonsa
   useid: buymeacoffee
   text1: Buy Me
   text2: a Coffee
+  categories:
+    - money
 
 camscanner:
   referral: https://www.camscanner.com/r1?45156517
@@ -160,6 +171,8 @@ deviantart:
   href: https://crazyterabyte.deviantart.com/
   useid: deviantart
   text1: DeviantArt
+  categories:
+    - art
 
 devpost:
   href: https://devpost.com/denilsonsa
@@ -188,6 +201,9 @@ drawception:
   href: https://drawception.com/player/178050/denilsonsa/
   useid: drawception
   text1: Drawception
+  categories:
+    - art
+    - gaming
 
 dropbox:
   referral: https://db.tt/VXe1QPLA
@@ -310,6 +326,14 @@ instructables:
   useid: instructables
   text1: Instructables
 
+interference:
+  href: https://www.playinterference.com/players/denilsonsa
+  useid: interference
+  text1: Interference
+  categories:
+    - art
+    - gaming
+
 italki:
   href: https://www.italki.com/user/3270760
   referral: https://www.italki.com/?ref=3270760
@@ -333,6 +357,8 @@ kofi:
   href: https://ko-fi.com/denilsonsa
   useid: kofi
   text1: Ko-fi
+  categories:
+    - money
 
 kongregate:
   href: https://www.kongregate.com/accounts/CrazyTerabyte
@@ -420,6 +446,8 @@ openclipart:
   text1: Open
   text2: clipart
   # text1: Openclipart
+  categories:
+    - art
 
 opengameart:
   href: https://opengameart.org/users/denilsonsa
@@ -428,6 +456,8 @@ opengameart:
   text2: Game
   text3: Art
   #text1: OpenGameArt.org
+  categories:
+    - art
 
 openhub:
   href: https://www.openhub.net/accounts/denilsonsa
@@ -439,12 +469,16 @@ patreon:
   href: https://www.patreon.com/denilsonsa
   useid: patreon
   text1: Patreon
+  categories:
+    - money
 
 paypal:
   #href: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=denilsonsa%40gmail%2ecom&lc=BR&currency_code=BRL
   href: https://paypal.me/denilsonsa
   useid: paypal
   text1: PayPal
+  categories:
+    - money
 
 pinterest:
   href: https://www.pinterest.com/denilsonsa/
@@ -650,6 +684,8 @@ wise:
   referraltext: "Easy, quick and painless money transfer between countries."
   useid: wise
   text1: Wise
+  categories:
+    - money
 
 workflowy:
   referral: https://workflowy.com/invite/2c58d9ce.lnx
@@ -673,6 +709,7 @@ xsketch:
   referraltext: "Simple and nice multiplayer drawing game. Seems abandoned since 2014~2015."
   text1: XSketch
   categories:
+    - art
     - gaming
 
 youtube:
