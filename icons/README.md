@@ -360,14 +360,6 @@ I found a higher quality transparent image by doing a reverse image search.
 * https://github.com/beautypi/shadertoy-iOS-v2/tree/master/shadertoy/Images.xcassets/AppIcon.appiconset
 * Or the text "Shadertoy" rendered using "Lobster,Tahoma,Arial" font.
 
-## Skype
-
-* http://www.skype.com/en/legal/brand-guidelines/
-* http://developer.skype.com/skype-uris/branding
-* http://commons.wikimedia.org/wiki/File:Skype.svg
-* http://de.wikipedia.org/wiki/Datei:Skype-icon.svg
-* http://www.iconfinder.com/search/?q=skype
-
 ## Slides
 
 * https://slides.com/about
