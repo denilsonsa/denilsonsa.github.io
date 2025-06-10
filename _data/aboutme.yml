@@ -4,6 +4,8 @@ curriculumvitae:
   # href: {{ site.baseurl }}/denilsonsa-resume.pdf
   useid: curriculumvitae
   text1: Resumé
+  categories:
+    - jobs
 
 homepage:
   href: https://denilson.sa.nom.br/
@@ -52,24 +54,33 @@ alternativeto:
   href: https://alternativeto.net/user/denilsonsa/
   useid: alternativeto
   text1: AlternativeTo
+  categories:
+    - stub
 
 alvanista:
   # Dead, or almost dead, since 2024.
   href: http://alvanista.com/denilsonsa
   useid: alvanista
   text1: Alvanista
+  categories:
+    - obsolete
 
 angellist:
   # TODO: Replace icon from AngelList to Wellfound.
-  # Became Wellfound: https://wellfound.com/u/denilsonsa
-  href: https://angel.co/denilsonsa
+  # href: https://angel.co/denilsonsa
+  href: https://wellfound.com/u/denilsonsa
   useid: angellist
   text1: AngelList
+  categories:
+    - jobs
+    - stub
 
 asciinema:
   href: https://asciinema.org/~denilsonsa
   useid: asciinema
   text1: asciinema
+  categories:
+    - stub
 
 astats:
   href: https://astats.astats.nl/astats/User_Info.php?ProfileID=275150
@@ -101,11 +112,16 @@ behance:
   href: https://www.behance.net/denilsonsa
   useid: behance
   text1: Behance
+  categories:
+    - stub
 
 bitbucket:
   href: https://bitbucket.org/denilsonsa
   useid: bitbucket
   text1: Bitbucket
+  categories:
+    - coding
+    - stub
 
 boardgamearena:
   href: https://boardgamearena.com/player?id=43315183
@@ -138,21 +154,30 @@ camscanner:
   referraltext: "I don't use it anymore, so I can't endorse it."
   useid: camscanner
   text1: CamScanner
+  categories:
+    - referralonly
 
 codecademy:
   href: https://www.codecademy.com/profiles/denilsonsa
   useid: codecademy
   text1: Codecademy
+  categories:
+    - coding
+    - learning
 
 codepen:
   href: https://codepen.io/denilsonsa/
   useid: codepen
   text1: CodePen
+  categories:
+    - coding
 
 coderwall:
   href: https://coderwall.com/denilsonsa
   useid: coderwall
   text1: Coderwall
+  categories:
+    - stub
 
 completionistme:
   href: https://completionist.me/user/ed4b8d86-8233-45be-b15c-5dd46982a269
@@ -166,6 +191,8 @@ crunchyroll:
   href: https://www.crunchyroll.com/user/denilsonsa
   useid: crunchyroll
   text1: Crunchyroll
+  categories:
+    - obsolete
 
 deviantart:
   href: https://crazyterabyte.deviantart.com/
@@ -178,6 +205,8 @@ devpost:
   href: https://devpost.com/denilsonsa
   useid: devpost
   text1: Devpost
+  categories:
+    - coding
 
 digitalocean:
   referral: https://www.digitalocean.com/?refcode=db6fca9fb79d
@@ -185,6 +214,8 @@ digitalocean:
   #href: https://m.do.co/c/db6fca9fb79d
   useid: digitalocean
   text1: DigitalOcean
+  categories:
+    - referralonly
 
 discord:
   href: https://discordapp.com/users/145704648643182592
@@ -196,6 +227,8 @@ disqus:
   #href: https://disqus.com/by/denilsonsa/
   useid: disqus
   text1: Disqus
+  categories:
+    - obsolete
 
 drawception:
   href: https://drawception.com/player/178050/denilsonsa/
@@ -210,12 +243,16 @@ dropbox:
   referraltext: "Good cloud-based file syncing tool across multiple computers."
   useid: dropbox
   text1: Dropbox
+  categories:
+    - referralonly
 
 dynalist:
   referral: https://dynalist.io/invite/OnNPqg
   referraltext: "Infinitely deep nested lists. For use as note-taking, organization aid, to-do lists, etc."
   useid: dynalist
   text1: Dynalist
+  categories:
+    - referralonly
 
 exophase:
   href: https://www.exophase.com/user/denilsonsa/
@@ -255,17 +292,24 @@ github:
   href: https://github.com/denilsonsa
   useid: github
   text1: GitHub
+  categories:
+    - coding
 
 githubgist:
   href: https://gist.github.com/denilsonsa
   useid: github
   text1: GitHub
   text2: Gist
+  categories:
+    - coding
 
 glitch:
+  # Glitch is mostly shutting down: https://blog.glitch.com/post/changes-are-coming-to-glitch/
   href: https://glitch.com/@denilsonsa
   useid: glitch
   text1: Glitch
+  categories:
+    - obsolete
 
 gog:
   href: https://www.gog.com/u/denilsonsa
@@ -290,21 +334,29 @@ greasyfork:
   useid: greasyfork
   text1: Greasy
   text2: Fork
+  categories:
+    - coding
 
 hackerrank:
   href: https://www.hackerrank.com/denilsonsa
   useid: hackerrank
   text1: HackerRank
+  categories:
+    - coding
 
 ifttt:
   href: https://ifttt.com/p/denilsonsa
   useid: ifttt
   text1: IFTTT
+  categories:
+    - stub
 
 igdb:
   href: https://www.igdb.com/users/denilsonsa
   useid: igdb
   text1: IGDB
+  categories:
+    - gaming
 
 imgur:
   href: https://denilsonsa.imgur.com/
@@ -371,11 +423,15 @@ kuula:
   href: https://kuula.co/profile/denilsonsa
   useid: kuula
   text1: Kuula
+  categories:
+    - stub
 
 linkedin:
   href: https://www.linkedin.com/in/denilsonsa
   useid: linkedin
   text1: LinkedIn
+  categories:
+    - jobs
 
 linkme:
   href: https://link.me/denilsonsa
@@ -402,6 +458,8 @@ livejournal:
   href: https://denilsonsa.livejournal.com/
   useid: livejournal
   text1: LiveJournal
+  categories:
+    - stub
 
 manylink:
   href: https://many.link/denilsonsa
@@ -414,6 +472,8 @@ medium:
   href: https://medium.com/@denilsonsa
   useid: medium
   text1: Medium
+  categories:
+    - stub
 
 metagamerscore:
   href: https://metagamerscore.com/profile/21630
@@ -428,6 +488,8 @@ myspace:
   href: https://myspace.com/denilsonsa
   useid: myspace
   text1: Myspace
+  categories:
+    - stub
 
 newgrounds:
   href: https://denilsonsa.newgrounds.com/
@@ -484,12 +546,17 @@ pinterest:
   href: https://www.pinterest.com/denilsonsa/
   useid: pinterest
   text1: Pinterest
+  categories:
+    - stub
 
 pluralsight:
   # href: https://app.pluralsight.com/id/profile/denilsonsa
   href: https://pluralsight.com/profile/denilsonsa
   useid: pluralsight
   text1: Pluralsight
+  categories:
+    - coding
+    - learning
 
 reddit:
   href: https://www.reddit.com/user/denilsonsa/
@@ -516,8 +583,11 @@ shadertoy:
   href: https://www.shadertoy.com/user/denilsonsa
   useid: shadertoy
   text1: Shadertoy
+  categories:
+    - coding
 
 slant:
+  # Slant is read-only since February 2024.
   href: https://www.slant.co/users/denilsonsa
   useid: slant
   text1: Slant
@@ -526,6 +596,8 @@ slides:
   href: https://slides.com/denilsonsa
   useid: slides
   text1: Slides
+  categories:
+    - stub
 
 slideshare:
   href: https://www.slideshare.net/CrazyTerabyte/
@@ -541,17 +613,24 @@ soundcloud:
   href: https://soundcloud.com/denilsonsa
   useid: soundcloud
   text1: SoundCloud
+  categories:
+    - stub
 
 sourceforge:
   href: https://sourceforge.net/u/crazyterabyte
   useid: sourceforge
   text1: SourceForge
+  categories:
+    - stub
 
 speakerdeck:
+  # TODO: new icon
   href: https://speakerdeck.com/denilsonsa
   useid: speakerdeck
   text1: Speaker
   text2: Deck
+  categories:
+    - stub
 
 stackexchange:
   href: https://stackexchange.com/users/42834/
@@ -565,6 +644,8 @@ stackoverflow:
   text1: Stack
   text2: Overflow
   # text1: Stack Overflow
+  categories:
+    - coding
 
 steam:
   href: https://steamcommunity.com/id/CrazyTerabyte/
@@ -618,11 +699,15 @@ topcoder:
   href: https://www.topcoder.com/members/denilsonsa
   useid: topcoder
   text1: TopCoder
+  categories:
+    - coding
 
 tumblr:
   href: https://denilsonsa.tumblr.com/
   useid: tumblr
   text1: Tumblr
+  categories:
+    - stub
 
 tunein:
   href: https://tunein.com/user/denilsonsa/
@@ -634,16 +719,23 @@ twitch:
   useid: twitch
   text1: Twitch.tv
   #text1: Twitch
+  categories:
+    - stub
 
 twitter:
   href: https://twitter.com/denilsonsa
   useid: twitter
   text1: Twitter
+  categories:
+    - stub
+    - obsolete
 
 uber:
   referral: https://www.uber.com/invite/uberdenilsonsa
   useid: uber
   text1: Uber
+  categories:
+    - referralonly
 
 usercss:
   # AKA Stylish (is now a bad extension) or Stylus (is a good clean extension)
@@ -658,6 +750,8 @@ usercss:
   useid: stylus
   text1: User
   text2: styles
+  categories:
+    - coding
 
 userscripts:
   #href: http://web.archive.org/web/20131108061608/http://userscripts.org/users/120597/scripts
@@ -668,16 +762,23 @@ userscripts:
   useid: userscripts
   text1: User
   text2: scripts
+  categories:
+    - coding
+    - obsolete
 
 vimeo:
   href: https://vimeo.com/denilsonsa
   useid: vimeo
   text1: Vimeo
+  categories:
+    - stub
 
 vk:
   href: https://vk.com/denilsonsa
   useid: vk
   text1: VK
+  categories:
+    - stub
 
 wise:
   referral: https://wise.com/invite/u/denilsonf1
@@ -686,12 +787,15 @@ wise:
   text1: Wise
   categories:
     - money
+    - referralonly
 
 workflowy:
   referral: https://workflowy.com/invite/2c58d9ce.lnx
   referraltext: "Infinitely deep nested lists. For use as note-taking, organization aid, to-do lists, etc."
   useid: workflowy
   text1: WorkFlowy
+  categories:
+    - referralonly
 
 worldoftrucks:
   href: https://www.worldoftrucks.com/en/profile/66223
@@ -711,6 +815,7 @@ xsketch:
   categories:
     - art
     - gaming
+    - obsolete
 
 youtube:
   href: https://youtube.com/@DenilsonSa
