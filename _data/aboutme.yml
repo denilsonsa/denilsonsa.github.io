@@ -549,6 +549,13 @@ pinterest:
   categories:
     - stub
 
+playtracker:
+  href: https://playtracker.net/profile/denilsonsa
+  useid: playtracker
+  text1: PlayTracker
+  categories:
+    - gaming
+
 pluralsight:
   # href: https://app.pluralsight.com/id/profile/denilsonsa
   href: https://pluralsight.com/profile/denilsonsa
@@ -679,6 +686,15 @@ steamlibraryfilters:
   useid: steamlibraryfilters
   text1: Steam
   text2: Library
+  text3: Filters
+  categories:
+    - gaming
+
+steamwishlistfilters:
+  href: https://www.lorenzostanco.com/lab/steam/wishlist/u/76561197998985381
+  useid: steamwishlistfilters
+  text1: Steam
+  text2: Wishlist
   text3: Filters
   categories:
     - gaming
