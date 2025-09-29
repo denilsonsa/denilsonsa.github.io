@@ -273,6 +273,13 @@ flickr:
   useid: flickr
   text1: Flickr
 
+fontstruct:
+  href: https://fontstruct.com/fontstructors/2658913/denilsonsa
+  useid: fontstruct
+  text1: FontStruct
+  categories:
+    - art
+
 gamejolt:
   href: https://gamejolt.com/profile/denilsonsa/378910/
   useid: gamejolt
