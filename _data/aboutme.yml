@@ -433,6 +433,11 @@ kuula:
   categories:
     - stub
 
+letterboxd:
+  href: https://letterboxd.com/denilsonsa/
+  useid: letterboxd
+  text1: Letterboxd
+
 linkedin:
   href: https://www.linkedin.com/in/denilsonsa
   useid: linkedin
