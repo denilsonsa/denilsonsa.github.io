@@ -365,6 +365,11 @@ igdb:
   categories:
     - gaming
 
+imgflip:
+  href: https://imgflip.com/user/denilsonsa
+  useid: imgflip
+  text1: Imgflip
+
 imgur:
   href: https://denilsonsa.imgur.com/
   useid: imgur
