@@ -149,14 +149,6 @@ buymeacoffee:
   categories:
     - money
 
-camscanner:
-  referral: https://www.camscanner.com/r1?45156517
-  referraltext: "I don't use it anymore, so I can't endorse it."
-  useid: camscanner
-  text1: CamScanner
-  categories:
-    - referralonly
-
 codecademy:
   href: https://www.codecademy.com/profiles/denilsonsa
   useid: codecademy
