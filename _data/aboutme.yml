@@ -288,7 +288,8 @@ geoguessr:
     - gaming
 
 github:
-  href: https://github.com/denilsonsa
+  #href: https://github.com/denilsonsa
+  href: https://github.com/denilsonsa?tab=repositories&type=source&sort=stargazers
   useid: github
   text1: GitHub
   categories:
