@@ -5,7 +5,7 @@ lang: en
 tags: []
 ---
 
-Based on my experience looking/installing/running/modifying open-source projects at my own computer, and my experience working on code at my employer, I came up with the following expectations for a README file for any project:
+Based on my experience looking/installing/running/modifying open-source projects at my own computer, and my experience working on many projects at my employer (with a mix of [monorepo](https://en.wikipedia.org/wiki/Monorepo) and multirepo), I came up with the following expectations for a README file for any project:
 
 
 * **Project name**, obviously.
@@ -31,8 +31,8 @@ Based on my experience looking/installing/running/modifying open-source projects
     * **How is the code organized**?
         * What is the purpose of each directory or file?
         * Just an overview, so that I know what and where is the front-end code, the back-end code, the HTTP endpoints, the database modules, the configuration files...
-    * How does the different pieces of **code interact**?
-        * An brief overview of code interaction can help building a mental picture of the execution and data flows.
+    * How do the different pieces of **code interact**?
+        * A brief overview of code interaction can help building a mental picture of the execution and data flows.
     * What are the relevant **databases and tables**?
     * What are the relevant **metrics and dashboards**?
     * Where to **find the documentation**?
